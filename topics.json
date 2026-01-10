@@ -1,0 +1,1264 @@
+{
+    "Qualification": "A Level",
+    "Subject": "Mathematics",
+    "Exam Board": "OCR",
+    "Specification": "H240",
+    "Topics": [
+        {
+            "Topic_id": 1,
+            "Specification_section": "1.1",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Proof",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "1a",
+                    "Specification_section_sub": "1.1a",
+                    "Sub_topic_name": "Proof structure",
+                    "description": "Understand and be able to use the structure of mathematical proof, proceeding from given assumptions through a series of logical steps to a conclusion."
+                },
+                {
+                    "subtopic_id": "1b",
+                    "Specification_section_sub": "1.1b",
+                    "Sub_topic_name": "Logical connectives",
+                    "description": "Understand and be able to use the logical connectives (∧, ∨, ¬)"
+                },
+                {
+                    "subtopic_id": "1c",
+                    "Specification_section_sub": "1.1c",
+                    "Sub_topic_name": "Disproof by counter example",
+                    "description": "Be able to show disproof by counter example."
+                },
+                {
+                    "subtopic_id": "1d",
+                    "Specification_section_sub": "1.1d",
+                    "Sub_topic_name": "Proof by contradiction",
+                    "description": "Understand and be able to use proof by contradiction."
+                }
+            ]
+        },
+        {
+            "Topic_id": 2,
+            "Specification_section": "1.2",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Algebra and functions",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "2a",
+                    "Specification_section_sub": "1.2a",
+                    "Sub_topic_name": "Laws of indices",
+                    "description": "Understand and be able to use the laws of indices for all rational exponents."
+                },
+                {
+                    "subtopic_id": "2b",
+                    "Specification_section_sub": "1.2b",
+                    "Sub_topic_name": "Surds",
+                    "description": "Be able to use and manipulate surds, including rationalising the denominator."
+                },
+                {
+                    "subtopic_id": "2d",
+                    "Specification_section_sub": "1.2d",
+                    "Sub_topic_name": "Quadratic functions and discriminant",
+                    "description": "Be able to work with quadratic functions and their graphs, and the discriminant (D or Δ)."
+                },
+                {
+                    "subtopic_id": "2e",
+                    "Specification_section_sub": "1.2e",
+                    "Sub_topic_name": "Completing the square",
+                    "description": "Be able to complete the square of the quadratic polynomial ax² + bx + c."
+                },
+                {
+                    "subtopic_id": "2f",
+                    "Specification_section_sub": "1.2f",
+                    "Sub_topic_name": "Solving quadratic equations",
+                    "description": "Be able to solve quadratic equations including quadratic equations in a function of the unknown."
+                },
+                {
+                    "subtopic_id": "2g",
+                    "Specification_section_sub": "1.2g",
+                    "Sub_topic_name": "Solving inequalities",
+                    "description": "Be able to solve linear and quadratic inequalities in a single variable and interpret such inequalities graphically, including inequalities with brackets and fractions."
+                },
+                {
+                    "subtopic_id": "2h",
+                    "Specification_section_sub": "1.2h",
+                    "Sub_topic_name": "Set notation and logic",
+                    "description": "Be able to express solutions through correct use of 'and' and 'or', or through set notation."
+                },
+                {
+                    "subtopic_id": "2i",
+                    "Specification_section_sub": "1.2i",
+                    "Sub_topic_name": "Graphical inequalities",
+                    "description": "Be able to represent linear and quadratic inequalities such as y ≥ x + 1 and y ≤ ax² + bx + c graphically."
+                },
+                {
+                    "subtopic_id": "2j",
+                    "Specification_section_sub": "1.2j",
+                    "Sub_topic_name": "Polynomial manipulation",
+                    "description": "Be able to manipulate polynomials algebraically."
+                },
+                {
+                    "subtopic_id": "2k",
+                    "Specification_section_sub": "1.2k",
+                    "Sub_topic_name": "Rational expressions",
+                    "description": "Be able to simplify rational expressions."
+                },
+                {
+                    "subtopic_id": "2l",
+                    "Specification_section_sub": "1.2l",
+                    "Sub_topic_name": "Modulus function",
+                    "description": "Understand and be able to use the modulus function, including the notation |x|, and use relations such as |a| = |b| ⟺ a² = b² and |x − a| ≤ b ⟺ a − b ≤ x ≤ a + b in the course of solving equations and inequalities."
+                },
+                {
+                    "subtopic_id": "2m",
+                    "Specification_section_sub": "1.2m",
+                    "Sub_topic_name": "Graphs of functions",
+                    "description": "Understand and be able to use graphs of functions."
+                },
+                {
+                    "subtopic_id": "2n",
+                    "Specification_section_sub": "1.2n",
+                    "Sub_topic_name": "Sketching curves",
+                    "description": "Be able to sketch curves defined by simple equations including polynomials."
+                },
+                {
+                    "subtopic_id": "2o",
+                    "Specification_section_sub": "1.2o",
+                    "Sub_topic_name": "Rational curves",
+                    "description": "Be able to sketch curves defined by y = a/x and y = a/x² (including their vertical and horizontal asymptotes)."
+                },
+                {
+                    "subtopic_id": "2p",
+                    "Specification_section_sub": "1.2p",
+                    "Sub_topic_name": "Algebraic solutions",
+                    "description": "Be able to interpret the algebraic solution of equations graphically."
+                },
+                {
+                    "subtopic_id": "2q",
+                    "Specification_section_sub": "1.2q",
+                    "Sub_topic_name": "Intersection of graphs",
+                    "description": "Be able to use intersection points of graphs to solve equations."
+                },
+                {
+                    "subtopic_id": "2r",
+                    "Specification_section_sub": "1.2r",
+                    "Sub_topic_name": "Proportional relationships",
+                    "description": "Understand and be able to use proportional relationships and their graphs."
+                },
+                {
+                    "subtopic_id": "2s",
+                    "Specification_section_sub": "1.2s",
+                    "Sub_topic_name": "Modulus of linear functions",
+                    "description": "Be able to sketch the graph of the modulus of a linear function involving a single modulus sign."
+                },
+                {
+                    "subtopic_id": "2t",
+                    "Specification_section_sub": "1.2t",
+                    "Sub_topic_name": "Modulus equations and inequalities",
+                    "description": "Be able to solve graphically simple equations and inequalities involving the modulus function."
+                },
+                {
+                    "subtopic_id": "2u",
+                    "Specification_section_sub": "1.2u",
+                    "Sub_topic_name": "Definition of a function",
+                    "description": "Understand and be able to use the definition of a function."
+                },
+                {
+                    "subtopic_id": "2v",
+                    "Specification_section_sub": "1.2v",
+                    "Sub_topic_name": "Inverse and composite functions",
+                    "description": "Understand and be able to use inverse functions and their graphs, and composite functions. Know the condition for the inverse function to exist and be able to find the inverse of a function either graphically, by reflection in the line y = x, or algebraically."
+                },
+                {
+                    "subtopic_id": "2w",
+                    "Specification_section_sub": "1.2w",
+                    "Sub_topic_name": "Transformations of functions",
+                    "description": "Understand the effect of simple transformations on the graph of y = f(x) including sketching associated graphs, describing transformations and finding relevant equations."
+                },
+                {
+                    "subtopic_id": "2x",
+                    "Specification_section_sub": "1.2x",
+                    "Sub_topic_name": "Combined transformations",
+                    "description": "Understand the effect of combinations of transformations on the graph of y = f(x) including sketching associated graphs, describing transformations and finding relevant equations."
+                },
+                {
+                    "subtopic_id": "2y",
+                    "Specification_section_sub": "1.2y",
+                    "Sub_topic_name": "Partial fractions",
+                    "description": "Be able to decompose rational functions into partial fractions (denominators not more complicated than squared linear terms and with no more than 3 terms, numerators constant or linear)."
+                },
+                {
+                    "subtopic_id": "2z",
+                    "Specification_section_sub": "1.2z",
+                    "Sub_topic_name": "Functions in modelling",
+                    "description": "Be able to use functions in modelling."
+                }
+            ]
+        },
+        {
+            "Topic_id": 3,
+            "Specification_section": "1.3",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Coordinate geometry in the x-y plane",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "3a",
+                    "Specification_section_sub": "1.3a",
+                    "Sub_topic_name": "Straight line equations",
+                    "description": "Understand and be able to use the equation of a straight line, including the forms: y = mx + c, y − y₁ = m(x − x₁), ax + by + c = 0"
+                },
+                {
+                    "subtopic_id": "3b",
+                    "Specification_section_sub": "1.3b",
+                    "Sub_topic_name": "Parallel and perpendicular lines",
+                    "description": "Be able to use the gradient conditions for two straight lines to be parallel or perpendicular."
+                },
+                {
+                    "subtopic_id": "3c",
+                    "Specification_section_sub": "1.3c",
+                    "Sub_topic_name": "Straight line models",
+                    "description": "Be able to use straight line models in a variety of contexts."
+                },
+                {
+                    "subtopic_id": "3d",
+                    "Specification_section_sub": "1.3d",
+                    "Sub_topic_name": "Circle equations",
+                    "description": "Understand and be able to use the coordinate geometry of a circle including using the equation of a circle in the form (x − a)² + (y − b)² = r²"
+                },
+                {
+                    "subtopic_id": "3e",
+                    "Specification_section_sub": "1.3e",
+                    "Sub_topic_name": "Completing the square for circles",
+                    "description": "Be able to complete the square to find the centre and radius of a circle."
+                },
+                {
+                    "subtopic_id": "3f",
+                    "Specification_section_sub": "1.3f",
+                    "Sub_topic_name": "Circle properties",
+                    "description": "Be able to use the following circle properties in the context of problems in coordinate geometry: 1. the angle in a semicircle is a right angle 2. the perpendicular from the centre of a circle to a chord bisects the chord 3. the radius of a circle at a given point on its circumference is perpendicular to the tangent to the circle at that point."
+                },
+                {
+                    "subtopic_id": "3g",
+                    "Specification_section_sub": "1.3g",
+                    "Sub_topic_name": "Parametric equations",
+                    "description": "Understand and be able to use the parametric equations of curves and be able to convert between cartesian and parametric forms."
+                },
+                {
+                    "subtopic_id": "3h",
+                    "Specification_section_sub": "1.3h",
+                    "Sub_topic_name": "Parametric equations in modelling",
+                    "description": "Be able to use parametric equations in modelling in a variety of contexts."
+                }
+            ]
+        },
+        {
+            "Topic_id": 4,
+            "Specification_section": "1.4",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Sequences and series",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "4a",
+                    "Specification_section_sub": "1.4a",
+                    "Sub_topic_name": "Binomial expansion",
+                    "description": "Understand and be able to use the binomial expansion of (a + bx)ⁿ for positive integer n and the notations n!, ⁿCᵣ or C(n,r) or (n choose r), with ⁿC₀ = ⁿCₙ = 1"
+                },
+                {
+                    "subtopic_id": "4b",
+                    "Specification_section_sub": "1.4b",
+                    "Sub_topic_name": "Binomial probabilities",
+                    "description": "Understand and know the link to binomial probabilities."
+                },
+                {
+                    "subtopic_id": "4c",
+                    "Specification_section_sub": "1.4c",
+                    "Sub_topic_name": "Binomial expansion for rational n",
+                    "description": "Be able to extend the binomial expansion of (a + bx)ⁿ to any rational n, including its use for approximation."
+                },
+                {
+                    "subtopic_id": "4d",
+                    "Specification_section_sub": "1.4d",
+                    "Sub_topic_name": "Convergence of binomial expansion",
+                    "description": "Know that the expansion is valid for |bx/a| < 1"
+                },
+                {
+                    "subtopic_id": "4e",
+                    "Specification_section_sub": "1.4e",
+                    "Sub_topic_name": "Sequences",
+                    "description": "Be able to work with sequences including those given by a formula for the nth term and those generated by a simple relation of the form xₙ₊₁ = f(xₙ)."
+                },
+                {
+                    "subtopic_id": "4f",
+                    "Specification_section_sub": "1.4f",
+                    "Sub_topic_name": "Types of sequences",
+                    "description": "Understand the meaning of and work with increasing sequences, decreasing sequences and periodic sequences."
+                },
+                {
+                    "subtopic_id": "4g",
+                    "Specification_section_sub": "1.4g",
+                    "Sub_topic_name": "Sigma notation",
+                    "description": "Understand and be able to use sigma notation for sums of series."
+                },
+                {
+                    "subtopic_id": "4h",
+                    "Specification_section_sub": "1.4h",
+                    "Sub_topic_name": "Arithmetic sequences and series",
+                    "description": "Understand and be able to work with arithmetic sequences and series, including the formulae for the nth term and the sum to n terms."
+                },
+                {
+                    "subtopic_id": "4i",
+                    "Specification_section_sub": "1.4i",
+                    "Sub_topic_name": "Geometric sequences and series",
+                    "description": "Understand and be able to work with geometric sequences and series including the formulae for the nth term and the sum of a finite geometric series."
+                },
+                {
+                    "subtopic_id": "4j",
+                    "Specification_section_sub": "1.4j",
+                    "Sub_topic_name": "Sum to infinity of geometric series",
+                    "description": "Understand and be able to work with the sum to infinity of a convergent geometric series, including the use of |r| < 1 and the use of modulus notation in the condition for convergence."
+                },
+                {
+                    "subtopic_id": "4k",
+                    "Specification_section_sub": "1.4k",
+                    "Sub_topic_name": "Sequences and series in modelling",
+                    "description": "Be able to use sequences and series in modelling."
+                }
+            ]
+        },
+        {
+            "Topic_id": 5,
+            "Specification_section": "1.5",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Trigonometry",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "5a",
+                    "Specification_section_sub": "1.5a",
+                    "Sub_topic_name": "Trigonometric definitions",
+                    "description": "Understand and be able to use the definitions of sine, cosine and tangent for all arguments."
+                },
+                {
+                    "subtopic_id": "5b",
+                    "Specification_section_sub": "1.5b",
+                    "Sub_topic_name": "Sine and cosine rules",
+                    "description": "Understand and be able to use the sine and cosine rules."
+                },
+                {
+                    "subtopic_id": "5c",
+                    "Specification_section_sub": "1.5c",
+                    "Sub_topic_name": "Area of a triangle",
+                    "description": "Understand and be able to use the area of a triangle in the form ½ab sin C"
+                },
+                {
+                    "subtopic_id": "5d",
+                    "Specification_section_sub": "1.5d",
+                    "Sub_topic_name": "Radian measure",
+                    "description": "Be able to work with radian measure, including use for arc length and area of sector."
+                },
+                {
+                    "subtopic_id": "5e",
+                    "Specification_section_sub": "1.5e",
+                    "Sub_topic_name": "Small angle approximations",
+                    "description": "Understand and be able to use the standard small angle approximations of sine, cosine and tangent: sin θ ≈ θ, cos θ ≈ 1 − ½θ², tan θ ≈ θ, where θ is in radians."
+                },
+                {
+                    "subtopic_id": "5f",
+                    "Specification_section_sub": "1.5f",
+                    "Sub_topic_name": "Sine, cosine and tangent functions",
+                    "description": "Understand and be able to use the sine, cosine and tangent functions, their graphs, symmetries and periodicities."
+                },
+                {
+                    "subtopic_id": "5g",
+                    "Specification_section_sub": "1.5g",
+                    "Sub_topic_name": "Exact trigonometric values",
+                    "description": "Know and be able to use exact values of sin θ and cos θ for θ = 0, π/6, π/4, π/3, π/2 and multiples thereof, and exact values of tan θ for θ = 0, π/6, π/4, π/3 and multiples thereof."
+                },
+                {
+                    "subtopic_id": "5h",
+                    "Specification_section_sub": "1.5h",
+                    "Sub_topic_name": "Reciprocal and inverse trigonometric functions",
+                    "description": "Understand and be able to use the definitions of secant (sec), cosecant (cosec) and cotangent (cot) and of arcsin, arccos and arctan and their relationships to sin, cos and tan respectively."
+                },
+                {
+                    "subtopic_id": "5i",
+                    "Specification_section_sub": "1.5i",
+                    "Sub_topic_name": "Graphs of reciprocal and inverse functions",
+                    "description": "Understand the graphs of the functions given in 1.05h, their ranges and domains."
+                },
+                {
+                    "subtopic_id": "5j",
+                    "Specification_section_sub": "1.5j",
+                    "Sub_topic_name": "Trigonometric identities",
+                    "description": "Understand and be able to use tan θ = sin θ/cos θ and sin²θ + cos²θ = 1"
+                },
+                {
+                    "subtopic_id": "5k",
+                    "Specification_section_sub": "1.5k",
+                    "Sub_topic_name": "Reciprocal trigonometric identities",
+                    "description": "Understand and be able to use sec²θ = 1 + tan²θ and cosec²θ = 1 + cot²θ"
+                },
+                {
+                    "subtopic_id": "5l",
+                    "Specification_section_sub": "1.5l",
+                    "Sub_topic_name": "Double angle and compound angle formulae",
+                    "description": "Understand and be able to use double angle formulae and the formulae for sin(A ± B), cos(A ± B) and tan(A ± B)."
+                },
+                {
+                    "subtopic_id": "5m",
+                    "Specification_section_sub": "1.5m",
+                    "Sub_topic_name": "Geometric proofs of trigonometric formulae",
+                    "description": "Understand the geometrical proofs of these formulae."
+                },
+                {
+                    "subtopic_id": "5n",
+                    "Specification_section_sub": "1.5n",
+                    "Sub_topic_name": "a cos θ + b sin θ expressions",
+                    "description": "Understand and be able to use expressions for a cos θ + b sin θ in the equivalent forms of R cos(θ ± α) or R sin(θ ± α)."
+                },
+                {
+                    "subtopic_id": "5o",
+                    "Specification_section_sub": "1.5o",
+                    "Sub_topic_name": "Solving trigonometric equations",
+                    "description": "Be able to solve simple trigonometric equations in a given interval, including quadratic equations in sin θ, cos θ and tan θ and equations involving multiples of the unknown angle."
+                },
+                {
+                    "subtopic_id": "5p",
+                    "Specification_section_sub": "1.5p",
+                    "Sub_topic_name": "Trigonometric proofs",
+                    "description": "Be able to construct proofs involving trigonometric functions and identities."
+                },
+                {
+                    "subtopic_id": "5q",
+                    "Specification_section_sub": "1.5q",
+                    "Sub_topic_name": "Applications of trigonometric functions",
+                    "description": "Be able to use trigonometric functions to solve problems in context, including problems involving vectors, kinematics and forces."
+                }
+            ]
+        },
+        {
+            "Topic_id": 6,
+            "Specification_section": "1.6",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Exponentials and logarithms",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "6a",
+                    "Specification_section_sub": "1.6a",
+                    "Sub_topic_name": "Exponential functions",
+                    "description": "Know and use the function aˣ and its graph, where a is positive. Know and use the function eˣ and its graph."
+                },
+                {
+                    "subtopic_id": "6b",
+                    "Specification_section_sub": "1.6b",
+                    "Sub_topic_name": "Gradient of exponential functions",
+                    "description": "Know that the gradient of eᵏˣ is equal to keᵏˣ and hence understand why the exponential model is suitable in many applications."
+                },
+                {
+                    "subtopic_id": "6c",
+                    "Specification_section_sub": "1.6c",
+                    "Sub_topic_name": "Logarithms",
+                    "description": "Know and use the definition of logₐx (for x > 0) as the inverse of aˣ (for all x), where a is positive."
+                },
+                {
+                    "subtopic_id": "6d",
+                    "Specification_section_sub": "1.6d",
+                    "Sub_topic_name": "Natural logarithm",
+                    "description": "Know and use the function ln x and its graph."
+                },
+                {
+                    "subtopic_id": "6e",
+                    "Specification_section_sub": "1.6e",
+                    "Sub_topic_name": "ln as inverse of e",
+                    "description": "Know and use ln x as the inverse function of eˣ."
+                },
+                {
+                    "subtopic_id": "6f",
+                    "Specification_section_sub": "1.6f",
+                    "Sub_topic_name": "Laws of logarithms",
+                    "description": "Understand and be able to use the laws of logarithms: 1. logₐx + logₐy = logₐ(xy) 2. logₐx − logₐy = logₐ(x/y) 3. k logₐx = logₐxᵏ"
+                },
+                {
+                    "subtopic_id": "6g",
+                    "Specification_section_sub": "1.6g",
+                    "Sub_topic_name": "Solving exponential equations",
+                    "description": "Be able to solve equations of the form aˣ = b for a > 0"
+                },
+                {
+                    "subtopic_id": "6h",
+                    "Specification_section_sub": "1.6h",
+                    "Sub_topic_name": "Logarithmic graphs for parameter estimation",
+                    "description": "Be able to use logarithmic graphs to estimate parameters in relationships of the form y = axⁿ and y = kbˣ, given data for x and y."
+                },
+                {
+                    "subtopic_id": "6i",
+                    "Specification_section_sub": "1.6i",
+                    "Sub_topic_name": "Exponential growth and decay",
+                    "description": "Understand and be able to use exponential growth and decay and use the exponential function in modelling."
+                }
+            ]
+        },
+        {
+            "Topic_id": 7,
+            "Specification_section": "1.7",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Differentiation",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "7a",
+                    "Specification_section_sub": "1.7a",
+                    "Sub_topic_name": "Derivative as gradient",
+                    "description": "Understand and be able to use the derivative of f'(x) as the gradient of the tangent to the graph of y=f(x) at a general point (x,y)."
+                },
+                {
+                    "subtopic_id": "7b",
+                    "Specification_section_sub": "1.7b",
+                    "Sub_topic_name": "Rate of change",
+                    "description": "Understand and be able to use the gradient of the tangent at a point where x = a as: 1. the limit of the gradient of a chord as x tends to a 2. a rate of change of y with respect to x"
+                },
+                {
+                    "subtopic_id": "7c",
+                    "Specification_section_sub": "1.7c",
+                    "Sub_topic_name": "Gradient function",
+                    "description": "Understand and be able to sketch the gradient function for a given curve."
+                },
+                {
+                    "subtopic_id": "7d",
+                    "Specification_section_sub": "1.7d",
+                    "Sub_topic_name": "Second derivative",
+                    "description": "Understand and be able to find second derivatives."
+                },
+                {
+                    "subtopic_id": "7e",
+                    "Specification_section_sub": "1.7e",
+                    "Sub_topic_name": "Rate of change of gradient",
+                    "description": "Understand and be able to use the second derivative as the rate of change of gradient."
+                },
+                {
+                    "subtopic_id": "7f",
+                    "Specification_section_sub": "1.7f",
+                    "Sub_topic_name": "Convexity and inflection",
+                    "description": "Understand and be able to use the second derivative in connection to convex and concave sections of curves and points of inflection."
+                },
+                {
+                    "subtopic_id": "7g",
+                    "Specification_section_sub": "1.7g",
+                    "Sub_topic_name": "First principles differentiation",
+                    "description": "Be able to show differentiation from first principles for small positive integer powers of x."
+                },
+                {
+                    "subtopic_id": "7h",
+                    "Specification_section_sub": "1.7h",
+                    "Sub_topic_name": "First principles for trigonometry",
+                    "description": "Be able to show differentiation from first principles for sin x and cos x."
+                },
+                {
+                    "subtopic_id": "7i",
+                    "Specification_section_sub": "1.7i",
+                    "Sub_topic_name": "Power rule differentiation",
+                    "description": "Be able to differentiate xⁿ, for rational values of n, and related constant multiples, sums and differences."
+                },
+                {
+                    "subtopic_id": "7j",
+                    "Specification_section_sub": "1.7j",
+                    "Sub_topic_name": "Differentiation of exponentials",
+                    "description": "Be able to differentiate eᵏˣ and aᵏˣ, and related sums, differences and constant multiples."
+                },
+                {
+                    "subtopic_id": "7k",
+                    "Specification_section_sub": "1.7k",
+                    "Sub_topic_name": "Differentiation of trigonometry",
+                    "description": "Be able to differentiate sin kx, cos kx, tan kx and related sums, differences and constant multiples."
+                },
+                {
+                    "subtopic_id": "7l",
+                    "Specification_section_sub": "1.7l",
+                    "Sub_topic_name": "Derivative of logarithm",
+                    "description": "Understand and be able to use the derivative of ln x."
+                },
+                {
+                    "subtopic_id": "7m",
+                    "Specification_section_sub": "1.7m",
+                    "Sub_topic_name": "Tangents and normals",
+                    "description": "Be able to apply differentiation to find the gradient at a point on a curve and the equations of tangents and normals to a curve."
+                },
+                {
+                    "subtopic_id": "7n",
+                    "Specification_section_sub": "1.7n",
+                    "Sub_topic_name": "Stationary points",
+                    "description": "Be able to apply differentiation to find and classify stationary points on a curve as either maxima or minima."
+                },
+                {
+                    "subtopic_id": "7o",
+                    "Specification_section_sub": "1.7o",
+                    "Sub_topic_name": "Increasing and decreasing functions",
+                    "description": "Be able to identify where functions are increasing or decreasing."
+                },
+                {
+                    "subtopic_id": "7p",
+                    "Specification_section_sub": "1.7p",
+                    "Sub_topic_name": "Points of inflection",
+                    "description": "Be able to apply differentiation to find points of inflection on a curve."
+                },
+                {
+                    "subtopic_id": "7q",
+                    "Specification_section_sub": "1.7q",
+                    "Sub_topic_name": "Product and quotient rules",
+                    "description": "Be able to differentiate using the product rule and the quotient rule."
+                },
+                {
+                    "subtopic_id": "7r",
+                    "Specification_section_sub": "1.7r",
+                    "Sub_topic_name": "Chain rule",
+                    "description": "Be able to differentiate using the chain rule, including problems involving connected rates of change and inverse functions."
+                },
+                {
+                    "subtopic_id": "7s",
+                    "Specification_section_sub": "1.7s",
+                    "Sub_topic_name": "Implicit and parametric differentiation",
+                    "description": "Be able to differentiate simple functions and relations defined implicitly or parametrically for the first derivative only."
+                },
+                {
+                    "subtopic_id": "7t",
+                    "Specification_section_sub": "1.7t",
+                    "Sub_topic_name": "Differential equations",
+                    "description": "Be able to construct simple differential equations in pure mathematics and in context (contexts may include kinematics, population growth and modelling the relationship between price and demand)."
+                }
+            ]
+        },
+        {
+            "Topic_id": 8,
+            "Specification_section": "1.8",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Integration",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "8a",
+                    "Specification_section_sub": "1.8a",
+                    "Sub_topic_name": "Fundamental theorem of calculus",
+                    "description": "Know and be able to use the fundamental theorem of calculus."
+                },
+                {
+                    "subtopic_id": "8b",
+                    "Specification_section_sub": "1.8b",
+                    "Sub_topic_name": "Power rule integration",
+                    "description": "Be able to integrate xⁿ where n ≠ −1 and related sums, differences and constant multiples."
+                },
+                {
+                    "subtopic_id": "8c",
+                    "Specification_section_sub": "1.8c",
+                    "Sub_topic_name": "Standard integrals",
+                    "description": "Be able to integrate eᵏˣ, 1/x, sin kx, cos kx and related sums, differences and constant multiples."
+                },
+                {
+                    "subtopic_id": "8d",
+                    "Specification_section_sub": "1.8d",
+                    "Sub_topic_name": "Definite integrals",
+                    "description": "Be able to evaluate definite integrals."
+                },
+                {
+                    "subtopic_id": "8e",
+                    "Specification_section_sub": "1.8e",
+                    "Sub_topic_name": "Area under a curve",
+                    "description": "Be able to use a definite integral to find the area between a curve and the x-axis."
+                },
+                {
+                    "subtopic_id": "8f",
+                    "Specification_section_sub": "1.8f",
+                    "Sub_topic_name": "Area between curves",
+                    "description": "Be able to use a definite integral to find the area between two curves."
+                },
+                {
+                    "subtopic_id": "8g",
+                    "Specification_section_sub": "1.8g",
+                    "Sub_topic_name": "Integration as limit of sum",
+                    "description": "Understand and be able to use integration as the limit of a sum."
+                },
+                {
+                    "subtopic_id": "8h",
+                    "Specification_section_sub": "1.8h",
+                    "Sub_topic_name": "Integration by substitution",
+                    "description": "Be able to carry out simple cases of integration by substitution."
+                },
+                {
+                    "subtopic_id": "8i",
+                    "Specification_section_sub": "1.8i",
+                    "Sub_topic_name": "Integration by parts",
+                    "description": "Be able to carry out simple cases of integration by parts."
+                },
+                {
+                    "subtopic_id": "8j",
+                    "Specification_section_sub": "1.8j",
+                    "Sub_topic_name": "Partial fractions integration",
+                    "description": "Be able to integrate functions using partial fractions that have linear terms in the denominator."
+                },
+                {
+                    "subtopic_id": "8k",
+                    "Specification_section_sub": "1.8k",
+                    "Sub_topic_name": "Solving differential equations",
+                    "description": "Be able to evaluate the analytical solution of simple first order differential equations with separable variables, including finding particular solutions."
+                },
+                {
+                    "subtopic_id": "8l",
+                    "Specification_section_sub": "1.8l",
+                    "Sub_topic_name": "Interpreting differential equation solutions",
+                    "description": "Be able to interpret the solution of a differential equation in the context of solving a problem, including identifying limitations of the solution."
+                }
+            ]
+        },
+        {
+            "Topic_id": 9,
+            "Specification_section": "1.9",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Numerical methods",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "9a",
+                    "Specification_section_sub": "1.9a",
+                    "Sub_topic_name": "Locating roots",
+                    "description": "Be able to locate roots of f(x) = 0 by considering changes of sign of f(x) in an interval of x on which f(x) is sufficiently well-behaved."
+                },
+                {
+                    "subtopic_id": "9b",
+                    "Specification_section_sub": "1.9b",
+                    "Sub_topic_name": "Limitations of change of sign methods",
+                    "description": "Understand how change of sign methods can fail."
+                },
+                {
+                    "subtopic_id": "9c",
+                    "Specification_section_sub": "1.9c",
+                    "Sub_topic_name": "Iterative methods",
+                    "description": "Be able to solve equations approximately using simple iterative methods and be able to draw associated cobweb and staircase diagrams."
+                },
+                {
+                    "subtopic_id": "9d",
+                    "Specification_section_sub": "1.9d",
+                    "Sub_topic_name": "Newton-Raphson method",
+                    "description": "Be able to solve equations using the Newton-Raphson method and other recurrence relations of the form xₙ₊₁ = g(xₙ)."
+                },
+                {
+                    "subtopic_id": "9e",
+                    "Specification_section_sub": "1.9e",
+                    "Sub_topic_name": "Convergence and failure of numerical methods",
+                    "description": "Understand and be able to show how such methods can fail."
+                },
+                {
+                    "subtopic_id": "9f",
+                    "Specification_section_sub": "1.9f",
+                    "Sub_topic_name": "Trapezium rule",
+                    "description": "Understand and be able to use numerical integration of functions, including the use of the trapezium rule, and estimating the approximate area under a curve and the limits that it must lie between."
+                },
+                {
+                    "subtopic_id": "9g",
+                    "Specification_section_sub": "1.9g",
+                    "Sub_topic_name": "Numerical methods in context",
+                    "description": "Be able to use numerical methods to solve problems in context."
+                }
+            ]
+        },
+        {
+            "Topic_id": 10,
+            "Specification_section": "1.10",
+            "Strand": "Pure Mathematics",
+            "Topic_name": "Vectors",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "10a",
+                    "Specification_section_sub": "1.10a",
+                    "Sub_topic_name": "Vectors in two dimensions",
+                    "description": "Be able to use vectors in two dimensions."
+                },
+                {
+                    "subtopic_id": "10b",
+                    "Specification_section_sub": "1.10b",
+                    "Sub_topic_name": "Vectors in three dimensions",
+                    "description": "Be able to use vectors in three dimensions."
+                },
+                {
+                    "subtopic_id": "10c",
+                    "Specification_section_sub": "1.10c",
+                    "Sub_topic_name": "Magnitude and direction",
+                    "description": "Be able to calculate the magnitude and direction of a vector and convert between component form and magnitude/direction form."
+                },
+                {
+                    "subtopic_id": "10d",
+                    "Specification_section_sub": "1.10d",
+                    "Sub_topic_name": "Vector operations",
+                    "description": "Be able to add vectors diagrammatically and perform the algebraic operations of vector addition and multiplication by scalars and understand their geometrical interpretations."
+                },
+                {
+                    "subtopic_id": "10e",
+                    "Specification_section_sub": "1.10e",
+                    "Sub_topic_name": "Position vectors",
+                    "description": "Understand and be able to use position vectors."
+                },
+                {
+                    "subtopic_id": "10f",
+                    "Specification_section_sub": "1.10f",
+                    "Sub_topic_name": "Distance between points",
+                    "description": "Be able to calculate the distance between two points represented by position vectors."
+                },
+                {
+                    "subtopic_id": "10g",
+                    "Specification_section_sub": "1.10g",
+                    "Sub_topic_name": "Vectors in context",
+                    "description": "Be able to use vectors to solve problems in pure mathematics and in context, including forces."
+                },
+                {
+                    "subtopic_id": "10h",
+                    "Specification_section_sub": "1.10h",
+                    "Sub_topic_name": "Vectors in kinematics",
+                    "description": "Be able to use vectors to solve problems in kinematics."
+                }
+            ]
+        },
+        {
+            "Topic_id": 11,
+            "Specification_section": "2.1",
+            "Strand": "Statistics",
+            "Topic_name": "Statistical Sampling",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "11a",
+                    "Specification_section_sub": "2.1a",
+                    "Sub_topic_name": "Population and sample",
+                    "description": "Understand and be able to use the terms 'population' and 'sample'."
+                },
+                {
+                    "subtopic_id": "11b",
+                    "Specification_section_sub": "2.1b",
+                    "Sub_topic_name": "Making inferences from samples",
+                    "description": "Be able to use samples to make informal inferences about the population."
+                },
+                {
+                    "subtopic_id": "11c",
+                    "Specification_section_sub": "2.1c",
+                    "Sub_topic_name": "Sampling techniques",
+                    "description": "Understand and be able to use sampling techniques, including simple random sampling and opportunity sampling."
+                },
+                {
+                    "subtopic_id": "11d",
+                    "Specification_section_sub": "2.1d",
+                    "Sub_topic_name": "Selecting and critiquing sampling techniques",
+                    "description": "Be able to select or critique sampling techniques in the context of solving a statistical problem, including understanding that different samples can lead to different conclusions about the population."
+                }
+            ]
+        },
+        {
+            "Topic_id": 12,
+            "Specification_section": "2.2",
+            "Strand": "Statistics",
+            "Topic_name": "Data Presentation and Interpretation",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "12a",
+                    "Specification_section_sub": "2.2a",
+                    "Sub_topic_name": "Interpreting tables and diagrams",
+                    "description": "Be able to interpret tables and diagrams for single-variable data."
+                },
+                {
+                    "subtopic_id": "12b",
+                    "Specification_section_sub": "2.2b",
+                    "Sub_topic_name": "Histograms and frequency",
+                    "description": "Understand that area in a histogram represents frequency."
+                },
+                {
+                    "subtopic_id": "12c",
+                    "Specification_section_sub": "2.2c",
+                    "Sub_topic_name": "Scatter diagrams and regression",
+                    "description": "Be able to interpret scatter diagrams and regression lines for bivariate data, including recognition of scatter diagrams which include distinct sections of the population."
+                },
+                {
+                    "subtopic_id": "12d",
+                    "Specification_section_sub": "2.2d",
+                    "Sub_topic_name": "Correlation",
+                    "description": "Be able to understand informal interpretation of correlation."
+                },
+                {
+                    "subtopic_id": "12e",
+                    "Specification_section_sub": "2.2e",
+                    "Sub_topic_name": "Correlation and causation",
+                    "description": "Be able to understand that correlation does not imply causation."
+                },
+                {
+                    "subtopic_id": "12f",
+                    "Specification_section_sub": "2.2f",
+                    "Sub_topic_name": "Measures of central tendency and variation",
+                    "description": "Be able to calculate and interpret measures of central tendency and variation, including mean, median, mode, percentile, quartile, inter-quartile range, standard deviation and variance."
+                },
+                {
+                    "subtopic_id": "12g",
+                    "Specification_section_sub": "2.2g",
+                    "Sub_topic_name": "Calculating mean and standard deviation",
+                    "description": "Be able to calculate mean and standard deviation from a list of data, from summary statistics or from a frequency distribution, using calculator statistical functions."
+                },
+                {
+                    "subtopic_id": "12h",
+                    "Specification_section_sub": "2.2h",
+                    "Sub_topic_name": "Outliers",
+                    "description": "Recognise and be able to interpret possible outliers in data sets and statistical diagrams."
+                },
+                {
+                    "subtopic_id": "12i",
+                    "Specification_section_sub": "2.2i",
+                    "Sub_topic_name": "Selecting data presentation techniques",
+                    "description": "Be able to select or critique data presentation techniques in the context of a statistical problem."
+                },
+                {
+                    "subtopic_id": "12j",
+                    "Specification_section_sub": "2.2j",
+                    "Sub_topic_name": "Cleaning data",
+                    "description": "Be able to clean data, including dealing with missing data, errors and outliers."
+                }
+            ]
+        },
+        {
+            "Topic_id": 13,
+            "Specification_section": "2.3",
+            "Strand": "Statistics",
+            "Topic_name": "Probability",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "13a",
+                    "Specification_section_sub": "2.3a",
+                    "Sub_topic_name": "Mutually exclusive and independent events",
+                    "description": "Understand and be able to use mutually exclusive and independent events when calculating probabilities."
+                },
+                {
+                    "subtopic_id": "13b",
+                    "Specification_section_sub": "2.3b",
+                    "Sub_topic_name": "Diagrams for probability",
+                    "description": "Be able to use appropriate diagrams to assist in the calculation of probabilities."
+                },
+                {
+                    "subtopic_id": "13c",
+                    "Specification_section_sub": "2.3c",
+                    "Sub_topic_name": "Conditional probability",
+                    "description": "Understand and be able to use conditional probability, including the use of tree diagrams, Venn diagrams and two-way tables."
+                },
+                {
+                    "subtopic_id": "13d",
+                    "Specification_section_sub": "2.3d",
+                    "Sub_topic_name": "Calculating conditional probability",
+                    "description": "Understand the concept of conditional probability and calculate it from first principles in given contexts."
+                },
+                {
+                    "subtopic_id": "13e",
+                    "Specification_section_sub": "2.3e",
+                    "Sub_topic_name": "Modelling with probability",
+                    "description": "Be able to model with probability, including critiquing assumptions made and the likely effect of more realistic assumptions."
+                }
+            ]
+        },
+        {
+            "Topic_id": 14,
+            "Specification_section": "2.4",
+            "Strand": "Statistics",
+            "Topic_name": "Statistical Distributions",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "14a",
+                    "Specification_section_sub": "2.4a",
+                    "Sub_topic_name": "Discrete probability distributions",
+                    "description": "Understand and be able to use simple, finite, discrete probability distributions, defined in the form of a table or a formula such as: P(X = x) = 0.05x(x + 1) for x = 1, 2, 3."
+                },
+                {
+                    "subtopic_id": "14b",
+                    "Specification_section_sub": "2.4b",
+                    "Sub_topic_name": "Binomial distribution",
+                    "description": "Understand and be able to use the binomial distribution as a model."
+                },
+                {
+                    "subtopic_id": "14c",
+                    "Specification_section_sub": "2.4c",
+                    "Sub_topic_name": "Calculating binomial probabilities",
+                    "description": "Be able to calculate probabilities using the binomial distribution, using appropriate calculator functions."
+                },
+                {
+                    "subtopic_id": "14d",
+                    "Specification_section_sub": "2.4d",
+                    "Sub_topic_name": "Normal approximation to binomial",
+                    "description": "Know and be able to use the formulae μ = np and σ² = npq when choosing a particular normal model to use as an approximation to a binomial model."
+                },
+                {
+                    "subtopic_id": "14e",
+                    "Specification_section_sub": "2.4e",
+                    "Sub_topic_name": "Normal distribution",
+                    "description": "Understand and be able to use the normal distribution as a model."
+                },
+                {
+                    "subtopic_id": "14f",
+                    "Specification_section_sub": "2.4f",
+                    "Sub_topic_name": "Finding normal probabilities",
+                    "description": "Be able to find probabilities using the normal distribution, using appropriate calculator functions."
+                },
+                {
+                    "subtopic_id": "14g",
+                    "Specification_section_sub": "2.4g",
+                    "Sub_topic_name": "Histograms and normal distribution",
+                    "description": "Understand links to histograms, mean and standard deviation."
+                },
+                {
+                    "subtopic_id": "14h",
+                    "Specification_section_sub": "2.4h",
+                    "Sub_topic_name": "Selecting appropriate distributions",
+                    "description": "Be able to select an appropriate probability distribution for a context, with appropriate reasoning, including recognising when the binomial or normal model may not be appropriate."
+                }
+            ]
+        },
+        {
+            "Topic_id": 15,
+            "Specification_section": "2.5",
+            "Strand": "Statistics",
+            "Topic_name": "Statistical Hypothesis Testing",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "15a",
+                    "Specification_section_sub": "2.5a",
+                    "Sub_topic_name": "Language of hypothesis testing",
+                    "description": "Understand and be able to use the language of statistical hypothesis testing, developed through a binomial model: null hypothesis, alternative hypothesis, significance level, test statistic, 1-tail test, 2-tail test, critical value, critical region, acceptance region, p-value."
+                },
+                {
+                    "subtopic_id": "15b",
+                    "Specification_section_sub": "2.5b",
+                    "Sub_topic_name": "Binomial hypothesis tests",
+                    "description": "Be able to conduct a statistical hypothesis test for the proportion in the binomial distribution and interpret the results in context."
+                },
+                {
+                    "subtopic_id": "15c",
+                    "Specification_section_sub": "2.5c",
+                    "Sub_topic_name": "Sample and population inference",
+                    "description": "Understand that a sample is being used to make an inference about the population and appreciate that the significance level is the probability of incorrectly rejecting the null hypothesis."
+                },
+                {
+                    "subtopic_id": "15d",
+                    "Specification_section_sub": "2.5d",
+                    "Sub_topic_name": "Sample mean as random variable",
+                    "description": "Recognise that a sample mean, X̄, can be regarded as a random variable."
+                },
+                {
+                    "subtopic_id": "15e",
+                    "Specification_section_sub": "2.5e",
+                    "Sub_topic_name": "Hypothesis tests for normal distribution mean",
+                    "description": "Be able to conduct a statistical hypothesis test for the mean of a normal distribution with known, given or assumed variance and interpret the results in context."
+                },
+                {
+                    "subtopic_id": "15f",
+                    "Specification_section_sub": "2.5f",
+                    "Sub_topic_name": "Pearson's correlation coefficient",
+                    "description": "Understand Pearson's product-moment correlation coefficient as a measure of how close data points lie to a straight line."
+                },
+                {
+                    "subtopic_id": "15g",
+                    "Specification_section_sub": "2.5g",
+                    "Sub_topic_name": "Hypothesis tests for correlation",
+                    "description": "Use and be able to interpret Pearson's product-moment correlation coefficient in hypothesis tests, using either a given critical value or a p-value and a table of critical values."
+                }
+            ]
+        },
+        {
+            "Topic_id": 16,
+            "Specification_section": "3.1",
+            "Strand": "Mechanics",
+            "Topic_name": "Quantities and Units in Mechanics",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "16a",
+                    "Specification_section_sub": "3.1a",
+                    "Sub_topic_name": "SI fundamental quantities and units",
+                    "description": "Understand and be able to use the fundamental quantities and units in the S.I. system: length (in metres), time (in seconds), mass (in kilograms)."
+                },
+                {
+                    "subtopic_id": "16b",
+                    "Specification_section_sub": "3.1b",
+                    "Sub_topic_name": "Derived quantities and units",
+                    "description": "Understand and be able to use derived quantities and units: velocity (m/s or m s⁻¹), acceleration (m/s² or m s⁻²), force (N), weight (N)."
+                },
+                {
+                    "subtopic_id": "16c",
+                    "Specification_section_sub": "3.1c",
+                    "Sub_topic_name": "Moment",
+                    "description": "Understand and be able to use the unit for moment (N m)."
+                }
+            ]
+        },
+        {
+            "Topic_id": 17,
+            "Specification_section": "3.2",
+            "Strand": "Mechanics",
+            "Topic_name": "Kinematics",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "17a",
+                    "Specification_section_sub": "3.2a",
+                    "Sub_topic_name": "Language of kinematics",
+                    "description": "Understand and be able to use the language of kinematics: position, displacement, distance, distance travelled, velocity, speed, acceleration, equation of motion."
+                },
+                {
+                    "subtopic_id": "17b",
+                    "Specification_section_sub": "3.2b",
+                    "Sub_topic_name": "Kinematics graphs",
+                    "description": "Understand, use and interpret graphs in kinematics for motion in a straight line."
+                },
+                {
+                    "subtopic_id": "17c",
+                    "Specification_section_sub": "3.2c",
+                    "Sub_topic_name": "Displacement-time and velocity-time graphs",
+                    "description": "Be able to interpret displacement-time and velocity-time graphs, and in particular understand and be able to use the facts that the gradient of a displacement-time graph represents the velocity, the gradient of a velocity-time graph represents the acceleration, and the area between the graph and the time axis for a velocity-time graph represents the displacement."
+                },
+                {
+                    "subtopic_id": "17d",
+                    "Specification_section_sub": "3.2d",
+                    "Sub_topic_name": "Constant acceleration formulae",
+                    "description": "Understand, use and derive the formulae for constant acceleration for motion in a straight line: v = u + at, s = ut + ½at², s = ½(u + v)t, v² = u² + 2as, s = vt − ½at²"
+                },
+                {
+                    "subtopic_id": "17e",
+                    "Specification_section_sub": "3.2e",
+                    "Sub_topic_name": "Two-dimensional motion with vectors",
+                    "description": "Be able to extend the constant acceleration formulae to motion in two dimensions using vectors."
+                },
+                {
+                    "subtopic_id": "17f",
+                    "Specification_section_sub": "3.2f",
+                    "Sub_topic_name": "Differentiation and integration in kinematics",
+                    "description": "Be able to use differentiation and integration with respect to time in one dimension to solve simple problems concerning the displacement, velocity and acceleration of a particle."
+                },
+                {
+                    "subtopic_id": "17g",
+                    "Specification_section_sub": "3.2g",
+                    "Sub_topic_name": "Vectors in kinematics",
+                    "description": "Be able to extend the application of differentiation and integration to two dimensions using vectors."
+                },
+                {
+                    "subtopic_id": "17h",
+                    "Specification_section_sub": "3.2h",
+                    "Sub_topic_name": "Motion under gravity",
+                    "description": "Be able to model motion under gravity in a vertical plane using vectors."
+                },
+                {
+                    "subtopic_id": "17i",
+                    "Specification_section_sub": "3.2i",
+                    "Sub_topic_name": "Projectile motion",
+                    "description": "Be able to model the motion of a projectile as a particle moving with constant acceleration and understand the limitation of this model."
+                }
+            ]
+        },
+        {
+            "Topic_id": 18,
+            "Specification_section": "3.3",
+            "Strand": "Mechanics",
+            "Topic_name": "Forces and Newton's laws",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "18a",
+                    "Specification_section_sub": "3.3a",
+                    "Sub_topic_name": "Concept of force",
+                    "description": "Understand the concept and vector nature of a force."
+                },
+                {
+                    "subtopic_id": "18b",
+                    "Specification_section_sub": "3.3b",
+                    "Sub_topic_name": "Newton's first law",
+                    "description": "Understand and be able to use Newton's first law."
+                },
+                {
+                    "subtopic_id": "18c",
+                    "Specification_section_sub": "3.3c",
+                    "Sub_topic_name": "Newton's second law - one dimension",
+                    "description": "Understand and be able to use Newton's second law (F = ma) for motion in a straight line for bodies of constant mass moving under the action of constant forces."
+                },
+                {
+                    "subtopic_id": "18d",
+                    "Specification_section_sub": "3.3d",
+                    "Sub_topic_name": "Newton's second law - two dimensions",
+                    "description": "Understand and be able to use Newton's second law (F = ma) in simple cases of forces given as two dimensional vectors."
+                },
+                {
+                    "subtopic_id": "18e",
+                    "Specification_section_sub": "3.3e",
+                    "Sub_topic_name": "Resolving forces",
+                    "description": "Be able to extend use of Newton's second law to situations where forces need to be resolved (restricted to two dimensions)."
+                },
+                {
+                    "subtopic_id": "18f",
+                    "Specification_section_sub": "3.3f",
+                    "Sub_topic_name": "Weight and gravity",
+                    "description": "Understand and be able to use the weight (W = mg) of a body to model the motion in a straight line under gravity."
+                },
+                {
+                    "subtopic_id": "18g",
+                    "Specification_section_sub": "3.3g",
+                    "Sub_topic_name": "Gravitational acceleration",
+                    "description": "Understand the gravitational acceleration, g, and its value in S.I. units to varying degrees of accuracy."
+                },
+                {
+                    "subtopic_id": "18h",
+                    "Specification_section_sub": "3.3h",
+                    "Sub_topic_name": "Newton's third law",
+                    "description": "Understand and be able to use Newton's third law."
+                },
+                {
+                    "subtopic_id": "18i",
+                    "Specification_section_sub": "3.3i",
+                    "Sub_topic_name": "Normal reaction force",
+                    "description": "Understand and be able to use the concept of a normal reaction force."
+                },
+                {
+                    "subtopic_id": "18j",
+                    "Specification_section_sub": "3.3j",
+                    "Sub_topic_name": "Smooth contact model",
+                    "description": "Be able to use the model of a 'smooth' contact and understand the limitations of the model."
+                },
+                {
+                    "subtopic_id": "18k",
+                    "Specification_section_sub": "3.3k",
+                    "Sub_topic_name": "Equilibrium and connected particles",
+                    "description": "Be able to use the concept of equilibrium together with one dimensional motion in a straight line to solve problems that involve connected particles and smooth pulleys."
+                },
+                {
+                    "subtopic_id": "18l",
+                    "Specification_section_sub": "3.3l",
+                    "Sub_topic_name": "Resolving in two dimensions",
+                    "description": "Be able to extend use of Newton's third law to situations where forces need to be resolved (restricted to two dimensions)."
+                },
+                {
+                    "subtopic_id": "18m",
+                    "Specification_section_sub": "3.3m",
+                    "Sub_topic_name": "Equilibrium principle",
+                    "description": "Be able to use the principle that a particle is in equilibrium if and only if the sum of the resolved parts in a given direction is zero."
+                },
+                {
+                    "subtopic_id": "18n",
+                    "Specification_section_sub": "3.3n",
+                    "Sub_topic_name": "Equilibrium in two dimensions",
+                    "description": "Be able to solve problems involving simple cases of equilibrium of forces on a particle in two dimensions using vectors, including connected particles and smooth pulleys."
+                }
+            ]
+        },
+        {
+            "Topic_id": 19,
+            "Specification_section": "3.4",
+            "Strand": "Mechanics",
+            "Topic_name": "Moments",
+            "Sub_topics": [
+                {
+                    "subtopic_id": "19a",
+                    "Specification_section_sub": "3.4a",
+                    "Sub_topic_name": "Calculating moments of a force",
+                    "description": "Be able to calculate the moment of a force about an axis through a point in the plane of the body."
+                },
+                {
+                    "subtopic_id": "19b",
+                    "Specification_section_sub": "3.4b",
+                    "Sub_topic_name": "Rigid body equilibrium",
+                    "description": "Understand that when a rigid body is in equilibrium the resultant moment is zero and the resultant force is zero."
+                },
+                {
+                    "subtopic_id": "19c",
+                    "Specification_section_sub": "3.4c",
+                    "Sub_topic_name": "Moments in static contexts",
+                    "description": "Be able to use moments in simple static contexts."
+                }
+            ]
+        }
+    ]
+}

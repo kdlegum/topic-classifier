@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Parsed text files and specifications
+classifiertest.ipynb
+extracted_content.txt
+*.pdf
+Pure_Mathematics_Sections_1.1-1.10.md
+subtopics_index.json
+
+
