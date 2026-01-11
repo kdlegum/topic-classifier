@@ -7,6 +7,10 @@ import json
 import time
 import uuid
 import datetime
+from sessionDatabase import Session as DBSess, Question as DBQuestion, ClassificationResult as DBClassificationResult
+from sqlmodel import Session, create_engine
+
+engine = create_engine("sqlite:///exam_app.db")
 
 
 app = FastAPI()
@@ -73,7 +77,7 @@ def classify_questions(req: classificationRequest):
     best_sub_topic = np.argmax(similarities_sub_topics, axis=0)
     confidences = np.max(similarities_sub_topics, axis=0)
     subTopicIds = [subTopicIds[i] for i in best_sub_topic]
-    best_sub_topic_keys = np.array([f"{req.ExamBoard}_{req.SpecCode}_{subTopicIds[i]}" for i in range(len(subTopicIds))])
+    best_sub_topic_keys = [f"{req.ExamBoard}_{req.SpecCode}_{subTopicIds[i]}" for i in range(len(subTopicIds))]
 
     """
     Want to make a json structure like:
@@ -108,16 +112,54 @@ def classify_questions(req: classificationRequest):
                 "confidence": round(float(confidences[i]), 4)
 
             })  
-            
-    #Do: store in DB
-    #dbID = id
-    #id += 1
-    #created_at = datetime.utcnow()
+
+    # Store in DB
+    session_id = str(uuid.uuid4())
+
+    with Session(engine) as session:
+
+        # Add session to DB
+        db_session = DBSess(
+            session_id=session_id,
+            exam_board=req.ExamBoard,
+            subject=req.SpecCode
+        )
+        session.add(db_session)
+        session.commit()
+        session.refresh(db_session)
+
+
+        # Add questions and classification results to DB
+        for i in range(len(req.question_text)):
+            db_question = DBQuestion(
+                session_id=db_session.session_id,
+                question_number=str(i+1),
+                question_text=req.question_text[i]
+            )
+            session.add(db_question)
+            session.commit()
+            session.refresh(db_question)
+
+            k = best_sub_topic_keys[i]
+            if k not in subtopics_index:
+                continue
+            subtopic_info = subtopics_index[k]
+
+            db_classification = DBClassificationResult(
+                question_id=str(db_question.id),
+                strand=subtopic_info["strand"],
+                topic=subtopic_info["topic_name"],
+                subtopic=subtopic_info["name"],
+                spec_sub_section=subtopic_info["spec_sub_section"],
+                confidence=float(round(float(confidences[i]), 4))
+            )
+            session.add(db_classification)
+            session.commit()
     
 
 
     result = {
-        "session_id": str(uuid.uuid4()),
+        "session_id": session_id,
         "results": resultList,
     }
 
