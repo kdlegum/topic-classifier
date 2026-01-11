@@ -10,6 +10,9 @@ app = FastAPI()
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
+class classificationRequest(BaseModel):
+    questions: List[str]
+
 f = open("topics.json", "r", encoding="utf-8")
 topics = json.load(f)
 topicList = topics["Topics"]
@@ -25,10 +28,10 @@ def encode_text(text: str):
     return model.encode([text]).tolist()
 
 
-@app.get("/similarity/")
-def compute_similarity(q: List[str] = Query(...)):
+@app.post("/similarity/")
+def compute_similarity(req: classificationRequest):
     t0 = time.time()
-    embed1 = model.encode(q)
+    embed1 = model.encode(req.questions)
     similarity = model.similarity(sub_topics_embed, embed1)
-    print(f"Computed similarity for {len(q)} questions in {time.time() - t0:.2f} seconds")
+    print(f"Computed similarity for {len(req.questions)} questions in {time.time() - t0:.2f} seconds")
     return similarity.tolist()

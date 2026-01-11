@@ -2,7 +2,6 @@
 import numpy as np
 import json
 import requests
-from urllib.parse import urlencode
 import time
 """
 Input: Question Text + Topic List
@@ -13,9 +12,7 @@ Model
 
 t0 = time.time()
 def findSimilarity(questions):
-    params = [("q", q) for q in questions]
-    query_string = urlencode(params)
-    response = requests.get(f"http://127.0.0.1:8000/similarity/?{query_string}")
+    response = requests.post(f"http://127.0.0.1:8000/similarity/", json={"questions": questions})
     return response.json()
 
 def classify_questions(question_text):
