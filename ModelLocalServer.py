@@ -34,6 +34,14 @@ for t in topicList:
         subTopicNames.append(s["description"])
 sub_topics_embed = model.encode(subTopicNames)
 
+h = open("topics.json", "r", encoding="utf-8")
+topics = json.load(h)
+topicList = topics["Topics"]
+subTopicIds = []
+for t in topicList:
+    for s in t["Sub_topics"]:
+        subTopicIds.append(s["subtopic_id"])
+
 g = open("subtopics_index.json", "r", encoding="utf-8")
 subtopics_index = json.load(g)
 
@@ -64,20 +72,14 @@ def classify_questions(req: classificationRequest):
         An array of best matching sub-topic keys for each question for subtopics_index.json
 
     """
-    f = open("topics.json", "r", encoding="utf-8")
-    topics = json.load(f)
-    topicList = topics["Topics"]
-    subTopicIds = []
-    for t in topicList:
-        for s in t["Sub_topics"]:
-            subTopicIds.append(s["subtopic_id"])
+    
     
 
     similarities_sub_topics = compute_similarity(similarityRequest(questions=req.question_text))
     best_sub_topic = np.argmax(similarities_sub_topics, axis=0)
     confidences = np.max(similarities_sub_topics, axis=0)
-    subTopicIds = [subTopicIds[i] for i in best_sub_topic]
-    best_sub_topic_keys = [f"{req.ExamBoard}_{req.SpecCode}_{subTopicIds[i]}" for i in range(len(subTopicIds))]
+    matched_sub_topic_ids = [subTopicIds[i] for i in best_sub_topic]
+    best_sub_topic_keys = [f"{req.ExamBoard}_{req.SpecCode}_{matched_sub_topic_ids[i]}" for i in range(len(matched_sub_topic_ids))]
 
     """
     Want to make a json structure like:
@@ -97,7 +99,8 @@ def classify_questions(req: classificationRequest):
 
     """
     resultList = []
-    for i in range(len(best_sub_topic_keys)):
+    session_id = str(uuid.uuid4())
+    """for i in range(len(best_sub_topic_keys)):
         j = best_sub_topic_keys[i]
         if j not in subtopics_index:
             j = None
@@ -111,10 +114,9 @@ def classify_questions(req: classificationRequest):
                 "spec_sub_section": k["spec_sub_section"],
                 "confidence": round(float(confidences[i]), 4)
 
-            })  
+            })  """
 
     # Store in DB
-    session_id = str(uuid.uuid4())
 
     with Session(engine) as session:
 
@@ -125,40 +127,47 @@ def classify_questions(req: classificationRequest):
             subject=req.SpecCode
         )
         session.add(db_session)
-        session.commit()
-        session.refresh(db_session)
+        session.flush()
 
+        questions = []
+        classifications = []
 
         # Add questions and classification results to DB
-        for i in range(len(req.question_text)):
+        for i, question_text in enumerate(req.question_text):
             db_question = DBQuestion(
                 session_id=db_session.session_id,
                 question_number=str(i+1),
-                question_text=req.question_text[i]
+                question_text=question_text
             )
+            questions.append(db_question)
             session.add(db_question)
-            session.commit()
-            session.refresh(db_question)
+            session.flush()
 
             k = best_sub_topic_keys[i]
-            print(f"Looking for key: {k}")
-            print(f"Available keys sample: {list(subtopics_index.keys())[:5]}")
             if k not in subtopics_index:
-                print(f"Key {k} not found in subtopics_index")
                 continue
-            subtopic_info = subtopics_index[k]
+            info = subtopics_index[k]
 
             db_classification = DBClassificationResult(
-                question_id=str(db_question.id),
-                strand=subtopic_info["strand"],
-                topic=subtopic_info["topic_name"],
-                subtopic=subtopic_info["name"],
-                spec_sub_section=subtopic_info["spec_sub_section"],
+                question_id=db_question.id,
+                strand=info["strand"],
+                topic=info["topic_name"],
+                subtopic=info["name"],
+                spec_sub_section=info["spec_sub_section"],
                 confidence=float(round(float(confidences[i]), 4))
             )
-            session.add(db_classification)
-            session.commit()
-    
+            classifications.append(db_classification)
+
+            resultList.append({
+                "question_number": i+1,
+                "strand": info["strand"],
+                "topic": info["topic_name"],
+                "subtopic": info["name"],
+                "spec_sub_section": info["spec_sub_section"],
+                "confidence": round(float(confidences[i]), 4)})
+        session.add_all(questions)
+        session.add_all(classifications)
+        session.commit()
 
 
     result = {

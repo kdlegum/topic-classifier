@@ -19,7 +19,7 @@ class Question(SQLModel, table=True):
 
 class ClassificationResult(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
-    question_id: str = Field(foreign_key="question.id")
+    question_id: int = Field(foreign_key="question.id")
     strand: str
     topic: str
     subtopic: str
