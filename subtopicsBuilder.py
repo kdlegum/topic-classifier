@@ -24,7 +24,7 @@ def build_subtopics_index(specs: list[dict]) -> dict:
                 spec_sub = sub.get("Specification_section_sub")
 
                 # Make the key globally unique across specs
-                key = f"{exam_board}_{specification}_{spec_sub}"
+                key = f"{exam_board}_{specification}_{sub.get('subtopic_id')}"
 
                 if key in index:
                     raise ValueError(f"Duplicate sub-topic key detected: {key}")
