@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List
@@ -8,7 +8,7 @@ import time
 import uuid
 import datetime
 from sessionDatabase import Session as DBSess, Question as DBQuestion, ClassificationResult as DBClassificationResult
-from sqlmodel import Session, create_engine
+from sqlmodel import Session, create_engine, select
 
 engine = create_engine("sqlite:///exam_app.db")
 
@@ -141,7 +141,10 @@ def classify_questions(req: classificationRequest):
             session.refresh(db_question)
 
             k = best_sub_topic_keys[i]
+            print(f"Looking for key: {k}")
+            print(f"Available keys sample: {list(subtopics_index.keys())[:5]}")
             if k not in subtopics_index:
+                print(f"Key {k} not found in subtopics_index")
                 continue
             subtopic_info = subtopics_index[k]
 
@@ -166,4 +169,18 @@ def classify_questions(req: classificationRequest):
 
     return result
 
+@app.get("/session/{session_id}/")
+def get_session(session_id: str):
+    with Session(engine) as session:
+        db_session = session.exec(select(DBSess).where(DBSess.session_id == session_id)).first()
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
 
+        questions = session.exec(select(DBQuestion).where(DBQuestion.session_id == session_id)).all()
+        classifications = session.exec(select(DBClassificationResult).where(DBClassificationResult.question_id.in_([str(q.id) for q in questions]))).all()
+
+        return {
+            "session": db_session,
+            "questions": questions,
+            "classifications": classifications
+        }

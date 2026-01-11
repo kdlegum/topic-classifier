@@ -18,6 +18,11 @@ def classify_questions(question_text, ExamBoard, SpecCode):
     response = requests.post(f"http://127.0.0.1:8000/classify/", json={"question_text": question_text, "ExamBoard": ExamBoard,"SpecCode": SpecCode})
     return response.json()
 
-print(classify_questions(["Explain the connection between the expression in part bi and the binomial expansion of (0.7 + 0.3)^n for a specific value of n which should be stated.",
-                          "The masses, M grams, of bags of flour are modelled by the distribution N(1002, 2.25). Find P(1000 < M < 1005)."],
-                          "OCR", "H240"))
+def get_session(session_id):
+    response = requests.get(f"http://127.0.0.1:8000/session/{session_id}/")
+    return response.json()
+
+questions = ["What is the derivative of sin(x)?",
+             "Use the binomial theorem to expand (1 + x)^n for a specific value of n which should be stated."]
+api_response = classify_questions(questions, "OCR", "H240")
+print(get_session(api_response["session_id"]))
