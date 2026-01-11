@@ -5,6 +5,9 @@ from typing import List
 import numpy as np
 import json
 import time
+import uuid
+import datetime
+
 
 app = FastAPI()
 
@@ -29,6 +32,8 @@ sub_topics_embed = model.encode(subTopicNames)
 
 g = open("subtopics_index.json", "r", encoding="utf-8")
 subtopics_index = json.load(g)
+
+id = 0
 
 @app.get("/encode/")
 def encode_text(text: str):
@@ -95,7 +100,7 @@ def classify_questions(req: classificationRequest):
         else:
             k = subtopics_index[j]
             resultList.append({
-                "questionID": i+1,
+                "question_number": i+1,
                 "strand": k["strand"],
                 "topic": k["topic_name"],
                 "subtopic": k["name"],
@@ -103,11 +108,17 @@ def classify_questions(req: classificationRequest):
                 "confidence": round(float(confidences[i]), 4)
 
             })  
+            
+    #Do: store in DB
+    #dbID = id
+    #id += 1
+    #created_at = datetime.utcnow()
+    
 
 
     result = {
-        "session_id": None,
-        "results": resultList
+        "session_id": str(uuid.uuid4()),
+        "results": resultList,
     }
 
 
