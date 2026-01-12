@@ -47,11 +47,11 @@ The response includes:
       - Each prediction has `rank`, `strand`, `topic`, `subtopic`, `spec_sub_section`, `similarity_score`, `description`
 
 Example (abbreviated):
-
+```JSON
 {
   "session_id": "f3a2b4c5",
   "exam_board": "OCR",
-  "subject": "A_LEVEL_MATHS",
+  "subject": "H240",
   "model_name": "sentence-transformer-v1",
   "created_at": "2026-01-12T15:32:11Z",
   "questions": [
@@ -67,7 +67,7 @@ Example (abbreviated):
       "predictions": [
         {
           "rank": 1,
-          "strand": "Calculus",
+          "strand": "Pure Mathematics",
           "topic": "Differentiation",
           "subtopic": "Product rule",
           "spec_sub_section": "3.2.1",
@@ -77,7 +77,7 @@ Example (abbreviated):
     }
   ]
 }
-
+```
 ---
 
 ## Technology Stack
@@ -92,7 +92,7 @@ Frontend: Simple HTML + JavaScript
 ## Getting Started
 
 1. Clone the repo:  
-git clone https://github.com/yourusername/exam-paper-ai.git  
+git clone https://github.com/kdlegum/topic-classifier.git  
 cd exam-paper-ai
 
 2. Install dependencies:  
