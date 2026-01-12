@@ -22,10 +22,14 @@ document.getElementById('submit_question_button').addEventListener('click', asyn
     var sessionID = await getSessionID(questionText);
     //console.log(sessionID);
     var results = await getClassificatinonResults(sessionID);
-    results = results.classifications[0];
+
+    
+
+
+    results = results.questions[0].predictions;
     //console.log(results[0]);
-    var responseText = `${results.strand} -> ${results.topic} -> ${results.subtopic} (Confidence: ${results.confidence.toFixed(4)})`;
+    var responseText = JSON.stringify(results, null, 2);
     document.getElementById('response_paragraph').innerText = responseText;
-    document.getElementById('description_paragraph').innerText = results.description;
+    //document.getElementById('description_paragraph').innerText = results.description;
 
 });

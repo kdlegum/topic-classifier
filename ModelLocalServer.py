@@ -1,19 +1,30 @@
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
-from typing import List
+from typing import List, Optional
 import numpy as np
 import json
 import time
 import uuid
 import datetime
-from sessionDatabase import Session as DBSess, Question as DBQuestion, ClassificationResult as DBClassificationResult
+from sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction
 from sqlmodel import Session, create_engine, select
+from fastapi.middleware.cors import CORSMiddleware
+
 
 engine = create_engine("sqlite:///exam_app.db")
-
+debug = False
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],     # allow all origins
+    allow_methods=["*"],     # allow POST, GET, OPTIONS, etc.
+    allow_headers=["*"],     # allow Content-Type, Authorization, etc.
+)
+
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -24,14 +35,16 @@ class classificationRequest(BaseModel):
     question_text: List[str]
     ExamBoard: str
     SpecCode: str
+    num_predictions: Optional[int] = 3
 
 f = open("topics.json", "r", encoding="utf-8")
 topics = json.load(f)
 topicList = topics["Topics"]
 subTopicNames = []
 for t in topicList:
+    topicName = t["Topic_name"]
     for s in t["Sub_topics"]:
-        subTopicNames.append(s["description"])
+        subTopicNames.append(topicName + ". " + s["description"])
 sub_topics_embed = model.encode(subTopicNames)
 
 h = open("topics.json", "r", encoding="utf-8")
@@ -46,6 +59,19 @@ g = open("subtopics_index.json", "r", encoding="utf-8")
 subtopics_index = json.load(g)
 
 id = 0
+
+def compute_margin(preds: list[DBPrediction]) -> float:
+    if len(preds) < 2:
+        return 0.0
+    return round(preds[0].similarity_score - preds[1].similarity_score, 4)
+
+def confidence_status(margin: float) -> str:
+    if margin >= 0.15:
+        return "high"
+    if margin >= 0.08:
+        return "medium"
+    return "low"
+
 
 @app.get("/encode/")
 def encode_text(text: str):
@@ -63,133 +89,198 @@ def compute_similarity(req: similarityRequest):
 @app.post("/classify/")
 def classify_questions(req: classificationRequest):
     """
-    Classify a list of questions to its best matching sub-topic.
-    
-    Args:
-        question_text: An array of question strings
-    
-    Returns:
-        An array of best matching sub-topic keys for each question for subtopics_index.json
-
+    Classify a list of questions and store top-k predictions in the DB.
     """
-    
-    
+    similarities = np.array(
+        compute_similarity(similarityRequest(questions=req.question_text))
+    )
 
-    similarities_sub_topics = compute_similarity(similarityRequest(questions=req.question_text))
-    best_sub_topic = np.argmax(similarities_sub_topics, axis=0)
-    confidences = np.max(similarities_sub_topics, axis=0)
-    matched_sub_topic_ids = [subTopicIds[i] for i in best_sub_topic]
-    best_sub_topic_keys = [f"{req.ExamBoard}_{req.SpecCode}_{matched_sub_topic_ids[i]}" for i in range(len(matched_sub_topic_ids))]
+    num_questions = similarities.shape[1]
+    k = req.num_predictions or 3
 
-    """
-    Want to make a json structure like:
-    {
-  "session_id": "f3a2...",
-  "results": [
-    {
-      "question_number": int,
-      "strand": str,
-      "topic": str,
-      "subtopic": str,
-      "spec_sub_section": str,
-      "confidence": float
-    }
-  ]
-}
+  
+    topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
 
-    """
-    resultList = []
     session_id = str(uuid.uuid4())
-    """for i in range(len(best_sub_topic_keys)):
-        j = best_sub_topic_keys[i]
-        if j not in subtopics_index:
-            j = None
-        else:
-            k = subtopics_index[j]
-            resultList.append({
-                "question_number": i+1,
-                "strand": k["strand"],
-                "topic": k["topic_name"],
-                "subtopic": k["name"],
-                "spec_sub_section": k["spec_sub_section"],
-                "confidence": round(float(confidences[i]), 4)
+    results = []
 
-            })  """
-
-    # Store in DB
-
-    with Session(engine) as session:
-
-        # Add session to DB
+    with Session(engine) as db:
         db_session = DBSess(
             session_id=session_id,
             exam_board=req.ExamBoard,
             subject=req.SpecCode
         )
-        session.add(db_session)
-        session.flush()
+        db.add(db_session)
 
-        questions = []
-        classifications = []
-
-        # Add questions and classification results to DB
-        for i, question_text in enumerate(req.question_text):
+        for q_idx, question_text in enumerate(req.question_text):
+         
             db_question = DBQuestion(
-                session_id=db_session.session_id,
-                question_number=str(i+1),
+                session_id=session_id,
+                question_number=str(q_idx + 1),
                 question_text=question_text
             )
-            questions.append(db_question)
-            session.add(db_question)
-            session.flush()
+            db.add(db_question)
+            db.flush()  # Needed to get db_question.id
 
-            k = best_sub_topic_keys[i]
-            if k not in subtopics_index:
-                continue
-            info = subtopics_index[k]
+            question_results = []
 
-            db_classification = DBClassificationResult(
-                question_id=db_question.id,
-                strand=info["strand"],
-                topic=info["topic_name"],
-                subtopic=info["name"],
-                spec_sub_section=info["spec_sub_section"],
-                confidence=float(round(float(confidences[i]), 4))
-            )
-            classifications.append(db_classification)
+            for rank, subtopic_idx in enumerate(topk_indices[:, q_idx], start=1):
+                subtopic_id = subTopicIds[subtopic_idx]
+                key = f"{req.ExamBoard}_{req.SpecCode}_{subtopic_id}"
 
-            resultList.append({
-                "question_number": i+1,
-                "strand": info["strand"],
-                "topic": info["topic_name"],
-                "subtopic": info["name"],
-                "spec_sub_section": info["spec_sub_section"],
-                "confidence": round(float(confidences[i]), 4)})
-        session.add_all(questions)
-        session.add_all(classifications)
-        session.commit()
+                if key not in subtopics_index:
+                    continue
 
+                info = subtopics_index[key]
+                similarity_score = float(round(similarities[subtopic_idx, q_idx], 4))
 
-    result = {
+                db_prediction = DBPrediction(
+                    question_id=db_question.id,
+                    rank=rank,
+                    strand=info["strand"],
+                    topic=info["topic_name"],
+                    subtopic=info["name"],
+                    spec_sub_section=info["spec_sub_section"],
+                    description=info["description"],
+                    similarity_score=similarity_score
+                )
+
+                db.add(db_prediction)
+
+                if rank == 1:
+                    question_results.append({
+                        "question_number": q_idx + 1,
+                        "question_id": db_question.id,
+                        "strand": info["strand"],
+                        "topic": info["topic_name"],
+                        "subtopic": info["name"],
+                        "spec_sub_section": info["spec_sub_section"],
+                        "similarity_score": similarity_score
+                    })
+
+            results.extend(question_results)
+
+        db.commit()
+
+    return {
         "session_id": session_id,
-        "results": resultList,
+        "results": results
     }
 
 
-    return result
 
-@app.get("/session/{session_id}/")
+"""
+Example response structure:
+{
+  "session_id": "string",
+  "exam_board": "string",
+  "subject": "string",
+  "model_name": "string",
+  "created_at": "datetime",
+  "questions": [
+    {
+      "question_id": "int",
+      "question_number": "string",
+      "question_text": "string",
+      "confidence": {
+        "method": "top1_minus_top2",
+        "margin": "float",
+        "status": "low|medium|high"
+      },
+      "note": "optional string",
+      "predictions": [
+        {
+          "rank": "int",
+          "strand": "string",
+          "topic": "string",
+          "subtopic": "string",
+          "spec_sub_section": "string",
+          "similarity_score": "float",
+          "description": "optional string"
+        }
+      ]
+    }
+  ]
+}
+"""
+
+@app.get("/session/{session_id}")
 def get_session(session_id: str):
-    with Session(engine) as session:
-        db_session = session.exec(select(DBSess).where(DBSess.session_id == session_id)).first()
+    with Session(engine) as db:
+
+        # ---------- Fetch session ----------
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+
         if not db_session:
             raise HTTPException(status_code=404, detail="Session not found")
 
-        questions = session.exec(select(DBQuestion).where(DBQuestion.session_id == session_id)).all()
-        classifications = session.exec(select(DBClassificationResult).where(DBClassificationResult.question_id.in_([str(q.id) for q in questions]))).all()
+        # ---------- Fetch questions ----------
+        questions = db.exec(
+            select(DBQuestion)
+            .where(DBQuestion.session_id == session_id)
+            .order_by(DBQuestion.id)
+        ).all()
 
+        question_ids = [q.id for q in questions]
+
+        # ---------- Fetch predictions ----------
+        predictions = db.exec(
+            select(DBPrediction)
+            .where(DBPrediction.question_id.in_(question_ids))
+            .order_by(DBPrediction.question_id, DBPrediction.rank)
+        ).all()
+
+        # ---------- Group predictions by question ----------
+        preds_by_question: dict[int, list[DBPrediction]] = {}
+        for p in predictions:
+            preds_by_question.setdefault(p.question_id, []).append(p)
+
+        # ---------- Build response ----------
+        response_questions = []
+
+        for q in questions:
+            preds = preds_by_question.get(q.id, [])
+
+            margin = compute_margin(preds)
+            status = confidence_status(margin)
+
+            note = None
+
+            response_questions.append({
+                "question_id": q.id,
+                "question_number": q.question_number,
+                "question_text": q.question_text,
+
+                "confidence": {
+                    "method": "top1_minus_top2",
+                    "margin": margin,
+                    "status": status
+                },
+
+                "note": note,
+
+                "predictions": [
+                    {
+                        "rank": p.rank,
+                        "strand": p.strand,
+                        "topic": p.topic,
+                        "subtopic": p.subtopic,
+                        "spec_sub_section": p.spec_sub_section,
+                        "similarity_score": p.similarity_score,
+                        "description": p.description
+                    }
+                    for p in preds
+                ]
+            })
+
+        # ---------- Final response ----------
         return {
-            "session": db_session,
-            "questions": questions,
-            "classifications": classifications
+            "session_id": db_session.session_id,
+            "exam_board": db_session.exam_board,
+            "subject": db_session.subject,
+            "model_name": getattr(db_session, "model_name", None),
+            "created_at": db_session.created_at,
+            "questions": response_questions
         }
