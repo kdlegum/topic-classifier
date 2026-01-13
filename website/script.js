@@ -49,14 +49,14 @@ async function handleSubmit(){
 
     //Submitting to backend
     try {
-    const response = await fetch("/classify/", {
+    const response = await fetch("http://localhost:8000/classify", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      specification: spec,
-      questions: questions
+    question_text: questions,
+    SpecCode: spec,
     })
   });
 
@@ -66,7 +66,7 @@ async function handleSubmit(){
 
   const data = await response.json();
   console.log("Classification Results:", JSON.stringify(data));
-
+  displayResults(data);
   //Todo: Display the response
 
 } 
@@ -74,6 +74,49 @@ catch (error) {
   console.error("Error submitting questions:", error);
   alert("There was an error sending your questions. See console for details.");
 }
+}
+
+function displayResults(data) {
+        const container = document.getElementById("results");
+    container.innerHTML = "";
+
+    data.questions.forEach(question => {
+        const qDiv = document.createElement("div");
+        qDiv.classList.add("question-block");
+
+        const qHeader = document.createElement("h3");
+        qHeader.textContent = `Question ${question.question_number}:`;
+        qDiv.appendChild(qHeader);
+
+        question.predictions.forEach(pred => {
+            const wrapper = document.createElement("div");
+            wrapper.classList.add("prediction");
+
+            // Main line
+            const mainLine = document.createElement("p");
+            mainLine.innerHTML =
+                `Rank ${pred.rank}: ${pred.strand} → ${pred.topic} → ` +
+                `<span class="subtopic clickable">${pred.subtopic}</span> ` +
+                `(Similarity score ${pred.similarity_score})`;
+            wrapper.appendChild(mainLine);
+
+            // Hidden description
+            const desc = document.createElement("div");
+            desc.classList.add("description");
+            desc.textContent = pred.description;
+            desc.style.display = "none";
+            wrapper.appendChild(desc);
+
+            // Toggle behaviour
+            mainLine.querySelector(".subtopic").addEventListener("click", () => {
+                desc.style.display = desc.style.display === "none" ? "block" : "none";
+            });
+
+            qDiv.appendChild(wrapper);
+        });
+
+        container.appendChild(qDiv);
+    });
 }
 
 
