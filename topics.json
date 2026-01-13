@@ -1,4 +1,5 @@
-{
+[
+    {
     "Qualification": "A Level",
     "Subject": "Mathematics",
     "Exam Board": "OCR",
@@ -1262,3 +1263,4 @@
         }
     ]
 }
+]

@@ -14,8 +14,8 @@ def findSimilarity(questions):
     response = requests.post(f"http://127.0.0.1:8000/similarity/", json={"questions": questions})
     return response.json()
 
-def classify_questions(question_text, ExamBoard, SpecCode):
-    response = requests.post(f"http://127.0.0.1:8000/classify/", json={"question_text": question_text, "ExamBoard": ExamBoard,"SpecCode": SpecCode})
+def classify_questions(question_text,SpecCode):
+    response = requests.post(f"http://127.0.0.1:8000/classify/", json={"question_text": question_text, "SpecCode": SpecCode})
     return response.json()
 
 def get_session(session_id):
@@ -24,5 +24,4 @@ def get_session(session_id):
 
 questions = ["What is the derivative of sin(x)?",
              "Use the binomial theorem to expand (1 + x)^n for a specific value of n which should be stated."]
-api_response = classify_questions(questions, "OCR", "H240")
-print(get_session(api_response["session_id"]))
+api_response = print(classify_questions(questions, "H240"))

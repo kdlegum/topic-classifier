@@ -29,36 +29,38 @@ app.add_middleware(
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 class similarityRequest(BaseModel):
+    SpecDescriptions: List[str]
     questions: List[str]
 
 class classificationRequest(BaseModel):
     question_text: List[str]
-    ExamBoard: str
+    ExamBoard: Optional[str] = None
     SpecCode: str
     num_predictions: Optional[int] = 3
 
 f = open("topics.json", "r", encoding="utf-8")
-topics = json.load(f)
-topicList = topics["Topics"]
-subTopicNames = []
-for t in topicList:
-    topicName = t["Topic_name"]
-    for s in t["Sub_topics"]:
-        subTopicNames.append(topicName + ". " + s["description"])
-sub_topics_embed = model.encode(subTopicNames)
+allTopics = json.load(f)
+
 
 h = open("topics.json", "r", encoding="utf-8")
 topics = json.load(h)
-topicList = topics["Topics"]
+topicList = []
 subTopicIds = []
-for t in topicList:
-    for s in t["Sub_topics"]:
-        subTopicIds.append(s["subtopic_id"])
+for spec in topics:
+    for t in spec["Topics"]:
+        topicList.append(t)
+        for s in t["Sub_topics"]:
+            subTopicIds.append(s["subtopic_id"])
 
 g = open("subtopics_index.json", "r", encoding="utf-8")
 subtopics_index = json.load(g)
 
 id = 0
+
+def compute_confidence(preds: list[DBPrediction]) -> str:
+    if len(preds) < 2:
+        return "low"
+    return confidence_status(round(preds[0].similarity_score - preds[1].similarity_score, 4))
 
 def compute_margin(preds: list[DBPrediction]) -> float:
     if len(preds) < 2:
@@ -77,22 +79,51 @@ def confidence_status(margin: float) -> str:
 def encode_text(text: str):
     return model.encode([text]).tolist()
 
-
+#Need to fix this to require the specification code to get the correct sub_topics_embed
 @app.post("/similarity/")
 def compute_similarity(req: similarityRequest):
     t0 = time.time()
     embed1 = model.encode(req.questions)
+    sub_topics_embed = model.encode(req.SpecDescriptions)
     similarity = model.similarity(sub_topics_embed, embed1)
     print(f"Computed similarity for {len(req.questions)} questions in {time.time() - t0:.2f} seconds")
     return similarity.tolist()
 
+
+
 @app.post("/classify/")
 def classify_questions(req: classificationRequest):
+
+    """
+    Get correct topic list using specficiation code.
+    """
+
+    matching_topic = None
+    for s in allTopics:
+        if s["Specification"] == req.SpecCode:
+            matching_topic = s
+            break
+    
+    if matching_topic is None:
+        raise HTTPException(status_code=404, detail="Specification code not found")
+    
+    topics = matching_topic
+        
+    topicList = topics["Topics"]
+    subTopicClassificationTexts = []
+    for t in topicList:
+        topicName = t["Topic_name"]
+        for s in t["Sub_topics"]:
+            subTopicClassificationTexts.append(topicName + ". " + s["description"])
+    
+
+
+
     """
     Classify a list of questions and store top-k predictions in the DB.
     """
     similarities = np.array(
-        compute_similarity(similarityRequest(questions=req.question_text))
+        compute_similarity(similarityRequest(questions=req.question_text, SpecDescriptions=subTopicClassificationTexts))
     )
 
     num_questions = similarities.shape[1]
@@ -102,9 +133,20 @@ def classify_questions(req: classificationRequest):
     topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
 
     session_id = str(uuid.uuid4())
-    results = []
+    questions = []
 
     with Session(engine) as db:
+
+        #Identify exam board by SpecCode if not provided
+
+        if req.ExamBoard is None:
+            for spec in allTopics:
+                if spec["Specification"] == req.SpecCode:
+                    req.ExamBoard = spec["Exam Board"]
+                    break
+                else:
+                    req.ExamBoard = "Unknown"
+
         db_session = DBSess(
             session_id=session_id,
             exam_board=req.ExamBoard,
@@ -121,7 +163,7 @@ def classify_questions(req: classificationRequest):
             )
             db.add(db_question)
             db.flush()  # Needed to get db_question.id
-
+ 
             question_results = []
 
             for rank, subtopic_idx in enumerate(topk_indices[:, q_idx], start=1):
@@ -147,25 +189,12 @@ def classify_questions(req: classificationRequest):
 
                 db.add(db_prediction)
 
-                if rank == 1:
-                    question_results.append({
-                        "question_number": q_idx + 1,
-                        "question_id": db_question.id,
-                        "strand": info["strand"],
-                        "topic": info["topic_name"],
-                        "subtopic": info["name"],
-                        "spec_sub_section": info["spec_sub_section"],
-                        "similarity_score": similarity_score
-                    })
 
-            results.extend(question_results)
+ 
 
         db.commit()
 
-    return {
-        "session_id": session_id,
-        "results": results
-    }
+    return get_session(session_id)
 
 
 
@@ -243,8 +272,8 @@ def get_session(session_id: str):
         for q in questions:
             preds = preds_by_question.get(q.id, [])
 
+            status = compute_confidence(preds)
             margin = compute_margin(preds)
-            status = confidence_status(margin)
 
             note = None
 
