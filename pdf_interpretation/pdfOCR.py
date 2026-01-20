@@ -1,41 +1,79 @@
-# pdf_to_md.py
-import os
-from pdf2image import convert_from_path
-from pix2text.pix_to_text import Pix2Text
+import subprocess
+import sys
+import uuid
+from pathlib import Path
 
-# ==== CONFIG ====
-pdf_path = "ShortExam.pdf"  # your PDF file
-output_md = "exam.md"  # output Markdown file
-poppler_path = r"C:\Poppler\poppler-23.01.0\Library\bin"  # path to Poppler bin
-tmp_folder = "tmp_pages"  # folder to store temporary images
 
-# ==== PREPARE ====
-os.makedirs(tmp_folder, exist_ok=True)
-model = Pix2Text()
+api_key = "sk-340b9183eff94896934cecec6d181356"
 
-# ==== CONVERT PDF TO IMAGES ====
-print(f"Converting PDF to images: {pdf_path}")
-pages = convert_from_path(pdf_path, poppler_path=poppler_path)
+def run_olmocr(
+    pdf_path: str,
+    api_key: str,
+    output_dir: str = r"C:\Temp\pdf_test",
+    model: str = "olmOCR-2-7B-1025",
+) -> Path:
+    """
+    Run olmOCR on a single PDF and return the generated markdown file path.
+    """
 
-all_text = []
+    pdf_path = Path(pdf_path).resolve()
+    output_dir = Path(output_dir).resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-# ==== OCR EACH PAGE ====
-for i, page in enumerate(pages, start=1):
-    img_path = os.path.join(tmp_folder, f"page_{i}.png")
-    page.save(img_path, "PNG")
-    print(f"Processing page {i}/{len(pages)}...")
+    if not pdf_path.exists():
+        raise FileNotFoundError(f"PDF not found: {pdf_path}")
 
-    text = model(img_path)  # call Pix2Text on image
-    all_text.append(text)
+    # Isolate each run (VERY important for APIs)
+    run_id = uuid.uuid4().hex
+    workspace = output_dir / f"workspace_{run_id}"
+    workspace.mkdir()
 
-# ==== SAVE OUTPUT ====
+    env = dict(**dict(**subprocess.os.environ))
+    env["PYTHONIOENCODING"] = "utf-8"
+    env["TMP"] = str(output_dir)
+    env["TEMP"] = str(output_dir)
 
-with open(output_md, "w", encoding="utf-8") as f:
-    for i, page_blocks in enumerate(all_text, start=1):
-        f.write(f"# Page {i}\n\n")
-        # page_blocks is a list of dicts; get 'text' from each
-        page_text = [block['text'] for block in page_blocks]
-        f.write("\n".join(page_text))
-        f.write("\n\n")
+    cmd = [
+        sys.executable,
+        "-m",
+        "olmocr.pipeline",
+        str(workspace),
+        "--server", "https://ai2endpoints.cirrascale.ai/api",
+        "--api_key", api_key,
+        "--model", model,
+        "--workers", "1",
+        "--pages_per_group", "2",
+        "--markdown",
+        "--skip_pdf_sampling",
+        "--pdfs", str(pdf_path),
+    ]
 
-print(f"Done! Markdown saved to {output_md}")
+    result = subprocess.run(
+        cmd,
+        env=env,
+        capture_output=True,
+        text=True,
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"olmOCR failed:\nSTDOUT:\n{result.stdout}\n\nSTDERR:\n{result.stderr}"
+        )
+
+    # Find generated markdown
+    md_files = list(workspace.rglob("*.md"))
+    if not md_files:
+        raise RuntimeError(
+            f"olmOCR completed but no markdown file was produced.\n{result.stdout}"
+        )
+
+    # Usually only one file
+    return md_files[0]
+
+md_path = run_olmocr(
+    pdf_path="C:/Users/kdleg/OneDrive/Desktop/Topic Tracker/pdf_interpretation/ShortExam.pdf",
+    api_key=api_key
+)
+
+print("Markdown generated at:", md_path)
+print(md_path.read_text(encoding="utf-8"))
