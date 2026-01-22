@@ -23,9 +23,9 @@ UPLOAD_DIR.mkdir(exist_ok=True)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],     # allow all origins
-    allow_methods=["*"],     # allow POST, GET, OPTIONS, etc.
-    allow_headers=["*"],     # allow Content-Type, Authorization, etc.
+    allow_origins=["*"],     # allowing all origins for now
+    allow_methods=["*"],     
+    allow_headers=["*"],     
 )
 
 
@@ -325,6 +325,8 @@ async def upload_pdf(file: UploadFile = File(...)):
     job_id = str(uuid.uuid4())
     file_path = UPLOAD_DIR / f"{job_id}.pdf"
 
+    #This writes the entire file byte by byte which is kinda fine for small papers
+    #To fix later could read in packets
     with open(file_path, "wb") as f:
         f.write(await file.read())
 

@@ -3,12 +3,12 @@ import sys
 import uuid
 from pathlib import Path
 import os
+import shutil
 
 api_key = os.environ.get('CIRRASCALE_API_KEY')
 
 def run_olmocr(
     pdf_path: str,
-    api_key: str,
     output_dir: str = r"C:\Temp\pdf_test",
     model: str = "olmOCR-2-7B-1025",
 ) -> Path:
@@ -60,20 +60,37 @@ def run_olmocr(
             f"olmOCR failed:\nSTDOUT:\n{result.stdout}\n\nSTDERR:\n{result.stderr}"
         )
 
-    # Find generated markdown
-    md_files = list(workspace.rglob("*.md"))
-    if not md_files:
-        raise RuntimeError(
-            f"olmOCR completed but no markdown file was produced.\n{result.stdout}"
-        )
+    # Find generated markdown which is made in same folder as pdf and move into the output directory
+    input_directory_name = os.path.dirname(pdf_path)
+    input_file_name = os.path.splitext(os.path.basename(pdf_path))[0]
 
-    # Usually only one file
-    return md_files[0]
+    expected_md_path = os.path.join(input_directory_name, input_file_name + ".md")
+
+    if not os.path.exists(expected_md_path):
+        raise FileNotFoundError(f"No matching md file found with path {expected_md_path}.")
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    new_path = os.path.join(output_dir, os.path.basename(expected_md_path))
+    shutil.move(expected_md_path, new_path)
+    print(f"Successfully migrated {expected_md_path} to {new_path}")
+
+    #This is a temporary fix for the issue of a whole workspace folder moving no matter what i try
+    for item in os.listdir(output_dir):
+        item_path = os.path.join(output_dir, item)     
+        if os.path.isfile(item_path):
+            if not item.lower().endswith(".md"):
+                os.remove(item_path)
+                print(f"Deleted file: {item_path}")
+        else:
+            shutil.rmtree(item_path)
+            print(f"Deleted folder: {item_path}")
+
+    return new_path
 
 md_path = run_olmocr(
-    pdf_path="C:\Users\kdleg\OneDrive\Desktop\Topic Tracker\pdf_interpretation\Test_pdfs\ShortExam.pdf",
-    api_key=api_key
+    pdf_path=r"C:\Users\kdleg\OneDrive\Desktop\Topic Tracker\pdf_interpretation\Test_pdfs\ShortExam.pdf",
+    output_dir=r"pdf_interpretation\Test_mds"
 )
 
-print("Markdown generated at:", md_path)
-print(md_path.read_text(encoding="utf-8"))
+print(md_path)
