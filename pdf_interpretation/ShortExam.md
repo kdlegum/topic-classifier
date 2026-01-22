@@ -14,18 +14,18 @@ The diagram shows part of the curve \( y = x^2 e^{-x} \).
 
 Fig. 1.1    Fig. 1.2    Fig. 1.3    Fig. 1.4
 
-![Four graphs labeled Fig. 1.1 to Fig. 1.4, each showing a curve with axes labeled x and z](page_728_1092_1012_246.png)
+![Four graphs labeled Fig. 1.1, Fig. 1.2, Fig. 1.3, and Fig. 1.4, each showing a curve with axes labeled x and z.](page_728_1042_670_180.png)
 
 (b) Given that \( z = 3 \) when \( x = 4 \), determine the values of \( x \) when \( z = 12 \). [3]
 3 (a) Find a counterexample to disprove the statement that the product of two prime numbers is always odd.
 
 (b) In each of the following cases write one of the symbols \( \Rightarrow, \Leftrightarrow, \Leftarrow \) in the box in the Printed Answer Booklet to make each statement correct.
 
-(i) \( x^2 = 3x \) \( \boxed{} \) \( x = 3 \) [1]
+(i) \( x^2 = 3x \) \( \boxed{\Rightarrow} \) \( x = 3 \) [1]
 
-(ii) \( x > 4 \) \( \boxed{} \) \( x^3 > 64 \) [1]
+(ii) \( x > 4 \) \( \boxed{\Rightarrow} \) \( x^3 > 64 \) [1]
 
-(iii) \( x^\circ = 45^\circ \) \( \boxed{} \) \( \tan x^\circ = 1 \) [1]
+(iii) \( x^\circ = 45^\circ \) \( \boxed{\Rightarrow} \) \( \tan x^\circ = 1 \) [1]
 
 (c) Prove that the sum of the squares of any two odd numbers is always a multiple of 2 but never a multiple of 4. [4]
 

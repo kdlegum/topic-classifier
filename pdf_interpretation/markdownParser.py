@@ -4,6 +4,8 @@ from pylatexenc.latex2text import LatexNodes2Text
 
 latex_converter = LatexNodes2Text()
 
+#TODO: Use a local LLM instead to do this as it will be able to handle any type of exam.
+
 def parse_exam_markdown(file_path: str) -> List[Dict]:
     """
     Parse an exam Markdown file into structured questions.

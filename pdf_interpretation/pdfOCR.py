@@ -2,9 +2,9 @@ import subprocess
 import sys
 import uuid
 from pathlib import Path
+import os
 
-
-api_key = "sk-340b9183eff94896934cecec6d181356"
+api_key = os.environ.get('CIRRASCALE_API_KEY')
 
 def run_olmocr(
     pdf_path: str,
