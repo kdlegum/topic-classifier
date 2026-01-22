@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, UploadFile, File
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List, Optional
@@ -10,6 +10,7 @@ import datetime
 from sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction
 from sqlmodel import Session, create_engine, select
 from fastapi.middleware.cors import CORSMiddleware
+from pathlib import Path
 
 
 engine = create_engine("sqlite:///exam_app.db")
@@ -17,6 +18,8 @@ debug = False
 
 app = FastAPI()
 
+UPLOAD_DIR = Path("uploads")
+UPLOAD_DIR.mkdir(exist_ok=True)
 
 app.add_middleware(
     CORSMiddleware,
@@ -313,3 +316,19 @@ def get_session(session_id: str):
             "created_at": db_session.created_at,
             "questions": response_questions
         }
+
+@app.post("/upload-pdf")
+async def upload_pdf(file: UploadFile = File(...)):
+    if file.content_type != "application/pdf":
+        raise HTTPException(status_code=400, detail="Only PDF files allowed")
+
+    job_id = str(uuid.uuid4())
+    file_path = UPLOAD_DIR / f"{job_id}.pdf"
+
+    with open(file_path, "wb") as f:
+        f.write(await file.read())
+
+    return {
+        "job_id": job_id,
+        "filename": file.filename
+    }

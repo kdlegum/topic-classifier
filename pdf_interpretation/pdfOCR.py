@@ -71,7 +71,7 @@ def run_olmocr(
     return md_files[0]
 
 md_path = run_olmocr(
-    pdf_path="C:/Users/kdleg/OneDrive/Desktop/Topic Tracker/pdf_interpretation/ShortExam.pdf",
+    pdf_path="C:\Users\kdleg\OneDrive\Desktop\Topic Tracker\pdf_interpretation\Test_pdfs\ShortExam.pdf",
     api_key=api_key
 )
 

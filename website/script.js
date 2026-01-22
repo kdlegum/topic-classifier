@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addQuestionButton = document.querySelector('.add-question');
     const questionsContainer = document.getElementById('questions-container');
     const submitButton = document.querySelector('.submit');
+    const uploadButton = document.getElementById("upload-pdf");
 
     if (addQuestionButton && questionsContainer){
         addQuestionButton.addEventListener('click', () => {
@@ -14,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (submitButton){
         submitButton.addEventListener('click', () => {
             handleSubmit();
+        });
+    }
+
+    if (uploadButton){
+        uploadButton.addEventListener("click", () => {
+            handleUpload();
         });
     }
 });
@@ -75,6 +82,46 @@ catch (error) {
   alert("There was an error sending your questions. See console for details.");
 }
 }
+
+async function handleUpload() {
+    const fileInput = document.getElementById("pdf-upload");
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Please select a PDF file first.");
+        return;
+    }
+
+    if (file.type !== "application/pdf") {
+        alert("Only PDF files are allowed.");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+        const response = await fetch("http://localhost:8000/upload-pdf", {
+            method: "POST",
+            body: formData
+        });
+
+        if (!response.ok) {
+            throw new Error(`Upload failed: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("Upload success:", data);
+        alert("PDF uploaded successfully!");
+
+    } catch (error) {
+        console.error("Error uploading PDF:", error);
+        alert("Failed to upload PDF.");
+    }
+}
+
+
+
 
 function displayResults(data) {
         const container = document.getElementById("results");
