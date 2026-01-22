@@ -4,3 +4,4 @@ fastapi==0.128.0
 pydantic==2.12.5
 sentence-transformers==5.2.0
 sqlmodel==0.0.31
+pix2text

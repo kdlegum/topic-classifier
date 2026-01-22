@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Query, UploadFile, File
+from fastapi import FastAPI, HTTPException, Query, UploadFile, File, BackgroundTasks
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List, Optional
@@ -7,11 +7,15 @@ import json
 import time
 import uuid
 import datetime
-from sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction
 from sqlmodel import Session, create_engine, select
 from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
-
+import subprocess
+import sys
+import os
+import shutil
+from pdf_interpretation.pdfOCR import run_olmocr
 
 engine = create_engine("sqlite:///exam_app.db")
 debug = False
@@ -41,11 +45,11 @@ class classificationRequest(BaseModel):
     SpecCode: str
     num_predictions: Optional[int] = 3
 
-f = open("topics.json", "r", encoding="utf-8")
+f = open(r"Backend\topics.json", "r", encoding="utf-8")
 allTopics = json.load(f)
 
 
-h = open("topics.json", "r", encoding="utf-8")
+h = open(r"Backend\topics.json", "r", encoding="utf-8")
 topics = json.load(h)
 topicList = []
 subTopicIds = []
@@ -55,7 +59,7 @@ for spec in topics:
         for s in t["Sub_topics"]:
             subTopicIds.append(s["subtopic_id"])
 
-g = open("subtopics_index.json", "r", encoding="utf-8")
+g = open(r"Backend\subtopics_index.json", "r", encoding="utf-8")
 subtopics_index = json.load(g)
 
 id = 0
@@ -318,7 +322,7 @@ def get_session(session_id: str):
         }
 
 @app.post("/upload-pdf")
-async def upload_pdf(file: UploadFile = File(...)):
+async def upload_pdf(file: UploadFile = File(...), background_tasks: BackgroundTasks=None):
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=400, detail="Only PDF files allowed")
 
@@ -329,8 +333,14 @@ async def upload_pdf(file: UploadFile = File(...)):
     #To fix later could read in packets
     with open(file_path, "wb") as f:
         f.write(await file.read())
+    
+    background_tasks.add_task(
+        run_olmocr,
+        file_path,
+        r"Backend\uploads"
+    )
 
     return {
         "job_id": job_id,
-        "filename": file.filename
+        "status": "received"
     }

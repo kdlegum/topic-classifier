@@ -5,8 +5,6 @@ from pathlib import Path
 import os
 import shutil
 
-api_key = os.environ.get('CIRRASCALE_API_KEY')
-
 def run_olmocr(
     pdf_path: str,
     output_dir: str = r"C:\Temp\pdf_test",
@@ -39,7 +37,7 @@ def run_olmocr(
         "olmocr.pipeline",
         str(workspace),
         "--server", "https://ai2endpoints.cirrascale.ai/api",
-        "--api_key", api_key,
+        "--api_key", os.environ.get('CIRRASCALE_API_KEY'),
         "--model", model,
         "--workers", "1",
         "--pages_per_group", "2",
@@ -87,10 +85,3 @@ def run_olmocr(
             print(f"Deleted folder: {item_path}")
 
     return new_path
-
-md_path = run_olmocr(
-    pdf_path=r"C:\Users\kdleg\OneDrive\Desktop\Topic Tracker\pdf_interpretation\Test_pdfs\ShortExam.pdf",
-    output_dir=r"pdf_interpretation\Test_mds"
-)
-
-print(md_path)
