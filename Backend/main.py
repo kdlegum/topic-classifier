@@ -22,7 +22,7 @@ debug = False
 
 app = FastAPI()
 
-UPLOAD_DIR = Path("uploads")
+UPLOAD_DIR = Path(r"Backend\uploads\pdfs")
 UPLOAD_DIR.mkdir(exist_ok=True)
 
 app.add_middleware(
@@ -333,14 +333,21 @@ async def upload_pdf(file: UploadFile = File(...), background_tasks: BackgroundT
     #To fix later could read in packets
     with open(file_path, "wb") as f:
         f.write(await file.read())
+
+    status = {
+        "job_id": job_id,
+        "status": "Processing to markdown"
+    }
+
+    with open (f"Backend\uploads\status\{job_id}.json", "w") as f:
+        json.dump(status, f)
     
     background_tasks.add_task(
         run_olmocr,
         file_path,
-        r"Backend\uploads"
+        r"Backend\uploads\markdown"
     )
 
     return {
-        "job_id": job_id,
-        "status": "received"
+        "job_id": job_id
     }

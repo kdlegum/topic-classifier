@@ -4,6 +4,8 @@ import uuid
 from pathlib import Path
 import os
 import shutil
+import json
+from pdf_interpretation.utils import updateStatus
 
 def run_olmocr(
     pdf_path: str,
@@ -83,5 +85,7 @@ def run_olmocr(
         else:
             shutil.rmtree(item_path)
             print(f"Deleted folder: {item_path}")
+
+    updateStatus(input_file_name, "Markdown Created. Extracting Questions...")
 
     return new_path
