@@ -16,6 +16,8 @@ import sys
 import os
 import shutil
 from pdf_interpretation.pdfOCR import run_olmocr
+from pdf_interpretation.utils import updateStatus
+from pdf_interpretation.markdownParser import parse_exam_markdown
 
 engine = create_engine("sqlite:///exam_app.db")
 debug = False
@@ -239,6 +241,11 @@ Example response structure:
   ]
 }
 """
+@app.get("/upload-pdf-status/{job_id}")
+def get_status(job_id: str):
+    with open(f"Backend/uploads/status/{job_id}.json", "r") as f:
+        data = json.load(f)
+    return data
 
 @app.get("/session/{session_id}")
 def get_session(session_id: str):
@@ -336,18 +343,29 @@ async def upload_pdf(file: UploadFile = File(...), background_tasks: BackgroundT
 
     status = {
         "job_id": job_id,
-        "status": "Processing to markdown"
+        "status": "Processing to markdown",
+        "session_id": None
     }
 
-    with open (f"Backend\uploads\status\{job_id}.json", "w") as f:
+    with open (f"Backend/uploads/status/{job_id}.json", "w") as f:
         json.dump(status, f)
     
     background_tasks.add_task(
-        run_olmocr,
-        file_path,
-        r"Backend\uploads\markdown"
+        process_pdf,
+        job_id
     )
 
     return {
         "job_id": job_id
     }
+
+def process_pdf(job_id):
+    run_olmocr(f"Backend/uploads/pdfs/{job_id}.pdf", r"Backend\uploads\markdown")
+    updateStatus(job_id, "Converted to Markdown. Extracting questions...")
+    questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
+    updateStatus(job_id, "Questions extracted. Classifying questions by topic...")
+    question_text = [q["text"] for q in questions]
+    session_id = classify_questions(classificationRequest(question_text=question_text, SpecCode="H240"))["session_id"]
+    updateStatus(job_id, "Done", session_id)
+
+

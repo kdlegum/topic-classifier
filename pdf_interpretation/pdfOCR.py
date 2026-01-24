@@ -86,6 +86,6 @@ def run_olmocr(
             shutil.rmtree(item_path)
             print(f"Deleted folder: {item_path}")
 
-    updateStatus(input_file_name, "Markdown Created. Extracting Questions...")
+    #updateStatus(input_file_name, "Markdown Created. Extracting Questions...")
 
     return new_path

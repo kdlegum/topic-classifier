@@ -1,8 +1,9 @@
 import json
 import os
 from pathlib import Path
+from typing import Optional
 
-def updateStatus(job_id: str, newStatus: str):
+def updateStatus(job_id: str, newStatus: str, session_id: Optional[str] = None):
 
     path = Path("Backend") / "uploads" / "status" / f"{job_id}.json"
 
@@ -14,7 +15,10 @@ def updateStatus(job_id: str, newStatus: str):
     
     status["status"] = newStatus
 
-    with open(path, "r") as f:
+    if session_id != None:
+        status["session_id"] = session_id
+
+    with open(path, "w") as f:
         json.dump(status, f)
     
     return True

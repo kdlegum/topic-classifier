@@ -105,6 +105,3 @@ def parse_exam_markdown(file_path: str) -> List[Dict]:
             })
 
     return questions
-
-
-print([q["text"] for q in parse_exam_markdown(r"C:\Users\kdleg\OneDrive\Desktop\Topic Tracker\pdf_interpretation\ShortExam.md")])
