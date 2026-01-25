@@ -6,6 +6,11 @@ latex_converter = LatexNodes2Text()
 
 #TODO: Use a local LLM instead to do this as it will be able to handle any type of exam.
 
+TABLE_PATTERN = re.compile(
+                        r"<table\b[^>]*>.*?</table>",
+                        flags=re.IGNORECASE | re.DOTALL
+                    )
+
 def parse_exam_markdown(file_path: str) -> List[Dict]:
     """
     Parse an exam Markdown file into structured questions.
@@ -73,7 +78,8 @@ def parse_exam_markdown(file_path: str) -> List[Dict]:
                         full_text = f"{stem} {nested_text}" if stem else nested_text
                         # Convert LaTeX inline math to Unicode
                         full_text = latex_converter.latex_to_text(full_text)
-
+                        # Filter thehtml tables
+                        full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
                         questions.append({
                             "id": nested_id,
                             "marks": marks,
@@ -87,6 +93,11 @@ def parse_exam_markdown(file_path: str) -> List[Dict]:
                     full_text = f"{stem} {part_text_clean}" if stem else part_text_clean
                     full_text = latex_converter.latex_to_text(full_text)
 
+                    #Clean up tables
+                    
+
+                    full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
+
                     questions.append({
                         "id": part_id,
                         "marks": marks,
@@ -98,6 +109,8 @@ def parse_exam_markdown(file_path: str) -> List[Dict]:
             marks = int(marks_match.group(1)) if marks_match else None
             full_text = re.sub(r'\[\d+\]', '', body).strip()
             full_text = latex_converter.latex_to_text(full_text)
+            #Filter html tables
+            full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
             questions.append({
                 "id": q_num,
                 "marks": marks,

@@ -1,4 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query, UploadFile, File, BackgroundTasks
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List, Optional
@@ -11,10 +13,6 @@ from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, P
 from sqlmodel import Session, create_engine, select
 from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
-import subprocess
-import sys
-import os
-import shutil
 from pdf_interpretation.pdfOCR import run_olmocr
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown
@@ -33,6 +31,8 @@ app.add_middleware(
     allow_methods=["*"],     
     allow_headers=["*"],     
 )
+
+
 
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -367,5 +367,12 @@ def process_pdf(job_id):
     question_text = [q["text"] for q in questions]
     session_id = classify_questions(classificationRequest(question_text=question_text, SpecCode="H240"))["session_id"]
     updateStatus(job_id, "Done", session_id)
+
+
+app.mount("/static", StaticFiles(directory="website"), name="static")
+
+@app.get("/")
+def serve_home():
+    return FileResponse("website/demoSite.html")
 
 
