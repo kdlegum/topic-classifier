@@ -111,8 +111,8 @@ async function handleUpload() {
         }
 
         const data = await response.json();
-        console.log("Upload success:", data);
-        alert("PDF uploaded successfully!");
+        console.log("Upload success:", data)
+        pollJobStatus(data.job_id)
 
     } catch (error) {
         console.error("Error uploading PDF:", error);
@@ -134,6 +134,10 @@ function displayResults(data) {
         const qHeader = document.createElement("h3");
         qHeader.textContent = `Question ${question.question_number}:`;
         qDiv.appendChild(qHeader);
+
+        const qText = document.createElement("p");
+        qText.textContent = `${question.question_text}`;
+        qDiv.appendChild(qText);
 
         question.predictions.forEach(pred => {
             const wrapper = document.createElement("div");
@@ -166,9 +170,56 @@ function displayResults(data) {
     });
 }
 
+async function fetchSessionResults(sessionId) {
+    try {
+        const res = await fetch(`/session/${sessionId}`);
+        if (!res.ok) throw new Error("Failed to fetch session results");
 
+        const data = await res.json();
 
+        // Hand off to your existing renderer
+        displayResults(data);
 
+    } catch (err) {
+        console.error(err);
+        alert("Error loading results.");
+    }
+}
+
+async function pollJobStatus(jobId) {
+    const intervalMs = 1000;
+
+    const poller = setInterval(async () => {
+        try {
+            const res = await fetch(`/upload-pdf-status/${jobId}`);
+            if (!res.ok) throw new Error("Status check failed");
+
+            const data = await res.json();
+            console.log("Job status:", data);
+
+            if (data.status === "Done") {
+                clearInterval(poller);
+
+                if (!data.session_id) {
+                    throw new Error("Job completed but no session_id returned");
+                }
+
+                // Now fetch the results
+                await fetchSessionResults(data.session_id);
+            }
+
+            if (data.status === "failed") {
+                clearInterval(poller);
+                alert("PDF processing failed.");
+            }
+
+        } catch (err) {
+            console.error(err);
+            clearInterval(poller);
+            alert("Error checking PDF status.");
+        }
+    }, intervalMs);
+}
 
 async function getSessionID(question_text){
     const response = await fetch('http://127.0.0.1:8000/classify/', {
