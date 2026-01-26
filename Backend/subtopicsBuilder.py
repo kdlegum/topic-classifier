@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-INPUT_FILE = Path("topics.json")
+INPUT_FILE = Path(r"Backend/topics.json")
 OUTPUT_FILE = Path("subtopics_index.json")
 
 

@@ -117,13 +117,13 @@ def classify_questions(req: classificationRequest):
         raise HTTPException(status_code=404, detail="Specification code not found")
     
     topics = matching_topic
-        
     topicList = topics["Topics"]
     subTopicClassificationTexts = []
     for t in topicList:
         topicName = t["Topic_name"]
         for s in t["Sub_topics"]:
             subTopicClassificationTexts.append(topicName + ". " + s["description"])
+        
     
 
 
@@ -328,8 +328,8 @@ def get_session(session_id: str):
             "questions": response_questions
         }
 
-@app.post("/upload-pdf")
-async def upload_pdf(file: UploadFile = File(...), background_tasks: BackgroundTasks=None):
+@app.post("/upload-pdf/{SpecCode}")
+async def upload_pdf(SpecCode: str, file: UploadFile = File(...), background_tasks: BackgroundTasks=None):
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=400, detail="Only PDF files allowed")
 
@@ -352,20 +352,21 @@ async def upload_pdf(file: UploadFile = File(...), background_tasks: BackgroundT
     
     background_tasks.add_task(
         process_pdf,
-        job_id
+        job_id,
+        SpecCode
     )
 
     return {
         "job_id": job_id
     }
 
-def process_pdf(job_id):
+def process_pdf(job_id, SpecCode):
     run_olmocr(f"Backend/uploads/pdfs/{job_id}.pdf", r"Backend\uploads\markdown")
     updateStatus(job_id, "Converted to Markdown. Extracting questions...")
     questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
     updateStatus(job_id, "Questions extracted. Classifying questions by topic...")
     question_text = [q["text"] for q in questions]
-    session_id = classify_questions(classificationRequest(question_text=question_text, SpecCode="H240"))["session_id"]
+    session_id = classify_questions(classificationRequest(question_text=question_text, SpecCode=SpecCode))["session_id"]
     updateStatus(job_id, "Done", session_id)
 
 

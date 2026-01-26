@@ -84,6 +84,7 @@ catch (error) {
 }
 
 async function handleUpload() {
+    console.log("HELLO")
     const fileInput = document.getElementById("pdf-upload");
     const file = fileInput.files[0];
 
@@ -99,9 +100,11 @@ async function handleUpload() {
 
     const formData = new FormData();
     formData.append("file", file);
+    const SpecCode = document.getElementById('specification').value;
 
+    
     try {
-        const response = await fetch("http://localhost:8000/upload-pdf", {
+        const response = await fetch(`http://localhost:8000/upload-pdf/${SpecCode}`, {
             method: "POST",
             body: formData
         });
