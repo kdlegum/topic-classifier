@@ -84,7 +84,6 @@ catch (error) {
 }
 
 async function handleUpload() {
-    console.log("HELLO")
     const fileInput = document.getElementById("pdf-upload");
     const file = fileInput.files[0];
 
