@@ -48,18 +48,8 @@ class classificationRequest(BaseModel):
     num_predictions: Optional[int] = 3
 
 f = open(r"Backend\topics.json", "r", encoding="utf-8")
-allTopics = json.load(f)
+allSpecs = json.load(f)
 
-
-h = open(r"Backend\topics.json", "r", encoding="utf-8")
-topics = json.load(h)
-topicList = []
-subTopicIds = []
-for spec in topics:
-    for t in spec["Topics"]:
-        topicList.append(t)
-        for s in t["Sub_topics"]:
-            subTopicIds.append(s["subtopic_id"])
 
 g = open(r"Backend\subtopics_index.json", "r", encoding="utf-8")
 subtopics_index = json.load(g)
@@ -108,7 +98,7 @@ def classify_questions(req: classificationRequest):
     """
 
     matching_topic = None
-    for s in allTopics:
+    for s in allSpecs:
         if s["Specification"] == req.SpecCode:
             matching_topic = s
             break
@@ -123,7 +113,7 @@ def classify_questions(req: classificationRequest):
         topicName = t["Topic_name"]
         for s in t["Sub_topics"]:
             subTopicClassificationTexts.append(topicName + ". " + s["description"])
-        
+    
     
 
 
@@ -135,21 +125,24 @@ def classify_questions(req: classificationRequest):
         compute_similarity(similarityRequest(questions=req.question_text, SpecDescriptions=subTopicClassificationTexts))
     )
 
-    num_questions = similarities.shape[1]
     k = req.num_predictions or 3
 
-  
+    print(similarities)
+
+    #print(similarities)
     topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
+    topk_indices = list(map(list, zip(*topk_indices)))
+    topk_indices = [list(map(int, row)) for row in topk_indices]
+    print(topk_indices)
 
     session_id = str(uuid.uuid4())
-    questions = []
 
     with Session(engine) as db:
 
         #Identify exam board by SpecCode if not provided
 
         if req.ExamBoard is None:
-            for spec in allTopics:
+            for spec in allSpecs:
                 if spec["Specification"] == req.SpecCode:
                     req.ExamBoard = spec["Exam Board"]
                     break
@@ -174,13 +167,27 @@ def classify_questions(req: classificationRequest):
             db.flush()  # Needed to get db_question.id
  
             question_results = []
+            
+            h = open(r"Backend\topics.json", "r", encoding="utf-8")
+            topics = json.load(h)
+            subTopicIds = []
+            for spec in topics:
+                if spec["Specification"] == req.SpecCode:
+                    for t in spec["Topics"]:
+                        for s in t["Sub_topics"]:
+                            subTopicIds.append(s["subtopic_id"])
+                else:
+                    continue
 
-            for rank, subtopic_idx in enumerate(topk_indices[:, q_idx], start=1):
+
+
+            for rank, subtopic_idx in enumerate(topk_indices[q_idx], start=1):
+                print((rank, subtopic_idx))
                 subtopic_id = subTopicIds[subtopic_idx]
                 key = f"{req.ExamBoard}_{req.SpecCode}_{subtopic_id}"
 
                 if key not in subtopics_index:
-                    continue
+                    raise KeyError("Key was not found in subtopics_index")
 
                 info = subtopics_index[key]
                 similarity_score = float(round(similarities[subtopic_idx, q_idx], 4))

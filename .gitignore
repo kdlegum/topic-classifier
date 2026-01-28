@@ -210,9 +210,10 @@ __marimo__/
 classifiertest.ipynb
 extracted_content.txt
 *.pdf
-Pure_Mathematics_Sections_1.1-1.10.md
-subtopics_index.json
+Pure_Mathematics_Sections_1.1-1.10.mkdocs
+Backend/subtopics_index.json
 exam_app.db
 *.png
 pdf_interpretation/pix2text310/
 Backend/uploads/
+Backend/detectingDuplicates.py
