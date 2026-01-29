@@ -179,7 +179,6 @@ async function fetchSessionResults(sessionId) {
 
         const data = await res.json();
 
-        // Hand off to your existing renderer
         displayResults(data);
 
     } catch (err) {
@@ -190,6 +189,7 @@ async function fetchSessionResults(sessionId) {
 
 async function pollJobStatus(jobId) {
     const intervalMs = 1000;
+    const statusDisplayDiv = document.getElementById("pdf-status");
 
     const poller = setInterval(async () => {
         try {
@@ -198,6 +198,8 @@ async function pollJobStatus(jobId) {
 
             const data = await res.json();
             console.log("Job status:", data);
+
+            statusDisplayDiv.textContent=`Processing... ${data.status}`
 
             if (data.status === "Done") {
                 clearInterval(poller);
