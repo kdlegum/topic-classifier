@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="/static/styles.css">
-  <script src = "/static/script.js"></script>
+  <script type="module" src = "/static/script.js"></script>
+  <script type="module" src = "/static/supabase.js"></script>
 </head>
 <body>
 
   <h1>Exam Question Classifier</h1>
   <p>Paste your exam questions below or upload an empty question paper and get a topic breakdown.</p>
+
+  <!-- Login -->
+  <input type="email" id="emailInput" placeholder="Enter your email" />
+  <button id="logoutBtn" disabled>Log out</button>
+  <button id="magicLinkBtn">Send Login Link</button>
+  <button id="google-login">Sign in with Google</button>
+  <div id="loginStatus">Logged in as: Guest</div>
 
   <!-- Specification selection -->
   <div class="section">

@@ -1,4 +1,10 @@
-//Adding question fields functionality
+/* Code snippet for returning header auth
+headers: {
+    ...(token && { Authorization: `Bearer ${token}` }),
+    "X-Guest-ID": guestId,
+  }
+*/
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const addQuestionButton = document.querySelector('.add-question');

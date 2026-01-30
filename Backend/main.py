@@ -1,6 +1,12 @@
-from fastapi import FastAPI, HTTPException, Query, UploadFile, File, BackgroundTasks
+from fastapi import FastAPI, HTTPException, Query, UploadFile, File, BackgroundTasks, Request, Depends
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List, Optional
@@ -11,16 +17,20 @@ import uuid
 import datetime
 from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction
 from sqlmodel import Session, create_engine, select
-from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 from pdf_interpretation.pdfOCR import run_olmocr
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown
+from Backend.auth import get_user
 
 engine = create_engine("sqlite:///exam_app.db")
 debug = False
+limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
+
+app.state.limiter = limiter
+app.add_middleware(SlowAPIMiddleware)
 
 UPLOAD_DIR = Path(r"Backend\uploads\pdfs")
 UPLOAD_DIR.mkdir(exist_ok=True)
@@ -32,7 +42,12 @@ app.add_middleware(
     allow_headers=["*"],     
 )
 
-
+@app.exception_handler(RateLimitExceeded)
+def rate_limit_handler(request, exc):
+    return JSONResponse(
+        status_code=429,
+        content={"detail": "Rate limit exceeded"}
+    )
 
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -74,12 +89,12 @@ def confidence_status(margin: float) -> str:
     return "low"
 
 
-@app.get("/encode/")
 def encode_text(text: str):
     return model.encode([text]).tolist()
 
 #Need to fix this to require the specification code to get the correct sub_topics_embed
 @app.post("/similarity/")
+@limiter.limit("60/minute")
 def compute_similarity(req: similarityRequest):
     t0 = time.time()
     embed1 = model.encode(req.questions)
@@ -91,10 +106,11 @@ def compute_similarity(req: similarityRequest):
 
 
 @app.post("/classify/")
+@limiter.limit("5/minute")
 def classify_questions(req: classificationRequest):
 
     """
-    Get correct topic list using specficiation code.
+    Get the correct topic list using specficiation code, and then match each question to the top-k subtopics.
     """
 
     matching_topic = None
@@ -119,7 +135,7 @@ def classify_questions(req: classificationRequest):
 
 
     """
-    Classify a list of questions and store top-k predictions in the DB.
+    Store top-k predictions in the DB.
     """
     similarities = np.array(
         compute_similarity(similarityRequest(questions=req.question_text, SpecDescriptions=subTopicClassificationTexts))
@@ -129,7 +145,6 @@ def classify_questions(req: classificationRequest):
 
     print(similarities)
 
-    #print(similarities)
     topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
     topk_indices = list(map(list, zip(*topk_indices)))
     topk_indices = [list(map(int, row)) for row in topk_indices]
@@ -138,8 +153,6 @@ def classify_questions(req: classificationRequest):
     session_id = str(uuid.uuid4())
 
     with Session(engine) as db:
-
-        #Identify exam board by SpecCode if not provided
 
         if req.ExamBoard is None:
             for spec in allSpecs:
@@ -287,7 +300,6 @@ def get_session(session_id: str):
         for p in predictions:
             preds_by_question.setdefault(p.question_id, []).append(p)
 
-        # ---------- Build response ----------
         response_questions = []
 
         for q in questions:
