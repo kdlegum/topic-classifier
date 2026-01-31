@@ -1,10 +1,20 @@
-/* Code snippet for returning header auth
-headers: {
+import { getAccessToken, getGuestId } from "./supabase.js";
+/*
+//Patch fetch to always include tokens
+const originalFetch = window.fetch;
+window.fetch = async (input, init = {}) => {
+  const token = await getAccessToken();
+  const guestId = getGuestId();
+  console.log("FETCHING:", input, "Token:", token, "GuestID:", guestId);
+  init.headers = {
+    ...init.headers,
     ...(token && { Authorization: `Bearer ${token}` }),
     "X-Guest-ID": guestId,
-  }
-*/
+  };
 
+  return originalFetch(input, init);
+};
+*/
 
 document.addEventListener('DOMContentLoaded', () => {
     const addQuestionButton = document.querySelector('.add-question');
@@ -45,6 +55,8 @@ function addNewQuestionField() {
 }
 
 async function handleSubmit(){
+    const token = await getAccessToken();
+    const guestId = getGuestId();
     const textAreas = document.querySelectorAll('#questions-container textarea');
     var questions = [];
     textAreas.forEach((textarea) => {
@@ -65,7 +77,9 @@ async function handleSubmit(){
     const response = await fetch("http://localhost:8000/classify", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      ...(token && { Authorization: `Bearer ${token}`}),
+      "X-Guest-ID": guestId,
     },
     body: JSON.stringify({
     question_text: questions,
@@ -80,7 +94,6 @@ async function handleSubmit(){
   const data = await response.json();
   console.log("Classification Results:", JSON.stringify(data));
   displayResults(data);
-  //Todo: Display the response
 
 } 
 catch (error) {
@@ -92,6 +105,10 @@ catch (error) {
 async function handleUpload() {
     const fileInput = document.getElementById("pdf-upload");
     const file = fileInput.files[0];
+    const token = await getAccessToken();
+    const guestId = getGuestId();
+
+    console.log(token, guestId)
 
     if (!file) {
         alert("Please select a PDF file first.");
@@ -111,6 +128,10 @@ async function handleUpload() {
     try {
         const response = await fetch(`http://localhost:8000/upload-pdf/${SpecCode}`, {
             method: "POST",
+            headers:{
+            ...(token && { Authorization: `Bearer ${token}` }),
+            "X-Guest-ID": guestId,
+            },
             body: formData
         });
 
@@ -203,7 +224,7 @@ async function pollJobStatus(jobId) {
             if (!res.ok) throw new Error("Status check failed");
 
             const data = await res.json();
-            console.log("Job status:", data);
+            //console.log("Job status:", data);
 
             statusDisplayDiv.textContent=`Processing... ${data.status}`
 

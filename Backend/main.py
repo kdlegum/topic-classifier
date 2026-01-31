@@ -93,8 +93,6 @@ def encode_text(text: str):
     return model.encode([text]).tolist()
 
 #Need to fix this to require the specification code to get the correct sub_topics_embed
-@app.post("/similarity/")
-@limiter.limit("60/minute")
 def compute_similarity(req: similarityRequest):
     t0 = time.time()
     embed1 = model.encode(req.questions)
@@ -104,98 +102,90 @@ def compute_similarity(req: similarityRequest):
     return similarity.tolist()
 
 
-
-@app.post("/classify/")
-@limiter.limit("5/minute")
-def classify_questions(req: classificationRequest):
-
-    """
-    Get the correct topic list using specficiation code, and then match each question to the top-k subtopics.
-    """
+def classify_questions_logic(
+    req: classificationRequest,
+    *,
+    user_id: str,
+    is_guest: bool,
+):
 
     matching_topic = None
     for s in allSpecs:
         if s["Specification"] == req.SpecCode:
             matching_topic = s
             break
-    
+
     if matching_topic is None:
         raise HTTPException(status_code=404, detail="Specification code not found")
-    
-    topics = matching_topic
-    topicList = topics["Topics"]
+
+    topicList = matching_topic["Topics"]
+
     subTopicClassificationTexts = []
     for t in topicList:
         topicName = t["Topic_name"]
         for s in t["Sub_topics"]:
-            subTopicClassificationTexts.append(topicName + ". " + s["description"])
-    
-    
+            subTopicClassificationTexts.append(
+                topicName + ". " + s["description"]
+            )
 
-
-
-    """
-    Store top-k predictions in the DB.
-    """
     similarities = np.array(
-        compute_similarity(similarityRequest(questions=req.question_text, SpecDescriptions=subTopicClassificationTexts))
+        compute_similarity(
+            similarityRequest(
+                questions=req.question_text,
+                SpecDescriptions=subTopicClassificationTexts,
+            )
+        )
     )
 
     k = req.num_predictions or 3
 
-    print(similarities)
-
     topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
     topk_indices = list(map(list, zip(*topk_indices)))
     topk_indices = [list(map(int, row)) for row in topk_indices]
-    print(topk_indices)
 
     session_id = str(uuid.uuid4())
 
     with Session(engine) as db:
 
+        # Fill ExamBoard if missing
         if req.ExamBoard is None:
             for spec in allSpecs:
                 if spec["Specification"] == req.SpecCode:
                     req.ExamBoard = spec["Exam Board"]
                     break
-                else:
-                    req.ExamBoard = "Unknown"
+            else:
+                req.ExamBoard = "Unknown"
 
         db_session = DBSess(
             session_id=session_id,
             exam_board=req.ExamBoard,
-            subject=req.SpecCode
+            subject=req.SpecCode,
+            is_guest=is_guest,
+            user_id=user_id,
         )
         db.add(db_session)
 
         for q_idx, question_text in enumerate(req.question_text):
-         
+
             db_question = DBQuestion(
                 session_id=session_id,
                 question_number=str(q_idx + 1),
-                question_text=question_text
+                question_text=question_text,
             )
             db.add(db_question)
-            db.flush()  # Needed to get db_question.id
- 
-            question_results = []
-            
-            h = open(r"Backend\topics.json", "r", encoding="utf-8")
-            topics = json.load(h)
+            db.flush()  # needed here to get db_question.id
+
+            with open(r"Backend\topics.json", "r", encoding="utf-8") as h:
+                topics = json.load(h)
+
             subTopicIds = []
             for spec in topics:
                 if spec["Specification"] == req.SpecCode:
                     for t in spec["Topics"]:
                         for s in t["Sub_topics"]:
                             subTopicIds.append(s["subtopic_id"])
-                else:
-                    continue
-
-
 
             for rank, subtopic_idx in enumerate(topk_indices[q_idx], start=1):
-                print((rank, subtopic_idx))
                 subtopic_id = subTopicIds[subtopic_idx]
                 key = f"{req.ExamBoard}_{req.SpecCode}_{subtopic_id}"
 
@@ -203,7 +193,9 @@ def classify_questions(req: classificationRequest):
                     raise KeyError("Key was not found in subtopics_index")
 
                 info = subtopics_index[key]
-                similarity_score = float(round(similarities[subtopic_idx, q_idx], 4))
+                similarity_score = float(
+                    round(similarities[subtopic_idx, q_idx], 4)
+                )
 
                 db_prediction = DBPrediction(
                     question_id=db_question.id,
@@ -213,17 +205,36 @@ def classify_questions(req: classificationRequest):
                     subtopic=info["name"],
                     spec_sub_section=info["spec_sub_section"],
                     description=info["description"],
-                    similarity_score=similarity_score
+                    similarity_score=similarity_score,
                 )
-
                 db.add(db_prediction)
-
-
- 
 
         db.commit()
 
     return get_session(session_id)
+
+
+@app.post("/classify/")
+@limiter.limit("5/minute")
+def classify_questions(
+    request: Request,
+    req: classificationRequest,
+    user=Depends(get_user),
+):
+    print(user)
+
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    return classify_questions_logic(
+        req,
+        user_id=user_id,
+        is_guest=is_guest,
+    )
 
 
 
@@ -344,13 +355,16 @@ def get_session(session_id: str):
             "subject": db_session.subject,
             "model_name": getattr(db_session, "model_name", None),
             "created_at": db_session.created_at,
+            "user_id": db_session.user_id,
             "questions": response_questions
         }
 
 @app.post("/upload-pdf/{SpecCode}")
-async def upload_pdf(SpecCode: str, file: UploadFile = File(...), background_tasks: BackgroundTasks=None):
+async def upload_pdf(request: Request, SpecCode: str, file: UploadFile = File(...), background_tasks: BackgroundTasks=None, user=Depends(get_user),):
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=400, detail="Only PDF files allowed")
+
+    print(user)
 
     job_id = str(uuid.uuid4())
     file_path = UPLOAD_DIR / f"{job_id}.pdf"
@@ -372,21 +386,46 @@ async def upload_pdf(SpecCode: str, file: UploadFile = File(...), background_tas
     background_tasks.add_task(
         process_pdf,
         job_id,
-        SpecCode
+        SpecCode,
+        user
     )
 
     return {
         "job_id": job_id
     }
 
-def process_pdf(job_id, SpecCode):
+def process_pdf(job_id, SpecCode, user):
     run_olmocr(f"Backend/uploads/pdfs/{job_id}.pdf", r"Backend\uploads\markdown")
     updateStatus(job_id, "Converted to Markdown. Extracting questions...")
     questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
     updateStatus(job_id, "Questions extracted. Classifying questions by topic...")
     question_text = [q["text"] for q in questions]
-    session_id = classify_questions(classificationRequest(question_text=question_text, SpecCode=SpecCode))["session_id"]
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+    session_id = classify_questions_logic(classificationRequest(question_text=question_text, SpecCode=SpecCode), user_id=user_id, is_guest=is_guest)["session_id"]
     updateStatus(job_id, "Done", session_id)
+
+@app.get("/debug/sessions")
+def debug_sessions():
+    with Session(engine) as db:
+        sessions = db.exec(
+            select(DBSess).order_by(DBSess.created_at.desc()).limit(20)
+        ).all()
+
+        return [
+            {
+                "session_id": s.session_id,
+                "user_id": s.user_id,
+                "is_guest": s.is_guest,
+                "subject": s.subject,
+                "created_at": s.created_at,
+            }
+            for s in sessions
+        ]
 
 
 app.mount("/static", StaticFiles(directory="website"), name="static")

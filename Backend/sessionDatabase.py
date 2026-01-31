@@ -13,6 +13,8 @@ Session (exam paper, model = X)
 class Session(SQLModel, table=True):
     id: int = Field(default=None, primary_key=True)
     session_id: str = Field(default_factory=lambda: str(uuid.uuid4()), index=True, unique=True)
+    user_id: str | None
+    is_guest: bool = Field(default=True)
     exam_board: str
     subject: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
