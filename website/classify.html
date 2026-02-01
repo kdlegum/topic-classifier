@@ -17,6 +17,7 @@
     <div class="section">
       <label for="specification">Specification</label>
       <select id="specification">
+        <option value="None">---Choose a Specification---</option>
         <option value="H240">OCR A Level Mathematics (H240)</option>
         <option value="9PH0">Edexcel A Level Physics (9PH0)</option>
         <option value="H645">OCR MEI B A Level Further Mathematics (H645) (All Options)</option>
@@ -103,6 +104,11 @@
 
       const spec = document.getElementById("specification").value;
 
+      if (spec === "None") {
+        alert("Please choose the specification.");
+        return;
+      }
+
       submitButton.disabled = true;
       submitButton.textContent = "Classifying...";
 
@@ -135,6 +141,11 @@
       }
 
       const specCode = document.getElementById("specification").value;
+
+      if (specCode === "None") {
+        alert("Please choose the specification.");
+        return;
+      }
 
       uploadButton.disabled = true;
       pdfStatusDiv.textContent = "Uploading...";

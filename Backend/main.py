@@ -566,6 +566,6 @@ def serve_history():
 
 @app.get("/session-view/{session_id}")
 def serve_session_view(session_id: str):
-    return FileResponse("website/session.html")
+    return FileResponse("website/mark_session.html")
 
 
