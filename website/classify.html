@@ -202,47 +202,7 @@
 
     // Display classification results
     function displayResults(data) {
-      const container = document.getElementById("results");
-      container.innerHTML = "";
-
-      data.questions.forEach((question) => {
-        const qDiv = document.createElement("div");
-        qDiv.classList.add("question-block");
-
-        const qHeader = document.createElement("h3");
-        qHeader.textContent = `Question ${question.question_number}:`;
-        qDiv.appendChild(qHeader);
-
-        const qText = document.createElement("p");
-        qText.textContent = `${question.question_text}`;
-        qDiv.appendChild(qText);
-
-        question.predictions.forEach((pred) => {
-          const wrapper = document.createElement("div");
-          wrapper.classList.add("prediction");
-
-          const mainLine = document.createElement("p");
-          mainLine.innerHTML =
-            `Rank ${pred.rank}: ${pred.strand} → ${pred.topic} → ` +
-            `<span class="subtopic clickable">${pred.subtopic}</span> ` +
-            `(Similarity score ${pred.similarity_score})`;
-          wrapper.appendChild(mainLine);
-
-          const desc = document.createElement("div");
-          desc.classList.add("description");
-          desc.textContent = pred.description;
-          desc.style.display = "none";
-          wrapper.appendChild(desc);
-
-          mainLine.querySelector(".subtopic").addEventListener("click", () => {
-            desc.style.display = desc.style.display === "none" ? "block" : "none";
-          });
-
-          qDiv.appendChild(wrapper);
-        });
-
-        container.appendChild(qDiv);
-      });
+      window.location.href = `/session-view/${data.session_id}`;
     }
   </script>
 </body>
