@@ -96,6 +96,18 @@
             <p class="total_marks">${marks_available}</p> 
         `;
 
+        if (question.marks_achieved === null) {
+          html += `
+          <input
+          type="text"
+          id="marksAchieved"
+          name="marks_achieved"
+          placeholder="Marks achieved"/>
+          `
+        }
+
+        //TODO add blur listener to submit marks achieved
+
         question.predictions.forEach((pred) => {
           html += `
             <div class="prediction">
