@@ -366,3 +366,42 @@ a.session-card:hover {
   margin-bottom: 24px;
   text-decoration: none;
 }
+
+/* Save indicator in nav */
+.save-indicator {
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.save-indicator.saving {
+  color: #ffc107;
+  background: rgba(255, 193, 7, 0.15);
+}
+
+.save-indicator.saved {
+  color: #28a745;
+  background: rgba(40, 167, 69, 0.15);
+}
+
+.save-indicator.error {
+  color: #dc3545;
+  background: rgba(220, 53, 69, 0.15);
+}
+
+/* Marks achieved input */
+.marks-achieved {
+  width: 120px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.marks-achieved:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.15);
+}

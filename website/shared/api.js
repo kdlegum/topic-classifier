@@ -119,3 +119,25 @@ export async function migrateGuestSessions() {
 
   return response.json();
 }
+
+/**
+ * Update the marks of a list of questions for a given session
+ * @param {string} sessionId - The session ID
+ * @param {Array<{question_id: number, marks_achieved: number}>} marksObjectList - List of marks to update
+ * @returns {Promise<{success: boolean, total_marks_available: number, total_marks_achieved: number}>}
+ */
+export async function uploadAchievedMarks(sessionId, marksObjectList) {
+  const response = await apiFetch(`/session/${sessionId}/marks`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ marks: marksObjectList }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Mark Upload failed: ${response.status}`);
+  }
+
+  return response.json();
+}

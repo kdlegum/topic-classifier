@@ -19,7 +19,8 @@
 
   <script type="module">
     import { renderNav } from "/static/shared/nav.js";
-    import { getSession } from "/static/shared/api.js";
+    import { getSession, uploadAchievedMarks } from "/static/shared/api.js";
+
 
     // Initialize navigation
     renderNav("nav-container");
@@ -82,31 +83,36 @@
       `;
 
       session.questions.forEach((question) => {
-        var marks_available = ""
-        if (question.marks_available === null) {
-          marks_available = "Marks Not found"
-        }
-        else {
-          marks_available = `(${question.marks_available})`
-        }
+        const marks_available = question.marks_available === null
+          ? "Marks Not found"
+          : `(${question.marks_available})`;
+
         html += `
           <div class="question-block">
             <h3>Question ${question.question_number}:</h3>
             <p>${question.question_text}</p>
-            <p class="total_marks">${marks_available}</p> 
+            <p class="total_marks">${marks_available}</p>
         `;
 
         if (question.marks_achieved === null) {
           html += `
           <input
-          type="text"
-          id="marksAchieved"
-          name="marks_achieved"
-          placeholder="Marks achieved"/>
-          `
+            type="number"
+            class="marks-achieved"
+            name="marks_achieved"
+            placeholder="Marks achieved"
+            data-question-id="${question.question_id}"/>
+          `;
+        } else {
+          html += `
+          <input
+            type="number"
+            class="marks-achieved"
+            name="marks_achieved"
+            value="${question.marks_achieved}"
+            data-question-id="${question.question_id}"/>
+          `;
         }
-
-        //TODO add blur listener to submit marks achieved
 
         question.predictions.forEach((pred) => {
           html += `
@@ -138,6 +144,108 @@
           }
         });
       });
+
+      // Setup debounced mark saving AFTER DOM is ready
+      setupMarksSaving(session.session_id);
+    }
+
+    // Track pending changes and debounce saving
+    let pendingMarks = new Map();
+    let saveTimeout = null;
+
+    function setupMarksSaving(sessionId) {
+      const inputs = document.querySelectorAll(".marks-achieved");
+
+      inputs.forEach(input => {
+        input.addEventListener("input", () => {
+          const questionId = parseInt(input.dataset.questionId, 10);
+          const value = input.value.trim();
+
+          if (value === "") {
+            pendingMarks.delete(questionId);
+            return;
+          }
+
+          const marks = parseInt(value, 10);
+          if (Number.isNaN(marks)) return;
+
+          pendingMarks.set(questionId, marks);
+
+          // Show saving indicator
+          showSavingIndicator();
+
+          // Debounce save
+          clearTimeout(saveTimeout);
+          saveTimeout = setTimeout(() => saveChanges(sessionId), 600);
+        });
+      });
+    }
+
+    async function saveChanges(sessionId) {
+      if (pendingMarks.size === 0) {
+        hideSavingIndicator();
+        return;
+      }
+
+      const marksObjectList = Array.from(pendingMarks.entries()).map(
+        ([question_id, marks_achieved]) => ({
+          question_id,
+          marks_achieved
+        })
+      );
+
+      // Clear buffer optimistically
+      pendingMarks.clear();
+
+      try {
+        await uploadAchievedMarks(sessionId, marksObjectList);
+        showSavedIndicator();
+      } catch (error) {
+        console.error("Failed to save marks:", error);
+        showSaveErrorIndicator();
+      }
+    }
+
+    function showSavingIndicator() {
+      let indicator = document.getElementById("save-indicator");
+      if (!indicator) {
+        indicator = document.createElement("span");
+        indicator.id = "save-indicator";
+        indicator.className = "save-indicator";
+        const navUser = document.querySelector(".nav-user");
+        if (navUser) {
+          navUser.insertBefore(indicator, navUser.firstChild);
+        }
+      }
+      indicator.textContent = "Saving...";
+      indicator.className = "save-indicator saving";
+    }
+
+    function showSavedIndicator() {
+      const indicator = document.getElementById("save-indicator");
+      if (indicator) {
+        indicator.textContent = "Saved";
+        indicator.className = "save-indicator saved";
+        setTimeout(() => {
+          indicator.style.opacity = "0";
+          setTimeout(() => indicator.remove(), 300);
+        }, 1500);
+      }
+    }
+
+    function showSaveErrorIndicator() {
+      const indicator = document.getElementById("save-indicator");
+      if (indicator) {
+        indicator.textContent = "Save failed";
+        indicator.className = "save-indicator error";
+      }
+    }
+
+    function hideSavingIndicator() {
+      const indicator = document.getElementById("save-indicator");
+      if (indicator) {
+        indicator.remove();
+      }
     }
   </script>
 </body>

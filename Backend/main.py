@@ -556,6 +556,99 @@ def process_pdf(job_id, SpecCode, user):
     session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode), user_id=user_id, is_guest=is_guest)["session_id"]
     updateStatus(job_id, "Done", session_id)
 
+class MarkSubmission(BaseModel):
+    question_id: int
+    marks_achieved: int
+
+class MarksSubmitRequest(BaseModel):
+    marks: List[MarkSubmission]
+
+@app.post("/session/{session_id}/marks")
+def submit_marks(session_id: str, req: MarksSubmitRequest, request: Request, user=Depends(get_user)):
+    """
+    Submit achieved marks for questions in a session.
+    Updates QuestionMark records and recalculates session totals.
+    """
+    with Session(engine) as db:
+        # Fetch session and verify ownership
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        # Authorization check
+        is_owner = False
+        if db_session.is_guest:
+            is_owner = (user.get("guest_id") == db_session.user_id)
+        else:
+            is_owner = (user.get("user_id") == db_session.user_id)
+
+        if not is_owner:
+            raise HTTPException(status_code=403, detail="Not authorized to modify this session")
+
+        # Get all question IDs for this session
+        questions = db.exec(
+            select(DBQuestion).where(DBQuestion.session_id == session_id)
+        ).all()
+        valid_question_ids = {q.id for q in questions}
+
+        # Update marks for each question
+        for mark in req.marks:
+            if mark.question_id not in valid_question_ids:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Question {mark.question_id} does not belong to this session"
+                )
+
+            question_mark = db.exec(
+                select(QuestionMark).where(QuestionMark.question_id == mark.question_id)
+            ).first()
+
+            if not question_mark:
+                raise HTTPException(
+                    status_code=404,
+                    detail=f"QuestionMark not found for question {mark.question_id}"
+                )
+
+            question_mark.marks_achieved = mark.marks_achieved
+            db.add(question_mark)
+
+            # Update question status to marked
+            question = db.exec(
+                select(DBQuestion).where(DBQuestion.id == mark.question_id)
+            ).first()
+            if question:
+                question.status = "marked"
+                db.add(question)
+
+        # Recalculate session totals
+        all_marks = db.exec(
+            select(QuestionMark).where(
+                QuestionMark.question_id.in_(valid_question_ids)
+            )
+        ).all()
+
+        total_available = sum(m.marks_available or 0 for m in all_marks)
+        total_achieved = sum(m.marks_achieved or 0 for m in all_marks if m.marks_achieved is not None)
+        all_marked = all(m.marks_achieved is not None for m in all_marks)
+
+        db_session.total_marks_available = total_available
+        db_session.total_marks_achieved = total_achieved
+        db_session.status = "marked" if all_marked else "in_progress"
+        db.add(db_session)
+
+        db.commit()
+
+        return {
+            "success": True,
+            "total_marks_available": total_available,
+            "total_marks_achieved": total_achieved,
+            "session_status": db_session.status
+        }
+
+
 @app.get("/debug/sessions")
 def debug_sessions():
     with Session(engine) as db:
