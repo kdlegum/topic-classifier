@@ -82,10 +82,18 @@
       `;
 
       session.questions.forEach((question) => {
+        var marks_available = ""
+        if (question.marks_available === null) {
+          marks_available = "Marks Not found"
+        }
+        else {
+          marks_available = `(${question.marks_available})`
+        }
         html += `
           <div class="question-block">
             <h3>Question ${question.question_number}:</h3>
             <p>${question.question_text}</p>
+            <p class="total_marks">${marks_available}</p> 
         `;
 
         question.predictions.forEach((pred) => {

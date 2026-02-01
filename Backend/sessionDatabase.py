@@ -13,7 +13,7 @@ Session (exam paper, model = X)
 
 class QuestionStatus(str, Enum):
     not_marked = "not_marked"
-    mak = "marked"
+    marked = "marked"
 
 class SessionStatus(str, Enum):
     not_marked = "not_marked"

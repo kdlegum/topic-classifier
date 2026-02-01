@@ -9,7 +9,7 @@ from slowapi.middleware import SlowAPIMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
-from typing import List, Optional
+from typing import List, Optional, Dict
 import numpy as np
 import json
 import time
@@ -57,7 +57,7 @@ class similarityRequest(BaseModel):
     questions: List[str]
 
 class classificationRequest(BaseModel):
-    question_text: List[str]
+    question_object: List[Dict]
     ExamBoard: Optional[str] = None
     SpecCode: str
     num_predictions: Optional[int] = 3
@@ -128,10 +128,14 @@ def classify_questions_logic(
                 topicName + ". " + s["description"]
             )
 
+
+    question_text = [q["text"] for q in req.question_object]
+    marks = [q["marks"] for q in req.question_object]
+
     similarities = np.array(
         compute_similarity(
             similarityRequest(
-                questions=req.question_text,
+                questions=question_text,
                 SpecDescriptions=subTopicClassificationTexts,
             )
         )
@@ -165,7 +169,7 @@ def classify_questions_logic(
         )
         db.add(db_session)
 
-        for q_idx, question_text in enumerate(req.question_text):
+        for q_idx, question_text in enumerate(question_text):
 
             db_question = DBQuestion(
                 session_id=session_id,
@@ -174,6 +178,12 @@ def classify_questions_logic(
             )
             db.add(db_question)
             db.flush()  # needed here to get db_question.id
+
+            db_question_mark = QuestionMark(
+                question_id=db_question.id,
+                marks_available=marks[q_idx],
+            )
+            db.add(db_question_mark)
 
             with open(r"Backend\topics.json", "r", encoding="utf-8") as h:
                 topics = json.load(h)
@@ -323,15 +333,27 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             .order_by(DBPrediction.question_id, DBPrediction.rank)
         ).all()
 
+        # ---------- Fetch question marks ----------
+        question_marks = db.exec(
+            select(QuestionMark)
+            .where(QuestionMark.question_id.in_(question_ids))
+        ).all()
+
         # ---------- Group predictions by question ----------
         preds_by_question: dict[int, list[DBPrediction]] = {}
         for p in predictions:
             preds_by_question.setdefault(p.question_id, []).append(p)
 
+        # ---------- Map marks by question ----------
+        marks_by_question: dict[int, QuestionMark] = {}
+        for m in question_marks:
+            marks_by_question[m.question_id] = m
+
         response_questions = []
 
         for q in questions:
             preds = preds_by_question.get(q.id, [])
+            marks = marks_by_question.get(q.id)
 
             status = compute_confidence(preds)
             margin = compute_margin(preds)
@@ -342,6 +364,8 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
                 "question_id": q.id,
                 "question_number": q.question_number,
                 "question_text": q.question_text,
+                "marks_available": marks.marks_available if marks else None,
+                "marks_achieved": marks.marks_achieved if marks else None,
 
                 "confidence": {
                     "method": "top1_minus_top2",
@@ -521,14 +545,15 @@ def process_pdf(job_id, SpecCode, user):
     updateStatus(job_id, "Converted to Markdown. Extracting questions...")
     questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
     updateStatus(job_id, "Questions extracted. Classifying questions by topic...")
-    question_text = [q["text"] for q in questions]
+
     if user["is_authenticated"]:
         user_id = user["user_id"]
         is_guest = False
     else:
         user_id = user["guest_id"]
         is_guest = True
-    session_id = classify_questions_logic(classificationRequest(question_text=question_text, SpecCode=SpecCode), user_id=user_id, is_guest=is_guest)["session_id"]
+
+    session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode), user_id=user_id, is_guest=is_guest)["session_id"]
     updateStatus(job_id, "Done", session_id)
 
 @app.get("/debug/sessions")

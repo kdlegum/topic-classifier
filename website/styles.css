@@ -107,6 +107,10 @@ body {
       margin-bottom: 10px;
     }
 
+    .total_marks{
+      text-align: right;
+    }
+
     .clickable {
       color: #0077cc;
       cursor: pointer;
