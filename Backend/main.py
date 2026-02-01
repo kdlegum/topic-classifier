@@ -15,8 +15,8 @@ import json
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction
-from sqlmodel import Session, create_engine, select
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark
+from sqlmodel import Session, create_engine, select, update
 from pathlib import Path
 from pdf_interpretation.pdfOCR import run_olmocr
 from pdf_interpretation.utils import updateStatus
@@ -279,7 +279,11 @@ def get_status(job_id: str):
     return data
 
 @app.get("/session/{session_id}")
-def get_session(session_id: str):
+def get_session(session_id: str, request: Request = None, user: dict = None):
+    # Allow internal calls (from classify_questions_logic) without auth check
+    if request is not None and user is None:
+        user = get_user(request)
+
     with Session(engine) as db:
 
         # ---------- Fetch session ----------
@@ -289,6 +293,19 @@ def get_session(session_id: str):
 
         if not db_session:
             raise HTTPException(status_code=404, detail="Session not found")
+
+        # ---------- Authorization check ----------
+        if user is not None:
+            is_owner = False
+            if db_session.is_guest:
+                # Guest session - check guest_id
+                is_owner = (user.get("guest_id") == db_session.user_id)
+            else:
+                # User session - check user_id
+                is_owner = (user.get("user_id") == db_session.user_id)
+
+            if not is_owner:
+                raise HTTPException(status_code=403, detail="Not authorized to view this session")
 
         # ---------- Fetch questions ----------
         questions = db.exec(
@@ -348,16 +365,121 @@ def get_session(session_id: str):
                 ]
             })
 
+        # ---------- Look up spec details ----------
+        spec_code = db_session.subject
+        qualification = None
+        subject_name = None
+        for spec in allSpecs:
+            if spec["Specification"] == spec_code:
+                qualification = spec.get("Qualification")
+                subject_name = spec.get("Subject")
+                break
+
         # ---------- Final response ----------
         return {
             "session_id": db_session.session_id,
             "exam_board": db_session.exam_board,
-            "subject": db_session.subject,
+            "spec_code": spec_code,
+            "qualification": qualification,
+            "subject_name": subject_name,
+            "subject": db_session.subject,  # kept for backwards compatibility
             "model_name": getattr(db_session, "model_name", None),
             "created_at": db_session.created_at,
             "user_id": db_session.user_id,
             "questions": response_questions
         }
+
+
+@app.get("/user/sessions")
+def get_user_sessions(request: Request, user=Depends(get_user)):
+    """
+    Returns sessions for authenticated users OR guests (via X-Guest-ID header).
+    Includes: session_id, subject, exam_board, created_at, question_count.
+    Ordered by most recent first.
+    """
+    with Session(engine) as db:
+        if user["is_authenticated"]:
+            # Authenticated user - get their sessions
+            sessions = db.exec(
+                select(DBSess)
+                .where(DBSess.user_id == user["user_id"])
+                .where(DBSess.is_guest == False)
+                .order_by(DBSess.created_at.desc())
+            ).all()
+        else:
+            # Guest - get sessions by guest_id
+            guest_id = user["guest_id"]
+            if not guest_id:
+                return []
+            sessions = db.exec(
+                select(DBSess)
+                .where(DBSess.user_id == guest_id)
+                .where(DBSess.is_guest == True)
+                .order_by(DBSess.created_at.desc())
+            ).all()
+
+        result = []
+        for s in sessions:
+            # Count questions for this session
+            question_count = len(db.exec(
+                select(DBQuestion).where(DBQuestion.session_id == s.session_id)
+            ).all())
+
+            # Look up spec details
+            spec_code = s.subject
+            qualification = None
+            subject_name = None
+            for spec in allSpecs:
+                if spec["Specification"] == spec_code:
+                    qualification = spec.get("Qualification")
+                    subject_name = spec.get("Subject")
+                    break
+
+            result.append({
+                "session_id": s.session_id,
+                "subject": s.subject,
+                "qualification": qualification,
+                "subject_name": subject_name,
+                "exam_board": s.exam_board,
+                "created_at": s.created_at,
+                "question_count": question_count,
+            })
+
+        return result
+
+
+@app.post("/migrate-guest-sessions")
+def migrate_guest_sessions(request: Request, user=Depends(get_user)):
+    """
+    Transfers all sessions with matching guest_id to the authenticated user.
+    Called after user signs up to migrate their guest sessions.
+    """
+    if not user["is_authenticated"]:
+        raise HTTPException(status_code=401, detail="Must be authenticated to migrate sessions")
+
+    guest_id = user["guest_id"]
+    if not guest_id:
+        return {"migrated": 0}
+
+    with Session(engine) as db:
+        # Find all guest sessions with this guest_id
+        guest_sessions = db.exec(
+            select(DBSess)
+            .where(DBSess.user_id == guest_id)
+            .where(DBSess.is_guest == True)
+        ).all()
+
+        count = 0
+        for session in guest_sessions:
+            session.user_id = user["user_id"]
+            session.is_guest = False
+            db.add(session)
+            count += 1
+
+        db.commit()
+
+        return {"migrated": count}
+
 
 @app.post("/upload-pdf/{SpecCode}")
 async def upload_pdf(request: Request, SpecCode: str, file: UploadFile = File(...), background_tasks: BackgroundTasks=None, user=Depends(get_user),):
@@ -431,7 +553,19 @@ def debug_sessions():
 app.mount("/static", StaticFiles(directory="website"), name="static")
 
 @app.get("/")
-def serve_home():
-    return FileResponse("website/demoSite.html")
+def serve_login():
+    return FileResponse("website/index.html")
+
+@app.get("/classify")
+def serve_classify():
+    return FileResponse("website/classify.html")
+
+@app.get("/history")
+def serve_history():
+    return FileResponse("website/history.html")
+
+@app.get("/session-view/{session_id}")
+def serve_session_view(session_id: str):
+    return FileResponse("website/session.html")
 
 

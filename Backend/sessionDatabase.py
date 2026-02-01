@@ -36,3 +36,10 @@ class Prediction(SQLModel, table=True):
     spec_sub_section: str
     similarity_score: float
     description: str
+
+
+class QuestionMark(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    question_id: int = Field(foreign_key="question.id")
+    marks_available: int | None = None
+    marks_achieved: int | None = None

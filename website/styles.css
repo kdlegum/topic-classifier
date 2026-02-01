@@ -1,9 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #333;
+  color: white;
+}
+
+.nav-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-links a.active {
+  color: white;
+  border-bottom-color: #0077cc;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-display {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #666;
+  border-radius: 4px;
+}
+
+.nav-btn:hover {
+  background: #444;
+}
+
+/* Page content */
+.page-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
 
     h1 {
       margin-bottom: 10px;
@@ -76,3 +147,218 @@ body {
       border-top: 1px solid #ccc;
       padding-top: 20px;
     }
+
+/* Login Page */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 8px;
+}
+
+.login-container .subtitle {
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.login-box {
+  background: #f9f9f9;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.login-box .section {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.login-box label {
+  text-align: left;
+}
+
+.btn-primary {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: #005fa3;
+}
+
+.btn-primary:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.btn-google {
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-google:hover {
+  background: #f5f5f5;
+}
+
+.btn-google:disabled {
+  background: #eee;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.btn-secondary:hover {
+  background: #eee;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  padding: 0 12px;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.guest-link {
+  margin-top: 24px;
+}
+
+.guest-link a {
+  color: #666;
+  text-decoration: none;
+}
+
+.guest-link a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.login-status {
+  margin-top: 16px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* History Page */
+.sessions-list {
+  margin-top: 24px;
+}
+
+a.session-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.session-card:hover {
+  background: #f9f9f9;
+  border-color: #0077cc;
+}
+
+.session-info {
+  flex: 1;
+}
+
+.session-subject {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.session-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.session-board {
+  margin-right: 12px;
+}
+
+.session-questions {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.session-detail {
+  margin-top: 24px;
+}
+
+.session-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.session-header h2 {
+  margin-bottom: 8px;
+}
+
+.empty-state,
+.error-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #666;
+}
+
+.empty-state a,
+.error-state a {
+  color: #0077cc;
+}
+
+.loading {
+  text-align: center;
+  padding: 24px;
+  color: #666;
+}
+
+/* Back link on session page */
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
