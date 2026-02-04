@@ -673,8 +673,29 @@ def debug_sessions():
 FRAMEWORK = os.getenv('FRONTEND_FRAMEWORK', 'js')
 
 if FRAMEWORK == 'svelte':
-    # Serve built SvelteKit static files
-    app.mount("/", StaticFiles(directory="frontend/build", html=True), name="static")
+    # Serve SvelteKit bundled assets (JS, CSS, etc.)
+    app.mount("/_app", StaticFiles(directory="frontend/build/_app"), name="svelte_app")
+
+    # SvelteKit SPA routes - serve index.html for client-side routing
+    @app.get("/")
+    def serve_svelte_index():
+        return FileResponse("frontend/build/index.html")
+
+    @app.get("/classify")
+    def serve_svelte_classify():
+        return FileResponse("frontend/build/index.html")
+
+    @app.get("/history")
+    def serve_svelte_history():
+        return FileResponse("frontend/build/index.html")
+
+    @app.get("/session-view/{session_id}")
+    def serve_svelte_session_view(session_id: str):
+        return FileResponse("frontend/build/index.html")
+
+    @app.get("/robots.txt")
+    def serve_robots():
+        return FileResponse("frontend/build/robots.txt")
 else:
     # Serve vanilla JS frontend
     app.mount("/static", StaticFiles(directory="website"), name="static")
