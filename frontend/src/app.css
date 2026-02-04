@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Page content */
+.page-content {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+.section {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 8px;
+}
+
+select,
+textarea,
+button {
+	width: 100%;
+	font-size: 1rem;
+	padding: 10px;
+}
+
+input[type='email'] {
+	width: 100%;
+	font-size: 1rem;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+input[type='email']:focus {
+	outline: none;
+	border-color: #0077cc;
+}
+
+/* Login Page */
+.login-container {
+	max-width: 400px;
+	margin: 80px auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.login-container h1 {
+	margin-bottom: 8px;
+}
+
+.login-container .subtitle {
+	color: #666;
+	margin-bottom: 32px;
+}
+
+.login-box {
+	background: #f9f9f9;
+	padding: 24px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+}
+
+.login-box .section {
+	margin-bottom: 16px;
+	margin-top: 0;
+}
+
+.login-box label {
+	text-align: left;
+}
+
+.btn-primary {
+	background: #0077cc;
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	font-size: 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.btn-primary:hover {
+	background: #005fa3;
+}
+
+.btn-primary:disabled {
+	background: #999;
+	cursor: not-allowed;
+}
+
+.btn-google {
+	background: white;
+	color: #333;
+	border: 1px solid #ddd;
+	padding: 12px 24px;
+	font-size: 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.btn-google:hover {
+	background: #f5f5f5;
+}
+
+.btn-google:disabled {
+	background: #eee;
+	color: #999;
+	cursor: not-allowed;
+}
+
+.divider {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+	content: '';
+	flex: 1;
+	border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+	padding: 0 12px;
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.guest-link {
+	margin-top: 24px;
+}
+
+.guest-link a {
+	color: #666;
+	text-decoration: none;
+}
+
+.guest-link a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+.login-status {
+	margin-top: 16px;
+	color: #666;
+	font-size: 0.9rem;
+}
