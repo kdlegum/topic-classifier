@@ -15,6 +15,7 @@ import json
 import time
 import uuid
 import datetime
+import os
 from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark
 from sqlmodel import Session, create_engine, select, update
 from pathlib import Path
@@ -667,23 +668,31 @@ def debug_sessions():
             for s in sessions
         ]
 
+# Framework switch: 'js' for vanilla JS (website/), 'svelte' for SvelteKit (frontend/build/)
+# Set via FRONTEND_FRAMEWORK env var or change default here
+FRAMEWORK = os.getenv('FRONTEND_FRAMEWORK', 'js')
 
-app.mount("/static", StaticFiles(directory="website"), name="static")
+if FRAMEWORK == 'svelte':
+    # Serve built SvelteKit static files
+    app.mount("/", StaticFiles(directory="frontend/build", html=True), name="static")
+else:
+    # Serve vanilla JS frontend
+    app.mount("/static", StaticFiles(directory="website"), name="static")
 
-@app.get("/")
-def serve_login():
-    return FileResponse("website/index.html")
+    @app.get("/")
+    def serve_login():
+        return FileResponse("website/index.html")
 
-@app.get("/classify")
-def serve_classify():
-    return FileResponse("website/classify.html")
+    @app.get("/classify")
+    def serve_classify():
+        return FileResponse("website/classify.html")
 
-@app.get("/history")
-def serve_history():
-    return FileResponse("website/history.html")
+    @app.get("/history")
+    def serve_history():
+        return FileResponse("website/history.html")
 
-@app.get("/session-view/{session_id}")
-def serve_session_view(session_id: str):
-    return FileResponse("website/mark_session.html")
+    @app.get("/session-view/{session_id}")
+    def serve_session_view(session_id: str):
+        return FileResponse("website/mark_session.html")
 
 
