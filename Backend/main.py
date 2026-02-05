@@ -16,7 +16,7 @@ import time
 import uuid
 import datetime
 import os
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection
 from sqlmodel import Session, create_engine, select, update
 from pathlib import Path
 from pdf_interpretation.pdfOCR import run_olmocr
@@ -340,6 +340,12 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             .where(QuestionMark.question_id.in_(question_ids))
         ).all()
 
+        # ---------- Fetch user corrections ----------
+        user_corrections = db.exec(
+            select(UserCorrection)
+            .where(UserCorrection.question_id.in_(question_ids))
+        ).all()
+
         # ---------- Group predictions by question ----------
         preds_by_question: dict[int, list[DBPrediction]] = {}
         for p in predictions:
@@ -349,6 +355,11 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
         marks_by_question: dict[int, QuestionMark] = {}
         for m in question_marks:
             marks_by_question[m.question_id] = m
+
+        # ---------- Group corrections by question ----------
+        corrections_by_question: dict[int, list[UserCorrection]] = {}
+        for c in user_corrections:
+            corrections_by_question.setdefault(c.question_id, []).append(c)
 
         response_questions = []
 
@@ -387,6 +398,18 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
                         "description": p.description
                     }
                     for p in preds
+                ],
+
+                "user_corrections": [
+                    {
+                        "subtopic_id": c.subtopic_id,
+                        "strand": c.strand,
+                        "topic": c.topic,
+                        "subtopic": c.subtopic,
+                        "spec_sub_section": c.spec_sub_section,
+                        "description": c.description
+                    }
+                    for c in corrections_by_question.get(q.id, [])
                 ]
             })
 
@@ -557,6 +580,63 @@ def process_pdf(job_id, SpecCode, user):
     session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode), user_id=user_id, is_guest=is_guest)["session_id"]
     updateStatus(job_id, "Done", session_id)
 
+class UpdateQuestionRequest(BaseModel):
+    question_text: Optional[str] = None
+    marks_available: Optional[int] = None
+
+@app.patch("/session/{session_id}/question/{question_id}")
+def update_question(session_id: str, question_id: int, req: UpdateQuestionRequest, request: Request, user=Depends(get_user)):
+    with Session(engine) as db:
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        is_owner = False
+        if db_session.is_guest:
+            is_owner = (user.get("guest_id") == db_session.user_id)
+        else:
+            is_owner = (user.get("user_id") == db_session.user_id)
+        if not is_owner:
+            raise HTTPException(status_code=403, detail="Not authorized to modify this session")
+
+        question = db.exec(
+            select(DBQuestion).where(DBQuestion.id == question_id, DBQuestion.session_id == session_id)
+        ).first()
+        if not question:
+            raise HTTPException(status_code=404, detail="Question not found in this session")
+
+        if req.question_text is not None:
+            question.question_text = req.question_text
+            db.add(question)
+
+        if req.marks_available is not None:
+            question_mark = db.exec(
+                select(QuestionMark).where(QuestionMark.question_id == question_id)
+            ).first()
+            if question_mark:
+                question_mark.marks_available = req.marks_available
+                db.add(question_mark)
+
+            # Recalculate session total_marks_available
+            all_question_ids = [q.id for q in db.exec(
+                select(DBQuestion).where(DBQuestion.session_id == session_id)
+            ).all()]
+            all_marks = db.exec(
+                select(QuestionMark).where(QuestionMark.question_id.in_(all_question_ids))
+            ).all()
+            db_session.total_marks_available = sum(m.marks_available or 0 for m in all_marks)
+            db.add(db_session)
+
+        db.commit()
+
+        return {
+            "question_id": question_id,
+            "question_text": question.question_text,
+            "marks_available": req.marks_available,
+        }
+
 class MarkSubmission(BaseModel):
     question_id: int
     marks_achieved: int
@@ -650,6 +730,115 @@ def submit_marks(session_id: str, req: MarksSubmitRequest, request: Request, use
         }
 
 
+@app.get("/topics/{spec_code}/hierarchy")
+def get_topic_hierarchy(spec_code: str):
+    matching_spec = None
+    for s in allSpecs:
+        if s["Specification"] == spec_code:
+            matching_spec = s
+            break
+
+    if matching_spec is None:
+        raise HTTPException(status_code=404, detail="Specification not found")
+
+    exam_board = matching_spec["Exam Board"]
+    strands: dict[str, dict] = {}
+
+    for t in matching_spec["Topics"]:
+        strand_name = t["Strand"]
+        if strand_name not in strands:
+            strands[strand_name] = {"name": strand_name, "topics": []}
+
+        subtopics = []
+        for s in t["Sub_topics"]:
+            subtopics.append({
+                "subtopic_id": s["subtopic_id"],
+                "name": s["Sub_topic_name"],
+                "spec_sub_section": s["Specification_section_sub"],
+                "description": s["description"],
+            })
+
+        strands[strand_name]["topics"].append({
+            "topic_id": t["Topic_id"],
+            "name": t["Topic_name"],
+            "subtopics": subtopics,
+        })
+
+    return {
+        "spec_code": spec_code,
+        "exam_board": exam_board,
+        "strands": list(strands.values()),
+    }
+
+
+class CorrectionItem(BaseModel):
+    question_id: int
+    subtopic_ids: List[str]
+
+class CorrectionsRequest(BaseModel):
+    corrections: List[CorrectionItem]
+
+@app.put("/session/{session_id}/corrections")
+def save_corrections(session_id: str, req: CorrectionsRequest, request: Request, user=Depends(get_user)):
+    with Session(engine) as db:
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        is_owner = False
+        if db_session.is_guest:
+            is_owner = (user.get("guest_id") == db_session.user_id)
+        else:
+            is_owner = (user.get("user_id") == db_session.user_id)
+        if not is_owner:
+            raise HTTPException(status_code=403, detail="Not authorized to modify this session")
+
+        valid_question_ids = {q.id for q in db.exec(
+            select(DBQuestion).where(DBQuestion.session_id == session_id)
+        ).all()}
+
+        exam_board = db_session.exam_board
+        spec_code = db_session.subject
+
+        for item in req.corrections:
+            if item.question_id not in valid_question_ids:
+                raise HTTPException(status_code=400, detail=f"Question {item.question_id} does not belong to this session")
+
+            # Delete existing corrections for this question
+            existing = db.exec(
+                select(UserCorrection).where(UserCorrection.question_id == item.question_id)
+            ).all()
+            for e in existing:
+                db.delete(e)
+
+            # Insert new corrections
+            for subtopic_id in item.subtopic_ids:
+                key = f"{exam_board}_{spec_code}_{subtopic_id}"
+                if key not in subtopics_index:
+                    raise HTTPException(status_code=400, detail=f"Invalid subtopic_id: {subtopic_id}")
+
+                info = subtopics_index[key]
+                correction = UserCorrection(
+                    question_id=item.question_id,
+                    subtopic_id=subtopic_id,
+                    exam_board=exam_board,
+                    spec_code=spec_code,
+                    strand=info["strand"],
+                    topic=info["topic_name"],
+                    subtopic=info["name"],
+                    spec_sub_section=info["spec_sub_section"],
+                    description=info["description"],
+                )
+                db.add(correction)
+
+        db.commit()
+
+    return {"success": True}
+
+
 @app.get("/debug/sessions")
 def debug_sessions():
     with Session(engine) as db:
@@ -691,6 +880,10 @@ if FRAMEWORK == 'svelte':
 
     @app.get("/session-view/{session_id}")
     def serve_svelte_session_view(session_id: str):
+        return FileResponse("frontend/build/index.html")
+
+    @app.get("/mark_session/{session_id}")
+    def serve_svelte_mark_session(session_id: str):
         return FileResponse("frontend/build/index.html")
 
     @app.get("/robots.txt")

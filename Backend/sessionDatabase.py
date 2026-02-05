@@ -58,3 +58,16 @@ class QuestionMark(SQLModel, table=True):
     question_id: int = Field(foreign_key="question.id")
     marks_available: int | None = None
     marks_achieved: int | None = None
+
+class UserCorrection(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    question_id: int = Field(foreign_key="question.id", index=True)
+    subtopic_id: str
+    exam_board: str
+    spec_code: str
+    strand: str
+    topic: str
+    subtopic: str
+    spec_sub_section: str
+    description: str
+    created_at: datetime = Field(default_factory=datetime.utcnow)

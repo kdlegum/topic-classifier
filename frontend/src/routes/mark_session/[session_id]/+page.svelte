@@ -1,7 +1,17 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-	import { getSession, uploadAchievedMarks } from '$lib/api';
+	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections } from '$lib/api';
+	import TopicSelector from '$lib/components/TopicSelector.svelte';
+
+	type Correction = {
+		subtopic_id: string;
+		strand: string;
+		topic: string;
+		subtopic: string;
+		spec_sub_section: string;
+		description: string;
+	};
 
 	let session: any = $state(null);
 	let loading = $state(true);
@@ -13,6 +23,64 @@
 
 	let currentMarks = $state(new Map<number, number>());
 	let expandedDescs = $state(new Set<string>());
+
+	// Corrections state: question_id -> array of corrections
+	let correctionsMap = $state(new Map<number, Correction[]>());
+	let dirtyCorrections = new Set<number>();
+	let correctionSaveTimeout: ReturnType<typeof setTimeout> | null = null;
+
+	// Spec sub section -> subtopic_id lookup (built from hierarchy)
+	let specSubSectionToId = new Map<string, string>();
+
+	let pendingQuestionEdits = new Map<number, { question_text?: string; marks_available?: number }>();
+	let questionEditTimeout: ReturnType<typeof setTimeout> | null = null;
+
+	function handleQuestionTextInput(questionId: number, value: string) {
+		const existing = pendingQuestionEdits.get(questionId) ?? {};
+		pendingQuestionEdits.set(questionId, { ...existing, question_text: value });
+		saveStatus = 'saving';
+		if (questionEditTimeout) clearTimeout(questionEditTimeout);
+		questionEditTimeout = setTimeout(() => saveQuestionEdits(), 600);
+	}
+
+	function handleMarksAvailableInput(questionId: number, value: string, question: any) {
+		if (value.trim() === '') return;
+		const marks = parseInt(value, 10);
+		if (Number.isNaN(marks) || marks < 0) return;
+
+		question.marks_available = marks;
+		const existing = pendingQuestionEdits.get(questionId) ?? {};
+		pendingQuestionEdits.set(questionId, { ...existing, marks_available: marks });
+		saveStatus = 'saving';
+		if (questionEditTimeout) clearTimeout(questionEditTimeout);
+		questionEditTimeout = setTimeout(() => saveQuestionEdits(), 600);
+	}
+
+	async function saveQuestionEdits() {
+		if (pendingQuestionEdits.size === 0) {
+			saveStatus = 'idle';
+			return;
+		}
+
+		const edits = new Map(pendingQuestionEdits);
+		pendingQuestionEdits.clear();
+
+		try {
+			for (const [questionId, data] of edits) {
+				await updateQuestion(session.session_id, questionId, data);
+			}
+			saveStatus = 'saved';
+		} catch (err) {
+			console.error('Failed to save question edits:', err);
+			saveStatus = 'error';
+		}
+	}
+
+	function autoResize(textarea: HTMLTextAreaElement) {
+		textarea.style.height = 'auto';
+		textarea.style.height = textarea.scrollHeight + 'px';
+		return {};
+	}
 
 	onMount(async () => {
 		const sessionId = $page.params.session_id;
@@ -26,12 +94,31 @@
 		try {
 			session = await getSession(sessionId);
 			const initial = new Map<number, number>();
+			const initialCorrections = new Map<number, Correction[]>();
 			for (const q of session.questions) {
 				if (q.marks_achieved != null) {
 					initial.set(q.question_id, q.marks_achieved);
 				}
+				if (q.user_corrections && q.user_corrections.length > 0) {
+					initialCorrections.set(q.question_id, [...q.user_corrections]);
+				}
 			}
 			currentMarks = initial;
+			correctionsMap = initialCorrections;
+
+			// Build spec_sub_section -> subtopic_id lookup from hierarchy
+			try {
+				const hierarchy = await getTopicHierarchy(session.spec_code);
+				for (const strand of hierarchy.strands) {
+					for (const topic of strand.topics) {
+						for (const subtopic of topic.subtopics) {
+							specSubSectionToId.set(subtopic.spec_sub_section, subtopic.subtopic_id);
+						}
+					}
+				}
+			} catch (e) {
+				console.error('Failed to load hierarchy for subtopic ID lookup:', e);
+			}
 		} catch (err: any) {
 			const msg = err.message || '';
 			if (msg.includes('403')) {
@@ -119,6 +206,73 @@
 		saveTimeout = setTimeout(() => saveChanges(), 600);
 	}
 
+	function getCorrections(questionId: number): Correction[] {
+		return correctionsMap.get(questionId) ?? [];
+	}
+
+	function isPredictionSelected(questionId: number, pred: any): boolean {
+		const corrections = getCorrections(questionId);
+		return corrections.some((c) => c.spec_sub_section === pred.spec_sub_section);
+	}
+
+	function togglePredictionAsCorrection(questionId: number, pred: any) {
+		const corrections = getCorrections(questionId);
+		const existing = corrections.find((c) => c.spec_sub_section === pred.spec_sub_section);
+
+		if (existing) {
+			const updated = corrections.filter((c) => c.spec_sub_section !== pred.spec_sub_section);
+			correctionsMap = new Map(correctionsMap).set(questionId, updated);
+		} else {
+			const subtopicId = specSubSectionToId.get(pred.spec_sub_section) ?? '';
+			const newCorrection: Correction = {
+				subtopic_id: subtopicId,
+				strand: pred.strand,
+				topic: pred.topic,
+				subtopic: pred.subtopic,
+				spec_sub_section: pred.spec_sub_section,
+				description: pred.description
+			};
+			correctionsMap = new Map(correctionsMap).set(questionId, [...corrections, newCorrection]);
+		}
+
+		scheduleCorrectionSave(questionId);
+	}
+
+	function handleCorrectionsChange(questionId: number, corrections: Correction[]) {
+		correctionsMap = new Map(correctionsMap).set(questionId, corrections);
+		scheduleCorrectionSave(questionId);
+	}
+
+	function scheduleCorrectionSave(questionId: number) {
+		dirtyCorrections.add(questionId);
+		saveStatus = 'saving';
+		if (correctionSaveTimeout) clearTimeout(correctionSaveTimeout);
+		correctionSaveTimeout = setTimeout(() => flushCorrections(), 600);
+	}
+
+	async function flushCorrections() {
+		if (dirtyCorrections.size === 0) {
+			saveStatus = 'idle';
+			return;
+		}
+
+		const toSave = [...dirtyCorrections];
+		dirtyCorrections.clear();
+
+		const corrections = toSave.map((qId) => ({
+			question_id: qId,
+			subtopic_ids: (correctionsMap.get(qId) ?? []).map((c) => c.subtopic_id)
+		}));
+
+		try {
+			await saveUserCorrections(session.session_id, corrections);
+			saveStatus = 'saved';
+		} catch (err) {
+			console.error('Failed to save corrections:', err);
+			saveStatus = 'error';
+		}
+	}
+
 	async function saveChanges() {
 		if (pendingMarks.size === 0) {
 			saveStatus = 'idle';
@@ -173,12 +327,28 @@
 		{#each session.questions as question}
 			<div class="question-block">
 				<h3>Question {question.question_number}:</h3>
-				<p>{question.question_text}</p>
-				<p class="total_marks">
-					{question.marks_available === null
-						? 'Marks Not found'
-						: `(${question.marks_available})`}
-				</p>
+				<textarea
+					class="editable-question-text"
+					value={question.question_text}
+					oninput={(e) => {
+						const ta = e.currentTarget;
+						autoResize(ta);
+						handleQuestionTextInput(question.question_id, ta.value);
+					}}
+					use:autoResize
+				></textarea>
+				<div class="marks-available-row">
+					<span class="marks-label">(</span>
+					<input
+						type="number"
+						class="editable-marks-available"
+						value={question.marks_available ?? ''}
+						placeholder="Marks"
+						min="0"
+						oninput={(e) => handleMarksAvailableInput(question.question_id, e.currentTarget.value, question)}
+					/>
+					<span class="marks-label">)</span>
+				</div>
 
 				<input
 					type="number"
@@ -192,6 +362,7 @@
 				{/if}
 
 				{#each question.predictions as pred}
+					{@const selected = isPredictionSelected(question.question_id, pred)}
 					<div class="prediction">
 						<p>
 							Rank {pred.rank}: {pred.strand} &rarr; {pred.topic} &rarr;
@@ -210,6 +381,12 @@
 								{pred.subtopic}
 							</span>
 							(Similarity score {pred.similarity_score})
+							<button
+								class="btn-select-pred {selected ? 'selected' : ''}"
+								onclick={() => togglePredictionAsCorrection(question.question_id, pred)}
+							>
+								{selected ? 'Selected' : 'Select'}
+							</button>
 						</p>
 						{#if expandedDescs.has(`desc-${question.question_id}-${pred.rank}`)}
 							<div class="description">
@@ -218,6 +395,12 @@
 						{/if}
 					</div>
 				{/each}
+
+				<TopicSelector
+					specCode={session.spec_code}
+					corrections={getCorrections(question.question_id)}
+					onchange={(c) => handleCorrectionsChange(question.question_id, c)}
+				/>
 			</div>
 		{/each}
 	{/if}
