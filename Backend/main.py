@@ -15,7 +15,6 @@ import json
 import time
 import uuid
 import datetime
-import os
 from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection
 from sqlmodel import Session, create_engine, select, update
 from pathlib import Path
@@ -25,7 +24,6 @@ from pdf_interpretation.markdownParser import parse_exam_markdown
 from Backend.auth import get_user
 
 engine = create_engine("sqlite:///exam_app.db")
-debug = False
 limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
@@ -447,7 +445,6 @@ def get_user_sessions(request: Request, user=Depends(get_user)):
     """
     with Session(engine) as db:
         if user["is_authenticated"]:
-            # Authenticated user - get their sessions
             sessions = db.exec(
                 select(DBSess)
                 .where(DBSess.user_id == user["user_id"])
@@ -455,7 +452,6 @@ def get_user_sessions(request: Request, user=Depends(get_user)):
                 .order_by(DBSess.created_at.desc())
             ).all()
         else:
-            # Guest - get sessions by guest_id
             guest_id = user["guest_id"]
             if not guest_id:
                 return []
@@ -659,7 +655,6 @@ def submit_marks(session_id: str, req: MarksSubmitRequest, request: Request, use
         if not db_session:
             raise HTTPException(status_code=404, detail="Session not found")
 
-        # Authorization check
         is_owner = False
         if db_session.is_guest:
             is_owner = (user.get("guest_id") == db_session.user_id)
@@ -669,13 +664,11 @@ def submit_marks(session_id: str, req: MarksSubmitRequest, request: Request, use
         if not is_owner:
             raise HTTPException(status_code=403, detail="Not authorized to modify this session")
 
-        # Get all question IDs for this session
         questions = db.exec(
             select(DBQuestion).where(DBQuestion.session_id == session_id)
         ).all()
         valid_question_ids = {q.id for q in questions}
 
-        # Update marks for each question
         for mark in req.marks:
             if mark.question_id not in valid_question_ids:
                 raise HTTPException(
@@ -857,56 +850,34 @@ def debug_sessions():
             for s in sessions
         ]
 
-# Framework switch: 'js' for vanilla JS (website/), 'svelte' for SvelteKit (frontend/build/)
-# Set via FRONTEND_FRAMEWORK env var or change default here
-FRAMEWORK = os.getenv('FRONTEND_FRAMEWORK', 'js')
+# Serve SvelteKit bundled assets (JS, CSS, etc.)
+app.mount("/_app", StaticFiles(directory="frontend/build/_app"), name="svelte_app")
 
-if FRAMEWORK == 'svelte':
-    # Serve SvelteKit bundled assets (JS, CSS, etc.)
-    app.mount("/_app", StaticFiles(directory="frontend/build/_app"), name="svelte_app")
+# SvelteKit SPA routes - serve index.html for client-side routing
+@app.get("/")
+def serve_svelte_index():
+    return FileResponse("frontend/build/index.html")
 
-    # SvelteKit SPA routes - serve index.html for client-side routing
-    @app.get("/")
-    def serve_svelte_index():
-        return FileResponse("frontend/build/index.html")
+@app.get("/classify")
+def serve_svelte_classify():
+    return FileResponse("frontend/build/index.html")
 
-    @app.get("/classify")
-    def serve_svelte_classify():
-        return FileResponse("frontend/build/index.html")
+@app.get("/history")
+def serve_svelte_history():
+    return FileResponse("frontend/build/index.html")
 
-    @app.get("/history")
-    def serve_svelte_history():
-        return FileResponse("frontend/build/index.html")
+@app.get("/analytics")
+def server_svelte_analytics():
+    return FileResponse("frontend/build/index.html")
 
-    @app.get("/session-view/{session_id}")
-    def serve_svelte_session_view(session_id: str):
-        return FileResponse("frontend/build/index.html")
+@app.get("/session-view/{session_id}")
+def serve_svelte_session_view(session_id: str):
+    return FileResponse("frontend/build/index.html")
 
-    @app.get("/mark_session/{session_id}")
-    def serve_svelte_mark_session(session_id: str):
-        return FileResponse("frontend/build/index.html")
+@app.get("/mark_session/{session_id}")
+def serve_svelte_mark_session(session_id: str):
+    return FileResponse("frontend/build/index.html")
 
-    @app.get("/robots.txt")
-    def serve_robots():
-        return FileResponse("frontend/build/robots.txt")
-else:
-    # Serve vanilla JS frontend
-    app.mount("/static", StaticFiles(directory="website"), name="static")
-
-    @app.get("/")
-    def serve_login():
-        return FileResponse("website/index.html")
-
-    @app.get("/classify")
-    def serve_classify():
-        return FileResponse("website/classify.html")
-
-    @app.get("/history")
-    def serve_history():
-        return FileResponse("website/history.html")
-
-    @app.get("/session-view/{session_id}")
-    def serve_session_view(session_id: str):
-        return FileResponse("website/mark_session.html")
-
-
+@app.get("/robots.txt")
+def serve_robots():
+    return FileResponse("frontend/build/robots.txt")
