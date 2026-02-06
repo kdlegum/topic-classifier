@@ -832,6 +832,201 @@ def save_corrections(session_id: str, req: CorrectionsRequest, request: Request,
     return {"success": True}
 
 
+@app.get("/analytics/summary")
+def get_analytics_summary(request: Request, user=Depends(get_user)):
+    """
+    Returns aggregated analytics data for the current user:
+    - sessions_over_time: per-session score summaries
+    - strand_performance: marks aggregated by strand
+    """
+    with Session(engine) as db:
+        # Fetch user sessions
+        if user["is_authenticated"]:
+            sessions = db.exec(
+                select(DBSess)
+                .where(DBSess.user_id == user["user_id"])
+                .where(DBSess.is_guest == False)
+                .order_by(DBSess.created_at.asc())
+            ).all()
+        else:
+            guest_id = user["guest_id"]
+            if not guest_id:
+                return {"sessions_over_time": [], "strand_performance": []}
+            sessions = db.exec(
+                select(DBSess)
+                .where(DBSess.user_id == guest_id)
+                .where(DBSess.is_guest == True)
+                .order_by(DBSess.created_at.asc())
+            ).all()
+
+        if not sessions:
+            return {"sessions_over_time": [], "strand_performance": []}
+
+        session_ids = [s.session_id for s in sessions]
+
+        # Fetch all questions for these sessions
+        questions = db.exec(
+            select(DBQuestion).where(DBQuestion.session_id.in_(session_ids))
+        ).all()
+
+        question_ids = [q.id for q in questions]
+        questions_by_session: dict[str, list] = {}
+        for q in questions:
+            questions_by_session.setdefault(q.session_id, []).append(q)
+
+        if not question_ids:
+            return {"sessions_over_time": [], "strand_performance": []}
+
+        # Fetch marks, rank-1 predictions, and user corrections
+        marks = db.exec(
+            select(QuestionMark).where(QuestionMark.question_id.in_(question_ids))
+        ).all()
+        marks_by_q: dict[int, QuestionMark] = {m.question_id: m for m in marks}
+
+        rank1_preds = db.exec(
+            select(DBPrediction)
+            .where(DBPrediction.question_id.in_(question_ids))
+            .where(DBPrediction.rank == 1)
+        ).all()
+        preds_by_q: dict[int, DBPrediction] = {p.question_id: p for p in rank1_preds}
+
+        corrections = db.exec(
+            select(UserCorrection).where(UserCorrection.question_id.in_(question_ids))
+        ).all()
+        corrections_by_q: dict[int, list[UserCorrection]] = {}
+        for c in corrections:
+            corrections_by_q.setdefault(c.question_id, []).append(c)
+
+        # Build sessions_over_time
+        sessions_over_time = []
+        for s in sessions:
+            s_questions = questions_by_session.get(s.session_id, [])
+            question_count = len(s_questions)
+
+            total_available = 0
+            total_achieved = 0
+            has_any_marks = False
+
+            for q in s_questions:
+                m = marks_by_q.get(q.id)
+                if m:
+                    total_available += m.marks_available or 0
+                    if m.marks_achieved is not None:
+                        total_achieved += m.marks_achieved
+                        has_any_marks = True
+
+            # Look up spec details
+            subject_name = None
+            for spec in allSpecs:
+                if spec["Specification"] == s.subject:
+                    subject_name = spec.get("Subject")
+                    break
+
+            percentage = None
+            if has_any_marks and total_available > 0:
+                percentage = round((total_achieved / total_available) * 100, 1)
+
+            sessions_over_time.append({
+                "session_id": s.session_id,
+                "spec_code": s.subject,
+                "subject_name": subject_name,
+                "exam_board": s.exam_board,
+                "created_at": s.created_at.isoformat() if s.created_at else None,
+                "question_count": question_count,
+                "total_available": total_available,
+                "total_achieved": total_achieved if has_any_marks else None,
+                "percentage": percentage,
+            })
+
+        # Build strand_performance and topic_performance
+        # Use UserCorrection if available, else rank-1 prediction
+        strand_agg: dict[tuple[str, str], dict] = {}  # (spec_code, strand) -> aggregated data
+        topic_agg: dict[tuple[str, str], dict] = {}   # (spec_code, topic) -> aggregated data
+
+        # Map question -> session for quick lookup
+        session_by_id: dict[str, DBSess] = {s.session_id: s for s in sessions}
+
+        for q in questions:
+            m = marks_by_q.get(q.id)
+            if not m or m.marks_achieved is None:
+                continue
+
+            session_for_q = session_by_id.get(q.session_id)
+            spec_code = session_for_q.subject if session_for_q else "Unknown"
+
+            # Get strands and topics: prefer user corrections, fallback to rank-1 prediction
+            q_corrections = corrections_by_q.get(q.id, [])
+            if q_corrections:
+                strands_for_q = [c.strand for c in q_corrections]
+                topics_for_q = [c.topic for c in q_corrections]
+            else:
+                pred = preds_by_q.get(q.id)
+                strands_for_q = [pred.strand] if pred else []
+                topics_for_q = [pred.topic] if pred else []
+
+            # Split marks evenly if multiple entries (from multiple corrections)
+            num_entries = len(strands_for_q)
+            if num_entries == 0:
+                continue
+
+            marks_available_share = (m.marks_available or 0) / num_entries
+            marks_achieved_share = (m.marks_achieved or 0) / num_entries
+
+            for strand in strands_for_q:
+                key = (spec_code, strand)
+                if key not in strand_agg:
+                    strand_agg[key] = {
+                        "spec_code": spec_code,
+                        "strand": strand,
+                        "marks_available": 0,
+                        "marks_achieved": 0,
+                        "question_count": 0,
+                    }
+                strand_agg[key]["marks_available"] += marks_available_share
+                strand_agg[key]["marks_achieved"] += marks_achieved_share
+                strand_agg[key]["question_count"] += 1
+
+            for topic in topics_for_q:
+                key = (spec_code, topic)
+                if key not in topic_agg:
+                    topic_agg[key] = {
+                        "spec_code": spec_code,
+                        "topic": topic,
+                        "marks_available": 0,
+                        "marks_achieved": 0,
+                        "question_count": 0,
+                    }
+                topic_agg[key]["marks_available"] += marks_available_share
+                topic_agg[key]["marks_achieved"] += marks_achieved_share
+                topic_agg[key]["question_count"] += 1
+
+        strand_performance = []
+        for v in strand_agg.values():
+            strand_performance.append({
+                "spec_code": v["spec_code"],
+                "strand": v["strand"],
+                "marks_available": round(v["marks_available"], 1),
+                "marks_achieved": round(v["marks_achieved"], 1),
+                "question_count": v["question_count"],
+            })
+
+        topic_performance = []
+        for v in topic_agg.values():
+            topic_performance.append({
+                "spec_code": v["spec_code"],
+                "topic": v["topic"],
+                "marks_available": round(v["marks_available"], 1),
+                "marks_achieved": round(v["marks_achieved"], 1),
+                "question_count": v["question_count"],
+            })
+
+        return {
+            "sessions_over_time": sessions_over_time,
+            "strand_performance": strand_performance,
+            "topic_performance": topic_performance,
+        }
+
+
 @app.get("/debug/sessions")
 def debug_sessions():
     with Session(engine) as db:
