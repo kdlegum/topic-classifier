@@ -1027,6 +1027,135 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
         }
 
 
+@app.get("/progress/{spec_code}")
+def get_progress(spec_code: str, request: Request, user=Depends(get_user)):
+    # Validate spec_code
+    matching_spec = None
+    for s in allSpecs:
+        if s["Specification"] == spec_code:
+            matching_spec = s
+            break
+    if matching_spec is None:
+        raise HTTPException(status_code=404, detail="Specification not found")
+
+    # Build subtopic catalog keyed by spec_sub_section
+    all_subtopics: dict[str, dict] = {}
+    for t in matching_spec["Topics"]:
+        for s in t["Sub_topics"]:
+            all_subtopics[s["Specification_section_sub"]] = {
+                "subtopic_id": s["subtopic_id"],
+                "spec_sub_section": s["Specification_section_sub"],
+                "subtopic_name": s["Sub_topic_name"],
+                "strand": t["Strand"],
+                "topic": t["Topic_name"],
+            }
+
+    def build_progress_response(subtopic_stats: dict) -> dict:
+        subtopics_list = []
+        for spec_sub_section, info in all_subtopics.items():
+            stats = subtopic_stats.get(spec_sub_section)
+            if stats is None:
+                status = "not_revised"
+                full_marks_count = 0
+                question_count = 0
+            else:
+                question_count = stats["question_count"]
+                full_marks_count = stats["full_marks_count"]
+                if full_marks_count >= 3:
+                    status = "mastered"
+                elif full_marks_count >= 1:
+                    status = "secure"
+                else:
+                    status = "insecure"
+            subtopics_list.append({
+                **info,
+                "status": status,
+                "full_marks_count": full_marks_count,
+                "question_count": question_count,
+            })
+        return {"spec_code": spec_code, "subtopics": subtopics_list}
+
+    with Session(engine) as db:
+        # Fetch user sessions for this spec
+        if user["is_authenticated"]:
+            sessions = db.exec(
+                select(DBSess)
+                .where(DBSess.user_id == user["user_id"])
+                .where(DBSess.is_guest == False)
+                .where(DBSess.subject == spec_code)
+            ).all()
+        else:
+            guest_id = user["guest_id"]
+            if not guest_id:
+                return build_progress_response({})
+            sessions = db.exec(
+                select(DBSess)
+                .where(DBSess.user_id == guest_id)
+                .where(DBSess.is_guest == True)
+                .where(DBSess.subject == spec_code)
+            ).all()
+
+        if not sessions:
+            return build_progress_response({})
+
+        session_ids = [s.session_id for s in sessions]
+
+        questions = db.exec(
+            select(DBQuestion).where(DBQuestion.session_id.in_(session_ids))
+        ).all()
+        if not questions:
+            return build_progress_response({})
+
+        question_ids = [q.id for q in questions]
+
+        # Batch fetch marks, rank-1 predictions, and corrections
+        marks = db.exec(
+            select(QuestionMark).where(QuestionMark.question_id.in_(question_ids))
+        ).all()
+        marks_by_q: dict[int, QuestionMark] = {m.question_id: m for m in marks}
+
+        rank1_preds = db.exec(
+            select(DBPrediction)
+            .where(DBPrediction.question_id.in_(question_ids))
+            .where(DBPrediction.rank == 1)
+        ).all()
+        preds_by_q: dict[int, DBPrediction] = {p.question_id: p for p in rank1_preds}
+
+        corrections = db.exec(
+            select(UserCorrection).where(UserCorrection.question_id.in_(question_ids))
+        ).all()
+        corrections_by_q: dict[int, list[UserCorrection]] = {}
+        for c in corrections:
+            corrections_by_q.setdefault(c.question_id, []).append(c)
+
+        # Aggregate per subtopic
+        subtopic_stats: dict[str, dict] = {}
+
+        for q in questions:
+            m = marks_by_q.get(q.id)
+            if not m or m.marks_achieved is None:
+                continue
+
+            is_full_marks = m.marks_achieved == m.marks_available
+
+            # Use corrections if available, else rank-1 prediction
+            q_corrections = corrections_by_q.get(q.id, [])
+            if q_corrections:
+                spec_sub_sections = [c.spec_sub_section for c in q_corrections]
+            else:
+                pred = preds_by_q.get(q.id)
+                spec_sub_sections = [pred.spec_sub_section] if pred else []
+
+            for sss in spec_sub_sections:
+                if sss not in subtopic_stats:
+                    subtopic_stats[sss] = {"question_count": 0, "full_marks_count": 0}
+                subtopic_stats[sss]["question_count"] += 1
+                if is_full_marks:
+                    subtopic_stats[sss]["full_marks_count"] += 1
+
+        return build_progress_response(subtopic_stats)
+
+
 @app.get("/debug/sessions")
 def debug_sessions():
     with Session(engine) as db:

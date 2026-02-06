@@ -498,6 +498,7 @@ a.session-card:hover {
 .btn-select-pred {
 	display: inline-block;
 	margin-left: 8px;
+	margin-top: 6px;
 	padding: 2px 10px;
 	font-size: 0.8rem;
 	border: 1px solid #ccc;
@@ -529,9 +530,10 @@ a.session-card:hover {
 .topic-selector {
 	margin-top: 12px;
 	padding: 10px 12px;
-	border-left: 3px solid #28a745;
-	background: #f9fff9;
+	background: #f7f7f7;
 	border-radius: 4px;
+	border-color: black;
+	border-left: solid
 }
 
 .topic-selector-label {
