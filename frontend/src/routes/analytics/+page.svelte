@@ -17,6 +17,25 @@
 		percentage: number | null;
 	};
 
+	type RawStrandEntry = {
+		session_id: string;
+		spec_code: string;
+		strand: string;
+		marks_available: number;
+		marks_achieved: number;
+		question_count: number;
+	};
+
+	type RawTopicEntry = {
+		session_id: string;
+		spec_code: string;
+		strand: string;
+		topic: string;
+		marks_available: number;
+		marks_achieved: number;
+		question_count: number;
+	};
+
 	type StrandEntry = {
 		spec_code: string;
 		strand: string;
@@ -34,17 +53,122 @@
 		question_count: number;
 	};
 
+	const timeframeOptions = [
+		{ value: 'all', label: 'All Time' },
+		{ value: '1w', label: 'Last Week' },
+		{ value: '1m', label: 'Last Month' },
+		{ value: '3m', label: '3 Months' },
+		{ value: '6m', label: '6 Months' },
+		{ value: '1y', label: '1 Year' }
+	];
+
 	let loading = $state(true);
 	let error = $state('');
-	let sessionsOverTime: SessionEntry[] = $state([]);
-	let strandPerformance: StrandEntry[] = $state([]);
-	let topicPerformance: TopicEntry[] = $state([]);
-	let strandsPerSpec: Record<string, number> = $state({});
 	let selectedSpec = $state('');
+	let selectedTimeframe = $state('all');
+
+	// Raw data from the single API fetch
+	let allSessions: SessionEntry[] = $state([]);
+	let allRawStrands: RawStrandEntry[] = $state([]);
+	let allRawTopics: RawTopicEntry[] = $state([]);
+	let strandsPerSpec: Record<string, number> = $state({});
 
 	let progressData: any[] = $state([]);
 	let progressLoading = $state(false);
 	let progressError = $state('');
+
+	function getFromDate(timeframe: string): Date | null {
+		if (timeframe === 'all') return null;
+		const now = new Date();
+		switch (timeframe) {
+			case '1w':
+				now.setDate(now.getDate() - 7);
+				break;
+			case '1m':
+				now.setMonth(now.getMonth() - 1);
+				break;
+			case '3m':
+				now.setMonth(now.getMonth() - 3);
+				break;
+			case '6m':
+				now.setMonth(now.getMonth() - 6);
+				break;
+			case '1y':
+				now.setFullYear(now.getFullYear() - 1);
+				break;
+		}
+		return now;
+	}
+
+	// Filter sessions by timeframe
+	let sessionsOverTime = $derived.by(() => {
+		const cutoff = getFromDate(selectedTimeframe);
+		if (!cutoff) return allSessions;
+		return allSessions.filter((s) => {
+			if (!s.created_at) return false;
+			return new Date(s.created_at) >= cutoff;
+		});
+	});
+
+	// Set of session IDs within the timeframe
+	let validSessionIds = $derived(new Set(sessionsOverTime.map((s) => s.session_id)));
+
+	// Aggregate raw per-session strand data into grouped strand entries
+	let strandPerformance: StrandEntry[] = $derived.by(() => {
+		const agg = new Map<string, StrandEntry>();
+		for (const r of allRawStrands) {
+			if (!validSessionIds.has(r.session_id)) continue;
+			const key = `${r.spec_code}::${r.strand}`;
+			const existing = agg.get(key);
+			if (existing) {
+				existing.marks_available += r.marks_available;
+				existing.marks_achieved += r.marks_achieved;
+				existing.question_count += r.question_count;
+			} else {
+				agg.set(key, {
+					spec_code: r.spec_code,
+					strand: r.strand,
+					marks_available: r.marks_available,
+					marks_achieved: r.marks_achieved,
+					question_count: r.question_count
+				});
+			}
+		}
+		return Array.from(agg.values()).map((v) => ({
+			...v,
+			marks_available: Math.round(v.marks_available * 10) / 10,
+			marks_achieved: Math.round(v.marks_achieved * 10) / 10
+		}));
+	});
+
+	// Aggregate raw per-session topic data into grouped topic entries
+	let topicPerformance: TopicEntry[] = $derived.by(() => {
+		const agg = new Map<string, TopicEntry>();
+		for (const r of allRawTopics) {
+			if (!validSessionIds.has(r.session_id)) continue;
+			const key = `${r.spec_code}::${r.topic}`;
+			const existing = agg.get(key);
+			if (existing) {
+				existing.marks_available += r.marks_available;
+				existing.marks_achieved += r.marks_achieved;
+				existing.question_count += r.question_count;
+			} else {
+				agg.set(key, {
+					spec_code: r.spec_code,
+					strand: r.strand,
+					topic: r.topic,
+					marks_available: r.marks_available,
+					marks_achieved: r.marks_achieved,
+					question_count: r.question_count
+				});
+			}
+		}
+		return Array.from(agg.values()).map((v) => ({
+			...v,
+			marks_available: Math.round(v.marks_available * 10) / 10,
+			marks_achieved: Math.round(v.marks_achieved * 10) / 10
+		}));
+	});
 
 	// Collect unique specs from the data
 	let specs = $derived.by(() => {
@@ -141,9 +265,9 @@
 	onMount(async () => {
 		try {
 			const data = await getAnalyticsSummary();
-			sessionsOverTime = data.sessions_over_time;
-			strandPerformance = data.strand_performance;
-			topicPerformance = data.topic_performance ?? [];
+			allSessions = data.sessions_over_time;
+			allRawStrands = data.strand_performance;
+			allRawTopics = data.topic_performance ?? [];
 			strandsPerSpec = data.strands_per_spec ?? {};
 
 			// Auto-select if only one spec
@@ -171,52 +295,69 @@
 		<div class="error-state">
 			<p>Failed to load analytics: {error}</p>
 		</div>
-	{:else if sessionsOverTime.length === 0}
+	{:else if allSessions.length === 0}
 		<div class="empty-state">
 			<p>No sessions found. <a href="/classify">Classify some questions</a> to see your analytics.</p>
 		</div>
 	{:else}
-		{#if specs.length > 1}
-			<div class="spec-filter">
-				<label for="spec-select">Specification:</label>
-				<select id="spec-select" bind:value={selectedSpec}>
-					<option value="">All specifications</option>
-					{#each specs as spec}
-						<option value={spec.spec_code}>{spec.label}</option>
+		<div class="filters-row">
+			{#if specs.length > 1}
+				<div class="filter-group">
+					<label for="spec-select">Specification:</label>
+					<select id="spec-select" bind:value={selectedSpec}>
+						<option value="">All specifications</option>
+						{#each specs as spec}
+							<option value={spec.spec_code}>{spec.label}</option>
+						{/each}
+					</select>
+				</div>
+			{/if}
+
+			<div class="filter-group">
+				<label for="timeframe-select">Timeframe:</label>
+				<select id="timeframe-select" bind:value={selectedTimeframe}>
+					{#each timeframeOptions as opt}
+						<option value={opt.value}>{opt.label}</option>
 					{/each}
 				</select>
 			</div>
-		{/if}
-
-		<div class="analytics-grid">
-			<div class="widget-card">
-				<h2>Scores Over Time</h2>
-				<ScoresOverTime sessions={filteredSessions} />
-			</div>
-
-			<div class="widget-card">
-				<h2>{performanceHeading}</h2>
-				<StrandPerformance
-				strandData={selectedSpec ? filteredStrands : []}
-				topicData={selectedSpec ? filteredTopics : []}
-				subjectData={subjectPerformance}
-				{hasMultipleStrands}
-			/>
-			</div>
-
-			{#if selectedSpec}
-				<div class="widget-card widget-wide">
-					<h2>Progress Tracker</h2>
-					{#if progressLoading}
-						<p class="loading">Loading progress...</p>
-					{:else if progressError}
-						<p class="error-message">{progressError}</p>
-					{:else}
-						<ProgressTracker subtopics={progressData} />
-					{/if}
-				</div>
-			{/if}
 		</div>
+
+		{#if sessionsOverTime.length === 0}
+			<div class="empty-state">
+				<p>No sessions found in this timeframe.</p>
+			</div>
+		{:else}
+			<div class="analytics-grid">
+				<div class="widget-card">
+					<h2>Scores Over Time</h2>
+					<ScoresOverTime sessions={filteredSessions} />
+				</div>
+
+				<div class="widget-card">
+					<h2>{performanceHeading}</h2>
+					<StrandPerformance
+					strandData={selectedSpec ? filteredStrands : []}
+					topicData={selectedSpec ? filteredTopics : []}
+					subjectData={subjectPerformance}
+					{hasMultipleStrands}
+				/>
+				</div>
+
+				{#if selectedSpec}
+					<div class="widget-card widget-wide">
+						<h2>Progress Tracker</h2>
+						{#if progressLoading}
+							<p class="loading">Loading progress...</p>
+						{:else if progressError}
+							<p class="error-message">{progressError}</p>
+						{:else}
+							<ProgressTracker subtopics={progressData} />
+						{/if}
+					</div>
+				{/if}
+			</div>
+		{/if}
 	{/if}
 </main>
 
@@ -225,26 +366,32 @@
 		max-width: 1100px;
 	}
 
-	.spec-filter {
+	.filters-row {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		margin-bottom: 24px;
+		flex-wrap: wrap;
+	}
+
+	.filter-group {
 		display: flex;
 		align-items: center;
 		gap: 12px;
-		margin-bottom: 24px;
 	}
 
-	.spec-filter label {
+	.filter-group label {
 		font-weight: 600;
 		white-space: nowrap;
 		margin: 0;
 	}
 
-	.spec-filter select {
+	.filter-group select {
 		padding: 8px 12px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		font-size: 0.95rem;
 		min-width: 0;
-		flex: 1;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}

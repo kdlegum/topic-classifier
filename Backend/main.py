@@ -895,7 +895,8 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
     """
     Returns aggregated analytics data for the current user:
     - sessions_over_time: per-session score summaries
-    - strand_performance: marks aggregated by strand
+    - strand_performance: per-session strand marks (keyed by session_id)
+    - topic_performance: per-session topic marks (keyed by session_id)
     """
     with Session(engine) as db:
         # Fetch user sessions
@@ -996,10 +997,10 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
                 "percentage": percentage,
             })
 
-        # Build strand_performance and topic_performance
+        # Build strand_performance and topic_performance (per-session granularity)
         # Use UserCorrection if available, else rank-1 prediction
-        strand_agg: dict[tuple[str, str], dict] = {}  # (spec_code, strand) -> aggregated data
-        topic_agg: dict[tuple[str, str], dict] = {}   # (spec_code, topic) -> aggregated data
+        strand_agg: dict[tuple[str, str, str], dict] = {}  # (session_id, spec_code, strand)
+        topic_agg: dict[tuple[str, str, str], dict] = {}   # (session_id, spec_code, topic)
 
         # Map question -> session for quick lookup
         session_by_id: dict[str, DBSess] = {s.session_id: s for s in sessions}
@@ -1011,6 +1012,7 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
 
             session_for_q = session_by_id.get(q.session_id)
             spec_code = session_for_q.subject if session_for_q else "Unknown"
+            sid = q.session_id
 
             # Get strands and topics: prefer user corrections, fallback to rank-1 prediction
             q_corrections = corrections_by_q.get(q.id, [])
@@ -1031,9 +1033,10 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
             marks_achieved_share = (m.marks_achieved or 0) / num_entries
 
             for strand in strands_for_q:
-                key = (spec_code, strand)
+                key = (sid, spec_code, strand)
                 if key not in strand_agg:
                     strand_agg[key] = {
+                        "session_id": sid,
                         "spec_code": spec_code,
                         "strand": strand,
                         "marks_available": 0,
@@ -1046,9 +1049,10 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
 
             for i, topic in enumerate(topics_for_q):
                 strand = strands_for_q[i] if i < len(strands_for_q) else ""
-                key = (spec_code, topic)
+                key = (sid, spec_code, topic)
                 if key not in topic_agg:
                     topic_agg[key] = {
+                        "session_id": sid,
                         "spec_code": spec_code,
                         "strand": strand,
                         "topic": topic,
@@ -1063,6 +1067,7 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
         strand_performance = []
         for v in strand_agg.values():
             strand_performance.append({
+                "session_id": v["session_id"],
                 "spec_code": v["spec_code"],
                 "strand": v["strand"],
                 "marks_available": round(v["marks_available"], 1),
@@ -1073,6 +1078,7 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
         topic_performance = []
         for v in topic_agg.values():
             topic_performance.append({
+                "session_id": v["session_id"],
                 "spec_code": v["spec_code"],
                 "strand": v["strand"],
                 "topic": v["topic"],
