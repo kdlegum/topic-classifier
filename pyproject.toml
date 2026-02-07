@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=65.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[project]
-name = "exam-backend"
-version = "0.1.0"
+[tool.setuptools.packages.find]
+where = ["Backend", "pdf_interpretation"]
+include = ["*", "*.*"]
 
-[project.scripts]
+[tool.setuptools.scripts]
 app = "Backend.main:app"
