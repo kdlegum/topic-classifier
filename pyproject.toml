@@ -2,9 +2,10 @@
 requires = ["setuptools>=65.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools.packages.find]
-where = ["Backend", "pdf_interpretation"]
-include = ["*", "*.*"]
+[project]
+name = "topic-classifier-backend"
+version = "0.1.0"
+description = "FastAPI backend for topic classifier"
 
 [project.scripts]
 app = "Backend.main:app"
