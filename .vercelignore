@@ -1,0 +1,23 @@
+# Frontend and large folders
+Frontend/
+.claude/
+.venv/
+uploads/
+workspace/
+
+# Local documents
+CLAUDE.md
+exam_app.db
+README.md
+
+# Python caches
+Backend/__pycache__/
+Backend/status/
+Backend/uploads/
+
+# Ignore pdf_interpretation by default, include only necessary modules
+pdf_interpretation/
+!pdf_interpretation/markdownParser.py
+!pdf_interpretation/pdfOCR.py
+!pdf_interpretation/utils.py
+!pdf_interpretation/__init__.py
