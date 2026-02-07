@@ -1,2 +1,2 @@
-[tool.setuptools.scripts]
+[project.scripts]
 app = "Backend.main:app"
