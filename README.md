@@ -55,8 +55,11 @@ PostgreSQL (`exam_app.db`) managed with SQLModel. Tables:
 | `prediction` | AI topic predictions per question |
 | `questionmark` | Mark allocations per question |
 | `usercorrection` | User-submitted topic corrections |
----
+
 The following tables store the data from specifications, including the text used for classification. In the future, users will be able to create and upload their own specifications, potentially with assistance of AI.
+
+| Table | Purpose |
+|---|---|
 | `Specification` | Overall metadata for specifications |
 | `Topic` | Individual topic within a specification |
 | `Subtopic` | Individual subtopic within a topic |
@@ -68,35 +71,31 @@ The following tables store the data from specifications, including the text used
 - Python 3.10+
 - Node.js 18+
 
-On **windows**, make a venv, install requirements.txt and then use the helper script.
+### Quickstart
 
-```powershell
-python -m venv venv
-pip install -r requirements.txt
-.\start.ps1
-```
-
-Alternatively, you can manually start the backend and frontend.
-
-### Backend
+In bash:
 
 ```bash
 cd Backend
 pip install -r requirements.txt
-uvicorn main:app --reload
-```
+nohup uvicorn main:app --reload > uvicorn.log 2>&1 &
 
-The API will be available at `http://127.0.0.1:8000`.
-
-### Frontend
-
-```bash
-cd frontend
+cd ../frontend
 npm install
 npm run dev
 ```
 
-The dev server will be available at `http://localhost:5173`.
+After the first time, you can use .\start.ps1 in windows powershell to start the servers, or:
+
+```bash
+cd Backend
+nohup uvicorn main:app --reload > uvicorn.log 2>&1 &
+
+cd ../frontend
+npm run dev
+```
+
+The API will be available at `http://127.0.0.1:8000`, and the dev server at `http://localhost:5173`.
 
 ## Technology Stack
 
