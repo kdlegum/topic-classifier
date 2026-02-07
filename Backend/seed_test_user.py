@@ -6,17 +6,37 @@ Idempotent — deletes existing test-user-analytics data first.
 """
 
 import uuid
-import json
 from datetime import datetime, timedelta
-from sqlmodel import Session, create_engine, select, SQLModel
-from sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark
+from sqlmodel import Session, select, SQLModel
+from database import engine
+from sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, Specification, Topic, Subtopic
 
 GUEST_ID = "test-user-analytics"
-ENGINE = create_engine("sqlite:///exam_app.db")
-SQLModel.metadata.create_all(ENGINE)
 
-with open("subtopics_index.json", "r", encoding="utf-8") as f:
-    subtopics_index = json.load(f)
+
+def load_subtopics_index():
+    """Build subtopics_index from the DB (same as main.py's load_specs_from_db)."""
+    index = {}
+    with Session(engine) as db:
+        specs = db.exec(select(Specification)).all()
+        for spec in specs:
+            topics = db.exec(select(Topic).where(Topic.specification_id == spec.id)).all()
+            for t in topics:
+                subtopics = db.exec(select(Subtopic).where(Subtopic.topic_db_id == t.id)).all()
+                for s in subtopics:
+                    key = f"{spec.exam_board}_{spec.spec_code}_{s.subtopic_id}"
+                    index[key] = {
+                        "subtopic_id": s.subtopic_id,
+                        "name": s.subtopic_name,
+                        "description": s.description,
+                        "topic_name": t.topic_name,
+                        "strand": t.strand,
+                        "spec_sub_section": s.specification_section_sub,
+                    }
+    return index
+
+
+subtopics_index = load_subtopics_index()
 
 
 def lookup(board: str, spec: str, subtopic_id: str):
@@ -119,7 +139,7 @@ SESSIONS = [
 
 def clean():
     """Delete all existing data for the test guest user."""
-    with Session(ENGINE) as db:
+    with Session(engine) as db:
         sessions = db.exec(
             select(DBSess).where(DBSess.user_id == GUEST_ID)
         ).all()
@@ -160,7 +180,7 @@ def clean():
 def seed():
     base_time = datetime.utcnow() - timedelta(days=30)
 
-    with Session(ENGINE) as db:
+    with Session(engine) as db:
         for i, sess_def in enumerate(SESSIONS):
             session_id = str(uuid.uuid4())
             board = sess_def["board"]

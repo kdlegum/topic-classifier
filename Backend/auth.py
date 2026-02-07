@@ -1,8 +1,12 @@
+import os
 import requests
 from jose import jwt, JWTError
 from fastapi import Request
+from dotenv import load_dotenv
 
-SUPABASE_PROJECT_ID = "aefhkwhqvlcbvdpoyokn"
+load_dotenv()
+
+SUPABASE_PROJECT_ID = os.getenv("SUPABASE_PROJECT_ID", "aefhkwhqvlcbvdpoyokn")
 SUPABASE_JWKS_URL = f"https://{SUPABASE_PROJECT_ID}.supabase.co/auth/v1/.well-known/jwks.json"
 SUPABASE_ISSUER = f"https://{SUPABASE_PROJECT_ID}.supabase.co/auth/v1"
 

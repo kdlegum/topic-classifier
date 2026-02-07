@@ -1,4 +1,5 @@
 from sqlmodel import Field, Session, SQLModel, create_engine
+from typing import Optional
 import uuid
 from datetime import datetime
 from enum import Enum
@@ -9,6 +10,10 @@ Session (exam paper, model = X)
         ├── Prediction (rank 1)
         ├── Prediction (rank 2)
         └── Prediction (rank 3)
+
+Specification
+  └── Topic
+        └── Subtopic
 """
 
 class QuestionStatus(str, Enum):
@@ -71,3 +76,29 @@ class UserCorrection(SQLModel, table=True):
     spec_sub_section: str
     description: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+# ── Specification data models ───────────────────────────────────────
+
+class Specification(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    qualification: str
+    subject: str
+    exam_board: str
+    spec_code: str = Field(unique=True, index=True)
+
+class Topic(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    specification_id: int = Field(foreign_key="specification.id")
+    topic_id_within_spec: int
+    specification_section: str
+    strand: str
+    topic_name: str
+
+class Subtopic(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    topic_db_id: int = Field(foreign_key="topic.id")
+    subtopic_id: str
+    specification_section_sub: str
+    subtopic_name: str
+    description: str

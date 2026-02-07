@@ -15,15 +15,14 @@ import json
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection
-from sqlmodel import Session, create_engine, select, update
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic
+from sqlmodel import Session, select, update
 from pathlib import Path
 from pdf_interpretation.pdfOCR import run_olmocr
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown
 from Backend.auth import get_user
-
-engine = create_engine("sqlite:///exam_app.db")
+from Backend.database import engine
 limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
@@ -61,14 +60,75 @@ class classificationRequest(BaseModel):
     SpecCode: str
     num_predictions: Optional[int] = 3
 
-f = open(r"Backend\topics.json", "r", encoding="utf-8")
-allSpecs = json.load(f)
+def load_specs_from_db():
+    """
+    Query Specification/Topic/Subtopic tables and build the same
+    allSpecs list and subtopics_index dict that the JSON files provided.
+    """
+    _allSpecs = []
+    _subtopics_index = {}
+
+    with Session(engine) as db:
+        specs = db.exec(select(Specification)).all()
+
+        for spec in specs:
+            topics_rows = db.exec(
+                select(Topic).where(Topic.specification_id == spec.id)
+            ).all()
+
+            topics_list = []
+            for t in topics_rows:
+                subtopics_rows = db.exec(
+                    select(Subtopic).where(Subtopic.topic_db_id == t.id)
+                ).all()
+
+                sub_topics_list = []
+                for s in subtopics_rows:
+                    sub_topics_list.append({
+                        "subtopic_id": s.subtopic_id,
+                        "Specification_section_sub": s.specification_section_sub,
+                        "Sub_topic_name": s.subtopic_name,
+                        "description": s.description,
+                    })
+
+                    # Build subtopics_index entry
+                    key = f"{spec.exam_board}_{spec.spec_code}_{s.subtopic_id}"
+                    _subtopics_index[key] = {
+                        "subtopic_id": s.subtopic_id,
+                        "name": s.subtopic_name,
+                        "description": s.description,
+                        "topic_id": t.topic_id_within_spec,
+                        "topic_name": t.topic_name,
+                        "topic_specification_section": t.specification_section,
+                        "strand": t.strand,
+                        "qualification": spec.qualification,
+                        "subject": spec.subject,
+                        "exam_board": spec.exam_board,
+                        "specification": spec.spec_code,
+                        "spec_sub_section": s.specification_section_sub,
+                        "classification_text": f"{s.subtopic_name}. {s.description}",
+                    }
+
+                topics_list.append({
+                    "Topic_id": t.topic_id_within_spec,
+                    "Specification_section": t.specification_section,
+                    "Strand": t.strand,
+                    "Topic_name": t.topic_name,
+                    "Sub_topics": sub_topics_list,
+                })
+
+            _allSpecs.append({
+                "Qualification": spec.qualification,
+                "Subject": spec.subject,
+                "Exam Board": spec.exam_board,
+                "Specification": spec.spec_code,
+                "Topics": topics_list,
+            })
+
+    return _allSpecs, _subtopics_index
 
 
-g = open(r"Backend\subtopics_index.json", "r", encoding="utf-8")
-subtopics_index = json.load(g)
-
-id = 0
+allSpecs, subtopics_index = load_specs_from_db()
 
 def compute_confidence(preds: list[DBPrediction]) -> str:
     if len(preds) < 2:
@@ -167,6 +227,7 @@ def classify_questions_logic(
             user_id=user_id,
         )
         db.add(db_session)
+        db.flush()
 
         for q_idx, question_text in enumerate(question_text):
 
@@ -184,11 +245,8 @@ def classify_questions_logic(
             )
             db.add(db_question_mark)
 
-            with open(r"Backend\topics.json", "r", encoding="utf-8") as h:
-                topics = json.load(h)
-
             subTopicIds = []
-            for spec in topics:
+            for spec in allSpecs:
                 if spec["Specification"] == req.SpecCode:
                     for t in spec["Topics"]:
                         for s in t["Sub_topics"]:
