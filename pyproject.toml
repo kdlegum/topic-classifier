@@ -9,3 +9,7 @@ description = "FastAPI backend for topic classifier"
 
 [project.scripts]
 app = "Backend.main:app"
+
+[tool.setuptools.packages.find]
+where = ["Backend", "pdf_interpretation"]
+include = ["*"]
