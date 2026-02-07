@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { getAnalyticsSummary } from '$lib/api';
+	import { getAnalyticsSummary, getProgress } from '$lib/api';
 	import ScoresOverTime from '$lib/components/widgets/ScoresOverTime.svelte';
 	import StrandPerformance from '$lib/components/widgets/StrandPerformance.svelte';
+	import ProgressTracker from '$lib/components/widgets/ProgressTracker.svelte';
 
 	type SessionEntry = {
 		session_id: string;
@@ -38,6 +39,10 @@
 	let strandPerformance: StrandEntry[] = $state([]);
 	let topicPerformance: TopicEntry[] = $state([]);
 	let selectedSpec = $state('');
+
+	let progressData: any[] = $state([]);
+	let progressLoading = $state(false);
+	let progressError = $state('');
 
 	// Collect unique specs from the data
 	let specs = $derived.by(() => {
@@ -80,6 +85,31 @@
 			: 'Strand Performance';
 	});
 
+	// Fetch progress data when selectedSpec changes
+	$effect(() => {
+		const spec = selectedSpec;
+		if (!spec) {
+			progressData = [];
+			progressError = '';
+			return;
+		}
+
+		progressLoading = true;
+		progressError = '';
+
+		getProgress(spec)
+			.then((data) => {
+				progressData = data.subtopics;
+			})
+			.catch((e: any) => {
+				progressError = e.message || 'Failed to load progress';
+				progressData = [];
+			})
+			.finally(() => {
+				progressLoading = false;
+			});
+	});
+
 	onMount(async () => {
 		try {
 			const data = await getAnalyticsSummary();
@@ -103,7 +133,7 @@
 	<title>Analytics: Topics Tracker</title>
 </svelte:head>
 
-<main class="page-content">
+<main class="page-content analytics-page">
 	<h1>Analytics</h1>
 
 	{#if loading}
@@ -139,11 +169,28 @@
 				<h2>{performanceHeading}</h2>
 				<StrandPerformance strandData={filteredStrands} topicData={filteredTopics} />
 			</div>
+
+			{#if selectedSpec}
+				<div class="widget-card widget-wide">
+					<h2>Progress Tracker</h2>
+					{#if progressLoading}
+						<p class="loading">Loading progress...</p>
+					{:else if progressError}
+						<p class="error-message">{progressError}</p>
+					{:else}
+						<ProgressTracker subtopics={progressData} />
+					{/if}
+				</div>
+			{/if}
 		</div>
 	{/if}
 </main>
 
 <style>
+	.analytics-page {
+		max-width: 1100px;
+	}
+
 	.spec-filter {
 		display: flex;
 		align-items: center;
@@ -187,5 +234,15 @@
 		margin: 0 0 16px 0;
 		font-size: 1.1rem;
 		color: #333;
+	}
+
+	.widget-wide {
+		grid-column: 1 / -1;
+	}
+
+	.error-message {
+		color: #b71c1c;
+		text-align: center;
+		padding: 24px;
 	}
 </style>
