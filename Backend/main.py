@@ -1044,11 +1044,13 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
                 strand_agg[key]["marks_achieved"] += marks_achieved_share
                 strand_agg[key]["question_count"] += 1
 
-            for topic in topics_for_q:
+            for i, topic in enumerate(topics_for_q):
+                strand = strands_for_q[i] if i < len(strands_for_q) else ""
                 key = (spec_code, topic)
                 if key not in topic_agg:
                     topic_agg[key] = {
                         "spec_code": spec_code,
+                        "strand": strand,
                         "topic": topic,
                         "marks_available": 0,
                         "marks_achieved": 0,
@@ -1072,16 +1074,33 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
         for v in topic_agg.values():
             topic_performance.append({
                 "spec_code": v["spec_code"],
+                "strand": v["strand"],
                 "topic": v["topic"],
                 "marks_available": round(v["marks_available"], 1),
                 "marks_achieved": round(v["marks_achieved"], 1),
                 "question_count": v["question_count"],
             })
 
+        # Count distinct strands per spec from the specification data. A bit scuffed to be honest - but this is for distinguishing for the topic performance widget.
+        spec_codes = list({s.subject for s in sessions})
+        strands_per_spec: dict[str, int] = {}
+        for sc in spec_codes:
+            spec_row = db.exec(
+                select(Specification).where(Specification.spec_code == sc)
+            ).first()
+            if spec_row:
+                count = len(set(
+                    t.strand for t in db.exec(
+                        select(Topic).where(Topic.specification_id == spec_row.id)
+                    ).all()
+                ))
+                strands_per_spec[sc] = count
+
         return {
             "sessions_over_time": sessions_over_time,
             "strand_performance": strand_performance,
             "topic_performance": topic_performance,
+            "strands_per_spec": strands_per_spec,
         }
 
 

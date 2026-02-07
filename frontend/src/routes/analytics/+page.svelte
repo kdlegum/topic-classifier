@@ -27,6 +27,7 @@
 
 	type TopicEntry = {
 		spec_code: string;
+		strand: string;
 		topic: string;
 		marks_available: number;
 		marks_achieved: number;
@@ -38,6 +39,7 @@
 	let sessionsOverTime: SessionEntry[] = $state([]);
 	let strandPerformance: StrandEntry[] = $state([]);
 	let topicPerformance: TopicEntry[] = $state([]);
+	let strandsPerSpec: Record<string, number> = $state({});
 	let selectedSpec = $state('');
 
 	let progressData: any[] = $state([]);
@@ -77,12 +79,38 @@
 			: topicPerformance
 	);
 
-	// Dynamic heading: show "Topic Performance" when single strand
+	// Subject-level aggregation for "All Specifications" view
+	let subjectPerformance = $derived.by(() => {
+		if (selectedSpec) return [];
+		const agg = new Map<string, { subject: string; marks_available: number; marks_achieved: number; question_count: number }>();
+		for (const s of strandPerformance) {
+			if (!agg.has(s.spec_code)) {
+				const session = sessionsOverTime.find((se) => se.spec_code === s.spec_code);
+				agg.set(s.spec_code, {
+					subject: session?.subject_name ?? s.spec_code,
+					marks_available: 0,
+					marks_achieved: 0,
+					question_count: 0
+				});
+			}
+			const entry = agg.get(s.spec_code)!;
+			entry.marks_available += s.marks_available;
+			entry.marks_achieved += s.marks_achieved;
+			entry.question_count += s.question_count;
+		}
+		return Array.from(agg.values());
+	});
+
+	// Whether the selected spec has multiple strands (from spec definition, not user data)
+	let hasMultipleStrands = $derived.by(() => {
+		if (!selectedSpec) return false;
+		return (strandsPerSpec[selectedSpec] ?? 1) > 1;
+	});
+
+	// Dynamic heading
 	let performanceHeading = $derived.by(() => {
-		const uniqueStrands = new Set(filteredStrands.map((s) => s.strand));
-		return uniqueStrands.size <= 1 && filteredTopics.length > 0
-			? 'Topic Performance'
-			: 'Strand Performance';
+		if (!selectedSpec) return 'Subject Performance';
+		return hasMultipleStrands ? 'Strand Performance' : 'Topic Performance';
 	});
 
 	// Fetch progress data when selectedSpec changes
@@ -116,6 +144,7 @@
 			sessionsOverTime = data.sessions_over_time;
 			strandPerformance = data.strand_performance;
 			topicPerformance = data.topic_performance ?? [];
+			strandsPerSpec = data.strands_per_spec ?? {};
 
 			// Auto-select if only one spec
 			if (specs.length === 1) {
@@ -167,7 +196,12 @@
 
 			<div class="widget-card">
 				<h2>{performanceHeading}</h2>
-				<StrandPerformance strandData={filteredStrands} topicData={filteredTopics} />
+				<StrandPerformance
+				strandData={selectedSpec ? filteredStrands : []}
+				topicData={selectedSpec ? filteredTopics : []}
+				subjectData={subjectPerformance}
+				{hasMultipleStrands}
+			/>
 			</div>
 
 			{#if selectedSpec}
@@ -201,6 +235,7 @@
 	.spec-filter label {
 		font-weight: 600;
 		white-space: nowrap;
+		margin: 0;
 	}
 
 	.spec-filter select {
@@ -208,7 +243,10 @@
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		font-size: 0.95rem;
-		min-width: 240px;
+		min-width: 0;
+		flex: 1;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.analytics-grid {
