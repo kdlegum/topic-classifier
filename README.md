@@ -1,6 +1,6 @@
 # Topic Tracker
 
-AI-powered exam paper analysis system that classifies exam questions by subject topics and subtopics using semantic similarity matching.
+Exam paper analysis system that classifies exam questions by subject topics and subtopics using semantic similarity matching.
 
 ## Overview
 
@@ -17,7 +17,7 @@ Key capabilities:
 
 ## Architecture
 
-- **Backend**: FastAPI (Python) REST API with SQLite database
+- **Backend**: FastAPI (Python) REST API with PostgreSQL database, hosted on Supabase.
 - **Frontend**: SvelteKit (Svelte 5) with Supabase authentication
 - **AI**: Sentence-Transformers (`all-MiniLM-L6-v2`) for semantic similarity
 - **PDF Processing**: olmOCR for PDF-to-Markdown conversion
@@ -46,7 +46,7 @@ pdf_interpretation/ PDF OCR and markdown parsing pipeline
 
 ## Database
 
-SQLite (`exam_app.db`) managed with SQLModel. Tables:
+PostgreSQL (`exam_app.db`) managed with SQLModel. Tables:
 
 | Table | Purpose |
 |---|---|
@@ -55,6 +55,11 @@ SQLite (`exam_app.db`) managed with SQLModel. Tables:
 | `prediction` | AI topic predictions per question |
 | `questionmark` | Mark allocations per question |
 | `usercorrection` | User-submitted topic corrections |
+---
+The following tables store the data from specifications, including the text used for classification. In the future, users will be able to create and upload their own specifications, potentially with assistance of AI.
+| `Specification` | Overall metadata for specifications |
+| `Topic` | Individual topic within a specification |
+| `Subtopic` | Individual subtopic within a topic |
 
 ## Getting Started
 
@@ -62,6 +67,16 @@ SQLite (`exam_app.db`) managed with SQLModel. Tables:
 
 - Python 3.10+
 - Node.js 18+
+
+On **windows**, make a venv, install requirements.txt and then use the helper script.
+
+```powershell
+python -m venv venv
+pip install -r requirements.txt
+.\start.ps1
+```
+
+Alternatively, you can manually start the backend and frontend.
 
 ### Backend
 
@@ -87,7 +102,7 @@ The dev server will be available at `http://localhost:5173`.
 
 | Layer | Technology |
 |---|---|
-| Backend | FastAPI, SQLModel, SQLite |
+| Backend | FastAPI, SQLModel, PostgreSQL |
 | Frontend | SvelteKit (Svelte 5), Chart.js |
 | AI | Sentence-Transformers (`all-MiniLM-L6-v2`) |
 | Auth | Supabase |
