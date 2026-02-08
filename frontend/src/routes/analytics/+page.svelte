@@ -72,6 +72,7 @@
 	let allRawStrands: RawStrandEntry[] = $state([]);
 	let allRawTopics: RawTopicEntry[] = $state([]);
 	let strandsPerSpec: Record<string, number> = $state({});
+	let userModuleSelections: Record<string, string[]> = $state({});
 
 	let progressData: any[] = $state([]);
 	let progressLoading = $state(false);
@@ -113,11 +114,19 @@
 	// Set of session IDs within the timeframe
 	let validSessionIds = $derived(new Set(sessionsOverTime.map((s) => s.session_id)));
 
+	// Helper: check if a strand is allowed by user module selections
+	function isStrandAllowed(specCode: string, strand: string): boolean {
+		const selections = userModuleSelections[specCode];
+		if (!selections || selections.length === 0) return true;
+		return selections.includes(strand);
+	}
+
 	// Aggregate raw per-session strand data into grouped strand entries
 	let strandPerformance: StrandEntry[] = $derived.by(() => {
 		const agg = new Map<string, StrandEntry>();
 		for (const r of allRawStrands) {
 			if (!validSessionIds.has(r.session_id)) continue;
+			if (!isStrandAllowed(r.spec_code, r.strand)) continue;
 			const key = `${r.spec_code}::${r.strand}`;
 			const existing = agg.get(key);
 			if (existing) {
@@ -146,6 +155,7 @@
 		const agg = new Map<string, TopicEntry>();
 		for (const r of allRawTopics) {
 			if (!validSessionIds.has(r.session_id)) continue;
+			if (!isStrandAllowed(r.spec_code, r.strand)) continue;
 			const key = `${r.spec_code}::${r.topic}`;
 			const existing = agg.get(key);
 			if (existing) {
@@ -269,6 +279,7 @@
 			allRawStrands = data.strand_performance;
 			allRawTopics = data.topic_performance ?? [];
 			strandsPerSpec = data.strands_per_spec ?? {};
+			userModuleSelections = data.user_module_selections ?? {};
 
 			// Auto-select if only one spec
 			if (specs.length === 1) {

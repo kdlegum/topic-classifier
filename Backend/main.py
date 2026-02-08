@@ -13,7 +13,7 @@ import json
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand
 from sqlmodel import Session, select, update
 from pathlib import Path
 import os
@@ -70,6 +70,7 @@ class classificationRequest(BaseModel):
     ExamBoard: Optional[str] = None
     SpecCode: str
     num_predictions: Optional[int] = 3
+    strands: Optional[List[str]] = None
 
 def load_specs_from_db():
     """
@@ -133,6 +134,7 @@ def load_specs_from_db():
                 "Subject": spec.subject,
                 "Exam Board": spec.exam_board,
                 "Specification": spec.spec_code,
+                "optional_modules": spec.optional_modules,
                 "Topics": topics_list,
             })
 
@@ -140,6 +142,101 @@ def load_specs_from_db():
 
 
 allSpecs, subtopics_index = load_specs_from_db()
+
+@app.get("/specs")
+def get_specs():
+    """Returns all specifications with their strands and optional_modules flag."""
+    result = []
+    for s in allSpecs:
+        strands = list({t["Strand"] for t in s["Topics"]})
+        result.append({
+            "spec_code": s["Specification"],
+            "subject": s["Subject"],
+            "exam_board": s["Exam Board"],
+            "qualification": s["Qualification"],
+            "optional_modules": s.get("optional_modules", False),
+            "strands": sorted(strands),
+        })
+    return result
+
+
+@app.get("/user/modules/{spec_code}")
+def get_user_modules(spec_code: str, request: Request, user=Depends(get_user)):
+    """Returns the user's saved strand selections for a spec."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        rows = db.exec(
+            select(UserModuleSelection)
+            .where(UserModuleSelection.user_id == user_id)
+            .where(UserModuleSelection.is_guest == is_guest)
+            .where(UserModuleSelection.spec_code == spec_code)
+        ).all()
+
+        return {
+            "spec_code": spec_code,
+            "selected_strands": [r.strand for r in rows],
+        }
+
+
+class SaveModulesRequest(BaseModel):
+    strands: List[str]
+
+
+@app.put("/user/modules/{spec_code}")
+def save_user_modules(spec_code: str, req: SaveModulesRequest, request: Request, user=Depends(get_user)):
+    """Full-replacement save of user's strand selections for a spec."""
+    # Validate spec exists and has optional_modules
+    matching_spec = None
+    for s in allSpecs:
+        if s["Specification"] == spec_code:
+            matching_spec = s
+            break
+    if matching_spec is None:
+        raise HTTPException(status_code=404, detail="Specification not found")
+
+    # Validate strands exist in spec
+    valid_strands = {t["Strand"] for t in matching_spec["Topics"]}
+    for strand in req.strands:
+        if strand not in valid_strands:
+            raise HTTPException(status_code=400, detail=f"Invalid strand: {strand}")
+
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        # Delete existing selections
+        existing = db.exec(
+            select(UserModuleSelection)
+            .where(UserModuleSelection.user_id == user_id)
+            .where(UserModuleSelection.is_guest == is_guest)
+            .where(UserModuleSelection.spec_code == spec_code)
+        ).all()
+        for e in existing:
+            db.delete(e)
+
+        # Insert new selections
+        for strand in req.strands:
+            db.add(UserModuleSelection(
+                user_id=user_id,
+                is_guest=is_guest,
+                spec_code=spec_code,
+                strand=strand,
+            ))
+
+        db.commit()
+
+    return {"success": True}
+
 
 def compute_confidence(preds: list[DBPrediction]) -> str:
     if len(preds) < 2:
@@ -188,15 +285,39 @@ def classify_questions_logic(
     if matching_topic is None:
         raise HTTPException(status_code=404, detail="Specification code not found")
 
+    # Resolve effective strands for filtering
+    effective_strands: set[str] | None = None
+    if req.strands:
+        effective_strands = set(req.strands)
+    elif matching_topic.get("optional_modules", False):
+        # Look up user's module selections
+        with Session(engine) as db:
+            rows = db.exec(
+                select(UserModuleSelection)
+                .where(UserModuleSelection.user_id == user_id)
+                .where(UserModuleSelection.is_guest == is_guest)
+                .where(UserModuleSelection.spec_code == req.SpecCode)
+            ).all()
+            if rows:
+                effective_strands = {r.strand for r in rows}
+
     topicList = matching_topic["Topics"]
 
+    # Filter topics by effective strands if set
+    if effective_strands:
+        topicList = [t for t in topicList if t["Strand"] in effective_strands]
+        if not topicList:
+            raise HTTPException(status_code=400, detail="No topics match the selected strands")
+
     subTopicClassificationTexts = []
+    subTopicIds = []
     for t in topicList:
         topicName = t["Topic_name"]
         for s in t["Sub_topics"]:
             subTopicClassificationTexts.append(
                 topicName + ". " + s["description"]
             )
+            subTopicIds.append(s["subtopic_id"])
 
 
     question_text = [q["text"] for q in req.question_object]
@@ -240,6 +361,11 @@ def classify_questions_logic(
         db.add(db_session)
         db.flush()
 
+        # Store session strands if any were specified
+        if effective_strands:
+            for strand in effective_strands:
+                db.add(SessionStrand(session_id=session_id, strand=strand))
+
         for q_idx, question_text in enumerate(question_text):
 
             db_question = DBQuestion(
@@ -255,13 +381,6 @@ def classify_questions_logic(
                 marks_available=marks[q_idx],
             )
             db.add(db_question_mark)
-
-            subTopicIds = []
-            for spec in allSpecs:
-                if spec["Specification"] == req.SpecCode:
-                    for t in spec["Topics"]:
-                        for s in t["Sub_topics"]:
-                            subTopicIds.append(s["subtopic_id"])
 
             for rank, subtopic_idx in enumerate(topk_indices[q_idx], start=1):
                 subtopic_id = subTopicIds[subtopic_idx]
@@ -480,6 +599,12 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
                 ]
             })
 
+        # ---------- Fetch session strands ----------
+        session_strands_rows = db.exec(
+            select(SessionStrand).where(SessionStrand.session_id == session_id)
+        ).all()
+        session_strands = [r.strand for r in session_strands_rows]
+
         # ---------- Look up spec details ----------
         spec_code = db_session.subject
         qualification = None
@@ -501,6 +626,7 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             "model_name": getattr(db_session, "model_name", None),
             "created_at": db_session.created_at,
             "user_id": db_session.user_id,
+            "session_strands": session_strands,
             "questions": response_questions
         }
 
@@ -589,19 +715,39 @@ def migrate_guest_sessions(request: Request, user=Depends(get_user)):
             db.add(session)
             count += 1
 
+        # Migrate UserModuleSelection rows
+        guest_modules = db.exec(
+            select(UserModuleSelection)
+            .where(UserModuleSelection.user_id == guest_id)
+            .where(UserModuleSelection.is_guest == True)
+        ).all()
+        for mod in guest_modules:
+            mod.user_id = user["user_id"]
+            mod.is_guest = False
+            db.add(mod)
+
         db.commit()
 
         return {"migrated": count}
 
 
 @app.post("/upload-pdf/{SpecCode}")
-async def upload_pdf(request: Request, SpecCode: str, file: UploadFile = File(...), background_tasks: BackgroundTasks=None, user=Depends(get_user),):
+async def upload_pdf(
+    request: Request,
+    SpecCode: str,
+    file: UploadFile = File(...),
+    strands: Optional[str] = Query(default=None, description="Comma-separated strand names"),
+    background_tasks: BackgroundTasks = None,
+    user=Depends(get_user),
+):
     if not OLMOCR_AVAILABLE:
         raise HTTPException(status_code=503, detail="PDF processing is not available on this server")
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=400, detail="Only PDF files allowed")
 
     print(user)
+
+    strand_list = [s.strip() for s in strands.split(",")] if strands else None
 
     job_id = str(uuid.uuid4())
     file_path = UPLOAD_DIR / f"{job_id}.pdf"
@@ -619,19 +765,20 @@ async def upload_pdf(request: Request, SpecCode: str, file: UploadFile = File(..
 
     with open (f"Backend/uploads/status/{job_id}.json", "w") as f:
         json.dump(status, f)
-    
+
     background_tasks.add_task(
         process_pdf,
         job_id,
         SpecCode,
-        user
+        user,
+        strand_list
     )
 
     return {
         "job_id": job_id
     }
 
-def process_pdf(job_id, SpecCode, user):
+def process_pdf(job_id, SpecCode, user, strands=None):
     run_olmocr(f"Backend/uploads/pdfs/{job_id}.pdf", "Backend/uploads/markdown")
     updateStatus(job_id, "Converted to Markdown. Extracting questions...")
     questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
@@ -644,7 +791,7 @@ def process_pdf(job_id, SpecCode, user):
         user_id = user["guest_id"]
         is_guest = True
 
-    session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode), user_id=user_id, is_guest=is_guest)["session_id"]
+    session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode, strands=strands), user_id=user_id, is_guest=is_guest)["session_id"]
     updateStatus(job_id, "Done", session_id)
 
 class UpdateQuestionRequest(BaseModel):
@@ -1115,11 +1262,33 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
                 ))
                 strands_per_spec[sc] = count
 
+        # Build user_module_selections for optional_modules specs
+        user_module_selections: dict[str, list[str]] = {}
+        if user["is_authenticated"]:
+            uid = user["user_id"]
+            is_g = False
+        else:
+            uid = user["guest_id"]
+            is_g = True
+
+        for sc in spec_codes:
+            spec_info = next((s for s in allSpecs if s["Specification"] == sc), None)
+            if spec_info and spec_info.get("optional_modules", False):
+                mod_rows = db.exec(
+                    select(UserModuleSelection)
+                    .where(UserModuleSelection.user_id == uid)
+                    .where(UserModuleSelection.is_guest == is_g)
+                    .where(UserModuleSelection.spec_code == sc)
+                ).all()
+                if mod_rows:
+                    user_module_selections[sc] = [r.strand for r in mod_rows]
+
         return {
             "sessions_over_time": sessions_over_time,
             "strand_performance": strand_performance,
             "topic_performance": topic_performance,
             "strands_per_spec": strands_per_spec,
+            "user_module_selections": user_module_selections,
         }
 
 
@@ -1134,9 +1303,30 @@ def get_progress(spec_code: str, request: Request, user=Depends(get_user)):
     if matching_spec is None:
         raise HTTPException(status_code=404, detail="Specification not found")
 
+    # For optional_modules specs, filter to user's selected strands
+    selected_strands: set[str] | None = None
+    if matching_spec.get("optional_modules", False):
+        if user["is_authenticated"]:
+            uid = user["user_id"]
+            is_g = False
+        else:
+            uid = user["guest_id"]
+            is_g = True
+        with Session(engine) as db:
+            mod_rows = db.exec(
+                select(UserModuleSelection)
+                .where(UserModuleSelection.user_id == uid)
+                .where(UserModuleSelection.is_guest == is_g)
+                .where(UserModuleSelection.spec_code == spec_code)
+            ).all()
+            if mod_rows:
+                selected_strands = {r.strand for r in mod_rows}
+
     # Build subtopic catalog keyed by spec_sub_section
     all_subtopics: dict[str, dict] = {}
     for t in matching_spec["Topics"]:
+        if selected_strands and t["Strand"] not in selected_strands:
+            continue
         for s in t["Sub_topics"]:
             all_subtopics[s["Specification_section_sub"]] = {
                 "subtopic_id": s["subtopic_id"],

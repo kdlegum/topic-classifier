@@ -322,6 +322,13 @@
 		<div class="session-header">
 			<h2>{getTitle(session)}</h2>
 			<p class="session-meta">{session.exam_board} - {formatDate(session.created_at)}</p>
+			{#if session.session_strands && session.session_strands.length > 0}
+				<div class="session-strands">
+					{#each session.session_strands as strand}
+						<span class="strand-pill">{strand}</span>
+					{/each}
+				</div>
+			{/if}
 		</div>
 
 		{#each session.questions as question}
@@ -405,3 +412,22 @@
 		{/each}
 	{/if}
 </main>
+
+<style>
+	.session-strands {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-top: 8px;
+	}
+
+	.strand-pill {
+		display: inline-block;
+		padding: 3px 12px;
+		border-radius: 12px;
+		background: #e8f4fd;
+		color: #0077cc;
+		font-size: 0.85rem;
+		font-weight: 500;
+	}
+</style>

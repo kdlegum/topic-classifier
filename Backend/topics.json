@@ -2526,6 +2526,7 @@
   "Subject": "Further Mathematics B (MEI)",
   "Exam Board": "OCR",
   "Specification": "H645",
+  "optional_modules": true,
   "Topics": [
     {
       "Topic_id": 1,

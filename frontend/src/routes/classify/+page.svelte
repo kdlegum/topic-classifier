@@ -1,6 +1,16 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { classifyQuestions, uploadPdf, getPdfStatus } from '$lib/api';
+	import { onMount } from 'svelte';
+	import {
+		classifyQuestions,
+		uploadPdf,
+		getPdfStatus,
+		getSpecs,
+		getUserModules,
+		saveUserModules,
+		type SpecInfo
+	} from '$lib/api';
+	import StrandPicker from '$lib/components/StrandPicker.svelte';
 
 	let specCode = $state('None');
 	let questions = $state(['']);
@@ -8,10 +18,73 @@
 	let isUploading = $state(false);
 	let pdfStatus = $state('');
 
+	let allSpecs: SpecInfo[] = $state([]);
+	let specsLoading = $state(true);
+
+	// Strand state
+	let selectedModules: string[] = $state([]);
+	let paperStrands: string[] = $state([]);
+	let moduleSaveTimeout: ReturnType<typeof setTimeout> | null = null;
+	let modulesLoadedForSpec: string | null = $state(null);
+
+	// Derived from selected spec
+	let currentSpec = $derived(allSpecs.find((s) => s.spec_code === specCode) ?? null);
+
 	let fileInput: HTMLInputElement;
+
+	onMount(async () => {
+		try {
+			allSpecs = await getSpecs();
+		} catch (e) {
+			console.error('Failed to load specs:', e);
+		} finally {
+			specsLoading = false;
+		}
+	});
+
+	// When spec changes, load module selections if optional_modules
+	$effect(() => {
+		const spec = currentSpec;
+		// Reset strand selections when spec changes
+		paperStrands = [];
+		selectedModules = [];
+		modulesLoadedForSpec = null;
+
+		if (spec?.optional_modules) {
+			getUserModules(spec.spec_code)
+				.then((data) => {
+					selectedModules = data.selected_strands;
+					modulesLoadedForSpec = spec.spec_code;
+				})
+				.catch((e) => {
+					console.error('Failed to load user modules:', e);
+					modulesLoadedForSpec = spec.spec_code;
+				});
+		}
+	});
+
+	// Auto-save module selections with debounce (only after initial load)
+	$effect(() => {
+		const modules = selectedModules;
+		if (!currentSpec?.optional_modules) return;
+		if (modulesLoadedForSpec !== currentSpec.spec_code) return;
+
+		if (moduleSaveTimeout) clearTimeout(moduleSaveTimeout);
+		moduleSaveTimeout = setTimeout(() => {
+			saveUserModules(currentSpec!.spec_code, modules).catch((e) =>
+				console.error('Failed to save modules:', e)
+			);
+		}, 500);
+	});
 
 	function addQuestion() {
 		questions = [...questions, ''];
+	}
+
+	// Effective strands to pass to API: paper strands take priority, else nothing (let backend resolve)
+	function getEffectiveStrands(): string[] | undefined {
+		if (paperStrands.length > 0) return paperStrands;
+		return undefined;
 	}
 
 	async function handleSubmit() {
@@ -30,7 +103,7 @@
 		isSubmitting = true;
 
 		try {
-			const data = await classifyQuestions(filled, specCode);
+			const data = await classifyQuestions(filled, specCode, getEffectiveStrands());
 			goto(`/mark_session/${data.session_id}`);
 		} catch (error) {
 			console.error('Error submitting questions:', error);
@@ -62,7 +135,7 @@
 		pdfStatus = 'Uploading...';
 
 		try {
-			const data = await uploadPdf(file, specCode);
+			const data = await uploadPdf(file, specCode, getEffectiveStrands());
 			pollJobStatus(data.job_id);
 		} catch (error) {
 			console.error('Error uploading PDF:', error);
@@ -117,13 +190,45 @@
 	<!-- Specification selection -->
 	<div class="section">
 		<label for="specification">Specification</label>
-		<select id="specification" bind:value={specCode}>
-			<option value="None">---Choose a Specification---</option>
-			<option value="H240">OCR A Level Mathematics (H240)</option>
-			<option value="9PH0">Edexcel A Level Physics (9PH0)</option>
-			<option value="H645">OCR MEI B A Level Further Mathematics (H645) (All Options)</option>
-		</select>
+		{#if specsLoading}
+			<select id="specification" disabled>
+				<option>Loading specifications...</option>
+			</select>
+		{:else}
+			<select id="specification" bind:value={specCode}>
+				<option value="None">---Choose a Specification---</option>
+				{#each allSpecs as spec}
+					<option value={spec.spec_code}>
+						{spec.exam_board} {spec.qualification} {spec.subject} ({spec.spec_code})
+					</option>
+				{/each}
+			</select>
+		{/if}
 	</div>
+
+	<!-- Module selection for optional_modules specs -->
+	{#if currentSpec?.optional_modules}
+		<div class="section">
+			<StrandPicker
+				strands={currentSpec.strands}
+				bind:selected={selectedModules}
+				label="Your Modules"
+				hint="Select the modules you are studying. These are saved to your account."
+			/>
+		</div>
+	{/if}
+
+	<!-- Paper strand selection for all specs -->
+	{#if currentSpec}
+		<div class="section">
+			<StrandPicker
+				strands={currentSpec.strands}
+				bind:selected={paperStrands}
+				label="Paper Strands (optional)"
+				hint="Narrow classification to specific strands for this paper. Leave blank for all strands."
+			/>
+		</div>
+	{/if}
 
 	<!-- Questions -->
 	<div class="section">

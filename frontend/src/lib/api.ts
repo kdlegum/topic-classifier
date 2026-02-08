@@ -45,17 +45,23 @@ export async function migrateGuestSessions(): Promise<{ migrated: number }> {
  */
 export async function classifyQuestions(
 	questions: string[],
-	specCode: string
+	specCode: string,
+	strands?: string[]
 ): Promise<{ session_id: string }> {
 	const questionObjects = questions.map((text) => ({ text, marks: null }));
+
+	const body: Record<string, unknown> = {
+		question_object: questionObjects,
+		SpecCode: specCode
+	};
+	if (strands && strands.length > 0) {
+		body.strands = strands;
+	}
 
 	const response = await apiFetch('/classify/', {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
-		body: JSON.stringify({
-			question_object: questionObjects,
-			SpecCode: specCode
-		})
+		body: JSON.stringify(body)
 	});
 
 	if (!response.ok) {
@@ -70,12 +76,18 @@ export async function classifyQuestions(
  */
 export async function uploadPdf(
 	file: File,
-	specCode: string
+	specCode: string,
+	strands?: string[]
 ): Promise<{ job_id: string }> {
 	const formData = new FormData();
 	formData.append('file', file);
 
-	const response = await apiFetch(`/upload-pdf/${specCode}`, {
+	let endpoint = `/upload-pdf/${specCode}`;
+	if (strands && strands.length > 0) {
+		endpoint += `?strands=${encodeURIComponent(strands.join(','))}`;
+	}
+
+	const response = await apiFetch(endpoint, {
 		method: 'POST',
 		body: formData
 	});
@@ -209,6 +221,63 @@ export async function getProgress(specCode: string) {
 
 	if (!response.ok) {
 		throw new Error(`Failed to fetch progress: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+export type SpecInfo = {
+	spec_code: string;
+	subject: string;
+	exam_board: string;
+	qualification: string;
+	optional_modules: boolean;
+	strands: string[];
+};
+
+/**
+ * Get all specifications with strands and optional_modules flag
+ */
+export async function getSpecs(): Promise<SpecInfo[]> {
+	const response = await apiFetch('/specs');
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch specs: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Get user's saved module selections for a spec
+ */
+export async function getUserModules(
+	specCode: string
+): Promise<{ spec_code: string; selected_strands: string[] }> {
+	const response = await apiFetch(`/user/modules/${specCode}`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch user modules: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Save user's module selections for a spec (full replacement)
+ */
+export async function saveUserModules(
+	specCode: string,
+	strands: string[]
+): Promise<{ success: boolean }> {
+	const response = await apiFetch(`/user/modules/${specCode}`, {
+		method: 'PUT',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ strands })
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to save user modules: ${response.status}`);
 	}
 
 	return response.json();
