@@ -60,14 +60,28 @@ def run_olmocr(
             f"olmOCR failed:\nSTDOUT:\n{result.stdout}\n\nSTDERR:\n{result.stderr}"
         )
 
-    # Find generated markdown which is made in same folder as pdf and move into the output directory
-    input_directory_name = os.path.dirname(pdf_path)
+    # Find generated markdown
     input_file_name = os.path.splitext(os.path.basename(pdf_path))[0]
+    expected_md_name = input_file_name + ".md"
 
-    expected_md_path = os.path.join(input_directory_name, input_file_name + ".md")
+    # olmocr places markdown inside workspace/markdown/ mirroring the full input path
+    # Search both the original location (next to PDF) and inside the workspace
+    expected_md_path = os.path.join(os.path.dirname(pdf_path), expected_md_name)
 
     if not os.path.exists(expected_md_path):
-        raise FileNotFoundError(f"No matching md file found with path {expected_md_path}.")
+        # Search recursively inside workspace/markdown/
+        workspace_md_dir = workspace / "markdown"
+        found = None
+        for root, dirs, files in os.walk(workspace_md_dir):
+            if expected_md_name in files:
+                found = os.path.join(root, expected_md_name)
+                break
+        if found is None:
+            raise FileNotFoundError(
+                f"No matching md file found. Checked {expected_md_path} "
+                f"and searched {workspace_md_dir}"
+            )
+        expected_md_path = found
 
     os.makedirs(output_dir, exist_ok=True)
 
