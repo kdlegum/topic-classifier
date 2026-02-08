@@ -218,8 +218,8 @@
 		</div>
 	{/if}
 
-	<!-- Paper strand selection for all specs -->
-	{#if currentSpec}
+	<!-- Paper strand selection for specs with multiple strands -->
+	{#if currentSpec && currentSpec.strands.length > 1}
 		<div class="section">
 			<StrandPicker
 				strands={currentSpec.strands}

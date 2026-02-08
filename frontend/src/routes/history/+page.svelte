@@ -70,7 +70,7 @@
 			{#each sessions as session}
 				<a href="/mark_session/{session.session_id}" class="session-card">
 					<div class="session-info">
-						<div class="session-subject">{getTitle(session)}</div>
+						<div class="session-subject">{getTitle(session)}{#if session.strands?.length}, {session.strands.join(', ')}{/if}</div>
 						<div class="session-meta">
 							<span class="session-board">{session.exam_board}</span>
 							<span class="session-date">{formatDate(session.created_at)}</span>
@@ -109,11 +109,16 @@
 		border-radius: 4px;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		transition: color 0.15s, background 0.15s;
 	}
 
 	.delete-btn:hover {
 		color: #d32f2f;
 		background: #fdecea;
+	}
+
+	.session-questions {
+		white-space: nowrap;
 	}
 </style>

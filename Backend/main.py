@@ -680,6 +680,10 @@ def get_user_sessions(request: Request, user=Depends(get_user)):
                     subject_name = spec.get("Subject")
                     break
 
+            strands = [ss.strand for ss in db.exec(
+                select(SessionStrand).where(SessionStrand.session_id == s.session_id)
+            ).all()]
+
             result.append({
                 "session_id": s.session_id,
                 "subject": s.subject,
@@ -688,6 +692,7 @@ def get_user_sessions(request: Request, user=Depends(get_user)):
                 "exam_board": s.exam_board,
                 "created_at": s.created_at,
                 "question_count": question_count,
+                "strands": strands,
             })
 
         return result
