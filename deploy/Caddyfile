@@ -1,0 +1,4 @@
+# Replace with your domain (e.g., api.yourdomain.com or yourname.duckdns.org)
+api.yourdomain.com {
+    reverse_proxy localhost:8000
+}
