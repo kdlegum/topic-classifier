@@ -1448,3 +1448,49 @@ def get_progress(spec_code: str, request: Request, user=Depends(get_user)):
         return build_progress_response(subtopic_stats)
 
 
+@app.delete("/session/{session_id}")
+def delete_session(session_id: str, request: Request, user=Depends(get_user)):
+    with Session(engine) as db:
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        is_owner = False
+        if db_session.is_guest:
+            is_owner = (user.get("guest_id") == db_session.user_id)
+        else:
+            is_owner = (user.get("user_id") == db_session.user_id)
+        if not is_owner:
+            raise HTTPException(status_code=403, detail="Not authorized to delete this session")
+
+        question_ids = [q.id for q in db.exec(
+            select(DBQuestion).where(DBQuestion.session_id == session_id)
+        ).all()]
+
+        if question_ids:
+            # Delete predictions, predictions, corrections, questions, and corrections 
+            for p in db.exec(select(DBPrediction).where(DBPrediction.question_id.in_(question_ids))).all():
+                db.delete(p)
+            for m in db.exec(select(QuestionMark).where(QuestionMark.question_id.in_(question_ids))).all():
+                db.delete(m)
+            for c in db.exec(select(UserCorrection).where(UserCorrection.question_id.in_(question_ids))).all():
+                db.delete(c)
+            for q in db.exec(select(DBQuestion).where(DBQuestion.session_id == session_id)).all():
+                db.delete(q)
+
+        # Delete session strands
+        for ss in db.exec(select(SessionStrand).where(SessionStrand.session_id == session_id)).all():
+            db.delete(ss)
+
+        # Flush dependent deletes before removing the session itself
+        db.flush()
+
+        db.delete(db_session)
+        db.commit()
+
+    return {"detail": "Session deleted"}
+
+

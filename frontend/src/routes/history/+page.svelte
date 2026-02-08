@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { getUserSessions } from '$lib/api';
+	import { getUserSessions, deleteSession } from '$lib/api';
 
 	let sessions: any[] | null = $state(null);
 	let loading = $state(true);
@@ -30,6 +30,19 @@
 	function getTitle(session: any): string {
 		const parts = [session.qualification, session.subject_name].filter(Boolean);
 		return parts.length > 0 ? parts.join(' ') : session.subject;
+	}
+
+	async function handleDelete(e: Event, sessionId: string) {
+		e.preventDefault();
+		e.stopPropagation();
+		if (!confirm('Are you sure you want to delete this session? This cannot be undone.')) return;
+		try {
+			await deleteSession(sessionId);
+			sessions = sessions!.filter((s) => s.session_id !== sessionId);
+		} catch (err) {
+			console.error('Failed to delete session:', err);
+			alert('Failed to delete session. Please try again.');
+		}
 	}
 </script>
 
@@ -63,11 +76,44 @@
 							<span class="session-date">{formatDate(session.created_at)}</span>
 						</div>
 					</div>
-					<div class="session-questions">
-						{session.question_count} question{session.question_count !== 1 ? 's' : ''}
+					<div class="session-right">
+						<div class="session-questions">
+							{session.question_count} question{session.question_count !== 1 ? 's' : ''}
+						</div>
+						<button class="delete-btn" onclick={(e) => handleDelete(e, session.session_id)} title="Delete session">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+								<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+								<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H5.5l1-1h3l1 1H13a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+							</svg>
+						</button>
 					</div>
 				</a>
 			{/each}
 		{/if}
 	</div>
 </main>
+
+<style>
+	.session-right {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.delete-btn {
+		background: none;
+		border: none;
+		color: #999;
+		cursor: pointer;
+		padding: 0.4rem;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		transition: color 0.15s, background 0.15s;
+	}
+
+	.delete-btn:hover {
+		color: #d32f2f;
+		background: #fdecea;
+	}
+</style>

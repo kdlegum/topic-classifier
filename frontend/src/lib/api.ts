@@ -283,6 +283,21 @@ export async function saveUserModules(
 	return response.json();
 }
 
+/**
+ * Delete a session and all its related data
+ */
+export async function deleteSession(sessionId: string): Promise<{ detail: string }> {
+	const response = await apiFetch(`/session/${sessionId}`, {
+		method: 'DELETE'
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to delete session: ${response.status}`);
+	}
+
+	return response.json();
+}
+
 export async function saveUserCorrections(
 	sessionId: string,
 	corrections: { question_id: number; subtopic_ids: string[] }[]
