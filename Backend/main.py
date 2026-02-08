@@ -76,67 +76,73 @@ def load_specs_from_db():
     """
     Query Specification/Topic/Subtopic tables and build the same
     allSpecs list and subtopics_index dict that the JSON files provided.
+    Uses 3 bulk queries instead of per-row queries to avoid N+1 latency.
     """
     _allSpecs = []
     _subtopics_index = {}
 
     with Session(engine) as db:
         specs = db.exec(select(Specification)).all()
+        all_topics = db.exec(select(Topic)).all()
+        all_subtopics = db.exec(select(Subtopic)).all()
 
-        for spec in specs:
-            topics_rows = db.exec(
-                select(Topic).where(Topic.specification_id == spec.id)
-            ).all()
+    # Group topics by specification_id
+    topics_by_spec: dict[int, list] = {}
+    topic_by_id: dict[int, Topic] = {}
+    for t in all_topics:
+        topics_by_spec.setdefault(t.specification_id, []).append(t)
+        topic_by_id[t.id] = t
 
-            topics_list = []
-            for t in topics_rows:
-                subtopics_rows = db.exec(
-                    select(Subtopic).where(Subtopic.topic_db_id == t.id)
-                ).all()
+    # Group subtopics by topic_db_id
+    subtopics_by_topic: dict[int, list] = {}
+    for s in all_subtopics:
+        subtopics_by_topic.setdefault(s.topic_db_id, []).append(s)
 
-                sub_topics_list = []
-                for s in subtopics_rows:
-                    sub_topics_list.append({
-                        "subtopic_id": s.subtopic_id,
-                        "Specification_section_sub": s.specification_section_sub,
-                        "Sub_topic_name": s.subtopic_name,
-                        "description": s.description,
-                    })
-
-                    # Build subtopics_index entry
-                    key = f"{spec.exam_board}_{spec.spec_code}_{s.subtopic_id}"
-                    _subtopics_index[key] = {
-                        "subtopic_id": s.subtopic_id,
-                        "name": s.subtopic_name,
-                        "description": s.description,
-                        "topic_id": t.topic_id_within_spec,
-                        "topic_name": t.topic_name,
-                        "topic_specification_section": t.specification_section,
-                        "strand": t.strand,
-                        "qualification": spec.qualification,
-                        "subject": spec.subject,
-                        "exam_board": spec.exam_board,
-                        "specification": spec.spec_code,
-                        "spec_sub_section": s.specification_section_sub,
-                        "classification_text": f"{s.subtopic_name}. {s.description}",
-                    }
-
-                topics_list.append({
-                    "Topic_id": t.topic_id_within_spec,
-                    "Specification_section": t.specification_section,
-                    "Strand": t.strand,
-                    "Topic_name": t.topic_name,
-                    "Sub_topics": sub_topics_list,
+    for spec in specs:
+        topics_list = []
+        for t in topics_by_spec.get(spec.id, []):
+            sub_topics_list = []
+            for s in subtopics_by_topic.get(t.id, []):
+                sub_topics_list.append({
+                    "subtopic_id": s.subtopic_id,
+                    "Specification_section_sub": s.specification_section_sub,
+                    "Sub_topic_name": s.subtopic_name,
+                    "description": s.description,
                 })
 
-            _allSpecs.append({
-                "Qualification": spec.qualification,
-                "Subject": spec.subject,
-                "Exam Board": spec.exam_board,
-                "Specification": spec.spec_code,
-                "optional_modules": spec.optional_modules,
-                "Topics": topics_list,
+                key = f"{spec.exam_board}_{spec.spec_code}_{s.subtopic_id}"
+                _subtopics_index[key] = {
+                    "subtopic_id": s.subtopic_id,
+                    "name": s.subtopic_name,
+                    "description": s.description,
+                    "topic_id": t.topic_id_within_spec,
+                    "topic_name": t.topic_name,
+                    "topic_specification_section": t.specification_section,
+                    "strand": t.strand,
+                    "qualification": spec.qualification,
+                    "subject": spec.subject,
+                    "exam_board": spec.exam_board,
+                    "specification": spec.spec_code,
+                    "spec_sub_section": s.specification_section_sub,
+                    "classification_text": f"{s.subtopic_name}. {s.description}",
+                }
+
+            topics_list.append({
+                "Topic_id": t.topic_id_within_spec,
+                "Specification_section": t.specification_section,
+                "Strand": t.strand,
+                "Topic_name": t.topic_name,
+                "Sub_topics": sub_topics_list,
             })
+
+        _allSpecs.append({
+            "Qualification": spec.qualification,
+            "Subject": spec.subject,
+            "Exam Board": spec.exam_board,
+            "Specification": spec.spec_code,
+            "optional_modules": spec.optional_modules,
+            "Topics": topics_list,
+        })
 
     return _allSpecs, _subtopics_index
 
