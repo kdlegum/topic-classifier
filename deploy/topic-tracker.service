@@ -4,11 +4,11 @@ After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/root/topic-tracker
-ExecStart=/root/topic-tracker/venv/bin/uvicorn Backend.main:app --host 0.0.0.0 --port 8000
+WorkingDirectory=/root/topic-classifier
+ExecStart=/root/topic-classifier/venv/bin/uvicorn Backend.main:app --host 0.0.0.0 --port 8000
 Restart=always
 RestartSec=5
-EnvironmentFile=/root/topic-tracker/Backend/.env
+EnvironmentFile=/root/topic-classifier/Backend/.env
 
 [Install]
 WantedBy=multi-user.target

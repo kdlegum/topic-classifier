@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-APP_DIR="/root/topic-tracker"
+APP_DIR="/root/topic-classifier"
 
 cd "$APP_DIR"
 
