@@ -17,3 +17,6 @@ sentence-transformers==5.2.0
 slowapi==0.1.9
 sqlmodel==0.0.31
 uvicorn
+psycopg2-binary
+olmocr
+python-multipart

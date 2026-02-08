@@ -1,6 +1,4 @@
 from fastapi import FastAPI, HTTPException, Query, UploadFile, File, BackgroundTasks, Request, Depends
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from slowapi import Limiter
 from slowapi.util import get_remote_address
@@ -18,7 +16,15 @@ import datetime
 from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic
 from sqlmodel import Session, select, update
 from pathlib import Path
-from pdf_interpretation.pdfOCR import run_olmocr
+import os
+
+try:
+    from pdf_interpretation.pdfOCR import run_olmocr
+    OLMOCR_AVAILABLE = True
+except ImportError:
+    OLMOCR_AVAILABLE = False
+    run_olmocr = None
+
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown
 from Backend.auth import get_user
@@ -30,14 +36,19 @@ app = FastAPI()
 app.state.limiter = limiter
 app.add_middleware(SlowAPIMiddleware)
 
-UPLOAD_DIR = Path(r"Backend\uploads\pdfs")
-UPLOAD_DIR.mkdir(exist_ok=True)
+UPLOAD_DIR = Path("Backend/uploads/pdfs")
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+Path("Backend/uploads/status").mkdir(parents=True, exist_ok=True)
+Path("Backend/uploads/markdown").mkdir(parents=True, exist_ok=True)
+
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],     # allowing all origins for now
-    allow_methods=["*"],     
-    allow_headers=["*"],     
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.exception_handler(RateLimitExceeded)
@@ -585,6 +596,8 @@ def migrate_guest_sessions(request: Request, user=Depends(get_user)):
 
 @app.post("/upload-pdf/{SpecCode}")
 async def upload_pdf(request: Request, SpecCode: str, file: UploadFile = File(...), background_tasks: BackgroundTasks=None, user=Depends(get_user),):
+    if not OLMOCR_AVAILABLE:
+        raise HTTPException(status_code=503, detail="PDF processing is not available on this server")
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=400, detail="Only PDF files allowed")
 
@@ -619,7 +632,7 @@ async def upload_pdf(request: Request, SpecCode: str, file: UploadFile = File(..
     }
 
 def process_pdf(job_id, SpecCode, user):
-    run_olmocr(f"Backend/uploads/pdfs/{job_id}.pdf", r"Backend\uploads\markdown")
+    run_olmocr(f"Backend/uploads/pdfs/{job_id}.pdf", "Backend/uploads/markdown")
     updateStatus(job_id, "Converted to Markdown. Extracting questions...")
     questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
     updateStatus(job_id, "Questions extracted. Classifying questions by topic...")
@@ -1239,52 +1252,3 @@ def get_progress(spec_code: str, request: Request, user=Depends(get_user)):
         return build_progress_response(subtopic_stats)
 
 
-@app.get("/debug/sessions")
-def debug_sessions():
-    with Session(engine) as db:
-        sessions = db.exec(
-            select(DBSess).order_by(DBSess.created_at.desc()).limit(20)
-        ).all()
-
-        return [
-            {
-                "session_id": s.session_id,
-                "user_id": s.user_id,
-                "is_guest": s.is_guest,
-                "subject": s.subject,
-                "created_at": s.created_at,
-            }
-            for s in sessions
-        ]
-
-# Serve SvelteKit bundled assets (JS, CSS, etc.)
-app.mount("/_app", StaticFiles(directory="frontend/build/_app"), name="svelte_app")
-
-# SvelteKit SPA routes - serve index.html for client-side routing
-@app.get("/")
-def serve_svelte_index():
-    return FileResponse("frontend/build/index.html")
-
-@app.get("/classify")
-def serve_svelte_classify():
-    return FileResponse("frontend/build/index.html")
-
-@app.get("/history")
-def serve_svelte_history():
-    return FileResponse("frontend/build/index.html")
-
-@app.get("/analytics")
-def server_svelte_analytics():
-    return FileResponse("frontend/build/index.html")
-
-@app.get("/session-view/{session_id}")
-def serve_svelte_session_view(session_id: str):
-    return FileResponse("frontend/build/index.html")
-
-@app.get("/mark_session/{session_id}")
-def serve_svelte_mark_session(session_id: str):
-    return FileResponse("frontend/build/index.html")
-
-@app.get("/robots.txt")
-def serve_robots():
-    return FileResponse("frontend/build/robots.txt")

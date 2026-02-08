@@ -9,7 +9,7 @@ from pdf_interpretation.utils import updateStatus
 
 def run_olmocr(
     pdf_path: str,
-    output_dir: str = r"C:\Temp\pdf_test",
+    output_dir: str = os.path.join(os.environ.get("TMPDIR", "/tmp"), "pdf_ocr_output"),
     model: str = "olmOCR-2-7B-1025",
 ) -> Path:
     """
