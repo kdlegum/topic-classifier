@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-APP_DIR="/home/deploy/topic-tracker"
+APP_DIR="/root/topic-tracker"
 
 cd "$APP_DIR"
 
@@ -16,7 +16,7 @@ source venv/bin/activate
 pip install -r Backend/requirements.txt --quiet
 
 echo "=== Restarting service ==="
-sudo systemctl restart topic-tracker
+systemctl restart topic-tracker
 
 echo "=== Waiting for startup ==="
 sleep 3
