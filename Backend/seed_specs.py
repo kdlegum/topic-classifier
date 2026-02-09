@@ -51,6 +51,9 @@ def seed():
                 exam_board=spec_data["Exam Board"],
                 spec_code=spec_data["Specification"],
                 optional_modules=spec_data.get("optional_modules", False),
+                is_reviewed=True,
+                creator_id=None,
+                creator_is_guest=False,
             )
             db.add(db_spec)
             db.flush()  # get db_spec.id

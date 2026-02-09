@@ -13,7 +13,7 @@ import json
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection
 from sqlmodel import Session, select, update
 from pathlib import Path
 import os
@@ -141,6 +141,11 @@ def load_specs_from_db():
             "Exam Board": spec.exam_board,
             "Specification": spec.spec_code,
             "optional_modules": spec.optional_modules,
+            "creator_id": spec.creator_id,
+            "creator_is_guest": spec.creator_is_guest,
+            "is_reviewed": spec.is_reviewed,
+            "description": spec.description,
+            "created_at": spec.created_at.isoformat() if spec.created_at else None,
             "Topics": topics_list,
         })
 
@@ -149,12 +154,33 @@ def load_specs_from_db():
 
 allSpecs, subtopics_index = load_specs_from_db()
 
+
+def reload_specs():
+    global allSpecs, subtopics_index
+    allSpecs, subtopics_index = load_specs_from_db()
+
 @app.get("/specs")
-def get_specs():
-    """Returns all specifications with their strands and optional_modules flag."""
+def get_specs(request: Request, user=Depends(get_user)):
+    """Returns all specifications with their strands, optional_modules flag, and user selection status."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        selections = db.exec(
+            select(UserSpecSelection)
+            .where(UserSpecSelection.user_id == user_id)
+            .where(UserSpecSelection.is_guest == is_guest)
+        ).all()
+    selected_codes = {sel.spec_code for sel in selections}
+
     result = []
     for s in allSpecs:
         strands = list({t["Strand"] for t in s["Topics"]})
+        topic_count = sum(len(t["Sub_topics"]) for t in s["Topics"])
         result.append({
             "spec_code": s["Specification"],
             "subject": s["Subject"],
@@ -162,6 +188,12 @@ def get_specs():
             "qualification": s["Qualification"],
             "optional_modules": s.get("optional_modules", False),
             "strands": sorted(strands),
+            "is_reviewed": s.get("is_reviewed", False),
+            "creator_id": s.get("creator_id"),
+            "description": s.get("description"),
+            "created_at": s.get("created_at"),
+            "topic_count": topic_count,
+            "is_selected": s["Specification"] in selected_codes,
         })
     return result
 
@@ -242,6 +274,242 @@ def save_user_modules(spec_code: str, req: SaveModulesRequest, request: Request,
         db.commit()
 
     return {"success": True}
+
+
+# ── Custom Spec Creation ──────────────────────────────────────────
+
+class SubtopicCreate(BaseModel):
+    subtopic_name: str
+    description: str
+
+class TopicCreate(BaseModel):
+    strand: str
+    topic_name: str
+    subtopics: List[SubtopicCreate]
+
+class SpecCreate(BaseModel):
+    qualification: str
+    subject: str
+    exam_board: str
+    spec_code: str
+    optional_modules: bool = False
+    description: Optional[str] = None
+    topics: List[TopicCreate]
+
+
+@app.post("/specs")
+def create_spec(req: SpecCreate, request: Request, user=Depends(get_user)):
+    """Create a new custom specification."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    # Validate spec_code uniqueness
+    for s in allSpecs:
+        if s["Specification"] == req.spec_code:
+            raise HTTPException(status_code=409, detail="Specification code already exists")
+
+    if len(req.topics) < 1:
+        raise HTTPException(status_code=400, detail="At least one topic is required")
+    for t in req.topics:
+        if len(t.subtopics) < 1:
+            raise HTTPException(status_code=400, detail=f"Topic '{t.topic_name}' must have at least one subtopic")
+
+    with Session(engine) as db:
+        db_spec = Specification(
+            qualification=req.qualification,
+            subject=req.subject,
+            exam_board=req.exam_board,
+            spec_code=req.spec_code,
+            optional_modules=req.optional_modules,
+            description=req.description,
+            creator_id=user_id,
+            creator_is_guest=is_guest,
+            is_reviewed=False,
+        )
+        db.add(db_spec)
+        db.flush()
+
+        for t_idx, topic_data in enumerate(req.topics, start=1):
+            db_topic = Topic(
+                specification_id=db_spec.id,
+                topic_id_within_spec=t_idx,
+                specification_section=str(t_idx),
+                strand=topic_data.strand,
+                topic_name=topic_data.topic_name,
+            )
+            db.add(db_topic)
+            db.flush()
+
+            for s_idx, sub_data in enumerate(topic_data.subtopics):
+                letter = chr(ord('a') + s_idx)
+                db_subtopic = Subtopic(
+                    topic_db_id=db_topic.id,
+                    subtopic_id=f"{t_idx}{letter}",
+                    specification_section_sub=f"{t_idx}.{s_idx + 1}",
+                    subtopic_name=sub_data.subtopic_name,
+                    description=sub_data.description,
+                )
+                db.add(db_subtopic)
+
+        # Auto-add to creator's selections
+        db.add(UserSpecSelection(
+            user_id=user_id,
+            is_guest=is_guest,
+            spec_code=req.spec_code,
+        ))
+
+        db.commit()
+
+    reload_specs()
+
+    return {"spec_code": req.spec_code, "success": True}
+
+
+@app.delete("/specs/{spec_code}")
+def delete_spec(spec_code: str, request: Request, user=Depends(get_user)):
+    """Delete a custom specification (creator only, non-reviewed only)."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        db_spec = db.exec(
+            select(Specification).where(Specification.spec_code == spec_code)
+        ).first()
+        if not db_spec:
+            raise HTTPException(status_code=404, detail="Specification not found")
+
+        if db_spec.is_reviewed:
+            raise HTTPException(status_code=403, detail="Cannot delete a reviewed specification")
+
+        if db_spec.creator_id != user_id:
+            raise HTTPException(status_code=403, detail="Not authorized to delete this specification")
+
+        # Check for sessions referencing this spec
+        session_count = len(db.exec(
+            select(DBSess).where(DBSess.subject == spec_code)
+        ).all())
+        if session_count > 0:
+            raise HTTPException(status_code=409, detail="Cannot delete specification with existing sessions")
+
+        # Delete in FK order: Subtopic → Topic → Specification
+        topics = db.exec(select(Topic).where(Topic.specification_id == db_spec.id)).all()
+        for t in topics:
+            for s in db.exec(select(Subtopic).where(Subtopic.topic_db_id == t.id)).all():
+                db.delete(s)
+            db.delete(t)
+
+        # Delete user selections and module selections for this spec
+        for sel in db.exec(select(UserSpecSelection).where(UserSpecSelection.spec_code == spec_code)).all():
+            db.delete(sel)
+        for mod in db.exec(select(UserModuleSelection).where(UserModuleSelection.spec_code == spec_code)).all():
+            db.delete(mod)
+
+        db.delete(db_spec)
+        db.commit()
+
+    reload_specs()
+
+    return {"detail": "Specification deleted"}
+
+
+# ── User Spec Selections ──────────────────────────────────────────
+
+@app.post("/user/specs/{spec_code}")
+def add_user_spec(spec_code: str, request: Request, user=Depends(get_user)):
+    """Add a specification to the user's selections."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    # Validate spec exists
+    if not any(s["Specification"] == spec_code for s in allSpecs):
+        raise HTTPException(status_code=404, detail="Specification not found")
+
+    with Session(engine) as db:
+        existing = db.exec(
+            select(UserSpecSelection)
+            .where(UserSpecSelection.user_id == user_id)
+            .where(UserSpecSelection.is_guest == is_guest)
+            .where(UserSpecSelection.spec_code == spec_code)
+        ).first()
+        if not existing:
+            db.add(UserSpecSelection(
+                user_id=user_id,
+                is_guest=is_guest,
+                spec_code=spec_code,
+            ))
+            db.commit()
+
+    return {"success": True}
+
+
+@app.delete("/user/specs/{spec_code}")
+def remove_user_spec(spec_code: str, request: Request, user=Depends(get_user)):
+    """Remove a specification from the user's selections."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        existing = db.exec(
+            select(UserSpecSelection)
+            .where(UserSpecSelection.user_id == user_id)
+            .where(UserSpecSelection.is_guest == is_guest)
+            .where(UserSpecSelection.spec_code == spec_code)
+        ).first()
+        if existing:
+            db.delete(existing)
+            db.commit()
+
+    return {"success": True}
+
+
+@app.get("/user/specs")
+def get_user_specs(request: Request, user=Depends(get_user)):
+    """Get only the user's selected specifications (for classify page)."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        selections = db.exec(
+            select(UserSpecSelection)
+            .where(UserSpecSelection.user_id == user_id)
+            .where(UserSpecSelection.is_guest == is_guest)
+        ).all()
+    selected_codes = {sel.spec_code for sel in selections}
+
+    result = []
+    for s in allSpecs:
+        if s["Specification"] not in selected_codes:
+            continue
+        strands = list({t["Strand"] for t in s["Topics"]})
+        result.append({
+            "spec_code": s["Specification"],
+            "subject": s["Subject"],
+            "exam_board": s["Exam Board"],
+            "qualification": s["Qualification"],
+            "optional_modules": s.get("optional_modules", False),
+            "strands": sorted(strands),
+        })
+    return result
 
 
 def compute_confidence(preds: list[DBPrediction]) -> str:
@@ -736,6 +1004,25 @@ def migrate_guest_sessions(request: Request, user=Depends(get_user)):
             mod.user_id = user["user_id"]
             mod.is_guest = False
             db.add(mod)
+
+        # Migrate UserSpecSelection rows
+        guest_spec_sels = db.exec(
+            select(UserSpecSelection)
+            .where(UserSpecSelection.user_id == guest_id)
+            .where(UserSpecSelection.is_guest == True)
+        ).all()
+        existing_user_specs = {sel.spec_code for sel in db.exec(
+            select(UserSpecSelection)
+            .where(UserSpecSelection.user_id == user["user_id"])
+            .where(UserSpecSelection.is_guest == False)
+        ).all()}
+        for sel in guest_spec_sels:
+            if sel.spec_code in existing_user_specs:
+                db.delete(sel)  # deduplicate
+            else:
+                sel.user_id = user["user_id"]
+                sel.is_guest = False
+                db.add(sel)
 
         db.commit()
 

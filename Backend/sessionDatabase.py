@@ -87,6 +87,11 @@ class Specification(SQLModel, table=True):
     exam_board: str
     spec_code: str = Field(unique=True, index=True)
     optional_modules: bool = Field(default=False)
+    creator_id: str | None = Field(default=None, index=True)
+    creator_is_guest: bool = Field(default=False)
+    is_reviewed: bool = Field(default=False)
+    description: str | None = Field(default=None)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
 
 class UserModuleSelection(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
@@ -99,6 +104,13 @@ class SessionStrand(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     session_id: str = Field(foreign_key="session.session_id", index=True)
     strand: str
+
+class UserSpecSelection(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    user_id: str = Field(index=True)
+    is_guest: bool = Field(default=True)
+    spec_code: str = Field(index=True)
+    added_at: datetime = Field(default_factory=datetime.utcnow)
 
 class Topic(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
