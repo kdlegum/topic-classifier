@@ -5,7 +5,7 @@
 		classifyQuestions,
 		uploadPdf,
 		getPdfStatus,
-		getSpecs,
+		getUserSpecs,
 		getUserModules,
 		saveUserModules,
 		type SpecInfo
@@ -34,7 +34,7 @@
 
 	onMount(async () => {
 		try {
-			allSpecs = await getSpecs();
+			allSpecs = await getUserSpecs();
 		} catch (e) {
 			console.error('Failed to load specs:', e);
 		} finally {
@@ -194,6 +194,11 @@
 			<select id="specification" disabled>
 				<option>Loading specifications...</option>
 			</select>
+		{:else if allSpecs.length === 0}
+			<div class="empty-state">
+				<p>You haven't added any specifications yet.</p>
+				<p><a href="/specs">Browse and add specifications</a> to get started.</p>
+			</div>
 		{:else}
 			<select id="specification" bind:value={specCode}>
 				<option value="None">---Choose a Specification---</option>

@@ -233,6 +233,33 @@ export type SpecInfo = {
 	qualification: string;
 	optional_modules: boolean;
 	strands: string[];
+	is_reviewed?: boolean;
+	creator_id?: string | null;
+	description?: string | null;
+	created_at?: string | null;
+	topic_count?: number;
+	is_selected?: boolean;
+};
+
+export type SubtopicInput = {
+	subtopic_name: string;
+	description: string;
+};
+
+export type TopicInput = {
+	strand: string;
+	topic_name: string;
+	subtopics: SubtopicInput[];
+};
+
+export type SpecCreateInput = {
+	qualification: string;
+	subject: string;
+	exam_board: string;
+	spec_code: string;
+	optional_modules: boolean;
+	description?: string;
+	topics: TopicInput[];
 };
 
 /**
@@ -293,6 +320,122 @@ export async function deleteSession(sessionId: string): Promise<{ detail: string
 
 	if (!response.ok) {
 		throw new Error(`Failed to delete session: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Get only the user's selected specifications (for classify page)
+ */
+export async function getUserSpecs(): Promise<SpecInfo[]> {
+	const response = await apiFetch('/user/specs');
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch user specs: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Add a specification to the user's selections
+ */
+export async function addUserSpec(specCode: string): Promise<{ success: boolean }> {
+	const response = await apiFetch(`/user/specs/${specCode}`, {
+		method: 'POST'
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to add spec: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Remove a specification from the user's selections
+ */
+export async function removeUserSpec(specCode: string): Promise<{ success: boolean }> {
+	const response = await apiFetch(`/user/specs/${specCode}`, {
+		method: 'DELETE'
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to remove spec: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Create a new custom specification
+ */
+export async function createSpec(spec: SpecCreateInput): Promise<{ spec_code: string; success: boolean }> {
+	const response = await apiFetch('/specs', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify(spec)
+	});
+
+	if (!response.ok) {
+		if (response.status === 409) {
+			throw new Error('Specification code already exists');
+		}
+		throw new Error(`Failed to create spec: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Delete a custom specification
+ */
+export async function deleteSpec(specCode: string): Promise<{ detail: string }> {
+	const response = await apiFetch(`/specs/${specCode}`, {
+		method: 'DELETE'
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to delete spec: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+export type SpecDetail = SpecCreateInput & {
+	creator_id?: string | null;
+	is_reviewed?: boolean;
+};
+
+/**
+ * Get a single spec's full data (including topics/subtopics)
+ */
+export async function getSpec(specCode: string): Promise<SpecDetail> {
+	const response = await apiFetch(`/specs/${specCode}`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch spec: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Update an existing custom specification
+ */
+export async function updateSpec(
+	specCode: string,
+	spec: SpecCreateInput
+): Promise<{ spec_code: string; success: boolean }> {
+	const response = await apiFetch(`/specs/${specCode}`, {
+		method: 'PUT',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify(spec)
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to update spec: ${response.status}`);
 	}
 
 	return response.json();

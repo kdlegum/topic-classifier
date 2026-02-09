@@ -369,6 +369,118 @@ def create_spec(req: SpecCreate, request: Request, user=Depends(get_user)):
     return {"spec_code": req.spec_code, "success": True}
 
 
+@app.get("/specs/{spec_code}")
+def get_spec(spec_code: str, request: Request, user=Depends(get_user)):
+    """Return a single spec's full data in editable format."""
+    matching_spec = None
+    for s in allSpecs:
+        if s["Specification"] == spec_code:
+            matching_spec = s
+            break
+    if matching_spec is None:
+        raise HTTPException(status_code=404, detail="Specification not found")
+
+    topics = []
+    for t in matching_spec["Topics"]:
+        subtopics = []
+        for s in t["Sub_topics"]:
+            subtopics.append({
+                "subtopic_name": s["Sub_topic_name"],
+                "description": s["description"],
+            })
+        topics.append({
+            "strand": t["Strand"],
+            "topic_name": t["Topic_name"],
+            "subtopics": subtopics,
+        })
+
+    return {
+        "qualification": matching_spec["Qualification"],
+        "subject": matching_spec["Subject"],
+        "exam_board": matching_spec["Exam Board"],
+        "spec_code": matching_spec["Specification"],
+        "optional_modules": matching_spec.get("optional_modules", False),
+        "description": matching_spec.get("description"),
+        "creator_id": matching_spec.get("creator_id"),
+        "is_reviewed": matching_spec.get("is_reviewed", False),
+        "topics": topics,
+    }
+
+
+@app.put("/specs/{spec_code}")
+def update_spec(spec_code: str, req: SpecCreate, request: Request, user=Depends(get_user)):
+    """Update a custom specification (creator only, non-reviewed only)."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        db_spec = db.exec(
+            select(Specification).where(Specification.spec_code == spec_code)
+        ).first()
+        if not db_spec:
+            raise HTTPException(status_code=404, detail="Specification not found")
+
+        if db_spec.is_reviewed:
+            raise HTTPException(status_code=403, detail="Cannot edit a reviewed specification")
+
+        if db_spec.creator_id != user_id:
+            raise HTTPException(status_code=403, detail="Not authorized to edit this specification")
+
+        if len(req.topics) < 1:
+            raise HTTPException(status_code=400, detail="At least one topic is required")
+        for t in req.topics:
+            if len(t.subtopics) < 1:
+                raise HTTPException(status_code=400, detail=f"Topic '{t.topic_name}' must have at least one subtopic")
+
+        # Update basic info
+        db_spec.qualification = req.qualification
+        db_spec.subject = req.subject
+        db_spec.exam_board = req.exam_board
+        db_spec.optional_modules = req.optional_modules
+        db_spec.description = req.description
+
+        # Delete existing topics & subtopics
+        old_topics = db.exec(select(Topic).where(Topic.specification_id == db_spec.id)).all()
+        for t in old_topics:
+            for s in db.exec(select(Subtopic).where(Subtopic.topic_db_id == t.id)).all():
+                db.delete(s)
+            db.delete(t)
+        db.flush()
+
+        # Re-create topics & subtopics
+        for t_idx, topic_data in enumerate(req.topics, start=1):
+            db_topic = Topic(
+                specification_id=db_spec.id,
+                topic_id_within_spec=t_idx,
+                specification_section=str(t_idx),
+                strand=topic_data.strand,
+                topic_name=topic_data.topic_name,
+            )
+            db.add(db_topic)
+            db.flush()
+
+            for s_idx, sub_data in enumerate(topic_data.subtopics):
+                letter = chr(ord('a') + s_idx)
+                db_subtopic = Subtopic(
+                    topic_db_id=db_topic.id,
+                    subtopic_id=f"{t_idx}{letter}",
+                    specification_section_sub=f"{t_idx}.{s_idx + 1}",
+                    subtopic_name=sub_data.subtopic_name,
+                    description=sub_data.description,
+                )
+                db.add(db_subtopic)
+
+        db.commit()
+
+    reload_specs()
+
+    return {"spec_code": spec_code, "success": True}
+
+
 @app.delete("/specs/{spec_code}")
 def delete_spec(spec_code: str, request: Request, user=Depends(get_user)):
     """Delete a custom specification (creator only, non-reviewed only)."""

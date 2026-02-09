@@ -10,6 +10,7 @@
 
 	let currentPath = $derived($page.url.pathname);
 	let isClassify = $derived(currentPath === '/classify');
+	let isSpecs = $derived(currentPath.startsWith('/specs'));
 	let isHistory = $derived(currentPath === '/history');
 	let isAnalytics = $derived(currentPath === '/analytics');
 	let userDisplay = $derived($user ? $user.email : 'Guest');
@@ -21,6 +22,7 @@
 	</div>
 	<div class="nav-links">
 		<a href="/classify" class:active={isClassify}>Classify</a>
+		<a href="/specs" class:active={isSpecs}>Specs</a>
 		<a href="/history" class:active={isHistory}>My Sessions</a>
 		<a href="/analytics" class:active={isAnalytics}>Analytics</a>
 	</div>
