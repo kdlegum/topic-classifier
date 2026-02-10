@@ -1210,6 +1210,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             break
 
     questions = None
+    status_cb = lambda msg: updateStatus(job_id, msg)
 
     if spec_has_math:
         # ── Math-aware pipeline: merge olmOCR text + PyMuPDF marks ──
@@ -1221,7 +1222,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             try:
                 updateStatus(job_id, "Using OCR for math-quality text...")
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
-                olmocr_qs = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
+                updateStatus(job_id, "OCR markdown created. Parsing questions...")
+                olmocr_qs = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
                 logger.info("olmOCR succeeded for math pipeline, job %s", job_id)
             except Exception as e:
                 logger.warning("olmOCR failed for math pipeline, job %s: %s", job_id, e)
@@ -1229,7 +1231,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         if not olmocr_qs:
             try:
                 updateStatus(job_id, "Using Gemini Vision for math text...")
-                olmocr_qs = parse_pdf_with_vision(pdf_path)
+                olmocr_qs = parse_pdf_with_vision(pdf_path, on_status=status_cb)
                 logger.info("Gemini Vision succeeded as olmOCR fallback, job %s", job_id)
             except Exception as e:
                 logger.warning("Gemini Vision fallback failed, job %s: %s", job_id, e)
@@ -1238,7 +1240,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         try:
             updateStatus(job_id, "Extracting marks from PDF...")
             md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown")
-            pymupdf_qs = parse_exam_markdown(str(md_path))
+            updateStatus(job_id, "Marks markdown created. Parsing questions...")
+            pymupdf_qs = parse_exam_markdown(str(md_path), on_status=status_cb)
             logger.info("PyMuPDF succeeded for marks, job %s", job_id)
         except Exception as e:
             logger.warning("PyMuPDF failed for marks, job %s: %s", job_id, e)
@@ -1259,8 +1262,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         try:
             updateStatus(job_id, "Extracting text from PDF...")
             md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown")
-            updateStatus(job_id, "Text extracted. Parsing questions...")
-            questions = parse_exam_markdown(str(md_path))
+            updateStatus(job_id, "Markdown created. Parsing questions...")
+            questions = parse_exam_markdown(str(md_path), on_status=status_cb)
             logger.info("PyMuPDF + parser succeeded for job %s", job_id)
         except Exception as e:
             logger.warning("PyMuPDF pipeline failed for job %s: %s", job_id, e)
@@ -1269,7 +1272,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         if not questions:
             try:
                 updateStatus(job_id, "Using Gemini Vision to extract questions...")
-                questions = parse_pdf_with_vision(pdf_path)
+                questions = parse_pdf_with_vision(pdf_path, on_status=status_cb)
                 logger.info("Gemini Vision succeeded for job %s", job_id)
             except Exception as e:
                 logger.warning("Gemini Vision failed for job %s: %s", job_id, e)
@@ -1279,8 +1282,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             try:
                 updateStatus(job_id, "Using OCR to process PDF...")
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
-                updateStatus(job_id, "OCR complete. Extracting questions...")
-                questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md")
+                updateStatus(job_id, "OCR complete. Parsing questions...")
+                questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
                 logger.info("olmOCR fallback succeeded for job %s", job_id)
             except Exception as e:
                 logger.warning("olmOCR fallback failed for job %s: %s", job_id, e)

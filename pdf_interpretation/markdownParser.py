@@ -1,10 +1,10 @@
 import logging
-from typing import List, Dict
+from typing import List, Dict, Optional, Callable
 
 logger = logging.getLogger(__name__)
 
 
-def parse_exam_markdown(file_path: str) -> List[Dict]:
+def parse_exam_markdown(file_path: str, on_status: Optional[Callable[[str], None]] = None) -> List[Dict]:
     """
     Parse an exam Markdown file into structured questions.
     Tries the LLM parser first, falls back to regex on failure.
@@ -19,13 +19,15 @@ def parse_exam_markdown(file_path: str) -> List[Dict]:
     # Try LLM-based parsing first
     try:
         from pdf_interpretation.llmParser import parse_with_llm
-        results = parse_with_llm(file_path)
+        results = parse_with_llm(file_path, on_status=on_status)
         logger.info("LLM parser succeeded for %s (%d questions)", file_path, len(results))
         return results
     except Exception as e:
         logger.warning("LLM parser failed for %s: %s — falling back to regex", file_path, e)
 
     # Fallback to regex parser
+    if on_status:
+        on_status("LLM parser failed. Falling back to regex parser...")
     from pdf_interpretation.regexParser import parse_exam_markdown_regex
     return parse_exam_markdown_regex(file_path)
 

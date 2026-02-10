@@ -1,7 +1,7 @@
 import re
 import json
 import logging
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Callable
 
 from google import genai
 from google.genai import types
@@ -53,7 +53,13 @@ FEW_SHOT_RESPONSE = """[
   {"id": "2", "marks": 3, "text": "Solve the equation 3x + 5 = 20."}
 ]"""
 
-MODEL = "gemini-2.0-flash"
+CONTINUE_PROMPT = (
+    "Your previous response was truncated. Continue extracting the remaining "
+    "questions from the exam paper. Output ONLY a JSON array of the remaining "
+    "questions you have not yet output. Do not repeat any questions."
+)
+
+MODEL = "gemini-2.5-flash-lite"
 
 
 def preprocess_markdown(text: str) -> str:
@@ -131,9 +137,59 @@ def _fix_latex_escapes(text: str) -> str:
     return re.sub(r'\\(?!["\\/bfnrtu])', r'\\\\', text)
 
 
+def _repair_truncated_json(text: str) -> Optional[list]:
+    """Try to salvage complete question objects from a truncated JSON array.
+
+    When the model hits the output token limit, the JSON ends mid-object.
+    We find the last complete object and close the array.
+    """
+    # Find opening bracket
+    start = text.find('[')
+    if start == -1:
+        return None
+
+    # Find the last complete object boundary
+    last_brace = text.rfind('}')
+    if last_brace == -1 or last_brace <= start:
+        return None
+
+    # Take everything from `[` to the last `}` and close the array
+    repaired = text[start:last_brace + 1] + ']'
+
+    for fix_fn in [lambda s: s, _fix_latex_escapes]:
+        try:
+            result = json.loads(fix_fn(repaired))
+            if isinstance(result, list) and len(result) > 0:
+                logger.warning(
+                    "Recovered %d questions from truncated JSON response",
+                    len(result),
+                )
+                return result
+        except json.JSONDecodeError:
+            continue
+
+    return None
+
+
+def _merge_questions(accumulated: List[Dict], new: List[Dict]) -> List[Dict]:
+    """Merge two question lists, deduplicating by ID (keeps first occurrence)."""
+    seen_ids = {q["id"] for q in accumulated}
+    merged = list(accumulated)
+    for q in new:
+        if q["id"] not in seen_ids:
+            merged.append(q)
+            seen_ids.add(q["id"])
+    return merged
+
+
 def _extract_json_array(text: str) -> Optional[list]:
     """Try to extract a JSON array from LLM output, with fallbacks."""
     text = text.strip()
+
+    # Strip markdown fences (```json ... ``` or ``` ... ```)
+    fence_match = re.match(r'^```(?:json)?\s*\n?(.*?)\n?\s*```$', text, re.DOTALL)
+    if fence_match:
+        text = fence_match.group(1).strip()
 
     candidates = [text]
     bracket_match = re.search(r'\[.*\]', text, re.DOTALL)
@@ -146,13 +202,29 @@ def _extract_json_array(text: str) -> Optional[list]:
                 result = json.loads(fix_fn(candidate))
                 if isinstance(result, list):
                     return result
+                # Handle wrapper objects like {"questions": [...]}
+                if isinstance(result, dict):
+                    for value in result.values():
+                        if isinstance(value, list):
+                            return value
             except json.JSONDecodeError:
                 continue
 
+    logger.warning("Failed to extract JSON array from response: %.500s", text)
     return None
 
 
-def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2) -> List[Dict]:
+def _safe_status(on_status: Optional[Callable[[str], None]], msg: str) -> None:
+    """Call on_status without letting exceptions propagate."""
+    if not on_status:
+        return
+    try:
+        on_status(msg)
+    except Exception:
+        logger.warning("on_status callback failed", exc_info=True)
+
+
+def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2, on_status: Optional[Callable[[str], None]] = None) -> List[Dict]:
     """
     Send a PDF directly to Gemini Flash as a document and extract questions.
     Bypasses OCR entirely — Gemini reads the PDF visually.
@@ -169,40 +241,61 @@ def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2) -> List[Dict]:
     pdf_bytes = pdf_file.read_bytes()
     client = _get_client()
 
+    accumulated_questions: List[Dict] = []
+    continuation_context: Optional[str] = None
     last_error = None
+
     for attempt in range(max_retries + 1):
+        if continuation_context:
+            _safe_status(on_status, f"Gemini Vision: response truncated, requesting continuation (attempt {attempt + 1}/{max_retries + 1})...")
+        else:
+            _safe_status(on_status, f"Gemini Vision: parsing questions (attempt {attempt + 1}/{max_retries + 1})...")
+
         try:
+            contents = [
+                types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=SYSTEM_PROMPT)],
+                ),
+                types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=FEW_SHOT_USER)],
+                ),
+                types.Content(
+                    role="model",
+                    parts=[types.Part.from_text(text=FEW_SHOT_RESPONSE)],
+                ),
+                types.Content(
+                    role="user",
+                    parts=[
+                        types.Part.from_bytes(
+                            data=pdf_bytes,
+                            mime_type="application/pdf",
+                        ),
+                        types.Part.from_text(
+                            text="Extract all questions from this exam paper."
+                        ),
+                    ],
+                ),
+            ]
+
+            if continuation_context:
+                contents.append(types.Content(
+                    role="model",
+                    parts=[types.Part.from_text(text=continuation_context)],
+                ))
+                contents.append(types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=CONTINUE_PROMPT)],
+                ))
+
             response = client.models.generate_content(
                 model=MODEL,
-                contents=[
-                    types.Content(
-                        role="user",
-                        parts=[types.Part.from_text(text=SYSTEM_PROMPT)],
-                    ),
-                    types.Content(
-                        role="user",
-                        parts=[types.Part.from_text(text=FEW_SHOT_USER)],
-                    ),
-                    types.Content(
-                        role="model",
-                        parts=[types.Part.from_text(text=FEW_SHOT_RESPONSE)],
-                    ),
-                    types.Content(
-                        role="user",
-                        parts=[
-                            types.Part.from_bytes(
-                                data=pdf_bytes,
-                                mime_type="application/pdf",
-                            ),
-                            types.Part.from_text(
-                                text="Extract all questions from this exam paper."
-                            ),
-                        ],
-                    ),
-                ],
+                contents=contents,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
                     temperature=0,
+                    max_output_tokens=65536,
                 ),
             )
 
@@ -210,17 +303,30 @@ def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2) -> List[Dict]:
             parsed = _extract_json_array(content)
 
             if parsed is None:
+                # Try truncation recovery
+                recovered = _repair_truncated_json(content)
+                if recovered:
+                    validated_partial = validate_questions(recovered)
+                    if validated_partial:
+                        accumulated_questions = _merge_questions(accumulated_questions, validated_partial)
+                        continuation_context = content
+                        logger.warning(
+                            "Gemini vision attempt %d truncated, recovered %d questions (%d total so far)",
+                            attempt + 1, len(validated_partial), len(accumulated_questions),
+                        )
+                        raise ValueError(f"Truncated response, recovered {len(validated_partial)} questions")
                 raise ValueError("Could not extract JSON array from Gemini vision response")
 
             validated = validate_questions(parsed)
-            if not validated:
+            all_questions = _merge_questions(accumulated_questions, validated)
+            if not all_questions:
                 raise ValueError("No valid questions after validation")
 
             logger.info(
                 "Gemini vision parser extracted %d questions from %s",
-                len(validated), pdf_path,
+                len(all_questions), pdf_path,
             )
-            return validated
+            return all_questions
 
         except Exception as e:
             last_error = e
@@ -234,7 +340,7 @@ def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2) -> List[Dict]:
     )
 
 
-def parse_with_llm(file_path: str, max_retries: int = 2) -> List[Dict]:
+def parse_with_llm(file_path: str, max_retries: int = 2, on_status: Optional[Callable[[str], None]] = None) -> List[Dict]:
     """
     Parse an exam markdown file using Gemini Flash API.
 
@@ -252,32 +358,53 @@ def parse_with_llm(file_path: str, max_retries: int = 2) -> List[Dict]:
 
     client = _get_client()
 
+    accumulated_questions: List[Dict] = []
+    continuation_context: Optional[str] = None
     last_error = None
+
     for attempt in range(max_retries + 1):
+        if continuation_context:
+            _safe_status(on_status, f"LLM parser: response truncated, requesting continuation (attempt {attempt + 1}/{max_retries + 1})...")
+        else:
+            _safe_status(on_status, f"LLM parser: parsing questions (attempt {attempt + 1}/{max_retries + 1})...")
+
         try:
+            contents = [
+                types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=SYSTEM_PROMPT)],
+                ),
+                types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=FEW_SHOT_USER)],
+                ),
+                types.Content(
+                    role="model",
+                    parts=[types.Part.from_text(text=FEW_SHOT_RESPONSE)],
+                ),
+                types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=processed)],
+                ),
+            ]
+
+            if continuation_context:
+                contents.append(types.Content(
+                    role="model",
+                    parts=[types.Part.from_text(text=continuation_context)],
+                ))
+                contents.append(types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=CONTINUE_PROMPT)],
+                ))
+
             response = client.models.generate_content(
                 model=MODEL,
-                contents=[
-                    types.Content(
-                        role="user",
-                        parts=[types.Part.from_text(text=SYSTEM_PROMPT)],
-                    ),
-                    types.Content(
-                        role="user",
-                        parts=[types.Part.from_text(text=FEW_SHOT_USER)],
-                    ),
-                    types.Content(
-                        role="model",
-                        parts=[types.Part.from_text(text=FEW_SHOT_RESPONSE)],
-                    ),
-                    types.Content(
-                        role="user",
-                        parts=[types.Part.from_text(text=processed)],
-                    ),
-                ],
+                contents=contents,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
                     temperature=0,
+                    max_output_tokens=65536,
                 ),
             )
 
@@ -285,17 +412,30 @@ def parse_with_llm(file_path: str, max_retries: int = 2) -> List[Dict]:
             parsed = _extract_json_array(content)
 
             if parsed is None:
+                # Try truncation recovery
+                recovered = _repair_truncated_json(content)
+                if recovered:
+                    validated_partial = validate_questions(recovered)
+                    if validated_partial:
+                        accumulated_questions = _merge_questions(accumulated_questions, validated_partial)
+                        continuation_context = content
+                        logger.warning(
+                            "LLM parser attempt %d truncated, recovered %d questions (%d total so far)",
+                            attempt + 1, len(validated_partial), len(accumulated_questions),
+                        )
+                        raise ValueError(f"Truncated response, recovered {len(validated_partial)} questions")
                 raise ValueError("Could not extract JSON array from Gemini response")
 
             validated = validate_questions(parsed)
-            if not validated:
+            all_questions = _merge_questions(accumulated_questions, validated)
+            if not all_questions:
                 raise ValueError("No valid questions after validation")
 
             logger.info(
                 "Gemini parser extracted %d questions from %s",
-                len(validated), file_path,
+                len(all_questions), file_path,
             )
-            return validated
+            return all_questions
 
         except Exception as e:
             last_error = e

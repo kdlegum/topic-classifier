@@ -162,7 +162,7 @@
 					goto(`/mark_session/${data.session_id}`);
 				}
 
-				if (data.status === 'failed') {
+				if (data.status === 'failed' || data.status.startsWith('Error')) {
 					clearInterval(interval);
 					isUploading = false;
 					alert('PDF processing failed.');
