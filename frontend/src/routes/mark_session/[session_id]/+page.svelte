@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
+	import MathText from '$lib/components/MathText.svelte';
 
 	type Correction = {
 		subtopic_id: string;
@@ -74,12 +75,6 @@
 			console.error('Failed to save question edits:', err);
 			saveStatus = 'error';
 		}
-	}
-
-	function autoResize(textarea: HTMLTextAreaElement) {
-		textarea.style.height = 'auto';
-		textarea.style.height = textarea.scrollHeight + 'px';
-		return {};
 	}
 
 	onMount(async () => {
@@ -334,21 +329,19 @@
 		{#each session.questions as question}
 			<div class="question-block">
 				<h3>Question {question.question_number}:</h3>
-				<textarea
-					class="editable-question-text"
-					value={question.question_text}
-					oninput={(e) => {
-						const ta = e.currentTarget;
-						autoResize(ta);
-						handleQuestionTextInput(question.question_id, ta.value);
+				<MathText
+					text={question.question_text}
+					onchange={(newText) => {
+						question.question_text = newText;
+						handleQuestionTextInput(question.question_id, newText);
 					}}
-					use:autoResize
-				></textarea>
+				/>
 				<div class="marks-available-row">
 					<span class="marks-label">(</span>
 					<input
 						type="number"
 						class="editable-marks-available"
+						tabindex="-1"
 						value={question.marks_available ?? ''}
 						placeholder="Marks"
 						min="0"
@@ -390,6 +383,7 @@
 							(Similarity score {pred.similarity_score})
 							<button
 								class="btn-select-pred {selected ? 'selected' : ''}"
+								tabindex="-1"
 								onclick={() => togglePredictionAsCorrection(question.question_id, pred)}
 							>
 								{selected ? 'Selected' : 'Select'}

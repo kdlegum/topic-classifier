@@ -156,6 +156,7 @@
 					{correction.spec_sub_section}: {correction.subtopic}
 					<button
 						class="chip-remove"
+						tabindex="-1"
 						onclick={() => removeCorrection(correction.subtopic_id)}
 						aria-label="Remove {correction.subtopic}"
 					>&times;</button>
@@ -169,6 +170,7 @@
 	{:else if hierarchy}
 		<div class="dropdown-row">
 			<select
+				tabindex="-1"
 				value={selectedStrand}
 				onchange={(e) => handleStrandChange(e.currentTarget.value)}
 			>
@@ -179,6 +181,7 @@
 			</select>
 
 			<select
+				tabindex="-1"
 				value={selectedTopic}
 				onchange={(e) => handleTopicChange(e.currentTarget.value)}
 				disabled={!selectedStrand}
@@ -190,6 +193,7 @@
 			</select>
 
 			<select
+				tabindex="-1"
 				value={selectedSubtopic}
 				onchange={(e) => handleSubtopicChange(e.currentTarget.value)}
 				disabled={!selectedTopic}
@@ -202,6 +206,7 @@
 
 			<button
 				class="btn-add-topic"
+				tabindex="-1"
 				onclick={addCorrection}
 				disabled={!selectedSubtopic || isDuplicate()}
 			>Add</button>
