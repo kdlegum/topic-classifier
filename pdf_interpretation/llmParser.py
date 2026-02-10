@@ -30,7 +30,7 @@ Format — JSON array only, nothing else:
 Rules:
 - "id": question number + part letter + optional roman numeral. Examples: "3", "3a", "3b(i)", "3b(ii)". No "Q" prefix.
 - "marks": integer from [N] brackets, or null if not shown.
-- "text": full question text for that part. Prepend the stem/preamble if the subpart needs it for context. Keep LaTeX as-is. Keep [DIAGRAM] and [TABLE] placeholders.
+- "text": full question text for that part. Prepend the stem/preamble if the subpart needs it for context. Keep LaTeX as-is. Keep HTML tables and image references as-is.
 - Include all multiple choice options (A, B, C, D, etc.) as part of the question text. Do NOT strip them.
 - Use \\n line breaks in the text field to preserve structure (e.g. between the question stem and options).
 - Remove mark brackets like [3] from the text field.
@@ -73,7 +73,7 @@ CONTINUE_PROMPT = (
 MODEL = "gemini-2.5-flash-lite"
 
 
-def preprocess_markdown(text: str) -> str:
+def preprocess_markdown(text: str, image_base_url: str = '') -> str:
     """Strip exam boilerplate and normalize the markdown for LLM parsing."""
     # Remove boilerplate before the first question.
     # Require 1-3 digit number (avoids matching years like "2024") followed by
@@ -91,11 +91,16 @@ def preprocess_markdown(text: str) -> str:
         if match:
             text = text[:match.start()]
 
-    # Replace images with [DIAGRAM]
-    text = re.sub(r'!\[.*?\]\(.*?\)', '[DIAGRAM]', text)
+    # Rewrite image URLs to serve from backend, or use descriptive placeholder
+    if image_base_url:
+        def _rewrite_img(m):
+            filename = m.group(2).rsplit('/', 1)[-1]
+            return f'![{m.group(1)}]({image_base_url}/{filename})'
+        text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', _rewrite_img, text)
+    else:
+        text = re.sub(r'!\[([^\]]*)\]\([^)]+\)', lambda m: f'[DIAGRAM: {m.group(1)}]' if m.group(1) else '[DIAGRAM]', text)
 
-    # Replace HTML tables with [TABLE]
-    text = re.sub(r'<table\b[^>]*>.*?</table>', '[TABLE]', text, flags=re.IGNORECASE | re.DOTALL)
+    # Keep HTML tables as-is (no longer replacing with [TABLE])
 
     # Normalize whitespace
     text = re.sub(r'\n{3,}', '\n\n', text.strip())
@@ -363,7 +368,7 @@ def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2, on_status: Option
     )
 
 
-def parse_with_llm(file_path: str, max_retries: int = 2, on_status: Optional[Callable[[str], None]] = None) -> List[Dict]:
+def parse_with_llm(file_path: str, max_retries: int = 2, on_status: Optional[Callable[[str], None]] = None, image_base_url: str = '') -> List[Dict]:
     """
     Parse an exam markdown file using Gemini Flash API.
 
@@ -375,7 +380,7 @@ def parse_with_llm(file_path: str, max_retries: int = 2, on_status: Optional[Cal
     with open(file_path, 'r', encoding='utf-8') as f:
         raw_text = f.read()
 
-    processed = preprocess_markdown(raw_text)
+    processed = preprocess_markdown(raw_text, image_base_url=image_base_url)
     if not processed.strip():
         raise ValueError("No question content found after preprocessing")
 
