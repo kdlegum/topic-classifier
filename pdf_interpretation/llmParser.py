@@ -5,6 +5,7 @@ from typing import List, Dict, Optional, Callable
 
 from google import genai
 from google.genai import types
+from google.genai.types import ThinkingConfig
 
 logger = logging.getLogger(__name__)
 
@@ -315,9 +316,9 @@ def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2, on_status: Option
                 model=MODEL,
                 contents=contents,
                 config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
                     temperature=0,
                     max_output_tokens=65536,
+                    thinking_config=ThinkingConfig(thinking_budget=0),
                 ),
             )
 
@@ -424,9 +425,9 @@ def parse_with_llm(file_path: str, max_retries: int = 2, on_status: Optional[Cal
                 model=MODEL,
                 contents=contents,
                 config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
                     temperature=0,
                     max_output_tokens=65536,
+                    thinking_config=ThinkingConfig(thinking_budget=0),
                 ),
             )
 

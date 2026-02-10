@@ -20,6 +20,12 @@ def parse_exam_markdown_regex(file_path: str) -> List[Dict]:
         text = f.read()
 
     # --- Preprocess ---
+    # Truncate at "END OF QUESTION PAPER" / "END OF QUESTIONS" markers
+    for marker in [r'END\s+OF\s+QUESTION\s+PAPER', r'END\s+OF\s+QUESTIONS']:
+        match = re.search(marker, text, re.IGNORECASE)
+        if match:
+            text = text[:match.start()]
+
     # Fix escaped LaTeX brackets \\( ... \\) -> \( ... \)
     text = text.replace(r'\\(', r'\(').replace(r'\\)', r'\)')
     # Replace images with [DIAGRAM]

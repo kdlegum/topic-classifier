@@ -1229,6 +1229,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR markdown created. Parsing questions...")
                 olmocr_qs, text_parser = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
+                if text_parser == "regex":
+                    updateStatus(job_id, "Parsed questions with regex fallback.")
                 ocr_source = "olmOCR"
                 logger.info("olmOCR succeeded for math pipeline, job %s", job_id)
             except Exception as e:
@@ -1250,6 +1252,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown")
             updateStatus(job_id, "Marks markdown created. Parsing questions...")
             pymupdf_qs, marks_parser = parse_exam_markdown(str(md_path), on_status=status_cb)
+            if marks_parser == "regex":
+                updateStatus(job_id, "Parsed questions with regex fallback.")
             logger.info("PyMuPDF succeeded for marks, job %s", job_id)
         except Exception as e:
             logger.warning("PyMuPDF failed for marks, job %s: %s", job_id, e)
@@ -1275,6 +1279,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown")
             updateStatus(job_id, "Markdown created. Parsing questions...")
             questions, parser_name = parse_exam_markdown(str(md_path), on_status=status_cb)
+            if parser_name == "regex":
+                updateStatus(job_id, "Parsed questions with regex fallback.")
             pipeline_steps = [f"PyMuPDF({parser_name})"]
             logger.info("PyMuPDF + parser succeeded for job %s", job_id)
         except Exception as e:
@@ -1297,6 +1303,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR complete. Parsing questions...")
                 questions, parser_name = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
+                if parser_name == "regex":
+                    updateStatus(job_id, "Parsed questions with regex fallback.")
                 pipeline_steps = [f"olmOCR({parser_name})"]
                 logger.info("olmOCR fallback succeeded for job %s", job_id)
             except Exception as e:
