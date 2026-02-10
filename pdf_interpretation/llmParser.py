@@ -30,6 +30,8 @@ Rules:
 - "id": question number + part letter + optional roman numeral. Examples: "3", "3a", "3b(i)", "3b(ii)". No "Q" prefix.
 - "marks": integer from [N] brackets, or null if not shown.
 - "text": full question text for that part. Prepend the stem/preamble if the subpart needs it for context. Keep LaTeX as-is. Keep [DIAGRAM] and [TABLE] placeholders.
+- Include all multiple choice options (A, B, C, D, etc.) as part of the question text. Do NOT strip them.
+- Use \\n line breaks in the text field to preserve structure (e.g. between the question stem and options).
 - Remove mark brackets like [3] from the text field.
 - If a question has no sub-parts, output a single item with just the question number as id.
 - Output ONLY the JSON array. No commentary, no markdown fences."""
@@ -44,13 +46,21 @@ FEW_SHOT_USER = """1 A shop sells two types of coffee.
 
 (ii) Find the total cost of 4 bags of Type A and 3 bags of Type B. [3]
 
-2 Solve the equation 3x + 5 = 20. [3]"""
+2 Solve the equation 3x + 5 = 20. [3]
+
+3 Which of the following is a prime number?
+A 4
+B 6
+C 7
+D 9
+[1]"""
 
 FEW_SHOT_RESPONSE = """[
   {"id": "1a", "marks": 2, "text": "A shop sells two types of coffee. Type A costs £3.50 per bag. Calculate the cost of 4 bags."},
   {"id": "1b(i)", "marks": 2, "text": "A shop sells two types of coffee. Type B costs £4.20 per bag. Calculate the cost of 3 bags of Type B."},
   {"id": "1b(ii)", "marks": 3, "text": "A shop sells two types of coffee. Type A costs £3.50 per bag. Type B costs £4.20 per bag. Find the total cost of 4 bags of Type A and 3 bags of Type B."},
-  {"id": "2", "marks": 3, "text": "Solve the equation 3x + 5 = 20."}
+  {"id": "2", "marks": 3, "text": "Solve the equation 3x + 5 = 20."},
+  {"id": "3", "marks": 1, "text": "Which of the following is a prime number?\\nA 4\\nB 6\\nC 7\\nD 9"}
 ]"""
 
 CONTINUE_PROMPT = (
@@ -65,7 +75,9 @@ MODEL = "gemini-2.5-flash-lite"
 def preprocess_markdown(text: str) -> str:
     """Strip exam boilerplate and normalize the markdown for LLM parsing."""
     # Remove boilerplate before the first question.
-    first_q = re.search(r'(?m)^\d+[\s.]', text)
+    # Require 1-3 digit number (avoids matching years like "2024") followed by
+    # whitespace and actual content (avoids matching lone page numbers).
+    first_q = re.search(r'(?m)^\d{1,3}\s+\S', text)
     if first_q and first_q.start() > 0:
         before = text[:first_q.start()].strip()
         # Only strip if the content before has no sub-part markers (i.e. is headers/instructions)
@@ -118,6 +130,14 @@ def validate_questions(questions: list) -> List[Dict]:
         if not isinstance(text, str) or not text.strip():
             continue
 
+        # Restore LaTeX commands corrupted by JSON escape interpretation.
+        # CR, TAB, BS, FF never belong in exam question text — they're always
+        # corrupted \r \t \b \f from LaTeX commands like \rightarrow, \theta, etc.
+        text = text.replace('\r', '\\r')
+        text = text.replace('\t', '\\t')
+        text = text.replace('\b', '\\b')
+        text = text.replace('\f', '\\f')
+
         validated.append({
             "id": qid,
             "marks": marks,
@@ -134,14 +154,16 @@ def _fix_latex_escapes(text: str) -> str:
     JSON only allows \\\\ \\" \\/ \\b \\f \\n \\r \\t \\uXXXX — anything else
     causes json.loads to fail.
     """
+    # First: escape \b \f \r \t that are part of LaTeX commands
+    # (followed by lowercase alpha, meaning they're LaTeX like \rightarrow, \theta, etc.)
+    text = re.sub(r'(?<!\\)\\([bfrt])(?=[a-z])', r'\\\\\1', text)
+    # Then: escape remaining backslashes that aren't valid JSON escapes
     return re.sub(r'\\(?!["\\/bfnrtu])', r'\\\\', text)
 
 
 def _repair_truncated_json(text: str) -> Optional[list]:
-    """Try to salvage complete question objects from a truncated JSON array.
-
-    When the model hits the output token limit, the JSON ends mid-object.
-    We find the last complete object and close the array.
+    """
+    Retry continued from truncated response (i hate gemini for doing this so often)
     """
     # Find opening bracket
     start = text.find('[')

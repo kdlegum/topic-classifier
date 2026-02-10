@@ -29,7 +29,7 @@ except ImportError:
     run_olmocr = None
 
 from pdf_interpretation.utils import updateStatus
-from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questions
+from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questions, sort_questions
 from Backend.auth import get_user
 from Backend.database import engine
 limiter = Limiter(key_func=get_remote_address)
@@ -717,6 +717,7 @@ def classify_questions_logic(
 
     question_text = [q["text"] for q in req.question_object]
     marks = [q["marks"] for q in req.question_object]
+    question_ids = [q.get("id", str(i + 1)) for i, q in enumerate(req.question_object)]
 
     similarities = np.array(
         compute_similarity(
@@ -765,7 +766,7 @@ def classify_questions_logic(
 
             db_question = DBQuestion(
                 session_id=session_id,
-                question_number=str(q_idx + 1),
+                question_number=question_ids[q_idx],
                 question_text=question_text,
             )
             db.add(db_question)
@@ -1211,11 +1212,15 @@ def process_pdf(job_id, SpecCode, user, strands=None):
 
     questions = None
     status_cb = lambda msg: updateStatus(job_id, msg)
+    pipeline_steps = []
 
     if spec_has_math:
         # ── Math-aware pipeline: merge olmOCR text + PyMuPDF marks ──
         olmocr_qs = None
         pymupdf_qs = None
+        ocr_source = None
+        text_parser = None
+        marks_parser = None
 
         # Step A: olmOCR for good math text (or Gemini Vision fallback)
         if OLMOCR_AVAILABLE:
@@ -1223,7 +1228,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
                 updateStatus(job_id, "Using OCR for math-quality text...")
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR markdown created. Parsing questions...")
-                olmocr_qs = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
+                olmocr_qs, text_parser = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
+                ocr_source = "olmOCR"
                 logger.info("olmOCR succeeded for math pipeline, job %s", job_id)
             except Exception as e:
                 logger.warning("olmOCR failed for math pipeline, job %s: %s", job_id, e)
@@ -1231,7 +1237,9 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         if not olmocr_qs:
             try:
                 updateStatus(job_id, "Using Gemini Vision for math text...")
-                olmocr_qs = parse_pdf_with_vision(pdf_path, on_status=status_cb)
+                olmocr_qs = sort_questions(parse_pdf_with_vision(pdf_path, on_status=status_cb))
+                ocr_source = "Gemini Vision"
+                text_parser = "vision"
                 logger.info("Gemini Vision succeeded as olmOCR fallback, job %s", job_id)
             except Exception as e:
                 logger.warning("Gemini Vision fallback failed, job %s: %s", job_id, e)
@@ -1241,7 +1249,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             updateStatus(job_id, "Extracting marks from PDF...")
             md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown")
             updateStatus(job_id, "Marks markdown created. Parsing questions...")
-            pymupdf_qs = parse_exam_markdown(str(md_path), on_status=status_cb)
+            pymupdf_qs, marks_parser = parse_exam_markdown(str(md_path), on_status=status_cb)
             logger.info("PyMuPDF succeeded for marks, job %s", job_id)
         except Exception as e:
             logger.warning("PyMuPDF failed for marks, job %s: %s", job_id, e)
@@ -1249,12 +1257,15 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         # Step C: Merge
         if olmocr_qs and pymupdf_qs:
             questions = merge_questions(pymupdf_qs, olmocr_qs)
+            pipeline_steps = [f"text: {ocr_source}({text_parser})", f"marks: PyMuPDF({marks_parser})", "merged"]
             logger.info("Merged %d questions for math pipeline, job %s", len(questions), job_id)
         elif olmocr_qs:
             questions = olmocr_qs
+            pipeline_steps = [f"text: {ocr_source}({text_parser})", "single-source"]
             logger.info("Using olmOCR-only questions (PyMuPDF unavailable), job %s", job_id)
         elif pymupdf_qs:
             questions = pymupdf_qs
+            pipeline_steps = [f"text+marks: PyMuPDF({marks_parser})", "single-source"]
             logger.info("Using PyMuPDF-only questions (olmOCR unavailable), job %s", job_id)
     else:
         # ── Standard pipeline (non-math): PyMuPDF → Gemini Vision → olmOCR ──
@@ -1263,7 +1274,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             updateStatus(job_id, "Extracting text from PDF...")
             md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown")
             updateStatus(job_id, "Markdown created. Parsing questions...")
-            questions = parse_exam_markdown(str(md_path), on_status=status_cb)
+            questions, parser_name = parse_exam_markdown(str(md_path), on_status=status_cb)
+            pipeline_steps = [f"PyMuPDF({parser_name})"]
             logger.info("PyMuPDF + parser succeeded for job %s", job_id)
         except Exception as e:
             logger.warning("PyMuPDF pipeline failed for job %s: %s", job_id, e)
@@ -1272,7 +1284,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         if not questions:
             try:
                 updateStatus(job_id, "Using Gemini Vision to extract questions...")
-                questions = parse_pdf_with_vision(pdf_path, on_status=status_cb)
+                questions = sort_questions(parse_pdf_with_vision(pdf_path, on_status=status_cb))
+                pipeline_steps = ["Gemini Vision"]
                 logger.info("Gemini Vision succeeded for job %s", job_id)
             except Exception as e:
                 logger.warning("Gemini Vision failed for job %s: %s", job_id, e)
@@ -1283,7 +1296,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
                 updateStatus(job_id, "Using OCR to process PDF...")
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR complete. Parsing questions...")
-                questions = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
+                questions, parser_name = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
+                pipeline_steps = [f"olmOCR({parser_name})"]
                 logger.info("olmOCR fallback succeeded for job %s", job_id)
             except Exception as e:
                 logger.warning("olmOCR fallback failed for job %s: %s", job_id, e)
@@ -1291,6 +1305,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
     if not questions:
         updateStatus(job_id, "Error: Failed to extract questions from PDF")
         return
+
+    pipeline_info = " | ".join(pipeline_steps) if pipeline_steps else None
 
     updateStatus(job_id, "Questions extracted. Classifying questions by topic...")
 
@@ -1302,7 +1318,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         is_guest = True
 
     session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode, strands=strands), user_id=user_id, is_guest=is_guest)["session_id"]
-    updateStatus(job_id, "Done", session_id)
+    updateStatus(job_id, "Done", session_id, pipeline=pipeline_info)
 
 class UpdateQuestionRequest(BaseModel):
     question_text: Optional[str] = None

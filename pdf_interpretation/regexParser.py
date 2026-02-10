@@ -1,8 +1,5 @@
 import re
 from typing import List, Dict
-from pylatexenc.latex2text import LatexNodes2Text
-
-latex_converter = LatexNodes2Text()
 
 TABLE_PATTERN = re.compile(
                         r"<table\b[^>]*>.*?</table>",
@@ -74,8 +71,6 @@ def parse_exam_markdown_regex(file_path: str) -> List[Dict]:
 
                         # Combine stem + nested part
                         full_text = f"{stem} {nested_text}" if stem else nested_text
-                        # Convert LaTeX inline math to Unicode
-                        full_text = latex_converter.latex_to_text(full_text)
                         # Filter the html tables
                         full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
                         questions.append({
@@ -89,7 +84,6 @@ def parse_exam_markdown_regex(file_path: str) -> List[Dict]:
                     marks = int(marks_match.group(1)) if marks_match else None
                     part_text_clean = re.sub(r'\[\d+\]', '', part_text).strip()
                     full_text = f"{stem} {part_text_clean}" if stem else part_text_clean
-                    full_text = latex_converter.latex_to_text(full_text)
                     full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
 
                     questions.append({
@@ -102,7 +96,6 @@ def parse_exam_markdown_regex(file_path: str) -> List[Dict]:
             marks_match = re.search(r'\[(\d+)\]', body)
             marks = int(marks_match.group(1)) if marks_match else None
             full_text = re.sub(r'\[\d+\]', '', body).strip()
-            full_text = latex_converter.latex_to_text(full_text)
             full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
             questions.append({
                 "id": q_num,

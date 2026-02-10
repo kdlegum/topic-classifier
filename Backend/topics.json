@@ -1269,6 +1269,7 @@
     "Subject": "Physics",
     "Exam Board": "Edexcel",
     "Specification": "9PH0",
+    "has_math": true,
     "Topics": [
       {
         "Topic_id": 1,
