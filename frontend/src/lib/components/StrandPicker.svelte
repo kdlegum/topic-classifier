@@ -21,7 +21,7 @@
 </script>
 
 <div class="strand-picker">
-	<label>{label}</label>
+	<span class="label">{label}</span>
 	{#if hint}
 		<p class="hint">{hint}</p>
 	{/if}
@@ -44,7 +44,7 @@
 		margin-bottom: 16px;
 	}
 
-	.strand-picker label {
+	.strand-picker .label {
 		font-weight: 600;
 		display: block;
 		margin-bottom: 4px;
