@@ -8,6 +8,7 @@
 	let specCode = $state('');
 	let description = $state('');
 	let optionalModules = $state(false);
+	let hasMath = $state(false);
 
 	let topics: TopicInput[] = $state([
 		{ strand: '', topic_name: '', subtopics: [{ subtopic_name: '', description: '' }] }
@@ -79,6 +80,7 @@
 				exam_board: examBoard.trim(),
 				spec_code: specCode.trim(),
 				optional_modules: optionalModules,
+				has_math: hasMath,
 				description: description.trim() || undefined,
 				topics: topics
 			});
@@ -142,6 +144,12 @@
 			<label>
 				<input type="checkbox" bind:checked={optionalModules} />
 				Has optional modules (students choose strands)
+			</label>
+		</div>
+		<div class="form-field checkbox-field">
+			<label>
+				<input type="checkbox" bind:checked={hasMath} />
+				Contains math notation (uses enhanced OCR pipeline)
 			</label>
 		</div>
 	</div>

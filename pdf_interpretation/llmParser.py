@@ -152,6 +152,88 @@ def _extract_json_array(text: str) -> Optional[list]:
     return None
 
 
+def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2) -> List[Dict]:
+    """
+    Send a PDF directly to Gemini Flash as a document and extract questions.
+    Bypasses OCR entirely — Gemini reads the PDF visually.
+
+    Returns a list of validated question dicts.
+    Raises on failure.
+    """
+    from pathlib import Path
+
+    pdf_file = Path(pdf_path)
+    if not pdf_file.exists():
+        raise FileNotFoundError(f"PDF not found: {pdf_path}")
+
+    pdf_bytes = pdf_file.read_bytes()
+    client = _get_client()
+
+    last_error = None
+    for attempt in range(max_retries + 1):
+        try:
+            response = client.models.generate_content(
+                model=MODEL,
+                contents=[
+                    types.Content(
+                        role="user",
+                        parts=[types.Part.from_text(text=SYSTEM_PROMPT)],
+                    ),
+                    types.Content(
+                        role="user",
+                        parts=[types.Part.from_text(text=FEW_SHOT_USER)],
+                    ),
+                    types.Content(
+                        role="model",
+                        parts=[types.Part.from_text(text=FEW_SHOT_RESPONSE)],
+                    ),
+                    types.Content(
+                        role="user",
+                        parts=[
+                            types.Part.from_bytes(
+                                data=pdf_bytes,
+                                mime_type="application/pdf",
+                            ),
+                            types.Part.from_text(
+                                text="Extract all questions from this exam paper."
+                            ),
+                        ],
+                    ),
+                ],
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0,
+                ),
+            )
+
+            content = response.text
+            parsed = _extract_json_array(content)
+
+            if parsed is None:
+                raise ValueError("Could not extract JSON array from Gemini vision response")
+
+            validated = validate_questions(parsed)
+            if not validated:
+                raise ValueError("No valid questions after validation")
+
+            logger.info(
+                "Gemini vision parser extracted %d questions from %s",
+                len(validated), pdf_path,
+            )
+            return validated
+
+        except Exception as e:
+            last_error = e
+            logger.warning(
+                "Gemini vision attempt %d/%d failed: %s",
+                attempt + 1, max_retries + 1, e,
+            )
+
+    raise RuntimeError(
+        f"Gemini vision parsing failed after {max_retries + 1} attempts: {last_error}"
+    )
+
+
 def parse_with_llm(file_path: str, max_retries: int = 2) -> List[Dict]:
     """
     Parse an exam markdown file using Gemini Flash API.

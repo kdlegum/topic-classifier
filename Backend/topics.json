@@ -4,6 +4,7 @@
     "Subject": "Mathematics",
     "Exam Board": "OCR",
     "Specification": "H240",
+    "has_math": true,
     "Topics": [
         {
             "Topic_id": 1,
@@ -2527,6 +2528,7 @@
   "Exam Board": "OCR",
   "Specification": "H645",
   "optional_modules": true,
+  "has_math": true,
   "Topics": [
     {
       "Topic_id": 1,

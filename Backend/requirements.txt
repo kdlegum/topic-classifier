@@ -19,4 +19,5 @@ sqlmodel==0.0.31
 uvicorn
 psycopg2-binary
 olmocr
+pymupdf
 python-multipart

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import katex from 'katex';
+	import { formatScripts, preprocessMatrices } from '$lib/formatText';
 
 	let { text = '', onchange }: { text: string; onchange?: (newText: string) => void } = $props();
 
@@ -8,22 +9,22 @@
 	let renderDiv: HTMLDivElement | undefined = $state();
 	let textareaEl: HTMLTextAreaElement | undefined = $state();
 
-	const INLINE_REGEX = /\\\(([\s\S]*?)\\\)/g;
-	const DISPLAY_REGEX = /\\\[([\s\S]*?)\\\]/g;
-
 	function renderMath() {
 		if (!renderDiv) return;
+
+		// Convert [ 1 2; 3 4 ] matrix notation into LaTeX before processing
+		const processed = preprocessMatrices(text);
 
 		// Build HTML from text, rendering LaTeX segments with KaTeX
 		let html = '';
 		let lastIndex = 0;
-		const combined = [...text.matchAll(/\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)/g)];
+		const combined = [...processed.matchAll(/\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)/g)];
 		combined.sort((a, b) => a.index! - b.index!);
 
 		for (const match of combined) {
 			const start = match.index!;
 			if (start > lastIndex) {
-				html += escapeHtml(text.slice(lastIndex, start));
+				html += formatScripts(processed.slice(lastIndex, start));
 			}
 
 			const isDisplay = match[0].startsWith('\\[');
@@ -41,8 +42,8 @@
 			lastIndex = start + match[0].length;
 		}
 
-		if (lastIndex < text.length) {
-			html += escapeHtml(text.slice(lastIndex));
+		if (lastIndex < processed.length) {
+			html += formatScripts(processed.slice(lastIndex));
 		}
 
 		renderDiv.innerHTML = html;
@@ -55,6 +56,7 @@
 			.replace(/>/g, '&gt;')
 			.replace(/"/g, '&quot;');
 	}
+
 
 	$effect(() => {
 		if (!editing) {

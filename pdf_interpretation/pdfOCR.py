@@ -5,7 +5,38 @@ from pathlib import Path
 import os
 import shutil
 import json
+import fitz
 from pdf_interpretation.utils import updateStatus
+
+
+def extract_text_pymupdf(pdf_path: str, output_dir: str = "Backend/uploads/markdown") -> Path:
+    """
+    Extract text from a PDF using PyMuPDF's embedded text layer.
+    Returns the path to the generated .md file.
+    """
+    pdf_path = Path(pdf_path).resolve()
+    output_dir = Path(output_dir).resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if not pdf_path.exists():
+        raise FileNotFoundError(f"PDF not found: {pdf_path}")
+
+    doc = fitz.open(str(pdf_path))
+    pages_text = []
+    for page in doc:
+        pages_text.append(page.get_text())
+    doc.close()
+
+    full_text = "\n\n".join(pages_text)
+
+    if not full_text.strip():
+        raise ValueError("PyMuPDF extracted no text from PDF (possibly a scanned document)")
+
+    stem = pdf_path.stem
+    out_path = output_dir / f"{stem}.md"
+    out_path.write_text(full_text, encoding="utf-8")
+
+    return out_path
 
 def run_olmocr(
     pdf_path: str,

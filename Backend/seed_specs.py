@@ -51,6 +51,7 @@ def seed():
                 exam_board=spec_data["Exam Board"],
                 spec_code=spec_data["Specification"],
                 optional_modules=spec_data.get("optional_modules", False),
+                has_math=spec_data.get("has_math", False),
                 is_reviewed=True,
                 creator_id=None,
                 creator_is_guest=False,

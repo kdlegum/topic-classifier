@@ -4,6 +4,7 @@
 	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
 	import MathText from '$lib/components/MathText.svelte';
+	import { formatScripts } from '$lib/formatText';
 
 	type Correction = {
 		subtopic_id: string;
@@ -378,7 +379,7 @@
 									}
 								}}
 							>
-								{pred.subtopic}
+								{@html formatScripts(pred.subtopic)}
 							</span>
 							(Similarity score {pred.similarity_score})
 							<button
@@ -391,7 +392,7 @@
 						</p>
 						{#if expandedDescs.has(`desc-${question.question_id}-${pred.rank}`)}
 							<div class="description">
-								{pred.description}
+								{@html formatScripts(pred.description)}
 							</div>
 						{/if}
 					</div>

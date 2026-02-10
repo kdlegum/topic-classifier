@@ -87,6 +87,7 @@ class Specification(SQLModel, table=True):
     exam_board: str
     spec_code: str = Field(unique=True, index=True)
     optional_modules: bool = Field(default=False)
+    has_math: bool = Field(default=False)
     creator_id: str | None = Field(default=None, index=True)
     creator_is_guest: bool = Field(default=False)
     is_reviewed: bool = Field(default=False)

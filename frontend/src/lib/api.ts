@@ -232,6 +232,7 @@ export type SpecInfo = {
 	exam_board: string;
 	qualification: string;
 	optional_modules: boolean;
+	has_math: boolean;
 	strands: string[];
 	is_reviewed?: boolean;
 	creator_id?: string | null;
@@ -258,6 +259,7 @@ export type SpecCreateInput = {
 	exam_board: string;
 	spec_code: string;
 	optional_modules: boolean;
+	has_math: boolean;
 	description?: string;
 	topics: TopicInput[];
 };

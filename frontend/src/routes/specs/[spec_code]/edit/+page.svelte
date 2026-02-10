@@ -11,6 +11,7 @@
 	let examBoard = $state('');
 	let description = $state('');
 	let optionalModules = $state(false);
+	let hasMath = $state(false);
 
 	let topics: TopicInput[] = $state([]);
 
@@ -26,6 +27,7 @@
 			examBoard = spec.exam_board;
 			description = spec.description ?? '';
 			optionalModules = spec.optional_modules;
+			hasMath = spec.has_math ?? false;
 			topics = spec.topics;
 		} catch (err: any) {
 			errorMsg = err.message || 'Failed to load specification.';
@@ -96,6 +98,7 @@
 				exam_board: examBoard.trim(),
 				spec_code: specCode,
 				optional_modules: optionalModules,
+				has_math: hasMath,
 				description: description.trim() || undefined,
 				topics: topics
 			});
@@ -162,6 +165,12 @@
 				<label>
 					<input type="checkbox" bind:checked={optionalModules} />
 					Has optional modules (students choose strands)
+				</label>
+			</div>
+			<div class="form-field checkbox-field">
+				<label>
+					<input type="checkbox" bind:checked={hasMath} />
+					Contains math notation (uses enhanced OCR pipeline)
 				</label>
 			</div>
 		</div>
