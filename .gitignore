@@ -214,6 +214,7 @@ Pure_Mathematics_Sections_1.1-1.10.mkdocs
 Backend/subtopics_index.json
 exam_app.db
 *.png
+!frontend/static/*.png
 pdf_interpretation/pix2text310/
 Backend/uploads/
 Backend/detectingDuplicates.py

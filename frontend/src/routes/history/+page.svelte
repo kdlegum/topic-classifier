@@ -70,7 +70,7 @@
 			{#each sessions as session}
 				<a href="/mark_session/{session.session_id}" class="session-card">
 					<div class="session-info">
-						<div class="session-subject">{getTitle(session)}{#if session.strands?.length}, {session.strands.join(', ')}{/if}</div>
+						<div class="session-subject">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
 						<div class="session-meta">
 							<span class="session-board">{session.exam_board}</span>
 							<span class="session-date">{formatDate(session.created_at)}</span>
