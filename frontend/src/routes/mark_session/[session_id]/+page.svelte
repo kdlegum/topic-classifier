@@ -38,8 +38,18 @@
 	let pendingQuestionEdits = new Map<number, { question_text?: string; marks_available?: number }>();
 	let questionEditTimeout: ReturnType<typeof setTimeout> | null = null;
 
-	// View mode toggle: 'text' or 'pdf'
-	let viewMode: 'text' | 'pdf' = $state('text');
+	// Per-question PDF view toggle: set of question_ids currently showing PDF
+	let pdfViewQuestions = $state(new Set<number>());
+
+	function toggleQuestionView(questionId: number) {
+		const next = new Set(pdfViewQuestions);
+		if (next.has(questionId)) {
+			next.delete(questionId);
+		} else {
+			next.add(questionId);
+		}
+		pdfViewQuestions = next;
+	}
 
 	function handleQuestionTextInput(questionId: number, value: string) {
 		const existing = pendingQuestionEdits.get(questionId) ?? {};
@@ -329,28 +339,22 @@
 					{/each}
 				</div>
 			{/if}
-			{#if session.has_pdf}
-				<div class="view-toggle">
-					<button
-						class="toggle-btn {viewMode === 'text' ? 'active' : ''}"
-						onclick={() => viewMode = 'text'}
-					>
-						Text View
-					</button>
-					<button
-						class="toggle-btn {viewMode === 'pdf' ? 'active' : ''}"
-						onclick={() => viewMode = 'pdf'}
-					>
-						PDF View
-					</button>
-				</div>
-			{/if}
 		</div>
 
 		{#each session.questions as question}
 			<div class="question-block">
-				<h3>Question {question.question_number}:</h3>
-				{#if viewMode === 'pdf' && question.pdf_location}
+				<div class="question-header">
+					<h3>Question {question.question_number}:</h3>
+					{#if question.pdf_location}
+						<button
+							class="toggle-btn {pdfViewQuestions.has(question.question_id) ? 'active' : ''}"
+							onclick={() => toggleQuestionView(question.question_id)}
+						>
+							{pdfViewQuestions.has(question.question_id) ? 'View Text' : 'View PDF'}
+						</button>
+					{/if}
+				</div>
+				{#if pdfViewQuestions.has(question.question_id) && question.pdf_location}
 					<PdfQuestionView
 						sessionId={session.session_id}
 						pdfLocation={question.pdf_location}
@@ -453,21 +457,28 @@
 		font-weight: 500;
 	}
 
-	.view-toggle {
+	.question-header {
 		display: flex;
-		gap: 4px;
-		margin-top: 12px;
+		align-items: center;
+	}
+
+	.question-header h3 {
+		margin: 0;
 	}
 
 	.toggle-btn {
-		padding: 6px 16px;
+		width: auto;
+		margin-left: auto;
+		padding: 6px 10px;
 		border: 1px solid #d0d0d0;
-		border-radius: 6px;
+		border-radius: 4px;
 		background: #fff;
 		color: #555;
-		font-size: 0.85rem;
+		font-size: 0.75rem;
+		font-weight: 600;
 		cursor: pointer;
 		transition: all 0.15s;
+		line-height: 1;
 	}
 
 	.toggle-btn:hover {

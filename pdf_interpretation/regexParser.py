@@ -6,6 +6,67 @@ TABLE_PATTERN = re.compile(
                         flags=re.IGNORECASE | re.DOTALL
                     )
 
+def _infer_missing_question_numbers(text: str) -> str:
+    """
+    Insert inferred question numbers where OCR missed them.
+
+    Detects two cases:
+    1. Content with sub-parts before the first numbered question (missing Q1).
+    2. Sub-part letter resets mid-text: e.g. (a) appearing after (c) means
+       a new question started but its number was dropped.
+    """
+    lines = text.split('\n')
+
+    # Phase 1: missing question 1 at the start of the file
+    first_num_idx = None
+    first_num_val = None
+    for i, line in enumerate(lines):
+        m = re.match(r'^(\d+)\s', line)
+        if m:
+            first_num_idx = i
+            first_num_val = int(m.group(1))
+            break
+
+    if first_num_idx is not None and first_num_val > 1:
+        pre_text = '\n'.join(lines[:first_num_idx])
+        if re.search(r'(?m)^\([a-z]\)', pre_text) or re.search(r'\[\d+\]', pre_text):
+            lines.insert(0, '1 ')
+
+    # Phase 2: detect sub-part resets mid-text
+    result = []
+    last_subpart = None
+    last_num = 0
+
+    for line in lines:
+        # Use unstripped line: "2 " (question header with trailing space) matches,
+        # but bare "2" (stray digit from math/page number) does not.
+        num_match = re.match(r'^(\d+)\s', line)
+        if num_match:
+            last_num = int(num_match.group(1))
+            last_subpart = None
+            result.append(line)
+            continue
+
+        # Sub-part start: (a), (b), etc. — single letter only
+        stripped = line.strip()
+        part_match = re.match(r'^\(([a-z])\)\s', stripped)
+        if part_match:
+            part = part_match.group(1)
+            if part == 'a' and last_subpart is not None and last_subpart >= 'b':
+                # Sub-parts restarted — insert the next question number
+                last_num += 1
+                result.append(f'{last_num} ')
+                last_subpart = 'a'
+            else:
+                last_subpart = part
+            result.append(line)
+            continue
+
+        result.append(line)
+
+    return '\n'.join(result)
+
+
 def parse_exam_markdown_regex(file_path: str) -> List[Dict]:
     """
     Parse an exam Markdown file into structured questions using regex patterns.
@@ -34,6 +95,11 @@ def parse_exam_markdown_regex(file_path: str) -> List[Dict]:
     text = re.sub(r'\n{3,}', '\n\n', text.strip())
 
     questions = []
+
+    # --- Infer missing question numbers ---
+    # Scan line-by-line: if subpart letters reset (e.g. (a) after (c)),
+    # a question number was likely missed by OCR. Insert the inferred number.
+    text = _infer_missing_question_numbers(text)
 
     # --- Split main questions ---
     main_question_re = re.compile(

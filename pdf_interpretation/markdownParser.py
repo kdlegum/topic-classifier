@@ -90,10 +90,9 @@ def merge_questions(
             "marks": pymupdf_match["marks"] if pymupdf_match else q["marks"],
         })
 
-    # Append any PyMuPDF-only questions
-    for q in pymupdf_qs:
-        if q["id"] not in seen_ids:
-            merged.append(q)
+    # Don't append PyMuPDF-only questions — PyMuPDF text is unreliable
+    # for math specs (page numbers, stray digits from formulas get parsed
+    # as spurious questions). PyMuPDF is only used for marks matching.
 
     merged = sort_questions(merged)
     logger.info(

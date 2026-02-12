@@ -1301,10 +1301,10 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             except Exception as e:
                 logger.warning("Gemini Vision fallback failed, job %s: %s", job_id, e)
 
-        # Step B: PyMuPDF for accurate marks
+        # Step B: PyMuPDF for accurate marks (write to temp dir to avoid overwriting olmOCR md)
         try:
             updateStatus(job_id, "Extracting marks from PDF...")
-            md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown")
+            md_path = extract_text_pymupdf(pdf_path, "Backend/uploads/markdown/pymupdf_tmp")
             updateStatus(job_id, "Marks markdown created. Parsing questions...")
             pymupdf_qs, marks_parser = parse_exam_markdown(str(md_path), on_status=status_cb)
             if marks_parser == "regex":

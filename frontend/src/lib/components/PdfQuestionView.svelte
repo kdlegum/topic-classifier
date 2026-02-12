@@ -14,46 +14,45 @@
 	let status: 'loading' | 'ready' | 'error' = $state('loading');
 	let errorMsg = $state('');
 
-	// Module-level cache: sessionId -> PDF document proxy
-	const pdfCache = new Map<string, any>();
-	// Module-level cache: sessionId -> blob URL
-	const blobUrlCache = new Map<string, string>();
+	// Module-level cache: sessionId -> promise that resolves to PDF document proxy
+	const pdfLoadPromises = new Map<string, Promise<any>>();
 
 	// PDF.js scale: render at 1.5x for clarity
 	const RENDER_SCALE = 1.5;
 
-	async function loadAndRender() {
-		if (!containerEl) return;
+	async function getOrLoadPdf(sid: string): Promise<any> {
+		if (pdfLoadPromises.has(sid)) {
+			return pdfLoadPromises.get(sid)!;
+		}
 
-		try {
-			// Dynamically import pdfjs-dist
+		const promise = (async () => {
 			const pdfjsLib = await import('pdfjs-dist');
 
-			// Set worker
 			if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
 				const workerModule = await import('pdfjs-dist/build/pdf.worker.min.mjs?url');
 				pdfjsLib.GlobalWorkerOptions.workerSrc = workerModule.default;
 			}
 
-			// Load PDF (cached per session)
-			let pdfDoc = pdfCache.get(sessionId);
-			if (!pdfDoc) {
-				// Fetch PDF with auth
-				let blobUrl = blobUrlCache.get(sessionId);
-				if (!blobUrl) {
-					const response = await apiFetch(`/session/${sessionId}/pdf`);
-					if (!response.ok) {
-						throw new Error(`Failed to load PDF: ${response.status}`);
-					}
-					const blob = await response.blob();
-					blobUrl = URL.createObjectURL(blob);
-					blobUrlCache.set(sessionId, blobUrl);
-				}
-
-				const loadingTask = pdfjsLib.getDocument(blobUrl);
-				pdfDoc = await loadingTask.promise;
-				pdfCache.set(sessionId, pdfDoc);
+			const response = await apiFetch(`/session/${sid}/pdf`);
+			if (!response.ok) {
+				throw new Error(`Failed to load PDF: ${response.status}`);
 			}
+			const blob = await response.blob();
+			const blobUrl = URL.createObjectURL(blob);
+
+			const loadingTask = pdfjsLib.getDocument(blobUrl);
+			return await loadingTask.promise;
+		})();
+
+		pdfLoadPromises.set(sid, promise);
+		return promise;
+	}
+
+	async function loadAndRender() {
+		if (!containerEl) return;
+
+		try {
+			const pdfDoc = await getOrLoadPdf(sessionId);
 
 			// Clear container
 			containerEl.innerHTML = '';
