@@ -42,9 +42,10 @@ def run_olmocr(
     pdf_path: str,
     output_dir: str = os.path.join(os.environ.get("TMPDIR", "/tmp"), "pdf_ocr_output"),
     model: str = "olmOCR-2-7B-1025",
-) -> Path:
+) -> tuple[Path, str]:
     """
-    Run olmOCR on a single PDF and return the generated markdown file path.
+    Run olmOCR on a single PDF.
+    Returns (markdown_path, workspace_path).
     """
 
     pdf_path = Path(pdf_path).resolve()
@@ -120,17 +121,5 @@ def run_olmocr(
     shutil.move(expected_md_path, new_path)
     print(f"Successfully migrated {expected_md_path} to {new_path}")
 
-    #This is a temporary fix for the issue of a whole workspace folder moving no matter what i try
-    for item in os.listdir(output_dir):
-        item_path = os.path.join(output_dir, item)     
-        if os.path.isfile(item_path):
-            if not item.lower().endswith(".md"):
-                os.remove(item_path)
-                print(f"Deleted file: {item_path}")
-        else:
-            shutil.rmtree(item_path)
-            print(f"Deleted folder: {item_path}")
-
-    #updateStatus(input_file_name, "Markdown Created. Extracting Questions...")
-
-    return new_path
+    # Keep the workspace — its results/ JSONL is used by the question locator backup
+    return new_path, str(workspace)

@@ -38,6 +38,7 @@ class Session(SQLModel, table=True):
     status: SessionStatus = Field(default=SessionStatus.not_marked)
     total_marks_available: int | None = None
     total_marks_achieved: int | None = None
+    pdf_filename: str | None = Field(default=None)
 
 class Question(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
@@ -128,3 +129,12 @@ class Subtopic(SQLModel, table=True):
     specification_section_sub: str
     subtopic_name: str
     description: str
+
+
+class QuestionLocation(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    question_id: int = Field(foreign_key="question.id", index=True)
+    start_page: int       # 0-indexed
+    start_y: float        # top of question (PDF points from page top)
+    end_page: int         # may differ from start_page for multi-page questions
+    end_y: float          # bottom of question content (before answer lines)

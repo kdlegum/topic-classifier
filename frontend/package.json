@@ -36,6 +36,7 @@
 	"dependencies": {
 		"@supabase/supabase-js": "^2.94.1",
 		"chart.js": "^4.5.1",
-		"katex": "^0.16.28"
+		"katex": "^0.16.28",
+		"pdfjs-dist": "^5.4.624"
 	}
 }

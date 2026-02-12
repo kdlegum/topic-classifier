@@ -4,7 +4,7 @@ from slowapi import Limiter
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List, Optional, Dict
@@ -13,7 +13,7 @@ import json
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation
 from sqlmodel import Session, select, update
 from pathlib import Path
 import os
@@ -30,6 +30,7 @@ except ImportError:
 
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questions, sort_questions
+from pdf_interpretation.questionLocator import locate_questions_in_pdf
 from Backend.auth import get_user
 from Backend.database import engine
 limiter = Limiter(key_func=get_remote_address)
@@ -928,6 +929,15 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             .where(UserCorrection.question_id.in_(question_ids))
         ).all()
 
+        # ---------- Fetch question locations ----------
+        question_locations = db.exec(
+            select(QuestionLocation)
+            .where(QuestionLocation.question_id.in_(question_ids))
+        ).all()
+        locations_by_question: dict[int, QuestionLocation] = {}
+        for loc in question_locations:
+            locations_by_question[loc.question_id] = loc
+
         # ---------- Group predictions by question ----------
         preds_by_question: dict[int, list[DBPrediction]] = {}
         for p in predictions:
@@ -992,7 +1002,17 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
                         "description": c.description
                     }
                     for c in corrections_by_question.get(q.id, [])
-                ]
+                ],
+
+                "pdf_location": (
+                    {
+                        "start_page": loc.start_page,
+                        "start_y": loc.start_y,
+                        "end_page": loc.end_page,
+                        "end_y": loc.end_y,
+                    }
+                    if (loc := locations_by_question.get(q.id)) else None
+                ),
             })
 
         # ---------- Fetch session strands ----------
@@ -1023,8 +1043,42 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             "created_at": db_session.created_at,
             "user_id": db_session.user_id,
             "session_strands": session_strands,
+            "has_pdf": db_session.pdf_filename is not None,
             "questions": response_questions
         }
+
+
+@app.get("/session/{session_id}/pdf")
+def get_session_pdf(session_id: str, request: Request, user=Depends(get_user)):
+    """Serve the original PDF file for a session."""
+    with Session(engine) as db:
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        is_owner = False
+        if db_session.is_guest:
+            is_owner = (user.get("guest_id") == db_session.user_id)
+        else:
+            is_owner = (user.get("user_id") == db_session.user_id)
+        if not is_owner:
+            raise HTTPException(status_code=403, detail="Not authorized to view this session")
+
+        if not db_session.pdf_filename:
+            raise HTTPException(status_code=404, detail="No PDF associated with this session")
+
+        pdf_path = UPLOAD_DIR / db_session.pdf_filename
+        if not pdf_path.exists():
+            raise HTTPException(status_code=404, detail="PDF file not found")
+
+        return FileResponse(
+            path=str(pdf_path),
+            media_type="application/pdf",
+            filename=db_session.pdf_filename,
+        )
 
 
 @app.get("/user/sessions")
@@ -1211,6 +1265,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
             break
 
     questions = None
+    olmocr_workspace = None
     status_cb = lambda msg: updateStatus(job_id, msg)
     pipeline_steps = []
 
@@ -1226,7 +1281,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         if OLMOCR_AVAILABLE:
             try:
                 updateStatus(job_id, "Using OCR for math-quality text...")
-                run_olmocr(pdf_path, "Backend/uploads/markdown")
+                _, olmocr_workspace = run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR markdown created. Parsing questions...")
                 olmocr_qs, text_parser = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
                 if text_parser == "regex":
@@ -1300,7 +1355,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         if not questions and OLMOCR_AVAILABLE:
             try:
                 updateStatus(job_id, "Using OCR to process PDF...")
-                run_olmocr(pdf_path, "Backend/uploads/markdown")
+                _, olmocr_workspace = run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR complete. Parsing questions...")
                 questions, parser_name = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
                 if parser_name == "regex":
@@ -1326,6 +1381,41 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         is_guest = True
 
     session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode, strands=strands), user_id=user_id, is_guest=is_guest)["session_id"]
+
+    # Store PDF filename and locate questions in the PDF
+    try:
+        with Session(engine) as db:
+            db_session = db.exec(select(DBSess).where(DBSess.session_id == session_id)).first()
+            if db_session:
+                db_session.pdf_filename = f"{job_id}.pdf"
+                db.add(db_session)
+                db.commit()
+
+        locations = locate_questions_in_pdf(pdf_path, questions, workspace_path=olmocr_workspace)
+        if locations:
+            with Session(engine) as db:
+                # Map question numbers to DB question IDs
+                db_questions = db.exec(
+                    select(DBQuestion).where(DBQuestion.session_id == session_id)
+                ).all()
+                qnum_to_dbid = {q.question_number: q.id for q in db_questions}
+
+                for loc in locations:
+                    db_qid = qnum_to_dbid.get(loc["question_id"])
+                    if db_qid is None:
+                        continue
+                    db.add(QuestionLocation(
+                        question_id=db_qid,
+                        start_page=loc["start_page"],
+                        start_y=loc["start_y"],
+                        end_page=loc["end_page"],
+                        end_y=loc["end_y"],
+                    ))
+                db.commit()
+            logger.info("Stored %d question locations for session %s", len(locations), session_id)
+    except Exception as e:
+        logger.warning("Question location failed for job %s: %s", job_id, e)
+
     updateStatus(job_id, "Done", session_id, pipeline=pipeline_info)
 
 class UpdateQuestionRequest(BaseModel):
@@ -2006,6 +2096,8 @@ def delete_session(session_id: str, request: Request, user=Depends(get_user)):
                 db.delete(m)
             for c in db.exec(select(UserCorrection).where(UserCorrection.question_id.in_(question_ids))).all():
                 db.delete(c)
+            for loc in db.exec(select(QuestionLocation).where(QuestionLocation.question_id.in_(question_ids))).all():
+                db.delete(loc)
             for q in db.exec(select(DBQuestion).where(DBQuestion.session_id == session_id)).all():
                 db.delete(q)
 

@@ -4,6 +4,7 @@
 	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
 	import MathText from '$lib/components/MathText.svelte';
+	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
 	import { formatScripts } from '$lib/formatText';
 
 	type Correction = {
@@ -36,6 +37,9 @@
 
 	let pendingQuestionEdits = new Map<number, { question_text?: string; marks_available?: number }>();
 	let questionEditTimeout: ReturnType<typeof setTimeout> | null = null;
+
+	// View mode toggle: 'text' or 'pdf'
+	let viewMode: 'text' | 'pdf' = $state('text');
 
 	function handleQuestionTextInput(questionId: number, value: string) {
 		const existing = pendingQuestionEdits.get(questionId) ?? {};
@@ -325,18 +329,41 @@
 					{/each}
 				</div>
 			{/if}
+			{#if session.has_pdf}
+				<div class="view-toggle">
+					<button
+						class="toggle-btn {viewMode === 'text' ? 'active' : ''}"
+						onclick={() => viewMode = 'text'}
+					>
+						Text View
+					</button>
+					<button
+						class="toggle-btn {viewMode === 'pdf' ? 'active' : ''}"
+						onclick={() => viewMode = 'pdf'}
+					>
+						PDF View
+					</button>
+				</div>
+			{/if}
 		</div>
 
 		{#each session.questions as question}
 			<div class="question-block">
 				<h3>Question {question.question_number}:</h3>
-				<MathText
-					text={question.question_text}
-					onchange={(newText) => {
-						question.question_text = newText;
-						handleQuestionTextInput(question.question_id, newText);
-					}}
-				/>
+				{#if viewMode === 'pdf' && question.pdf_location}
+					<PdfQuestionView
+						sessionId={session.session_id}
+						pdfLocation={question.pdf_location}
+					/>
+				{:else}
+					<MathText
+						text={question.question_text}
+						onchange={(newText) => {
+							question.question_text = newText;
+							handleQuestionTextInput(question.question_id, newText);
+						}}
+					/>
+				{/if}
 				<div class="marks-available-row">
 					<span class="marks-label">(</span>
 					<input
@@ -424,5 +451,32 @@
 		color: #0077cc;
 		font-size: 0.85rem;
 		font-weight: 500;
+	}
+
+	.view-toggle {
+		display: flex;
+		gap: 4px;
+		margin-top: 12px;
+	}
+
+	.toggle-btn {
+		padding: 6px 16px;
+		border: 1px solid #d0d0d0;
+		border-radius: 6px;
+		background: #fff;
+		color: #555;
+		font-size: 0.85rem;
+		cursor: pointer;
+		transition: all 0.15s;
+	}
+
+	.toggle-btn:hover {
+		background: #f5f5f5;
+	}
+
+	.toggle-btn.active {
+		background: #0077cc;
+		color: #fff;
+		border-color: #0077cc;
 	}
 </style>
