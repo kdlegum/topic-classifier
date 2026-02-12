@@ -4,7 +4,7 @@ from slowapi import Limiter
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List, Optional, Dict
@@ -43,7 +43,6 @@ UPLOAD_DIR = Path("Backend/uploads/pdfs")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 Path("Backend/uploads/status").mkdir(parents=True, exist_ok=True)
 Path("Backend/uploads/markdown").mkdir(parents=True, exist_ok=True)
-Path("Backend/uploads/images").mkdir(parents=True, exist_ok=True)
 
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 
@@ -872,21 +871,6 @@ def get_status(job_id: str):
         data = json.load(f)
     return data
 
-import re as _re
-
-@app.get("/images/{job_id}/{filename}")
-def serve_image(job_id: str, filename: str):
-    # Validate job_id is UUID-like (hex chars and hyphens only)
-    if not _re.fullmatch(r'[a-fA-F0-9\-]+', job_id):
-        raise HTTPException(status_code=400, detail="Invalid job ID")
-    # Validate filename matches olmOCR image naming pattern (e.g. page_0_img_0.png or page_1_2_3_4.png)
-    if not _re.fullmatch(r'[\w\-]+\.png', filename):
-        raise HTTPException(status_code=400, detail="Invalid filename")
-    image_path = Path("Backend/uploads/images") / job_id / filename
-    if not image_path.exists():
-        raise HTTPException(status_code=404, detail="Image not found")
-    return FileResponse(str(image_path), media_type="image/png")
-
 @app.get("/session/{session_id}")
 def get_session(session_id: str, request: Request = None, user: dict = None):
     # Allow internal calls (from classify_questions_logic) without auth check
@@ -1229,7 +1213,6 @@ def process_pdf(job_id, SpecCode, user, strands=None):
     questions = None
     status_cb = lambda msg: updateStatus(job_id, msg)
     pipeline_steps = []
-    olmocr_image_url = f"/images/{job_id}"
 
     if spec_has_math:
         # ── Math-aware pipeline: merge olmOCR text + PyMuPDF marks ──
@@ -1245,7 +1228,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
                 updateStatus(job_id, "Using OCR for math-quality text...")
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR markdown created. Parsing questions...")
-                olmocr_qs, text_parser = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb, image_base_url=olmocr_image_url)
+                olmocr_qs, text_parser = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
                 if text_parser == "regex":
                     updateStatus(job_id, "Parsed questions with regex fallback.")
                 ocr_source = "olmOCR"
@@ -1319,7 +1302,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
                 updateStatus(job_id, "Using OCR to process PDF...")
                 run_olmocr(pdf_path, "Backend/uploads/markdown")
                 updateStatus(job_id, "OCR complete. Parsing questions...")
-                questions, parser_name = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb, image_base_url=olmocr_image_url)
+                questions, parser_name = parse_exam_markdown(f"Backend/uploads/markdown/{job_id}.md", on_status=status_cb)
                 if parser_name == "regex":
                     updateStatus(job_id, "Parsed questions with regex fallback.")
                 pipeline_steps = [f"olmOCR({parser_name})"]

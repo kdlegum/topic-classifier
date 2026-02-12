@@ -1,101 +1,12 @@
 import subprocess
 import sys
 import uuid
-import re
 from pathlib import Path
 import os
 import shutil
 import json
 import fitz
 from pdf_interpretation.utils import updateStatus
-
-# olmOCR renders pages with the longest dimension scaled to this many pixels
-OLMOCR_TARGET_DIM = 2048
-
-
-def extract_olmocr_images(pdf_path: str, jsonl_path: str, dest_dir: str) -> int:
-    """
-    Extract diagram images from a PDF by cropping regions that olmOCR referenced.
-
-    olmOCR outputs image references like ![alt](page_X_Y_W_H.png) where
-    X, Y, W, H are pixel coordinates in the rendered page image
-    (max dimension = OLMOCR_TARGET_DIM pixels).
-
-    Uses the JSONL text field and pdf_page_numbers attribute to determine
-    which PDF page each image belongs to, renders that page with PyMuPDF,
-    and crops.
-
-    Returns the number of images extracted.
-    """
-    dest_dir = Path(dest_dir)
-    dest_dir.mkdir(parents=True, exist_ok=True)
-
-    # Read JSONL for the original text and pdf_page_numbers mapping
-    with open(jsonl_path, 'r', encoding='utf-8') as f:
-        data = json.loads(f.readline())
-
-    jsonl_text = data.get('text', '')
-    page_ranges = data.get('attributes', {}).get('pdf_page_numbers', [])
-
-    # Search in the JSONL text (character offsets match pdf_page_numbers)
-    img_pattern = re.compile(r'!\[([^\]]*)\]\((page_(\d+)_(\d+)_(\d+)_(\d+)\.png)\)')
-    img_refs = []
-    for m in img_pattern.finditer(jsonl_text):
-        filename = m.group(2)
-        x, y, w, h = int(m.group(3)), int(m.group(4)), int(m.group(5)), int(m.group(6))
-        char_pos = m.start()
-
-        # Determine which page this image is on via character offset
-        page_num = 1
-        for start, end, pg in page_ranges:
-            if start <= char_pos < end:
-                page_num = pg
-                break
-
-        img_refs.append({
-            'filename': filename,
-            'x': x, 'y': y, 'w': w, 'h': h,
-            'page': page_num,  # 1-indexed
-        })
-
-    if not img_refs:
-        return 0
-
-    doc = fitz.open(str(pdf_path))
-    count = 0
-
-    for ref in img_refs:
-        page_idx = ref['page'] - 1  # 0-indexed
-        if page_idx < 0 or page_idx >= len(doc):
-            print(f"Skipping {ref['filename']}: page {ref['page']} out of range")
-            continue
-
-        page = doc[page_idx]
-        rect = page.rect
-        max_dim = max(rect.width, rect.height)
-        zoom = OLMOCR_TARGET_DIM / max_dim
-
-        # Convert pixel coordinates back to PDF points for clipping
-        x, y, w, h = ref['x'], ref['y'], ref['w'], ref['h']
-        clip = fitz.Rect(x / zoom, y / zoom, (x + w) / zoom, (y + h) / zoom)
-
-        # Clamp to page bounds
-        clip = clip & page.rect
-
-        if clip.is_empty:
-            print(f"Skipping {ref['filename']}: clip region empty after clamping")
-            continue
-
-        mat = fitz.Matrix(zoom, zoom)
-        pix = page.get_pixmap(matrix=mat, clip=clip)
-
-        dest_file = dest_dir / ref['filename']
-        pix.save(str(dest_file))
-        count += 1
-
-    doc.close()
-    print(f"Extracted {count} diagram image(s) from {pdf_path} to {dest_dir}")
-    return count
 
 
 def extract_text_pymupdf(pdf_path: str, output_dir: str = "Backend/uploads/markdown") -> Path:
@@ -134,7 +45,6 @@ def run_olmocr(
 ) -> Path:
     """
     Run olmOCR on a single PDF and return the generated markdown file path.
-    Also extracts diagram images by cropping PDF regions referenced in the markdown.
     """
 
     pdf_path = Path(pdf_path).resolve()
@@ -210,30 +120,17 @@ def run_olmocr(
     shutil.move(expected_md_path, new_path)
     print(f"Successfully migrated {expected_md_path} to {new_path}")
 
-    # Extract diagram images using olmOCR's coordinate references
-    # Find the JSONL results file in the workspace
-    results_dir = workspace / "results"
-    jsonl_files = list(results_dir.glob("*.jsonl")) if results_dir.exists() else []
-
-    if jsonl_files:
-        jsonl_path = str(jsonl_files[0])
-        images_dest = Path("Backend/uploads/images") / input_file_name
-        try:
-            count = extract_olmocr_images(str(pdf_path), jsonl_path, str(images_dest))
-            if count:
-                print(f"Extracted {count} diagram image(s) for {input_file_name}")
-        except Exception as e:
-            print(f"Warning: diagram image extraction failed: {e}")
-    else:
-        print("Warning: no JSONL results found in workspace, skipping image extraction")
-
-    # Cleanup workspace artifacts (everything except .md files in output_dir)
+    #This is a temporary fix for the issue of a whole workspace folder moving no matter what i try
     for item in os.listdir(output_dir):
-        item_path = os.path.join(output_dir, item)
+        item_path = os.path.join(output_dir, item)     
         if os.path.isfile(item_path):
             if not item.lower().endswith(".md"):
                 os.remove(item_path)
+                print(f"Deleted file: {item_path}")
         else:
             shutil.rmtree(item_path)
+            print(f"Deleted folder: {item_path}")
+
+    #updateStatus(input_file_name, "Markdown Created. Extracting Questions...")
 
     return new_path

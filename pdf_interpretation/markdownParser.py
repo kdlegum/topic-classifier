@@ -32,7 +32,7 @@ def sort_questions(questions: List[Dict]) -> List[Dict]:
     return sorted(questions, key=_question_sort_key)
 
 
-def parse_exam_markdown(file_path: str, on_status: Optional[Callable[[str], None]] = None, image_base_url: str = '') -> Tuple[List[Dict], str]:
+def parse_exam_markdown(file_path: str, on_status: Optional[Callable[[str], None]] = None) -> Tuple[List[Dict], str]:
     """
     Parse an exam Markdown file into structured questions.
     Tries the LLM parser first, falls back to regex on failure.
@@ -48,7 +48,7 @@ def parse_exam_markdown(file_path: str, on_status: Optional[Callable[[str], None
     # Try LLM-based parsing first
     try:
         from pdf_interpretation.llmParser import parse_with_llm
-        results = parse_with_llm(file_path, on_status=on_status, image_base_url=image_base_url)
+        results = parse_with_llm(file_path, on_status=on_status)
         results = sort_questions(results)
         logger.info("LLM parser succeeded for %s (%d questions)", file_path, len(results))
         return results, "llm"
@@ -59,7 +59,7 @@ def parse_exam_markdown(file_path: str, on_status: Optional[Callable[[str], None
     if on_status:
         on_status("LLM parser failed. Falling back to regex parser...")
     from pdf_interpretation.regexParser import parse_exam_markdown_regex
-    return sort_questions(parse_exam_markdown_regex(file_path, image_base_url=image_base_url)), "regex"
+    return sort_questions(parse_exam_markdown_regex(file_path)), "regex"
 
 
 def merge_questions(

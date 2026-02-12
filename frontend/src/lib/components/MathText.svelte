@@ -1,11 +1,6 @@
 <script lang="ts">
 	import katex from 'katex';
-	import {
-		formatScripts,
-		preprocessMatrices,
-		stashRichContent,
-		restoreRichContent
-	} from '$lib/formatText';
+	import { formatScripts, preprocessMatrices } from '$lib/formatText';
 
 	let { text = '', onchange }: { text: string; onchange?: (newText: string) => void } = $props();
 
@@ -20,20 +15,16 @@
 		// Convert [ 1 2; 3 4 ] matrix notation into LaTeX before processing
 		const processed = preprocessMatrices(text);
 
-		// Stash tables, images, and legacy placeholders BEFORE LaTeX splitting
-		// so they don't get broken by the LaTeX regex or escaped by formatScripts
-		const { text: withTokens, items } = stashRichContent(processed);
-
 		// Build HTML from text, rendering LaTeX segments with KaTeX
 		let html = '';
 		let lastIndex = 0;
-		const combined = [...withTokens.matchAll(/\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)/g)];
+		const combined = [...processed.matchAll(/\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)/g)];
 		combined.sort((a, b) => a.index! - b.index!);
 
 		for (const match of combined) {
 			const start = match.index!;
 			if (start > lastIndex) {
-				html += formatScripts(withTokens.slice(lastIndex, start));
+				html += formatScripts(processed.slice(lastIndex, start));
 			}
 
 			const isDisplay = match[0].startsWith('\\[');
@@ -51,12 +42,9 @@
 			lastIndex = start + match[0].length;
 		}
 
-		if (lastIndex < withTokens.length) {
-			html += formatScripts(withTokens.slice(lastIndex));
+		if (lastIndex < processed.length) {
+			html += formatScripts(processed.slice(lastIndex));
 		}
-
-		// Restore stashed tables, images, and badges into the final HTML
-		html = restoreRichContent(html, items);
 
 		renderDiv.innerHTML = html;
 	}
@@ -163,42 +151,5 @@
 	:global(.katex-error) {
 		color: #cc0000;
 		font-family: monospace;
-	}
-
-	:global(.question-diagram) {
-		max-width: 100%;
-		height: auto;
-		display: block;
-		margin: 8px 0;
-	}
-
-	:global(.question-table-wrap) {
-		white-space: normal;
-	}
-
-	:global(.question-table-wrap table) {
-		border-collapse: collapse;
-		margin: 8px 0;
-	}
-
-	:global(.question-table-wrap td, .question-table-wrap th) {
-		border: 1px solid #ddd;
-		padding: 6px 10px;
-	}
-
-	:global(.question-table-wrap th) {
-		background: #f5f5f5;
-		font-weight: 600;
-	}
-
-	:global(.placeholder-badge) {
-		display: inline-block;
-		padding: 2px 8px;
-		background: #f0f0f0;
-		border: 1px solid #ddd;
-		border-radius: 4px;
-		color: #666;
-		font-size: 0.85em;
-		font-style: italic;
 	}
 </style>

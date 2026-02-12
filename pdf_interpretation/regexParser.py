@@ -1,8 +1,12 @@
 import re
 from typing import List, Dict
 
+TABLE_PATTERN = re.compile(
+                        r"<table\b[^>]*>.*?</table>",
+                        flags=re.IGNORECASE | re.DOTALL
+                    )
 
-def parse_exam_markdown_regex(file_path: str, image_base_url: str = '') -> List[Dict]:
+def parse_exam_markdown_regex(file_path: str) -> List[Dict]:
     """
     Parse an exam Markdown file into structured questions using regex patterns.
     Returns a list of dicts:
@@ -24,14 +28,8 @@ def parse_exam_markdown_regex(file_path: str, image_base_url: str = '') -> List[
 
     # Fix escaped LaTeX brackets \\( ... \\) -> \( ... \)
     text = text.replace(r'\\(', r'\(').replace(r'\\)', r'\)')
-    # Rewrite image URLs to serve from backend, or use descriptive placeholder
-    if image_base_url:
-        def _rewrite_img(m):
-            filename = m.group(2).rsplit('/', 1)[-1]
-            return f'![{m.group(1)}]({image_base_url}/{filename})'
-        text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', _rewrite_img, text)
-    else:
-        text = re.sub(r'!\[([^\]]*)\]\([^)]+\)', lambda m: f'[DIAGRAM: {m.group(1)}]' if m.group(1) else '[DIAGRAM]', text)
+    # Replace images with [DIAGRAM]
+    text = re.sub(r'!\[.*?\]\(.*?\)', '[DIAGRAM]', text)
     # Normalize whitespace
     text = re.sub(r'\n{3,}', '\n\n', text.strip())
 
@@ -79,6 +77,8 @@ def parse_exam_markdown_regex(file_path: str, image_base_url: str = '') -> List[
 
                         # Combine stem + nested part
                         full_text = f"{stem} {nested_text}" if stem else nested_text
+                        # Filter the html tables
+                        full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
                         questions.append({
                             "id": nested_id,
                             "marks": marks,
@@ -90,6 +90,7 @@ def parse_exam_markdown_regex(file_path: str, image_base_url: str = '') -> List[
                     marks = int(marks_match.group(1)) if marks_match else None
                     part_text_clean = re.sub(r'\[\d+\]', '', part_text).strip()
                     full_text = f"{stem} {part_text_clean}" if stem else part_text_clean
+                    full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
 
                     questions.append({
                         "id": part_id,
@@ -101,6 +102,7 @@ def parse_exam_markdown_regex(file_path: str, image_base_url: str = '') -> List[
             marks_match = re.search(r'\[(\d+)\]', body)
             marks = int(marks_match.group(1)) if marks_match else None
             full_text = re.sub(r'\[\d+\]', '', body).strip()
+            full_text = TABLE_PATTERN.sub("[TABLE]", full_text)
             questions.append({
                 "id": q_num,
                 "marks": marks,
