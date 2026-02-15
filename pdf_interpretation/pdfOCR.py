@@ -62,8 +62,6 @@ def run_olmocr(
 
     env = dict(**dict(**subprocess.os.environ))
     env["PYTHONIOENCODING"] = "utf-8"
-    env["TMP"] = str(output_dir)
-    env["TEMP"] = str(output_dir)
 
     cmd = [
         sys.executable,
@@ -85,6 +83,7 @@ def run_olmocr(
         env=env,
         capture_output=True,
         text=True,
+        timeout=300,
     )
 
     if result.returncode != 0:
@@ -109,9 +108,17 @@ def run_olmocr(
                 found = os.path.join(root, expected_md_name)
                 break
         if found is None:
+            # Log all files in workspace for debugging
+            all_files = []
+            for root, dirs, files in os.walk(workspace):
+                for f in files:
+                    all_files.append(os.path.join(root, f))
             raise FileNotFoundError(
                 f"No matching md file found. Checked {expected_md_path} "
-                f"and searched {workspace_md_dir}"
+                f"and searched {workspace_md_dir}\n"
+                f"STDOUT:\n{result.stdout}\n"
+                f"STDERR:\n{result.stderr}\n"
+                f"All workspace files:\n" + "\n".join(all_files)
             )
         expected_md_path = found
 

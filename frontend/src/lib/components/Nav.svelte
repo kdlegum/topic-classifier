@@ -13,6 +13,7 @@
 	let isSpecs = $derived(currentPath.startsWith('/specs'));
 	let isHistory = $derived(currentPath === '/history');
 	let isAnalytics = $derived(currentPath === '/analytics');
+	let isRevision = $derived(currentPath === '/revision');
 	let userDisplay = $derived($user ? $user.email : 'Guest');
 </script>
 
@@ -25,6 +26,7 @@
 		<a href="/specs" class:active={isSpecs}>Specs</a>
 		<a href="/history" class:active={isHistory}>My Sessions</a>
 		<a href="/analytics" class:active={isAnalytics}>Analytics</a>
+		<a href="/revision" class:active={isRevision}>Revision</a>
 	</div>
 	<div class="nav-user">
 		<span class="user-display">{userDisplay}</span>

@@ -138,3 +138,13 @@ class QuestionLocation(SQLModel, table=True):
     start_y: float        # top of question (PDF points from page top)
     end_page: int         # may differ from start_page for multi-page questions
     end_y: float          # bottom of question content (before answer lines)
+
+
+class RevisionAttempt(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    question_id: int = Field(foreign_key="question.id", index=True)
+    user_id: str = Field(index=True)
+    is_guest: bool = Field(default=True)
+    marks_achieved: int
+    marks_available: int
+    created_at: datetime = Field(default_factory=datetime.utcnow)

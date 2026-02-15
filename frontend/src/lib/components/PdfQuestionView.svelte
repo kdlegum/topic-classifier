@@ -40,7 +40,11 @@
 			const blob = await response.blob();
 			const blobUrl = URL.createObjectURL(blob);
 
-			const loadingTask = pdfjsLib.getDocument(blobUrl);
+			const loadingTask = pdfjsLib.getDocument({
+				url: blobUrl,
+				useWorkerFetch: false,
+				wasmUrl: '/'
+			});
 			return await loadingTask.promise;
 		})();
 
@@ -99,7 +103,6 @@
 				wrapper.style.height = `${cropHeight}px`;
 				wrapper.style.width = `${viewport.width}px`;
 				wrapper.style.position = 'relative';
-				wrapper.style.maxWidth = '100%';
 
 				// Position canvas inside wrapper to show only the cropped region
 				canvas.style.position = 'absolute';

@@ -7,6 +7,20 @@ from google import genai
 from google.genai import types
 from google.genai.types import ThinkingConfig
 
+# Schema for structured JSON output — forces Gemini to produce valid JSON
+_QUESTION_SCHEMA = types.Schema(
+    type="ARRAY",
+    items=types.Schema(
+        type="OBJECT",
+        properties={
+            "id": types.Schema(type="STRING"),
+            "marks": types.Schema(type="INTEGER", nullable=True),
+            "text": types.Schema(type="STRING"),
+        },
+        required=["id", "text"],
+    ),
+)
+
 logger = logging.getLogger(__name__)
 
 _client = None
@@ -319,6 +333,8 @@ def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2, on_status: Option
                     temperature=0,
                     max_output_tokens=65536,
                     thinking_config=ThinkingConfig(thinking_budget=0),
+                    response_mime_type="application/json",
+                    response_schema=_QUESTION_SCHEMA,
                 ),
             )
 
@@ -428,6 +444,8 @@ def parse_with_llm(file_path: str, max_retries: int = 2, on_status: Optional[Cal
                     temperature=0,
                     max_output_tokens=65536,
                     thinking_config=ThinkingConfig(thinking_budget=0),
+                    response_mime_type="application/json",
+                    response_schema=_QUESTION_SCHEMA,
                 ),
             )
 

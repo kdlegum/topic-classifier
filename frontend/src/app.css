@@ -404,6 +404,18 @@ input[type='file'] {
 	background: rgba(220, 53, 69, 0.15);
 }
 
+/* remove the little arrows from number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type="number"] {
+-moz-appearance: textfield;
+}
+
+
 /* Marks achieved input */
 .marks-achieved {
 	width: 120px;

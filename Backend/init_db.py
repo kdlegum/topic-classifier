@@ -4,7 +4,7 @@ from database import engine
 from sessionDatabase import (
     Session, Question, Prediction, QuestionMark, UserCorrection,
     Specification, Topic, Subtopic, UserModuleSelection, SessionStrand,
-    UserSpecSelection, QuestionLocation,
+    UserSpecSelection, QuestionLocation, RevisionAttempt,
 )
 
 SQLModel.metadata.create_all(engine)

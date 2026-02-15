@@ -443,6 +443,96 @@ export async function updateSpec(
 	return response.json();
 }
 
+export type RevisionQuestion = {
+	question_id: number;
+	question_number: string;
+	question_text: string;
+	marks_available: number;
+	original_marks_achieved: number;
+	session_id: string;
+	spec_code: string;
+	exam_board: string;
+	has_pdf: boolean;
+	pdf_location: { start_page: number; start_y: number; end_page: number; end_y: number } | null;
+	predictions: {
+		rank: number;
+		strand: string;
+		topic: string;
+		subtopic: string;
+		spec_sub_section: string;
+		similarity_score: number;
+		description: string;
+	}[];
+	user_corrections: {
+		subtopic_id: string;
+		strand: string;
+		topic: string;
+		subtopic: string;
+		spec_sub_section: string;
+		description: string;
+	}[];
+};
+
+export type RevisionPoolResponse = {
+	total_count: number;
+	spec_codes: string[];
+	questions: RevisionQuestion[];
+};
+
+/**
+ * Get a batch of revision-eligible questions
+ */
+export async function getRevisionPool(
+	specCode?: string,
+	limit?: number
+): Promise<RevisionPoolResponse> {
+	const params = new URLSearchParams();
+	if (specCode) params.set('spec_code', specCode);
+	if (limit) params.set('limit', String(limit));
+	const qs = params.toString();
+
+	const response = await apiFetch(`/revision/pool${qs ? `?${qs}` : ''}`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch revision pool: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Record a revision attempt for a question
+ */
+export async function recordRevisionAttempt(
+	questionId: number,
+	marksAchieved: number
+): Promise<{ success: boolean; is_full_marks: boolean }> {
+	const response = await apiFetch(`/revision/${questionId}/attempt`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ marks_achieved: marksAchieved })
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to record revision attempt: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Download a session's PDF as a blob
+ */
+export async function downloadSessionPdf(sessionId: string): Promise<Blob> {
+	const response = await apiFetch(`/session/${sessionId}/pdf`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to download PDF: ${response.status}`);
+	}
+
+	return response.blob();
+}
+
 export async function saveUserCorrections(
 	sessionId: string,
 	corrections: { question_id: number; subtopic_ids: string[] }[]

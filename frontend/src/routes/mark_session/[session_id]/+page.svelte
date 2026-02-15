@@ -479,6 +479,7 @@
 		cursor: pointer;
 		transition: all 0.15s;
 		line-height: 1;
+		margin-bottom: 4px;
 	}
 
 	.toggle-btn:hover {

@@ -13,8 +13,9 @@ import json
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt
 from sqlmodel import Session, select, update
+from sqlalchemy import func
 from pathlib import Path
 import os
 
@@ -1181,6 +1182,17 @@ def migrate_guest_sessions(request: Request, user=Depends(get_user)):
             mod.is_guest = False
             db.add(mod)
 
+        # Migrate RevisionAttempt rows
+        guest_revisions = db.exec(
+            select(RevisionAttempt)
+            .where(RevisionAttempt.user_id == guest_id)
+            .where(RevisionAttempt.is_guest == True)
+        ).all()
+        for ra in guest_revisions:
+            ra.user_id = user["user_id"]
+            ra.is_guest = False
+            db.add(ra)
+
         # Migrate UserSpecSelection rows
         guest_spec_sels = db.exec(
             select(UserSpecSelection)
@@ -2098,6 +2110,8 @@ def delete_session(session_id: str, request: Request, user=Depends(get_user)):
                 db.delete(c)
             for loc in db.exec(select(QuestionLocation).where(QuestionLocation.question_id.in_(question_ids))).all():
                 db.delete(loc)
+            for ra in db.exec(select(RevisionAttempt).where(RevisionAttempt.question_id.in_(question_ids))).all():
+                db.delete(ra)
             for q in db.exec(select(DBQuestion).where(DBQuestion.session_id == session_id)).all():
                 db.delete(q)
 
@@ -2114,3 +2128,211 @@ def delete_session(session_id: str, request: Request, user=Depends(get_user)):
     return {"detail": "Session deleted"}
 
 
+# ── Revision endpoints ──────────────────────────────────────────────
+
+@app.get("/revision/pool")
+def get_revision_pool(
+    request: Request,
+    spec_code: Optional[str] = Query(default=None),
+    limit: int = Query(default=20, ge=1, le=100),
+    user=Depends(get_user),
+):
+    uid = user["user_id"] if user["is_authenticated"] else user["guest_id"]
+    is_guest = not user["is_authenticated"]
+
+    with Session(engine) as db:
+        # Base query: questions where marks_achieved < marks_available, owned by user
+        base = (
+            select(
+                DBQuestion.id,
+                DBQuestion.question_number,
+                DBQuestion.question_text,
+                QuestionMark.marks_available,
+                QuestionMark.marks_achieved,
+                DBSess.session_id,
+                DBSess.subject,
+                DBSess.exam_board,
+                DBSess.pdf_filename,
+            )
+            .join(DBSess, DBQuestion.session_id == DBSess.session_id)
+            .join(QuestionMark, QuestionMark.question_id == DBQuestion.id)
+            .where(DBSess.user_id == uid)
+            .where(DBSess.is_guest == is_guest)
+            .where(QuestionMark.marks_available.isnot(None))
+            .where(QuestionMark.marks_achieved.isnot(None))
+            .where(QuestionMark.marks_achieved < QuestionMark.marks_available)
+        )
+
+        # Subquery: latest revision attempt per question for this user
+        latest_attempt = (
+            select(
+                RevisionAttempt.question_id,
+                func.max(RevisionAttempt.id).label("max_id"),
+            )
+            .where(RevisionAttempt.user_id == uid)
+            .where(RevisionAttempt.is_guest == is_guest)
+            .group_by(RevisionAttempt.question_id)
+            .subquery()
+        )
+
+        # Exclude questions whose latest attempt has full marks
+        full_marks_qids = (
+            select(RevisionAttempt.question_id)
+            .join(latest_attempt, RevisionAttempt.id == latest_attempt.c.max_id)
+            .where(RevisionAttempt.marks_achieved >= RevisionAttempt.marks_available)
+            .subquery()
+        )
+
+        pool_query = base.where(DBQuestion.id.notin_(select(full_marks_qids.c.question_id)))
+
+        # Get all distinct spec_codes across the full pool (before filtering)
+        all_spec_codes = db.exec(
+            select(DBSess.subject)
+            .distinct()
+            .join(DBQuestion, DBQuestion.session_id == DBSess.session_id)
+            .join(QuestionMark, QuestionMark.question_id == DBQuestion.id)
+            .where(DBSess.user_id == uid)
+            .where(DBSess.is_guest == is_guest)
+            .where(QuestionMark.marks_available.isnot(None))
+            .where(QuestionMark.marks_achieved.isnot(None))
+            .where(QuestionMark.marks_achieved < QuestionMark.marks_available)
+            .where(DBQuestion.id.notin_(select(full_marks_qids.c.question_id)))
+        ).all()
+
+        # Apply spec_code filter if provided
+        if spec_code:
+            pool_query = pool_query.where(DBSess.subject == spec_code)
+
+        # Get total count (with filter applied)
+        count_rows = db.exec(pool_query).all()
+        total_count = len(count_rows)
+
+        # Get random batch
+        rows = db.exec(pool_query.order_by(func.random()).limit(limit)).all()
+
+        # Build response with full context
+        questions = []
+        for row in rows:
+            q_id = row[0]
+
+            # Get PDF location if exists
+            loc = db.exec(
+                select(QuestionLocation).where(QuestionLocation.question_id == q_id)
+            ).first()
+            pdf_location = None
+            if loc:
+                pdf_location = {
+                    "start_page": loc.start_page,
+                    "start_y": loc.start_y,
+                    "end_page": loc.end_page,
+                    "end_y": loc.end_y,
+                }
+
+            # Get predictions
+            preds = db.exec(
+                select(DBPrediction)
+                .where(DBPrediction.question_id == q_id)
+                .order_by(DBPrediction.rank)
+            ).all()
+            predictions = [
+                {
+                    "rank": p.rank,
+                    "strand": p.strand,
+                    "topic": p.topic,
+                    "subtopic": p.subtopic,
+                    "spec_sub_section": p.spec_sub_section,
+                    "similarity_score": p.similarity_score,
+                    "description": p.description,
+                }
+                for p in preds
+            ]
+
+            # Get user corrections
+            corrections = db.exec(
+                select(UserCorrection).where(UserCorrection.question_id == q_id)
+            ).all()
+            user_corrections = [
+                {
+                    "subtopic_id": c.subtopic_id,
+                    "strand": c.strand,
+                    "topic": c.topic,
+                    "subtopic": c.subtopic,
+                    "spec_sub_section": c.spec_sub_section,
+                    "description": c.description,
+                }
+                for c in corrections
+            ]
+
+            questions.append({
+                "question_id": q_id,
+                "question_number": row[1],
+                "question_text": row[2],
+                "marks_available": row[3],
+                "original_marks_achieved": row[4],
+                "session_id": row[5],
+                "spec_code": row[6],
+                "exam_board": row[7],
+                "has_pdf": row[8] is not None,
+                "pdf_location": pdf_location,
+                "predictions": predictions,
+                "user_corrections": user_corrections,
+            })
+
+        return {
+            "total_count": total_count,
+            "spec_codes": all_spec_codes,
+            "questions": questions,
+        }
+
+
+class RevisionAttemptRequest(BaseModel):
+    marks_achieved: int
+
+
+@app.post("/revision/{question_id}/attempt")
+def record_revision_attempt(
+    question_id: int,
+    body: RevisionAttemptRequest,
+    request: Request,
+    user=Depends(get_user),
+):
+    uid = user["user_id"] if user["is_authenticated"] else user["guest_id"]
+    is_guest = not user["is_authenticated"]
+
+    with Session(engine) as db:
+        # Validate question exists and belongs to user
+        row = db.exec(
+            select(DBQuestion, QuestionMark)
+            .join(DBSess, DBQuestion.session_id == DBSess.session_id)
+            .join(QuestionMark, QuestionMark.question_id == DBQuestion.id)
+            .where(DBQuestion.id == question_id)
+            .where(DBSess.user_id == uid)
+            .where(DBSess.is_guest == is_guest)
+        ).first()
+
+        if not row:
+            raise HTTPException(status_code=404, detail="Question not found")
+
+        question, mark = row
+        marks_available = mark.marks_available or 0
+
+        if body.marks_achieved < 0 or body.marks_achieved > marks_available:
+            raise HTTPException(
+                status_code=400,
+                detail=f"marks_achieved must be between 0 and {marks_available}",
+            )
+
+        attempt = RevisionAttempt(
+            question_id=question_id,
+            user_id=uid,
+            is_guest=is_guest,
+            marks_achieved=body.marks_achieved,
+            marks_available=marks_available,
+        )
+        db.add(attempt)
+        db.commit()
+
+        return {
+            "success": True,
+            "is_full_marks": body.marks_achieved >= marks_available,
+        }
