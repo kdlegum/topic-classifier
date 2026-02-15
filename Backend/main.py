@@ -34,6 +34,7 @@ from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questio
 from pdf_interpretation.questionLocator import locate_questions_in_pdf
 from Backend.auth import get_user
 from Backend.database import engine
+from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
 limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
@@ -80,10 +81,10 @@ class classificationRequest(BaseModel):
 def load_specs_from_db():
     """
     Query Specification/Topic/Subtopic tables and build the same
-    allSpecs list and subtopics_index dict that the JSON files provided.
+    allSpecs dict (keyed by spec_code) and subtopics_index dict that the JSON files provided.
     Uses 3 bulk queries instead of per-row queries to avoid N+1 latency.
     """
-    _allSpecs = []
+    _allSpecs = {}
     _subtopics_index = {}
 
     with Session(engine) as db:
@@ -140,7 +141,7 @@ def load_specs_from_db():
                 "Sub_topics": sub_topics_list,
             })
 
-        _allSpecs.append({
+        _allSpecs[spec.spec_code] = {
             "Qualification": spec.qualification,
             "Subject": spec.subject,
             "Exam Board": spec.exam_board,
@@ -153,17 +154,19 @@ def load_specs_from_db():
             "description": spec.description,
             "created_at": spec.created_at.isoformat() if spec.created_at else None,
             "Topics": topics_list,
-        })
+        }
 
     return _allSpecs, _subtopics_index
 
 
 allSpecs, subtopics_index = load_specs_from_db()
+rebuild_embedding_cache(allSpecs, model)
 
 
 def reload_specs():
     global allSpecs, subtopics_index
     allSpecs, subtopics_index = load_specs_from_db()
+    rebuild_embedding_cache(allSpecs, model)
 
 @app.get("/specs")
 def get_specs(request: Request, user=Depends(get_user)):
@@ -184,11 +187,11 @@ def get_specs(request: Request, user=Depends(get_user)):
     selected_codes = {sel.spec_code for sel in selections}
 
     result = []
-    for s in allSpecs:
+    for code, s in allSpecs.items():
         strands = list({t["Strand"] for t in s["Topics"]})
         topic_count = sum(len(t["Sub_topics"]) for t in s["Topics"])
         result.append({
-            "spec_code": s["Specification"],
+            "spec_code": code,
             "subject": s["Subject"],
             "exam_board": s["Exam Board"],
             "qualification": s["Qualification"],
@@ -200,7 +203,7 @@ def get_specs(request: Request, user=Depends(get_user)):
             "description": s.get("description"),
             "created_at": s.get("created_at"),
             "topic_count": topic_count,
-            "is_selected": s["Specification"] in selected_codes,
+            "is_selected": code in selected_codes,
         })
     return result
 
@@ -237,11 +240,7 @@ class SaveModulesRequest(BaseModel):
 def save_user_modules(spec_code: str, req: SaveModulesRequest, request: Request, user=Depends(get_user)):
     """Full-replacement save of user's strand selections for a spec."""
     # Validate spec exists and has optional_modules
-    matching_spec = None
-    for s in allSpecs:
-        if s["Specification"] == spec_code:
-            matching_spec = s
-            break
+    matching_spec = allSpecs.get(spec_code)
     if matching_spec is None:
         raise HTTPException(status_code=404, detail="Specification not found")
 
@@ -316,9 +315,8 @@ def create_spec(req: SpecCreate, request: Request, user=Depends(get_user)):
         is_guest = True
 
     # Validate spec_code uniqueness
-    for s in allSpecs:
-        if s["Specification"] == req.spec_code:
-            raise HTTPException(status_code=409, detail="Specification code already exists")
+    if req.spec_code in allSpecs:
+        raise HTTPException(status_code=409, detail="Specification code already exists")
 
     if len(req.topics) < 1:
         raise HTTPException(status_code=400, detail="At least one topic is required")
@@ -381,11 +379,7 @@ def create_spec(req: SpecCreate, request: Request, user=Depends(get_user)):
 @app.get("/specs/{spec_code}")
 def get_spec(spec_code: str, request: Request, user=Depends(get_user)):
     """Return a single spec's full data in editable format."""
-    matching_spec = None
-    for s in allSpecs:
-        if s["Specification"] == spec_code:
-            matching_spec = s
-            break
+    matching_spec = allSpecs.get(spec_code)
     if matching_spec is None:
         raise HTTPException(status_code=404, detail="Specification not found")
 
@@ -556,7 +550,7 @@ def add_user_spec(spec_code: str, request: Request, user=Depends(get_user)):
         is_guest = True
 
     # Validate spec exists
-    if not any(s["Specification"] == spec_code for s in allSpecs):
+    if spec_code not in allSpecs:
         raise HTTPException(status_code=404, detail="Specification not found")
 
     with Session(engine) as db:
@@ -620,12 +614,13 @@ def get_user_specs(request: Request, user=Depends(get_user)):
     selected_codes = {sel.spec_code for sel in selections}
 
     result = []
-    for s in allSpecs:
-        if s["Specification"] not in selected_codes:
+    for code in selected_codes:
+        s = allSpecs.get(code)
+        if s is None:
             continue
         strands = list({t["Strand"] for t in s["Topics"]})
         result.append({
-            "spec_code": s["Specification"],
+            "spec_code": code,
             "subject": s["Subject"],
             "exam_board": s["Exam Board"],
             "qualification": s["Qualification"],
@@ -673,12 +668,7 @@ def classify_questions_logic(
     is_guest: bool,
 ):
 
-    matching_topic = None
-    for s in allSpecs:
-        if s["Specification"] == req.SpecCode:
-            matching_topic = s
-            break
-
+    matching_topic = allSpecs.get(req.SpecCode)
     if matching_topic is None:
         raise HTTPException(status_code=404, detail="Specification code not found")
 
@@ -698,37 +688,19 @@ def classify_questions_logic(
             if rows:
                 effective_strands = {r.strand for r in rows}
 
-    topicList = matching_topic["Topics"]
-
-    # Filter topics by effective strands if set
-    if effective_strands:
-        topicList = [t for t in topicList if t["Strand"] in effective_strands]
-        if not topicList:
-            raise HTTPException(status_code=400, detail="No topics match the selected strands")
-
-    subTopicClassificationTexts = []
-    subTopicIds = []
-    for t in topicList:
-        topicName = t["Topic_name"]
-        for s in t["Sub_topics"]:
-            subTopicClassificationTexts.append(
-                topicName + ". " + s["description"]
-            )
-            subTopicIds.append(s["subtopic_id"])
-
+    # Use cached embeddings for subtopics
+    sub_topics_embed, subTopicIds = get_embeddings(req.SpecCode, effective_strands)
+    if len(subTopicIds) == 0:
+        raise HTTPException(status_code=400, detail="No topics match the selected strands")
 
     question_text = [q["text"] for q in req.question_object]
     marks = [q["marks"] for q in req.question_object]
     question_ids = [q.get("id", str(i + 1)) for i, q in enumerate(req.question_object)]
 
-    similarities = np.array(
-        compute_similarity(
-            similarityRequest(
-                questions=question_text,
-                SpecDescriptions=subTopicClassificationTexts,
-            )
-        )
-    )
+    t0 = time.time()
+    question_embed = model.encode(question_text)
+    similarities = model.similarity(sub_topics_embed, question_embed).numpy()
+    print(f"Classified {len(question_text)} questions in {time.time() - t0:.2f}s (embeddings cached)")
 
     k = req.num_predictions or 3
 
@@ -742,12 +714,8 @@ def classify_questions_logic(
 
         # Fill ExamBoard if missing
         if req.ExamBoard is None:
-            for spec in allSpecs:
-                if spec["Specification"] == req.SpecCode:
-                    req.ExamBoard = spec["Exam Board"]
-                    break
-            else:
-                req.ExamBoard = "Unknown"
+            spec_data = allSpecs.get(req.SpecCode)
+            req.ExamBoard = spec_data["Exam Board"] if spec_data else "Unknown"
 
         db_session = DBSess(
             session_id=session_id,
@@ -1024,13 +992,9 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
 
         # ---------- Look up spec details ----------
         spec_code = db_session.subject
-        qualification = None
-        subject_name = None
-        for spec in allSpecs:
-            if spec["Specification"] == spec_code:
-                qualification = spec.get("Qualification")
-                subject_name = spec.get("Subject")
-                break
+        spec_data = allSpecs.get(spec_code, {})
+        qualification = spec_data.get("Qualification")
+        subject_name = spec_data.get("Subject")
 
         # ---------- Final response ----------
         return {
@@ -1137,12 +1101,9 @@ def get_user_sessions(request: Request, user=Depends(get_user), page: int = 1, p
         for sid, strand in strand_rows:
             strands_map.setdefault(sid, []).append(strand)
 
-        # Build spec lookup dict
-        spec_lookup = {spec["Specification"]: spec for spec in allSpecs}
-
         result = []
         for s in sessions:
-            spec = spec_lookup.get(s.subject, {})
+            spec = allSpecs.get(s.subject, {})
             result.append({
                 "session_id": s.session_id,
                 "subject": s.subject,
@@ -1284,11 +1245,7 @@ def process_pdf(job_id, SpecCode, user, strands=None):
     pdf_path = f"Backend/uploads/pdfs/{job_id}.pdf"
 
     # Look up whether this spec uses math notation
-    spec_has_math = False
-    for s in allSpecs:
-        if s["Specification"] == SpecCode:
-            spec_has_math = s.get("has_math", False)
-            break
+    spec_has_math = allSpecs.get(SpecCode, {}).get("has_math", False)
 
     questions = None
     olmocr_workspace = None
@@ -1593,12 +1550,7 @@ def submit_marks(session_id: str, req: MarksSubmitRequest, request: Request, use
 
 @app.get("/topics/{spec_code}/hierarchy")
 def get_topic_hierarchy(spec_code: str):
-    matching_spec = None
-    for s in allSpecs:
-        if s["Specification"] == spec_code:
-            matching_spec = s
-            break
-
+    matching_spec = allSpecs.get(spec_code)
     if matching_spec is None:
         raise HTTPException(status_code=404, detail="Specification not found")
 
@@ -1766,8 +1718,7 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
         for c in corrections:
             corrections_by_q.setdefault(c.question_id, []).append(c)
 
-        # Build spec lookup dict
-        spec_lookup = {spec["Specification"]: spec for spec in allSpecs}
+        spec_lookup = allSpecs
 
         # Build sessions_over_time
         sessions_over_time = []
@@ -1944,11 +1895,7 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
 @app.get("/progress/{spec_code}")
 def get_progress(spec_code: str, request: Request, user=Depends(get_user)):
     # Validate spec_code
-    matching_spec = None
-    for s in allSpecs:
-        if s["Specification"] == spec_code:
-            matching_spec = s
-            break
+    matching_spec = allSpecs.get(spec_code)
     if matching_spec is None:
         raise HTTPException(status_code=404, detail="Specification not found")
 
