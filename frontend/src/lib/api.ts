@@ -169,10 +169,10 @@ export async function updateQuestion(
 }
 
 /**
- * Get all sessions for the current user
+ * Get paginated sessions for the current user
  */
-export async function getUserSessions() {
-	const response = await apiFetch('/user/sessions');
+export async function getUserSessions(page: number = 1, pageSize: number = 10) {
+	const response = await apiFetch(`/user/sessions?page=${page}&page_size=${pageSize}`);
 
 	if (!response.ok) {
 		throw new Error(`Failed to fetch sessions: ${response.status}`);

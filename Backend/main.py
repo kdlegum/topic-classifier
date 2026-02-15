@@ -1083,64 +1083,78 @@ def get_session_pdf(session_id: str, request: Request, user=Depends(get_user)):
 
 
 @app.get("/user/sessions")
-def get_user_sessions(request: Request, user=Depends(get_user)):
+def get_user_sessions(request: Request, user=Depends(get_user), page: int = 1, page_size: int = 10):
     """
-    Returns sessions for authenticated users OR guests (via X-Guest-ID header).
+    Returns paginated sessions for authenticated users OR guests (via X-Guest-ID header).
     Includes: session_id, subject, exam_board, created_at, question_count.
     Ordered by most recent first.
     """
     with Session(engine) as db:
         if user["is_authenticated"]:
-            sessions = db.exec(
+            base_query = (
                 select(DBSess)
                 .where(DBSess.user_id == user["user_id"])
                 .where(DBSess.is_guest == False)
-                .order_by(DBSess.created_at.desc())
-            ).all()
+            )
         else:
             guest_id = user["guest_id"]
             if not guest_id:
-                return []
-            sessions = db.exec(
+                return {"sessions": [], "total": 0, "page": page, "page_size": page_size}
+            base_query = (
                 select(DBSess)
                 .where(DBSess.user_id == guest_id)
                 .where(DBSess.is_guest == True)
-                .order_by(DBSess.created_at.desc())
-            ).all()
+            )
+
+        # Get total count
+        total = db.exec(select(func.count()).select_from(base_query.subquery())).one()
+
+        # Fetch paginated sessions
+        offset = (page - 1) * page_size
+        sessions = db.exec(
+            base_query.order_by(DBSess.created_at.desc()).offset(offset).limit(page_size)
+        ).all()
+
+        if not sessions:
+            return {"sessions": [], "total": total, "page": page, "page_size": page_size}
+
+        session_ids = [s.session_id for s in sessions]
+
+        # Bulk fetch question counts
+        count_rows = db.exec(
+            select(DBQuestion.session_id, func.count())
+            .where(DBQuestion.session_id.in_(session_ids))
+            .group_by(DBQuestion.session_id)
+        ).all()
+        question_counts = {row[0]: row[1] for row in count_rows}
+
+        # Bulk fetch strands
+        strand_rows = db.exec(
+            select(SessionStrand.session_id, SessionStrand.strand)
+            .where(SessionStrand.session_id.in_(session_ids))
+        ).all()
+        strands_map: dict[str, list[str]] = {}
+        for sid, strand in strand_rows:
+            strands_map.setdefault(sid, []).append(strand)
+
+        # Build spec lookup dict
+        spec_lookup = {spec["Specification"]: spec for spec in allSpecs}
 
         result = []
         for s in sessions:
-            # Count questions for this session
-            question_count = len(db.exec(
-                select(DBQuestion).where(DBQuestion.session_id == s.session_id)
-            ).all())
-
-            # Look up spec details
-            spec_code = s.subject
-            qualification = None
-            subject_name = None
-            for spec in allSpecs:
-                if spec["Specification"] == spec_code:
-                    qualification = spec.get("Qualification")
-                    subject_name = spec.get("Subject")
-                    break
-
-            strands = [ss.strand for ss in db.exec(
-                select(SessionStrand).where(SessionStrand.session_id == s.session_id)
-            ).all()]
-
+            spec = spec_lookup.get(s.subject, {})
             result.append({
                 "session_id": s.session_id,
                 "subject": s.subject,
-                "qualification": qualification,
-                "subject_name": subject_name,
+                "qualification": spec.get("Qualification"),
+                "subject_name": spec.get("Subject"),
                 "exam_board": s.exam_board,
                 "created_at": s.created_at,
-                "question_count": question_count,
-                "strands": strands,
+                "question_count": question_counts.get(s.session_id, 0),
+                "strands": strands_map.get(s.session_id, []),
             })
 
-        return result
+        return {"sessions": result, "total": total, "page": page, "page_size": page_size}
 
 
 @app.post("/migrate-guest-sessions")

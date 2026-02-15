@@ -1,3 +1,10 @@
+<script module lang="ts">
+	// Shared cache across all TopicSelector instances
+	const hierarchyCache = new Map<string, any>();
+	// Dedup in-flight requests so concurrent mounts share one fetch
+	const inflightRequests = new Map<string, Promise<any>>();
+</script>
+
 <script lang="ts">
 	import { getTopicHierarchy } from '$lib/api';
 
@@ -44,9 +51,6 @@
 		onchange: (corrections: Correction[]) => void;
 	} = $props();
 
-	// Module-level cache for hierarchy data
-	const hierarchyCache = new Map<string, Hierarchy>();
-
 	let hierarchy: Hierarchy | null = $state(null);
 	let loadingHierarchy = $state(false);
 
@@ -64,10 +68,18 @@
 		}
 		loadingHierarchy = true;
 		try {
-			const data = await getTopicHierarchy(specCode);
+			// Reuse in-flight request if another instance is already fetching
+			let promise = inflightRequests.get(specCode);
+			if (!promise) {
+				promise = getTopicHierarchy(specCode);
+				inflightRequests.set(specCode, promise);
+			}
+			const data = await promise;
 			hierarchyCache.set(specCode, data);
+			inflightRequests.delete(specCode);
 			hierarchy = data;
 		} catch (err) {
+			inflightRequests.delete(specCode);
 			console.error('Failed to load topic hierarchy:', err);
 		} finally {
 			loadingHierarchy = false;

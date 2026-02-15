@@ -5,17 +5,30 @@
 	let sessions: any[] | null = $state(null);
 	let loading = $state(true);
 	let error = $state(false);
+	let page = $state(1);
+	let total = $state(0);
+	let pageSize = 10;
 
-	onMount(async () => {
+	$effect(() => {
+		loadPage(page);
+	});
+
+	async function loadPage(p: number) {
+		loading = true;
+		error = false;
 		try {
-			sessions = await getUserSessions();
+			const data = await getUserSessions(p, pageSize);
+			sessions = data.sessions;
+			total = data.total;
 		} catch (err) {
 			console.error('Error loading sessions:', err);
 			error = true;
 		} finally {
 			loading = false;
 		}
-	});
+	}
+
+	let totalPages = $derived(Math.max(1, Math.ceil(total / pageSize)));
 
 	function formatDate(dateStr: string): string {
 		return new Date(dateStr).toLocaleDateString('en-GB', {
@@ -38,7 +51,13 @@
 		if (!confirm('Are you sure you want to delete this session? This cannot be undone.')) return;
 		try {
 			await deleteSession(sessionId);
-			sessions = sessions!.filter((s) => s.session_id !== sessionId);
+			total -= 1;
+			// If we deleted the last item on this page, go back a page
+			if (sessions!.length === 1 && page > 1) {
+				page -= 1;
+			} else {
+				await loadPage(page);
+			}
 		} catch (err) {
 			console.error('Failed to delete session:', err);
 			alert('Failed to delete session. Please try again.');
@@ -61,7 +80,7 @@
 			<div class="error-state">
 				<p>Failed to load sessions. Please try again.</p>
 			</div>
-		{:else if sessions && sessions.length === 0}
+		{:else if sessions && sessions.length === 0 && page === 1}
 			<div class="empty-state">
 				<p>No sessions yet.</p>
 				<p><a href="/classify">Classify some questions</a> to get started!</p>
@@ -89,6 +108,14 @@
 					</div>
 				</a>
 			{/each}
+
+			{#if totalPages > 1}
+				<div class="pagination">
+					<button class="page-arrow" disabled={page <= 1} onclick={() => page -= 1}>&lsaquo;</button>
+					<span class="page-info">Page {page} of {totalPages}</span>
+					<button class="page-arrow" disabled={page >= totalPages} onclick={() => page += 1}>&rsaquo;</button>
+				</div>
+			{/if}
 		{/if}
 	</div>
 </main>
@@ -120,5 +147,43 @@
 
 	.session-questions {
 		white-space: nowrap;
+	}
+
+	.pagination {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		margin-top: 1.5rem;
+		padding: 0.75rem 0;
+	}
+
+	.page-arrow {
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-size: 1.4rem;
+		line-height: 1;
+		padding: 0.2rem 0.4rem;
+		color: #555;
+		border-radius: 4px;
+		transition: color 0.15s, background 0.15s;
+	}
+
+	.page-arrow:hover:not(:disabled) {
+		color: #0077cc;
+		background: #f0f6ff;
+	}
+
+	.page-arrow:disabled {
+		opacity: 0.3;
+		cursor: not-allowed;
+	}
+
+	.page-info {
+		font-size: 0.85rem;
+		color: #666;
+		white-space: nowrap;
+		min-width: max-content;
 	}
 </style>
