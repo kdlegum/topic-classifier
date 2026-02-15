@@ -11,7 +11,7 @@ body {
 /* Page content */
 .page-content {
 	max-width: 800px;
-	margin: 40px auto;
+	margin: 16px auto 40px;
 	padding: 0 20px;
 }
 

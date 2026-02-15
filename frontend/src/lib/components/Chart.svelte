@@ -15,8 +15,9 @@
 
 	let canvas: HTMLCanvasElement;
 	let chart: Chart | null = null;
+	let mounted = false;
 
-	onMount(() => {
+	function buildConfig(): ChartConfiguration {
 		const opts = { ...config };
 		if (onclick) {
 			opts.options = {
@@ -26,26 +27,25 @@
 				}
 			};
 		}
-		chart = new ChartJS(canvas, opts);
+		return opts;
+	}
 
+	onMount(() => {
+		mounted = true;
+		chart = new ChartJS(canvas, buildConfig());
 		return () => {
 			chart?.destroy();
 			chart = null;
+			mounted = false;
 		};
 	});
 
 	$effect(() => {
-		if (chart && config) {
-			chart.data = config.data;
-			const opts = config.options ?? {};
-			if (onclick) {
-				opts.onClick = (event: ChartEvent, elements: ActiveElement[]) => {
-					onclick!(elements, event);
-				};
-			}
-			chart.options = opts;
-			chart.update();
-		}
+		// Re-read config to track it as a dependency
+		const _ = config;
+		if (!mounted || !chart) return;
+		chart.destroy();
+		chart = new ChartJS(canvas, buildConfig());
 	});
 </script>
 

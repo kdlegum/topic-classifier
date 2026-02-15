@@ -125,6 +125,7 @@
 			options: {
 				responsive: true,
 				maintainAspectRatio: false,
+				interaction: { mode: 'nearest' as const, intersect: true },
 				scales: {
 					r: { beginAtZero: true, max: 100, ticks: { stepSize: 20 } }
 				},
@@ -218,6 +219,7 @@
 			options: {
 				responsive: true,
 				maintainAspectRatio: false,
+				interaction: { mode: 'nearest' as const, intersect: true },
 				scales: {
 					r: { beginAtZero: true, max: 100, ticks: { stepSize: 20 } }
 				},

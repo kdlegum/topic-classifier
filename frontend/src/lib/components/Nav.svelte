@@ -99,10 +99,17 @@
 		padding: 6px 12px;
 		border: 1px solid #666;
 		border-radius: 4px;
+		white-space: nowrap;
 	}
 
 	.nav-btn:hover {
 		background: #444;
+	}
+
+	@media (max-width: 1100px) {
+		.user-display {
+			display: none;
+		}
 	}
 
 	@media (max-width: 700px) {
@@ -123,8 +130,9 @@
 			order: 3;
 			width: 100%;
 			justify-content: center;
-			gap: 16px;
+			gap: 12px;
 			padding-top: 8px;
+			font-size: 0.9rem;
 		}
 
 		.user-display {

@@ -1781,8 +1781,8 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
 
             for q in s_questions:
                 m = marks_by_q.get(q.id)
-                if m:
-                    total_available += m.marks_available or 0
+                if m and m.marks_available:
+                    total_available += m.marks_available
                     if m.marks_achieved is not None:
                         total_achieved += m.marks_achieved
                         has_any_marks = True
@@ -1817,7 +1817,7 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
 
         for q in questions:
             m = marks_by_q.get(q.id)
-            if not m or m.marks_achieved is None:
+            if not m or m.marks_achieved is None or not m.marks_available:
                 continue
 
             session_for_q = session_by_id.get(q.session_id)
