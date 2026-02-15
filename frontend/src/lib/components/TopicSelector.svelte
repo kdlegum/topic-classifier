@@ -147,7 +147,7 @@
 </script>
 
 <div class="topic-selector">
-	<p class="topic-selector-label">Your topic selection</p>
+	<p class="topic-selector-label">Custom topic selection</p>
 
 	{#if corrections.length > 0}
 		<div class="topic-chips">

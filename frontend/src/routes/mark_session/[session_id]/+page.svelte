@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections } from '$lib/api';
+	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
@@ -40,6 +40,25 @@
 
 	// Per-question PDF view toggle: set of question_ids currently showing PDF
 	let pdfViewQuestions = $state(new Set<number>());
+	let downloadingPdf = $state(false);
+
+	async function handleDownloadPdf() {
+		if (!session) return;
+		downloadingPdf = true;
+		try {
+			const blob = await downloadSessionPdf(session.session_id);
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = `${getTitle(session).replace(/[^a-zA-Z0-9 ]/g, '')}.pdf`;
+			a.click();
+			URL.revokeObjectURL(url);
+		} catch (err) {
+			console.error('Failed to download PDF:', err);
+		} finally {
+			downloadingPdf = false;
+		}
+	}
 
 	function toggleQuestionView(questionId: number) {
 		const next = new Set(pdfViewQuestions);
@@ -339,6 +358,11 @@
 					{/each}
 				</div>
 			{/if}
+			{#if session.has_pdf}
+				<button class="btn-download-pdf" onclick={handleDownloadPdf} disabled={downloadingPdf}>
+					{downloadingPdf ? 'Downloading...' : 'Download the question paper PDF'}
+				</button>
+			{/if}
 		</div>
 
 		{#each session.questions as question}
@@ -348,6 +372,7 @@
 					{#if question.pdf_location}
 						<button
 							class="toggle-btn {pdfViewQuestions.has(question.question_id) ? 'active' : ''}"
+							tabindex="-1"
 							onclick={() => toggleQuestionView(question.question_id)}
 						>
 							{pdfViewQuestions.has(question.question_id) ? 'View Text' : 'View PDF'}
@@ -490,5 +515,25 @@
 		background: #0077cc;
 		color: #fff;
 		border-color: #0077cc;
+	}
+
+	.btn-download-pdf {
+		margin-top: 10px;
+		padding: 8px 16px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		background: #f5f5f5;
+		color: #333;
+		font-size: 0.9rem;
+		cursor: pointer;
+	}
+
+	.btn-download-pdf:hover:not(:disabled) {
+		background: #eee;
+	}
+
+	.btn-download-pdf:disabled {
+		opacity: 0.6;
+		cursor: not-allowed;
 	}
 </style>
