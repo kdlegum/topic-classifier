@@ -19,6 +19,7 @@
 	let fetching: boolean = $state(false);
 	let downloading: boolean = $state(false);
 	let submitting: boolean = $state(false);
+	let deleting: boolean = $state(false);
 
 	function specDisplayName(code: string): string {
 		const spec = specs.find((s) => s.spec_code === code);
@@ -119,6 +120,20 @@
 		}
 	}
 
+	async function handleDeleteFromPool() {
+		if (!currentQuestion || deleting) return;
+		deleting = true;
+		try {
+			await recordRevisionAttempt(currentQuestion.question_id, currentQuestion.marks_available);
+			totalCount = Math.max(0, totalCount - 1);
+			pickNext();
+		} catch (e) {
+			console.error('Failed to remove from pool:', e);
+		} finally {
+			deleting = false;
+		}
+	}
+
 	function handleFilterChange(e: Event) {
 		const value = (e.target as HTMLSelectElement).value;
 		specFilter = value;
@@ -146,39 +161,38 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" />
 
 <div class="revision-page">
-	<div class="revision-header">
-		<h1>Revision</h1>
-		<div class="controls">
-			<select class="spec-filter" value={specFilter} onchange={handleFilterChange}>
-				<option value="">All specifications</option>
-				{#each specCodes as code}
-					<option value={code}>{specDisplayName(code)}</option>
-				{/each}
-			</select>
-			<span class="pool-badge">{totalCount} question{totalCount !== 1 ? 's' : ''} in pool</span>
-		</div>
-	</div>
-
 	{#if loading}
-		<div class="state-card">
+		<div class="centered">
 			<div class="spinner"></div>
-			<p>Loading revision pool...</p>
+			<p class="muted">Loading revision pool...</p>
 		</div>
 	{:else if !currentQuestion}
-		<div class="state-card empty">
+		<div class="centered">
 			<div class="empty-icon">&#10003;</div>
-			<h2>No questions available for revision</h2>
-			<p>Questions appear here when you've marked a session and scored below full marks. Complete and mark some exam sessions to build your revision pool.</p>
+			<h2 class="empty-title">No questions available</h2>
+			<p class="muted">Questions appear here when you've scored below full marks on a session. Mark some exam sessions to build your revision pool.</p>
 		</div>
 	{:else}
-		<div class="question-card">
-			<div class="card-header">
-				<span class="question-number">Q{currentQuestion.question_number}</span>
-				<span class="spec-badge">{specDisplayName(currentQuestion.spec_code)}</span>
-				<span class="marks-label">{currentQuestion.marks_available} mark{currentQuestion.marks_available !== 1 ? 's' : ''}</span>
+		<div class="revision-content">
+			<div class="top-bar">
+				<div class="top-bar-left">
+					<span class="spec-badge">{specDisplayName(currentQuestion.spec_code)}</span>
+					<span class="meta">Q{currentQuestion.question_number}</span>
+					<span class="meta-dot">·</span>
+					<span class="meta">{currentQuestion.marks_available} mark{currentQuestion.marks_available !== 1 ? 's' : ''}</span>
+				</div>
+				<div class="top-bar-right">
+					<select class="spec-filter" value={specFilter} onchange={handleFilterChange}>
+						<option value="">All specs</option>
+						{#each specCodes as code}
+							<option value={code}>{specDisplayName(code)}</option>
+						{/each}
+					</select>
+					<span class="pool-count">{totalCount} left</span>
+				</div>
 			</div>
 
-			<div class="card-body">
+			<div class="question-body">
 				{#if showPdf && currentQuestion.pdf_location}
 					<PdfQuestionView
 						sessionId={currentQuestion.session_id}
@@ -191,22 +205,24 @@
 				{/if}
 			</div>
 
-			<div class="card-actions">
-				{#if currentQuestion.has_pdf && currentQuestion.pdf_location}
-					<button class="btn btn-outline" onclick={() => (showPdf = !showPdf)}>
-						{showPdf ? 'View Text' : 'View PDF'}
+			<div class="bottom-controls">
+				<div class="actions-row">
+					{#if currentQuestion.has_pdf && currentQuestion.pdf_location}
+						<button class="action-btn" onclick={() => (showPdf = !showPdf)}>
+							{showPdf ? 'View text' : 'View full question'}
+						</button>
+					{/if}
+					<button class="action-btn" onclick={handleDownloadPdf} disabled={downloading || !currentQuestion.has_pdf}>
+						{downloading ? 'Downloading...' : 'Download PDF'}
 					</button>
-				{/if}
-				<button class="btn btn-outline" onclick={handleDownloadPdf} disabled={downloading || !currentQuestion.has_pdf}>
-					{downloading ? 'Downloading...' : 'Download PDF'}
-				</button>
-			</div>
+					<button class="action-btn remove" onclick={handleDeleteFromPool} disabled={deleting || submitted}>
+						{deleting ? 'Removing...' : 'Remove from pool'}
+					</button>
+				</div>
 
-			{#if !submitted}
-				<div class="marking-section">
-					<label class="marks-input-label">
-						Marks achieved
-						<div class="marks-input-row">
+				{#if !submitted}
+					<div class="submit-row">
+						<div class="marks-group">
 							<input
 								type="number"
 								class="marks-input"
@@ -214,108 +230,73 @@
 								min="0"
 								max={currentQuestion.marks_available}
 							/>
-							<span class="marks-total">/ {currentQuestion.marks_available}</span>
+							<span class="marks-divider">/ {currentQuestion.marks_available} marks</span>
 						</div>
-					</label>
-					<button class="btn btn-primary" onclick={handleSubmit} disabled={submitting}>
-						{submitting ? 'Submitting...' : 'Submit Mark'}
-					</button>
-				</div>
-			{:else if submitResult}
-				<div class="result-section" class:full-marks={submitResult.is_full_marks} class:partial={!submitResult.is_full_marks}>
-					<div class="result-banner">
-						{#if submitResult.is_full_marks}
-							<span class="result-icon good">&#10003;</span>
-							<span>Full marks — removed from revision pool</span>
-						{:else}
-							<span class="result-icon retry">&#8635;</span>
-							<span>Stays in revision pool for next time</span>
-						{/if}
-					</div>
-
-					<div class="result-details">
-						<div class="result-row">
-							<span class="detail-label">Topic</span>
-							<span class="detail-value">{topicDisplay(currentQuestion)}</span>
-						</div>
-						<div class="result-row">
-							<span class="detail-label">Original score</span>
-							<span class="detail-value">{currentQuestion.original_marks_achieved} / {currentQuestion.marks_available}</span>
-						</div>
-						<div class="result-row">
-							<span class="detail-label">This attempt</span>
-							<span class="detail-value">{marksInput} / {currentQuestion.marks_available}</span>
+						<div class="submit-actions">
+							<button class="action-btn" onclick={pickNext}>Skip</button>
+							<button class="primary-btn" onclick={handleSubmit} disabled={submitting}>
+								{submitting ? 'Submitting...' : 'Submit'}
+							</button>
 						</div>
 					</div>
+				{:else if submitResult}
+					<div class="result-section" class:full-marks={submitResult.is_full_marks} class:partial={!submitResult.is_full_marks}>
+						<div class="result-banner">
+							{#if submitResult.is_full_marks}
+								<span class="result-icon">&#10003;</span>
+								<span>Full marks — removed from pool</span>
+							{:else}
+								<span class="result-icon">&#8635;</span>
+								<span>Stays in pool for next time</span>
+							{/if}
+						</div>
 
-					<button class="btn btn-primary" onclick={pickNext}>Next Question</button>
-				</div>
-			{/if}
+						<div class="result-details">
+							<div class="result-row">
+								<span class="detail-label">Topic</span>
+								<span class="detail-value">{topicDisplay(currentQuestion)}</span>
+							</div>
+							<div class="result-row">
+								<span class="detail-label">Original</span>
+								<span class="detail-value">{currentQuestion.original_marks_achieved}/{currentQuestion.marks_available}</span>
+							</div>
+							<div class="result-row">
+								<span class="detail-label">This attempt</span>
+								<span class="detail-value">{marksInput}/{currentQuestion.marks_available}</span>
+							</div>
+						</div>
+
+						<button class="primary-btn next-btn" onclick={pickNext}>Next Question</button>
+					</div>
+				{/if}
+			</div>
 		</div>
 	{/if}
 </div>
 
 <style>
 	.revision-page {
-		max-width: 760px;
+		max-width: 720px;
 		margin: 0 auto;
-		padding: 32px 20px;
-	}
-
-	.revision-header {
+		padding: 24px 20px;
+		min-height: calc(100vh - 80px);
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin-bottom: 24px;
-		flex-wrap: wrap;
-		gap: 12px;
+		flex-direction: column;
+		justify-content: center;
 	}
 
-	.revision-header h1 {
-		margin: 0;
-		font-size: 1.5rem;
-		font-weight: 600;
-		color: #1a1a1a;
-	}
-
-	.controls {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-	}
-
-	.spec-filter {
-		padding: 6px 10px;
-		border: 1px solid #d0d0d0;
-		border-radius: 6px;
-		font-size: 0.9rem;
-		background: #fff;
-		color: #333;
-	}
-
-	.pool-badge {
-		font-size: 0.85rem;
-		color: #555;
-		background: #f0f0f0;
-		padding: 4px 10px;
-		border-radius: 12px;
-		white-space: nowrap;
-	}
-
-	/* State cards */
-	.state-card {
+	/* Centered states */
+	.centered {
 		text-align: center;
-		padding: 60px 24px;
-		color: #666;
+		padding: 40px 24px;
 	}
 
-	.state-card p {
-		margin: 8px 0 0;
-		font-size: 0.95rem;
-		max-width: 420px;
-		margin-left: auto;
-		margin-right: auto;
+	.centered .muted {
+		margin: 8px auto 0;
+		font-size: 0.92rem;
+		max-width: 400px;
 		line-height: 1.5;
+		color: #888;
 	}
 
 	.spinner {
@@ -345,154 +326,219 @@
 		margin: 0 auto 16px;
 	}
 
-	.empty h2 {
-		font-size: 1.15rem;
+	.empty-title {
+		font-size: 1.1rem;
 		font-weight: 600;
 		color: #333;
 		margin: 0 0 6px;
 	}
 
-	/* Question card */
-	.question-card {
-		border: 1px solid #e0e0e0;
-		border-radius: 10px;
-		background: #fff;
-		overflow: hidden;
+	/* Main content wrapper */
+	.revision-content {
+		display: flex;
+		flex-direction: column;
+		background: #f8f8fa;
+		border-radius: 14px;
+		padding: 24px 28px;
 	}
 
-	.card-header {
+	/* Top bar */
+	.top-bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 16px;
+		border-bottom: 1px solid #eee;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.top-bar-left {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.top-bar-right {
 		display: flex;
 		align-items: center;
 		gap: 10px;
-		padding: 14px 20px;
-		border-bottom: 1px solid #f0f0f0;
-		background: #fafafa;
-	}
-
-	.question-number {
-		font-weight: 700;
-		font-size: 1rem;
-		color: #1a1a1a;
 	}
 
 	.spec-badge {
-		font-size: 0.8rem;
+		font-size: 0.78rem;
 		background: #e8f0fe;
 		color: #1a56db;
 		padding: 2px 8px;
-		border-radius: 4px;
+		border-radius: 3px;
 		font-weight: 500;
 	}
 
-	.marks-label {
-		margin-left: auto;
+	.meta {
 		font-size: 0.85rem;
 		color: #777;
 	}
 
-	.card-body {
-		padding: 20px;
-		min-height: 80px;
+	.meta-dot {
+		color: #ccc;
+		font-size: 0.85rem;
+	}
+
+	.spec-filter {
+		padding: 4px 8px;
+		border: 1px solid #d5d5d5;
+		border-radius: 5px;
+		font-size: 0.82rem;
+		background: #fff;
+		color: #444;
+	}
+
+	.pool-count {
+		font-size: 0.8rem;
+		color: #999;
+		white-space: nowrap;
+	}
+
+	/* Question body */
+	.question-body {
+		padding: 32px 4px;
+		min-height: 120px;
 	}
 
 	.question-text {
-		line-height: 1.6;
+		line-height: 1.7;
 		color: #222;
+		font-size: 1rem;
 	}
 
-	.card-actions {
+	/* Bottom controls */
+	.bottom-controls {
+		border-top: 1px solid #eee;
+	}
+
+	.actions-row {
 		display: flex;
+		align-items: center;
 		gap: 8px;
-		padding: 0 20px 16px;
+		padding: 12px 0;
+		flex-wrap: wrap;
 	}
 
-	/* Buttons */
-	.btn {
-		padding: 8px 16px;
-		border-radius: 6px;
-		font-size: 0.9rem;
+	.action-btn {
+		padding: 6px 12px;
+		border-radius: 5px;
+		font-size: 0.82rem;
 		font-weight: 500;
 		cursor: pointer;
-		border: none;
-		transition: background 0.15s, opacity 0.15s;
+		border: 1px solid #d8d8d8;
+		background: #fff;
+		color: #555;
+		transition: background 0.12s, color 0.12s;
+		white-space: nowrap;
 	}
 
-	.btn:disabled {
+	.action-btn:hover:not(:disabled) {
+		background: #f0f0f0;
+	}
+
+	.action-btn:disabled {
+		opacity: 0.4;
+		cursor: not-allowed;
+	}
+
+	.action-btn.remove {
+		border-color: transparent;
+		background: transparent;
+		color: #bbb;
+		margin-left: auto;
+	}
+
+	.action-btn.remove:hover:not(:disabled) {
+		color: #d32f2f;
+		background: #fef2f2;
+	}
+
+	/* Submit row */
+	.submit-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 12px 0;
+		border-top: 1px solid #eee;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.marks-group {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.marks-input {
+		width: 56px;
+		padding: 10px 8px;
+		border: 1px solid #d0d0d0;
+		border-radius: 7px;
+		font-size: 1.1rem;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.marks-divider {
+		font-size: 0.95rem;
+		color: #888;
+	}
+
+	.submit-actions {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.submit-actions .action-btn {
+		padding: 10px 16px;
+		font-size: 0.9rem;
+		border-radius: 7px;
+	}
+
+	.primary-btn {
+		padding: 10px 24px;
+		border-radius: 7px;
+		font-size: 0.92rem;
+		font-weight: 600;
+		cursor: pointer;
+		border: none;
+		background: #0077cc;
+		color: #fff;
+		transition: background 0.12s;
+		white-space: nowrap;
+	}
+
+	.primary-btn:hover:not(:disabled) {
+		background: #005fa3;
+	}
+
+	.primary-btn:disabled {
 		opacity: 0.5;
 		cursor: not-allowed;
 	}
 
-	.btn-primary {
-		background: #0077cc;
-		color: #fff;
-	}
-
-	.btn-primary:hover:not(:disabled) {
-		background: #005fa3;
-	}
-
-	.btn-outline {
-		background: #fff;
-		color: #555;
-		border: 1px solid #d0d0d0;
-	}
-
-	.btn-outline:hover:not(:disabled) {
-		background: #f5f5f5;
-	}
-
-	/* Marking */
-	.marking-section {
-		display: flex;
-		align-items: flex-end;
-		gap: 12px;
-		padding: 16px 20px;
-		border-top: 1px solid #f0f0f0;
-		background: #fafafa;
-	}
-
-	.marks-input-label {
-		font-size: 0.85rem;
-		font-weight: 500;
-		color: #555;
-	}
-
-	.marks-input-row {
-		display: flex;
-		align-items: center;
-		gap: 6px;
-		margin-top: 4px;
-	}
-
-	.marks-input {
-		width: 60px;
-		padding: 6px 8px;
-		border: 1px solid #d0d0d0;
-		border-radius: 6px;
-		font-size: 1rem;
-		text-align: center;
-	}
-
-	.marks-total {
-		font-size: 0.95rem;
-		color: #777;
-	}
-
 	/* Result */
 	.result-section {
-		padding: 16px 20px 20px;
-		border-top: 1px solid #f0f0f0;
+		padding: 12px 0 4px;
+		border-top: 1px solid #eee;
 	}
 
 	.result-banner {
 		display: flex;
 		align-items: center;
 		gap: 8px;
-		padding: 10px 14px;
+		padding: 8px 12px;
 		border-radius: 6px;
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 		font-weight: 500;
-		margin-bottom: 16px;
+		margin-bottom: 12px;
 	}
 
 	.full-marks .result-banner {
@@ -506,24 +552,24 @@
 	}
 
 	.result-icon {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	.result-details {
 		display: flex;
 		flex-direction: column;
-		gap: 8px;
-		margin-bottom: 16px;
+		gap: 6px;
+		margin-bottom: 14px;
 	}
 
 	.result-row {
 		display: flex;
 		justify-content: space-between;
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 	}
 
 	.detail-label {
-		color: #777;
+		color: #888;
 	}
 
 	.detail-value {
@@ -531,5 +577,52 @@
 		font-weight: 500;
 		text-align: right;
 		max-width: 60%;
+	}
+
+	.next-btn {
+		width: 100%;
+		padding: 10px;
+	}
+
+	/* Mobile */
+	@media (max-width: 500px) {
+		.revision-page {
+			padding: 12px 10px;
+		}
+
+		.revision-content {
+			padding: 16px 16px;
+		}
+
+		.question-body {
+			padding: 24px 2px;
+		}
+
+		.actions-row {
+			gap: 6px;
+		}
+
+		.action-btn.remove {
+			margin-left: 0;
+		}
+
+		.submit-row {
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+		.marks-group {
+			justify-content: center;
+		}
+
+		.submit-actions {
+			display: flex;
+		}
+
+		.submit-actions .action-btn,
+		.submit-actions .primary-btn {
+			flex: 1;
+			text-align: center;
+		}
 	}
 </style>
