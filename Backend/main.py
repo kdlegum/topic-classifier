@@ -1766,6 +1766,9 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
         for c in corrections:
             corrections_by_q.setdefault(c.question_id, []).append(c)
 
+        # Build spec lookup dict
+        spec_lookup = {spec["Specification"]: spec for spec in allSpecs}
+
         # Build sessions_over_time
         sessions_over_time = []
         for s in sessions:
@@ -1785,11 +1788,8 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
                         has_any_marks = True
 
             # Look up spec details
-            subject_name = None
-            for spec in allSpecs:
-                if spec["Specification"] == s.subject:
-                    subject_name = spec.get("Subject")
-                    break
+            spec_info = spec_lookup.get(s.subject, {})
+            subject_name = spec_info.get("Subject")
 
             percentage = None
             if has_any_marks and total_available > 0:
@@ -1897,20 +1897,17 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
                 "question_count": v["question_count"],
             })
 
-        # Count distinct strands per spec from the specification data. A bit scuffed to be honest - but this is for distinguishing for the topic performance widget.
+        # Count distinct strands per spec in a single query
         spec_codes = list({s.subject for s in sessions})
         strands_per_spec: dict[str, int] = {}
-        for sc in spec_codes:
-            spec_row = db.exec(
-                select(Specification).where(Specification.spec_code == sc)
-            ).first()
-            if spec_row:
-                count = len(set(
-                    t.strand for t in db.exec(
-                        select(Topic).where(Topic.specification_id == spec_row.id)
-                    ).all()
-                ))
-                strands_per_spec[sc] = count
+        if spec_codes:
+            strand_count_rows = db.exec(
+                select(Specification.spec_code, func.count(Topic.strand.distinct()))
+                .join(Topic, Topic.specification_id == Specification.id)
+                .where(Specification.spec_code.in_(spec_codes))
+                .group_by(Specification.spec_code)
+            ).all()
+            strands_per_spec = {row[0]: row[1] for row in strand_count_rows}
 
         # Build user_module_selections for optional_modules specs
         user_module_selections: dict[str, list[str]] = {}
@@ -1921,17 +1918,19 @@ def get_analytics_summary(request: Request, user=Depends(get_user)):
             uid = user["guest_id"]
             is_g = True
 
-        for sc in spec_codes:
-            spec_info = next((s for s in allSpecs if s["Specification"] == sc), None)
-            if spec_info and spec_info.get("optional_modules", False):
-                mod_rows = db.exec(
-                    select(UserModuleSelection)
-                    .where(UserModuleSelection.user_id == uid)
-                    .where(UserModuleSelection.is_guest == is_g)
-                    .where(UserModuleSelection.spec_code == sc)
-                ).all()
-                if mod_rows:
-                    user_module_selections[sc] = [r.strand for r in mod_rows]
+        optional_spec_codes = [
+            sc for sc in spec_codes
+            if spec_lookup.get(sc, {}).get("optional_modules", False)
+        ]
+        if optional_spec_codes:
+            mod_rows = db.exec(
+                select(UserModuleSelection)
+                .where(UserModuleSelection.user_id == uid)
+                .where(UserModuleSelection.is_guest == is_g)
+                .where(UserModuleSelection.spec_code.in_(optional_spec_codes))
+            ).all()
+            for r in mod_rows:
+                user_module_selections.setdefault(r.spec_code, []).append(r.strand)
 
         return {
             "sessions_over_time": sessions_over_time,
@@ -2225,14 +2224,40 @@ def get_revision_pool(
         rows = db.exec(pool_query.order_by(func.random()).limit(limit)).all()
 
         # Build response with full context
+        q_ids = [row[0] for row in rows]
+
+        # Bulk fetch locations, predictions, corrections
+        if q_ids:
+            all_locs = db.exec(
+                select(QuestionLocation).where(QuestionLocation.question_id.in_(q_ids))
+            ).all()
+            locs_by_q = {loc.question_id: loc for loc in all_locs}
+
+            all_preds = db.exec(
+                select(DBPrediction)
+                .where(DBPrediction.question_id.in_(q_ids))
+                .order_by(DBPrediction.rank)
+            ).all()
+            preds_by_q: dict[int, list] = {}
+            for p in all_preds:
+                preds_by_q.setdefault(p.question_id, []).append(p)
+
+            all_corrections = db.exec(
+                select(UserCorrection).where(UserCorrection.question_id.in_(q_ids))
+            ).all()
+            corrections_by_q: dict[int, list] = {}
+            for c in all_corrections:
+                corrections_by_q.setdefault(c.question_id, []).append(c)
+        else:
+            locs_by_q = {}
+            preds_by_q = {}
+            corrections_by_q = {}
+
         questions = []
         for row in rows:
             q_id = row[0]
 
-            # Get PDF location if exists
-            loc = db.exec(
-                select(QuestionLocation).where(QuestionLocation.question_id == q_id)
-            ).first()
+            loc = locs_by_q.get(q_id)
             pdf_location = None
             if loc:
                 pdf_location = {
@@ -2242,12 +2267,6 @@ def get_revision_pool(
                     "end_y": loc.end_y,
                 }
 
-            # Get predictions
-            preds = db.exec(
-                select(DBPrediction)
-                .where(DBPrediction.question_id == q_id)
-                .order_by(DBPrediction.rank)
-            ).all()
             predictions = [
                 {
                     "rank": p.rank,
@@ -2258,13 +2277,9 @@ def get_revision_pool(
                     "similarity_score": p.similarity_score,
                     "description": p.description,
                 }
-                for p in preds
+                for p in preds_by_q.get(q_id, [])
             ]
 
-            # Get user corrections
-            corrections = db.exec(
-                select(UserCorrection).where(UserCorrection.question_id == q_id)
-            ).all()
             user_corrections = [
                 {
                     "subtopic_id": c.subtopic_id,
@@ -2274,7 +2289,7 @@ def get_revision_pool(
                     "spec_sub_section": c.spec_sub_section,
                     "description": c.description,
                 }
-                for c in corrections
+                for c in corrections_by_q.get(q_id, [])
             ]
 
             questions.append({
