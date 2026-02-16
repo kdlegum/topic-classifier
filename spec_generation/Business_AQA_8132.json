@@ -1,0 +1,331 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Business",
+  "Exam Board": "AQA",
+  "Specification": "8132",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "3.1",
+      "Strand": "GCSE Business",
+      "Topic_name": "Business in the real world",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Purpose and nature of businesses",
+          "description": "Understand what a business is and reasons for starting a business, including producing goods, supplying services, distributing products, fulfilling a business opportunity and providing a good or service to benefit others. Understand the difference between goods and services, and needs and wants. Understand factors of production (land, labour, capital, enterprise). Define opportunity cost. Define and apply the three sectors of the economy (primary, secondary, tertiary) and give examples of businesses operating in each. Understand the term enterprise and what is meant by an entrepreneur; outline entrepreneur characteristics (eg hard working, innovative, organised, willing to take risk) and objectives (eg to be their own boss, flexible working hours, pursue an interest, earn more money, identify a gap in the market, dissatisfaction with current job). Understand the dynamic nature of business: businesses face a constantly changing business environment due to changes in technology, the economic situation, legislation and environmental expectations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Business ownership and legal structures",
+          "description": "Understand different legal structures businesses adopt: sole traders, partnerships, private limited companies (ltd), public limited companies (plc), and not-for-profit organisations. Analyse benefits and drawbacks of each structure, including management and control, sources of finance available, liability, and distribution of profits. Understand the concept of limited liability and which legal structures benefit from it. Evaluate which legal structure is most appropriate for different business contexts, including new start-ups and large established businesses. Note: students are not expected to understand the legal process of incorporation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Business aims and objectives",
+          "description": "Understand what business aims and objectives are and why objectives are set; understand the role of objectives in running a business. Know main aims/objectives: survival, profit maximisation, growth (domestic and international), market share, customer satisfaction, social and ethical objectives, shareholder value. Understand how and why objectives differ between businesses (eg size, level of competition, type such as not-for-profit). Understand how and why objectives change as businesses evolve, including how larger established businesses may prioritise becoming dominant, international expansion, increasing shareholder value, and ethical/environmental considerations. Understand that success can be measured in ways other than profit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "3.1.4",
+          "Sub_topic_name": "Stakeholders and stakeholder objectives",
+          "description": "Understand what a stakeholder is and identify main stakeholders: owners, employees, customers, local community, suppliers. Understand stakeholders’ objectives (eg maximising pay for workers, minimising environmental impact for local community, high dividend payments for owners). Understand the impact of business activity on stakeholders and the impact/influence stakeholders have on businesses and their objectives, including conflicts between different stakeholder groups.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "3.1.5",
+          "Sub_topic_name": "Business location",
+          "description": "Understand factors influencing business location decisions, including proximity to the market, availability of raw materials, labour, competition and costs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "3.1.6",
+          "Sub_topic_name": "Business planning and basic financial terms",
+          "description": "Understand why businesses create plans: importance when setting up a new business, raising finance, setting objectives, and detailing how business functions will be organised. Understand main sections within a business plan and analyse benefits and drawbacks of business planning. Understand basic financial terms: variable costs, fixed costs, total costs; revenue; costs; profit and loss. Note: students will not be expected to write a business plan.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "3.1.7",
+          "Sub_topic_name": "Expanding a business (growth, economies of scale)",
+          "description": "Discuss advantages and disadvantages of growth methods. Understand methods of expansion: organic growth (franchising, opening new stores, expanding through e-commerce), outsourcing; external growth through mergers and takeovers. Understand benefits of growth via economies of scale leading to lower average/unit costs and drawbacks via diseconomies of scale. Understand purchasing economies of scale and technical economies of scale. Understand how growth can increase risk of diseconomies of scale (eg poor communication, coordination issues, reduced staff motivation). Calculate and interpret average unit costs.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3.2",
+      "Strand": "GCSE Business",
+      "Topic_name": "Influences on business",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Technology: e-commerce and digital communication",
+          "description": "Understand the impact of changing use of ICT on business activity, including e-commerce as a way to access wider markets. Understand how digital communication changes how businesses communicate with stakeholders; know relevant examples of digital technology/communication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Ethical and environmental considerations; sustainability",
+          "description": "Ethical considerations: identify and analyse trade-offs between ethics and profit; understand that ethical behaviour requires businesses to act in ways stakeholders consider fair and honest; know relevant examples of ethical behaviour and evaluate benefits and drawbacks. Environmental considerations: understand how businesses and consumers accept greater environmental responsibility in decision making and analyse costs/benefits of this; consider impacts including traffic congestion, recycling, disposing of waste, noise and air pollution. Sustainability: analyse trade-offs between sustainability and profit, including issues such as global warming and using scarce resources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Economic climate: interest rates, employment and spending",
+          "description": "Understand how businesses are affected by changes in interest rates, including effects on businesses relying on overdrafts/loans for finance and effects on consumer and business spending. Identify how and why businesses might be affected by changes in levels of employment. Discuss how demand for products/services may change as incomes and consumer spending fluctuate. Note: economic theory about how/why interest rates change is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Globalisation and exchange rates",
+          "description": "Demonstrate knowledge and understanding of globalisation and evaluate benefits and drawbacks for UK businesses competing internationally (eg better designs, higher quality at lower prices). Understand impact of exchange rates on profit and sales of businesses that import and/or export. Note: students will not be asked to calculate exchange rate conversions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "3.2.5",
+          "Sub_topic_name": "Legislation affecting businesses",
+          "description": "Assess impacts of legislation on businesses (eg cost increases, training needs, recruitment implications, and consequences of failing to follow legislation). Understand benefits of providing a safe working environment. Required brief knowledge: employment law including national minimum wage/living wage and the Equality Act (2010); health and safety law including the Health and Safety at Work Act (1974); consumer law including trade descriptions. Emphasis is on effects of legislation on businesses rather than detailed legal knowledge.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "3.2.6",
+          "Sub_topic_name": "Competitive environment, uncertainty and risk",
+          "description": "Understand meaning of a market and competition; analyse impacts of competition on businesses and identify situations where businesses face minimal or no competition. Understand uncertainty and risks all businesses face and why. Understand why entrepreneurs start/run businesses despite uncertainty and the activities businesses can undertake to minimise risks.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.3",
+      "Strand": "GCSE Business",
+      "Topic_name": "Business operations",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Production processes and efficiency",
+          "description": "Understand methods of production: job production and flow production; know when each method is appropriate. Understand efficiency in production and how it can be improved using lean production techniques and just in time (JIT).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Procurement, stock management and supply chains",
+          "description": "Managing stock: evaluate use of just in time (JIT) versus just in case (JIC). Recognise trade-offs: JIT reduces costs but may increase costs due to more frequent deliveries and may reduce purchasing economies of scale; JIC/buffer stock can satisfy demand but increases storage/holding costs. Note: students will not be asked to draw or interpret stock control charts. Supplier choice: analyse factors affecting supplier selection including price, quality, reliability. Understand procurement and logistics and their effects on a business (including efficiency and lower unit costs) and recognise balance between reduced costs and quality of service. Understand what a supply chain is and the value/benefits of effective supply chain management, including working with suppliers to ensure key processes run efficiently and cost effectively, getting goods/services for best price and value, and cutting waste/unnecessary costs to streamline processes and speed up production times.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Quality management (TQM) and quality issues",
+          "description": "Understand customer expectations of quality for goods and services. Understand how businesses identify and measure quality problems and the consequences of quality issues. Understand methods of maintaining consistent quality, including total quality management (TQM), and identify advantages of using TQM. Analyse costs and benefits of maintaining quality: potential benefits (additional sales, improved image/reputation, ability to charge higher price) and costs/issues (inspection costs, staff training, product recalls, and service provision issues). Recognise quality risks as businesses grow, especially when using outsourcing and franchising.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.3.4",
+          "Sub_topic_name": "Customer service and ICT-enabled service",
+          "description": "Understand the sales process and the importance of good customer service. Analyse methods for delivering good service: product knowledge, customer engagement/creating a positive customer experience, and post-sales services (eg user training, help lines, servicing). Understand benefits of good customer service (increased customer satisfaction, customer loyalty, increased spend, profitability) and dangers of poor customer service (dissatisfied customers, poor reputation via word of mouth, reduced revenue). Understand how advances in ICT have developed customer services, including websites, e-commerce and social media.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.4",
+      "Strand": "GCSE Business",
+      "Topic_name": "Human resources",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Organisational structures and management",
+          "description": "Understand internal organisational structures, including span of control, chain of command, delayering and delegation. Understand why businesses use organisational structures, including differing job roles and responsibilities. Understand impact of tall versus flat structures on management and how organisational structure affects communication. Understand centralisation and decentralisation and their appropriateness in different contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Recruitment, selection and employment contracts",
+          "description": "Understand the need for recruitment. Understand internal vs external recruitment and analyse benefits/drawbacks of each. Know stages in recruitment and selection: job analysis, job description, person specification, and selection methods. Analyse benefits of an effective recruitment and selection process (eg high productivity, high quality output or customer service, staff retention). Understand different types of employment contracts: part time vs full time, job share, zero hour contracts; understand benefits of full and part time employment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Motivating employees",
+          "description": "Understand importance/benefits of a motivated workforce (eg staff retention, high productivity). Understand financial motivation methods, including methods of payment: salary, wage, commission, profit sharing. Understand non-financial motivation methods, including management styles, training, greater responsibility, and fringe benefits. Note: specific motivational theories (eg Maslow) are not examined.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Training and workforce development",
+          "description": "Explain benefits of training employees for a business: increased productivity, ability to deal with technological change, increased motivation, staff retention, high quality goods, good customer service. Understand training methods: induction training, on-the-job training, off-the-job training. Explain benefits of induction training. Analyse benefits and drawbacks of on-the-job vs off-the-job training and evaluate which method is most appropriate for different businesses and situations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.5",
+      "Strand": "GCSE Business",
+      "Topic_name": "Marketing",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Customer needs and satisfaction",
+          "description": "Understand importance of identifying and satisfying customer needs to: provide products/services customers will buy, increase sales, choose the correct marketing mix, avoid costly mistakes, and be competitive.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Market segmentation and targeting",
+          "description": "Understand how and why businesses use segmentation to target customers, including segmentation by gender, age, location and income.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "3.5.3",
+          "Sub_topic_name": "Market research (purpose, methods, data use)",
+          "description": "Understand purposes of market research, including collecting information about demand, competition and target market, identifying market opportunities, and gaining insight into customers and competitors. Understand primary vs secondary research methods, including questionnaires, surveys, interviews, focus groups, internet research and printed press (eg newspapers). Understand qualitative vs quantitative market research. Identify benefits and drawbacks of different market research techniques and select the most appropriate method for a given business. Interpret and use qualitative and quantitative findings to make business decisions; manipulate and interpret data from tables and charts. Identify market size and market share.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Marketing mix: pricing methods and pricing factors",
+          "description": "Understand pricing methods: price skimming, price penetration, competitive pricing, loss leader, cost-plus; understand key features and impacts on a business. Evaluate factors influencing pricing decisions, including costs, nature of the market, degree of competition and product life cycle; recognise internal and external influences, particularly as businesses grow and expand. Understand basic relationship between price and demand (as prices rise, demand is likely to fall). Use factors to assess suitability of pricing methods in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Marketing mix: product decisions, differentiation and branding",
+          "description": "Understand benefits and risks of developing new products. Understand importance of product design, image and target market needs when designing products. Understand product differentiation, including unique selling point (USP) and brand image; appreciate significance of a USP in competitive markets and importance of strong brand image.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Product life cycle and extension strategies",
+          "description": "Understand stages of the product life cycle: research and development, introduction, growth, maturity, decline. Demonstrate how demand for a product/service changes over time. Evaluate extension strategies and when they are suitable, including updating packaging, adding more/different features, changing target market, advertising, and price reduction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Product portfolio analysis (Boston Matrix)",
+          "description": "Understand how and why businesses broaden and balance product portfolios using the Boston Matrix (Boston Box). Identify and explain the four categories in the Boston Box (eg stars, cash cows, question marks/problem children, dogs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Promotion and the promotional mix",
+          "description": "Know promotional methods likely to be used by businesses and evaluate their benefits/drawbacks: advertising (newspapers, magazines, television, internet, billboards), public relations (PR), sales promotion (point-of-sale displays, 2 for 1 offers, free gifts, samples, coupons, competitions), sponsorship, and social media. Analyse factors influencing choice of promotional mix: finance available, competitor actions, nature of product/service, nature of market, and target market. Understand reasons for promotion: inform/remind customers, create/increase sales, create/change product image, persuade customers to buy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Place and channels of distribution",
+          "description": "Understand channels of distribution used to reach customers and analyse appropriateness in context: retailers, wholesalers, telesales.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "E-commerce and m-commerce in marketing",
+          "description": "Analyse growing importance of e-commerce and m-commerce and how they extend business reach, including to international markets. Identify benefits and drawbacks of using e-commerce and m-commerce.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Integrated marketing mix and marketing decisions over time",
+          "description": "Understand integrated nature of the marketing mix (4Ps) and how the elements work together. Recommend appropriate marketing activities for given businesses by selecting and justifying an appropriate marketing mix. Recognise how the marketing mix evolves over time and evaluate how businesses may react to changes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.6",
+      "Strand": "GCSE Business",
+      "Topic_name": "Finance",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.6.1",
+          "Sub_topic_name": "Sources of finance (internal and external)",
+          "description": "Understand main internal and external sources of finance available to businesses: family and friends, retained profit, a new share issue, loans or mortgages, selling unwanted assets, overdrafts, trade credit, hire purchase, and government grants. Analyse advantages and disadvantages of each source for given situations. Evaluate suitability/appropriateness of different finance sources for new start-up and established businesses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.6.2",
+          "Sub_topic_name": "Cash flow and cash flow forecasts",
+          "description": "Understand importance of cash for businesses, consequences of cash flow problems, and effects of positive cash flow. Understand how and why cash flow forecasts are constructed. Complete and interpret sections of a cash flow forecast, including cash inflows and outflows, net cash flow, opening balance and closing balance (students are not expected to construct an entire cash flow forecast). Evaluate solutions to cash flow problems: re-scheduling payments, using overdrafts, reducing cash outflow, increasing cash inflow, and finding new sources of finance. Understand difference between cash and profit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Costs, revenue, profit and loss (financial terms)",
+          "description": "Understand financial terms and relationships: variable costs, fixed costs, total costs; revenue; costs; profit; loss. Use these terms in business contexts and calculations where required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Average rate of return (ARR) on investment",
+          "description": "Understand why businesses undertake investment projects (eg new machinery, buildings, vehicles). Calculate average rate of return (ARR) for investment projects and interpret results to support business decisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Break-even analysis using charts",
+          "description": "Understand meaning of break-even output and be able to interpret break-even charts. Identify break-even level of output and margin of safety from a break-even chart. Evaluate value/limitations of break-even analysis for a business. Notes: students will not be expected to draw break-even charts or use the break-even formula.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.6.4",
+          "Sub_topic_name": "Financial statements and business performance",
+          "description": "Understand purpose/importance of financial statements for assessing business performance and informing decisions. Identify main components of the income statement and the statement of financial position. Understand difference between assets and liabilities and that the statement of financial position is a snapshot in time. Make judgements about performance by interpreting income statement information; consider current performance, comparisons with previous years, comparisons with competitors, and perspectives of different stakeholders.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3.6.4",
+          "Sub_topic_name": "Profitability ratios: gross and net profit margin",
+          "description": "Calculate and interpret gross profit margin and net profit margin to assess financial performance. Note: formulae are not provided in the exam, so students should know the required ratio calculations.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

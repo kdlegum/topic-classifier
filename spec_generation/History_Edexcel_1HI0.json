@@ -1,0 +1,1947 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "History",
+  "Exam Board": "Edexcel",
+  "Specification": "1HI0",
+  "has_math": false,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "Paper 1 (1HI0/10)",
+      "Strand": "Paper 1: Thematic study and historic environment",
+      "Topic_name": "Crime and punishment in Britain, c1000–present and Whitechapel, c1870–c1900: crime, policing and the inner city",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "10 The process of change",
+          "Sub_topic_name": "Crime & punishment through time: factors and process of change",
+          "description": "Understand how key features in the development of crime and punishment were linked with key features of society in Britain across the periods studied; understand the nature and process of change (patterns of change, trends, turning points) and the influence of factors inhibiting/encouraging change within periods and across the theme; apply key factors: attitudes in society; individuals and institutions (Church and government); science and technology; understand how factors worked together to bring about developments at particular times; use period case studies to exemplify strands 1–2 and enable detailed comparisons over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "10 c1000–c1500 (Strand 1)",
+          "Sub_topic_name": "Medieval crime: types and definitions",
+          "description": "Crimes against the person, property and authority in medieval England, including poaching as an example of ‘social’ crime; changing definitions of crime as a result of the Norman Conquest, including William I’s Forest Laws.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "10 c1000–c1500 (Strand 2)",
+          "Sub_topic_name": "Medieval law enforcement and punishments",
+          "description": "Role of authorities and local communities in law enforcement in Anglo-Saxon, Norman and later medieval England, including tithings, the hue and cry, and the parish constable; emphasis on deterrence and retribution; use of fines, corporal punishment and capital punishment; use and end of the Saxon wergild.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "10 c1000–c1500 (Strand 3)",
+          "Sub_topic_name": "Church influence (c1200s): Sanctuary, Benefit of Clergy, trial by ordeal",
+          "description": "Influence of the Church on crime and punishment in the early thirteenth century: significance of Sanctuary and Benefit of Clergy; use of trial by ordeal and reasons for its ending.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "10 c1500–c1700 (Strand 1)",
+          "Sub_topic_name": "Early modern crime: continuity and new crimes",
+          "description": "Continuity and change in crimes against the person, property and authority, including heresy and treason; new definitions of crime in the sixteenth century: vagabondage and witchcraft.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "10 c1500–c1700 (Strand 2)",
+          "Sub_topic_name": "Early modern law enforcement and punishments",
+          "description": "Role of authorities and local communities in law enforcement, including town watchmen; continued use of corporal and capital punishment; introduction of transportation; start of the Bloody Code.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "10 c1500–c1700 (Strand 3)",
+          "Sub_topic_name": "Case study: Gunpowder Plot (1605)",
+          "description": "Gunpowder Plotters, 1605: their crimes and punishment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "10 c1500–c1700 (Strand 3)",
+          "Sub_topic_name": "Key individual: Matthew Hopkins and witch-hunts (1645–47)",
+          "description": "Matthew Hopkins and the witch-hunts of 1645–47: reasons for their intensity; punishment of those convicted.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "10 c1700–c1900 (Strand 1)",
+          "Sub_topic_name": "18th–19th century crime: continuity and changing definitions",
+          "description": "Continuity and change in crimes against the person, property and authority, including highway robbery, poaching and smuggling; changing definitions of crime exemplified in the ending of witchcraft prosecutions and treatment of the Tolpuddle Martyrs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "10 c1700–c1900 (Strand 2)",
+          "Sub_topic_name": "18th–19th century law enforcement and punishments",
+          "description": "Role of authorities and local communities in law enforcement, including the work of the Fielding brothers; development of police forces and the beginning of CID; changing views on the purpose of punishment; use and ending of transportation, public execution and the Bloody Code; prison reform including the influence of John Howard and Elizabeth Fry.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "10 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Case study: Pentonville prison and the separate system",
+          "description": "Pentonville prison in the mid nineteenth century: reasons for its construction; strengths and weaknesses of the separate system in operation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "10 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Key individual: Robert Peel (policing and penal reform)",
+          "description": "Robert Peel: contribution to penal reform and to the development of the Metropolitan Police Force.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "10 c1900–present (Strand 1)",
+          "Sub_topic_name": "Modern crime: continuity and changing definitions",
+          "description": "Continuity and change in crimes against the person, property and authority, including new forms of theft and smuggling; changing definitions of crime including driving offences, race crimes and drug crimes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "10 c1900–present (Strand 2)",
+          "Sub_topic_name": "Modern law enforcement and punishments",
+          "description": "Role of authorities and local communities in law enforcement, including the development of Neighbourhood Watch; changes within the police force: increasing specialisation, use of science and technology, and move towards prevention; abolition of the death penalty; changes to prisons including open prisons and specialised treatment of young offenders; development of non-custodial alternatives to prison.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "10 c1900–present (Strand 3)",
+          "Sub_topic_name": "Case study: Conscientious Objectors (WWI and WWII)",
+          "description": "Treatment of Conscientious Objectors in the First and Second World Wars.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "10 c1900–present (Strand 3)",
+          "Sub_topic_name": "Case study: Derek Bentley and abolition of the death penalty",
+          "description": "The Derek Bentley case: its significance for the abolition of the death penalty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "Whitechapel 1",
+          "Sub_topic_name": "Whitechapel context: housing, poverty, and the workhouse",
+          "description": "Local context of Whitechapel c1870–c1900: problems of housing and overcrowding; attempts to improve housing including the Peabody Estate; provision for the poor in Whitechapel workhouses; links between environment and crime; life in Whitechapel as an inner city area of poverty and discontent.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1r",
+          "Specification_section_sub": "Whitechapel 1",
+          "Sub_topic_name": "Whitechapel inhabitants and migration",
+          "description": "Inhabitants of Whitechapel: lack of employment opportunities and level of poverty; prevalence of lodging houses and pubs creating a fluctuating population without community ties; impact of changing patterns of migration including settlement of migrants from Ireland and Eastern Europe; increase in Jewish migration during the 1880s.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1s",
+          "Specification_section_sub": "Whitechapel 1",
+          "Sub_topic_name": "Policing Whitechapel: organisation and challenges",
+          "description": "Organisation of policing in Whitechapel: role of the ‘beat constable’; work of H Division and difficulties of policing slum areas (rookeries, alleys, courts); problems of policing caused by crime and antisocial behaviour: alcohol, prostitution, protection rackets, gangs, violent demonstrations and attacks on Jewish people.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1t",
+          "Specification_section_sub": "Whitechapel 1",
+          "Sub_topic_name": "Investigative policing and Jack the Ripper",
+          "description": "Investigative policing in Whitechapel: developments in detective techniques including use of sketches, photographs and interviews; problems caused by need for cooperation between Metropolitan Police, City of London Police and Scotland Yard; dealing with Jack the Ripper crimes and added problems caused by media reporting of the ‘Ripper’ murders; the Whitechapel Vigilance Committee.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1u",
+          "Specification_section_sub": "Whitechapel 1",
+          "Sub_topic_name": "Wider context: Metropolitan Police, CID, leadership and public attitudes",
+          "description": "National and regional context: working of the Metropolitan Police; quality of police recruits; development of CID; role of the Home Secretary and of Sir Charles Warren; public attitudes towards the police.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1v",
+          "Specification_section_sub": "Whitechapel 2",
+          "Sub_topic_name": "Historic environment enquiry: local sources",
+          "description": "Knowledge of local sources relevant to Whitechapel c1870–c1900 and related enquiries, e.g. housing and employment records, council records and census returns, Charles Booth’s survey, workhouse records, local police records, coroners’ reports, photographs and London newspapers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1w",
+          "Specification_section_sub": "Whitechapel 2",
+          "Sub_topic_name": "Historic environment enquiry: national sources",
+          "description": "Knowledge of national sources relevant to Whitechapel c1870–c1900 and related enquiries, e.g. national newspapers, records of crimes and police investigations, Old Bailey records of trials and Punch cartoons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1x",
+          "Specification_section_sub": "Whitechapel 2",
+          "Sub_topic_name": "Using sources for enquiries (strengths/weaknesses, questions, selection)",
+          "description": "Recognise strengths and weaknesses of different types of source for specific enquiries; frame questions relevant to the pursuit of a specific enquiry; select appropriate sources for specific investigations (Whitechapel historic environment).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "Paper 1 (1HI0/11)",
+      "Strand": "Paper 1: Thematic study and historic environment",
+      "Topic_name": "Medicine in Britain, c1250–present and The British sector of the Western Front, 1914–18: injuries, treatment and the trenches",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "11 The process of change",
+          "Sub_topic_name": "Medicine through time: factors and process of change",
+          "description": "Understand how key features in the development of medicine were linked with key features of society in Britain across the periods studied; understand the nature and process of change (patterns of change, trends, turning points) and factors inhibiting/encouraging change within and across periods; apply key factors: individuals and institutions (Church and government); science and technology; attitudes in society; understand how factors worked together to bring about developments at particular times; use period case studies to exemplify strands 1–2 and enable detailed comparisons over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "11 c1250–c1500 (Strand 1)",
+          "Sub_topic_name": "Medieval ideas about causes of disease",
+          "description": "Supernatural and religious explanations of disease; rational explanations including Theory of the Four Humours and the miasma theory; continuing influence in England of Galen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "11 c1250–c1500 (Strand 2)",
+          "Sub_topic_name": "Medieval prevention, treatment and care",
+          "description": "Approaches to prevention and treatment linked to ideas about disease: religious actions, bloodletting and purging, purifying the air; medical training and traditional approaches to treatment/care: roles of physician, apothecary and barber surgeon; roles of hospitals; care within the community and at home, including herbal remedies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "11 c1250–c1500 (Strand 3)",
+          "Sub_topic_name": "Case study: Black Death (1348–49)",
+          "description": "Dealing with the Black Death, 1348–49: approaches to treatment and attempts to prevent its spread.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "11 c1500–c1700 (Strand 1)",
+          "Sub_topic_name": "Medical Renaissance ideas: continuity and scientific approaches",
+          "description": "Continuity and change in explanations of disease; scientific approach including Thomas Sydenham’s work improving diagnosis; influence of the printing press and the Royal Society on transmission of ideas.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "11 c1500–c1700 (Strand 2)",
+          "Sub_topic_name": "Medical Renaissance prevention, treatment and training",
+          "description": "Continuity and change in prevention, treatment and care in the community and hospitals; improvements in medical training and influence in England of Vesalius’s work.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "11 c1500–c1700 (Strand 3)",
+          "Sub_topic_name": "Key individual: William Harvey and circulation of the blood",
+          "description": "William Harvey and the discovery of the circulation of the blood.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "11 c1500–c1700 (Strand 3)",
+          "Sub_topic_name": "Case study: Great Plague (London 1665)",
+          "description": "Dealing with the Great Plague in London (1665): approaches to treatment and attempts to prevent its spread.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "11 c1700–c1900 (Strand 1)",
+          "Sub_topic_name": "18th–19th century ideas: Germ Theory and microbes",
+          "description": "Continuity and change in explanations of disease; influence in Britain of Pasteur’s Germ Theory and Koch’s work on microbes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "11 c1700–c1900 (Strand 2)",
+          "Sub_topic_name": "18th–19th century treatment, surgery and public health",
+          "description": "Extent of change in care and treatment: improvements in hospital care and influence of Nightingale on nursing and hospitals in Britain; impact of anaesthetics and antiseptics on surgery; new approaches to prevention: development and use of vaccinations and the Public Health Act (1875).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "11 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Key individual: Jenner and vaccination",
+          "description": "Edward Jenner and the development of vaccination.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "11 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Case study: Cholera (London 1854) and John Snow",
+          "description": "Fighting Cholera in London (1854): attempts to prevent its spread; significance of John Snow and the Broad Street pump.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "11 c1900–present (Strand 1)",
+          "Sub_topic_name": "Modern ideas and diagnosis",
+          "description": "Advances in understanding causes of illness and disease including genetic and lifestyle factors; improvements in diagnosis: impact of availability of blood tests, scans and monitors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "11 c1900–present (Strand 2)",
+          "Sub_topic_name": "Modern treatment and prevention: NHS, medicines and campaigns",
+          "description": "Extent of change in care and treatment: impact of the NHS and of science/technology on improved access to care; advances in medicines including magic bullets and antibiotics; high-tech medical and surgical treatment in hospitals; new approaches to prevention including mass vaccinations and government lifestyle campaigns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "11 c1900–present (Strand 3)",
+          "Sub_topic_name": "Key individuals: Fleming, Florey and Chain (penicillin)",
+          "description": "Alexander Fleming, Howard Florey and Ernst Chain’s development of penicillin.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "11 c1900–present (Strand 3)",
+          "Sub_topic_name": "Case study: Lung cancer (21st century)",
+          "description": "Fight against lung cancer in the twenty-first century: use of science and technology in diagnosis and treatment; government action.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "Western Front 1",
+          "Sub_topic_name": "Western Front context: locations, trenches, terrain and logistics",
+          "description": "Context of the British sector of the Western Front and theatre of war in Flanders and northern France: Ypres salient, Somme, Arras, Cambrai; trench system organisation including frontline and support trenches; significance for medical treatment of terrain and problems of transport and communications infrastructure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "Western Front 1",
+          "Sub_topic_name": "Conditions and injuries on the Western Front",
+          "description": "Conditions requiring medical treatment on the Western Front, including ill health from trench environment; nature of wounds from rifles and explosives; shrapnel, wound infection and increased head injuries; effects of gas attacks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "Western Front 1",
+          "Sub_topic_name": "Medical treatment and chain of evacuation",
+          "description": "Medical treatment on the Western Front: work of the RAMC and nurses; transport in the chain of evacuation (stretcher bearers, horse and motor ambulances); stages of treatment (aid post/field ambulance, dressing station, casualty clearing station, base hospital); the underground hospital at Arras.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "Western Front 1",
+          "Sub_topic_name": "Western Front innovations and experiments",
+          "description": "Significance of Western Front for experiments in surgery and medicine: new techniques for treating wounds and infection; Thomas splint; mobile x-ray units; creation of a blood bank for the Battle of Cambrai.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "Western Front 1",
+          "Sub_topic_name": "Early 20th-century medical context",
+          "description": "Historical context of medicine in early twentieth century: understanding of infection and moves towards aseptic surgery; development of x-rays; blood transfusions and developments in storage of blood.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "Western Front 2",
+          "Sub_topic_name": "Historic environment enquiry: national and local sources",
+          "description": "Knowledge of national sources relevant to the Western Front enquiry (e.g. army records, national newspapers, government reports, medical articles) and local sources (e.g. personal accounts, photographs, hospital records, army statistics).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2w",
+          "Specification_section_sub": "Western Front 2",
+          "Sub_topic_name": "Using sources for enquiries (strengths/weaknesses, questions, selection)",
+          "description": "Recognise strengths and weaknesses of different types of source for specific enquiries; frame questions relevant to a specific enquiry; select appropriate sources for specific investigations (Western Front historic environment).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "Paper 1 (1HI0/12)",
+      "Strand": "Paper 1: Thematic study and historic environment",
+      "Topic_name": "Warfare and British society, c1250–present and London and the Second World War, 1939–45",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "12 The process of change",
+          "Sub_topic_name": "Warfare through time: factors and process of change",
+          "description": "Understand how key features in the development of warfare on land were linked with key features of society in Britain across the periods studied; understand the nature and process of change (patterns, trends, turning points) and factors inhibiting/encouraging change within/across periods; apply key factors: governments and individuals; science, technology and communications; attitudes in society; understand how factors worked together to bring about developments at particular times; use period case studies to exemplify strands 1–2 and enable detailed comparisons over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "12 c1250–c1500 (Strand 1)",
+          "Sub_topic_name": "Medieval warfare: armies, tactics and weapons",
+          "description": "Composition of the army including roles of infantry, archer and mounted knight; link between social structure and army command; impact of new weapons and formations on strategy/tactics/combat including the longbow and schiltrons; importance of gunpowder and development of cannon; decline of the mounted knight.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "12 c1250–c1500 (Strand 2)",
+          "Sub_topic_name": "Medieval experience of war",
+          "description": "Recruitment and training of combatants in the medieval feudal army; impact of war on civilians including impact of feudal duties and army plunder on civilian lives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "12 c1250–c1500 (Strand 3)",
+          "Sub_topic_name": "Case study: Battle of Falkirk (1298)",
+          "description": "Battle of Falkirk (1298): reasons for outcome; roles of William Wallace and Edward I.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "12 c1250–c1500 (Strand 3)",
+          "Sub_topic_name": "Case study: Battle of Agincourt (1415)",
+          "description": "Battle of Agincourt (1415): reasons for outcome; role of Henry V.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "12 c1500–c1700 (Strand 1)",
+          "Sub_topic_name": "Early modern warfare: army composition and weaponry",
+          "description": "Continuity and change in composition of the army in sixteenth and seventeenth centuries including musketeer, pikemen, dragoons and cavalry; development of a standing army; impact of developments in weaponry including new muskets and pistols.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "12 c1500–c1700 (Strand 2)",
+          "Sub_topic_name": "Early modern experience of war",
+          "description": "Recruitment and training of combatants including the New Model Army; impact of war on civilians including recruitment and requisitioning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "12 c1500–c1700 (Strand 3)",
+          "Sub_topic_name": "Case study: Battle of Naseby (1645)",
+          "description": "Battle of Naseby (1645): reasons for outcome; role of Oliver Cromwell.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "12 c1700–c1900 (Strand 1)",
+          "Sub_topic_name": "18th–19th century warfare: composition, weapons and industrialisation",
+          "description": "Continuity and change in army composition including decline of cavalry; impact of changes in weaponry including rifles and bullets, development of field guns and heavy artillery; impact of industrialisation including steam-powered transport and mass production of weapons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "12 c1700–c1900 (Strand 2)",
+          "Sub_topic_name": "18th–19th century experience of war and reporting",
+          "description": "Recruitment and training including Cardwell’s army reforms and professionalisation; impact of war on civilians including recruitment and requisitioning; impact on popular attitudes of growth of newspaper reporting and photography in the nineteenth century, exemplified in the Crimean and Boer Wars.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "12 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Case study: Battle of Waterloo (1815)",
+          "description": "Battle of Waterloo (1815): reasons for outcome; role of the Duke of Wellington.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "12 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Case study: Battle of Balaclava (1854)",
+          "description": "Battle of Balaclava (1854): reasons for outcome; role of Lord Raglan.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "12 c1900–present (Strand 1)",
+          "Sub_topic_name": "Modern warfare: composition, technology and new warfare",
+          "description": "Continuity and change in army composition including growth of a logistics corps and specialised bomb disposal units; impact of developments in weaponry, transport and surveillance including machine guns, tanks, chemical and nuclear weapons, radar and aircraft; impact of computerised high-tech warfare; increasing use of motor and air transport and aerial support; dealing with guerrilla warfare in the twenty-first century.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3n",
+          "Specification_section_sub": "12 c1900–present (Strand 2)",
+          "Sub_topic_name": "Modern experience of war: recruitment, Home Front, reporting and state control",
+          "description": "Recruitment and training including introduction of conscription, national service, recruitment of women and development of a professional army; impact of war on civilians including recruitment and organisation of a Home Front during the First and Second World Wars and fear of nuclear war post-1945; attitudes to Conscientious Objectors; influence of war reporting on attitudes including increased concern for casualties; government use of censorship and propaganda in wartime.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3o",
+          "Specification_section_sub": "12 c1900–present (Strand 3)",
+          "Sub_topic_name": "Case study: Western Front & Battle of the Somme (1916)",
+          "description": "Western Front during the First World War and the Battle of the Somme (1916): nature of trench warfare and war of attrition; reasons for outcome of the Somme; role of General Haig.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3p",
+          "Specification_section_sub": "12 c1900–present (Strand 3)",
+          "Sub_topic_name": "Case study: Iraq War (2003)",
+          "description": "Iraq War (2003): reasons for outcome; use of high-tech weaponry and surveillance techniques.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3q",
+          "Specification_section_sub": "London WWII 1",
+          "Sub_topic_name": "London as a target and preparations for war",
+          "description": "Context of London in the Second World War: role in national government; significance as a target; importance as a port and industrial centre; accessibility for German bombers; preparations for war in 1939 and ongoing safeguards: evacuation plans, Anderson shelters, gas masks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3r",
+          "Specification_section_sub": "London WWII 1",
+          "Sub_topic_name": "Nature of attacks on London: Blitz, V1/V2 and devastation",
+          "description": "Nature of attacks on London: attacks on docks and industries of the East End including Black Saturday (7 Sept 1940) and V2 attack on Deptford (1944); types of bomb used in 1940–41 and 1944–45; scale and extent of devastation; problems dealing with incendiaries and V1 and V2 rockets.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3s",
+          "Specification_section_sub": "London WWII 1",
+          "Sub_topic_name": "Impact of the Blitz on civilian life",
+          "description": "Impact of the Blitz: air-raid precautions including use of underground stations and ‘Mickey’s shelter’; impact of South Hallsville School disaster (1940) and Bethnal Green disaster (1943); continuance of leisure (dancehalls, theatre); extent of disruption to daily life/work and government concerns about morale.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3t",
+          "Specification_section_sub": "London WWII 1",
+          "Sub_topic_name": "London’s response: leadership, war rooms, and ‘Dig for Victory’",
+          "description": "London’s response to war: continued presence of Royal Family and government ministers; Cabinet War Rooms; use of public spaces (Victoria Park, Tower of London moat) as part of ‘Dig for Victory’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3u",
+          "Specification_section_sub": "London WWII 1",
+          "Sub_topic_name": "Wider WWII context: purpose of the Blitz; propaganda and censorship",
+          "description": "Historical context of the Second World War: nature and purpose of the Blitz; government use of propaganda and censorship to influence attitudes about the Blitz.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3v",
+          "Specification_section_sub": "London WWII 2",
+          "Sub_topic_name": "Historic environment enquiry: local and national sources",
+          "description": "Knowledge of local sources relevant to London 1939–45 (e.g. personal accounts, photographs, local newspapers, local council records) and national sources (e.g. government records, newspapers, Mass Observation reports, newsreels, memoirs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3w",
+          "Specification_section_sub": "London WWII 2",
+          "Sub_topic_name": "Using sources for enquiries (strengths/weaknesses, questions, selection)",
+          "description": "Recognise strengths and weaknesses of different types of source for specific enquiries; frame questions relevant to a specific enquiry; select appropriate sources for specific investigations (London WWII historic environment).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "Paper 1 (1HI0/13)",
+      "Strand": "Paper 1: Thematic study and historic environment",
+      "Topic_name": "Migrants in Britain, c800–present and Notting Hill, c1948–c1970",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "13 The process of change",
+          "Sub_topic_name": "Migration through time: definitions, factors and process of change",
+          "description": "Understand how key features in migration to and within Britain were linked with key features of British society that drew migrants to Britain (‘pull’ factors), with some awareness of ‘push’ factors; understand ‘migrant’ as voluntary/forced, temporary, and internal; understand nature and process of change (patterns, trends, turning points) and factors inhibiting/encouraging change; apply key factors: institutions (government and Church), religion, economic influences, attitudes in society; understand how factors worked together; use period case studies to exemplify strands 1–2 and enable detailed comparisons over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "13 c800–c1500 (Strand 1)",
+          "Sub_topic_name": "Medieval migration: reasons and settlement patterns",
+          "description": "Reasons for migration and patterns of settlement including Vikings, Normans, Jews and other European traders and craftsmen; context of English society: landownership and growth of towns; role of the wool industry; opportunities for migrants; role of monarchy including need for royal finance; England as part of Christendom.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "13 c800–c1500 (Strand 2)",
+          "Sub_topic_name": "Medieval experiences and impacts of migrants",
+          "description": "Experience of migrants: relations with authorities and existing population, including legal status of ‘alien’ and impact of the Black Death; impact of migrants including the Danelaw, culture, trade and the built environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "13 c800–c1500 (Strand 3)",
+          "Sub_topic_name": "Case study: York under the Vikings",
+          "description": "City of York under the Vikings (migration, settlement and impact).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "13 c1500–c1700 (Strand 1)",
+          "Sub_topic_name": "Early modern migration: reasons and settlement patterns",
+          "description": "Change and continuity in reasons for migration and patterns of settlement including migrants from Europe and Africa; changing context: changing social structures; economic growth including cloth industry and global trading companies; privateering and trade; emergence of England as predominantly Protestant nation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "13 c1500–c1700 (Strand 2)",
+          "Sub_topic_name": "Early modern experiences and impacts of migrants",
+          "description": "Experience of migrants: relations with authorities and existing population; impact on England including culture, trade, industry and agriculture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "13 c1500–c1700 (Strand 3)",
+          "Sub_topic_name": "Case study: Flemish & Walloon migrants (Sandwich/Canterbury)",
+          "description": "Sandwich and Canterbury in the sixteenth century: experiences of Flemish and Walloon migrants and their role in the local economy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "13 c1500–c1700 (Strand 3)",
+          "Sub_topic_name": "Case study: Huguenots in 17th-century England",
+          "description": "Experience of Huguenots in seventeenth century England.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "13 c1700–c1900 (Strand 1)",
+          "Sub_topic_name": "18th–19th century migration: empire, industry and urbanisation",
+          "description": "Change and continuity in reasons for migration and patterns of settlement including migrants from Ireland, Europe and the Empire; changing context: changing social structures; Industrial Revolution; urbanisation; transatlantic slavery; growth of the British Empire; civil liberties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "13 c1700–c1900 (Strand 2)",
+          "Sub_topic_name": "18th–19th century experiences and impacts (including media)",
+          "description": "Experience of migrants: relations with authorities and existing population; role of the media; impact of migrants on Britain including culture, trade, industry, politics and the urban environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "13 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Case study: Liverpool in the 19th century (including Irish migrants)",
+          "description": "Liverpool in the nineteenth century: role in migration and experiences of migrants, including Irish migrants.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "13 c1700–c1900 (Strand 3)",
+          "Sub_topic_name": "Case study: Jewish migrants in the East End (late 19th century)",
+          "description": "Experience of Jewish migrants in the East End of London in late nineteenth century.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "13 c1900–present (Strand 1)",
+          "Sub_topic_name": "Modern migration: causes, settlement and legislation",
+          "description": "Change and continuity in reasons for migration and settlement patterns including migrants from Ireland, Europe, the British Empire and Commonwealth; refugees and asylum seekers; changing context: the World Wars; end of the British Empire, decolonisation and development of the Commonwealth; EU membership; legislation on immigration and nationality including the Aliens Act (1905) and British Nationality Acts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "13 c1900–present (Strand 2)",
+          "Sub_topic_name": "Modern experiences and impacts (race relations and movements)",
+          "description": "Experience of migrants: relations with authorities and existing population including anti-immigration and equal rights movements; the Race Relations Act (1965); role of the media; impact of migrants on Britain including culture, politics, urban environment, public services and the economy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "13 c1900–present (Strand 3)",
+          "Sub_topic_name": "Case study: Bristol mid-20th century migrants",
+          "description": "Bristol in the mid-twentieth century: experiences of migrants and their impact on society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "13 c1900–present (Strand 3)",
+          "Sub_topic_name": "Case study: Asian migrants in Leicester (from 1945)",
+          "description": "Experience of Asian migrants in Leicester from 1945.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "Notting Hill 1",
+          "Sub_topic_name": "Notting Hill context: Caribbean migration and housing",
+          "description": "Local context of Notting Hill c1948–c1970: reasons for Caribbean migration; housing problems including houses of multiple occupation (HMOs), overcrowding and slum landlords (e.g. Peter Rachman); Bruce Kenrick and the Notting Hill Housing Trust; development of Portobello Road market.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4r",
+          "Specification_section_sub": "Notting Hill 1",
+          "Sub_topic_name": "Caribbean cultural influence and community self-help",
+          "description": "Influence of Caribbean cultures: development of shops, markets, cafes/restaurants, shebeens, nightclubs and entertainment featuring Caribbean food/music; development of All Saints Road; mutual self-help organisations (e.g. ‘pardner’ schemes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4s",
+          "Specification_section_sub": "Notting Hill 1",
+          "Sub_topic_name": "Racism, policing and violence",
+          "description": "Racism and policing: Notting Hill Riots (1958); murder of Kelso Cochrane and reaction of local community; impact of anti-immigrant groups including Oswald Mosley’s Union Movement and 1959 election campaign.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4t",
+          "Specification_section_sub": "Notting Hill 1",
+          "Sub_topic_name": "Black activism and protest movements",
+          "description": "Black activism in Notting Hill area: Claudia Jones and the West Indian Gazette; 1959 Caribbean Carnival and later development of Notting Hill Carnival; Frank Crichlow and the Mangrove Restaurant; British Black Panthers; the ‘Mangrove Nine’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4u",
+          "Specification_section_sub": "Notting Hill 1",
+          "Sub_topic_name": "Wider context: postwar Britain and London policing",
+          "description": "National and regional context: Britain after WWII (reconstruction and demand for labour); connection to British Empire and Commonwealth; the ‘Swinging Sixties’; poverty in London; policing in London.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4v",
+          "Specification_section_sub": "Notting Hill 2",
+          "Sub_topic_name": "Historic environment enquiry: local and national sources",
+          "description": "Knowledge of local sources relevant to Notting Hill (e.g. local newspapers, Caribbean community publications, local council and police records, housing and employment records, oral/written memoirs of residents, photographs) and national sources (e.g. national newspapers, photographs, government records, census data, opinion polls, television reports, memoirs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4w",
+          "Specification_section_sub": "Notting Hill 2",
+          "Sub_topic_name": "Using sources for enquiries (strengths/weaknesses, questions, selection)",
+          "description": "Recognise strengths and weaknesses of different source types for specific enquiries; frame enquiry questions; select appropriate sources for specific investigations (Notting Hill historic environment).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "Paper 2 (British depth study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "Anglo-Saxon and Norman England, c1060–88",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "B1 Key topic 1.1",
+          "Sub_topic_name": "Anglo-Saxon government, economy and society",
+          "description": "Monarchy and government in Anglo-Saxon England: power of the English monarchy; earldoms; local government and the legal system; economy and social system including towns and villages; influence of the Church.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "B1 Key topic 1.2",
+          "Sub_topic_name": "Edward the Confessor and the succession crisis",
+          "description": "Significance and power of the house of Godwin; Harold Godwinson’s succession as Earl of Wessex; Harold Godwinson’s embassy to Normandy; reasons for the rising against Tostig and his exile; death of Edward the Confessor.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "B1 Key topic 1.3",
+          "Sub_topic_name": "Rival claimants and 1066 battles before Hastings",
+          "description": "Motives and claims of William of Normandy, Harald Hardrada and Edgar the Aethling; role of the Witan and coronation/reign of Harold Godwinson; reasons for and significance of outcomes of Battles of Gate Fulford and Stamford Bridge.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "B1 Key topic 1.4",
+          "Sub_topic_name": "Norman invasion: Battle of Hastings and reasons for William’s victory",
+          "description": "Battle of Hastings; reasons for William’s victory including leadership skills of Harold and William, and Norman and English troops and tactics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "B1 Key topic 2.1",
+          "Sub_topic_name": "William I establishes control (1066 onwards): earls, Marcher earldoms, castles",
+          "description": "Submission of the earls (1066); rewarding followers and controlling borderlands via earls including the Marcher earldoms; reasons for building castles and their key features and importance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "B1 Key topic 2.2",
+          "Sub_topic_name": "Anglo-Saxon resistance (1068–71)",
+          "description": "Causes and outcomes of resistance: revolt of Earls Edwin and Morcar (1068); Edgar the Aethling and rebellions in the North (1069); Hereward the Wake and rebellion at Ely (1070–71).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "B1 Key topic 2.3",
+          "Sub_topic_name": "Harrying of the North and landownership change",
+          "description": "Reasons for and features of Harrying of the North (1069–70) and its immediate/long-term impact (1069–87); changes in landownership from Anglo-Saxon to Norman (1066–87).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "B1 Key topic 2.4",
+          "Sub_topic_name": "Revolt of the Earls (1075)",
+          "description": "Reasons for and features of the Revolt of the Earls (1075); defeat of the revolt and its effects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "B1 Key topic 3.1",
+          "Sub_topic_name": "Feudal system and the Church under William I",
+          "description": "Feudal hierarchy; role/importance of tenants-in-chief and knights; nature of feudalism (landholding, homage, knight service, labour service) and forfeiture; role of the Church in society and its relationship to government including significance of Stigand and Lanfranc; Normanisation and reform of the Church in William I’s reign; extent of change to Anglo-Saxon society and economy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "B1 Key topic 3.2",
+          "Sub_topic_name": "Norman government: earls, regents, sheriffs, forests, Domesday",
+          "description": "Changes to government after the Conquest: centralised power and limited use of earls; role of regents during William’s absences; office of sheriff and the demesne; introduction and significance of the ‘forest’; Domesday survey and Domesday Book and their significance for government and finance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "B1 Key topic 3.3",
+          "Sub_topic_name": "Norman aristocracy and Bishop Odo",
+          "description": "Culture and language of the Norman aristocracy; career and significance of Bishop Odo.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "B1 Key topic 3.4",
+          "Sub_topic_name": "William I’s character and succession",
+          "description": "Character and personality of William I; relations with Robert including Robert’s revolt in Normandy (1077–80); William’s death and disputed succession; William Rufus and defeat of Robert and Odo.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "Paper 2 (British depth study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "The reigns of King Richard I and King John, 1189–1216",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "B2 Key topic 1.1",
+          "Sub_topic_name": "Feudal system and the Church (1189–1216)",
+          "description": "Feudal hierarchy and nature of feudalism (landholding, homage, knight service, labour service) including forfeiture; role and influence of the Church.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "B2 Key topic 1.2",
+          "Sub_topic_name": "Kingship and succession: Richard I and John",
+          "description": "Nature of kingship (duties, rights, rituals); Richard I’s claim to throne, securing power and character; John’s claim to throne, securing power and murder of Prince Arthur; John’s character.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "B2 Key topic 1.3",
+          "Sub_topic_name": "Royal government and finance",
+          "description": "How England was governed when Richard was absent (1189–99) and during John’s continued presence (1199–1216); royal revenues: royal demesne and sheriffs collecting revenue; feudal incidents; scutage; taxes on moveables and income in 1207.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "B2 Key topic 1.4",
+          "Sub_topic_name": "English society and Jews in medieval England",
+          "description": "Countryside: nature of agriculture and peasant life; towns: life in towns and their role in the economy; Jews in Medieval England: legal status, role in moneylending, antisemitism; causes and extent of pogroms of 1189–90 including significance of Richard I’s coronation; royal exploitation via taxes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "B2 Key topic 2.1",
+          "Sub_topic_name": "Crusading: concept, attitudes, and English crusading army",
+          "description": "Concept of crusade and attitudes in England to crusades; nature of the English crusading army (who they were and why they went).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "B2 Key topic 2.2",
+          "Sub_topic_name": "Richard I and the Third Crusade",
+          "description": "Immediate causes of the Third Crusade; Richard’s motives; quarrel with Philip II; Richard’s military victories at Acre and Arsuf; failure to recapture Jerusalem.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "B2 Key topic 2.3",
+          "Sub_topic_name": "Aftermath: Richard’s return, capture and ransom",
+          "description": "Richard’s return from the Holy Land; Richard’s capture; the ransom and its burden on England.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "B2 Key topic 2.4",
+          "Sub_topic_name": "Normandy: rivalry and loss (Chateau Gaillard, 1204)",
+          "description": "Competing aims of Richard/John and Philip II in Normandy; Richard and Chateau Gaillard (cost and importance); John and fall of Chateau Gaillard and loss of Normandy (1204).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "B2 Key topic 3.1",
+          "Sub_topic_name": "Dispute with the Papacy (Interdict and reconciliation)",
+          "description": "Causes of dispute with Papacy; the Interdict and its impact on everyday life; significance of reconciliation between John and Innocent III.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "B2 Key topic 3.2",
+          "Sub_topic_name": "Worsening relations with barons",
+          "description": "Growing financial impositions to raise money for war with France (taxation and ‘fines’) and John’s arbitrary power; plot of 1212; impact of failure to regain Normandy in 1214; rebellion of 1215 including Northampton, Lincoln and march on London.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "B2 Key topic 3.3",
+          "Sub_topic_name": "Magna Carta and the First Barons’ War",
+          "description": "Runnymede: motives of John and barons; main provisions of Magna Carta; reasons for outbreak of First Baron’s War including siege/taking of Rochester and invasion of Prince Louis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "B2 Key topic 3.4",
+          "Sub_topic_name": "England in 1216 and succession",
+          "description": "Condition of England at John’s death; problem of succession; role of William Marshal as Protector.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "Paper 2 (British depth study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "Henry VIII and his ministers, 1509–40",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "B3 Key topic 1.1",
+          "Sub_topic_name": "Henry VIII as a Renaissance Prince",
+          "description": "England in 1509: society and government; young Henry and accession; Henry’s character and views on sovereignty/monarchy and his personal style of government; strengths, weaknesses and aims as monarch.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "B3 Key topic 1.2",
+          "Sub_topic_name": "Wolsey’s rise and domestic policies",
+          "description": "Reasons for Wolsey’s rise; his personality, roles and wealth; Wolsey’s reforms: enclosures, finance and justice; the Eltham Ordinances; reasons for and reactions to the Amicable Grant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "B3 Key topic 1.3",
+          "Sub_topic_name": "Wolsey’s foreign policy",
+          "description": "Aims of Wolsey’s foreign policy; successes and failures including relations with France and Holy Roman Empire; Treaty of London (1518); Field of the Cloth of Gold (1520); increasing difficulties in the 1520s.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "B3 Key topic 1.4",
+          "Sub_topic_name": "Annulment crisis and Wolsey’s fall",
+          "description": "Catherine of Aragon and the succession; Henry’s reasons for and attempts to gain an annulment; opposition including role of Pope Clement VII; reasons for Wolsey’s fall including failure of divorce proceedings in London and influence of the Boleyns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "B3 Key topic 2.1",
+          "Sub_topic_name": "Cromwell’s rise to power (1529–34)",
+          "description": "Cromwell’s personality and early career (service to Wolsey, election as MP, membership of Royal Council); handling of king’s annulment and influence over Henry; role as Chief Minister.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "B3 Key topic 2.2",
+          "Sub_topic_name": "Henry VIII’s marriages in the 1530s",
+          "description": "Reasons for fall of Anne Boleyn including Cromwell’s role; reasons for marriage to Jane Seymour and her influence, heir and death; reasons for marriage to Anne of Cleves.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "B3 Key topic 2.3",
+          "Sub_topic_name": "Cromwell and government (1534–40)",
+          "description": "Reform of government and royal finance; management and use of parliament.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "B3 Key topic 2.4",
+          "Sub_topic_name": "Fall of Cromwell (1540)",
+          "description": "Reasons for Cromwell’s fall in 1540 including influence of Duke of Norfolk and failure of marriage to Anne of Cleves.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "B3 Key topic 3.1",
+          "Sub_topic_name": "Break with Rome: Acts and enforcement",
+          "description": "Henry as ‘Defender of the Faith’; reasons for Henry’s campaign against the Pope and Catholic Church (1529–33); significance of Act of Succession and Act of Supremacy (1534) for break with Rome; Cromwell’s role in enforcement including oaths and treason laws.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "B3 Key topic 3.2",
+          "Sub_topic_name": "Opposition and impact of the Reformation",
+          "description": "Elizabeth Barton (Nun of Kent) and John Fisher; significance of opposition from Thomas More; impact on English Church including work of Thomas Cranmer and influence of Thomas Cromwell.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "B3 Key topic 3.3",
+          "Sub_topic_name": "Dissolution of the monasteries",
+          "description": "Role of religious houses in local communities; reasons for dissolutions including findings of Cromwell’s commissions of 1535; impact of dissolutions including beneficiaries and losers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "B3 Key topic 3.4",
+          "Sub_topic_name": "Pilgrimage of Grace (1536)",
+          "description": "Reasons for uprising; key events including rebellions in Lincolnshire and Yorkshire and roles of Robert Aske and the Duke of Norfolk.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "Paper 2 (British depth study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "Early Elizabethan England, 1558–88",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "B4 Key topic 1.1",
+          "Sub_topic_name": "Elizabeth’s accession: strengths and challenges",
+          "description": "Elizabethan England in 1558: society and government; the Virgin Queen and issues of legitimacy, gender and marriage; Elizabeth’s character and strengths; challenges at home and abroad: financial weaknesses, religious divisions, French threat.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "B4 Key topic 1.2",
+          "Sub_topic_name": "Religious Settlement (1559) and Church of England",
+          "description": "Features and impact of Elizabeth’s Religious Settlement (1559); role of the Church of England in society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "B4 Key topic 1.3",
+          "Sub_topic_name": "Challenges to the Religious Settlement (Puritan and Catholic)",
+          "description": "Nature and extent of Puritan challenge; nature and extent of Catholic challenge including roles of nobility, Papacy and foreign powers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "B4 Key topic 1.4",
+          "Sub_topic_name": "Mary, Queen of Scots (1568–69)",
+          "description": "Mary, Queen of Scots: her claim to the English throne; relations between Elizabeth and Mary, 1568–69.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "B4 Key topic 2.1",
+          "Sub_topic_name": "Revolt and plots at home (1569–88)",
+          "description": "Reasons for and significance of Revolt of the Northern Earls, 1569–70; features and significance of Ridolfi, Throckmorton and Babington plots; Walsingham and use of spies; reasons for and significance of Mary Queen of Scots’ execution (1587).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "B4 Key topic 2.2",
+          "Sub_topic_name": "Relations with Spain and privateering",
+          "description": "Political, religious and commercial rivalry with Spain; significance of privateering and Drake’s activities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "B4 Key topic 2.3",
+          "Sub_topic_name": "Outbreak of war with Spain (1585–88)",
+          "description": "Reasons for deteriorating relations: English involvement in Netherlands and actions of Robert Dudley; Drake’s raid on Cadiz (‘Singeing the King of Spain’s beard’).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "B4 Key topic 2.4",
+          "Sub_topic_name": "Spanish Armada (1588)",
+          "description": "Spanish invasion plans; key events of the Armada; reasons for English victory.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "B4 Key topic 3.1",
+          "Sub_topic_name": "Education and leisure",
+          "description": "Education in home and schools; sport, pastimes and the theatre.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "B4 Key topic 3.2",
+          "Sub_topic_name": "Poverty and responses to the poor",
+          "description": "Reasons for increase in poverty and vagabondage; changing attitudes and policies towards the poor.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "B4 Key topic 3.3",
+          "Sub_topic_name": "Exploration and voyages of discovery",
+          "description": "Factors prompting exploration including impact of new technology on ships/sailing and drive to expand trade; reasons for and significance of Drake’s circumnavigation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "B4 Key topic 3.4",
+          "Sub_topic_name": "Attempted colonisation of Virginia",
+          "description": "Reasons for attempted colonisation including significance of Raleigh; reasons for failure of the first settlement in Virginia.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "Paper 2 (Period study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "Spain and the ‘New World’, c1490–c1555",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "P1 Key topic 1.1",
+          "Sub_topic_name": "Spanish exploration and Columbus’s sponsorship",
+          "description": "Spain c1490: crusading spirit and foreign ambitions; Columbus’s attempts to gain sponsorship; role of Queen Isabella including desire to spread Christianity and sponsorship of Columbus; Columbus’s first voyage (1492) and problems encountered.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "P1 Key topic 1.2",
+          "Sub_topic_name": "Columbus in the Americas: actions and early impacts",
+          "description": "Columbus’s actions: exploration of the Bahamas and Caribbean and foundation of La Navidad; impact of contact with Indigenous peoples including discovery of gold and relations with the Tainos and Caribs; impact of rivalry with Portugal and Treaty of Tordesillas (1494).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "P1 Key topic 1.3",
+          "Sub_topic_name": "Spanish settlement in the Caribbean and imperial policy",
+          "description": "Columbus’s later voyages and role as governor; significance of establishment of Spanish colony at Santo Domingo (1496); effects of Spanish settlement including treatment of Indigenous peoples and effects of smallpox; development of imperial policy: regulation of exploration, monopoly on trade, extension of Spanish authority and use of slavery; role of Catholic missionaries.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "P1 Key topic 2.1",
+          "Sub_topic_name": "Beginnings of empire (Balboa, Cuba, Magellan)",
+          "description": "Balboa’s claim of Spanish authority over the Pacific (1513); conquest of Cuba; voyage of Magellan and Spanish claim to the Philippines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "P1 Key topic 2.2",
+          "Sub_topic_name": "Conquest of Mexico (Cortés and Aztecs)",
+          "description": "Cortés’s expedition to Mexico (1519); key events of Spanish conquest including role of Montezuma and war between Aztecs and Tlaxcalans; capture of Tenochtitlan and Aztec surrender.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "P1 Key topic 2.3",
+          "Sub_topic_name": "Impact in the Americas: New Spain and Panama",
+          "description": "Cortés as Governor and Captain-General of New Spain (1523–28); consequences of Spanish invasion for the Aztecs; founding and significance of a Spanish base at Panama.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "P1 Key topic 3.1",
+          "Sub_topic_name": "Pizarro and conquest of the Incas",
+          "description": "Contact with Incas (1528) and significance of death of Huayna Capac; Pizarro’s voyage (1530) and significance of civil war between Atahuallpa and Huascar; key events of conquest of Peru including Battle of Cajamarca and capture of Atahuallpa, Inca revolt, siege of Cuzco (1536–37); impact of conquest.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "P1 Key topic 3.2",
+          "Sub_topic_name": "Spanish imperial administration and expansion",
+          "description": "Role of viceroys and encomiendas; role of Las Casas and significance of the New Laws (1542); significance of discovery of silver in Bolivia and Mexico; foundation of La Paz (1548).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "P1 Key topic 3.3",
+          "Sub_topic_name": "Impact of the ‘New World’ on Spain (economy, trade, government)",
+          "description": "Importance of gold and silver for Spanish economy and support of Spain’s European empire; impact on Spain of slave trade and goods from the Americas; government of the Spanish Empire including role of House of Trade and Council of the Indies.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "Paper 2 (Period study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "British America, 1713–83: empire and revolution",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "P2 Key topic 1.1",
+          "Sub_topic_name": "Colonial society: expansion, immigration, and economy (incl. piracy)",
+          "description": "Impact of expansion and immigration on colonial society: settlement patterns and tensions among social groups; economic developments: trade with Britain and West Indies, importance of tobacco, impact of piracy including ‘Black Sam’ Bellamy and Edward Teach (‘Blackbeard’); suppression of piracy: King George I’s Proclamation and Piracy Act (1717) and work of Governor Spotswood.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "P2 Key topic 1.2",
+          "Sub_topic_name": "Slavery and the Atlantic trade triangle",
+          "description": "Transatlantic slave trade and ‘Atlantic trade triangle’; impact of slavery on development of tobacco and rice plantations; impact of slavery on colonial society including position of enslaved people and treatment of fugitives within the colonies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "P2 Key topic 1.3",
+          "Sub_topic_name": "Problems within the colonies (revolts, conspiracies, smuggling)",
+          "description": "Slave revolts in the Carolinas: Stono Rebellion (1739) and significance of Spain protecting runaways in Florida; New York Conspiracy (1741); smuggling, attempts to collect customs revenue and control the fur trade.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "P2 Key topic 2.1",
+          "Sub_topic_name": "Cultural developments: Great Awakening, Enlightenment, Franklin",
+          "description": "Religious revivals including Great Awakening and revivalist preachers; Enlightenment emphasis on education and growth of newspapers and public libraries; significance of Benjamin Franklin as writer, philanthropist and intellectual.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "P2 Key topic 2.2",
+          "Sub_topic_name": "War in the colonies (1744–63) and consequences (1763)",
+          "description": "Relations with French and Indigenous peoples during/after King George’s War (1744–48); French and Indian War (1754–63) and role of Wolfe in Canada; significance of Treaty of Paris (1763) and Proclamation Act (1763).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "P2 Key topic 2.3",
+          "Sub_topic_name": "Aftermath: Britain–colonist relations and Indigenous conflict",
+          "description": "Impact of war on American colonists’ relations with Britain; opposition to Sugar Act (1764); relations with Indigenous peoples including Pontiac’s Rebellion (1763–64) and the Paxton Boys (actions and impact).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "P2 Key topic 3.1",
+          "Sub_topic_name": "Growing opposition to Britain (1765–75)",
+          "description": "Opposition to British policies: Stamp Act, Sons of Liberty and Boston Massacre (1770); Boston Tea Party (1773) and Intolerable Acts (1774); significance of First and Second Continental Congresses (1774–75).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "P2 Key topic 3.2",
+          "Sub_topic_name": "War of Independence (1775–83) and turning points",
+          "description": "Influence of Thomas Paine’s Common Sense; significance of Declaration of Independence and role of Thomas Jefferson; key American victories at Saratoga (1777) and Yorktown (1781) including significance of Washington’s role, British mistakes and French/Spanish involvement; Peace of Paris (1783) including role of Franklin.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "P2 Key topic 3.3",
+          "Sub_topic_name": "Consequences of independence (slavery, Indigenous peoples, Loyalists)",
+          "description": "Significance of American independence for slavery; consequences for Indigenous peoples; impact on Loyalists including resettlement in Nova Scotia and Niagara.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "Paper 2 (Period study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "The American West, c1835–c1895",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "P3 Key topic 1.1",
+          "Sub_topic_name": "Indigenous peoples of the Plains: society and beliefs",
+          "description": "Social and tribal structures, ways of life and means of survival on the Plains; beliefs about land and nature and attitudes to war and property.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "P3 Key topic 1.2",
+          "Sub_topic_name": "Migration and early settlement (to c1850)",
+          "description": "Factors encouraging migration including Oregon Trail (from 1836), Manifest Destiny and California Gold Rush (1849); early migration to c1850 including experiences of the Donner Party and Mormon migration (1846–47); development and problems of early settlement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "P3 Key topic 1.3",
+          "Sub_topic_name": "Early tensions and lawlessness",
+          "description": "Reasons for tension with Indigenous peoples including US government policy and ‘Permanent Indian Frontier’; significance of first Fort Laramie Treaty (1851) and Indian Appropriations Act (1851); lawlessness in early towns/settlements and attempts to tackle it.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "P3 Key topic 2.1",
+          "Sub_topic_name": "Settlement growth: railroads, Homestead Act, technology, law and order",
+          "description": "Significance of railroads including Pacific Railroad Act (1862), completion of First Transcontinental Railroad (1869) and spread of network; impact of Homestead Act (1862); attempts to solve homesteader problems (new methods/technology) including impact of Timber Culture Act (1873); introducing law and order including roles of law officers and increased federal influence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "P3 Key topic 2.2",
+          "Sub_topic_name": "Ranching and the cattle industry",
+          "description": "Cattle industry and factors in growth including roles of Iliff, McCoy and Goodnight; significance of Abilene and increased railroad use; changing role of cowboy and changes in ranching; relations between ranchers and homesteaders.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "P3 Key topic 2.3",
+          "Sub_topic_name": "Indigenous peoples: changing ways of life and conflict (1862–68)",
+          "description": "Impact of railroads, cattle industry and gold prospecting; impact of US government reservation policy including second Fort Laramie Treaty (1868); conflict on the Plains including Little Crow’s War (1862), Sand Creek Massacre (1864), and significance of Red Cloud’s War (1866–68).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "P3 Key topic 3.1",
+          "Sub_topic_name": "Later settlement, farming and cattle industry changes (1876–95)",
+          "description": "Changes in farming due to new technology and methods; changes in cattle industry including impact of winter 1886–87, changes in nature of ranching and end of open range; continued settlement including Exoduster movement and Kansas (1879), Oklahoma Land Rush (1893) and closure of ‘Indian Frontier’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "P3 Key topic 3.2",
+          "Sub_topic_name": "Later conflict and law enforcement",
+          "description": "Dealing with law and order including sheriffs and marshals and significance of Billy the Kid, Wyatt Earp and the OK Corral (1881); range wars including Johnson County War (1892); conflict on Plains including Battle of the Little Big Horn (1876) and its impact, and Wounded Knee Massacre (1890).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "P3 Key topic 3.3",
+          "Sub_topic_name": "Destruction of Indigenous ways of life",
+          "description": "Hunting and extermination of the buffalo; Indigenous peoples’ lives on reservations; significance of changing government attitudes including Dawes Act (1887).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "Paper 2 (Period study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "Superpower relations and the Cold War, 1941–91",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "P4 Key topic 1.1",
+          "Sub_topic_name": "Early tensions and wartime conferences",
+          "description": "Grand Alliance; outcomes of Tehran, Yalta and Potsdam conferences; ideological differences between superpowers and attitudes of Stalin, Truman and Churchill; impact on relations of atomic bomb, Long and Novikov telegrams, and creation of Soviet satellite states in Eastern Europe.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "P4 Key topic 1.2",
+          "Sub_topic_name": "Cold War develops (1947–49): containment, Cominform/Comecon, NATO, Berlin",
+          "description": "Impact on relations of Truman Doctrine and Marshall Plan (1947); significance of Cominform (1947), Comecon (1949) and formation of NATO (1949); Berlin division into zones; Berlin Crisis (blockade and airlift) 1948–49 and impact; formation of FRG and GDR.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "P4 Key topic 1.3",
+          "Sub_topic_name": "Cold War intensifies: arms race and Hungary (1956)",
+          "description": "Significance of arms race and formation of Warsaw Pact; events in 1956 leading to Hungarian Uprising and Khrushchev’s response; international reaction to Soviet invasion of Hungary.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "P4 Key topic 2.1",
+          "Sub_topic_name": "Increased tensions: Berlin, Cuba and Prague Spring",
+          "description": "Refugee problem in Berlin; Khrushchev’s Berlin ultimatum (1958) and summit meetings (1959–61); impact of Cuban Revolution including US refusal to recognise Castro, closer USSR ties and significance of Bay of Pigs; opposition in Czechoslovakia to Soviet control: Prague Spring.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "P4 Key topic 2.2",
+          "Sub_topic_name": "Key crises: Berlin Wall and Cuban Missile Crisis; Soviet control in Czechoslovakia",
+          "description": "Construction of Berlin Wall (1961); events of Cuban Missile Crisis; Brezhnev Doctrine and re-establishment of Soviet control in Czechoslovakia.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "P4 Key topic 2.3",
+          "Sub_topic_name": "Reactions and arms control after crises",
+          "description": "Impact of Berlin Wall on US-Soviet relations and Kennedy’s West Berlin visit (1963); consequences of Cuban Missile Crisis including ‘hotline’; attempts at arms control: Limited Test Ban Treaty (1963), Outer Space Treaty (1967), Nuclear Non-Proliferation Treaty (1968); international reaction to Soviet measures in Czechoslovakia.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "P4 Key topic 3.1",
+          "Sub_topic_name": "Détente in the 1970s",
+          "description": "Détente and attempts to reduce tensions; significance of SALT 1, Helsinki Accords and SALT 2.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "P4 Key topic 3.2",
+          "Sub_topic_name": "End of détente and the ‘Second Cold War’",
+          "description": "Significance of Soviet invasion of Afghanistan, Carter Doctrine and Olympic boycotts; Reagan and the ‘Second Cold War’ including Strategic Defence Initiative (SDI); significance of Reagan and Gorbachev in reducing tensions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "P4 Key topic 3.3",
+          "Sub_topic_name": "Collapse of Soviet control (1985–91) and end of Cold War",
+          "description": "Impact of Gorbachev’s ‘new thinking’ on Eastern Europe (loosening grip); significance of fall of Berlin Wall; collapse of Soviet Union and its significance in ending Warsaw Pact and Cold War.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "Paper 2 (Period study)",
+      "Strand": "Paper 2: Period study and British depth study",
+      "Topic_name": "Conflict in the Middle East, 1945–95",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "P5 Key topic 1.1",
+          "Sub_topic_name": "End of British Mandate and creation of Israel (1945–49)",
+          "description": "Conflicting interests and demands of Jews and Arabs within British Mandate; key events leading to end of Mandate, partition and creation of Israel including significance of King David Hotel bombing and UN Resolution 181; key events of Arab-Israeli War (1948–49).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "P5 Key topic 1.2",
+          "Sub_topic_name": "Aftermath of 1948–49 war: territory, refugees, IDF, Law of Return",
+          "description": "Territorial changes and impact; refugee status of Palestinian Arabs; creation of Israeli Defence Forces and Law of Return; US aid to Israel; Israel’s relations with Egypt.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "P5 Key topic 1.3",
+          "Sub_topic_name": "Rising tension (1955–63): Nasser, Gaza/Sinai, Suez, UAR",
+          "description": "Nasser and Egypt’s leadership of Arab world; events and significance of Israeli attacks on Gaza (1955) and Sinai (1956); events and significance of Suez Crisis (1956) including formation of UAR (1958).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "P5 Key topic 2.1",
+          "Sub_topic_name": "Road to the Six Day War (1964–67) and key events",
+          "description": "Significance of Cairo Conference (1964); escalating tension between Israel, Syria and Jordan including Syria’s support for Fatah, Israel’s raid on Samu and events of 7 April 1967; actions of USSR, Nasser and USA leading to war; key events of the Six Day War.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "P5 Key topic 2.2",
+          "Sub_topic_name": "Aftermath of 1967 war: Resolution 242, occupied territories, terrorism",
+          "description": "UN Resolution 242 and continued dispute over Suez Canal; Palestinian refugees and significance of occupied territories (Golan Heights, Gaza Strip, West Bank, Sinai, East Jerusalem); use of terrorism, Israeli response and international attitudes: PFLP airplane hijacks (1970), Black September and Munich Olympics; expulsion of PLO from Jordan (1970).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "P5 Key topic 2.3",
+          "Sub_topic_name": "Israel and Egypt (1967–73): diplomacy and Yom Kippur War",
+          "description": "Egyptian relations with Israel, USA, USSR and other Arab states; Israel’s consolidation of control in occupied territories; key events of Yom Kippur War (1973) and its aftermath.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "P5 Key topic 3.1",
+          "Sub_topic_name": "Diplomatic negotiations (1974–79): oil crisis, shuttle diplomacy, Camp David",
+          "description": "Significance of oil crisis and involvement of USA and USSR; Kissinger ‘shuttle diplomacy’ and reopening of Suez Canal; Sadat visit to Israel (1977), Begin visit to Egypt (1977), Carter and Camp David (1978), Treaty of Washington (1979).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "P5 Key topic 3.2",
+          "Sub_topic_name": "The Palestinian issue (1974–93): PLO, Lebanon, Intifada",
+          "description": "Arafat speech to UN (1974); significance of PLO activities in Lebanon; Israeli reprisals and invasion of Lebanon (1982) and results; Israeli occupied territories and First Palestinian Intifada (1987–93).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13i",
+          "Specification_section_sub": "P5 Key topic 3.3",
+          "Sub_topic_name": "Moves toward settlement (1988–95): superpowers, Oslo, peace treaties",
+          "description": "Significance of Arafat’s renunciation of terrorism in UN speech (1988); changing superpower policies including US involvement in Gulf War (1991) and end of Cold War; Arafat, Rabin and Oslo Accords (1993) and setting up Palestinian National Authority; Israel–Jordan peace treaty (1994); Oslo II (1995).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "Paper 3 (1HI0/30)",
+      "Strand": "Paper 3: Modern depth study",
+      "Topic_name": "Russia and the Soviet Union, 1917–41",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "30 Key topic 1.1",
+          "Sub_topic_name": "Opposition to the Tsar in early 1917 and WWI impact",
+          "description": "Growing discontent among peasants and town workers; impact of First World War including military defeats and economic, political and social effects; Tsar as commander-in-chief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "30 Key topic 1.2",
+          "Sub_topic_name": "February Revolution",
+          "description": "Immediate reasons for February Revolution: events in Petrograd in February 1917 including strikes and army mutiny; Tsar’s absence and abdication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "30 Key topic 1.3",
+          "Sub_topic_name": "Provisional Government and ‘Dual Control’",
+          "description": "Establishment of Provisional Government and problems including ‘Dual Control’ and Soviet Order Number 1; role of Kerensky; weaknesses and failures of Provisional Government; significance of Kornilov Revolt.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "30 Key topic 1.4",
+          "Sub_topic_name": "October/Bolshevik Revolution",
+          "description": "Lenin’s return and activities including April Theses and growth of Bolshevik support; ‘July Days’; Bolshevik seizure of power in October 1917; reasons for success; roles of Trotsky and Lenin.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14e",
+          "Specification_section_sub": "30 Key topic 2.1",
+          "Sub_topic_name": "Consolidation of power (1917–18) and Brest-Litovsk",
+          "description": "Early Bolshevik decrees (Nov–Dec 1917); removal of opposition including Constituent Assembly and execution of Tsar Nicholas II and family; reasons for, main terms and significance of Treaty of Brest-Litovsk; different reactions in Russia to the Treaty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14f",
+          "Specification_section_sub": "30 Key topic 2.2",
+          "Sub_topic_name": "Civil War (1918–21): causes, events, effects and Bolshevik victory",
+          "description": "Reasons for, key events and effects of Civil War; reasons for Bolshevik victory including Bolshevik strengths, Trotsky’s role, foreign intervention, and White weaknesses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14g",
+          "Specification_section_sub": "30 Key topic 2.3",
+          "Sub_topic_name": "Moves towards totalitarianism: terror and centralisation",
+          "description": "Red Terror and role of Cheka; Kronstadt Mutiny; Bolshevik centralisation including role of Lenin and Politburo; setting up of the USSR.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14h",
+          "Specification_section_sub": "30 Key topic 2.4",
+          "Sub_topic_name": "War Communism, NEP and social change (1918–24)",
+          "description": "Reasons for and features of War Communism and its unpopularity; reasons for and features of New Economic Policy (NEP), different reactions and effects on economy (1921–24); social changes including impact of Bolshevik policies on women, education and culture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14i",
+          "Specification_section_sub": "30 Key topic 3.1",
+          "Sub_topic_name": "Power struggle after Lenin (1924–28)",
+          "description": "Strengths and weaknesses of Stalin and rivals (Trotsky, Kamenev, Zinoviev, Bukharin); reasons Stalin emerged as leader including removal of rivals (1924–28).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14j",
+          "Specification_section_sub": "30 Key topic 3.2",
+          "Sub_topic_name": "Terror and purges in the 1930s",
+          "description": "Reasons for, nature of and consequences of purges including purges of armed forces; work of NKVD; use of labour camps and conditions; reasons for and importance of show trials (1936–1938).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14k",
+          "Specification_section_sub": "30 Key topic 3.3",
+          "Sub_topic_name": "Propaganda, censorship and the 1936 Constitution",
+          "description": "Official culture and socialist realism; control of education and religion; media censorship; new Constitution of 1936.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14l",
+          "Specification_section_sub": "30 Key topic 3.4",
+          "Sub_topic_name": "Cult of Stalin",
+          "description": "Meaning of the Cult of Stalin and reasons for introduction; how the cult was achieved.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14m",
+          "Specification_section_sub": "30 Key topic 4.1",
+          "Sub_topic_name": "Collectivisation and agriculture",
+          "description": "Stalin’s reasons for agricultural change including problems of NEP; organisation of collectives, mechanisation, opposition and attack on kulaks; famine in Ukraine; successes and failures of collectivisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14n",
+          "Specification_section_sub": "30 Key topic 4.2",
+          "Sub_topic_name": "Industrialisation and Five-Year Plans",
+          "description": "Motives for rapid industrialisation including NEP failings; Gosplan, Five-Year Plans and Stakhanovite Movement; successes and failures of industrialisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14o",
+          "Specification_section_sub": "30 Key topic 4.3",
+          "Sub_topic_name": "Life in the Soviet Union",
+          "description": "Living and working conditions in towns and countryside; differing experiences of social groups.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14p",
+          "Specification_section_sub": "30 Key topic 4.4",
+          "Sub_topic_name": "Women and ethnic minorities",
+          "description": "Changes in family life and employment and political position of women; reasons for and features of persecution of ethnic minorities.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "Paper 3 (1HI0/31)",
+      "Strand": "Paper 3: Modern depth study",
+      "Topic_name": "Weimar and Nazi Germany, 1918–39",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "31 Key topic 1.1",
+          "Sub_topic_name": "Origins of the Weimar Republic and Constitution",
+          "description": "Situation in Germany at end of First World War: political unrest, abdication of Kaiser, armistice and new republic; strengths and weaknesses of Weimar Constitution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "31 Key topic 1.2",
+          "Sub_topic_name": "Early challenges (1919–23): Versailles, unrest, coups, hyperinflation, Ruhr",
+          "description": "Reasons for early unpopularity including ‘stab in the back’ theory and key terms of Treaty of Versailles; challenges from Left and Right: Spartacists, Freikorps, Kapp Putsch; challenges of 1923: hyperinflation and reasons for/effects of French occupation of the Ruhr.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "31 Key topic 1.3",
+          "Sub_topic_name": "Golden Years (1924–29): economic recovery and foreign policy",
+          "description": "Reasons for economic recovery including Stresemann, Rentenmark, Dawes and Young Plans, American loans/investment; Stresemann’s achievements and international acceptance via Locarno Pact and joining League of Nations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "31 Key topic 1.4",
+          "Sub_topic_name": "Weimar society and culture (1924–29)",
+          "description": "Changes in standard of living; changes in position of women in work, politics and leisure; cultural changes including architecture, art and cinema.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15e",
+          "Specification_section_sub": "31 Key topic 2.1",
+          "Sub_topic_name": "Early Nazi Party development (1919–22)",
+          "description": "Hitler’s early career: joining German Workers’ Party and setting up Nazi Party (1919–20); Twenty-Five Point Programme; role of SA.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15f",
+          "Specification_section_sub": "31 Key topic 2.2",
+          "Sub_topic_name": "Munich Putsch and rebuilding the party (1923–28)",
+          "description": "Reasons for, events and consequences of Munich Putsch; Mein Kampf; reasons for limited Nazi support (1924–28); party reorganisation including Bamberg Conference (1926).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15g",
+          "Specification_section_sub": "31 Key topic 2.3",
+          "Sub_topic_name": "Nazi support grows (1929–32)",
+          "description": "Growth of unemployment: causes and impact; growth of support for Communist Party; reasons for growth in Nazi support including appeal of Hitler/Nazis, effects of propaganda and work of SA.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15h",
+          "Specification_section_sub": "31 Key topic 2.4",
+          "Sub_topic_name": "Hitler becomes Chancellor (1932–33)",
+          "description": "Presidential and Reichstag elections of 1932; reasons Hitler became Chancellor in 1933 including roles of Hindenburg and von Papen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15i",
+          "Specification_section_sub": "31 Key topic 3.1",
+          "Sub_topic_name": "Creating a dictatorship (1933–34)",
+          "description": "Reichstag Fire; Enabling Act; banning of other parties and trade unions; threat from Röhm and SA and Night of the Long Knives; death of Hindenburg; Hitler becomes Führer; army oath of allegiance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15j",
+          "Specification_section_sub": "31 Key topic 3.2",
+          "Sub_topic_name": "Police state: Gestapo, SS, camps, legal control",
+          "description": "Role of Gestapo, SS and concentration camps; Nazi control of legal system.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15k",
+          "Specification_section_sub": "31 Key topic 3.3",
+          "Sub_topic_name": "Propaganda and control of attitudes",
+          "description": "Goebbels and Ministry of Propaganda: censorship; Nazi use of media, rallies and sport including Berlin Olympics (1936); Nazi control of culture and arts including art, architecture, literature, film; Nazi attempts to control Catholic and Protestant Churches including Concordat and Reich Church.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15l",
+          "Specification_section_sub": "31 Key topic 3.4",
+          "Sub_topic_name": "Opposition, resistance and conformity",
+          "description": "Extent of support for Nazi regime; opposition from Churches including Pastor Niemöller; opposition from young including Swing Youth and Edelweiss Pirates.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15m",
+          "Specification_section_sub": "31 Key topic 4.1",
+          "Sub_topic_name": "Women and the family in Nazi Germany",
+          "description": "Nazi views on women and the family; Nazi policies towards women including marriage/family, employment and appearance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15n",
+          "Specification_section_sub": "31 Key topic 4.2",
+          "Sub_topic_name": "Youth and education",
+          "description": "Nazi aims and policies towards young people including Hitler Youth and League of German Maidens; Nazi control through education including curriculum and teachers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15o",
+          "Specification_section_sub": "31 Key topic 4.3",
+          "Sub_topic_name": "Employment and living standards",
+          "description": "Nazi policies to reduce unemployment including labour service, autobahns, rearmament and invisible unemployment; changes in standard of living (especially workers); Labour Front; Strength Through Joy; Beauty of Labour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15p",
+          "Specification_section_sub": "31 Key topic 4.4",
+          "Sub_topic_name": "Persecution of minorities (including Jews)",
+          "description": "Nazi racial beliefs and policies and treatment of minorities: Slavs, Roma and Sinti, homosexuals, people with disabilities; persecution of Jews including boycott of Jewish shops/businesses (1933), Nuremberg Laws and Kristallnacht.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "Paper 3 (1HI0/32)",
+      "Strand": "Paper 3: Modern depth study",
+      "Topic_name": "Mao’s China, 1945–76",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "32 Key topic 1.1",
+          "Sub_topic_name": "Civil War (1945–49) and CCP victory",
+          "description": "Relative strengths and weaknesses of CCP and Guomindang at start of Civil War; reasons for success of Mao and CCP including leadership, military factors, and unrest in towns and cities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "32 Key topic 1.2",
+          "Sub_topic_name": "Communist rule and Mao’s position",
+          "description": "Ideology and role of Mao; reasons for Mao’s dominant position; role of CCP in government including new mass party membership and democratic centralism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16c",
+          "Specification_section_sub": "32 Key topic 1.3",
+          "Sub_topic_name": "Consolidating power (1951–52): terror and ‘antis’ movements",
+          "description": "Use of terror against opponents of communist rule; ‘three antis’ and ‘five antis’ movements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16d",
+          "Specification_section_sub": "32 Key topic 1.4",
+          "Sub_topic_name": "Hundred Flowers campaign and Anti-Rightist purge",
+          "description": "Mao’s reasons for Hundred Flowers campaign (1956–57); key features including criticism and Mao’s reaction; results including the ‘Anti-Rightist’ purge.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16e",
+          "Specification_section_sub": "32 Key topic 2.1",
+          "Sub_topic_name": "Agriculture (1949–57): land reform and collectivisation",
+          "description": "Reasons for and features of attacks on landlordism and redistribution of land; moves towards agricultural cooperation; reasons for change from voluntary to enforced collectivisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16f",
+          "Specification_section_sub": "32 Key topic 2.2",
+          "Sub_topic_name": "Industry and First Five-Year Plan (1953–57)",
+          "description": "Reasons for and targets of first Five-Year Plan; significance of USSR financial and technical support; successes and failures of first Five-Year Plan.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16g",
+          "Specification_section_sub": "32 Key topic 2.3",
+          "Sub_topic_name": "Great Leap Forward (1958–62): communes and famine",
+          "description": "Mao’s reasons for second Five-Year Plan (Great Leap Forward), 1958–62; successes and failures and reasons for failures; importance of Lushan Conference (1959); organisation of the commune (communal living, abolition of private farming) and significance of Lysenkoism; causes and impact of Great Famine (1958–62).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16h",
+          "Specification_section_sub": "32 Key topic 2.4",
+          "Sub_topic_name": "Economic reform (1962–65): Liu Shaoqi and Deng Xiaoping",
+          "description": "Reasons for restoration of private farming under Liu Shaoqi and Deng Xiaoping; reasons for and features of economic reform (1962–65) under Liu and Deng.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16i",
+          "Specification_section_sub": "32 Key topic 3.1",
+          "Sub_topic_name": "Reasons for the Cultural Revolution",
+          "description": "Power struggle: Mao, Liu Shaoqi and Deng Xiaoping; purification of communism including Socialist Education Movement and reform of education.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16j",
+          "Specification_section_sub": "32 Key topic 3.2",
+          "Sub_topic_name": "Red Guards and Red Terror",
+          "description": "Mao’s hold on young people including mass rallies (1966); Jiang Qing and attack on CCP; Red Guard attacks on ‘four olds’ and CCP; growth of anarchy, use of terror and cultural destruction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16k",
+          "Specification_section_sub": "32 Key topic 3.3",
+          "Sub_topic_name": "Effects of the Cultural Revolution (political, social, economic)",
+          "description": "Political effects: purging of CCP, Liu Shaoqi and Deng Xiaoping; rise and fall of Lin Biao; social effects including impact on education; economic effects including changes in industry, removal of technicians, move to countryside and impact on farming.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16l",
+          "Specification_section_sub": "32 Key topic 3.4",
+          "Sub_topic_name": "End of the Cultural Revolution (1968–76) and succession",
+          "description": "Reasons for end of Red Guards and restoration of order by PLA including ‘Up to the mountains and down to the villages’ campaign; return to power of Deng Xiaoping and increased influence of Zhou Enlai; rise and fall of the ‘Gang of Four’; death of Mao.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16m",
+          "Specification_section_sub": "32 Key topic 4.1",
+          "Sub_topic_name": "Communist control: propaganda, censorship and labour camps",
+          "description": "Propaganda and censorship and significance of ‘cult of Mao’; thought control and development of ‘Reform Through Labour’ system.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16n",
+          "Specification_section_sub": "32 Key topic 4.2",
+          "Sub_topic_name": "Family life and women under Mao",
+          "description": "Changes in family life in towns and countryside; impact of collectivisation and communes; reasons for changes in status of women; significance of ending foot binding and Marriage Law (1950).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16o",
+          "Specification_section_sub": "32 Key topic 4.3",
+          "Sub_topic_name": "Education and health",
+          "description": "Reasons for changes in education; growth in literacy and significance of Pinyin; collapse of education after 1966; reasons for changes in health provision; significance of barefoot doctors; successes and failures of healthcare reform.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16p",
+          "Specification_section_sub": "32 Key topic 4.4",
+          "Sub_topic_name": "Cultural change and attacks on traditions and religions",
+          "description": "Reasons for attacks on traditional culture; imposition of revolutionary art and culture and role of Jiang Qing; reasons for attacks on Buddhism, Confucianism, Christianity, Islam and ancestor worship.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "Paper 3 (1HI0/33)",
+      "Strand": "Paper 3: Modern depth study",
+      "Topic_name": "The USA, 1954–75: conflict at home and abroad",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "33 Key topic 1.1",
+          "Sub_topic_name": "Black Americans in early 1950s: segregation and civil rights groups",
+          "description": "Segregation, discrimination and voting rights in Southern states; work of civil rights organisations including NAACP and CORE.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "33 Key topic 1.2",
+          "Sub_topic_name": "Education desegregation: Brown v. Topeka and Little Rock",
+          "description": "Reasons for, key features and significance of Brown v. Topeka (1954); reasons for, key features and significance of events at Little Rock High School (1957).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "33 Key topic 1.3",
+          "Sub_topic_name": "Montgomery Bus Boycott and rise of MLK",
+          "description": "Causes and events of Montgomery Bus Boycott and significance of Rosa Parks; reasons for success and importance including Supreme Court ruling; Civil Rights Act (1957); significance of Martin Luther King’s leadership and setting up of SCLC.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "33 Key topic 1.4",
+          "Sub_topic_name": "Opposition to civil rights (KKK and segregationists)",
+          "description": "Ku Klux Klan and violence including murder of Emmet Till (1955); opposition to desegregation in South including ‘Dixiecrats’ and White Citizens’ Councils.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17e",
+          "Specification_section_sub": "33 Key topic 2.1",
+          "Sub_topic_name": "Direct action (1960–62): sit-ins, Freedom Riders, Meredith",
+          "description": "Significance of Greensboro and sit-in movement; reasons for, key features and significance of Freedom Riders including KKK violence and Anniston bomb (1961); James Meredith case (1962).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17f",
+          "Specification_section_sub": "33 Key topic 2.2",
+          "Sub_topic_name": "Peaceful protests and legislation (1963–65)",
+          "description": "King and peace marches of 1963 in Birmingham and Washington; Freedom Summer and Mississippi murders; impact of peaceful protest and roles of Kennedy and Johnson in passage of Civil Rights Act (1964); Selma and Voting Rights Act (1965).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17g",
+          "Specification_section_sub": "33 Key topic 2.3",
+          "Sub_topic_name": "Malcolm X and Black Power (1963–70)",
+          "description": "Malcolm X: beliefs, methods, involvement with Black Muslims; later change of attitude and assassination; reasons for emergence of Black Power; significance of Stokely Carmichael and 1968 Mexico Olympics; methods and achievements of Black Panther movement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17h",
+          "Specification_section_sub": "33 Key topic 2.4",
+          "Sub_topic_name": "Civil rights outcomes (1965–75): riots, Kerner, King’s later campaigns",
+          "description": "Riots of 1965–67 and Kerner Report (1968); King’s campaign in the North; assassination of Martin Luther King and impact; extent of progress in civil rights by 1975.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17i",
+          "Specification_section_sub": "33 Key topic 3.1",
+          "Sub_topic_name": "Reasons for US involvement in Vietnam (1954–63)",
+          "description": "Reasons for greater involvement under Eisenhower including domino theory and weaknesses of Diem government; greater involvement under Kennedy including overthrow of Diem and Strategic Hamlet Program.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17j",
+          "Specification_section_sub": "33 Key topic 3.2",
+          "Sub_topic_name": "Escalation under Johnson",
+          "description": "Reasons for escalation and increased US involvement including increasing Vietcong threat and Gulf of Tonkin incident (1964).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17k",
+          "Specification_section_sub": "33 Key topic 3.3",
+          "Sub_topic_name": "Nature of conflict (1964–68): guerrilla war, US tactics, Tet",
+          "description": "Vietcong guerrilla tactics; US methods including Search and Destroy, Operation Rolling Thunder and chemical weapons; key features and significance of Tet Offensive (1968).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17l",
+          "Specification_section_sub": "33 Key topic 3.4",
+          "Sub_topic_name": "Nixon era (1969–73): Vietnamisation and widening the war",
+          "description": "Key features of Vietnamisation and reasons for failure; Nixon Doctrine and withdrawal of US troops; attacks on Cambodia (1970) and Laos (1971) and bombing of North Vietnam (1972).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17m",
+          "Specification_section_sub": "33 Key topic 4.1",
+          "Sub_topic_name": "Opposition to the Vietnam War",
+          "description": "Reasons for growth of opposition including student movement, TV/media coverage and draft system; public reaction to My Lai Massacre (1968) and trial of Lt. Calley; Kent State University shootings (1970).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17n",
+          "Specification_section_sub": "33 Key topic 4.2",
+          "Sub_topic_name": "Support for the war",
+          "description": "Reasons for support including fear of communism; ‘hard hats’ and ‘silent majority’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17o",
+          "Specification_section_sub": "33 Key topic 4.3",
+          "Sub_topic_name": "Peace process and end of US involvement (1972–75)",
+          "description": "Reasons for and key features of peace negotiations (1972–73); significance of Paris Peace Agreement (1973); economic and human costs of war for USA.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17p",
+          "Specification_section_sub": "33 Key topic 4.4",
+          "Sub_topic_name": "Reasons for US failure in Vietnam",
+          "description": "Strengths of North Vietnam including significance of Russian and Chinese support, Vietcong tactics and Ho Chi Minh Trail; weaknesses of US armed forces and failure of US tactics; impact of opposition to war in USA.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "3 Assessment information",
+      "Strand": "Assessment and Administration",
+      "Topic_name": "Assessment information",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "Paper 1 assessment",
+          "Sub_topic_name": "Paper 1 structure and assessed skills",
+          "description": "Paper 1 (1HI0/10–13): written exam 1h20, 52 marks; Section A historic environment (16 marks): Q1(a) and Q1(b) describe features (AO1); Q2(a) usefulness of two contemporary sources for a specified enquiry using contextual knowledge (AO3); Q2(b) suggest a follow-up enquiry relating to one source (AO3). Section B thematic study (36 marks, AO1/AO2): Q3 similarity/difference over time across sections (normally at least a century); Q4 process of change (why rapid/slow change or continuity; normally at least a century); Q5/6 judgement questions spanning at least a complete period or two centuries (whichever shorter), may assess extent/nature of change, patterns/turning points (significance), causation, or consequences; up to 4 SPaG marks in Q5/6.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "Paper 2 assessment",
+          "Sub_topic_name": "Paper 2 structure and assessed skills",
+          "description": "Paper 2 (1HI0/2A–2W): written exam 1h50, 64 marks; Booklet P (Period study) 32 marks (AO1/AO2): Q1(a) and Q1(b) consequence; Q2 analytical narrative (describe and analyse connections explaining unfolding events; mix of causation/consequence/change); Q3 choose 2 of 3 parts on importance/significance in terms of difference made (consequence/significance). Booklet B (British depth study) 32 marks: Q1(a) and Q1(b) describe features (AO1); Q2 causation (AO1/AO2); Q3/4 judgement question (AO1/AO2) possibly similarity/difference/change/continuity/cause/consequence/significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18c",
+          "Specification_section_sub": "Paper 3 assessment",
+          "Sub_topic_name": "Paper 3 structure and assessed skills (sources & interpretations)",
+          "description": "Paper 3 (1HI0/30–33): written exam 1h30, 52 marks; Section A 16 marks: Q1 inference from a source (AO3); Q2(a)/2(b) choose one causation question (AO1/AO2). Section B 36 marks: Q3(a) usefulness of two contemporary sources for a specified enquiry using contextual knowledge (AO3); Q3(b) explain how two later written interpretations differ (AO4); Q3(c) suggest why interpretations differ (AO4); Q3(d) evaluate one interpretation using the other and contextual knowledge (AO4) with up to 4 SPaG marks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18d",
+          "Specification_section_sub": "Assessment Objectives",
+          "Sub_topic_name": "Assessment Objectives (AO1–AO4) weightings",
+          "description": "AO1 knowledge and understanding of key features/characteristics of periods studied (35%); AO2 explain/analyse using second-order concepts (causation, consequence, similarity, difference, change, continuity, significance) (35%); AO3 analyse/evaluate/use contemporary sources to make substantiated judgements in context (15%); AO4 analyse/evaluate/make substantiated judgements about interpretations including how/why they differ in context (15%). Paper AO breakdown: Paper 1 AO1 11.25%, AO2 11.25%, AO3 7.5%; Paper 2 AO1 20%, AO2 20%; Paper 3 AO1 3.75%, AO2 3.75%, AO3 7.5%, AO4 15%.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "Appendix 1",
+      "Strand": "Assessment and Administration",
+      "Topic_name": "Codes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "Appendix 1",
+          "Sub_topic_name": "Qualification and entry codes",
+          "description": "Qualification number (QN/RQF code): 601/8092/4; subject code: 1HI0; paper codes: Paper 1 1HI0/10–13, Paper 2 1HI0/2A–2W, Paper 3 1HI0/30–33; entry code constructed from digit 1 (Paper 1 + Paper 3 combination) and digit 2 (Paper 2 combination) as specified in Appendix 1 tables.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

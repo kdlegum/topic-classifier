@@ -1,0 +1,363 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Business",
+  "Exam Board": "Edexcel",
+  "Specification": "1BS0",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "Topic 1.1",
+      "Strand": "Theme 1: Investigating small business",
+      "Topic_name": "Enterprise and entrepreneurship",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1.1",
+          "Sub_topic_name": "Dynamic nature of business (new ideas)",
+          "description": "Understand why new business ideas come about, including: changes in technology; changes in what consumers want; and products and services becoming obsolete. Understand how new business ideas come about, including: original ideas and adapting existing products/services/ideas.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1.2",
+          "Sub_topic_name": "Risk and reward",
+          "description": "Understand the impact of risk and reward on business activity. Risk includes: business failure, financial loss, lack of security. Reward includes: business success, profit, independence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.1.3",
+          "Sub_topic_name": "Business enterprise and entrepreneurship",
+          "description": "Understand the role of business enterprise and the purpose of business activity: producing goods or services; meeting customer needs; adding value (convenience, branding, quality, design, unique selling points/USPs). Understand the role of entrepreneurship: an entrepreneur organises resources, makes business decisions and takes risks.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "Topic 1.2",
+      "Strand": "Theme 1: Investigating small business",
+      "Topic_name": "Spotting a business opportunity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "1.2.1",
+          "Sub_topic_name": "Customer needs",
+          "description": "Identify and understand customer needs, including what customer needs are (price, quality, choice, convenience) and why identifying and understanding customers is important (generating sales and business survival).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "1.2.2",
+          "Sub_topic_name": "Market research (purpose, methods, data)",
+          "description": "Understand the purpose of market research: identify and understand customer needs; identify gaps in the market; reduce risk; inform business decisions. Understand methods of market research: primary research (survey, questionnaire, focus group, observation) and secondary research (internet, market reports, government reports). Understand the use of data in market research: qualitative vs quantitative data; the role of social media in collecting market research data; and the importance of reliability of market research data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "1.2.3",
+          "Sub_topic_name": "Market segmentation and market mapping",
+          "description": "Understand how businesses use market segmentation to target customers, including identifying market segments by location, demographics, lifestyle, income and age. Understand market mapping to identify a gap in the market and the competition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "1.2.4",
+          "Sub_topic_name": "Competitive environment",
+          "description": "Understand the competitive environment, including assessing competitors’ strengths and weaknesses based on price, quality, location, product range and customer service, and understanding the impact of competition on business decision making.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "Topic 1.3",
+      "Strand": "Theme 1: Investigating small business",
+      "Topic_name": "Putting a business idea into practice",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "1.3.1",
+          "Sub_topic_name": "Business aims and objectives (start-up)",
+          "description": "Understand what business aims and business objectives are. Understand aims and objectives when starting up: financial aims/objectives (survival, profit, sales, market share, financial security) and non-financial aims/objectives (social objectives, personal satisfaction, challenge, independence and control). Understand why aims and objectives differ between businesses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "1.3.2",
+          "Sub_topic_name": "Revenue, costs, profit/loss and break-even",
+          "description": "Understand the concepts and be able to calculate: revenue; fixed costs; variable costs; total costs; profit and loss; interest; break even level of output; margin of safety. Interpret break-even diagrams, including: the impact of changes in revenue and costs; identifying break-even level of output; margin of safety; and profit or loss regions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "1.3.3",
+          "Sub_topic_name": "Cash and cash flow forecasting",
+          "description": "Understand the importance of cash to a business: paying suppliers, overheads and employees; preventing insolvency/business failure; and the difference between cash and profit. Calculate and interpret cash-flow forecasts, including cash inflows, cash outflows, net cash flow, opening balances and closing balances.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "1.3.4",
+          "Sub_topic_name": "Sources of finance (small business)",
+          "description": "Understand sources of finance for a start-up or established small business, including short-term sources (overdraft, trade credit) and long-term sources (personal savings, venture capital, share capital, loans, retained profit, crowd funding).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "Topic 1.4",
+      "Strand": "Theme 1: Investigating small business",
+      "Topic_name": "Making the business effective",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "1.4.1",
+          "Sub_topic_name": "Ownership and liability (start-up)",
+          "description": "Understand the concept of limited liability, including limited vs unlimited liability and the implications for business owner(s). Understand types of business ownership for start-ups: sole trader, partnership, private limited company, including advantages and disadvantages of each. Understand the option of starting up and running a franchise operation, including advantages and disadvantages of franchising.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "1.4.2",
+          "Sub_topic_name": "Business location",
+          "description": "Understand factors influencing business location, including proximity to market, labour, materials and competitors; the nature of the business activity; and the impact of the internet on location decisions (e-commerce and/or fixed premises).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "1.4.3",
+          "Sub_topic_name": "Marketing mix (4Ps) in small business",
+          "description": "Understand what the marketing mix is and the importance of each element: price, product, promotion, place. Understand how the elements work together, including balancing the marketing mix based on the competitive environment, the impact of changing consumer needs on the marketing mix, and the impact of technology on the marketing mix (e-commerce, digital communication).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "1.4.4",
+          "Sub_topic_name": "Business plans and planning",
+          "description": "Understand the role and importance of a business plan, including identifying: the business idea; business aims and objectives; target market (market research); forecast revenue, cost and profit; cash-flow forecast; sources of finance; location; marketing mix. Understand the purpose of planning business activity, including how a business plan helps minimise risk and obtain finance.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "Topic 1.5",
+      "Strand": "Theme 1: Investigating small business",
+      "Topic_name": "Understanding external influences on business",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "1.5.1",
+          "Sub_topic_name": "Stakeholders and conflicts",
+          "description": "Understand who business stakeholders are and their different objectives, including: shareholders (owners), employees, customers, managers, suppliers, local community, pressure groups and the government. Understand how stakeholders are affected by business activity, how stakeholders impact business activity, and possible conflicts between stakeholder groups.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Technology in business (small business)",
+          "description": "Understand different types of technology used by businesses: e-commerce, social media, digital communication and payment systems. Understand how technology influences business activity in terms of sales, costs and the marketing mix.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "1.5.3",
+          "Sub_topic_name": "Legislation (consumer and employment law)",
+          "description": "Understand the purpose of legislation, including principles of consumer law (quality and consumer rights) and principles of employment law (recruitment, pay, discrimination, health and safety). Understand the impact of legislation on businesses, including cost and consequences of meeting and not meeting obligations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "1.5.4",
+          "Sub_topic_name": "Economic climate and business",
+          "description": "Understand how the economic climate impacts businesses, including: unemployment; changing levels of consumer income; inflation; changes in interest rates; government taxation; changes in exchange rates.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "1.5.5",
+          "Sub_topic_name": "Responding to external influences",
+          "description": "Understand the importance of external influences on business and possible business responses to changes in technology, legislation and the economic climate.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "Topic 2.1",
+      "Strand": "Theme 2: Building a business",
+      "Topic_name": "Growing the business",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "2.1.1",
+          "Sub_topic_name": "Business growth methods, ownership and finance",
+          "description": "Understand methods of business growth and their impact: internal (organic) growth via new products (innovation, research and development) and new markets (changing the marketing mix, taking advantage of technology and/or expanding overseas); external (inorganic) growth via merger and takeover. Understand types of business ownership for growing businesses: public limited company (plc). Understand sources of finance for growing and established businesses: internal sources (retained profit, selling assets) and external sources (loan capital, share capital, including stock market flotation for plcs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "2.1.2",
+          "Sub_topic_name": "Changing aims and objectives as businesses evolve",
+          "description": "Understand why business aims and objectives change as businesses evolve, including in response to market conditions, technology, performance, legislation and internal reasons. Understand how aims and objectives may change, including: focusing on survival or growth; entering or exiting markets; growing or reducing the workforce; increasing or decreasing product range.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "2.1.3",
+          "Sub_topic_name": "Globalisation and international trade",
+          "description": "Understand the impact of globalisation on businesses: imports (competition from overseas and buying from overseas), exports (selling to overseas markets), changing business locations and multinationals. Understand barriers to international trade: tariffs and trade blocs. Understand how businesses compete internationally: using the internet and e-commerce and changing the marketing mix to compete internationally.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "2.1.4",
+          "Sub_topic_name": "Ethics, environment and pressure groups",
+          "description": "Understand the impact of ethical considerations on business activity, including possible trade-offs between ethics and profit. Understand the impact of environmental considerations on business activity, including possible trade-offs between the environment/sustainability and profit. Understand the potential impact of pressure group activity on the marketing mix.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "Topic 2.2",
+      "Strand": "Theme 2: Building a business",
+      "Topic_name": "Making marketing decisions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "2.2.1",
+          "Sub_topic_name": "Product decisions (design mix, PLC, differentiation)",
+          "description": "Understand product decisions including the design mix (function, aesthetics, cost). Understand the product life cycle (PLC): phases of the product life cycle and extension strategies. Understand the importance of differentiating a product/service.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "2.2.2",
+          "Sub_topic_name": "Price decisions (strategies and influences)",
+          "description": "Understand pricing strategies and influences on pricing strategies, including technology, competition, market segments and the product life cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "2.2.3",
+          "Sub_topic_name": "Promotion decisions (methods and technology)",
+          "description": "Understand appropriate promotion strategies for different market segments, including advertising, sponsorship, product trials, special offers and branding. Understand the use of technology in promotion, including targeted online advertising, viral advertising via social media and e-newsletters.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "2.2.4",
+          "Sub_topic_name": "Place/distribution decisions",
+          "description": "Understand place decisions including methods of distribution through retailers and e-tailers (e-commerce).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "2.2.5",
+          "Sub_topic_name": "Integrated marketing mix and competitive advantage",
+          "description": "Understand how each element of the marketing mix can influence other elements. Use the marketing mix to build competitive advantage and understand how an integrated marketing mix can influence competitive advantage.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "Topic 2.3",
+      "Strand": "Theme 2: Building a business",
+      "Topic_name": "Making operational decisions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "2.3.1",
+          "Sub_topic_name": "Business operations and production processes",
+          "description": "Understand the purpose of business operations: producing goods and providing services. Understand production processes (job, batch, flow) and the impact of different processes on keeping productivity up and costs down while allowing for competitive prices. Understand impacts of technology on production, including balancing cost, productivity, quality and flexibility.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "2.3.2",
+          "Sub_topic_name": "Working with suppliers (stock, procurement, logistics)",
+          "description": "Understand managing stock, including interpreting bar gate stock graphs and the use of just-in-time (JIT) stock control. Understand the role of procurement, including supplier relationships (quality; delivery—cost, speed, reliability; availability; cost; trust) and the impact of logistics and supply decisions on costs, reputation and customer satisfaction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "2.3.3",
+          "Sub_topic_name": "Managing quality",
+          "description": "Understand the concept of quality and its importance in producing goods and providing services, including quality control and quality assurance. Understand how quality can allow a business to control costs and gain a competitive advantage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "2.3.4",
+          "Sub_topic_name": "Sales process and customer service",
+          "description": "Understand the sales process, including product knowledge, speed and efficiency of service, customer engagement, responses to customer feedback and post-sales service. Understand the importance of providing good customer service.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "Topic 2.4",
+      "Strand": "Theme 2: Building a business",
+      "Topic_name": "Making financial decisions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "2.4.1",
+          "Sub_topic_name": "Profit measures and investment appraisal calculations",
+          "description": "Understand and be able to calculate gross profit and net profit. Calculate and interpret: gross profit margin, net profit margin and average rate of return (ARR).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "2.4.2",
+          "Sub_topic_name": "Using data to assess performance (and limits)",
+          "description": "Use and interpret quantitative business data to support, inform and justify business decisions, including information from graphs and charts, financial data, marketing data and market data. Understand the use and limitations of financial information in understanding business performance and in making business decisions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "Topic 2.5",
+      "Strand": "Theme 2: Building a business",
+      "Topic_name": "Making human resource decisions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "2.5.1",
+          "Sub_topic_name": "Organisational structures, communication and flexible working",
+          "description": "Understand different organisational structures and when each is appropriate: hierarchical vs flat; centralised vs decentralised. Understand the importance of effective communication, including the impact of insufficient or excessive communication on efficiency and motivation and barriers to effective communication. Understand different ways of working: part-time, full-time and flexible hours; permanent, temporary and freelance contracts; and the impact of technology on ways of working (efficiency, remote working).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "2.5.2",
+          "Sub_topic_name": "Recruitment and job roles",
+          "description": "Understand different job roles and responsibilities, including directors, senior managers, supervisors/team leaders, operational staff and support staff. Understand how businesses recruit people, including documents (person specification, job description, application form, CV) and recruitment methods used to meet different business needs (internal and external recruitment).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "2.5.3",
+          "Sub_topic_name": "Training and development",
+          "description": "Understand how businesses train and develop employees, including formal and informal training, self-learning, ongoing training for all employees, target setting and performance reviews. Understand why businesses train and develop employees, including the link between training, motivation and retention and retraining to use new technology.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "2.5.4",
+          "Sub_topic_name": "Motivation (financial and non-financial)",
+          "description": "Understand the importance of motivation in the workplace for attracting employees, retaining employees and productivity. Understand how businesses motivate employees using financial methods (remuneration, bonus, commission, promotion, fringe benefits) and non-financial methods (job rotation, job enrichment, autonomy).",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1237 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Biology",
+  "Exam Board": "Edexcel",
+  "Specification": "1BI0",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "Topic 1",
+      "Strand": "Biology",
+      "Topic_name": "Key concepts in biology",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Eukaryotic and prokaryotic cell structures and functions",
+          "description": "Explain how the sub-cellular structures of eukaryotic and prokaryotic cells are related to their functions, including: animal cells – nucleus, cell membrane, mitochondria and ribosomes; plant cells – nucleus, cell membrane, cell wall, chloroplasts, mitochondria, vacuole and ribosomes; bacteria (prokaryotes) – chromosomal DNA, plasmid DNA, cell membrane, ribosomes and flagella.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Specialised cells and adaptations",
+          "description": "Describe how specialised cells are adapted to their function, including: sperm cells – acrosome, haploid nucleus, mitochondria and tail; egg cells – nutrients in the cytoplasm, haploid nucleus and changes in the cell membrane after fertilisation; ciliated epithelial cells (adaptations linked to movement of substances).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.3",
+          "Sub_topic_name": "Microscope technology and cell ultrastructure",
+          "description": "Explain how changes in microscope technology, including electron microscopy, have enabled us to see cell structures and organelles with more clarity and detail than in the past and increased our understanding of the role of sub-cellular structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1.4",
+          "Sub_topic_name": "Number, size and scale (cells)",
+          "description": "Demonstrate an understanding of number, size and scale, including the use of estimations, and explain when estimations should be used (e.g. for cells and sub-cellular structures).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "1.5",
+          "Sub_topic_name": "Cell measurement units and standard form",
+          "description": "Demonstrate an understanding of the relationship between quantitative units in relation to cells, including: milli (10^−3), micro (10^−6), nano (10^−9), pico (10^−12), and calculations with numbers written in standard form.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "1.6",
+          "Sub_topic_name": "Core Practical 1.6: Microscopy, magnification and biological drawings",
+          "description": "Core Practical: Investigate biological specimens using microscopes, including magnification calculations and labelled scientific drawings from observations. Includes safe/accurate use of a light microscope, preparing slides, identifying visible structures, and calculating magnification (e.g. magnification = image size ÷ actual size) and producing clear labelled drawings.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "1.7",
+          "Sub_topic_name": "Enzyme action and specificity (active site)",
+          "description": "Explain the mechanism of enzyme action including the active site model and enzyme specificity (substrate fits active site; enzymes catalyse particular reactions due to active-site shape).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "1.8",
+          "Sub_topic_name": "Enzyme denaturation",
+          "description": "Explain how enzymes can be denatured due to changes in the shape of the active site (e.g. caused by temperature/pH affecting protein structure).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "1.9",
+          "Sub_topic_name": "Factors affecting enzyme activity",
+          "description": "Explain the effects of temperature, substrate concentration and pH on enzyme activity (rate changes; optimum conditions; denaturation at extremes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "1.10",
+          "Sub_topic_name": "Core Practical 1.10: Effect of pH on enzyme activity",
+          "description": "Core Practical: Investigate the effect of pH on enzyme activity. Typically uses amylase at different pH values to break down starch; monitor reaction by iodine test for presence of starch using continuous sampling; maintain constant temperature using a water bath (e.g. Bunsen burner + beaker). Control variables appropriately and record time/rate data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "1.11",
+          "Sub_topic_name": "Rate calculations for enzyme activity",
+          "description": "Demonstrate an understanding of rate calculations for enzyme activity (calculate rates from time/amount change; interpret units and compare rates under different conditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "1.12",
+          "Sub_topic_name": "Enzymes as biological catalysts in synthesis and breakdown",
+          "description": "Explain the importance of enzymes as biological catalysts in the synthesis of carbohydrates, proteins and lipids and their breakdown into sugars, amino acids and fatty acids and glycerol (digestive and metabolic contexts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "1.13B",
+          "Sub_topic_name": "Core Practical 1.13B: Food tests for biological molecules",
+          "description": "Core Practical (Biology-only): Investigate the use of chemical reagents to identify starch, reducing sugars, proteins and fats. Includes: starch test with iodine solution; reducing sugars with Benedict’s solution (heat in water bath); proteins via Biuret test (add potassium hydroxide then copper sulfate); lipids via emulsion test.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "1.14B",
+          "Sub_topic_name": "Calorimetry and energy in food",
+          "description": "(Biology-only) Explain how the energy contained in food can be measured using calorimetry (burning food to heat water; temperature change; energy calculations and limitations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "1.15",
+          "Sub_topic_name": "Transport in and out of cells",
+          "description": "Explain how substances are transported into and out of cells, including diffusion, osmosis and active transport (concentration gradients; selective permeability; energy use in active transport).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "1.16",
+          "Sub_topic_name": "Core Practical 1.16: Osmosis in potatoes",
+          "description": "Core Practical: Investigate osmosis in potatoes. Add a known mass of potato to sucrose solutions of different concentrations, leave for a set time, record final mass, and calculate percentage change in mass; interpret water movement between potato and solution; determine approximate sucrose concentration in potato; emphasise control of variables.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "1.17",
+          "Sub_topic_name": "Percentage change in mass (osmosis)",
+          "description": "Calculate percentage gain and loss of mass in osmosis (e.g. % change = (final mass − initial mass) ÷ initial mass × 100) and interpret results in terms of net water movement and concentration differences.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "Topic 2",
+      "Strand": "Biology",
+      "Topic_name": "Cells and control",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Mitosis stages in the cell cycle",
+          "description": "Describe mitosis as part of the cell cycle, including the stages interphase, prophase, metaphase, anaphase, telophase, and cytokinesis (sequence and purpose within cell division).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Importance of mitosis",
+          "description": "Describe the importance of mitosis in growth, repair and asexual reproduction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "2.3",
+          "Sub_topic_name": "Daughter cells, chromosomes and ploidy",
+          "description": "Describe the division of a cell by mitosis as the production of two daughter cells, each with identical sets of chromosomes in the nucleus to the parent cell, resulting in two genetically identical diploid body cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "2.4",
+          "Sub_topic_name": "Cancer and uncontrolled cell division",
+          "description": "Describe cancer as the result of changes in cells that lead to uncontrolled cell division.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "2.5",
+          "Sub_topic_name": "Growth in organisms (animals vs plants)",
+          "description": "Describe growth in organisms, including: in animals—cell division and differentiation; in plants—cell division, elongation and differentiation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2.6",
+          "Sub_topic_name": "Cell differentiation and specialised cells",
+          "description": "Explain the importance of cell differentiation in the development of specialised cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2.7",
+          "Sub_topic_name": "Percentile charts and monitoring growth",
+          "description": "Demonstrate an understanding of the use of percentile charts to monitor growth (interpret percentiles; compare an individual to population distributions; track change over time).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2.8",
+          "Sub_topic_name": "Stem cells and meristems",
+          "description": "Describe the function of embryonic stem cells, stem cells in animals, and meristems in plants (ability to divide and differentiate; roles in growth/repair).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2.9",
+          "Sub_topic_name": "Stem cells in medicine: benefits and risks",
+          "description": "Discuss the potential benefits and risks associated with the use of stem cells in medicine (e.g. treatment of disease/injury vs ethical issues, immune rejection, tumour risk).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2.10B",
+          "Sub_topic_name": "Brain structures and functions",
+          "description": "(Biology-only) Describe the structures and functions of the brain including the cerebellum, cerebral hemispheres and medulla oblongata.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2.11B",
+          "Sub_topic_name": "Brain scanning (CT and PET) to investigate function",
+          "description": "(Biology-only) Explain how the difficulties of accessing brain tissue inside the skull can be overcome by using CT scanning and PET scanning to investigate brain function (non-invasive imaging; functional information).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "2.12B",
+          "Sub_topic_name": "Limitations of treating nervous system damage",
+          "description": "(Biology-only) Explain some limitations in treating damage and disease in the brain and other parts of the nervous system, including spinal injuries and brain tumours.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "2.13",
+          "Sub_topic_name": "Neurones and synapses (impulse transmission)",
+          "description": "Explain the structure and function of sensory receptors, sensory neurones, relay neurones in the CNS, motor neurones and synapses in the transmission of electrical impulses, including the axon, dendron, myelin sheath and the role of neurotransmitters.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "2.14",
+          "Sub_topic_name": "Reflex arc",
+          "description": "Explain the structure and function of a reflex arc including sensory, relay and motor neurones (rapid, automatic responses; pathway through CNS).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "2.15B",
+          "Sub_topic_name": "Eye structure and function (cornea, lens, iris, retina)",
+          "description": "(Biology-only) Explain the structure and function of the eye as a sensory receptor including the role of: the cornea and lens; the iris; rod and cone cells in the retina.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "2.16B",
+          "Sub_topic_name": "Eye defects",
+          "description": "(Biology-only) Describe defects of the eye including cataracts, long-sightedness, short-sightedness and colour blindness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "2.17B",
+          "Sub_topic_name": "Correcting vision defects",
+          "description": "(Biology-only) Explain how cataracts, long-sightedness and short-sightedness can be corrected (e.g. lens replacement for cataracts; corrective lenses).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "Topic 3",
+      "Strand": "Biology",
+      "Topic_name": "Genetics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.1B",
+          "Sub_topic_name": "Asexual reproduction: pros and cons",
+          "description": "(Biology-only) Explain advantages and disadvantages of asexual reproduction, including: no need to find a mate; rapid reproductive cycle; but no variation in the population.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.2B",
+          "Sub_topic_name": "Sexual reproduction: pros and cons",
+          "description": "(Biology-only) Explain advantages and disadvantages of sexual reproduction, including: variation in the population; but the requirement to find a mate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Meiosis and formation of gametes",
+          "description": "Explain the role of meiotic cell division, including production of four daughter cells, each with half the number of chromosomes, resulting in genetically different haploid gametes. Note: the stages of meiosis are not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.4",
+          "Sub_topic_name": "DNA structure and nucleotides",
+          "description": "Describe DNA as a polymer made up of: two strands coiled to form a double helix; strands linked by complementary base pairs joined by weak hydrogen bonds; nucleotides consisting of a sugar and phosphate group with one of four different bases attached to the sugar.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Genome and gene",
+          "description": "Describe the genome as the entire DNA of an organism, and a gene as a section of a DNA molecule that codes for a specific protein.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.6",
+          "Sub_topic_name": "DNA extraction (fruit)",
+          "description": "Explain how DNA can be extracted from fruit (cell disruption, detergent, filtration, precipitation; practical understanding of steps).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.7B",
+          "Sub_topic_name": "Base sequence to protein (amino acids and folding)",
+          "description": "(Biology-only) Explain how the order of bases in a section of DNA decides the order of amino acids in the protein, and that these fold to produce specifically shaped proteins such as enzymes (structure–function).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.8B",
+          "Sub_topic_name": "Protein synthesis: transcription and translation",
+          "description": "(Biology-only) Describe the stages of protein synthesis, including transcription and translation: RNA polymerase binds to non-coding DNA located in front of a gene; RNA polymerase produces a complementary mRNA strand from the coding DNA of the gene; attachment of mRNA to ribosome; coding by triplets of bases (codons) in mRNA for specific amino acids; transfer of amino acids to ribosome by tRNA; linking of amino acids to form polypeptides.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.9B",
+          "Sub_topic_name": "Variants in non-coding DNA and phenotype",
+          "description": "(Biology-only) Describe how genetic variants in the non-coding DNA of a gene can affect phenotype by influencing the binding of RNA polymerase and altering the quantity of protein produced.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3.10B",
+          "Sub_topic_name": "Variants in coding DNA and phenotype",
+          "description": "(Biology-only) Describe how genetic variants in the coding DNA of a gene can affect phenotype by altering the sequence of amino acids and therefore the activity of the protein produced.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3.11B",
+          "Sub_topic_name": "Gregor Mendel and early genetics",
+          "description": "(Biology-only) Describe the work of Gregor Mendel in discovering the basis of genetics and recognise the difficulties of understanding inheritance before the mechanism was discovered.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "3.12",
+          "Sub_topic_name": "Alleles and inherited differences",
+          "description": "Explain why there are differences in inherited characteristics as a result of alleles (different versions of genes; effects on phenotype).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "3.13",
+          "Sub_topic_name": "Key genetics terminology",
+          "description": "Explain the terms: chromosome, gene, allele, dominant, recessive, homozygous, heterozygous, genotype, phenotype, gamete and zygote.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3n",
+          "Specification_section_sub": "3.14",
+          "Sub_topic_name": "Monohybrid inheritance (Punnett squares and pedigrees)",
+          "description": "Explain monohybrid inheritance using genetic diagrams, Punnett squares and family pedigrees (dominant vs recessive alleles; genotype/phenotype prediction).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3o",
+          "Specification_section_sub": "3.15",
+          "Sub_topic_name": "Sex determination (XX/XY)",
+          "description": "Describe how the sex of offspring is determined at fertilisation, using genetic diagrams (inheritance of sex chromosomes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3p",
+          "Specification_section_sub": "3.16",
+          "Sub_topic_name": "Genetic cross outcomes (probability, ratios, percentages)",
+          "description": "Calculate and analyse outcomes (using probabilities, ratios and percentages) from monohybrid crosses and pedigree analysis for dominant and recessive traits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3q",
+          "Specification_section_sub": "3.17B",
+          "Sub_topic_name": "ABO blood groups (codominance and multiple alleles)",
+          "description": "(Biology-only) Describe the inheritance of the ABO blood groups with reference to codominance and multiple alleles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3r",
+          "Specification_section_sub": "3.18B",
+          "Sub_topic_name": "Sex-linked genetic disorders",
+          "description": "(Biology-only) Explain how sex-linked genetic disorders are inherited (genes on sex chromosomes; typical inheritance patterns).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3s",
+          "Specification_section_sub": "3.19",
+          "Sub_topic_name": "Polygenic inheritance",
+          "description": "State that most phenotypic features are the result of multiple genes rather than single gene inheritance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3t",
+          "Specification_section_sub": "3.20",
+          "Sub_topic_name": "Variation: genetic and environmental causes",
+          "description": "Describe the causes of variation that influence phenotype, including: genetic variation (different characteristics due to mutation and sexual reproduction) and environmental variation (different characteristics caused by an organism’s environment; acquired characteristics).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3u",
+          "Specification_section_sub": "3.21",
+          "Sub_topic_name": "Human Genome Project: outcomes and applications",
+          "description": "Discuss the outcomes of the Human Genome Project and its potential applications within medicine (gene identification, disease risk, personalised medicine; ethical/social considerations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3v",
+          "Specification_section_sub": "3.22",
+          "Sub_topic_name": "Genetic variation and mutations in populations",
+          "description": "State that there is usually extensive genetic variation within a population of a species and that these arise through mutations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3w",
+          "Specification_section_sub": "3.23",
+          "Sub_topic_name": "Mutation effects on phenotype",
+          "description": "State that most genetic mutations have no effect on the phenotype, some mutations have a small effect on the phenotype and, rarely, a single mutation will significantly affect the phenotype.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "Topic 4",
+      "Strand": "Biology",
+      "Topic_name": "Natural selection and genetic modification",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.1B",
+          "Sub_topic_name": "Darwin and Wallace: development of natural selection theory",
+          "description": "(Biology-only) Describe the work of Charles Darwin and Alfred Wallace in the development of the theory of evolution by natural selection and explain the impact of these ideas on modern biology.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Darwin’s theory of evolution by natural selection",
+          "description": "Explain Charles Darwin’s theory of evolution by natural selection (variation, competition, selection, inheritance, change in allele frequency over generations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.3",
+          "Sub_topic_name": "Resistance and natural selection (antibiotic resistance)",
+          "description": "Explain how the emergence of resistant organisms supports Charles Darwin’s theory of evolution, including antibiotic resistance in bacteria (selection pressure; survival and reproduction of resistant variants).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "Fossil evidence for human evolution",
+          "description": "Describe the evidence for human evolution, based on fossils, including: Ardi from 4.4 million years ago; Lucy from 3.2 million years ago; Richard Leakey’s discovery of fossils from 1.6 million years ago. Include interpretation of dating/time scales and what fossils show about evolutionary change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.5",
+          "Sub_topic_name": "Stone tools as evidence for human evolution",
+          "description": "Describe the evidence for human evolution based on stone tools, including: the development of stone tools over time; how these can be dated from their environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.6B",
+          "Sub_topic_name": "Pentadactyl limb and evolutionary relationships",
+          "description": "(Biology-only) Describe how the anatomy of the pentadactyl limb provides scientists with evidence for evolution (homologous structures; common ancestry; divergent evolution).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.7",
+          "Sub_topic_name": "Classification: three domains vs five kingdoms",
+          "description": "Describe how genetic analysis has led to the suggestion of the three domains rather than the five kingdoms classification method (molecular evidence; phylogeny).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.8",
+          "Sub_topic_name": "Selective breeding and its impacts",
+          "description": "Explain selective breeding and its impact on food plants and domesticated animals (selection of desired phenotypes; effects on genetic variation; benefits and drawbacks).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "4.9B",
+          "Sub_topic_name": "Tissue culture: process and advantages",
+          "description": "(Biology-only) Describe the process of tissue culture and its advantages in medical research and plant breeding programmes (cloning plants; rapid production; disease-free stock; research uses).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "4.10",
+          "Sub_topic_name": "Genetic engineering: definition and purpose",
+          "description": "Describe genetic engineering as a process which involves modifying the genome of an organism to introduce desirable characteristics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "4.11",
+          "Sub_topic_name": "Genetic engineering: main stages and tools",
+          "description": "Describe the main stages of genetic engineering including the use of: restriction enzymes; ligase; sticky ends; vectors (e.g. plasmids/viruses) to transfer genes into cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "4.12B",
+          "Sub_topic_name": "GM organisms: pros and cons (Bt crops)",
+          "description": "(Biology-only) Explain advantages and disadvantages of genetic engineering to produce GM organisms including crop plants, including introduction of genes for insect resistance from Bacillus thuringiensis into crop plants (yield, pesticide use, resistance, ecological and economic issues).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "4.13B",
+          "Sub_topic_name": "Agricultural solutions: fertilisers and biological control",
+          "description": "(Biology-only) Explain advantages and disadvantages of agricultural solutions to the demands of a growing human population, including use of fertilisers and biological control (productivity vs environmental impacts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "4.14",
+          "Sub_topic_name": "Evaluating genetic engineering and selective breeding (ethics and risk)",
+          "description": "Evaluate the benefits and risks of genetic engineering and selective breeding in modern agriculture and medicine, including practical and ethical implications (safety, biodiversity, ownership, consent, long-term effects).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "Topic 5",
+      "Strand": "Biology",
+      "Topic_name": "Health, disease and the development of medicines",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Definition of health (WHO)",
+          "description": "Describe health as a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity, as defined by the World Health Organization (WHO).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Communicable vs non-communicable disease",
+          "description": "Describe the difference between communicable and non-communicable diseases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "Disease interactions and susceptibility",
+          "description": "Explain why the presence of one disease can lead to a higher susceptibility to other diseases (immune system compromise; co-morbidity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "5.4",
+          "Sub_topic_name": "Pathogens",
+          "description": "Describe a pathogen as a disease-causing organism, including viruses, bacteria, fungi and protists.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "5.5",
+          "Sub_topic_name": "Common infections and effects",
+          "description": "Describe some common infections, including: cholera (bacteria) causes diarrhoea; tuberculosis (bacteria) causes lung damage; Chalara ash dieback (fungi) causes leaf loss and bark lesions; malaria (protists) causes damage to blood and liver; HIV (virus) destroys white blood cells leading to AIDS; stomach ulcers caused by Helicobacter (bacteria); Ebola (virus) causes haemorrhagic fever.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "5.6",
+          "Sub_topic_name": "Transmission of pathogens and prevention",
+          "description": "Explain how pathogens are spread and how spread can be reduced or prevented, including: cholera—water; tuberculosis—airborne; Chalara ash dieback—airborne; malaria—animal vectors; stomach ulcers caused by Helicobacter—oral transmission; Ebola—body fluids.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "5.7B",
+          "Sub_topic_name": "Virus lifecycle (lytic and lysogenic)",
+          "description": "(Biology-only) Describe the lifecycle of a virus, including lysogenic and lytic pathways (integration/latency vs replication and host cell lysis).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "5.8",
+          "Sub_topic_name": "STIs: spread and prevention (Chlamydia, HIV)",
+          "description": "Explain how sexually transmitted infections (STIs) are spread and how spread can be reduced or prevented, including: Chlamydia (bacteria) and HIV (virus).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "5.9B",
+          "Sub_topic_name": "Plant defences: physical barriers",
+          "description": "(Biology-only) Describe how some plants defend themselves against attack from pests and pathogens by physical barriers, including the leaf cuticle and cell wall.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "5.10B",
+          "Sub_topic_name": "Plant defences: chemicals and medicines",
+          "description": "(Biology-only) Describe how plants defend themselves against attack from pests and pathogens by producing chemicals, some of which can be used to treat human diseases or relieve symptoms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "5.11B",
+          "Sub_topic_name": "Detecting and identifying plant diseases",
+          "description": "(Biology-only) Describe different ways plant diseases can be detected and identified, in the lab and in the field, including: elimination of possible environmental causes; distribution analysis of affected plants; observation of visible symptoms; diagnostic testing to identify pathogens.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "5.12",
+          "Sub_topic_name": "Human physical barriers and chemical defences",
+          "description": "Describe how the physical barriers and chemical defences of the human body provide protection from pathogens, including: physical barriers (mucus, cilia, skin) and chemical defence (lysozymes, hydrochloric acid).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "5.13",
+          "Sub_topic_name": "Specific immune system: antibodies and memory",
+          "description": "Explain the role of the specific immune system of the human body in defence against disease, including: exposure to pathogen; antigens trigger an immune response causing antibody production; antigens also trigger production of memory lymphocytes; role of memory lymphocytes in the secondary response to the antigen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "5.14",
+          "Sub_topic_name": "Immunisation (vaccination) response",
+          "description": "Explain the body’s response to immunisation using an inactive form of a pathogen (primary response; memory cells; faster secondary response).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "5.15B",
+          "Sub_topic_name": "Immunisation: advantages, disadvantages and herd immunity",
+          "description": "(Biology-only) Discuss the advantages and disadvantages of immunisation, including the concept of herd immunity (population protection due to reduced transmission).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "5.16",
+          "Sub_topic_name": "Antibiotics and bacterial infections",
+          "description": "Explain that antibiotics can only be used to treat bacterial infections because they inhibit cell processes in the bacterium but not the host organism (virus vs bacteria distinction).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "5.17B",
+          "Sub_topic_name": "Aseptic technique in culturing microorganisms",
+          "description": "(Biology-only) Explain the aseptic techniques used in culturing microorganisms in the laboratory, including: autoclave to prepare sterile growth medium and petri dishes; sterile inoculating loops to transfer microorganisms; keeping petri dishes and culture vials covered to prevent contamination and pathogen spread.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "5.18B",
+          "Sub_topic_name": "Core Practical 5.18B: Antimicrobials on microbial cultures",
+          "description": "Core Practical (Biology-only): Investigate the effects of antiseptics, antibiotics or plant extracts on microbial cultures. Use aseptic technique; inoculate agar plates with bacteria; apply antimicrobial/plant extract discs; incubate and measure zones of inhibition to compare effectiveness. Sterile technique must include use of a Bunsen burner.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "5.19B",
+          "Sub_topic_name": "Measuring inhibition zones: area using πr²",
+          "description": "(Biology-only) Calculate cross-sectional areas of bacterial cultures and clear agar jelly using πr^2 (apply circle area to measured radii/diameters; use correct units).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5t",
+          "Specification_section_sub": "5.20",
+          "Sub_topic_name": "Developing new medicines: stages",
+          "description": "Describe that the process of developing new medicines, including antibiotics, has many stages, including discovery, development, preclinical and clinical testing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5u",
+          "Specification_section_sub": "5.21B",
+          "Sub_topic_name": "Monoclonal antibodies: production (hybridoma)",
+          "description": "(Biology-only) Describe the production of monoclonal antibodies, including: use of lymphocytes which produce desired antibodies but do not divide; production of hybridoma cells; hybridoma cells produce antibodies as they divide.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5v",
+          "Specification_section_sub": "5.22B",
+          "Sub_topic_name": "Monoclonal antibodies: uses and advantages",
+          "description": "(Biology-only) Explain the use of monoclonal antibodies, including: pregnancy testing; diagnosis (locating blood clots and cancer cells) and treatment of diseases including cancer; advantages of targeting specific cells compared to drug and radiotherapy treatments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5w",
+          "Specification_section_sub": "5.23",
+          "Sub_topic_name": "Non-communicable diseases and multifactor causation",
+          "description": "Describe that many non-communicable human diseases are caused by interaction of a number of factors, including cardiovascular diseases, many forms of cancer, some lung and liver diseases and diseases influenced by nutrition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5x",
+          "Specification_section_sub": "5.24",
+          "Sub_topic_name": "Lifestyle factors, obesity/malnutrition and BMI/waist:hip",
+          "description": "Explain the effect of lifestyle factors on non-communicable diseases at local, national and global levels, including: exercise and diet on obesity and malnutrition, including BMI and waist:hip calculations using BMI = mass(kg) / (height(m))^2; alcohol on liver diseases; smoking on cardiovascular diseases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5y",
+          "Specification_section_sub": "5.25",
+          "Sub_topic_name": "Treatments for cardiovascular disease (evaluate)",
+          "description": "Evaluate different treatments for cardiovascular disease, including: life-long medication; surgical procedures; lifestyle changes (effectiveness, risks, cost, accessibility).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "Topic 6",
+      "Strand": "Biology",
+      "Topic_name": "Plant structures and their functions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "Photosynthetic organisms and biomass production",
+          "description": "Describe photosynthetic organisms as the main producers of food and therefore biomass (role as producers in ecosystems; basis of food chains).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "6.2",
+          "Sub_topic_name": "Photosynthesis as an endothermic reaction",
+          "description": "Describe photosynthesis in plants and algae as an endothermic reaction that uses light energy to react carbon dioxide and water to produce glucose and oxygen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "6.3",
+          "Sub_topic_name": "Limiting factors of photosynthesis",
+          "description": "Explain the effect of temperature, light intensity and carbon dioxide concentration as limiting factors on the rate of photosynthesis (each can limit rate; plateau effects).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "6.4",
+          "Sub_topic_name": "Interacting limiting factors (photosynthesis)",
+          "description": "Explain the interactions of temperature, light intensity and carbon dioxide concentration in limiting the rate of photosynthesis (combined effects; shifting limiting factor).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "6.5",
+          "Sub_topic_name": "Core Practical 6.5: Light intensity and photosynthesis rate",
+          "description": "Core Practical: Investigate the effect of light intensity on the rate of photosynthesis. Use algal balls (or similar) set at varying distances from a light source; measure rate of photosynthesis and compare to distance/light intensity; record/graph data and control variables.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "6.6",
+          "Sub_topic_name": "Inverse square law and light intensity (photosynthesis)",
+          "description": "Explain how the rate of photosynthesis is directly proportional to light intensity and inversely proportional to the distance from a light source, including use of the inverse square law calculation (light intensity ∝ 1/distance^2) and applying proportional reasoning to rate–distance data.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "6.7",
+          "Sub_topic_name": "Root hair cells and absorption",
+          "description": "Explain how the structure of root hair cells is adapted to absorb water and mineral ions (large surface area; thin walls; transport proteins; osmosis/active transport).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "6.8",
+          "Sub_topic_name": "Xylem and phloem adaptations",
+          "description": "Explain how the structures of xylem and phloem are adapted to their function in plants, including: lignified dead cells in xylem transporting water and minerals; living cells in phloem using energy to transport sucrose around the plant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "6.9",
+          "Sub_topic_name": "Transpiration and stomata",
+          "description": "Explain how water and mineral ions are transported through the plant by transpiration, including the structure and function of stomata (evaporation, diffusion, transpiration stream).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "6.10",
+          "Sub_topic_name": "Translocation of sucrose",
+          "description": "Describe how sucrose is transported around the plant by translocation (phloem transport; source-to-sink movement; energy use).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "6.11B",
+          "Sub_topic_name": "Leaf adaptations for photosynthesis and gas exchange",
+          "description": "(Biology-only) Explain how the structure of a leaf is adapted for photosynthesis and gas exchange (e.g. palisade mesophyll, spongy mesophyll air spaces, stomata/guard cells, chloroplast distribution, thin leaf).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "6.12",
+          "Sub_topic_name": "Environmental factors affecting water uptake",
+          "description": "Explain the effect of environmental factors on the rate of water uptake by a plant, including light intensity, air movement and temperature (effects on transpiration rate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "6.13",
+          "Sub_topic_name": "Rate calculations for transpiration",
+          "description": "Demonstrate an understanding of rate calculations for transpiration (calculate rate of water uptake or mass loss per unit time; compare conditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "6.14B",
+          "Sub_topic_name": "Plant adaptations to extreme environments",
+          "description": "(Biology-only) Explain how plants are adapted to survive in extreme environments including the effect of leaf size and shape, the cuticle and stomata (e.g. xerophyte features reducing water loss).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "6.15B",
+          "Sub_topic_name": "Plant hormones: auxins in tropisms",
+          "description": "(Biology-only) Explain how plant hormones control and coordinate plant growth and development, including the role of auxins in phototropisms and gravitropisms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "6.16B",
+          "Sub_topic_name": "Commercial uses of plant hormones (auxins, gibberellins, ethene)",
+          "description": "(Biology-only) Describe the commercial uses of auxins, gibberellins and ethene in plants, including: auxins in weedkillers and rooting powders; gibberellins in germination, fruit and flower formation and production of seedless fruit; ethene in fruit ripening.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "Topic 7",
+      "Strand": "Biology",
+      "Topic_name": "Animal coordination, control and homeostasis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "7.1",
+          "Sub_topic_name": "Endocrine glands, hormones and targets",
+          "description": "Describe where hormones are produced and how they are transported from endocrine glands to their target organs, including the pituitary gland, thyroid gland, pancreas, adrenal glands, ovaries and testes (hormones carried in blood).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "7.2",
+          "Sub_topic_name": "Adrenaline and fight-or-flight responses",
+          "description": "Explain that adrenaline is produced by the adrenal glands to prepare the body for fight or flight, including: increased heart rate; increased blood pressure; increased blood flow to muscles; raised blood sugar levels by stimulating the liver to change glycogen into glucose.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "7.3",
+          "Sub_topic_name": "Thyroxine and negative feedback control",
+          "description": "Explain how thyroxine controls metabolic rate as an example of negative feedback, including: low thyroxine stimulates TRH production in hypothalamus; TRH causes release of TSH from pituitary; TSH acts on thyroid to produce thyroxine; when thyroxine levels are normal, thyroxine inhibits TRH release and TSH production.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "7.4",
+          "Sub_topic_name": "Menstrual cycle stages (oestrogen and progesterone)",
+          "description": "Describe the stages of the menstrual cycle, including the roles of the hormones oestrogen and progesterone in control of the cycle (uterus lining changes; timing).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "7.5",
+          "Sub_topic_name": "Hormonal interactions controlling the menstrual cycle (FSH, LH)",
+          "description": "Explain the interactions of oestrogen, progesterone, FSH and LH in control of the menstrual cycle, including repair and maintenance of the uterus wall, ovulation and menstruation.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "7.6",
+          "Sub_topic_name": "Hormonal contraception",
+          "description": "Explain how hormonal contraception influences the menstrual cycle and prevents pregnancy (preventing ovulation, thickening cervical mucus, altering uterus lining).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "7.7",
+          "Sub_topic_name": "Evaluating contraception methods",
+          "description": "Evaluate hormonal and barrier methods of contraception (effectiveness, side effects, STI protection, user factors, ethical/social considerations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "7.8",
+          "Sub_topic_name": "Fertility treatment hormones (IVF, clomifene)",
+          "description": "Explain the use of hormones in Assisted Reproductive Technology (ART) including IVF and clomifene therapy (stimulating egg maturation/ovulation; improving fertility).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "7.9",
+          "Sub_topic_name": "Maintaining a constant internal environment",
+          "description": "Explain the importance of maintaining a constant internal environment in response to internal and external change (homeostasis concept; stability for enzyme/cell function).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "7.10B",
+          "Sub_topic_name": "Homeostasis: thermoregulation and osmoregulation importance",
+          "description": "(Biology-only) Explain the importance of homeostasis, including: thermoregulation—effect on enzyme activity; osmoregulation—effect on animal cells (water potential, cell volume, function).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "7.11B",
+          "Sub_topic_name": "Thermoregulation: skin and hypothalamus",
+          "description": "(Biology-only) Explain how thermoregulation takes place with reference to function of skin, including roles of dermis, epidermis and hypothalamus (temperature receptors and control centre).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "7.12B",
+          "Sub_topic_name": "Thermoregulation responses (shivering, vasoconstriction, vasodilation)",
+          "description": "(Biology-only) Explain thermoregulation with reference to: shivering; vasoconstriction; vasodilation (heat production and heat loss control).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "7.13",
+          "Sub_topic_name": "Insulin and blood glucose control",
+          "description": "Explain how the hormone insulin controls blood glucose concentration (uptake of glucose, conversion to glycogen; negative feedback).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "7.14",
+          "Sub_topic_name": "Glucagon and blood glucose regulation",
+          "description": "Explain how blood glucose concentration is regulated by glucagon (glycogen breakdown to glucose; raising blood glucose in negative feedback).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "7.15",
+          "Sub_topic_name": "Type 1 diabetes: cause and control",
+          "description": "Explain the cause of type 1 diabetes and how it is controlled (immune destruction of insulin-producing cells; insulin therapy; monitoring).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "7.16",
+          "Sub_topic_name": "Type 2 diabetes: cause and control",
+          "description": "Explain the cause of type 2 diabetes and how it is controlled (insulin resistance; links to lifestyle/obesity; diet, exercise, medication).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7q",
+          "Specification_section_sub": "7.17",
+          "Sub_topic_name": "Body mass and type 2 diabetes (BMI/waist:hip correlation)",
+          "description": "Evaluate the correlation between body mass and type 2 diabetes including waist:hip calculations and BMI using BMI = mass(kg) / (height(m))^2; interpret correlation data (scatter plots) and limitations (correlation vs causation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7r",
+          "Specification_section_sub": "7.18B",
+          "Sub_topic_name": "Urinary system structure",
+          "description": "(Biology-only) Describe the structure of the urinary system (kidneys, ureters, bladder, urethra and associated blood vessels).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7s",
+          "Specification_section_sub": "7.19B",
+          "Sub_topic_name": "Nephron structure and function (filtration and reabsorption)",
+          "description": "(Biology-only) Explain how the structure of the nephron is related to its function in filtering blood and forming urine including: filtration in the glomerulus and Bowman’s capsule; selective reabsorption of glucose; reabsorption of water.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7t",
+          "Specification_section_sub": "7.20B",
+          "Sub_topic_name": "ADH and water balance",
+          "description": "(Biology-only) Explain the effect of ADH on the permeability of the collecting duct in regulating the water content of the blood (negative feedback control of osmoregulation).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7u",
+          "Specification_section_sub": "7.21B",
+          "Sub_topic_name": "Kidney failure treatments",
+          "description": "(Biology-only) Describe treatments for kidney failure, including kidney dialysis and organ donation (advantages/disadvantages; availability; lifestyle impacts).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7v",
+          "Specification_section_sub": "7.22B",
+          "Sub_topic_name": "Urea formation in liver",
+          "description": "(Biology-only) State that urea is produced from the breakdown of excess amino acids in the liver (deamination; excretion).",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "Topic 8",
+      "Strand": "Biology",
+      "Topic_name": "Exchange and transport in animals",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "8.1",
+          "Sub_topic_name": "Why organisms need transport systems",
+          "description": "Describe the need to transport substances into and out of a range of organisms, including oxygen, carbon dioxide, water, dissolved food molecules, mineral ions and urea.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "8.2",
+          "Sub_topic_name": "Exchange surfaces and surface area:volume ratio",
+          "description": "Explain the need for exchange surfaces and a transport system in multicellular organisms, including calculation of surface area : volume ratio and linking SA:V to diffusion/exchange efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "8.3",
+          "Sub_topic_name": "Alveoli adaptations for gas exchange",
+          "description": "Explain how alveoli are adapted for gas exchange by diffusion between air in the lungs and blood in capillaries (large surface area, thin walls, moist lining, good blood supply, ventilation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "8.4B",
+          "Sub_topic_name": "Diffusion rate factors",
+          "description": "(Biology-only) Describe factors affecting the rate of diffusion, including surface area, concentration gradient and diffusion distance.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "8.5B",
+          "Sub_topic_name": "Fick’s law and diffusion rate calculations",
+          "description": "(Biology-only) Calculate the rate of diffusion using Fick’s law: rate of diffusion ∝ (surface area × concentration difference) / thickness of membrane. Use proportionality symbol (∝) and apply to biological membranes/exchange surfaces.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "8.6",
+          "Sub_topic_name": "Blood components and functions",
+          "description": "Explain how the structure of blood is related to its function: red blood cells (erythrocytes); white blood cells (phagocytes and lymphocytes); plasma; platelets (clotting).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "8.7",
+          "Sub_topic_name": "Blood vessels structure and function",
+          "description": "Explain how the structure of blood vessels is related to their function (arteries, veins, capillaries; wall thickness, lumen size, valves, exchange).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "8.8",
+          "Sub_topic_name": "Heart and circulatory system structure and function",
+          "description": "Explain how the structure of the heart and circulatory system is related to its function, including the role of major blood vessels, valves, and the relative thickness of chamber walls (double circulation concept).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "8.9",
+          "Sub_topic_name": "Cellular respiration (aerobic and anaerobic)",
+          "description": "Describe cellular respiration as an exothermic reaction occurring continuously in living cells to release energy for metabolic processes, including aerobic and anaerobic respiration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "8.10",
+          "Sub_topic_name": "Comparing aerobic and anaerobic respiration",
+          "description": "Compare the process of aerobic respiration with anaerobic respiration (oxygen requirement; products; energy yield; contexts such as muscle fatigue/lactic acid).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "8.11",
+          "Sub_topic_name": "Core Practical 8.11: Respiration rate using a respirometer",
+          "description": "Core Practical: Investigate the rate of respiration in living organisms. Use a simple respirometer to measure oxygen consumption of small organisms at different temperatures; apparatus may include tube with soda lime, cotton wool, organisms, capillary tube and coloured liquid; track movement of liquid over time; use water baths for temperature control; include safety and ethical considerations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "8.12",
+          "Sub_topic_name": "Cardiac output calculations",
+          "description": "Calculate heart rate, stroke volume and cardiac output using: cardiac output = stroke volume × heart rate. Use correct units and interpret physiological data.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "Topic 9",
+      "Strand": "Biology",
+      "Topic_name": "Ecosystems and material cycles",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "9.1",
+          "Sub_topic_name": "Levels of organisation in ecology",
+          "description": "Describe different levels of organisation from individual organisms, populations, communities, to the whole ecosystem.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "9.2",
+          "Sub_topic_name": "Abiotic and biotic factors affecting communities",
+          "description": "Explain how communities can be affected by abiotic and biotic factors, including: abiotic—temperature, light, water, pollutants; biotic—competition, predation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "9.3",
+          "Sub_topic_name": "Interdependence in communities",
+          "description": "Describe the importance of interdependence in a community (food webs, mutual support, stability and impacts of change).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "9.4",
+          "Sub_topic_name": "Parasitism and mutualism",
+          "description": "Describe how survival of some organisms is dependent on other species, including parasitism and mutualism (definitions and examples).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "9.5",
+          "Sub_topic_name": "Core Practical 9.5: Fieldwork (quadrats and belt transects)",
+          "description": "Core Practical: Investigate the relationship between organisms and their environment using field-work techniques, including quadrats and belt transects. Use a belt transect along a gradient (e.g. shaded to unshaded); plan sampling; identify and record plants/organisms; consider representative sampling, distribution and abundance; record data for analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "9.6",
+          "Sub_topic_name": "Estimating population size from quadrats/transects",
+          "description": "Explain how to determine the number of organisms in a given area using raw data from field-work techniques, including quadrats and belt transects (mean per quadrat × total area; sampling considerations; reliability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "9.7B",
+          "Sub_topic_name": "Energy transfer and trophic levels (pyramids of biomass)",
+          "description": "(Biology-only) Explain how some energy is transferred to less useful forms at each trophic level and that this affects the number of organisms at each trophic level, limits the length of a food chain and determines the shape of a pyramid of biomass in an ecosystem.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "9.8B",
+          "Sub_topic_name": "Efficiency of energy transfer (calculations)",
+          "description": "(Biology-only) Calculate efficiency of energy transfers between trophic levels and percentage calculations of biomass (efficiency % = (biomass or energy at next level ÷ biomass or energy at previous level) × 100).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "9.9",
+          "Sub_topic_name": "Human impacts in ecosystems and biodiversity",
+          "description": "Explain positive and negative human interactions within ecosystems and their impacts on biodiversity, including fish farming, introduction of non-indigenous species, and eutrophication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "9.10",
+          "Sub_topic_name": "Benefits of maintaining biodiversity and conservation",
+          "description": "Explain the benefits of maintaining local and global biodiversity, including conservation of animal species and impact of reforestation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "9.11B",
+          "Sub_topic_name": "Food security: biological factors and sustainability",
+          "description": "(Biology-only) Describe biological factors affecting levels of food security, including: increasing human population; increasing animal farming and increased meat/fish consumption; impact of new pests and pathogens; environmental change caused by human activity; sustainability issues (e.g. land use for biofuel production and cost of agricultural inputs).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9l",
+          "Specification_section_sub": "9.12",
+          "Sub_topic_name": "Material cycles in ecosystems",
+          "description": "Describe how different materials cycle through the abiotic and biotic components of an ecosystem (general cycling concept; reservoirs and transfers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9m",
+          "Specification_section_sub": "9.13",
+          "Sub_topic_name": "Carbon cycle and decomposers",
+          "description": "Explain the importance of the carbon cycle, including processes involved and the role of microorganisms as decomposers (respiration, photosynthesis, decomposition, combustion; carbon storage).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9n",
+          "Specification_section_sub": "9.14",
+          "Sub_topic_name": "Water cycle and potable water (desalination)",
+          "description": "Explain the importance of the water cycle, including processes involved and production of potable water in areas of drought including desalination.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9o",
+          "Specification_section_sub": "9.15",
+          "Sub_topic_name": "Nitrogen cycle and nitrates for plant uptake",
+          "description": "Explain how nitrates are made available for plant uptake, including use of fertilisers, crop rotation and the role of bacteria in the nitrogen cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9p",
+          "Specification_section_sub": "9.16B",
+          "Sub_topic_name": "Indicator species and pollution assessment",
+          "description": "(Biology-only) Evaluate use of indicator species as evidence to assess level of pollution, including: polluted water—bloodworm, sludgeworm; clean water—freshwater shrimps, stonefly; air quality—different species of lichen, blackspot fungus on roses.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9q",
+          "Specification_section_sub": "9.17B",
+          "Sub_topic_name": "Decomposition rate and food preservation",
+          "description": "(Biology-only) Explain effects of temperature, water content and oxygen availability on rate of decomposition in food preservation (slowing decay; role of microbes).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9r",
+          "Specification_section_sub": "9.18B",
+          "Sub_topic_name": "Decomposition rate and composting",
+          "description": "(Biology-only) Explain effects of temperature, water content and oxygen availability on rate of decomposition in composting (optimising conditions for decomposition).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9s",
+          "Specification_section_sub": "9.19B",
+          "Sub_topic_name": "Rate changes in decay (calculations)",
+          "description": "(Biology-only) Calculate rate changes in the decay of biological material (quantify change per unit time; compare conditions; interpret graphs/tables).",
+          "tier": "Higher"
+        }
+      ]
+    }
+  ]
+}

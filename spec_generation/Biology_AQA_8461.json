@@ -1,0 +1,966 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Biology",
+  "Exam Board": "AQA",
+  "Specification": "8461",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "4.1",
+      "Strand": "Biology",
+      "Topic_name": "Cell biology",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "4.1.1.1",
+          "Sub_topic_name": "Eukaryotes and prokaryotes",
+          "description": "Understand that plant and animal cells are eukaryotic: they have a cell membrane, cytoplasm and genetic material enclosed in a nucleus. Understand that bacterial cells are prokaryotic and much smaller: they have cytoplasm and a cell membrane surrounded by a cell wall; genetic material is not enclosed in a nucleus and consists of a single DNA loop; may also contain one or more small rings of DNA called plasmids. Be able to demonstrate understanding of the scale and size of cells and make order-of-magnitude calculations including use of standard form (e.g. using centi-, milli-, micro-, nano- prefixes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "4.1.1.2",
+          "Sub_topic_name": "Animal and plant cell organelles and functions",
+          "description": "Explain how main sub-cellular structures relate to their functions, including: nucleus, cytoplasm, cell membrane, mitochondria, ribosomes (most animal cells); and in addition for plant cells: chloroplasts and a permanent vacuole filled with cell sap; plant and algal cells also have a cellulose cell wall that strengthens the cell. Recognise/draw/interpret images of cells and use estimations appropriately to judge relative size/area of sub-cellular structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "4.1.1.3",
+          "Sub_topic_name": "Cell specialisation",
+          "description": "Given appropriate information, explain how the structure of different specialised cells relates to their function in a tissue, organ, organ system or organism. Required examples: sperm cells, nerve cells and muscle cells (animals); root hair cells, xylem and phloem cells (plants).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "4.1.1.4",
+          "Sub_topic_name": "Cell differentiation",
+          "description": "Explain the importance of cell differentiation: as an organism develops, cells differentiate to form different cell types. Most animal cells differentiate at an early stage; many plant cells retain the ability to differentiate throughout life. In mature animals, cell division is mainly for repair and replacement; as a cell differentiates it acquires different sub-cellular structures enabling a specific function (becomes specialised).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "4.1.1.5",
+          "Sub_topic_name": "Microscopy: light vs electron; magnification calculations",
+          "description": "Understand how microscopy techniques have developed over time and how electron microscopy increased understanding of sub-cellular structures (limited to differences in magnification and resolution). Know that electron microscopes have much higher magnification and resolving power than light microscopes, enabling finer detail and more sub-cellular structures to be seen. Calculate magnification, real size and image size using: magnification = size of image / size of real object; express answers in standard form where appropriate and use correct unit prefixes (centi-, milli-, micro-, nano-).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "4.1.1.6",
+          "Sub_topic_name": "Culturing microorganisms and aseptic technique (biology only)",
+          "description": "Know that bacteria reproduce by binary fission and can divide as often as every 20 minutes with sufficient nutrients and suitable temperature. Understand that bacteria can be grown in nutrient broth or as colonies on agar plates. Understand that uncontaminated cultures are needed to investigate disinfectants and antibiotics. Describe how to prepare uncontaminated cultures using aseptic technique and explain why: Petri dishes and culture media must be sterilised; inoculating loops must be flame-sterilised; lids should be secured with adhesive tape and plates stored upside down; in school labs cultures are generally incubated at 25°C. Calculate cross-sectional areas of colonies/clear zones using πr². Calculate bacterial population size after a given time from mean division time; express in standard form where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "4.1.2.1",
+          "Sub_topic_name": "Chromosomes, DNA and genes",
+          "description": "Know that the nucleus contains chromosomes made of DNA molecules and each chromosome carries a large number of genes. Know that in body cells chromosomes are normally found in pairs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "4.1.2.2",
+          "Sub_topic_name": "Mitosis and the cell cycle",
+          "description": "Describe the stages of the cell cycle, including mitosis (no need for named phases of mitosis). Understand that during the cell cycle genetic material is doubled then divided to produce two identical cells: cell grows and increases sub-cellular structures (e.g. ribosomes, mitochondria); DNA replicates to form two copies of each chromosome; in mitosis one set of chromosomes is pulled to each end and nucleus divides; cytoplasm and cell membranes divide forming two identical daughter cells. Explain importance of mitosis for growth and development in multicellular organisms, and recognise/describe contexts where mitosis is occurring.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "4.1.2.3",
+          "Sub_topic_name": "Stem cells and their uses/ethics",
+          "description": "Define a stem cell as an undifferentiated cell capable of producing more cells of the same type and differentiating into other cell types. Describe functions of stem cells in embryos, in adult animals (bone marrow producing different cells including blood cells) and in plant meristems (can differentiate into any plant cell throughout life). Understand that embryo stem cells can be cloned and differentiated into most human cell types. Understand potential medical benefits (e.g. diabetes, paralysis) and therapeutic cloning (embryo produced with same genes as patient; stem cells not rejected). Evaluate potential risks (e.g. transfer of viral infection) and ethical/religious objections. Know plant meristem stem cells can produce clones quickly/economically; uses include cloning rare species to prevent extinction and cloning crop plants with desirable features (e.g. disease resistance). Knowledge of stem cell techniques is not required beyond these statements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "4.1.3.1",
+          "Sub_topic_name": "Diffusion and exchange surfaces",
+          "description": "Describe diffusion as the spreading out of particles in solutions or gases, resulting in net movement from higher concentration to lower concentration. Explain movement into/out of cells across membranes by diffusion; examples: O2 and CO2 in gas exchange; urea diffusion from cells into blood plasma for excretion by kidneys. Explain factors affecting diffusion rate: concentration gradient, temperature, surface area of membrane. Relate surface area to volume ratio to diffusion needs: single-celled organisms have larger SA:V enabling sufficient transport. Calculate and compare surface area to volume ratios. Explain need for exchange surfaces and transport systems in multicellular organisms in terms of SA:V ratio. Explain adaptations of small intestine and lungs (mammals), gills (fish), roots and leaves (plants) for exchange: large surface area, thin membrane/short diffusion path, efficient blood supply (animals), ventilation for gaseous exchange (animals).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "4.1.3.2",
+          "Sub_topic_name": "Osmosis in cells and tissues",
+          "description": "Describe osmosis as diffusion of water from a dilute solution to a concentrated solution through a partially permeable membrane. Use and interpret models/diagrams of osmosis. Use compound measures of rate of water uptake, use percentages, and calculate percentage gain/loss of mass of plant tissue. Plot, draw and interpret appropriate graphs related to osmosis practical contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "4.1.3.3",
+          "Sub_topic_name": "Active transport",
+          "description": "Describe active transport as movement of substances from a more dilute solution to a more concentrated solution against a concentration gradient, requiring energy from respiration. Explain examples: mineral ion uptake by root hair cells from dilute soil solutions (ions needed for plant growth); glucose absorption from lower concentration in the gut into blood with higher glucose concentration (glucose used in respiration). Compare diffusion, osmosis and active transport: describe how each transports substances into/out of cells and explain key differences (direction relative to concentration gradient, energy requirement, particles involved).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "4.2",
+      "Strand": "Biology",
+      "Topic_name": "Organisation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "4.2.1",
+          "Sub_topic_name": "Levels of organisation in organisms",
+          "description": "Understand that cells are the basic building blocks of living organisms; a tissue is a group of cells with similar structure and function; organs are aggregations of tissues performing specific functions; organs are organised into organ systems that work together to form organisms. Apply understanding of size/scale across cells, tissues, organs and systems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "4.2.2.1",
+          "Sub_topic_name": "Digestive system and enzymes",
+          "description": "Describe the human digestive system as an organ system where several organs work together to digest and absorb food (assumes KS3 knowledge). Describe enzymes as biological catalysts with specific active sites (lock-and-key model as simplified model); relate enzyme activity to temperature and pH; carry out rate calculations for enzyme-controlled reactions. Recall sites of production and actions of: amylase (carbohydrase; breaks down starch), proteases (break down proteins to amino acids), lipases (break down lipids to glycerol and fatty acids). Understand that digestive enzymes produce small soluble molecules absorbed into the bloodstream. Understand that products of digestion are used to build carbohydrates, lipids and proteins; some glucose used in respiration. Describe bile: made in liver, stored in gall bladder; alkaline to neutralise stomach HCl; emulsifies fats into small droplets increasing surface area; alkaline conditions and increased surface area increase lipase action rate. Understand simple word equations (no chemical symbol equations required here).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "4.2.2.2",
+          "Sub_topic_name": "Heart, blood vessels and lungs",
+          "description": "Know structure and function of the human heart and lungs, including lung adaptations for gaseous exchange. Describe double circulatory system: right ventricle pumps blood to lungs for gas exchange; left ventricle pumps blood to body. Know names/roles of main associated vessels: aorta, vena cava, pulmonary artery, pulmonary vein, coronary arteries; heart valve names not required. Lung knowledge limited to trachea, bronchi, alveoli and surrounding capillary network. Understand natural resting heart rate is controlled by pacemaker cells in right atrium; artificial pacemakers are electrical devices correcting irregularities. Describe three blood vessel types (arteries, veins, capillaries) and explain how their structure relates to function. Use compound measures such as rate and perform rate calculations for blood flow.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "4.2.2.3",
+          "Sub_topic_name": "Blood components and their functions",
+          "description": "Know blood is a tissue consisting of plasma with suspended red blood cells, white blood cells and platelets. Know functions of each component. Recognise different blood cell types in photographs/diagrams and explain adaptations to function. Evaluate risks related to use of blood products when given context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "4.2.2.4",
+          "Sub_topic_name": "Coronary heart disease and treatments",
+          "description": "Describe coronary heart disease: fatty material builds up in coronary arteries, narrowing them; reduces blood flow and oxygen supply to heart muscle. Explain treatment options and evaluate advantages/disadvantages: stents to keep arteries open; statins to reduce blood cholesterol and slow fatty deposit. Understand consequences of faulty heart valves (may not open fully or may leak) and that valves can be replaced with biological or mechanical valves. Understand heart failure may be treated by donor heart (or heart and lungs) transplant; artificial hearts may be used temporarily while awaiting transplant or to allow heart to rest. Evaluate drugs, mechanical devices and transplants in terms of benefits/risks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "4.2.2.5",
+          "Sub_topic_name": "Health and disease interactions",
+          "description": "Describe relationship between health and disease; health as physical and mental well-being. Know communicable and non-communicable diseases are major causes of ill health; other factors (diet, stress, life situations) can affect physical/mental health. Explain interactions between diseases, including: immune system defects increase likelihood of infectious disease; viruses in cells can trigger cancers; immune reactions triggered by pathogens can cause allergies (e.g. skin rashes, asthma); severe physical ill health can lead to depression and other mental illness. Translate disease incidence data between graphical and numerical forms; construct/interpret frequency tables/diagrams, bar charts, histograms; use scatter diagrams to identify correlation between two variables. Understand sampling principles in scientific/epidemiological data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "4.2.2.6",
+          "Sub_topic_name": "Lifestyle factors and non-communicable disease risk",
+          "description": "Discuss human and financial costs of non-communicable diseases at individual/community/national/global levels. Explain how lifestyle factors (diet, alcohol, smoking) affect incidence of non-communicable diseases at local, national and global levels. Understand risk factors are linked to increased rate of disease and may be lifestyle aspects or substances in body/environment; understand that some have proven causal mechanisms and others do not. Required examples of risk factors and effects: diet, smoking and exercise on cardiovascular disease; obesity as risk factor for Type 2 diabetes; alcohol effects on liver and brain function; smoking effects on lung disease and lung cancer; effects of smoking and alcohol on unborn babies; carcinogens including ionising radiation as cancer risk factors. Recognise many diseases involve interactions of multiple factors. Interpret data about risk factors, including sampling principles, extracting/interpreting from charts/graphs/tables and using scatter diagrams for correlation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "4.2.2.7",
+          "Sub_topic_name": "Cancer: benign vs malignant tumours",
+          "description": "Describe cancer as result of changes in cells leading to uncontrolled growth and division. Distinguish benign tumours (contained in one area, usually within a membrane; do not invade other parts) from malignant tumours (cancer; invade neighbouring tissues and spread via blood to form secondary tumours). Understand that lifestyle risk factors exist for some cancers and genetic risk factors exist for some cancers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "4.2.3.1",
+          "Sub_topic_name": "Plant tissues and leaf structure",
+          "description": "Explain how structures of plant tissues relate to functions. Know plant tissues include: epidermal tissues, palisade mesophyll, spongy mesophyll, xylem, phloem, and meristem tissue at growing tips of shoots/roots. Know leaf as a plant organ; knowledge limited to epidermis, palisade and spongy mesophyll, xylem and phloem, and guard cells surrounding stomata. Observe/draw transverse leaf sections where given information/images.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "4.2.3.2",
+          "Sub_topic_name": "Plant transport: transpiration and translocation",
+          "description": "Explain how root hair cells, xylem and phloem are adapted to their functions. Describe plant organ system (roots, stem, leaves) for transport. Describe transpiration and translocation, including stomata structure/function and guard cell role in controlling gas exchange and water loss. Explain root hair cell uptake: water by osmosis and mineral ions by active transport. Describe xylem as hollow tubes strengthened by lignin transporting water/mineral ions from roots to stems/leaves in transpiration stream. Describe phloem transport of dissolved sugars from leaves to rest of plant for use/storage; movement called translocation; phloem composed of tubes of elongated cells with pores in end walls allowing cell sap movement; detailed structure/mechanism not required. Explain effects of temperature, humidity, air movement and light intensity on transpiration rate. Use compound measures (rate of transpiration), translate between graphical/numerical forms, plot/draw graphs, and extract/interpret information from graphs/charts/tables in transpiration/stomata contexts. Process stomata/transpiration data: means, sampling principles, surface areas/volumes where required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "4.3",
+      "Strand": "Biology",
+      "Topic_name": "Infection and response",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "4.3.1.1",
+          "Sub_topic_name": "Communicable diseases and pathogens",
+          "description": "Explain how diseases caused by viruses, bacteria, protists and fungi are spread in animals and plants, including spread by direct contact, water and air. Explain how spread can be reduced or prevented. Know pathogens are microorganisms that cause infectious disease and may infect plants or animals. Know bacteria and viruses may reproduce rapidly inside the body; bacteria may produce toxins that damage tissues and cause illness; viruses live and reproduce inside cells causing cell damage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "4.3.1.2",
+          "Sub_topic_name": "Viral diseases (measles, HIV, TMV)",
+          "description": "Know key features of specified viral diseases: Measles causes fever and red skin rash; can be serious/fatal; vaccination used; spread by inhalation of droplets from sneezes/coughs. HIV initially causes flu-like illness; if not controlled with antiretroviral drugs it attacks immune cells; late stage HIV infection (AIDS) occurs when immune system is badly damaged and cannot deal with other infections/cancers; spread by sexual contact or exchange of body fluids such as blood (e.g. shared needles). Tobacco mosaic virus (TMV) infects many plants (e.g. tomatoes) causing mosaic discolouration of leaves, reducing photosynthesis and growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "4.3.1.3",
+          "Sub_topic_name": "Bacterial diseases (Salmonella, gonorrhoea)",
+          "description": "Know key features of specified bacterial diseases: Salmonella food poisoning spread by bacteria ingested in food or due to unhygienic food preparation; in UK poultry vaccinated; symptoms include fever, abdominal cramps, vomiting, diarrhoea caused by bacteria and toxins. Gonorrhoea is an STD with thick yellow/green discharge and pain on urinating; caused by bacterium; formerly treated with penicillin but resistant strains now common; spread by sexual contact; control by antibiotics treatment and barrier contraception (condoms).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "4.3.1.4",
+          "Sub_topic_name": "Fungal diseases (rose black spot)",
+          "description": "Know rose black spot as a fungal disease of plants: purple/black spots on leaves; leaves may turn yellow and drop early; reduces photosynthesis and growth; spread by water or wind; treat with fungicides and/or removing and destroying affected leaves.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "4.3.1.5",
+          "Sub_topic_name": "Protist diseases (malaria)",
+          "description": "Know malaria is caused by protist pathogens with a life cycle that includes the mosquito vector. Malaria causes recurrent fever episodes and can be fatal. Control spread by preventing mosquito vectors breeding and using mosquito nets to avoid bites.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "4.3.1.6",
+          "Sub_topic_name": "Human defence systems and immune response",
+          "description": "Describe non-specific human defence systems against pathogens: skin, nose, trachea and bronchi, stomach. Explain role of immune system: if pathogen enters body, immune system tries to destroy it. Describe how white blood cells defend by phagocytosis, antibody production, and antitoxin production.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "4.3.1.7",
+          "Sub_topic_name": "Vaccination and herd immunity",
+          "description": "Explain how vaccination prevents illness in an individual and how immunising a large proportion of the population reduces spread of pathogens. Describe vaccination as introducing small quantities of dead or inactive pathogen to stimulate white blood cells to produce antibodies; on re-entry of same pathogen, rapid production of correct antibodies prevents infection. No need for details of schedules or specific side effects, but evaluate global use of vaccination in disease prevention given information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "4.3.1.8",
+          "Sub_topic_name": "Antibiotics and painkillers",
+          "description": "Explain use of antibiotics and other medicines in treating disease. Know antibiotics (e.g. penicillin) treat bacterial diseases by killing bacteria inside the body; specific bacteria should be treated by specific antibiotics. Understand antibiotics cannot kill viral pathogens. Understand antibiotic resistance is a concern and links to emergence of resistant strains. Know painkillers and other medicines treat symptoms but do not kill pathogens. Know it is difficult to develop antiviral drugs that kill viruses without damaging the body's tissues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "4.3.1.9",
+          "Sub_topic_name": "Drug discovery and development; trials and peer review",
+          "description": "Describe discovery and development of new medicines including preclinical and clinical testing. Know traditional sources: digitalis from foxgloves, aspirin from willow, penicillin discovered by Alexander Fleming from Penicillium mould. Know most new drugs are synthesised but may start from chemicals extracted from plants. Explain that new drugs must be tested/trialled for toxicity, efficacy and dose. Preclinical testing: laboratory using cells, tissues and live animals. Clinical trials: healthy volunteers and patients; start with very low doses; if safe, further trials find optimum dose; double blind trials may use placebos. Understand results are published only after scrutiny by peer review.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "4.3.2.1",
+          "Sub_topic_name": "Producing monoclonal antibodies",
+          "description": "Describe how monoclonal antibodies are produced: they come from a single clone of cells; antibodies are specific to one binding site on one protein antigen so target a specific chemical or specific cells. Process: stimulate mouse lymphocytes to make a particular antibody; combine lymphocytes with tumour cells to form hybridoma cells that both divide and make the antibody; clone single hybridoma cells to produce many identical antibody-producing cells; collect and purify large amounts of antibody.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "4.3.2.2",
+          "Sub_topic_name": "Uses, side effects and evaluation of monoclonal antibodies",
+          "description": "Describe ways monoclonal antibodies are used: diagnosis (e.g. pregnancy tests), measuring levels of hormones/chemicals in blood, detecting pathogens, locating/identifying specific molecules in cells/tissues (e.g. fluorescent dye tags), treating some diseases such as cancer by attaching monoclonal antibody to radioactive substance, toxic drug or chemical that stops cell division to deliver specifically to cancer cells. Students need not recall specific tests/treatments but should explain how they work given information. Understand monoclonal antibodies can create more side effects than expected and are not as widely used as initially hoped. Evaluate advantages and disadvantages including ethical issues.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "4.3.3.1",
+          "Sub_topic_name": "Plant disease detection and identification; ion deficiencies",
+          "description": "Describe that plants can be infected by viral, bacterial and fungal pathogens and by insects. Knowledge of plant diseases restricted to TMV (viral), black spot (fungal) and aphids (insects). Know plants can be damaged by ion deficiency: nitrate deficiency causes stunted growth; magnesium deficiency causes chlorosis. Know ion roles limited to: nitrate ions needed for protein synthesis and growth; magnesium ions needed to make chlorophyll. (HT only) Detect plant disease by signs including stunted growth, spots on leaves, areas of decay (rot), growths, malformed stems/leaves, discolouration, presence of pests. (HT only) Identify by reference to manuals/websites, laboratory diagnosis, or testing kits containing monoclonal antibodies. Apply scientific knowledge to real-world plant disease detection and optimum plant conditions.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "4.3.3.2",
+          "Sub_topic_name": "Plant defence responses",
+          "description": "Describe plant physical and chemical defence responses and mechanical adaptations: physical defences include cellulose cell walls, tough waxy cuticle on leaves, layers of dead cells around stems (bark) that fall off; chemical defences include antibacterial chemicals and poisons deterring herbivores; mechanical adaptations include thorns and hairs deterring animals, leaves that droop/curl when touched, and mimicry to trick animals. Link defences to survival/adaptation contexts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "4.4",
+      "Strand": "Biology",
+      "Topic_name": "Bioenergetics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.4.1.1",
+          "Sub_topic_name": "Photosynthesis equation and energy transfer",
+          "description": "Recall and use the photosynthesis word equation: carbon dioxide + water → glucose + oxygen (in the presence of light). Recognise chemical symbols CO2, H2O, O2 and C6H12O6. Describe photosynthesis as an endothermic reaction in which energy is transferred from the environment to chloroplasts by light.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.4.1.2",
+          "Sub_topic_name": "Rate of photosynthesis and limiting factors",
+          "description": "Explain effects of temperature, light intensity, carbon dioxide concentration and amount of chlorophyll on rate of photosynthesis. Measure and calculate rates of photosynthesis; extract and interpret graphs of rate involving one limiting factor; plot/draw appropriate graphs with suitable scales; translate information between graphical and numeric form; solve simple algebraic equations as needed. (HT only) Understand factors interact and any one may be limiting; explain graphs involving two or three factors and decide limiting factor; understand and use inverse proportion/inverse square law for light intensity in photosynthesis contexts; relate limiting factors to greenhouse economics/cost effectiveness of adding heat, light or CO2 to maximise photosynthesis while maintaining profit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.4.1.2",
+          "Sub_topic_name": "Rate of photosynthesis (two/three factors; inverse square law; economics)",
+          "description": "Explain rate of photosynthesis when two or three limiting factors interact; determine which factor is limiting from graphical/data evidence. Use inverse proportion, specifically inverse square law relating light intensity to distance from light source, in photosynthesis contexts. Use data to evaluate cost effectiveness of enhancing greenhouse conditions (heat, light, carbon dioxide) to increase photosynthesis rate while maintaining profit.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.4.1.3",
+          "Sub_topic_name": "Uses of glucose from photosynthesis",
+          "description": "Explain that glucose produced in photosynthesis may be used for respiration; converted to insoluble starch for storage; converted to fats/oils for storage; used to produce cellulose to strengthen cell walls; used to produce amino acids for protein synthesis. Understand that to make proteins plants also use nitrate ions absorbed from soil.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.4.2.1",
+          "Sub_topic_name": "Aerobic and anaerobic respiration equations and comparison",
+          "description": "Describe cellular respiration as an exothermic reaction occurring continuously in living cells, transferring energy needed for life processes (e.g. building larger molecules, movement, keeping warm). Compare aerobic vs anaerobic respiration: oxygen requirement, products and relative energy transferred. Recall aerobic respiration equation: glucose + oxygen → carbon dioxide + water; recognise symbols C6H12O6, O2, CO2, H2O. Recall anaerobic respiration in muscles: glucose → lactic acid (incomplete oxidation; much less energy). Recall anaerobic respiration in plant and yeast cells: glucose → ethanol + carbon dioxide; fermentation is anaerobic respiration in yeast with economic importance in bread and alcohol manufacture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Response to exercise and oxygen debt",
+          "description": "Describe how the body responds to exercise: heart rate, breathing rate and breath volume increase to supply muscles with more oxygenated blood. Explain that if insufficient oxygen is supplied, anaerobic respiration occurs in muscles leading to lactic acid build-up and oxygen debt; during prolonged vigorous activity muscles become fatigued and contract less efficiently. (HT only) Explain that blood transports lactic acid to liver where it is converted back to glucose; define oxygen debt as extra oxygen needed after exercise to react with accumulated lactic acid and remove it from cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Lactic acid removal and oxygen debt (HT detail)",
+          "description": "Explain that lactic acid produced during anaerobic respiration is transported in the blood to the liver where it is converted back into glucose. Explain oxygen debt as the amount of extra oxygen needed after exercise to oxidise accumulated lactic acid and remove it from muscle cells, restoring normal conditions.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.4.2.3",
+          "Sub_topic_name": "Metabolism",
+          "description": "Explain importance of sugars, amino acids, fatty acids and glycerol in synthesis and breakdown of carbohydrates, proteins and lipids. Define metabolism as the sum of all reactions in a cell or body; energy from respiration is used for enzyme-controlled metabolic processes that synthesise new molecules. Metabolism includes: conversion of glucose to starch, glycogen and cellulose; formation of lipids from glycerol and three fatty acids; use of glucose and nitrate ions to form amino acids then proteins; respiration; breakdown of excess proteins to form urea for excretion.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "4.5",
+      "Strand": "Biology",
+      "Topic_name": "Homeostasis and response",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "4.5.1",
+          "Sub_topic_name": "Homeostasis principles",
+          "description": "Explain homeostasis as regulation of internal conditions of a cell/organism to maintain optimum conditions for function in response to internal and external changes; maintains optimal conditions for enzyme action and cell functions. In humans includes control of blood glucose concentration, body temperature, and water levels. Understand automatic control systems may involve nervous or chemical (hormonal) responses. Describe general control system components: receptors detecting stimuli (changes), coordination centres (e.g. brain, spinal cord, pancreas) receiving/processing information, and effectors (muscles or glands) producing responses to restore optimum levels.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "4.5.2.1",
+          "Sub_topic_name": "Nervous system and reflex arcs",
+          "description": "Explain how nervous system structure is adapted to its functions: enables humans to react to surroundings and coordinate behaviour. Describe pathway: stimulus → receptor → coordinator → effector → response. Describe how information from receptors passes along neurones as electrical impulses to CNS (brain and spinal cord), which coordinates effectors (muscles contracting or glands secreting hormones). Explain reflex arcs including sensory neurone, synapse, relay neurone and motor neurone; relate structures to function and explain why reflex actions are important; reflexes are automatic, rapid and do not involve the conscious part of the brain. Extract and interpret data from graphs/charts/tables about nervous system functioning; translate reaction time information between numerical and graphical forms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "4.5.2.2",
+          "Sub_topic_name": "The brain regions and brain investigation difficulties (biology only)",
+          "description": "Know that the brain controls complex behaviour and consists of billions of interconnected neurones; different regions perform different functions. Identify cerebral cortex, cerebellum and medulla on a diagram and describe their functions. (HT only) Explain difficulties of investigating brain function and treating brain damage/disease; understand that mapping brain regions has used patient studies, electrical stimulation and MRI scanning; complexity and delicacy make investigation and treatment difficult; evaluate benefits and risks of procedures on brain and nervous system.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "4.5.2.2",
+          "Sub_topic_name": "Brain function research methods and risks (HT detail)",
+          "description": "Explain difficulties of investigating brain function and treating brain damage/disease due to complexity and delicacy. Describe how neuroscientists map brain regions to functions by studying patients with brain damage, electrically stimulating brain areas, and using MRI scanning; evaluate benefits and risks of procedures on the brain and nervous system in context.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "4.5.2.3",
+          "Sub_topic_name": "The eye: structure, accommodation and defects (biology only)",
+          "description": "Relate structures of the eye to their functions, including accommodation (focusing on near/distant objects) and adaptation to dim light; recognise eye as a sense organ with receptors sensitive to light intensity and colour. Identify and explain function/structure of: retina, optic nerve, sclera, cornea, iris, ciliary muscles, suspensory ligaments. Describe accommodation: for near objects ciliary muscles contract, suspensory ligaments loosen, lens thickens and refracts strongly; for distant objects ciliary muscles relax, suspensory ligaments tighten, lens becomes thinner and refracts less. Describe myopia (short sightedness) and hyperopia (long sightedness): light rays do not focus on retina; treated with spectacle lenses that refract rays to focus on retina; also contact lenses, laser surgery to change cornea shape, and replacement lens. Interpret ray diagrams for defects and their correction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "4.5.2.4",
+          "Sub_topic_name": "Control of body temperature (biology only)",
+          "description": "Describe thermoregulation: body temperature monitored/controlled by thermoregulatory centre in brain with receptors sensitive to blood temperature; skin has temperature receptors sending impulses to thermoregulatory centre. If temperature too high: vasodilation and sweating; both increase energy transfer from skin to environment. If temperature too low: vasoconstriction, sweating stops, skeletal muscles shiver. (HT only) Explain how these mechanisms lower/raise body temperature in given contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "4.5.2.4",
+          "Sub_topic_name": "Thermoregulation mechanisms in context (HT detail)",
+          "description": "Explain in context how vasodilation and sweating increase heat loss (greater blood flow near skin surface and evaporation), and how vasoconstriction and shivering reduce heat loss/increase heat production, thereby raising or lowering body temperature as needed.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "4.5.3.1",
+          "Sub_topic_name": "Endocrine system and hormonal control",
+          "description": "Describe principles of hormonal coordination and control by the endocrine system: glands secrete hormones directly into bloodstream; hormones travel to target organs and produce effects; compared to nervous system, hormonal responses are slower but last longer. Describe pituitary gland as a 'master gland' secreting hormones in response to body conditions; these act on other glands to stimulate hormone release. Identify positions on a diagram: pituitary gland, pancreas, thyroid, adrenal gland, ovary, testes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "4.5.3.2",
+          "Sub_topic_name": "Blood glucose control and diabetes",
+          "description": "Describe how blood glucose concentration is monitored/controlled by pancreas. If too high, pancreas produces insulin causing glucose to move from blood into cells; in liver and muscle excess glucose converted to glycogen for storage. Explain how insulin controls blood glucose levels. Describe Type 1 diabetes: pancreas fails to produce sufficient insulin; uncontrolled high blood glucose; treated with insulin injections. Describe Type 2 diabetes: body cells no longer respond to insulin; treated with carbohydrate-controlled diet and exercise; obesity is a risk factor. Compare Type 1 and Type 2 diabetes and treatments. Interpret graphs showing insulin effects on blood glucose in people with and without diabetes; evaluate information about obesity-diabetes relationship including social/ethical issues and make recommendations given evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "4.5.3.2",
+          "Sub_topic_name": "Glucagon and negative feedback in glucose control (HT only)",
+          "description": "Explain that if blood glucose is too low, pancreas produces glucagon causing glycogen to be converted to glucose and released into the blood. Explain how glucagon interacts with insulin in a negative feedback cycle to control blood glucose levels.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "4.5.3.3",
+          "Sub_topic_name": "Water balance and nitrogen balance (biology only)",
+          "description": "Explain effects on cells of osmotic changes in body fluids; if cells lose/gain too much water by osmosis they function inefficiently. Know water loss routes: lungs during exhalation; skin via sweat (water, ions, urea); no control over loss by lungs/skin. Describe kidneys' role: remove excess water, ions and urea; produce urine by filtration of blood and selective reabsorption of useful substances (glucose, some ions, water). Knowledge of urinary system parts, kidney structure and nephron not required. Translate tables/bar charts of glucose, ions and urea before/after filtration. (HT only) Describe deamination in liver: excess amino acids from protein digestion are deaminated to ammonia; ammonia is toxic and converted immediately to urea for safe excretion. (HT only) Describe ADH effects on kidney tubule permeability; ADH released by pituitary when blood too concentrated; increases water reabsorption; controlled by negative feedback. Describe treatment of kidney failure by transplant or dialysis; know basic principles of dialysis; evaluate advantages/disadvantages of mechanical device vs transplant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "4.5.3.3",
+          "Sub_topic_name": "Deamination, ADH and negative feedback (HT only)",
+          "description": "Describe deamination of excess amino acids in liver producing ammonia and conversion to urea for excretion. Describe ADH role: released by pituitary when blood is too concentrated; acts on kidney tubules to increase permeability so more water reabsorbed into blood; controlled by negative feedback. Explain consequences for urine concentration/volume in context.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "4.5.3.4",
+          "Sub_topic_name": "Hormones in human reproduction and menstrual cycle",
+          "description": "Describe roles of hormones in human reproduction including menstrual cycle. During puberty reproductive hormones cause secondary sex characteristics. Oestrogen is main female reproductive hormone produced by ovaries; at puberty eggs mature and one is released about every 28 days (ovulation). Testosterone is main male reproductive hormone produced by testes; stimulates sperm production. Describe menstrual cycle hormones: FSH causes egg maturation in ovary; LH stimulates egg release; oestrogen and progesterone maintain uterus lining. (HT only) Explain interactions of FSH, oestrogen, LH and progesterone in control of menstrual cycle and interpret graphs of hormone levels during cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "4.5.3.4",
+          "Sub_topic_name": "Hormone interactions in menstrual cycle; data interpretation (HT only)",
+          "description": "Explain interactions of FSH, oestrogen, LH and progesterone in regulating the menstrual cycle (including feedback relationships) and extract/interpret information from graphs showing hormone levels through the cycle.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "4.5.3.5",
+          "Sub_topic_name": "Contraception methods and evaluation",
+          "description": "Evaluate hormonal and non-hormonal methods of contraception. Know fertility can be controlled by: oral contraceptives containing hormones to inhibit FSH production so no eggs mature; injection/implant/skin patch with slow-release progesterone to inhibit egg maturation and release for months/years; barrier methods (condoms, diaphragms) preventing sperm reaching egg; intrauterine devices preventing implantation or releasing a hormone; spermicidal agents killing/disabling sperm; abstaining from intercourse when egg may be in oviduct; surgical sterilisation (male/female). Explain why contraception issues cannot be answered by science alone; evaluate personal, social, economic and environmental implications and make decisions based on evidence and arguments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "4.5.3.6",
+          "Sub_topic_name": "Hormones to treat infertility and IVF (HT only)",
+          "description": "Explain use of hormones in modern reproductive technologies to treat infertility: fertility drugs containing FSH and LH to stimulate egg maturation and allow pregnancy in normal way. Describe IVF: give FSH and LH to stimulate maturation of several eggs; collect eggs; fertilise with sperm in laboratory; embryos develop; at tiny ball-of-cells stage, one or two embryos inserted into uterus. Understand developments in microscopy enabled IVF. Understand social/ethical issues; evaluate from patient/doctor perspectives: stress, low success rates, risk of multiple births to babies and mother.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "4.5.3.7",
+          "Sub_topic_name": "Negative feedback: thyroxine and adrenaline (HT only)",
+          "description": "Explain roles of adrenaline and thyroxine: adrenaline produced by adrenal glands in fear/stress; increases heart rate and boosts delivery of oxygen and glucose to brain and muscles ('fight or flight'). Thyroxine from thyroid stimulates basal metabolic rate and is important in growth and development. Explain thyroxine levels are controlled by negative feedback; interpret and explain simple negative feedback diagrams.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "4.5.4.1",
+          "Sub_topic_name": "Plant hormones: tropisms and growth control (biology only)",
+          "description": "Describe that plants produce hormones to coordinate and control growth and responses to light (phototropism) and gravity (gravitropism/geotropism). Explain that unequal distributions of auxin cause unequal growth rates in roots and shoots. (HT only) Know gibberellins are important in initiating seed germination and ethene controls cell division and ripening of fruits; mechanisms of gibberellins/ethene not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "4.5.4.2",
+          "Sub_topic_name": "Uses of plant hormones (HT only)",
+          "description": "Describe effects of plant hormones and how people use them to control plant growth. Auxins used as weed killers, rooting powders, and to promote growth in tissue culture. Ethene used in food industry to control fruit ripening during storage and transport. Gibberellins used to end seed dormancy, promote flowering, and increase fruit size. Understand biodiversity implications of hormone use (e.g. weed killers) and evaluate applications in context.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "4.6",
+      "Strand": "Biology",
+      "Topic_name": "Inheritance, variation and evolution",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "4.6.1.1",
+          "Sub_topic_name": "Sexual and asexual reproduction; mitosis vs meiosis outcomes",
+          "description": "Understand that meiosis produces non-identical cells whereas mitosis produces identical cells. Describe sexual reproduction as fusion of male and female gametes (sperm and egg in animals; pollen and egg in flowering plants), involving mixing of genetic information leading to variation; gamete formation involves meiosis. Describe asexual reproduction as involving one parent with no gamete fusion; no mixing of genetic information; produces genetically identical offspring (clones) and involves mitosis only.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "4.6.1.2",
+          "Sub_topic_name": "Meiosis, gametes and fertilisation",
+          "description": "Explain how meiosis halves chromosome number in gametes and fertilisation restores the full number. Know cells in reproductive organs divide by meiosis to form gametes; genetic information is copied; cell divides twice to form four gametes each with a single set of chromosomes; all gametes genetically different. At fertilisation gametes join restoring normal chromosome number; new cell divides by mitosis; embryo develops and cells differentiate. Stages of meiosis not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "4.6.1.3",
+          "Sub_topic_name": "Advantages and disadvantages of sexual vs asexual reproduction (biology only)",
+          "description": "Explain advantages of sexual reproduction: produces variation; variation gives survival advantage if environment changes via natural selection; humans can speed up natural selection by selective breeding to increase food production. Explain advantages of asexual reproduction: one parent needed; time/energy efficient (no mate); faster; many identical offspring when conditions favourable. Understand some organisms use both methods depending on circumstances; restricted examples: malarial parasites reproduce asexually in human host and sexually in mosquito; many fungi reproduce asexually by spores and also sexually for variation; many plants reproduce sexually by seeds and asexually by runners (strawberries) or bulb division (daffodils). Given information, explain advantages/disadvantages for any organism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "4.6.1.4",
+          "Sub_topic_name": "DNA, genes and the genome; human genome significance",
+          "description": "Describe DNA structure at GCSE level: genetic material in nucleus is DNA; DNA is a polymer with two strands forming a double helix; DNA contained in chromosomes. Define gene as a small section of DNA on a chromosome that codes for a particular sequence of amino acids to make a specific protein. Define genome as the entire genetic material of an organism. Discuss importance of understanding the human genome limited to: searching for genes linked to diseases; understanding/treating inherited disorders; tracing human migration patterns from the past.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "4.6.1.5",
+          "Sub_topic_name": "DNA nucleotides and base sequences (biology only)",
+          "description": "Describe DNA as a polymer made from four different nucleotides; each nucleotide has a common sugar and phosphate group and one of four bases attached; bases are A, C, G, T. Understand that a sequence of three bases codes for a particular amino acid; order of bases controls order of amino acids assembled to produce a protein. Know long DNA strands have alternating sugar and phosphate sections with bases attached to sugars; polymer consists of repeating nucleotide units. Interpret (not reproduce) diagrams of DNA structure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "4.6.1.5",
+          "Sub_topic_name": "Protein synthesis overview; mutations and gene expression (HT only)",
+          "description": "Recall a simple description of protein synthesis: proteins synthesised on ribosomes according to a template; carrier molecules bring specific amino acids to growing chain in correct order; completed chain folds into unique shape enabling function (enzymes, hormones, structural proteins like collagen). Explain base pairing in complementary DNA strands: C pairs with G, T pairs with A. Explain that changes in DNA structure can change the protein synthesised by a gene; mutations occur continuously; most have no effect or slight effect; a few code for altered proteins with different shapes (enzyme may not fit substrate binding site; structural protein may lose strength). Understand that not all DNA codes for proteins; non-coding DNA can switch genes on/off; variations in non-coding DNA can affect how genes are expressed; genetic variants may influence phenotype by altering protein activity (coding DNA) or altering gene expression (non-coding DNA). No requirement for detailed mRNA/tRNA/amino acid/protein structures.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "4.6.1.6",
+          "Sub_topic_name": "Genetic inheritance terminology and single-gene inheritance",
+          "description": "Define and use: gamete, chromosome, gene, allele, dominant, recessive, homozygous, heterozygous, genotype, phenotype. Understand some characteristics controlled by single gene (examples: fur colour in mice; red-green colour blindness in humans) with different alleles. Explain that genotype (alleles present) operates at molecular level to produce phenotype (expressed characteristics). Dominant allele expressed if one copy present; recessive expressed only if two copies present (no dominant). Homozygous: two same alleles; heterozygous: different alleles. Recognise most characteristics involve multiple genes interacting rather than single-gene inheritance. Use probability to predict outcomes of single-gene crosses and recall limitations for polygenic traits. Use direct proportion and simple ratios for outcomes. Complete Punnett squares and extract/interpret information from genetic crosses and family trees. (HT only) Construct genetic crosses using Punnett squares and use probability to make predictions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "4.6.1.6",
+          "Sub_topic_name": "Genetic crosses using Punnett squares and probability (HT only)",
+          "description": "Construct single-gene genetic crosses using Punnett square diagrams; use theory of probability to predict genotype and phenotype ratios; use direct proportion and simple ratios; interpret family trees and cross outcomes in unfamiliar contexts.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "4.6.1.7",
+          "Sub_topic_name": "Inherited disorders and embryo screening ethics",
+          "description": "Know some disorders are inherited due to specific alleles. Required examples: polydactyly caused by dominant allele; cystic fibrosis (disorder of cell membranes) caused by recessive allele. Given appropriate information, make informed judgements about economic, social and ethical issues concerning embryo screening (and gene therapy as potential alleviation of suffering alongside ethical concerns).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "4.6.1.8",
+          "Sub_topic_name": "Sex determination and inheritance",
+          "description": "Know ordinary human body cells contain 23 pairs of chromosomes: 22 pairs control characteristics; one pair determines sex. Females are XX; males are XY. Carry out a genetic cross to show sex inheritance; use direct proportion and simple ratios in sex inheritance contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "4.6.2.1",
+          "Sub_topic_name": "Variation: genetic and environmental causes; mutations",
+          "description": "Describe how genome and environment interact to influence phenotype. Define variation as differences in characteristics among individuals in a population; may be due to inherited genes (genetic), conditions of development (environmental), or both. State there is usually extensive genetic variation within a population of a species. Recall that all variants arise from mutations and that most have no effect on phenotype, some influence phenotype, and very few determine phenotype. Understand that mutations occur continuously and rarely lead to new phenotypes; if suited to environmental change can lead to relatively rapid species change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "4.6.2.2",
+          "Sub_topic_name": "Evolution by natural selection and speciation (core)",
+          "description": "Describe evolution as change in inherited characteristics of a population over time through natural selection, which may result in formation of a new species. Know theory that all species evolved from simple life forms first developing over three billion years ago. Explain natural selection: variants arise; individuals with phenotypes best suited to environment survive and reproduce; advantageous characteristics passed to offspring; over time populations change. Explain that if two populations of a species become so different in phenotype they can no longer interbreed to produce fertile offspring, they have formed two new species.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "4.6.2.3",
+          "Sub_topic_name": "Selective breeding (artificial selection)",
+          "description": "Explain impact of selective breeding of food plants and domesticated animals. Describe selective breeding process: choose parents with desired characteristic from mixed population; breed; select offspring with desired characteristic; breed selected offspring over many generations until all offspring show characteristic. Examples of chosen characteristics: disease resistance in crops; animals producing more meat/milk; domestic dogs with gentle nature; large/unusual flowers. Explain that selective breeding can lead to inbreeding, increasing susceptibility to disease/inherited defects. Explain benefits/risks and consider ethical issues given information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "4.6.2.4",
+          "Sub_topic_name": "Genetic engineering and GM crops",
+          "description": "Describe genetic engineering as modifying an organism’s genome by introducing a gene from another organism to give a desired characteristic. Examples: GM crops resistant to disease or producing bigger/better fruits; bacteria engineered to produce useful substances such as human insulin. Explain potential benefits and risks in agriculture and medicine and that some people have objections. Describe that genes can be cut out and transferred to other cells; GM crops may be resistant to insect attack or herbicides and may increase yields. Explain concerns including effects on wild flower and insect populations and uncertainty about long-term human health effects of eating GM crops. Know medical research explores genetic modification to overcome inherited disorders.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "4.6.2.4",
+          "Sub_topic_name": "Genetic engineering process steps (HT only)",
+          "description": "Describe main steps in genetic engineering: use enzymes to isolate required gene; insert gene into a vector (usually bacterial plasmid or virus); use vector to insert gene into required cells; transfer genes into cells of animals, plants or microorganisms at early development so they develop with desired characteristics. Interpret information about techniques and make informed judgements about issues including cloning and GM crops.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "4.6.2.5",
+          "Sub_topic_name": "Cloning methods (biology only)",
+          "description": "Describe cloning methods: tissue culture (small groups of plant cells grown into identical plants; preserves rare species and used commercially); cuttings (simple method producing identical plants); embryo transplants (split cells from early animal embryo before specialised; transplant identical embryos into host mothers); adult cell cloning: remove nucleus from unfertilised egg cell, insert nucleus from adult body cell (e.g. skin), apply electric shock to stimulate division, embryo cells genetically identical to adult donor; insert ball-of-cells embryo into womb to develop. Explain potential benefits/risks of cloning in agriculture and medicine and that some people have ethical objections.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "4.6.3.1",
+          "Sub_topic_name": "Darwin and evolution theory development (biology only)",
+          "description": "Describe Darwin’s development of evolution by natural selection based on observations, experimentation, discussion and links to geology and fossils; key points: individuals in a species show variation; those with characteristics best suited are more likely to survive and breed; these characteristics are passed on. Know Darwin published On the Origin of Species (1859) and controversy followed. Explain why acceptance was gradual: challenged idea of divine creation; insufficient evidence at time; inheritance/variation mechanism unknown until ~50 years later. Understand Lamarck’s theory (inheritance of acquired characteristics) and that in the vast majority of cases this does not occur. Creationism study not required. Appreciate theories develop over time using evidence from many scientists.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "4.6.3.2",
+          "Sub_topic_name": "Wallace and speciation theory development (biology only)",
+          "description": "Describe work of Darwin and Alfred Russel Wallace in developing evolution by natural selection and impact on biology. Know Wallace independently proposed natural selection; published joint writings with Darwin in 1858 prompting Darwin’s 1859 publication. Know Wallace gathered evidence worldwide and is known for warning colouration and speciation theory. Describe steps leading to new species (speciation) and understand speciation theory has developed over time with accumulating evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6s",
+          "Specification_section_sub": "4.6.3.3",
+          "Sub_topic_name": "Mendel and development of genetics understanding (biology only)",
+          "description": "Describe development of understanding of genetics including Mendel’s work and why it was not recognised until after his death. Know Mendel’s mid-19th century breeding experiments led to idea that inheritance of characteristics determined by 'units' passed to descendants unchanged. Know late 19th century observations of chromosome behaviour in cell division; early 20th century recognition that chromosomes and Mendel’s units behaved similarly leading to idea genes are on chromosomes; mid-20th century discovery of DNA structure and mechanism of gene function; understand gene theory developed from work of many scientists and has developed over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6t",
+          "Specification_section_sub": "4.6.3.4",
+          "Sub_topic_name": "Evidence for evolution: fossils and antibiotic resistance",
+          "description": "Describe evidence supporting evolution including fossil record and antibiotic resistance in bacteria. Understand that natural selection is widely accepted; evidence includes understanding that characteristics are passed in genes, fossil record evidence, and observed evolution of antibiotic resistance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6u",
+          "Specification_section_sub": "4.6.3.5",
+          "Sub_topic_name": "Fossils and fossil record limitations",
+          "description": "Define fossils as remains of organisms from millions of years ago found in rocks. Describe fossil formation: from parts not decayed due to absent decay conditions; replacement by minerals as decay occurs; preserved traces (footprints, burrows, rootlet traces). Explain why early life left few traces (soft-bodied) and geological activity destroyed many; therefore fossil record is incomplete and limits certainty about origins of life. Use fossils to learn how organisms changed over time. Extract and interpret information from charts/graphs/tables such as evolutionary trees.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6v",
+          "Specification_section_sub": "4.6.3.6",
+          "Sub_topic_name": "Extinction causes",
+          "description": "Define extinction as when no remaining individuals of a species are alive. Describe factors that may contribute to extinction (e.g. environmental change, new predators/pathogens, competition, habitat loss) in given contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6w",
+          "Specification_section_sub": "4.6.3.7",
+          "Sub_topic_name": "Antibiotic resistance evolution and control",
+          "description": "Explain why bacteria evolve rapidly (fast reproduction) and how antibiotic resistance arises: mutations create new strains; resistant strains survive antibiotic treatment and reproduce; resistant population increases and spreads; people not immune and no effective treatment. Know MRSA is resistant to antibiotics. Explain ways to reduce resistance development: avoid inappropriate antibiotic prescribing (e.g. for non-serious/viral infections); patients should complete course so all bacteria killed and none survive to mutate; restrict agricultural antibiotic use. Understand that developing new antibiotics is costly/slow and may not keep up with emerging resistant strains.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6x",
+          "Specification_section_sub": "4.6.4",
+          "Sub_topic_name": "Classification systems and evolutionary trees",
+          "description": "Describe traditional classification by Linnaeus based on structure/characteristics: hierarchy kingdom, phylum, class, order, family, genus, species; binomial naming (genus + species). Use given information to show understanding of Linnaean system. Describe impact of developments in biology on classification (improved microscopes, biochemical understanding) leading to new models. Describe Woese three-domain system based on chemical analysis: archaea (primitive bacteria in extreme environments), bacteria (true bacteria), eukaryota (protists, fungi, plants, animals). Interpret evolutionary trees as representations of relationships using classification data for living organisms and fossil data for extinct organisms.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "4.7",
+      "Strand": "Biology",
+      "Topic_name": "Ecology",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "4.7.1.1",
+          "Sub_topic_name": "Communities, ecosystems, interdependence and competition",
+          "description": "Describe levels of organisation in an ecosystem: individual organisms → populations → communities → ecosystem. Explain importance of interdependence and competition in a community. Given information, identify factors organisms compete for in a habitat and suggest adaptations to conditions. Define ecosystem as interaction of community (biotic) with non-living (abiotic) environment. Explain plants compete for light, space, water and mineral ions; animals compete for food, mates, territory. Explain interdependence (species depend on others for food, shelter, pollination, seed dispersal etc.) and that removing one species can affect whole community; define stable community as balanced species and environmental factors with fairly constant population sizes. Extract/interpret charts/graphs/tables about interactions within communities and record first-hand observations appropriately.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "4.7.1.2",
+          "Sub_topic_name": "Abiotic factors affecting communities",
+          "description": "Explain how changes in abiotic (non-living) factors affect a community given data/context. Required abiotic factors: light intensity, temperature, moisture levels, soil pH and mineral content, wind intensity and direction, carbon dioxide levels (plants), oxygen levels (aquatic animals). Extract/interpret charts/graphs/tables relating abiotic factors to organisms in a community.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "4.7.1.3",
+          "Sub_topic_name": "Biotic factors affecting communities",
+          "description": "Explain how changes in biotic (living) factors affect a community given data/context. Required biotic factors: availability of food, arrival of new predators, arrival of new pathogens, one species outcompeting another leading to insufficient numbers to breed. Extract/interpret charts/graphs/tables relating biotic factors to organisms in a community.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "4.7.1.4",
+          "Sub_topic_name": "Adaptations and extremophiles",
+          "description": "Explain how organisms are adapted to live in their natural environments given information; adaptations may be structural, behavioural or functional. Know some organisms live in extreme environments (high temperature, pressure, salt concentration) and are called extremophiles; example: bacteria living in deep-sea vents.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "4.7.2.1",
+          "Sub_topic_name": "Food chains, trophic relationships and sampling",
+          "description": "Understand photosynthetic organisms are producers of biomass for life on Earth. Represent feeding relationships with food chains beginning with a producer (usually green plant/alga) that synthesises molecules (glucose) by photosynthesis. Describe consumers: producers eaten by primary consumers; then secondary and tertiary consumers. Define predators (kill/eat) and prey (eaten). Understand in stable communities predator and prey populations rise and fall in cycles; interpret graphs modelling predator-prey cycles. Describe that ecologists use transects and quadrats to determine distribution and abundance. For abundance data: understand mean, mode, median; calculate arithmetic means; plot/draw appropriate graphs with suitable scales.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "4.7.2.2",
+          "Sub_topic_name": "Cycling of materials: carbon and water cycles; decomposers’ role",
+          "description": "Recall that materials cycle through abiotic and biotic components of ecosystems. Explain importance of carbon and water cycles to living organisms: carbon cycle returns carbon to atmosphere as CO2 through respiration and decomposition for use in photosynthesis; water cycle provides fresh water on land before draining to seas; includes continuous evaporation and precipitation. Students are not expected to study nitrogen cycle. Explain role of microorganisms (decomposers) in cycling materials by returning carbon to atmosphere as CO2 and mineral ions to soil. Interpret and explain diagrams of carbon and water cycles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "4.7.2.3",
+          "Sub_topic_name": "Decomposition, decay conditions and biogas (biology only)",
+          "description": "Explain how temperature, water and oxygen availability affect rate of decay of biological material. Calculate rate changes in decay; translate between numerical and graphical forms; plot/draw graphs with suitable scales. Explain that gardeners/farmers provide optimum conditions for rapid decay (compost) used as natural fertiliser. Know anaerobic decay produces methane; biogas generators can produce methane as a fuel.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "4.7.2.4",
+          "Sub_topic_name": "Impact of environmental change on species distribution (biology only)",
+          "description": "Evaluate impact of environmental changes on distribution of species in an ecosystem given information. Environmental changes include temperature, availability of water, and composition of atmospheric gases; changes may be seasonal, geographic, or caused by human interaction.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "4.7.3.1",
+          "Sub_topic_name": "Biodiversity and ecosystem stability",
+          "description": "Define biodiversity as variety of different species of organisms on Earth or within an ecosystem. Explain that greater biodiversity increases ecosystem stability by reducing dependence on one species for food, shelter and maintenance of physical environment. Explain that human future relies on maintaining biodiversity; many human activities reduce biodiversity and measures have been taken to reduce this reduction. Explain impacts of waste, deforestation and global warming on biodiversity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "4.7.3.2",
+          "Sub_topic_name": "Waste management and pollution",
+          "description": "Explain that rapid human population growth and rising living standards increase resource use and waste; poor handling causes pollution. Describe pollution types: water pollution from sewage, fertiliser, toxic chemicals; air pollution from smoke and acidic gases; land pollution from landfill and toxic chemicals. Explain that pollution kills plants/animals and can reduce biodiversity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "4.7.3.3",
+          "Sub_topic_name": "Land use and peat bogs",
+          "description": "Explain how humans reduce land available for other organisms by building, quarrying, farming and dumping waste. Explain that destroying peat bogs/peat areas to produce compost reduces habitat area and biodiversity; decay or burning of peat releases CO2 to atmosphere. Understand conflict between need for cheap compost to increase food production and need to conserve peatlands for biodiversity and reduce CO2 emissions; evaluate risks/benefits and perceptions of risk where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "4.7.3.4",
+          "Sub_topic_name": "Deforestation causes and implications",
+          "description": "Describe large-scale tropical deforestation causes: providing land for cattle and rice fields; growing crops for biofuels. Evaluate environmental implications of deforestation (e.g. habitat loss, biodiversity reduction, impacts on carbon cycle and climate) given information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "4.7.3.5",
+          "Sub_topic_name": "Global warming: greenhouse gases and biological consequences",
+          "description": "Describe biological consequences of global warming. Know levels of carbon dioxide and methane are increasing and contribute to global warming. Understand that scientific consensus on climate change is based on systematic reviews of thousands of peer-reviewed publications; explain why evidence may be uncertain/incomplete in complex contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "4.7.3.6",
+          "Sub_topic_name": "Maintaining biodiversity: conservation strategies",
+          "description": "Describe positive and negative human interactions with ecosystems and explain impact on biodiversity. Describe programmes to reduce negative effects: breeding programmes for endangered species; protection/regeneration of rare habitats; reintroduction of field margins and hedgerows in agriculture; reduction of deforestation and CO2 emissions by some governments; recycling resources rather than landfill. Evaluate given information about methods to tackle human impacts and explain conflicting pressures on maintaining biodiversity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "4.7.4.1",
+          "Sub_topic_name": "Trophic levels and decomposers (biology only)",
+          "description": "Describe differences between trophic levels within an ecosystem and represent trophic levels numerically: level 1 producers (plants/algae); level 2 primary consumers (herbivores); level 3 secondary consumers (carnivores that eat herbivores); level 4 tertiary consumers (carnivores that eat other carnivores); apex predators have no predators. Describe decomposers as microorganisms that break down dead plant/animal matter by secreting enzymes; small soluble molecules diffuse into microorganism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "4.7.4.2",
+          "Sub_topic_name": "Pyramids of biomass (biology only)",
+          "description": "Construct and interpret pyramids of biomass representing relative biomass at each trophic level, with trophic level 1 at base. Construct accurate pyramids from appropriate data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7q",
+          "Specification_section_sub": "4.7.4.3",
+          "Sub_topic_name": "Transfer of biomass and efficiency (biology only)",
+          "description": "Describe pyramids of biomass and explain biomass losses between trophic levels. Know producers transfer about 1% of incident light energy to biomass via photosynthesis. Know only ~10% of biomass at one trophic level is transferred to the next. Explain losses: not all ingested material absorbed (egested as faeces); absorbed material lost as waste products (CO2 and water in respiration; water and urea in urine); large amounts of glucose used in respiration. Calculate efficiency of biomass transfer between trophic levels using percentages or fractions of mass; explain effects on numbers of organisms at each trophic level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7r",
+          "Specification_section_sub": "4.7.5.1",
+          "Sub_topic_name": "Food security factors (biology only)",
+          "description": "Define food security as having enough food to feed a population. Describe biological factors threatening food security: increasing birth rate in some countries; changing diets in developed countries leading to global transport of scarce resources; new pests and pathogens affecting farming; environmental changes affecting production (e.g. famine if rains fail); cost of agricultural inputs; conflicts affecting availability of water or food. Interpret population and food production statistics to evaluate food security. Understand sustainable methods are needed to feed all people on Earth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7s",
+          "Specification_section_sub": "4.7.5.2",
+          "Sub_topic_name": "Farming techniques and energy transfer (biology only)",
+          "description": "Explain that food production efficiency can be improved by restricting energy transfer from food animals to the environment by limiting movement and controlling temperature of surroundings. Know some animals are fed high-protein foods to increase growth. Evaluate advantages/disadvantages of modern farming techniques and understand ethical objections to intensive methods given information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7t",
+          "Specification_section_sub": "4.7.5.3",
+          "Sub_topic_name": "Sustainable fisheries (biology only)",
+          "description": "Explain that fish stocks are declining and must be maintained at levels where breeding continues to avoid species disappearance in areas. Describe that controlling net size and introducing fishing quotas support sustainable conservation. Understand how different fishing techniques promote recovery of fish stocks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7u",
+          "Specification_section_sub": "4.7.5.4",
+          "Sub_topic_name": "Role of biotechnology in food production (biology only)",
+          "description": "Describe and explain biotechnical and agricultural solutions (including genetic modification) to demands of growing human population. Know modern biotechnology allows culturing microorganisms for food; example: Fusarium fungus grown aerobically on glucose syrup to produce mycoprotein; biomass harvested and purified as protein-rich vegetarian food. Know genetically modified bacterium produces human insulin, harvested and purified for diabetes treatment. Know GM crops could provide more food or improved nutritional value (e.g. golden rice).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "4.8",
+      "Strand": "Biology",
+      "Topic_name": "Key ideas",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "4.8",
+          "Sub_topic_name": "Key ideas in biology (synoptic)",
+          "description": "Use the specification’s overarching biological key ideas to link topics and construct coherent explanations: life processes depend on molecules whose structure relates to function; cells are fundamental units and may form adapted tissues/organs/organ systems; organisms form populations, communities and ecosystems and interact with environment/humans; organisms are interdependent and adapted; life depends on photosynthesis (light trapping, carbon fixation using CO2 and hydrogen from water producing organic compounds and oxygen); organic compounds fuel cellular respiration enabling other life reactions; chemicals cycle through natural world; characteristics influenced by genome and environment; evolution by natural selection explains biodiversity and relatedness of organisms.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "3",
+      "Strand": "Biology",
+      "Topic_name": "Working scientifically",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Development of scientific thinking (WS 1.1–1.6)",
+          "description": "WS 1.1: understand how scientific methods and theories develop over time; use examples of changing methods/theories; explain how new data can change models/theories; judge whether data supports a theory. WS 1.2: use models (representational, spatial, descriptive, computational, mathematical) to solve problems, make predictions, develop explanations; recognise/draw/interpret diagrams; translate data into models; match model features to data; calculate/predict using models and show limitations; suggest how models can be tested. WS 1.3: appreciate power/limitations of science and consider ethical issues; explain why data is needed and may be uncertain/incomplete/unavailable; outline simple ethical arguments about new technology. WS 1.4: explain everyday/technological applications; evaluate personal/social/economic/environmental implications; make decisions based on evidence and arguments; describe/evaluate methods to tackle human impacts on environment. WS 1.5: evaluate risks in practical science and societal context; compare perceived vs measured risk (voluntary/imposed, familiar/unfamiliar, visible/invisible). WS 1.6: recognise importance of peer review and communication; explain peer review detects false claims and builds consensus; explain popular media reports may not be peer reviewed and can be oversimplified/inaccurate/biased.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Experimental skills and strategies (WS 2.1–2.7)",
+          "description": "WS 2.1: use scientific theories/explanations to develop hypotheses. WS 2.2: plan experiments/devise procedures to make observations, produce/characterise substances, test hypotheses, check data or explore phenomena; explain why procedures are well designed; manipulate/control variables; identify independent, dependent and control variables and justify controls; apply apparatus/techniques to suggest procedures. WS 2.3: select appropriate techniques, instruments, apparatus and materials and explain choices. WS 2.4: carry out experiments with correct manipulation, accuracy and health & safety; identify hazards and reduce risk. WS 2.5: apply sampling techniques to ensure representative samples. WS 2.6: make and record observations/measurements using appropriate apparatus and methods; read scales and record appropriately. WS 2.7: evaluate methods and suggest improvements/further investigations; judge sufficiency/precision; evaluate validity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Analysis and evaluation (WS 3.1–3.8)",
+          "description": "WS 3.1: present observations/data appropriately (frequency tables/diagrams, bar charts, histograms, plots). WS 3.2: translate data between forms (graphical ↔ numeric). WS 3.3: carry out mathematical/statistical analysis: significant figures, mean and range, frequency representations, order of magnitude, rearranging equations, substitution with correct units, slope/intercept of linear graphs, slope of tangent as rate of change, area under curve meaning and estimation by counting squares. WS 3.4: represent distributions and estimate uncertainty; understand every measurement has uncertainty; use range about mean as measure of uncertainty. WS 3.5: interpret data in verbal/diagrammatic/graphical/symbolic/numerical forms; identify patterns/trends; make inferences/conclusions; use data to predict. WS 3.6: present reasoned explanations relating data to hypotheses; judge consistency with hypotheses and compare hypotheses. WS 3.7: be objective; evaluate accuracy, precision, repeatability, reproducibility; identify random vs systematic error; reduce random error via more measurements/mean; examine anomalous values and ignore if due to poor measurement. WS 3.8: communicate rationale, methods, findings and conclusions through structured written/electronic reports using verbal/diagrammatic/graphical/numerical/symbolic forms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "3.4",
+          "Sub_topic_name": "Scientific vocabulary, quantities, units and symbols (WS 4.1–4.6)",
+          "description": "WS 4.1: use scientific vocabulary, terminology and definitions. WS 4.2: recognise importance of scientific quantities and how determined. WS 4.3: use SI units (e.g. kg, g, mg; km, m, mm; kJ, J) and appropriate nomenclature where relevant. WS 4.4: use prefixes/powers of ten for orders of magnitude (tera, giga, mega, kilo, centi, milli, micro, nano). WS 4.5: interconvert units. WS 4.6: use appropriate number of significant figures. Applies across the whole specification including required practicals.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "7",
+      "Strand": "Biology",
+      "Topic_name": "Mathematical requirements",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "7",
+          "Sub_topic_name": "Maths skills in GCSE Biology",
+          "description": "Apply required mathematics skills in Biology contexts at appropriate demand: (1) Arithmetic and numerical computation: a) recognise/use decimals; b) recognise/use standard form; c) use ratios, fractions and percentages; d) estimate results of simple calculations. (2) Handling data: a) use appropriate significant figures; b) find arithmetic means; c) construct/interpret frequency tables/diagrams, bar charts, histograms; d) understand sampling principles as applied to scientific data; e) understand simple probability; f) understand mean, mode, median; g) use scatter diagrams to identify correlation; h) make order-of-magnitude calculations. (3) Algebra: a) use symbols =, <, <<, >>, >, ∝, ~; d) solve simple algebraic equations. (4) Graphs: a) translate between graphical and numeric form; b) understand y = mx + c as linear relationship; c) plot two variables; d) determine slope and intercept of a linear graph. (5) Geometry and trigonometry: c) calculate areas of triangles/rectangles, surface areas and volumes of cubes. Use correct units throughout.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "8",
+      "Strand": "Biology",
+      "Topic_name": "Practical assessment",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "8.1",
+          "Sub_topic_name": "Apparatus and techniques (AT 1–8)",
+          "description": "Understand and apply required apparatus and technique competencies for GCSE Biology practical work: AT1 accurate measurement of length, area, mass, time, temperature, volume of liquids/gases and pH using appropriate apparatus; AT2 safe heating devices/techniques including Bunsen burner, water bath or electric heater; AT3 apparatus/techniques to observe and measure biological changes/processes; AT4 safe and ethical use of living organisms (plants/animals) to measure physiological functions and responses to environment; AT5 measurement of reaction rates via gas production, water uptake, colour change of indicators; AT6 sampling techniques to investigate distribution/abundance in field using quadrats/transects; AT7 use of magnification and microscopes to observe specimens and produce labelled scientific drawings; AT8 (Biology only) use qualitative reagents/techniques to identify biological molecules and processes in more complex problem-solving contexts including continuous sampling investigations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "8.2.1",
+          "Sub_topic_name": "Required practical 1: Microscopy of cells",
+          "description": "Use a light microscope to observe, draw and label a selection of plant and animal cells, including a magnification scale. Apply AT1 (measure length/area) and AT7 (microscopy and biological drawings). Use estimations to judge relative size/area of sub-cellular structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "8.2.2",
+          "Sub_topic_name": "Required practical 2: Antiseptics/antibiotics and bacterial growth (biology only)",
+          "description": "Investigate effect of antiseptics or antibiotics on bacterial growth using agar plates and measuring zones of inhibition. Apply AT1 (length/area), AT3 (measure bacterial growth), AT4 (safe/ethical handling of bacteria), AT8 (problem-solving using qualitative approaches to find best antibiotic or antiseptic concentration). Develop hypotheses, plan procedures, manage accuracy and safety. Calculate cross-sectional areas of bacterial cultures/clear zones using πr².",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "8.2.3",
+          "Sub_topic_name": "Required practical 3: Osmosis in plant tissue",
+          "description": "Investigate effect of a range of concentrations of salt or sugar solutions on mass of plant tissue. Apply AT1 (mass, time), AT3 (measure osmosis), AT5 (rate by water uptake). Develop hypotheses; plan test; ensure accuracy/safety; record observations/measurements; evaluate method and improvements; present data graphically and translate numeric↔graph; calculate rates, percentages, mean mass; plot/draw/interpret graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "8.2.4",
+          "Sub_topic_name": "Required practical 4: Food tests (Benedict’s, iodine, Biuret)",
+          "description": "Use qualitative reagents to test for carbohydrates, lipids and proteins: Benedict’s test for sugars, iodine test for starch, Biuret reagent for protein. Apply AT2 (safe Bunsen/water bath heating) and AT8 (qualitative reagent use). Carry out safely with correct manipulation and hazard control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "8.2.5",
+          "Sub_topic_name": "Required practical 5: Effect of pH on amylase",
+          "description": "Investigate effect of pH on rate of amylase reaction using continuous sampling to measure time to completely digest starch at a range of pH values; test for starch every 30 s using iodine reagent; control temperature with water bath/electric heater. Apply AT1 (volumes, time, pH), AT2 (safe heating), AT5 (rate by colour change), AT8 (iodine reagent; continuous sampling). Develop hypotheses, manage sampling, record time, and present graph of amylase activity vs pH; perform rate calculations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "8.2.6",
+          "Sub_topic_name": "Required practical 6: Light intensity and photosynthesis (pondweed)",
+          "description": "Investigate effect of light intensity on rate of photosynthesis using an aquatic organism (e.g. pondweed). Apply AT1 (rate of O2 production; control/measure temperature via heat shield water bath), AT2 (thermometer/water bath), AT3 (measure O2 production), AT4 (safe/ethical use/disposal of pondweed), AT5 (rate by gas production). Develop hypotheses; plan; take multiple samples per light intensity; record gas production; plot graph of light intensity vs rate; translate numeric↔graph; measure/understand rates. (HT) Use inverse proportion/inverse square law relating light intensity to distance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "8.2.7",
+          "Sub_topic_name": "Required practical 7: Human reaction time",
+          "description": "Plan and carry out investigation into effect of a factor on human reaction time. Apply AT1 (time measurement), AT3 (appropriate apparatus/techniques for reaction time), AT4 (safe/ethical use of humans). Translate results between numerical and graphical forms and interpret patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "8.2.8",
+          "Sub_topic_name": "Required practical 8: Plant tropisms (light or gravity) (biology only)",
+          "description": "Investigate effect of light or gravity on growth of newly germinated seedlings; record length measurements and accurate labelled biological drawings showing effects. Apply AT1 (length/time), AT3 (measure growth), AT4 (safe/ethical use of plants), AT7 (biological drawings). Plan observations, select apparatus/materials, record and present observations (tables/graphs/drawings), evaluate method and suggest improvements/further investigations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "8.2.9",
+          "Sub_topic_name": "Required practical 9: Field sampling of population size and distribution",
+          "description": "Measure population size of a common species in a habitat; use sampling techniques to investigate effect of a factor on distribution. Apply AT1 (length/area), AT3 (transects/quadrats), AT4 (safe/ethical organism handling), AT6 (field sampling distribution/abundance), AT8 (complex contexts/continuous sampling where relevant). Develop hypotheses; plan sampling; measure abiotic factor; estimate population size; calculate means; apply sampling principles; use mean/mode/median for ecological data; plot graphs with suitable scales.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11k",
+          "Specification_section_sub": "8.2.10",
+          "Sub_topic_name": "Required practical 10: Temperature and milk decay (biology only)",
+          "description": "Investigate effect of temperature on rate of decay of fresh milk by measuring pH change. Apply AT1 (temperature, pH), AT3 (measure anaerobic decay), AT4 (safe use of microorganisms), AT5 (rate by pH change). Form hypothesis; carry out safely with accurate measurement; record observations; evaluate method/improvements; calculate rate changes; translate numeric↔graph; plot graphs with appropriate scales.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

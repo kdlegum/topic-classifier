@@ -1,0 +1,1227 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Geography A",
+  "Exam Board": "Edexcel",
+  "Specification": "1GA0",
+  "has_math": true,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "Topic 1",
+      "Strand": "Component 1: The Physical Environment",
+      "Topic_name": "The changing landscapes of the UK",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1a",
+          "Sub_topic_name": "UK rock types: characteristics and distribution",
+          "description": "Know the characteristics and distribution of the UK’s main rock types: sedimentary (chalk, sandstone), igneous (basalt, granite) and metamorphic (schists, slates). Use geological maps to identify and describe where these rock types occur and relate them to landscape patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1b",
+          "Sub_topic_name": "Geology, tectonics and UK upland/lowland landscapes",
+          "description": "Understand the role of geology and past tectonic processes in developing upland landscapes (typically igneous and metamorphic rocks) and lowland landscapes (typically sedimentary rocks). Be able to use simple geological cross-sections to show relationships between rock type/structure and relief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.2a",
+          "Sub_topic_name": "Physical processes shaping distinctive UK landscapes",
+          "description": "Explain how distinctive upland and lowland landscapes result from interacting physical processes including glacial erosion and deposition, weathering, climatological processes, and post-glacial river and slope processes. Be able to locate key UK physical features (uplands, lowland basins, rivers) on outline UK maps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1.2b",
+          "Sub_topic_name": "Human activity shaping UK landscapes over time",
+          "description": "Explain how distinctive UK landscapes result from human activity over time, including agriculture, forestry and settlement. Recognise physical and human features on 1:25,000 and 1:50,000 Ordnance Survey (OS) maps and relate land use/settlement patterns to landscape character.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "Optional sub topic 1A",
+      "Strand": "Component 1: The Physical Environment",
+      "Topic_name": "Coastal landscapes and processes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "1.3a",
+          "Sub_topic_name": "Coastal processes: weathering, mass movement, erosion, transport, deposition",
+          "description": "Understand the physical processes at work on the coast: weathering (mechanical, chemical, biological), mass movement (sliding and slumping), erosion (abrasion, hydraulic action, attrition, solution), transport (traction, saltation, suspension, solution, longshore drift) and deposition. Apply correct terminology to explain how these processes shape coastal landscapes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "1.3b",
+          "Sub_topic_name": "Geology and wave action controlling coastal landforms",
+          "description": "Explain how geological structure (concordant/discordant coasts, joints and faults), rock type (hard/soft rock) and wave action (destructive vs constructive waves) influence the formation and rate of change of coastal landforms. Use BGS Geology maps (paper/online) to link coastal form to underlying geology.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "1.3c",
+          "Sub_topic_name": "UK weather and climate effects on coastal erosion and retreat",
+          "description": "Explain how the UK’s weather and climate (seasonality, storm frequency, prevailing winds) affect rates of coastal erosion and retreat, and the impacts on landforms and landscape. Use UK weather/climate data and calculate mean rates of erosion using a multi-year dataset.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "1.4a",
+          "Sub_topic_name": "Erosional coastal landforms",
+          "description": "Explain the role of erosional processes in developing coastal landforms: headlands and bays, caves, arches, cliffs, stacks and wave-cut platforms. Recognise these coastal landforms on 1:25,000 and 1:50,000 OS maps and relate map evidence to process explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "1.4b",
+          "Sub_topic_name": "Depositional coastal landforms",
+          "description": "Explain the role of depositional processes in developing coastal landforms: bars, beaches and spits. Recognise depositional landforms on 1:25,000 and 1:50,000 OS maps and link them to sediment transport (including longshore drift) and changing wave energy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "1.5a",
+          "Sub_topic_name": "Human activity, coastal change, coastal recession and flooding impacts",
+          "description": "Explain how human activities (urbanisation, agriculture, industry) have affected coastal landscapes, and how coastal recession and flooding affect people and the environment (social, economic and environmental impacts). Use map/GIS evidence where relevant to show interaction between human land use and coastal risk.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "1.5b",
+          "Sub_topic_name": "Coastal management: hard and soft engineering and landscape change",
+          "description": "Assess advantages and disadvantages of UK coastal defences: hard engineering (sea walls, groynes, rip rap) and soft engineering (beach nourishment, managed retreat). Explain how these interventions can lead to changes in coastal landscapes (including unintended consequences such as altered sediment supply/longshore drift impacts). Use 1:25,000 and 1:50,000 OS maps and GIS to investigate the impact of human intervention.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "1.6a",
+          "Sub_topic_name": "Named UK distinctive coastal landscape (located example)",
+          "description": "Study one named distinctive coastal landscape in the UK (must fit one of: discordant coast, concordant coast, coastline of deposition, coastal retreat). Explain the significance of its location, how it has been formed, and identify the most influential factors in its change over time (physical processes, geology, wave climate, weather/climate and human management). Recognise relevant landforms on OS maps.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "Optional sub topic 1B",
+      "Strand": "Component 1: The Physical Environment",
+      "Topic_name": "River landscapes and processes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "1.7a",
+          "Sub_topic_name": "River landscape processes: weathering, mass movement, erosion, transport, deposition",
+          "description": "Understand the physical processes at work in river landscapes: weathering (mechanical, chemical, biological), mass movement (sliding and slumping), erosion (abrasion, hydraulic action, attrition, solution), transport (traction, saltation, suspension, solution) and deposition. Apply correct terminology to explain how these processes shape river landforms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "1.7b",
+          "Sub_topic_name": "Changes down a named UK river: channel/valley and long profile",
+          "description": "Explain how river landscapes contrast between upper, middle and lower courses and why channel shape (width, depth), valley profile, gradient, discharge, velocity and sediment size/shape change downstream along the course of a named UK river. Use BGS Geology maps (paper/online) to link long profiles to geology and interpret downstream changes using data and map evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "1.7c",
+          "Sub_topic_name": "UK weather and climate effects on river processes and landscapes",
+          "description": "Explain how UK weather (short-term events such as storms and droughts) and climate affect river processes and the impacts on landforms and landscapes. Use UK weather and climate data to support explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "1.8a",
+          "Sub_topic_name": "Erosional river landforms and geology influence",
+          "description": "Explain the role of erosion processes and the influence of geology in developing river landforms: interlocking spurs, waterfalls, gorges and river cliffs. Recognise these landforms on 1:25,000 and 1:50,000 OS maps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "1.8b",
+          "Sub_topic_name": "Depositional river landforms: flood plains, levees, point bars",
+          "description": "Explain the role of depositional processes in the formation of flood plains, levees and point bars. Link these features to changes in velocity, discharge, sediment load and channel morphology.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "1.8c",
+          "Sub_topic_name": "Erosion and deposition interaction: meanders and oxbow lakes",
+          "description": "Explain how interacting erosion and deposition processes develop meanders and oxbow lakes, including helicoidal flow, erosion on the outer bend and deposition on the inner bend, and how cut-offs form over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "1.9a",
+          "Sub_topic_name": "Human activity, land use change and river flooding (causes/effects)",
+          "description": "Explain how human activities and land use change (urbanisation, agriculture, industry) affect river processes and river landscapes. Understand physical and human causes of river flooding and the effects of flooding on people and the environment. Draw simple storm hydrographs using rainfall and discharge data and interpret storm hydrograph characteristics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "1.9b",
+          "Sub_topic_name": "River management: hard and soft engineering and landscape change",
+          "description": "Assess advantages and disadvantages of UK river defences: hard engineering (dams, reservoirs, channelisation) and soft engineering (floodplain zoning, washlands). Explain how these approaches can change river processes and river landscapes. Use 1:25,000 and 1:50,000 OS maps and GIS to investigate impacts of human intervention.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "1.10a",
+          "Sub_topic_name": "Named UK distinctive river landscape (located example)",
+          "description": "Study one named distinctive UK river landscape (upland or lowland). Explain the significance of its location, how it has been formed, and identify the most influential factors in its change (physical processes, weather/climate variability, geology, land use and management).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "Optional sub topic 1C",
+      "Strand": "Component 1: The Physical Environment",
+      "Topic_name": "Glaciated upland landscapes and processes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "1.11a",
+          "Sub_topic_name": "Glacial processes in upland landscapes (past)",
+          "description": "Understand glacial processes that operated in glaciated upland landscapes: glacial erosion (plucking, abrasion), transport (on or within the ice) and deposition. Apply these processes to explain how glaciers modify upland relief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "1.11b",
+          "Sub_topic_name": "Post-glacial processes in relict glaciated uplands (today)",
+          "description": "Understand physical processes operating on relict upland glacial landscapes today: mechanical weathering (freeze-thaw) and mass movement (soil movement; rock falls/slides). Link these processes to slope instability and ongoing landscape change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "1.11c",
+          "Sub_topic_name": "Past and present climate controls on upland glacial landscapes",
+          "description": "Explain how past climate and current UK weather and climate (seasonal and diurnal variations) affect processes that impact on glaciated upland landscapes. Use UK weather and climate data to support explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "1.12a",
+          "Sub_topic_name": "Erosional glacial landforms",
+          "description": "Explain how glacial erosion forms: truncated spurs, corries, glacial troughs, glacial lakes/tarns, arêtes, hanging valleys and roche moutonnées. Recognise these glaciated upland landforms on 1:25,000 and 1:50,000 OS maps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "1.12b",
+          "Sub_topic_name": "Depositional glacial landforms: moraines",
+          "description": "Explain how glacial deposition forms ground moraines and terminal moraines. Recognise moraine features and relate them to past ice extent and retreat stages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "1.12c",
+          "Sub_topic_name": "Erosion and deposition interaction: crag and tail; drumlins",
+          "description": "Explain how interacting glacial erosion and deposition develop crag and tail landforms and drumlins, and what these features indicate about ice movement and sediment deposition. Recognise these features on 1:25,000 and 1:50,000 OS maps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "1.13a",
+          "Sub_topic_name": "Human impacts on upland glacial landscape processes",
+          "description": "Explain how human activity (farming, forestry, settlement) has impacted physical processes in glaciated upland landscapes, including effects on soils, vegetation cover, slope stability and erosion rates. Use OS maps/GIS where appropriate to evidence land use change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "1.13b",
+          "Sub_topic_name": "Upland development: water, renewables, tourism, conservation (pros/cons)",
+          "description": "Assess advantages and disadvantages of upland development (water storage and supply, renewable energy, recreation and tourism, conservation) and explain how development can lead to change in glaciated upland landscapes (economic, social and environmental trade-offs). Use OS maps and GIS to investigate impacts of interventions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "1.14a",
+          "Sub_topic_name": "Named UK distinctive glaciated upland landscape (located example)",
+          "description": "Study one named distinctive glaciated upland landscape in the UK (underlain by karst limestone, igneous or metamorphic geology). Explain the significance of its location, how it has been formed, and the most significant factors in its change (physical processes, weather/climate, geology and human activity/management).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "Topic 2",
+      "Strand": "Component 1: The Physical Environment",
+      "Topic_name": "Weather hazards and climate change",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "2.1a",
+          "Sub_topic_name": "Global atmospheric circulation features",
+          "description": "Know the main features of global atmospheric circulation (global system transferring heat and energy), including the arrangement of circulation cells and associated pressure belts and prevailing winds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "2.1b",
+          "Sub_topic_name": "Circulation cells and ocean currents redistribute heat",
+          "description": "Explain how circulation cells and ocean currents transfer and redistribute heat energy across the Earth, creating global patterns of temperature and precipitation and influencing climate zones.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "2.2a",
+          "Sub_topic_name": "Past climate change: Quaternary glacial/interglacial cycles",
+          "description": "Understand how climate changed in the past over different timescales, including glacial and interglacial periods during the Quaternary period, and what this shows about natural variability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "2.2b",
+          "Sub_topic_name": "Natural climate change: causes and evidence",
+          "description": "Explain natural causes of climate change (Milankovitch cycles, solar variation, volcanism) and evaluate evidence used to reconstruct past climates (ice cores, pollen records, tree rings, historical sources).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "2.3a",
+          "Sub_topic_name": "Enhanced greenhouse effect from human activities",
+          "description": "Explain how human activities (industry, transport, energy production, farming) generate greenhouse gases (carbon dioxide CO₂, methane CH₄) that cause the enhanced greenhouse effect, linking emissions to atmospheric warming mechanisms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "2.3b",
+          "Sub_topic_name": "Impacts of current climate change on people and environment",
+          "description": "Understand negative effects of climate change on environments and people, including changing crop yield patterns, rising sea levels and retreating glaciers. Apply evidence to describe and explain impacts at different scales.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "2.4a",
+          "Sub_topic_name": "UK climate today and change over the last 1000 years",
+          "description": "Describe the climate of the UK today and how it has changed over the last 1000 years. Use and interpret line graphs/bar charts showing climate change (e.g., temperature and precipitation trends).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "2.4b",
+          "Sub_topic_name": "Spatial variations in UK temperature, wind and rainfall",
+          "description": "Explain spatial variations in UK temperature, prevailing wind and rainfall, relating patterns to latitude, altitude, relief, distance from sea, prevailing winds and oceanic influence where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "2.4c",
+          "Sub_topic_name": "UK location and the significance for climate",
+          "description": "Explain why the UK’s geographic location is significant for its climate, including maritime influence and position relative to Atlantic weather systems and global circulation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "2.5a",
+          "Sub_topic_name": "Tropical cyclone formation sequence and source areas",
+          "description": "Explain how global atmospheric circulation leads to tropical cyclones (hurricanes/typhoons) in source areas and describe the sequence of formation (conditions required, development stages, movement). Use GIS to track the movement of tropical cyclones.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "2.5b",
+          "Sub_topic_name": "Tropical cyclone characteristics, frequency and distribution over time",
+          "description": "Describe tropical cyclone characteristics and analyse frequency and geographical distribution, explaining how these patterns can change over time (including seasonal/decadal variability and links to ocean-atmosphere conditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "2.6a",
+          "Sub_topic_name": "Why tropical cyclones are hazardous",
+          "description": "Explain why tropical cyclones are natural weather hazards, including high winds, intense rainfall, storm surges, coastal flooding and landslides. Use weather and storm surge data to calculate Saffir–Simpson magnitude where required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "2.6b",
+          "Sub_topic_name": "Tropical cyclone impacts in developed vs emerging/developing countries (named examples)",
+          "description": "Compare and contrast social, economic and environmental impacts of tropical cyclones in one named developed country and one named emerging or developing country, linking differences to level of development, preparedness, infrastructure and vulnerability. Use social media sources, satellite imagery and socio-economic data to assess impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "2.6c",
+          "Sub_topic_name": "Tropical cyclone responses in developed vs emerging/developing countries (named examples)",
+          "description": "Compare responses to tropical cyclones by individuals, organisations and governments in one named developed country and one named emerging or developing country, including immediate (relief, evacuation) and long-term (rebuilding, mitigation/adaptation) responses and how development affects capacity to respond.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "2.7a",
+          "Sub_topic_name": "Arid environments vs drought extreme weather",
+          "description": "Describe characteristics of arid environments and compare them to the extreme weather conditions associated with drought, distinguishing long-term dryness from drought as a hazard event.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "2.7b",
+          "Sub_topic_name": "Causes of drought: meteorological, hydrological and human",
+          "description": "Explain the complex causes of drought as a weather hazard: meteorological causes, hydrological causes, and human causes including agricultural practices, dam building and deforestation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "2.7c",
+          "Sub_topic_name": "Global circulation and drought vulnerability over time",
+          "description": "Explain why global atmospheric circulation makes some locations more vulnerable to drought than others and how vulnerability changes over time. Use and interpret graphs showing medium-term rainfall trends.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "2.8a",
+          "Sub_topic_name": "Why droughts are hazardous",
+          "description": "Explain why droughts are hazardous, including impacts on water supply, food production, health, ecosystems, economic activity and risk of secondary hazards (e.g., wildfires, soil degradation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "2.8b",
+          "Sub_topic_name": "Drought impacts in developed vs emerging/developing countries (named examples)",
+          "description": "Compare how drought impacts on people and ecosystems vary between one named developed country and one named emerging or developing country, linking differences to water management, economic resilience, agriculture dependence and vulnerability. Use and interpret socio-economic data to support comparisons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5t",
+          "Specification_section_sub": "2.8c",
+          "Sub_topic_name": "Drought responses in developed vs emerging/developing countries (named examples)",
+          "description": "Compare responses to drought from individuals, organisations and governments in one named developed country and one named emerging or developing country, including short-term relief and long-term adaptation/management strategies.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "Topic 3",
+      "Strand": "Component 1: The Physical Environment",
+      "Topic_name": "Ecosystems, biodiversity and management",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.1a",
+          "Sub_topic_name": "Global biomes: distribution and characteristics",
+          "description": "Know the distribution and characteristics of the world’s large-scale ecosystems/biomes: tropical forests, temperate forests, boreal forests, tropical grasslands, temperate grasslands, deserts and tundra. Use world maps to show biome locations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.1b",
+          "Sub_topic_name": "Climate, soils and altitude controlling biome distribution",
+          "description": "Explain how climate and local factors (soils and altitude) influence the distribution of large-scale ecosystems. Compare climate graphs for different biomes to support explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.2a",
+          "Sub_topic_name": "Biosphere resources and commercial exploitation",
+          "description": "Understand how the biosphere provides resources for people (food, medicine, building materials, fuel) and how it is increasingly exploited commercially for energy, water and mineral resources, including consequences for sustainability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.3a",
+          "Sub_topic_name": "UK terrestrial ecosystems: distribution and characteristics",
+          "description": "Know the distribution and characteristics of the UK’s main terrestrial ecosystems: moorlands, heaths, woodlands and wetlands. Interpret GIS maps showing UK ecosystem patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.3b",
+          "Sub_topic_name": "UK marine ecosystems: importance and degradation",
+          "description": "Explain the importance of marine ecosystems to the UK as a resource (e.g., food, transport, recreation, biodiversity services) and how human activities are degrading them (e.g., overfishing, pollution, habitat damage).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.4a",
+          "Sub_topic_name": "Tropical rainforest ecosystem characteristics (biotic/abiotic)",
+          "description": "Describe biotic and abiotic characteristics of tropical rainforests: climate, soils, water, plants, animals and humans, and how these components define ecosystem structure and function.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3.4b",
+          "Sub_topic_name": "Tropical rainforest interdependence and nutrient cycling (Gersmehl)",
+          "description": "Explain interdependence between climate, soils, water, plants, animals and humans in tropical rainforests and how this relates to nutrient cycling using the Gersmehl nutrient cycle model. Interpret nutrient cycle diagrams and food web diagrams.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "3.4c",
+          "Sub_topic_name": "Tropical rainforest biodiversity and adaptations",
+          "description": "Explain why tropical rainforests have very high biodiversity and describe plant adaptations (stratified layers, buttress roots, drip tips) and animal adaptations (strong limbs, modified wings and beaks, camouflage) to rainforest conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "3.5a",
+          "Sub_topic_name": "Tropical rainforest goods and services",
+          "description": "Give examples of goods and services provided by tropical rainforest ecosystems, including foodstuffs, medicines, timber and recreation, and link these to ecosystem services and human use.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "3.5b",
+          "Sub_topic_name": "Climate change threats to tropical rainforests",
+          "description": "Explain how climate change threatens the structure, functioning and biodiversity of tropical rainforests (e.g., altered rainfall/temperature, increased fire risk, habitat change).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "3.5c",
+          "Sub_topic_name": "Deforestation causes in tropical rainforests",
+          "description": "Explain economic and social causes of tropical rainforest deforestation, including conversion to agriculture, resource extraction and population pressure. Use and interpret relevant population/resource projection graphs where used to contextualise pressure on resources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "3.5d",
+          "Sub_topic_name": "Sustainable management of a named rainforest region (located example)",
+          "description": "Study sustainable management of tropical rainforest in one named region. Explain political and economic factors such as governance, commodity value and ecotourism that contribute to sustainable management, and evaluate how strategies reduce deforestation and protect biodiversity while supporting development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "3.6a",
+          "Sub_topic_name": "Deciduous woodland ecosystem characteristics (biotic/abiotic)",
+          "description": "Describe abiotic and biotic characteristics of deciduous woodlands: climate, soil, water, plants, animals and humans, and how these shape woodland structure and seasonal functioning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "3.6b",
+          "Sub_topic_name": "Deciduous woodland interdependence and nutrient cycling (Gersmehl)",
+          "description": "Explain interdependence between climate, soil, water, plants, animals and humans in deciduous woodlands and how this relates to nutrient cycling using the Gersmehl nutrient cycle model. Interpret nutrient cycle and food web diagrams for temperate ecosystems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "3.6c",
+          "Sub_topic_name": "Deciduous woodland biodiversity and adaptations",
+          "description": "Explain why deciduous woodlands have moderate biodiversity and describe plant adaptations (leaf size/structure, winter water conservation) and animal adaptations (migration, hibernation, food storage) to seasonal conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "3.7a",
+          "Sub_topic_name": "Deciduous woodland goods and services",
+          "description": "Give examples of goods and services provided by deciduous woodlands, including timber, fuel, conservation value and recreation, and link use to management needs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "3.7b",
+          "Sub_topic_name": "Climate change threats to deciduous woodlands",
+          "description": "Explain how climate change threatens the structure, function and biodiversity of deciduous woodland ecosystems (e.g., species range shifts, phenology changes, pests/disease).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "3.7c",
+          "Sub_topic_name": "Deforestation causes in deciduous woodlands",
+          "description": "Explain economic and social causes of deforestation in deciduous woodlands, including urbanisation and population growth, timber extraction and agricultural change. Use GIS to identify and describe patterns of forest loss where applicable.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6s",
+          "Specification_section_sub": "3.7d",
+          "Sub_topic_name": "Sustainable management of deciduous woodlands in a named region (located example)",
+          "description": "Study different approaches to the sustainable use and management of deciduous woodlands in one named region. Explain and evaluate strategies (e.g., conservation designations, coppicing, replanting, controlled access, sustainable timber certification) and their impacts on biodiversity and local economies.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "Topic 4",
+      "Strand": "Component 2: The Human Environment",
+      "Topic_name": "Changing cities",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "4.1a",
+          "Sub_topic_name": "Global urbanisation trends (last 50 years)",
+          "description": "Describe contrasting trends in urbanisation over the last 50 years in developed, emerging and developing countries, including differences in urban growth rates and proportions urban.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "4.1b",
+          "Sub_topic_name": "Why urbanisation happens at different times/rates and effects",
+          "description": "Explain how and why urbanisation has occurred at different times and rates in developed, emerging and developing countries, and the effects (e.g., economic change, migration, infrastructure demand, environmental pressures).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "4.2a",
+          "Sub_topic_name": "UK urban population distribution and major urban centres",
+          "description": "Know the distribution of the urban population in the UK and locate its major urban centres. Use map evidence to describe spatial patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "4.2b",
+          "Sub_topic_name": "Why UK urbanisation varies by region",
+          "description": "Explain factors causing the rate and degree of urbanisation to differ between UK regions (e.g., industrial history, economic opportunities, connectivity, migration patterns, planning).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "4.3a",
+          "Sub_topic_name": "UK major city case study: site, situation and connectivity",
+          "description": "For a chosen major UK city (population ≥200,000), describe and explain how its site, situation and connectivity influence its functions and structure in national (cultural and environmental), regional and global contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "4.3b",
+          "Sub_topic_name": "UK major city structure: CBD, inner city, suburbs, urban-rural fringe",
+          "description": "Describe the chosen UK city’s urban structure (CBD, inner city, suburbs, urban-rural fringe) in terms of functions and building age, linking land use zones to historical development and economic activity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "4.4a",
+          "Sub_topic_name": "UK major city: urbanisation to re-urbanisation sequence",
+          "description": "Explain the sequence and characteristics of urbanisation, suburbanisation, counter-urbanisation and re-urbanisation for the chosen UK city, including drivers and impacts on different urban zones. Use satellite images to identify land use zones where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "4.4b",
+          "Sub_topic_name": "UK major city: migration causes and impacts within the city",
+          "description": "Explain causes of national and international migration and analyse impacts on different parts of the chosen UK city, including changes to age structure, ethnicity, housing and services. Use population pyramids, choropleth maps and GIS as evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "4.5a",
+          "Sub_topic_name": "UK major city: Census characteristics and population change",
+          "description": "Use Census data to describe key population characteristics of the chosen UK city and explain reasons for population growth or decline. Use Census output area data (2011 specified) where required by the spec skills guidance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "4.5b",
+          "Sub_topic_name": "UK major city: deindustrialisation causes and impacts",
+          "description": "Explain causes of deindustrialisation (globalisation, decentralisation, technological advances, transport developments) and analyse impacts on the chosen UK city (employment structure, land use change, dereliction/regeneration needs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "4.5c",
+          "Sub_topic_name": "UK major city: inequality and quality of life differences",
+          "description": "Explain how economic change increases inequality within the city and analyse differences in quality of life between areas (income, employment, housing, health, environment).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "4.5d",
+          "Sub_topic_name": "UK major city: retail change impacts (CBD decline, out-of-town, internet)",
+          "description": "Describe recent changes in retailing and explain impacts on the chosen UK city, including CBD decline, growth of edge-/out-of-town shopping and increased popularity of internet shopping.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "4.5e",
+          "Sub_topic_name": "UK major city: sustainable urban strategies to improve quality of life",
+          "description": "Assess strategies to make urban living more sustainable and improve quality of life in the chosen UK city, including recycling, employment, education, health, transport, affordable and energy-efficient housing. Calculate ecological footprint for people in the city and compare to other locations (as per integrated skills).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "4.6a",
+          "Sub_topic_name": "Emerging/developing world city case study: site, situation and connectivity",
+          "description": "For a chosen major city in a developing or emerging country (population ≥200,000), describe and explain how site, situation and connectivity influence city functions and structure in national (cultural and environmental), regional and global contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "4.6b",
+          "Sub_topic_name": "Emerging/developing world city structure: CBD, inner city, suburbs, urban-rural fringe",
+          "description": "Describe the chosen city’s structure (CBD, inner city, suburbs, urban-rural fringe) in terms of functions and building age, linking patterns to rapid growth and planning/informal development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "4.7a",
+          "Sub_topic_name": "Emerging/developing world city: population growth trends and reasons",
+          "description": "Explain past and present trends in population growth in the chosen city, including rates of natural increase, national and international migration, economic investment and growth. Use and interpret line graphs and calculate rate of change/annual or decadal percentage growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7q",
+          "Specification_section_sub": "4.7b",
+          "Sub_topic_name": "Emerging/developing world city: migration causes and impacts within the city",
+          "description": "Explain causes of national and international migration and analyse impacts on different parts of the chosen city (age structure, ethnicity, housing, services). Use GIS/satellite images, historic images and maps to investigate spatial growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7r",
+          "Specification_section_sub": "4.7c",
+          "Sub_topic_name": "Emerging/developing world city: inequality and quality of life contrasts",
+          "description": "Explain how rapid city growth is accompanied by increasing inequality (areas of extreme wealth versus poverty) and reasons for differences in quality of life. Use quantitative and qualitative information to judge the scale of variations in quality of life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7s",
+          "Specification_section_sub": "4.8a",
+          "Sub_topic_name": "Emerging/developing world city challenges from rapid urbanisation",
+          "description": "Explain challenges resulting from rapid urbanisation in the chosen city: variable quality/provision of infrastructure, services and housing; under-employment and informal employment; pollution. Link challenges to pace of growth, governance and resource constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7t",
+          "Specification_section_sub": "4.8b",
+          "Sub_topic_name": "Managing challenges: bottom-up vs top-down approaches",
+          "description": "Assess advantages and disadvantages of bottom-up (community-led) and top-down (government/TNC-led) approaches to managing the chosen city’s challenges and improving quality of life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7u",
+          "Specification_section_sub": "4.8c",
+          "Sub_topic_name": "Government policies improving quality of life in the chosen city",
+          "description": "Explain the role of government policies in improving social, economic and environmental quality of life in the chosen city, including how policy targets infrastructure, housing, services, employment and environmental management.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "Topic 5",
+      "Strand": "Component 2: The Human Environment",
+      "Topic_name": "Global development",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "5.1a",
+          "Sub_topic_name": "Defining development: economic vs broader measures",
+          "description": "Understand contrasting definitions of development, including purely economic criteria and broader social and political measures, and how definitions influence priorities and evaluation of progress.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "5.1b",
+          "Sub_topic_name": "Factors influencing human development",
+          "description": "Explain factors contributing to human development: economic, social, technological, cultural, plus food and water security, and how these interact to shape quality of life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "5.1c",
+          "Sub_topic_name": "Measuring development: GDP per capita, HDI, inequality, corruption",
+          "description": "Compare how development is measured using GDP per capita, Human Development Index (HDI), measures of inequality and indices of political corruption. Compare relative rankings using single versus composite measures and interpret what different indicators reveal/omit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "5.2a",
+          "Sub_topic_name": "Global pattern of development and unevenness (including within the UK)",
+          "description": "Describe and interpret the global pattern of development and unevenness between and within countries, including within the UK. Interpret choropleth maps showing development patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "5.2b",
+          "Sub_topic_name": "Causes of spatial variations in development (global and UK)",
+          "description": "Explain physical, historic and economic factors leading to spatial variations in development globally and within the UK, including colonisation/legacy, trade patterns, resource distribution, governance, conflict, environmental constraints and location.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "5.3a",
+          "Sub_topic_name": "Consequences of uneven development for quality of life",
+          "description": "Explain how uneven global development affects quality of life, including access to housing, health, education, employment, technology and food and water security.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "5.4a",
+          "Sub_topic_name": "International strategies to reduce uneven development",
+          "description": "Describe and assess international strategies aiming to reduce uneven development, including international aid and inter-governmental agreements, considering how they operate and their limitations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "5.4b",
+          "Sub_topic_name": "Top-down vs bottom-up development projects (pros/cons)",
+          "description": "Explain the difference between top-down (government or transnational corporation-led) and bottom-up (community-led) development projects. Assess advantages and limitations of each approach in promoting development and reducing inequality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "5.5a",
+          "Sub_topic_name": "Case study country: location and global/regional position",
+          "description": "For a chosen developing or emerging country, describe its location and position within its region and globally, and explain how this context influences development opportunities and constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "5.5b",
+          "Sub_topic_name": "Case study country: political, social, cultural and environmental context",
+          "description": "Describe the broad political, social, cultural and environmental context of the chosen country in regional and global contexts, and link these to development pathways and challenges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "5.5c",
+          "Sub_topic_name": "Case study country: core–periphery uneven development and reasons",
+          "description": "Explain uneven development within the chosen country using core–periphery patterns and reasons development occurs at different rates across regions (infrastructure, investment, resource distribution, governance, physical geography).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "5.6a",
+          "Sub_topic_name": "Case study country: sectoral change impacts (primary to quaternary)",
+          "description": "Analyse positive and negative impacts of changes in economic sectors (primary, secondary, tertiary, quaternary) in the chosen country. Use numerical economic data to profile the country and support evaluation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "5.6b",
+          "Sub_topic_name": "Case study country: trade and aid characteristics and involvement",
+          "description": "Describe characteristics of international trade and aid and analyse the chosen country’s involvement in both. Use proportional flow-line maps to visualise trade patterns and flows and explain benefits/costs (dependency, volatility, market access).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "5.6c",
+          "Sub_topic_name": "Case study country: public vs private investment balance",
+          "description": "Explain changes in the balance between public investment (government) and private investment (TNCs and smaller businesses) in the chosen country and how this influences development outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8o",
+          "Specification_section_sub": "5.6d",
+          "Sub_topic_name": "Case study country: population structure and life expectancy change",
+          "description": "Describe and explain changes in population structure and life expectancy over the last 30 years in the chosen country. Interpret population pyramids to support analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8p",
+          "Specification_section_sub": "5.6e",
+          "Sub_topic_name": "Case study country: changing social factors (inequality, middle class, education)",
+          "description": "Explain changing social factors in the chosen country, including increased inequality, growth of the middle class and improved education, and how these affect development and quality of life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8q",
+          "Specification_section_sub": "5.7a",
+          "Sub_topic_name": "Case study country: geopolitics and development",
+          "description": "Explain how geopolitical relationships affect the chosen country’s development, including foreign policy, defence, military pacts and territorial disputes, and assess how geopolitics can enable or constrain investment and stability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8r",
+          "Specification_section_sub": "5.7b",
+          "Sub_topic_name": "Case study country: technology/connectivity supporting development",
+          "description": "Explain how technology and connectivity support development in different regions and for different groups in the chosen country. Use socio-economic data to calculate difference from the mean for core and periphery regions and interpret spatial inequalities in access/benefits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8s",
+          "Specification_section_sub": "5.8a",
+          "Sub_topic_name": "Case study country: impacts of rapid development (social/economic/environmental)",
+          "description": "Assess positive and negative social, economic and environmental impacts of rapid development for the chosen country and its people, including changing employment, urban growth, pollution, resource demand and inequality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8t",
+          "Specification_section_sub": "5.8b",
+          "Sub_topic_name": "Case study country: managing impacts to improve quality of life and status",
+          "description": "Explain how government and people manage impacts of rapid development to improve quality of life and global status, including policy choices, sustainability measures and social programmes, and evaluate effectiveness and trade-offs.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "Topic 6",
+      "Strand": "Component 2: The Human Environment",
+      "Topic_name": "Resource management",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "6.1a",
+          "Sub_topic_name": "Defining and classifying natural resources",
+          "description": "Define natural resources as features/parts of the environment used to meet human needs, and classify them as biotic or abiotic, renewable or non-renewable. Apply classifications to real examples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "6.1b",
+          "Sub_topic_name": "How people exploit environments for water, food and energy",
+          "description": "Explain how people exploit environments to obtain water, food and energy, including extraction of fossil fuels, fishing, farming and deforestation, and link exploitation methods to demand and technology.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "6.1c",
+          "Sub_topic_name": "Environmental impacts of resource exploitation",
+          "description": "Explain how exploitation changes environments, including reduced biodiversity, soil erosion and reduced water and air quality, and evaluate sustainability implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "6.2a",
+          "Sub_topic_name": "Global and UK distribution of natural resources",
+          "description": "Describe global and UK variety and distribution of natural resources (soil/agriculture, forestry, fossil fuels, water supply, rock and minerals). Use and interpret UK and world maps showing resource distribution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "6.2b",
+          "Sub_topic_name": "Global patterns of food, energy and water consumption",
+          "description": "Describe and interpret global patterns of usage and consumption of food, energy and water, using choropleth maps and data visualisations (e.g., Gapminder) to compare countries and regions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "Optional sub topic 6A",
+      "Strand": "Component 2: The Human Environment",
+      "Topic_name": "Energy resource management",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "6.3a",
+          "Sub_topic_name": "Renewable vs non-renewable energy resource classification",
+          "description": "Classify energy resources as renewable and non-renewable and apply classification to a range of examples, recognising implications for sustainability and energy security.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "6.3b",
+          "Sub_topic_name": "Non-renewable energy resource development: pros and cons",
+          "description": "Explain advantages and disadvantages of the production and development of one non-renewable energy resource (e.g., coal, oil, natural gas, uranium), including economic benefits, energy security, environmental impacts and social issues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "6.3c",
+          "Sub_topic_name": "Renewable energy resource development: pros and cons",
+          "description": "Explain advantages and disadvantages of the production and development of one renewable energy resource (e.g., wind, solar, hydro-electric power), including reliability, cost, intermittency, land use, environmental and social impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "6.4a",
+          "Sub_topic_name": "UK energy mix composition",
+          "description": "Know the composition of the UK’s energy mix (proportions of energy sources) and understand how and why it changes over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "6.4b",
+          "Sub_topic_name": "Global variations in energy mix and influencing factors",
+          "description": "Explain how global variations in energy mix depend on factors including population, wealth and availability of energy resources. Use and interpret world maps showing distribution of energy resources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "6.5a",
+          "Sub_topic_name": "Changing global energy demand and supply over 100 years",
+          "description": "Explain how and why global energy demand and supply changed over the last 100 years due to human intervention, including population growth, increased wealth and technological advances. Use and interpret line graphs showing future global population projections and population in relation to likely available energy resources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "6.5b",
+          "Sub_topic_name": "Developing non-renewable resources: impacts on people and environment",
+          "description": "Explain how non-renewable energy resources (coal, oil, natural gas, uranium) are developed and assess positive and negative impacts on people and the environment, including pollution, landscape change, jobs and geopolitical implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "6.5c",
+          "Sub_topic_name": "Developing renewable resources: impacts on people and environment",
+          "description": "Explain how renewable energy resources (HEP, wind, solar) are developed and assess positive and negative impacts on people and the environment, including carbon reduction, ecosystem effects and community impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "6.5d",
+          "Sub_topic_name": "Fracking as a technological response to energy shortages",
+          "description": "Explain how technology such as fracking can resolve energy resource shortages and assess associated environmental risks, social concerns and economic benefits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10j",
+          "Specification_section_sub": "6.6a",
+          "Sub_topic_name": "Stakeholder attitudes to energy exploitation and consumption",
+          "description": "Explain how attitudes to exploitation and consumption of energy resources vary between stakeholders (individuals, organisations, governments) and how these views influence decisions and conflicts over energy projects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10k",
+          "Specification_section_sub": "6.7a",
+          "Sub_topic_name": "Why sustainable management of energy resources is needed",
+          "description": "Explain why renewable and non-renewable energy resources require sustainable management, linking to finite supplies, environmental impacts and climate change. Calculate carbon footprints and ecological footprints as part of evaluating sustainability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10l",
+          "Specification_section_sub": "6.7b",
+          "Sub_topic_name": "Conflicting views on sustainable energy management",
+          "description": "Compare different views held by individuals, organisations and governments on managing and using energy resources sustainably, including trade-offs between cost, reliability, development and environmental protection.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10m",
+          "Specification_section_sub": "6.7c",
+          "Sub_topic_name": "Sustainable energy management in one developed and one emerging/developing country",
+          "description": "Study how one developed country and one emerging or developing country have attempted to manage energy resources sustainably, including policies, technologies, investment choices and outcomes. Evaluate effectiveness using evidence (emissions, access, reliability, environmental impacts).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "Optional sub topic 6B",
+      "Strand": "Component 2: The Human Environment",
+      "Topic_name": "Water resource management",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "6.8a",
+          "Sub_topic_name": "Global distribution of fresh water",
+          "description": "Describe the global distribution of fresh water and distinguish stores and availability (e.g., ice, groundwater, surface water) to explain why accessible freshwater is unevenly distributed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "6.8b",
+          "Sub_topic_name": "Freshwater availability at global, national and local scales",
+          "description": "Explain how freshwater availability varies at global, national and local scales, linking to climate, geology, river basin characteristics, infrastructure and governance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "6.8c",
+          "Sub_topic_name": "Water surplus and water deficit: causes",
+          "description": "Explain why some parts of the world experience water surplus or water deficit, using concepts of supply vs demand and physical and human drivers. Use and interpret UK and world maps showing freshwater supply and demand.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "6.8d",
+          "Sub_topic_name": "Changing water supply and demand over 50 years",
+          "description": "Explain how and why water supply and demand changed over the last 50 years due to human intervention, including population growth, agriculture/industry expansion, urbanisation and rising living standards. Use and interpret relevant population/resource projection graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "6.9a",
+          "Sub_topic_name": "Water use by sector in developed vs emerging/developing countries",
+          "description": "Compare proportions of water used by agriculture, industry and domestic sectors in developed countries versus emerging or developing countries and link to economic structure and development level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "6.9b",
+          "Sub_topic_name": "Reasons for differences in water usage between country groups",
+          "description": "Explain reasons for differences in water usage between developed and emerging/developing countries, including irrigation intensity, industrialisation, infrastructure, lifestyle and efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "6.10a",
+          "Sub_topic_name": "UK water supply problems: rainfall imbalance, seasonality, ageing infrastructure",
+          "description": "Explain why the UK has water supply problems, including spatial imbalances in rainfall supply vs demand, seasonal imbalances and ageing infrastructure (sewage and water pipes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "6.10b",
+          "Sub_topic_name": "Emerging/developing country water supply problems",
+          "description": "Explain why emerging or developing countries can have water supply problems, including reliance on untreated water, pollution of water courses and low annual rainfall, and link to health and development impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "6.11a",
+          "Sub_topic_name": "Stakeholder attitudes to water exploitation and consumption",
+          "description": "Explain how attitudes to exploitation and consumption of water resources vary between stakeholders (individuals, organisations, governments). Use and interpret UK and world relative water stress maps to contextualise viewpoints and conflict.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "6.11b",
+          "Sub_topic_name": "Desalination as a technological response to water shortages",
+          "description": "Explain how technology such as desalination can resolve water resource shortages and assess advantages and disadvantages (energy use, cost, environmental impacts such as brine disposal, reliability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11k",
+          "Specification_section_sub": "6.12a",
+          "Sub_topic_name": "Why sustainable water management is needed",
+          "description": "Explain why water resources require sustainable management, linking to finite accessible supply, environmental needs, climate variability, rising demand and equity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11l",
+          "Specification_section_sub": "6.12b",
+          "Sub_topic_name": "Conflicting views on sustainable water management",
+          "description": "Compare different views held by individuals, organisations and governments on managing and using water resources sustainably, including trade-offs between economic development, agriculture, domestic supply and ecosystem protection.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11m",
+          "Specification_section_sub": "6.12c",
+          "Sub_topic_name": "Sustainable water management in one developed and one emerging/developing country",
+          "description": "Study how one developed country and one emerging or developing country have attempted to manage water resources sustainably, including policy, infrastructure, conservation, pricing, transfers and technology. Evaluate effectiveness using evidence (water security, access, environmental outcomes).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "Topic 7",
+      "Strand": "Component 3: Geographical Investigations: Fieldwork and UK Challenges",
+      "Topic_name": "Geographical investigations − fieldwork",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "7A.1",
+          "Sub_topic_name": "Fieldwork enquiry questions (physical: rivers or coasts)",
+          "description": "Develop understanding of the kinds of geographical questions that can be investigated through fieldwork in physical environments (river or coastal). Formulate an enquiry question(s) based on the fieldwork location and the required task focus (rivers: change in a river channel; coasts: coastal processes through landscape evidence).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "7A.2",
+          "Sub_topic_name": "Physical fieldwork methods: quantitative + qualitative and human interaction",
+          "description": "Carry out physical fieldwork data collection including at least one quantitative method (rivers: measuring river discharge; coasts: measuring beach morphology and sediment characteristics) and at least one qualitative method (record landforms making up the river/coastal landscape). Understand human interaction: implications of river/coastal processes for people living in the catchment/coastal environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "7A.3",
+          "Sub_topic_name": "Physical fieldwork secondary data sources",
+          "description": "Use required secondary sources: for rivers include a flood risk map (e.g., Environment Agency flood risk map) plus one other secondary source; for coasts include a geology map (e.g., BGS Geology of Britain viewer) plus one other secondary source. Integrate secondary evidence to support analysis and conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "7B.1",
+          "Sub_topic_name": "Fieldwork enquiry questions (human: urban or rural)",
+          "description": "Develop understanding of the kinds of geographical questions that can be investigated through fieldwork in human environments (central/inner urban area or rural settlements). Formulate an enquiry question(s) based on the fieldwork location and the required task focus (urban: change in central/inner urban area(s); rural: change in rural settlements).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "7B.2",
+          "Sub_topic_name": "Human fieldwork methods: qualitative + quantitative and physical interaction",
+          "description": "Carry out human fieldwork data collection including at least one qualitative method (urban: record quality of the urban environment; rural: record views of people on quality of the rural environment) and at least one quantitative method (urban: measure land use function; rural: measure flows of people within a rural settlement). Understand physical interaction: interaction between physical landscape features, the settlement/urban area and residents/visitors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "7B.3",
+          "Sub_topic_name": "Human fieldwork secondary data sources (incl. Census)",
+          "description": "Use at least two different secondary sources for human fieldwork, including Census data (e.g., ONS website or ONS Neighbourhood Statistics neighbourhood summary report) plus at least one other centre-chosen source. Integrate secondary data to contextualise field evidence and support evaluation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "Enquiry stages 1-6",
+          "Sub_topic_name": "Geographical enquiry process stages (assessable skills)",
+          "description": "Be prepared to be assessed on at least two of the six enquiry stages across both investigations: (1) understanding questions suitable for fieldwork and enquiry processes; (2) understanding range of fieldwork techniques/methods including observation and measurement; (3) processing and presenting fieldwork data using maps, GIS, graphs and diagrams (hand-drawn/computer-generated); (4) analysing and explaining field data using relevant case studies and theories; (5) drawing evidenced conclusions and summaries; (6) reflecting critically on data, methods, conclusions and knowledge gained (limitations, improvements, reliability/validity).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "Topic 8",
+      "Strand": "Component 3: Geographical Investigations: Fieldwork and UK Challenges",
+      "Topic_name": "Geographical investigations − UK challenges",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "8.1a",
+          "Sub_topic_name": "UK population change and resource consumption implications",
+          "description": "Analyse projected changes in the UK’s population over the next 50 years and explain implications for resource consumption (food, energy, water, land, services) and sustainability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "8.1b",
+          "Sub_topic_name": "Population pressure on UK ecosystems",
+          "description": "Explain how growing populations create pressures on UK ecosystems (terrestrial and marine), including habitat loss, pollution, recreational pressure and biodiversity impacts, and consider management responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "8.1c",
+          "Sub_topic_name": "National sustainable transport options for the UK",
+          "description": "Assess a range of national sustainable transport options for the UK, considering benefits, limitations, costs, emissions reductions and behavioural change (e.g., rail investment, EVs, public transport integration, active travel, road pricing).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "8.2a",
+          "Sub_topic_name": "Two-speed economy: bridging the UK north–south divide",
+          "description": "Explain the UK ‘two-speed economy’ (south east vs rest of UK) and assess options for bridging the gap (infrastructure, investment, devolution, education/skills, regional policy).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "8.2b",
+          "Sub_topic_name": "Greenfield development vs brownfield regeneration",
+          "description": "Assess costs and benefits of greenfield development and regeneration of brownfield sites, including impacts on housing supply, environment, transport, communities, land values and urban sustainability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "8.2c",
+          "Sub_topic_name": "UK net migration data: reliability and stakeholder attitudes",
+          "description": "Interpret UK net migration statistics and evaluate their reliability. Discuss values and attitudes of different stakeholders towards migration, linking to economic needs, service pressures, social cohesion and political perspectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "8.3a",
+          "Sub_topic_name": "UK National Parks: conservation and development approaches",
+          "description": "Assess approaches to conservation and development in UK National Parks, including managing tourism/recreation, housing pressures, farming/forestry, renewable energy proposals and ecosystem protection, and evaluate trade-offs for stakeholders.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "8.3b",
+          "Sub_topic_name": "Managing UK river and coastal flood risk",
+          "description": "Assess approaches to managing river and coastal flood risk in the UK, including hard/soft engineering, land-use planning, catchment management, managed retreat and community preparedness, and evaluate effectiveness under changing climate and development pressures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13i",
+          "Specification_section_sub": "8.4a",
+          "Sub_topic_name": "Uncertainty in future UK climate impacts",
+          "description": "Explain uncertainties about how global climate change will affect the UK’s future climate, including model uncertainty, emissions scenarios, natural variability and regional differences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13j",
+          "Specification_section_sub": "8.4b",
+          "Sub_topic_name": "Climate change impacts on UK people and landscapes",
+          "description": "Analyse impacts of climate change on people and landscapes in the UK (e.g., flood risk, heatwaves, drought risk, coastal erosion, ecosystems, agriculture, health, infrastructure) and use evidence to support judgements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13k",
+          "Specification_section_sub": "8.4c",
+          "Sub_topic_name": "UK climate change responses at local and national scales",
+          "description": "Assess a range of UK responses to climate change at local and national scales, including mitigation (emissions reduction, energy mix change, transport policy) and adaptation (flood defences, planning, water management), and evaluate feasibility and effectiveness.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

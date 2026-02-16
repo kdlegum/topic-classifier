@@ -1,0 +1,520 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Computer Science",
+  "Exam Board": "Edexcel",
+  "Specification": "1CP2",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "Topic 1",
+      "Strand": "Computer Science",
+      "Topic_name": "Computational thinking",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1.1",
+          "Sub_topic_name": "Decomposition and abstraction to solve problems",
+          "description": "Understand the benefit of using decomposition (breaking a problem/system into smaller parts) and abstraction (removing unnecessary detail) to model aspects of the real world and to analyse, understand and solve problems; apply these ideas when designing algorithms/programs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1.2",
+          "Sub_topic_name": "Using subprograms",
+          "description": "Understand the benefits of using subprograms (procedures/functions), including decomposition into reusable modules, improved readability/maintainability, reduced duplication and easier testing/debugging.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.2.1",
+          "Sub_topic_name": "Algorithmic constructs (sequence/selection/repetition/iteration, IPO)",
+          "description": "Be able to follow and write algorithms in flowcharts, pseudocode and program code that use: sequence; selection; repetition (count-controlled and condition-controlled loops); iteration (looping over every item in a data structure); and input, processing and output (IPO) to solve problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1.2.2",
+          "Sub_topic_name": "Variables, constants and data structures in algorithms",
+          "description": "Understand the need for, and be able to follow and write, algorithms that use variables and constants and one- and two-dimensional data structures, including strings, records and arrays.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "1.2.3",
+          "Sub_topic_name": "Operators in algorithms (arithmetic/relational/logical)",
+          "description": "Understand the need for, and be able to follow and write, algorithms that use: arithmetic operators (addition +, subtraction −, division /, multiplication ×, modulus MOD, integer division, exponentiation); relational operators (=, <, >, ≠, ≤, ≥); and logical operators (AND, OR, NOT).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "1.2.4",
+          "Sub_topic_name": "Tracing algorithms and predicting output",
+          "description": "Be able to determine the correct output of an algorithm for a given set of data, and use a trace table to determine what value a variable will hold at a given point in an algorithm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "1.2.5",
+          "Sub_topic_name": "Program errors (syntax, logic, runtime) and correcting logic errors",
+          "description": "Understand types of errors that can occur in programs (syntax errors, logic errors, runtime errors) and be able to identify and correct logic errors in algorithms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "1.2.6",
+          "Sub_topic_name": "Standard algorithms (sort/search)",
+          "description": "Understand how standard algorithms work: bubble sort, merge sort, linear search and binary search.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "1.2.7",
+          "Sub_topic_name": "Evaluating algorithms (test data, fitness for purpose, efficiency)",
+          "description": "Be able to use logical reasoning and test data to evaluate an algorithm’s fitness for purpose and efficiency, including considering number of comparisons, number of passes through a loop, and use of memory.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "1.3.1",
+          "Sub_topic_name": "Truth tables (up to three inputs)",
+          "description": "Be able to apply logical operators (AND, OR, NOT) in truth tables with up to three inputs to solve problems; interpret inputs/outputs and use truth-table reasoning to determine outcomes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "Topic 2",
+      "Strand": "Computer Science",
+      "Topic_name": "Data",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2.1.1",
+          "Sub_topic_name": "Binary states and representing data/instructions",
+          "description": "Understand that computers use binary to represent data (numbers, text, sound, graphics) and program instructions; be able to determine the maximum number of states representable by a binary pattern of a given length (e.g. 2^n states for n bits).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "2.1.2",
+          "Sub_topic_name": "Unsigned and two’s complement signed integers",
+          "description": "Understand how computers represent and manipulate unsigned integers and two’s complement signed integers; know the significance of the most significant bit for sign in two’s complement and how ranges depend on bit-width.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "2.1.3",
+          "Sub_topic_name": "Denary ↔ 8-bit binary conversion (including negative)",
+          "description": "Be able to convert between denary and 8-bit binary numbers for unsigned range 0 to 255 and two’s complement signed range −128 to +127, including interpreting negative binary patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "2.1.4",
+          "Sub_topic_name": "Binary addition and shifts",
+          "description": "Be able to add together two positive binary patterns; apply logical shifts and arithmetic shifts to binary numbers, understanding how shifting affects value and how arithmetic shift preserves sign for signed representations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "2.1.5",
+          "Sub_topic_name": "Overflow",
+          "description": "Understand the concept of overflow in relation to the number of bits available to store a value, including what happens when arithmetic results exceed the representable range for the chosen bit-width.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2.1.6",
+          "Sub_topic_name": "Hexadecimal notation and conversion",
+          "description": "Understand why hexadecimal notation is used (more compact representation of binary, easy mapping of 4-bit nibbles); be able to convert between hexadecimal and binary.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2.2.1",
+          "Sub_topic_name": "Character encoding (7-bit ASCII)",
+          "description": "Understand how computers encode characters using 7-bit ASCII, including how characters map to binary codes and limitations compared with larger character sets.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2.2.2",
+          "Sub_topic_name": "Bitmap images (pixels, resolution, colour depth)",
+          "description": "Understand how bitmap images are represented in binary, including the meaning of pixels, image resolution, and colour depth; relate these to storage requirements and image quality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2.2.3",
+          "Sub_topic_name": "Sound sampling (amplitude, sample rate, bit depth, sample interval)",
+          "description": "Understand how analogue sound is represented in binary through sampling, including amplitude, sample rate, bit depth and sample interval; relate these to sound quality and file size.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2.2.4",
+          "Sub_topic_name": "Limitations of binary representation",
+          "description": "Understand the limitations of binary representation of data when constrained by the number of available bits, including rounding/quantisation effects, limited ranges and loss of precision/detail.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2.3.1",
+          "Sub_topic_name": "Binary multiples and file size/capacity calculations",
+          "description": "Understand that data storage is measured in binary multiples: bit, nibble, byte, kibibyte (KiB), mebibyte (MiB), gibibyte (GiB), tebibyte (TiB); be able to construct expressions to calculate file sizes and data capacity requirements (e.g. image size from resolution × colour depth; sound size from sample rate × bit depth × duration).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "2.3.2",
+          "Sub_topic_name": "Compression (lossless and lossy)",
+          "description": "Understand the need for data compression and methods of compressing data, distinguishing lossless compression (no information loss, reversible) and lossy compression (some information discarded, irreversible) and typical use-cases.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "Topic 3",
+      "Strand": "Computer Science",
+      "Topic_name": "Computers",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Von Neumann architecture and fetch-decode-execute",
+          "description": "Understand the von Neumann stored program concept; understand the role of main memory (RAM), CPU (control unit, arithmetic logic unit (ALU), registers), clock, and the address bus, data bus and control bus in the fetch-decode-execute cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Secondary storage types and how data is stored",
+          "description": "Understand the role of secondary storage and the ways in which data is stored on devices: magnetic, optical and solid-state storage; compare characteristics such as capacity, speed, portability and durability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Embedded systems",
+          "description": "Understand the concept of an embedded system and what embedded systems are used for, including dedicated control within larger devices and constraints such as limited memory/power/processing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Operating systems (OS) functions",
+          "description": "Understand the purpose and functionality of an operating system, including: file management, process management, peripheral management and user management.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Utility software",
+          "description": "Understand the purpose and functionality of utility software, including file repair, backup, data compression, disk defragmentation and anti-malware tools.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Robust software and identifying vulnerabilities",
+          "description": "Understand the importance of developing robust software and methods of identifying vulnerabilities, including audit trails and code reviews; understand how these practices help prevent errors, misuse and security weaknesses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Low-level vs high-level languages",
+          "description": "Understand the characteristics and purposes of low-level and high-level programming languages, including abstraction level, portability, readability, control of hardware, and typical use-cases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Interpreter vs compiler",
+          "description": "Understand how an interpreter differs from a compiler in the way it translates high-level code into machine code, including when translation occurs, how errors are reported, and implications for execution and deployment.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "Topic 4",
+      "Strand": "Computer Science",
+      "Topic_name": "Networks",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.1.1",
+          "Sub_topic_name": "Why networks are used",
+          "description": "Understand why computers are connected in a network, including sharing resources (hardware/software/data), communication, collaboration and centralised management.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.1.2",
+          "Sub_topic_name": "LAN and WAN",
+          "description": "Understand different types of networks, including local area networks (LAN) and wide area networks (WAN), and typical contexts/characteristics for each.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.1.3",
+          "Sub_topic_name": "Internet structure (IP addressing, routers)",
+          "description": "Understand how the internet is structured, including the purpose of IP addressing and the role of routers in directing data packets between networks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.1.4",
+          "Sub_topic_name": "Wired vs wireless performance characteristics",
+          "description": "Understand how the characteristics of wired and wireless connectivity impact on performance, including speed, range, latency and bandwidth; compare trade-offs in different scenarios.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.1.5",
+          "Sub_topic_name": "Network speed units and transmission calculations",
+          "description": "Understand that network speeds are measured in bits per second (kbps, Mbps, Gbps); be able to construct expressions involving file size, transmission rate and time (e.g. time = file size / rate), including unit conversions between bits/bytes and kilo/mega/giga.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.1.6",
+          "Sub_topic_name": "Network and email protocols",
+          "description": "Understand the role of and need for network protocols, including Ethernet, Wi‑Fi, TCP/IP, HTTP, HTTPS, FTP, and email protocols POP3, SMTP and IMAP; understand that protocols are agreed rules enabling reliable communication and interoperability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.1.7",
+          "Sub_topic_name": "4-layer TCP/IP model",
+          "description": "Understand how the 4-layer TCP/IP model (application, transport, internet, link) handles data transmission over a network; relate layers to responsibilities such as application services, end-to-end transport, addressing/routing and physical/link transmission.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.1.8",
+          "Sub_topic_name": "Network topologies (bus, star, mesh)",
+          "description": "Understand characteristics of network topologies: bus, star and mesh; compare implications for performance, reliability, fault tolerance, cost and ease of expansion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "4.2.1",
+          "Sub_topic_name": "Network security (vulnerabilities and protections)",
+          "description": "Understand the importance of network security; understand ways of identifying network vulnerabilities including penetration testing and ethical hacking; understand methods of protecting networks including access control, physical security and firewalls.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "Topic 5",
+      "Strand": "Computer Science",
+      "Topic_name": "Issues and impact",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "5.1.1",
+          "Sub_topic_name": "Environmental impact of digital devices",
+          "description": "Understand environmental issues associated with the use of digital devices, including energy consumption, manufacture, replacement cycle and disposal (e-waste) and their effects on the environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "5.2.1",
+          "Sub_topic_name": "Personal data (privacy, ownership, consent, misuse, data protection)",
+          "description": "Understand ethical and legal issues associated with the collection and use of personal data, including privacy, ownership, consent, misuse and data protection principles/requirements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "5.2.2",
+          "Sub_topic_name": "AI, machine learning and robotics (ethics and law)",
+          "description": "Understand ethical and legal issues associated with the use of artificial intelligence (AI), machine learning and robotics, including accountability, safety, algorithmic bias and legal liability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "5.2.3",
+          "Sub_topic_name": "Intellectual property protection and licencing",
+          "description": "Understand methods of intellectual property protection for computer systems and software, including copyright, patents, trademarks and licencing; understand how these affect use, distribution and ownership of software/digital content.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "5.3.1",
+          "Sub_topic_name": "Cybersecurity threats (malware, vulnerabilities, social engineering)",
+          "description": "Understand the threat to digital systems posed by malware, including viruses, worms, Trojans, ransomware and key loggers; understand how hackers exploit technical vulnerabilities (e.g. unpatched software, out-of-date anti-malware) and use social engineering to carry out cyberattacks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "5.3.2",
+          "Sub_topic_name": "Protecting systems and data",
+          "description": "Understand methods of protecting digital systems and data, including anti-malware, encryption, acceptable use policies, and backup and recovery procedures.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "Topic 6",
+      "Strand": "Computer Science",
+      "Topic_name": "Problem solving with programming",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "6.1.1",
+          "Sub_topic_name": "Decomposition and abstraction in programming problems",
+          "description": "Be able to use decomposition and abstraction to analyse, understand and solve programming problems, including breaking tasks into sub-tasks and identifying essential data/processes before coding.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "6.1.2",
+          "Sub_topic_name": "Read, write, analyse and refine programs",
+          "description": "Be able to read, write, analyse and refine programs written in a high-level programming language (assessed using Python 3), improving correctness, structure, robustness and efficiency where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "6.1.3",
+          "Sub_topic_name": "Convert algorithms to programs",
+          "description": "Be able to convert algorithms represented as flowcharts or pseudocode into working programs (Python 3), preserving logic for sequence, selection, loops, iteration, variables and data structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "6.1.4",
+          "Sub_topic_name": "Writing readable/maintainable code",
+          "description": "Be able to use techniques to make programs easier to read, understand and maintain, including layout, indentation, comments, meaningful identifiers and appropriate use of white space; apply consistent style conventions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "6.1.5",
+          "Sub_topic_name": "Debugging (logic, syntax, runtime)",
+          "description": "Be able to identify, locate and correct program errors, including logic errors, syntax errors and runtime errors, using appropriate debugging approaches (e.g. tracing, testing, interpreting error messages).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "6.1.6",
+          "Sub_topic_name": "Testing and evaluating programs (fitness for purpose, efficiency)",
+          "description": "Be able to use logical reasoning and test data to evaluate a program’s fitness for purpose and efficiency, including considering number of comparisons, number of passes through loops, and memory usage; select/justify suitable test data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "6.2.1",
+          "Sub_topic_name": "Program structure components",
+          "description": "Understand the function of and be able to identify structural components of programs: constants, variables, initialisation and assignment statements, command sequences, selection, repetition, iteration, data structures, subprograms, parameters, and input/output.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "6.2.2",
+          "Sub_topic_name": "Control flow with single entry/exit blocks",
+          "description": "Be able to write programs that make appropriate use of sequencing, selection, repetition (count-controlled and condition-controlled), and iteration (over every item in a data structure); use single entry/exit points from code blocks and subprograms (structured programming).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "6.3.1",
+          "Sub_topic_name": "Data types and data structures (primitive and structured)",
+          "description": "Be able to write programs that make appropriate use of primitive data types (integer, real, Boolean, char) and one- and two-dimensional structured data types (string, array, record), including selecting suitable representations for a problem.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "6.3.2",
+          "Sub_topic_name": "Variables and constants in code",
+          "description": "Be able to write programs that make appropriate use of variables and constants, including correct initialisation, assignment and updating of values throughout program execution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "6.3.3",
+          "Sub_topic_name": "String manipulation",
+          "description": "Be able to write programs that manipulate strings, including operations on length, position (indexing), substrings, and case conversion (e.g. upper/lower), and apply these to solve problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "6.4.1",
+          "Sub_topic_name": "User input and responses",
+          "description": "Be able to write programs that accept and respond appropriately to user input, including prompting, reading input, converting types where needed, and producing suitable output messages/results.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "6.4.2",
+          "Sub_topic_name": "CSV text file input/output",
+          "description": "Be able to write programs that read from and write to comma separated value (CSV) text files, including parsing fields and outputting correctly formatted CSV data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "6.4.3",
+          "Sub_topic_name": "Validation checks",
+          "description": "Understand the need for validation and be able to write programs that implement validation, including length check, presence check, range check and pattern check, ensuring inputs meet required rules before processing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "6.4.4",
+          "Sub_topic_name": "Authentication (ID/password, lookup)",
+          "description": "Understand the need for authentication and be able to write programs that implement authentication mechanisms, including ID and password and lookup (e.g. checking credentials against stored/loaded data).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "6.5.1",
+          "Sub_topic_name": "Arithmetic operators in code",
+          "description": "Be able to write programs that use arithmetic operators: addition, subtraction, division, multiplication, modulus, integer division and exponentiation; apply correct operator precedence and integer/real behaviour where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "6.5.2",
+          "Sub_topic_name": "Relational operators in code",
+          "description": "Be able to write programs that use relational operators: equal to, less than, greater than, not equal to, less than or equal to, and greater than or equal to; use them in conditions for selection/loops.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "6.5.3",
+          "Sub_topic_name": "Logical operators in code",
+          "description": "Be able to write programs that use logical operators AND, OR and NOT; combine Boolean conditions correctly (including precedence/parentheses where needed).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6s",
+          "Specification_section_sub": "6.6.1",
+          "Sub_topic_name": "Using built-in/library and user-defined subprograms",
+          "description": "Be able to write programs that use pre-existing (built-in and library) and user-devised subprograms (procedures and functions), selecting appropriate subprograms for a task and integrating them into a solution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6t",
+          "Specification_section_sub": "6.6.2",
+          "Sub_topic_name": "Functions vs procedures (parameters and return values)",
+          "description": "Be able to write functions that may or may not take parameters but must return values, and procedures that may or may not take parameters but do not return values; understand and apply correct calling and parameter passing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6u",
+          "Specification_section_sub": "6.6.3",
+          "Sub_topic_name": "Global vs local variables",
+          "description": "Understand the difference between global and local variables and be able to write programs that make appropriate use of scope, avoiding unintended side effects and ensuring data is accessible where required.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,992 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Geography B",
+  "Exam Board": "Edexcel",
+  "Specification": "1GB0",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "Topic 1",
+      "Strand": "Component 1: Global Geographical Issues",
+      "Topic_name": "Hazardous Earth",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1a",
+          "Sub_topic_name": "Global atmospheric circulation and heat transfer",
+          "description": "Understand the global atmospheric circulation model and explain how circulation cells and ocean currents transfer and redistribute heat energy around Earth, linking global-scale circulation to temperature patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1b",
+          "Sub_topic_name": "Pressure belts and global rainfall/aridity patterns",
+          "description": "Explain how global atmospheric circulation determines the location of arid (high pressure) and high rainfall (low pressure) zones; interpret and use climate graphs to evidence these spatial patterns (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.2a",
+          "Sub_topic_name": "Natural causes of past climate change",
+          "description": "Know and explain natural causes of climate change and how they account for past climate events, including: asteroid collisions, orbital changes, volcanic activity, and variations in solar output.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1.2b",
+          "Sub_topic_name": "Evidence for natural climate change (Quaternary and UK since Roman times)",
+          "description": "Use evidence sources (ice cores, tree rings, historical sources) to reconstruct climate change, including glacial/interglacial change during the Quaternary and UK climate from Roman times to the present; interpret line graphs/bar charts showing climate change (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "1.3a",
+          "Sub_topic_name": "Enhanced greenhouse effect and human causes of warming",
+          "description": "Explain how human activities (industry, transport, energy, farming) generate greenhouse gases (CO₂, methane) that strengthen the greenhouse effect, leading to global warming.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "1.3b",
+          "Sub_topic_name": "Evidence and consequences of human-caused climate change",
+          "description": "Use evidence for anthropogenic climate change (sea level rise and warming oceans, global temperature rise, declining Arctic ice, increased extreme weather events) and assess possible consequences for people.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "1.3c",
+          "Sub_topic_name": "Future climate projections and uncertainty",
+          "description": "Understand and interpret projections for future global temperature change and sea-level rise, including underlying physical processes and reasons for uncertainty; interpret temperature and sea-level projection graphs to 2100 (Integrated skill 3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "1.4a",
+          "Sub_topic_name": "Tropical cyclone characteristics and global distribution",
+          "description": "Describe tropical cyclone characteristics (pressure, rotation, structure) and their seasonal global distribution, including source areas and tracks and how these change over time; use GIS to track movement (Integrated skill 4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "1.4b",
+          "Sub_topic_name": "Cyclone formation, intensification and dissipation",
+          "description": "Explain how global atmospheric circulation creates tropical cyclones in source areas, why some intensify, and how/why they dissipate; use weather and storm-surge data to calculate Saffir–Simpson magnitude (Integrated skill 5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "1.5a",
+          "Sub_topic_name": "Tropical cyclone hazards and impacts",
+          "description": "Identify and explain physical hazards of tropical cyclones (high winds, intense rainfall, storm surges, coastal flooding, landslides) and their impacts on people and environments; use social media, satellite imagery and socio-economic data to assess impacts (Integrated skill 6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "1.5b",
+          "Sub_topic_name": "Vulnerability to tropical cyclones",
+          "description": "Explain why vulnerability to tropical cyclone impacts varies between countries, considering physical exposure and social/economic factors affecting risk and resilience.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "1.6a",
+          "Sub_topic_name": "Preparing for and responding to tropical cyclones",
+          "description": "Understand preparation and response strategies for tropical cyclones, including forecasting, satellite technology, warning systems, evacuation strategies, and storm-surge defences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "1.6b",
+          "Sub_topic_name": "Effectiveness of cyclone management in contrasting countries",
+          "description": "Evaluate the effectiveness of preparation/response methods in one developed country and one developing or emerging country (located examples), comparing outcomes and reasons for differing effectiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "1.7a",
+          "Sub_topic_name": "Earth structure and properties for plate tectonics",
+          "description": "Interpret and explain Earth’s layered structure (including the asthenosphere) and contrasts in composition and physical properties (temperature, density, composition, physical state) that underpin plate tectonics; interpret Earth cross-sections (Integrated skill 7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "1.7b",
+          "Sub_topic_name": "Convection and plate motion (heat from radioactive decay)",
+          "description": "Explain how internal heat from the core (generated via radioactive decay) drives convection, forming the key basis for plate motion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "1.8a",
+          "Sub_topic_name": "Plate boundary types and hotspots (distribution and characteristics)",
+          "description": "Describe global distribution and characteristics of conservative, convergent and divergent plate boundaries and hotspots; interpret world maps of plate boundaries and plates (Integrated skill 8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "1.8b",
+          "Sub_topic_name": "Contrasting volcanic and earthquake hazards (including tsunami)",
+          "description": "Explain causes of contrasting volcanic hazards (volcano type, magma type/lava flow, explosivity) and earthquake hazards, including tsunami, considering depth (shallow/deep) and magnitude; use the Richter Scale to compare events (Integrated skill 9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1r",
+          "Specification_section_sub": "1.9a",
+          "Sub_topic_name": "Impacts of tectonic hazards at contrasting locations",
+          "description": "Compare primary and secondary impacts of earthquakes or volcanoes on people and property in a developed country and an emerging/developing country (located examples).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1s",
+          "Specification_section_sub": "1.9b",
+          "Sub_topic_name": "Managing tectonic hazards (short-term and long-term)",
+          "description": "Understand and compare management of volcanic or earthquake hazards in a developed country and an emerging/developing country, including: short-term relief (shelter, supplies), long-term planning (trained and funded emergency services), preparation (warning/evacuation, building design) and prediction; use social media, satellite images and socio-economic data to assess impacts (Integrated skill 10).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "Topic 2",
+      "Strand": "Component 1: Global Geographical Issues",
+      "Topic_name": "Development dynamics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2.1a",
+          "Sub_topic_name": "Definitions and measures of development",
+          "description": "Compare definitions of development (economic criteria vs broader social/political measures) and measure development using GDP per capita, HDI, measures of inequality, and indices of political corruption; compare country rankings using single vs composite (index) measures (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "2.1b",
+          "Sub_topic_name": "Development levels and demographic indicators",
+          "description": "Explain how developing, emerging and developed countries differ in demographic data (fertility rates, death rates, population structures, maternal and infant mortality); interpret population pyramids for different development levels (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "2.2a",
+          "Sub_topic_name": "Causes and consequences of global inequalities",
+          "description": "Analyse causes and consequences of global development inequalities, including social (education, health), historical (colonialism, neo-colonialism), environmental (climate, topography), economic and political (governance systems, international relations) factors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "2.2b",
+          "Sub_topic_name": "Rostow and Frank: theories of development",
+          "description": "Use and compare Rostow’s modernisation theory and Frank’s dependency theory to explain how and why countries develop over time, including differing roles of internal change, external dependency and global economic structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "2.3a",
+          "Sub_topic_name": "Top-down vs bottom-up development and globalisation players",
+          "description": "Compare top-down and bottom-up development strategies by scale, aims, funding and technology; understand globalisation processes and key players (TNCs, governments) and explain why benefits of globalisation are uneven between countries.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2.3b",
+          "Sub_topic_name": "Evaluating development approaches (NGO, IGO, TNC)",
+          "description": "Assess advantages and disadvantages of development approaches, including NGO-led intermediate technology, IGO-funded large infrastructure, and TNC investment, considering effectiveness and potential negative impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2.4a",
+          "Sub_topic_name": "Emerging country: location, connectivity and significance",
+          "description": "For one emerging country case study (HMHD): understand site, situation and connectivity and explain significance at national (environmental and cultural), regional and global scales.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2.4b",
+          "Sub_topic_name": "Emerging country: broad context",
+          "description": "Describe broad political, social, cultural and environmental context of the chosen emerging country within its region and globally.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2.5a",
+          "Sub_topic_name": "Economic trends since 1990 (emerging country profile)",
+          "description": "Use economic data since 1990 to profile the chosen emerging country, including trends in GDP, per capita GNI, sectoral change, imports/exports, and foreign direct investment (type and origin); use numerical economic data to profile (Integrated skill 4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2.5b",
+          "Sub_topic_name": "Globalisation and government policy driving development",
+          "description": "Explain how globalisation (communications and transport advances, TNCs, outsourcing) and government policies (tied/multilateral aid, education and infrastructure investment, pro-FDI policy) contribute to development in the chosen emerging country; use proportional flow-line maps to visualise trade patterns/flows (Integrated skill 5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2.6a",
+          "Sub_topic_name": "Economic growth and demographic/urban/regional change",
+          "description": "Explain how rapid economic change influences demographic transition (fertility/death rates), drives urbanisation (rural–urban migration, city growth), and creates regions with contrasting socio-economic characteristics; use socio-economic data to calculate difference from the mean for core and periphery regions (Integrated skill 6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "2.6b",
+          "Sub_topic_name": "Impacts on different groups (age and gender)",
+          "description": "Assess positive and negative impacts of economic development and globalisation on different age and gender groups within the chosen emerging country.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "2.6c",
+          "Sub_topic_name": "Environmental impacts at multiple scales",
+          "description": "Analyse impacts of economic development and globalisation on air, water and land pollution and greenhouse gas emissions at multiple scales, including human health and global climate change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "2.7a",
+          "Sub_topic_name": "Changing geopolitical influence and international relationships",
+          "description": "Explain how rapid economic development changes the emerging country’s geopolitical influence (regional influence, roles in international organisations) and its relationships with the EU and USA.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "2.7b",
+          "Sub_topic_name": "Debating costs/benefits of international relations and FDI/TNCs",
+          "description": "Evaluate conflicting views about the costs and benefits of changing international relations and the role of foreign investment (TNCs) in economic development of the chosen emerging country.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "Topic 3",
+      "Strand": "Component 1: Global Geographical Issues",
+      "Topic_name": "Challenges of an urbanising world",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.1a",
+          "Sub_topic_name": "Global urbanisation trends and projections",
+          "description": "Describe and interpret past (since 1980) and current global urbanisation trends, regional variations, and future projections; interpret line graphs and calculate rates of change/annual or decadal percentage growth (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.1b",
+          "Sub_topic_name": "Megacities and urban primacy",
+          "description": "Explain the global pattern of megacities (size, location, growth rates) and analyse urban primacy where some cities have disproportionate economic and/or political influence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.2a",
+          "Sub_topic_name": "Economic change and migration as drivers of city growth/decline",
+          "description": "Explain how economic change and migration (national and international) contribute to growth and/or decline of cities across developing, emerging and developed contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.2b",
+          "Sub_topic_name": "Contrasting urban economies (formal/informal, sectors, conditions)",
+          "description": "Compare urban economies in developing, emerging and developed countries, including formal vs informal employment, relative importance of economic sectors, and working conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.3a",
+          "Sub_topic_name": "Urban change processes over time",
+          "description": "Explain how urban population size, distribution and spatial growth change through processes including urbanisation, suburbanisation, de-industrialisation, counter-urbanisation and (in some cases) regeneration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.3b",
+          "Sub_topic_name": "Urban land use zones and influencing factors",
+          "description": "Describe characteristics of commercial, industrial and residential land uses and explain factors influencing land-use patterns (accessibility, availability, cost, planning regulations); use satellite images to identify land use zones (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.4a",
+          "Sub_topic_name": "Megacity case study: site, situation and connectivity",
+          "description": "For one megacity in a developing or emerging country: explain how site, situation and connectivity shape its growth, function and structure at national (environmental and cultural), regional and global scales.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.4b",
+          "Sub_topic_name": "Megacity structure and functions (CBD, inner city, suburbs, fringe)",
+          "description": "Describe the megacity’s urban structure (CBD, inner city, suburbs, urban–rural fringe) and relate functions and building age to different zones.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.5a",
+          "Sub_topic_name": "Megacity growth: natural increase and migration",
+          "description": "Explain past and present population growth trends in the megacity, including rates of natural increase, national and international migration, and links to economic investment and growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3.5b",
+          "Sub_topic_name": "Spatial growth and changing urban functions/land use",
+          "description": "Analyse how population growth affects the pattern of spatial growth and changing urban functions and land use; use GIS/satellite images, historic images and maps to investigate spatial growth (Integrated skill 3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3.6a",
+          "Sub_topic_name": "Opportunities from rapid growth (services and jobs)",
+          "description": "Assess opportunities for megacity residents created by rapid growth, including access to education and health services and formal and informal employment opportunities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "3.6b",
+          "Sub_topic_name": "Challenges from rapid growth (housing, infrastructure, congestion)",
+          "description": "Explain challenges caused by rapid population growth, including housing shortages and poor quality/insecure housing and property rights, inadequate water supply and waste disposal, poor employment conditions, limited service provision and traffic congestion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "3.6c",
+          "Sub_topic_name": "Inequality patterns and managing the megacity",
+          "description": "Analyse spatial patterns of extreme wealth vs poor-quality housing (including insecure property rights in some cases) and explain causes of quality-of-life differences; evaluate political and economic challenges of managing the megacity; use quantitative and qualitative evidence to judge the scale of quality-of-life variation (Integrated skill 4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3n",
+          "Specification_section_sub": "3.7a",
+          "Sub_topic_name": "Top-down sustainability strategies (city-wide)",
+          "description": "Evaluate advantages and disadvantages of city-wide government (top-down) strategies to improve megacity sustainability, including managing water supply, waste disposal, transport and air quality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3o",
+          "Specification_section_sub": "3.7b",
+          "Sub_topic_name": "Bottom-up sustainability strategies (community/NGO)",
+          "description": "Evaluate advantages and disadvantages of community and NGO-led bottom-up strategies to improve megacity sustainability, including housing, health and education services.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "Topic 4",
+      "Strand": "Component 2: UK Geographical Issues",
+      "Topic_name": "The UK’s evolving physical landscape",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.1a",
+          "Sub_topic_name": "Geology, tectonics and glaciation shaping UK uplands/lowlands",
+          "description": "Explain how UK geology and past tectonic and glacial processes (glacial erosion and deposition) have formed contrasting upland (igneous/metamorphic rocks) and lowland (sedimentary rocks) landscapes; analyse photographs of common glacial, fluvial and coastal landscapes/features (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.1b",
+          "Sub_topic_name": "UK rock types: characteristics and distribution",
+          "description": "Know characteristics and distribution of UK rock types: sedimentary (chalk, carboniferous limestone, clay), igneous (granite), metamorphic (schists, slates); use simple geological cross-sections to link geology and relief (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.2a",
+          "Sub_topic_name": "Physical process interactions creating distinctive landscapes",
+          "description": "Explain why distinctive upland and lowland landscapes result from interacting physical processes, including weathering, climatological processes, post-glacial river processes and slope processes; locate key uplands, lowland basins and rivers on outline UK maps (Integrated skill 3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.2b",
+          "Sub_topic_name": "Human activity shaping UK landscapes over time",
+          "description": "Explain how human activities (agriculture, forestry, settlement) have shaped distinctive UK landscapes over time; recognise physical and human features on 1:25,000 and 1:50,000 OS maps (Integrated skill 4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.3a",
+          "Sub_topic_name": "Coastal erosion landforms: geology and structure controls",
+          "description": "Explain how geological structure (concordant/discordant coastlines, joints, faults) and rock type (hard vs soft rock) influence erosional coastal landforms (headlands and bays, caves, arches, cliffs, stacks, wave-cut platforms) and the formation of erosional coastal landscapes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.3b",
+          "Sub_topic_name": "Coastal erosion rates: climate, waves and sub-aerial processes",
+          "description": "Explain how UK climate (seasonality, storm frequency, prevailing winds), marine processes (destructive waves), and sub-aerial processes (mass movement, weathering) shape coastal erosion landscapes and influence rates of coastal retreat; calculate mean erosion rates using multi-year datasets (Integrated skill 6) and use BGS geology maps to link coastal form to geology (Integrated skill 7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.3c",
+          "Sub_topic_name": "Longshore drift and depositional landforms",
+          "description": "Explain sediment transport (longshore drift) and deposition (constructive waves) and how they form depositional landforms (spits, beaches, bars); recognise coastal landforms on 1:25,000 and 1:50,000 OS maps (Integrated skill 8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.4a",
+          "Sub_topic_name": "Human impacts on coastal landscapes",
+          "description": "Explain how human activities (development, agriculture, industry, coastal management) directly or indirectly affect coastal landscapes, interacting with physical processes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "4.4b",
+          "Sub_topic_name": "Named UK coastal landscape: process interaction and change",
+          "description": "Explain how physical and human processes interact to cause change on one named UK coastal landscape, including the significance of its location.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "4.5a",
+          "Sub_topic_name": "Coastal flooding risk and climate change",
+          "description": "Explain why risks from coastal flooding are increasing, including impacts of climate change on marine erosion/deposition (more frequent storms and rising sea level), and assess threats to people and environments; use OS maps (1:25,000/1:50,000) and GIS to investigate what is threatened by rapid erosion (Integrated skill 10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "4.5b",
+          "Sub_topic_name": "Coastal management: hard, soft, and sustainable approaches; conflict",
+          "description": "Assess costs, benefits and conflicts in managing coastal processes using hard engineering (groynes, sea walls), soft engineering (beach replenishment, slope stabilisation), and sustainable approaches (‘do nothing’, ‘strategic realignment’) linked to Integrated Coastal Zone Management; use simple cost–benefit analysis to investigate defence options (Integrated skill 11) and OS maps/GIS to investigate policy impacts (Integrated skill 12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "4.6a",
+          "Sub_topic_name": "River long profile changes (channel/valley/discharge/sediment)",
+          "description": "For a named UK river, explain how river landscapes differ between upper, middle and lower courses, and why channel shape (width, depth), valley profile, gradient, discharge, velocity and sediment size/shape change downstream; use OS maps to derive valley cross-sections from contour lines (Integrated skill 14) and BGS geology maps to link long profiles to geology (Integrated skill 15).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "4.6b",
+          "Sub_topic_name": "Fluvial processes and landforms",
+          "description": "Explain how erosion (hydraulic action, abrasion, attrition, solution), transport (traction, saltation, suspension, solution) and deposition interact to form river landforms (meanders, interlocking spurs, waterfalls, flood plains, levees, oxbow lakes, deltas); recognise river landforms on 1:25,000 and 1:50,000 OS maps (Integrated skill 16).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "4.6c",
+          "Sub_topic_name": "Hydrographs, lag time and physical controls",
+          "description": "Explain how climate, geology and slope processes influence river landscapes and sediment load; interpret storm hydrographs and explain lag times using physical factors (geology, soil type, slope, drainage basin shape, antecedent conditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "4.7a",
+          "Sub_topic_name": "Human impacts on rivers and hydrographs",
+          "description": "Explain how human activities (urbanisation, land-use change, deforestation) alter river landscapes and change storm hydrographs; draw simple storm hydrographs using rainfall and discharge data (Integrated skill 17).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "4.7b",
+          "Sub_topic_name": "Named UK river flooding: process interaction and location significance",
+          "description": "Explain how physical and human processes interact to cause river flooding on one named UK river, including why the river’s location is significant to flood risk.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "4.8a",
+          "Sub_topic_name": "Increasing river flood risk and impacts",
+          "description": "Explain increasing risks from river flooding (including increased storm frequency and land-use change) and assess threats to people and the environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4r",
+          "Specification_section_sub": "4.8b",
+          "Sub_topic_name": "River flood management: hard vs soft engineering",
+          "description": "Assess costs and benefits of hard engineering (flood walls, embankments, flood barriers) and soft engineering (floodplain retention, river restoration) for flood risk management; use cost–benefit analysis (Integrated skill 19) and OS maps/GIS to investigate policy impacts (Integrated skill 20).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "Topic 5",
+      "Strand": "Component 2: UK Geographical Issues",
+      "Topic_name": "The UK’s evolving human landscape",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "5.1a",
+          "Sub_topic_name": "Urban core vs rural differences and government policy responses",
+          "description": "Explain differences between urban core and rural areas in population density and age structure, economic activities and settlement patterns, and assess how UK and EU policies have attempted to reduce these disparities (enterprise zones, transport infrastructure investment, regional development); interpret UK population pyramids from different periods (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "5.2a",
+          "Sub_topic_name": "Migration, population change and diversity in the UK",
+          "description": "Explain how national and international migration over the last 50 years has changed UK population geography (numbers, distribution, age structure) and how UK/EU immigration policy has increased ethnic and cultural diversity; use census datasets to understand change (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "5.2b",
+          "Sub_topic_name": "Changing UK economic sectors and regional employment structures",
+          "description": "Explain impacts of decline in primary/secondary sectors and rise of tertiary/quaternary sectors on economic and employment structures in contrasting UK urban and rural regions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "5.2c",
+          "Sub_topic_name": "Globalisation, free trade, privatisation, FDI and TNCs in the UK",
+          "description": "Explain how globalisation, UK/EU free-trade policies and privatisation have increased foreign direct investment (FDI) and the role of transnational corporations (TNCs) in the UK economy; use Eurostat to investigate FDI and immigration (Integrated skill 3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "5.3a",
+          "Sub_topic_name": "Major UK city case study: site, situation and connectivity",
+          "description": "For one major UK city: explain significance of site, situation and connectivity in national (cultural and environmental), regional and global contexts; develop fieldwork-style enquiry questions where appropriate (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "5.3b",
+          "Sub_topic_name": "Major UK city structure and environmental quality",
+          "description": "Describe the city’s structure (CBD, inner city, suburbs, urban–rural fringe) and relate zone functions to variations in building age/density, land use and environmental quality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "5.4a",
+          "Sub_topic_name": "Migration drivers shaping city character",
+          "description": "Explain causes of national and international migration influencing growth and character of city areas, including impacts on age structure, ethnicity, housing, services and culture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "5.4b",
+          "Sub_topic_name": "Inequality within the city (services, education, health, jobs)",
+          "description": "Explain reasons for different levels of inequality across the city in employment and access to services, education and health; use census datasets to compare inner-city areas (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "5.5a",
+          "Sub_topic_name": "Urban decline and decentralisation drivers",
+          "description": "Explain causes and processes of decline in parts of the city (de-industrialisation, de-population) including decentralisation (out-of-town shopping centres, retail/business parks), e-commerce and transport developments; use OS maps (1:25,000/1:50,000) to identify land use (Integrated skill 3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "5.5b",
+          "Sub_topic_name": "Urban growth drivers (sprawl, services, TNCs, gentrification)",
+          "description": "Explain how parts of the city experience economic and population growth through sprawl on the rural–urban fringe, growth of financial/business services, TNC investment, gentrification/studentification, and culture/leisure functions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "5.6a",
+          "Sub_topic_name": "Regeneration and rebranding impacts",
+          "description": "Assess how regeneration and rebranding have positive and negative impacts on people (e.g., population change, environmental quality, economic opportunities); relate to local evidence where possible.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "5.6b",
+          "Sub_topic_name": "Urban sustainability strategies and quality of life",
+          "description": "Evaluate strategies to make urban living more sustainable and improve quality of life, including recycling, employment, green spaces, transport, and affordable/energy-efficient housing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "5.7a",
+          "Sub_topic_name": "City–rural interdependence (flows and impacts)",
+          "description": "Explain interdependence between the city and accessible rural areas via flows of goods, services and labour, and assess economic, social and environmental costs and benefits for both.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "5.7b",
+          "Sub_topic_name": "Rural change linked to the city (counter-urbanisation and pressures)",
+          "description": "Explain why a rural area has experienced change due to links with the city, including counter-urbanisation, housing pressure, increased leisure/recreation and population change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "5.8a",
+          "Sub_topic_name": "Rural challenges and quality of life (IMD)",
+          "description": "Analyse rural challenges including housing availability/affordability, decline in primary employment, and provision of healthcare/education, and explain impacts on quality of life (Index of Multiple Deprivation, IMD) for groups such as the elderly and young people; use crime/IMD databases to investigate inner-city problems where relevant to comparisons (Integrated skill 4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "5.8b",
+          "Sub_topic_name": "Rural diversification, tourism and environmental impacts",
+          "description": "Assess how rural diversification (farm shops, accommodation, leisure) and tourism projects create income and opportunities, and evaluate potential environmental impacts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "Topic 6",
+      "Strand": "Component 2: UK Geographical Issues",
+      "Topic_name": "Geographical investigations",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "6.0a",
+          "Sub_topic_name": "Fieldwork requirement and UK context",
+          "description": "Understand the requirement to carry out two fieldwork investigations outside the classroom and school/college grounds, in contrasting environments linked to Topics 4 and 5; recognise that fieldwork may be outside the UK but exam questions will treat fieldwork within a UK context; understand need for centre authentication via Fieldwork Statement (Appendix 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "6.1a",
+          "Sub_topic_name": "Coastal fieldwork: enquiry questions (coastal management impacts)",
+          "description": "Formulate geographical enquiry question(s) for investigating the impact of coastal management on coastal processes and communities, demonstrating understanding of questions suited to coastal fieldwork contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "6.1b",
+          "Sub_topic_name": "Coastal fieldwork: quantitative method (beach morphology/sediment)",
+          "description": "Select and use at least one quantitative method to measure how coastal management affects beach morphology and sediment characteristics, ensuring accuracy, reliability and appropriate sampling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "6.1c",
+          "Sub_topic_name": "Coastal fieldwork: qualitative method (management measures and success)",
+          "description": "Select and use at least one qualitative method to collect evidence on coastal management measures and their success, including perceptions/observations and structured recording.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "6.1d",
+          "Sub_topic_name": "Coastal investigation: secondary data sources",
+          "description": "Use secondary sources including a geology map (e.g. Geology of Britain Viewer) plus at least one additional source, integrating with primary field data to support analysis and conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "6.2a",
+          "Sub_topic_name": "River fieldwork: enquiry questions (channel/drainage and flood risk)",
+          "description": "Formulate geographical enquiry question(s) for investigating how and why drainage basin and channel characteristics influence flood risk for people and property along a UK river, showing understanding of questions suited to river fieldwork.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "6.2b",
+          "Sub_topic_name": "River fieldwork: quantitative method (channel characteristics)",
+          "description": "Select and use at least one quantitative method to measure changes in river channel characteristics (e.g., width, depth, velocity, bedload), ensuring accuracy, reliability and appropriate sampling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "6.2c",
+          "Sub_topic_name": "River fieldwork: qualitative method (flood risk factors)",
+          "description": "Select and use at least one qualitative method to gather data on factors influencing flood risk (e.g., land use, bank condition, evidence of flooding, management), integrating observations and stakeholder views where possible.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "6.2d",
+          "Sub_topic_name": "River investigation: secondary data sources",
+          "description": "Use secondary sources including a flood risk map (e.g., Environment Agency Flood Risk map) plus at least one additional source, integrating with primary data for analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "6.3a",
+          "Sub_topic_name": "Urban fieldwork: enquiry questions (quality of life variation)",
+          "description": "Formulate geographical enquiry question(s) to investigate how and why quality of life varies within urban areas, demonstrating understanding of questions suited to urban fieldwork.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "6.3b",
+          "Sub_topic_name": "Urban fieldwork: qualitative method (views/perceptions)",
+          "description": "Select and use at least one qualitative method to collect views and perceptions of quality of life (e.g., interviews, surveys), considering bias, ethics and sampling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "6.3c",
+          "Sub_topic_name": "Urban fieldwork: quantitative method (environmental quality)",
+          "description": "Select and use at least one quantitative method to collect environmental quality data (e.g., EQS scoring), ensuring consistent measures and reliability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "6.3d",
+          "Sub_topic_name": "Urban investigation: secondary data sources",
+          "description": "Use secondary sources including census data (e.g., ONS Neighbourhood Statistics) plus at least one additional source, integrating with primary field data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "6.4a",
+          "Sub_topic_name": "Rural fieldwork: enquiry questions (deprivation variation)",
+          "description": "Formulate geographical enquiry question(s) to investigate how and why deprivation varies within rural areas in the UK, demonstrating understanding of rural fieldwork enquiry processes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "6.4b",
+          "Sub_topic_name": "Rural fieldwork: qualitative method (views/perceptions of rural life)",
+          "description": "Select and use at least one qualitative method to collect views and perceptions on quality of rural life, considering sampling, ethics and reliability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "6.4c",
+          "Sub_topic_name": "Rural fieldwork: quantitative method (environmental quality)",
+          "description": "Select and use at least one quantitative method to collect environmental quality data in rural settings, ensuring consistent scoring/measurement and appropriate sampling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "6.4d",
+          "Sub_topic_name": "Rural investigation: secondary data sources",
+          "description": "Use secondary sources including census data (e.g., ONS Neighbourhood Statistics) plus at least one additional centre-chosen source, integrating with primary data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "6.5a",
+          "Sub_topic_name": "Enquiry process stages assessed in exams",
+          "description": "Understand the six enquiry stages that can be assessed across the two investigations: (1) understanding questions and enquiry process; (2) techniques and methods; (3) processing/presenting data (maps, GIS, graphs, diagrams hand-drawn/computer); (4) analysing/explaining data using case studies/theory; (5) drawing evidenced conclusions/summaries; (6) critical reflection on data, methods, conclusions and knowledge gained.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "Topic 7",
+      "Strand": "Component 3: People and Environment Issues – Making Geographical Decisions",
+      "Topic_name": "People and the biosphere",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "7.1a",
+          "Sub_topic_name": "Global biomes: distribution and climate controls",
+          "description": "Explain how global distribution and characteristics of major biomes (tropical, temperate and boreal forests; tropical and temperate grasslands; deserts; tundra) are influenced by climate variables (temperature, precipitation, sunshine hours); compare climate graphs for different biomes and interpret world biome maps (Integrated skills 1 and 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "7.1b",
+          "Sub_topic_name": "Local factors and biome interactions (biotic/abiotic)",
+          "description": "Explain how local factors (altitude, rock/soil type, drainage) modify biome distribution and how biotic components (flora, fauna) interact with abiotic components (soils, rock, water, atmosphere) within biomes as systems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "7.2a",
+          "Sub_topic_name": "Biosphere goods: local/Indigenous use and commercial exploitation",
+          "description": "Explain how the biosphere provides resources (‘goods’) for Indigenous and local people (food, medicine, building materials, fuel) and how it is increasingly exploited commercially for energy, water and mineral resources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "7.2b",
+          "Sub_topic_name": "Biosphere services: atmosphere, soils and hydrological regulation",
+          "description": "Explain how the biosphere provides ‘services’ by regulating atmospheric composition, maintaining soil health and regulating water in the hydrological cycle, and why these services are globally important.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "7.2c",
+          "Sub_topic_name": "Resource demand trends and population–resource theories",
+          "description": "Analyse global/regional trends increasing demand for food, energy and water (population growth, rising affluence, urbanisation, industrialisation) and apply Malthus and Boserup theories to population–resource relationships; interpret line graphs of population projections and relate population to resource availability (Integrated skill 3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "Topic 8",
+      "Strand": "Component 3: People and Environment Issues – Making Geographical Decisions",
+      "Topic_name": "Forests under threat",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "8.1a",
+          "Sub_topic_name": "Tropical rainforest structure and adaptations",
+          "description": "Explain how tropical rainforest biotic and abiotic characteristics are interdependent (climate, soil, water, plants, animals, humans) and describe plant (stratified layers, buttress roots, drip tips) and animal adaptations to equatorial climate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "8.1b",
+          "Sub_topic_name": "Tropical rainforest nutrient cycling, biodiversity and food webs",
+          "description": "Explain why tropical rainforests have rapid nutrient cycling supporting high biodiversity and complex food webs; interpret nutrient cycle and food web diagrams (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "8.2a",
+          "Sub_topic_name": "Taiga characteristics and adaptations",
+          "description": "Explain taiga (boreal forest) interdependence of biotic/abiotic characteristics (climate, soil, water, plants, animals, humans) and describe plant adaptations (cone shape, needles, simple structure) and animal adaptations (e.g., migratory) to extreme seasonal climate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "8.2b",
+          "Sub_topic_name": "Taiga productivity, nutrient cycling and biodiversity",
+          "description": "Explain why taiga has lower productivity, less active nutrient cycling and lower biodiversity than tropical rainforests; interpret nutrient cycle and food web diagrams (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "8.3a",
+          "Sub_topic_name": "Direct deforestation drivers in tropical rainforests",
+          "description": "Explain causes of tropical rainforest deforestation: commercial hardwood logging; subsistence and commercial agriculture; local demand for fuel wood; and how demand for biofuels, mineral resources and electricity (HEP) accelerates forest loss; use GIS to identify patterns of forest loss (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "8.3b",
+          "Sub_topic_name": "Climate change as an indirect rainforest threat",
+          "description": "Explain how climate change indirectly threatens tropical rainforest health through ecosystem stress and drought, and how this can increase vulnerability to degradation; use GIS evidence for forest change patterns where relevant (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "8.4a",
+          "Sub_topic_name": "Taiga commercial development threats",
+          "description": "Explain direct taiga threats from logging for softwood, pulp and paper, and indirect threats from exploitation of minerals, fossil fuels and HEP potential; use GIS to identify forest loss patterns (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "8.4b",
+          "Sub_topic_name": "Taiga environmental stresses reducing biodiversity",
+          "description": "Explain how acid precipitation, forest fires, pests and diseases contribute to biodiversity loss in taiga ecosystems; use GIS evidence where appropriate (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "8.5a",
+          "Sub_topic_name": "Global conservation actions for tropical rainforests (CITES, REDD)",
+          "description": "Evaluate global actions (CITES, REDD) to protect tropical rainforest species and areas, including advantages/disadvantages, and explain why deforestation rates rise in some areas but fall in others.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "8.5b",
+          "Sub_topic_name": "Sustainable forest management and alternative livelihoods",
+          "description": "Analyse challenges of achieving sustainable forest management in tropical rainforests and evaluate how alternative livelihoods (ecotourism, sustainable farming) may better protect remaining rainforest while meeting local needs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "8.6a",
+          "Sub_topic_name": "Protecting taiga wilderness: parks and sustainable forestry",
+          "description": "Explain challenges of creating and maintaining protected wilderness areas, national parks and sustainable forestry in taiga regions, including monitoring, enforcement and balancing access.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "8.6b",
+          "Sub_topic_name": "Conflicting views on taiga protection vs exploitation",
+          "description": "Evaluate reasons for conflicting views among stakeholders about protecting or exploiting taiga forests and natural resources, considering economic development, energy/mineral demand and environmental values.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "Topic 9",
+      "Strand": "Component 3: People and Environment Issues – Making Geographical Decisions",
+      "Topic_name": "Consuming energy resources",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "9.1a",
+          "Sub_topic_name": "Energy resource classifications (non-renewable, renewable, recyclable)",
+          "description": "Classify energy resources as non-renewable (finite fossil fuels: coal, oil, gas), renewable (flows: solar, wind, HEP) and recyclable (nuclear, biofuels), and use this classification to compare sustainability and supply characteristics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "9.1b",
+          "Sub_topic_name": "Environmental impacts of extraction and renewable landscapes",
+          "description": "Explain environmental impacts of mining/drilling (landscape scarring, oil spills, carbon emissions, forest removal) and landscape impacts of renewables (HEP flooding; land take/visual impacts for wind turbines and solar panels).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "9.2a",
+          "Sub_topic_name": "Unequal access to energy: technology and physical potential",
+          "description": "Explain how access to energy resources depends on technology and physical resource availability (geology, accessibility) and how climate/landscape influence renewable potential; interpret world maps showing resource distribution (Integrated skill 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "9.2b",
+          "Sub_topic_name": "Global energy use per capita patterns and causes",
+          "description": "Describe global patterns of per capita energy use and explain variation due to economic development levels, reliance on traditional fuels, and sectoral demand differences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "9.3a",
+          "Sub_topic_name": "Oil reserves/production distribution and demand growth",
+          "description": "Explain why oil reserves and production are unevenly distributed and why oil consumption is increasing (rising GDP per capita and rapid industrialisation in emerging economies).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "9.3b",
+          "Sub_topic_name": "Oil supply, prices, geopolitics and economic cycles",
+          "description": "Explain how oil supply and prices change due to international relations (conflict, diplomacy) and economic factors (recession vs boom; over/under-supply); graph and interpret oil price and production trends over time (Integrated skill 2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "9.4a",
+          "Sub_topic_name": "Developing new conventional oil/gas in sensitive/isolated areas",
+          "description": "Assess economic benefits and costs of developing new conventional oil and gas sources in ecologically sensitive and isolated areas, considering jobs, revenue, infrastructure and risk/management costs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "9.4b",
+          "Sub_topic_name": "Unconventional oil/gas impacts (tar sands, shale gas)",
+          "description": "Evaluate environmental costs of developing unconventional oil and gas (tar sands, shale gas) in ecologically sensitive/isolated areas, including negative impacts on water quality and ecosystems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "9.5a",
+          "Sub_topic_name": "Energy efficiency and conservation to reduce demand and emissions",
+          "description": "Explain how energy efficiency and energy conservation in transport and homes reduce demand, extend finite supplies and reduce carbon emissions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "9.5b",
+          "Sub_topic_name": "Alternatives and future technologies for energy mix",
+          "description": "Assess costs and benefits of alternatives to fossil fuels (biofuels, wind, solar, HEP) and future technologies (hydrogen) for reducing carbon footprints, improving energy security and diversifying energy supply.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "9.6a",
+          "Sub_topic_name": "Stakeholder views on energy futures",
+          "description": "Compare contrasting stakeholder attitudes (consumers, TNCs, governments, climate scientists, environmental groups) towards energy futures, including ‘business as usual’ versus sustainable pathways.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9l",
+          "Specification_section_sub": "9.6b",
+          "Sub_topic_name": "Changing attitudes and reducing carbon footprints in developed countries",
+          "description": "Explain how rising affluence, environmental concern and education in some developed countries are changing attitudes to unsustainable consumption and driving actions to reduce carbon footprints; calculate carbon and ecological footprints (Integrated skill 3).",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

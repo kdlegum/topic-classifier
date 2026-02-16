@@ -1,0 +1,500 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Additional Mathematics",
+  "Exam Board": "OCR",
+  "Specification": "6993",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "2c Algebra (AL)",
+      "Strand": "Additional Mathematics (Level 3 FSMQ)",
+      "Topic_name": "Algebra (AL)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "AL1",
+          "Sub_topic_name": "Algebraic vocabulary and notation",
+          "description": "Know and use algebraic vocabulary and notation, including: constant, coefficient, expression, equation, identity, index, variable, unknown, function notation f(x). Use correct mathematical language and symbols consistently when forming expressions and equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "AL2",
+          "Sub_topic_name": "Simplifying algebraic fractions and surds",
+          "description": "Simplify expressions involving algebraic fractions and square roots (surds), including rationalising/simplifying forms that mix algebraic terms with roots. Examples include simplifying expressions such as (x/(x−1)) − (2/(x+1)) or simplifying surds such as √125 and expressions like √12 + √27 and related surd manipulations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "AL3",
+          "Sub_topic_name": "Polynomial operations (including division)",
+          "description": "Perform operations with polynomials, including addition, subtraction, multiplication and division (algebraic long division and/or other valid methods). Be able to simplify rational expressions by polynomial division where appropriate; e.g. divide one polynomial by another such as (x^3−…)/(x−1) and interpret quotient and remainder.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "AL4",
+          "Sub_topic_name": "Linear factors and the factor theorem",
+          "description": "Find linear factors of a polynomial, including using the factor theorem: test whether (x−a) is a factor by evaluating the polynomial at x=a, and hence factorise polynomials into linear (and where appropriate irreducible quadratic) factors and use this in solving polynomial equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "AL5",
+          "Sub_topic_name": "Completing the square",
+          "description": "Complete the square of a quadratic polynomial. Convert ax^2+bx+c into a(x+p)^2+q (or equivalent), and use completing the square for solving, graph features (turning point), and algebraic manipulation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "AL6",
+          "Sub_topic_name": "Forming and solving equations from problems",
+          "description": "Set up and solve problems leading to linear, quadratic and cubic equations in one unknown, and to simultaneous equations in two unknowns. Problems may be set in mathematical or non-mathematical contexts; select appropriate algebraic model, form equations, solve, and interpret solutions in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "AL7",
+          "Sub_topic_name": "Manipulating inequalities",
+          "description": "Manipulate inequalities algebraically, including using addition/subtraction, multiplication/division (including sign changes when multiplying/dividing by a negative), and expressing solution sets correctly using interval notation or inequality form as appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "AL8",
+          "Sub_topic_name": "Solving linear and quadratic inequalities",
+          "description": "Set up and solve linear and quadratic inequalities both algebraically and graphically. Include interpreting solution regions on graphs, using sign charts/critical points for quadratics, and giving complete solution sets (including boundary inclusion/exclusion). Example forms include solving inequalities such as −3 ≤ (2x−1)/(x+1) ≤ 5 (or similar) and quadratic inequalities with roots and parabola orientation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "AL9",
+          "Sub_topic_name": "Linear inequalities in two variables",
+          "description": "Illustrate linear inequalities in two variables on coordinate axes using appropriate shading and boundary lines (solid for ≤/≥, dashed for </>). Include combining multiple inequalities to represent feasible regions; e.g. represent constraints like 24x + 28y ≤ 400 with x,y ≥ 0.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "AL10",
+          "Sub_topic_name": "Recurrence relations for sequences",
+          "description": "Understand and use recurrence relationship notation to describe and determine sequences, including linear recurrences such as x_{n+1}=x_n+a, geometric-type x_{n+1}=a x_n, and higher-order forms such as x_{n}=x_{n−1}+x_{n−2}+… (as specified). Generate terms, identify patterns, and work with the index n notation accurately.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "AL11",
+          "Sub_topic_name": "Modelling with recurrence relations",
+          "description": "Use recurrence relationships in modelling real processes (e.g. modelling compound interest or growth/decay in discrete steps). Formulate a recurrence model from context, iterate to predict future values, and interpret outputs and assumptions of the model.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "2c Enumeration (EN)",
+      "Strand": "Additional Mathematics (Level 3 FSMQ)",
+      "Topic_name": "Enumeration (EN)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "EN1",
+          "Sub_topic_name": "Binomial expansion (positive integer powers)",
+          "description": "Understand and apply the binomial expansion of (a+b)^n where n is a positive integer. Expand into powers (often ascending/descending in x), using binomial coefficients nC r (or equivalent) and simplify coefficients. Example: expand (2+3x)^5 in ascending powers of x.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "EN2",
+          "Sub_topic_name": "Representing outcomes (trees, tables, Venn, binomial distribution)",
+          "description": "Construct and use representations to enumerate outcomes: tree diagrams, two-way tables, Venn diagrams, and/or the binomial distribution model. Use these representations to list/count outcomes systematically and to support probability calculations where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "EN3",
+          "Sub_topic_name": "Product rule and factorial counting",
+          "description": "Use the product rule for counting numbers of outcomes of combined events (multiply numbers of choices across stages). Apply to contexts such as: number of outcomes when rolling n dice is 6^n; number of arrangements of n distinct objects is n!. Use correct reasoning and notation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "EN4",
+          "Sub_topic_name": "Permutations (ordered selections)",
+          "description": "Enumerate the number of ways of obtaining an ordered linear subset (permutation) of r elements from a set of n distinct objects. Use notation nP r (nPr) and calculate values, including contextual problems such as awarding two distinct prizes among ten people.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "EN5",
+          "Sub_topic_name": "Combinations (unordered selections)",
+          "description": "Enumerate an unordered subset (combination) of r elements from a set of n distinct objects. Use notation nC r (nCr) and calculate values, including contextual problems such as choosing committee members (order not important).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "EN6",
+          "Sub_topic_name": "Outcome/probability applications",
+          "description": "Solve problems about outcomes, including problems in the context of probability. Combine counting methods (product rule, permutations, combinations, representations) to compute probabilities such as ‘at least two sixes when five dice are rolled’, and express final probabilities in exact or appropriate numerical form.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "2c Coordinate Geometry (two dimensions only) (CG)",
+      "Strand": "Additional Mathematics (Level 3 FSMQ)",
+      "Topic_name": "Coordinate Geometry (two dimensions only) (CG)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "CG1",
+          "Sub_topic_name": "Distance between two points",
+          "description": "Calculate the distance between two points in 2D using the distance formula: for points (x1,y1) and (x2,y2), distance = √((x2−x1)^2 + (y2−y1)^2). Apply to geometric and contextual problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "CG2",
+          "Sub_topic_name": "Midpoint of a line segment",
+          "description": "Find the midpoint of a line segment joining (x1,y1) and (x2,y2) using midpoint coordinates ((x1+x2)/2, (y1+y2)/2). Use in proofs and coordinate geometry problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "CG3",
+          "Sub_topic_name": "Equation of a circle",
+          "description": "Know and use the equation of a circle (x−a)^2 + (y−b)^2 = r^2, where (a,b) is the centre and r is the radius. Form equations from geometric information (e.g. diameter endpoints), identify centre/radius from an equation, and prove circle equations using midpoint and distance methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "CG4",
+          "Sub_topic_name": "Sketching/plotting functions (linear, polynomial, trig, exponential)",
+          "description": "Sketch and plot linear, polynomial, trigonometric and exponential functions. Include key features such as intercepts, turning points (where known), periodicity for trig graphs, asymptotic/end behaviour, and appropriate scaling/accuracy when plotting points and drawing curves.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "CG5",
+          "Sub_topic_name": "Gradient, intercept, tangents and normals",
+          "description": "Know, understand and use gradient and intercept in coordinate geometry. Solve problems involving tangents and normals to curves: interpret gradient as slope of tangent, find equations of tangents and normals at points on curves, and apply these ideas to points defined by equations and inequalities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "CG6",
+          "Sub_topic_name": "Linear programming: modelling with inequalities",
+          "description": "Express real situations in terms of linear inequalities (constraints) in two variables. Define variables, translate contextual constraints into inequalities, include non-negativity constraints (e.g. x ≥ 0, y ≥ 0) where appropriate, and set up feasible regions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "CG7",
+          "Sub_topic_name": "Linear programming: optimisation on graphs",
+          "description": "Use graphs of linear inequalities to solve 2-dimensional maximisation and minimisation problems. Identify feasible region, test objective function values at vertices/boundaries, and determine optimal solutions with clear reasoning and interpretation in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "CG8",
+          "Sub_topic_name": "Objective function (definition and identification)",
+          "description": "Know the definition of an objective function and be able to find it in 2-dimensional cases. Formulate objective functions from context (e.g. maximise profit P=ax+by), and use them within linear programming optimisation problems.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "2c Pythagoras’ Theorem and Trigonometry (PT)",
+      "Strand": "Additional Mathematics (Level 3 FSMQ)",
+      "Topic_name": "Pythagoras’ Theorem and Trigonometry (PT)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "PT1",
+          "Sub_topic_name": "Trig ratios for any angle and graphs",
+          "description": "Use the definitions of sinθ, cosθ and tanθ for any angle (including angles outside 0°–90°) and their graphs. Work in degrees only; understand sign changes by quadrant, reference angles, and read/interpret solutions from trig graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "PT2",
+          "Sub_topic_name": "Sine rule and cosine rule (including ambiguous case)",
+          "description": "Know and apply the sine rule and cosine rule in triangles, including the ambiguous case for the sine rule (SSA), determining when there are 0, 1 or 2 possible triangles/solutions. Angles are measured in degrees only; solve for sides/angles and interpret multiple solutions where applicable.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "PT3",
+          "Sub_topic_name": "Identity: tanθ = sinθ/cosθ",
+          "description": "Know and use the trigonometric identity tanθ = (sinθ)/(cosθ), including rearranging expressions and simplifying trig forms in problem solving.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "PT4",
+          "Sub_topic_name": "Identity: sin²θ + cos²θ = 1",
+          "description": "Know and use the trigonometric identity sin^2θ + cos^2θ = 1, including transforming expressions, solving for sinθ or cosθ, and simplifying/rewriting trig equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "PT5",
+          "Sub_topic_name": "Solving simple trigonometric equations in intervals",
+          "description": "Solve simple trigonometric equations in given intervals in degrees, e.g. solve tan(2x)=0.5 for 0° ≤ x ≤ 60°. Use appropriate general solutions, periodicity, and check solutions lie in the specified interval.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "PT6",
+          "Sub_topic_name": "Pythagoras and trig in 2D and 3D modelling",
+          "description": "Apply Pythagoras’ Theorem and trigonometry to 2-dimensional and 3-dimensional problems, including modelling contexts (e.g. bearings/elevations, lengths in right-angled triangles, angles of elevation/depression, angle of greatest slope). Choose appropriate diagrams, resolve lengths/angles, and communicate assumptions and results clearly.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "2c Calculus (CA)",
+      "Strand": "Additional Mathematics (Level 3 FSMQ)",
+      "Topic_name": "Calculus (CA)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "CA1",
+          "Sub_topic_name": "Differentiating polynomials (k x^n)",
+          "description": "Differentiate functions of the form kx^n where n is a non-negative integer (positive integer or 0), and sums of such functions, using standard notation dy/dx, f′(x). Apply linearity of differentiation to polynomial expressions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "CA2",
+          "Sub_topic_name": "Gradient function and rate of change",
+          "description": "Know that the gradient function (derivative) gives the gradient of the curve and measures the rate of change of y with respect to x. Interpret dy/dx as rate of change in context and as slope on a graph.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "CA3",
+          "Sub_topic_name": "Derivative as gradient of tangent",
+          "description": "Know that the gradient of the function at a point equals the gradient of the tangent at that point. Use this link between differentiation and tangents to solve geometric and modelling problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "CA4",
+          "Sub_topic_name": "Equations of tangents and normals",
+          "description": "Find the equation of a tangent and the equation of a normal at any point on a curve y=f(x). Use point-slope form y−y0 = m(x−x0), with m = f′(x0) for the tangent and normal gradient m_n = −1/m (when defined).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "CA5",
+          "Sub_topic_name": "Stationary points from differentiation",
+          "description": "Use differentiation to find stationary points on a curve by solving f′(x)=0 (and checking points where derivative may be undefined if relevant to the function given). Find corresponding y-coordinates and present stationary points as coordinates (x,y).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "CA6",
+          "Sub_topic_name": "Nature of stationary points",
+          "description": "Determine the nature of a stationary point (local maximum, local minimum, or point of inflection with horizontal tangent) using appropriate methods such as second derivative test (where available for polynomials) and/or sign changes of f′(x).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "CA7",
+          "Sub_topic_name": "Curve sketching using stationary points",
+          "description": "Sketch a curve when stationary points are known, showing key features (turning points, intercepts/asymptotic/end behaviour as appropriate). Use calculus information to support accurate qualitative sketches.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "CA8",
+          "Sub_topic_name": "Integrating polynomials (k x^n)",
+          "description": "Integrate functions of the form kx^n where n is a non-negative integer (positive integer or 0), and sums of such functions, to obtain an antiderivative. Use ∫kx^n dx = k x^{n+1}/(n+1) + C (n ≠ −1) and apply linearity of integration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "CA9",
+          "Sub_topic_name": "Integration as reverse of differentiation",
+          "description": "Be aware that integration is the reverse process of differentiation. Use this relationship to find a function given its gradient function, including applying an initial condition/point to determine the constant of integration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "CA10",
+          "Sub_topic_name": "Indefinite vs definite integrals",
+          "description": "Know what is meant by an indefinite integral (family of functions +C) and a definite integral with limits. Interpret ∫f(x)dx as an antiderivative and ∫_a^b f(x)dx as a number representing signed area/accumulation between x=a and x=b.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "CA11",
+          "Sub_topic_name": "Evaluating definite integrals",
+          "description": "Evaluate definite integrals of polynomial functions (and sums) by finding an antiderivative F(x) and computing F(b)−F(a). Use correct notation and show essential working, especially when calculator evaluation is used.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "CA12",
+          "Sub_topic_name": "Area under a curve (with x-axis and ordinates)",
+          "description": "Find the area between a curve and the x-axis between two ordinates x=a and x=b (and the curve), typically using area = ∫_a^b y dx when y≥0; understand that if the curve crosses the x-axis, areas may need to be split and absolute area considered depending on wording.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "CA13",
+          "Sub_topic_name": "Area between two curves",
+          "description": "Find the area between two curves y=f(x) and y=g(x) between given x-limits or intersection points, using ∫ (top−bottom) dx over the interval(s). Identify intersection points when needed and handle piecewise ‘top’ function changes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "CA14",
+          "Sub_topic_name": "Calculus in kinematics (variable acceleration)",
+          "description": "Use differentiation and integration with respect to time t to solve simple kinematics problems involving variable acceleration: v = ds/dt, a = dv/dt = d^2s/dt^2, and s = ∫v dt, v = ∫a dt. Apply initial conditions to determine constants and interpret results with correct units.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "CA15",
+          "Sub_topic_name": "Recognising constant acceleration cases",
+          "description": "Recognise the special case where constant acceleration formulae are appropriate (e.g. v=u+at, s=ut+½at^2, v^2=u^2+2as, s=½(u+v)t, s=vt−½at^2). Decide when motion can be treated as constant acceleration and apply the standard equations correctly.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "2c Numerical Methods (NM)",
+      "Strand": "Additional Mathematics (Level 3 FSMQ)",
+      "Topic_name": "Numerical Methods (NM)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "NM1",
+          "Sub_topic_name": "Solving equations by change of sign",
+          "description": "Solve equations approximately by considering change of sign: evaluate f(x) at values to locate intervals where f(x) changes sign, indicating a root. Use systematic interval narrowing to obtain a required accuracy (e.g. decimal places) and show method clearly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "NM2",
+          "Sub_topic_name": "Iteration for approximate solutions",
+          "description": "Use a simple iterative method to solve equations approximately: rearrange f(x)=0 into x=g(x), choose an initial value, iterate x_{n+1}=g(x_n), and use convergence criteria/inspection to obtain a root to a stated accuracy. Record iterations and justify stopping.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "NM3",
+          "Sub_topic_name": "When numerical methods may fail",
+          "description": "Recognise when numerical methods may fail, including: no sign change despite roots (e.g. repeated roots), divergence/oscillation in iteration due to poor rearrangement or starting value, convergence to unintended fixed points, or iteration entering invalid domains. Be able to comment on failure and adjust approach.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "NM4",
+          "Sub_topic_name": "Estimating gradients using chords",
+          "description": "Use a chord to estimate the gradient of a tangent to a curve at a point, e.g. approximate f′(x) by [f(x+h)−f(x)]/h or symmetric difference [f(x+h)−f(x−h)]/(2h) using nearby points on the curve. Apply with appropriate choice of h and units.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "NM5",
+          "Sub_topic_name": "Improving gradient estimates",
+          "description": "Recognise how to improve an estimate for the gradient of a curve at a point, including using smaller step sizes |h|, using points closer to the point of tangency, and/or using symmetric differences to reduce error. Comment on trade-offs such as rounding/calculator error.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "NM6",
+          "Sub_topic_name": "Area estimates with rectangular strips",
+          "description": "Use rectangular strips (left/right Riemann sums) to estimate the area between a curve and the x-axis over an interval. Choose strip width h, compute approximate area as sum of rectangle areas using function values at endpoints, and interpret as over/under estimates depending on monotonicity/concavity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "NM7",
+          "Sub_topic_name": "Trapezium rule area estimates",
+          "description": "Use the trapezium rule to estimate the area between a curve and the x-axis. Apply the provided trapezium rule formula with n strips and width h=(b−a)/n, using y-values y0,…,yn and compute area ≈ (h/2)(y0+yn+2(y1+…+y_{n−1})).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "NM8",
+          "Sub_topic_name": "Over/under estimates and improving area estimates",
+          "description": "Recognise whether an area estimate (rectangular strips or trapezium rule) is an over- or under-estimate based on curve shape (increasing/decreasing, concave up/down). Understand how to calculate an improved estimate, typically by increasing the number of strips (reducing h) and recomputing; compare estimates and comment on likely error reduction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "NM9",
+          "Sub_topic_name": "Numerical methods in context",
+          "description": "Apply numerical methods in context where appropriate, e.g. estimating velocity from a displacement–time curve using gradient approximations, estimating distance/area from data, or finding approximate solutions to model equations. Interpret numerical results within the original scenario and comment on accuracy/limitations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "2c Exponentials and logarithms (EL)",
+      "Strand": "Additional Mathematics (Level 3 FSMQ)",
+      "Topic_name": "Exponentials and logarithms (EL)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "EL1",
+          "Sub_topic_name": "Exponential functions k a^x and graphs",
+          "description": "Know and use the function y = k a^x (a>0) and its graph. Understand effects of parameters k and a (growth for a>1, decay for 0<a<1), intercepts (y=k at x=0), and use the graph to interpret or solve simple problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "EL2",
+          "Sub_topic_name": "Logarithms as inverses",
+          "description": "Know and use the definition of log_a x as the inverse of a^x (with a>0, a≠1, x>0). Convert between exponential and logarithmic forms: a^y=x ⇔ y=log_a x, and apply to solve equations and interpret graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "EL3",
+          "Sub_topic_name": "Laws of logarithms",
+          "description": "Understand and use the laws of logarithms, including: log_a(xy)=log_a x + log_a y; log_a(x/y)=log_a x − log_a y; log_a(x^n)=n log_a x. Apply to simplify expressions, solve equations, and linearise models. Work with correct domain restrictions (x>0).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "EL4",
+          "Sub_topic_name": "Linearising exponential and power laws",
+          "description": "Convert equations of the form y = k a^x and y = k x^n to a linear form using logarithms. For y=k a^x use log y = log k + x log a (any consistent base). For y=k x^n use log y = log k + n log x. Identify which quantities correspond to intercept and gradient on a straight-line plot.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "EL5",
+          "Sub_topic_name": "Estimating parameters from graphs",
+          "description": "Estimate values of parameters (k and a) or (k and n) from graphs of linearised forms (e.g. from a straight-line plot of log y against x or log y against log x). Use gradient/intercept to compute parameter values, including converting back from logs to original parameters.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "EL6",
+          "Sub_topic_name": "Solving equations a^x = b",
+          "description": "Solve equations of the form a^x=b for a>0 (typically a≠1, b>0) using logarithms: x = log_a b = (log b)/(log a). Give exact forms where appropriate and decimal approximations to stated accuracy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "EL7",
+          "Sub_topic_name": "Exponential growth and decay modelling",
+          "description": "Use exponentials and logarithms in problems involving exponential growth and decay. Form and solve models such as y=y0 a^t (discrete) or equivalent, interpret parameters (growth/decay factor, percentage change), use logs to find time to reach a value, and comment on assumptions/limitations of the model.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

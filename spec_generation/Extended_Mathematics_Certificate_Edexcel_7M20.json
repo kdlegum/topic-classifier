@@ -1,0 +1,232 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Extended Mathematics Certificate",
+  "Exam Board": "Edexcel",
+  "Specification": "7M20",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "1",
+      "Strand": "Extended Mathematics Certificate",
+      "Topic_name": "Number",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "N1.1",
+          "Sub_topic_name": "Indices (integer, negative and fractional) and real numbers",
+          "description": "Calculate with integer, negative and fractional indices; use and apply the laws of indices in numerical and algebraic expressions (including in rearrangement and equation solving). Understand and use the term ‘real numbers’ (ℝ), including recognising that results may be irrational but still real; contexts may link to algebraic manipulation and solving linear equations involving index terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "N1.2",
+          "Sub_topic_name": "Surds: simplify, exact calculation and rationalising denominators",
+          "description": "Calculate exactly with surds; simplify surd expressions involving squares (e.g. √12=√(4×3)=2√3) and simplify products/quotients of surds. Rationalise denominators, including cases where the denominator must first be simplified before rationalisation; may include more complex surd expressions and algebraic contexts requiring exact forms rather than decimals.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "2",
+      "Strand": "Extended Mathematics Certificate",
+      "Topic_name": "Algebra",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "A2.1",
+          "Sub_topic_name": "Algebraic manipulation (including polynomials, surds and algebraic fractions)",
+          "description": "Simplify and manipulate algebraic expressions (including those involving surds and algebraic fractions) by: collecting like terms; multiplying a single term over a bracket; expanding products of two or more binomials; factorising quadratic expressions of the form ax^2+bx+c including the difference of two squares; factorising cubic expressions of the form ax^3+bx^2+cx+d; simplifying expressions involving sums, products and powers using the laws of indices. Content may include using Pascal’s Triangle to expand polynomials (Pascal’s Triangle/relevant row will be provided), using the factor theorem (not the remainder theorem), and polynomial division.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "A2.2",
+          "Sub_topic_name": "Algebraic proof (direct, exhaustion and counterexample)",
+          "description": "Use algebra to support and construct proofs; understand the importance of clear, structured algebra when proving results. Be able to write general forms for an integer n, an even number 2n, and an odd number 2n+1 or 2n−1. Proof methods assessed may include proof by deduction (direct proof), proof by exhaustion, and proof by counterexample. Proof by contradiction will not be assessed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "A2.3",
+          "Sub_topic_name": "Functions: features, inverses, composites, domain and range",
+          "description": "Identify a function’s features including asymptotes, domain and range. Interpret an inverse function and determine an inverse function (may include quadratic functions). Interpret the succession of two functions as a composite function; formal function notation is expected. Given f(x) and g(x), find (f∘g)(x)=fg(x) or (g∘f)(x)=gf(x). Understand and apply domain/range restrictions, including excluding values from the domain that make expressions undefined (e.g. for f(x)=4/(3−x), exclude x=3) and stating appropriate domains (e.g. for g(x)=x^2, give the domain specified/required by the context).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "A2.4",
+          "Sub_topic_name": "Straight lines: parallel/perpendicular, multiple forms and applications",
+          "description": "Identify parallel and perpendicular straight lines in forms y=mx+c, ax+by+c=0, ax+by=c, and y−y₁=m(x−x₁). Use gradient conditions for parallel lines (equal gradients) and perpendicular lines (m₁m₂=−1 where defined). Make links between perpendicular lines and the radius/tangent relationship in circle geometry. Use straight-line models in contexts including Linear Programming; understand and use terms such as constraints lines, feasible region, and interpreting lines in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "A2.5",
+          "Sub_topic_name": "Quadratics: roots, intercepts, turning points and discriminant",
+          "description": "Identify and interpret roots, intercepts and turning points of quadratic functions graphically; deduce roots algebraically and turning points by completing the square. Complete the square when the coefficient of x^2 is not 1 and the coefficient of x is not even. Understand algebraic perfect squares (e.g. a^2+2ab+b^2). Understand links between the discriminant and the number/type of real roots (no real roots, one repeated root, two distinct real roots) and represent/interpret these graphically (including tangency as a single real root).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "A2.6",
+          "Sub_topic_name": "Graph sketching: key families (linear, quadratic, cubic/quartic, reciprocal, exponential, trig)",
+          "description": "Recognise, sketch and interpret graphs of: linear and quadratic functions; simple cubic and quartic functions; reciprocal functions y=a/x and y=a/x^2 where x≠0 and a is an integer; exponential functions y=k^x; trigonometric functions (arguments in degrees) for angles of any size, e.g. y=sin x, y=cos(x+30), y=tan 2x. Identify key points, intersections and asymptotes in sketches. For trigonometric graphs, understand shape, symmetries and periodicity (including how transformations/argument changes affect period and phase).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "A2.7",
+          "Sub_topic_name": "Transformations of graphs of functions",
+          "description": "Sketch transformations of a given function, including stretches and translations in both directions and reflections as required by expressions such as y=a f(x), y=f(x)+a, y=f(x+a), y=f(ax), and combinations of these. Interpret the effect of parameters on the graph and key features (intercepts, turning points, asymptotes, domain/range).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "A2.8",
+          "Sub_topic_name": "Graphs in context: reciprocal/exponential and non-standard models; approximate solutions",
+          "description": "Plot and interpret graphs (including reciprocal and exponential graphs) and graphs of non-standard functions in real contexts to find approximate solutions to problems (e.g. simple kinematic problems involving distance, speed and acceleration; population growth; radioactive decay; linear programming; variable acceleration). Understand the difference between graphs of y=a^x for 0<a<1 (decay) and a>1 (growth), and use graphs to estimate unknowns/solutions appropriate to the context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "A2.9",
+          "Sub_topic_name": "Gradients and areas under graphs (no calculus) incl. trapezium rule",
+          "description": "Calculate or estimate gradients of graphs and areas under graphs (including quadratic and other non-linear graphs) and interpret results in contexts such as distance–time graphs, velocity–time graphs, and graphs in financial contexts. Interpret rate of change by drawing, and finding the gradient of, a suitable tangent to a curve (instantaneous rate of change) without using calculus. Estimate area under a curve using the Trapezium Rule (trapezium rule formula and use with strip width h and ordinates y₀…yₙ).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "A2.10",
+          "Sub_topic_name": "Circle equation and tangent to a circle (coordinate geometry)",
+          "description": "Recognise and use the equation of a circle; find the equation of a tangent to a circle at a given point. Use circle forms such as (x−a)^2+(y−b)^2=r^2; complete the square to rewrite a general quadratic in x and y into centre-radius form and identify the centre (a,b) and radius r. Apply perpendicular radius–tangent property to obtain the tangent line equation at a specified point on the circle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "A2.11",
+          "Sub_topic_name": "Solving linear equations and graphical solutions (incl. trig examples and LP language)",
+          "description": "Solve linear equations in one unknown algebraically, including cases where the unknown appears on both sides; find approximate solutions using a graph (intersection method). Equations may be extended to include forms such as trigonometric equations (e.g. 3sin x + 2 = 3) and cases with no solution (e.g. 3 − 0.5cos x = 2). Use straight line models in contexts including Linear Programming; understand terms ‘Objective Function’ and ‘feasible region’ when interpreting/solving related problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "A2.12",
+          "Sub_topic_name": "Solving quadratic equations (factorising, completing square, formula) incl. hidden quadratics and trig",
+          "description": "Solve quadratic equations (including those requiring rearrangement) by factorising, completing the square, and using the quadratic formula. Include ‘hidden’ quadratics (e.g. equations in x^4 and x^2, or in x^2 and 2x) and quadratic forms arising from trigonometric expressions, e.g. 2sin^2 x + 3sin x + 1 = 0 for 0° ≤ x ≤ 360°.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "A2.13",
+          "Sub_topic_name": "Simultaneous equations (linear-linear and linear-quadratic)",
+          "description": "Solve two simultaneous equations in two variables (linear/linear and linear/quadratic) algebraically or graphically, including those requiring rearrangement. There is greater emphasis on solving by substitution and by interpreting intersections on graphs; solutions may be exact or approximate depending on method/context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "A2.14",
+          "Sub_topic_name": "Inequalities: linear (1 or 2 variables) and quadratic; set notation and graphs",
+          "description": "Solve linear inequalities in one variable and in two variables, and solve quadratic inequalities in one variable. Represent solutions on a number line, using set notation (e.g. x∈ℝ, x≤a, a<x<b), and on a graph (including shading feasible regions for systems). Inequalities may be assessed in context, including links to linear programming and profit/loss constraints.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3",
+      "Strand": "Extended Mathematics Certificate",
+      "Topic_name": "Ratio, proportion and rates of change",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "R3.1",
+          "Sub_topic_name": "Average vs instantaneous rate of change (gradient of chord/tangent)",
+          "description": "Interpret the gradient at a point on a curve as the instantaneous rate of change; apply and compare average rate of change (gradient of a chord over an interval) and instantaneous rate of change (gradient of a tangent at a point) in numerical, algebraic and graphical contexts. This topic explicitly does not include calculus; students use graphical methods and gradient estimation where appropriate.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "4",
+      "Strand": "Extended Mathematics Certificate",
+      "Topic_name": "Geometry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "G4.1",
+          "Sub_topic_name": "Circle theorems: apply and prove",
+          "description": "Apply and prove the standard circle theorems concerning angles, radii, tangents and chords; use them to prove related results. Assessment may include completing a partial proof or producing a full proof of standard circle theorems and derived results using correct reasoning and notation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "G4.2",
+          "Sub_topic_name": "Pythagoras and trigonometry in 2D and 3D triangles",
+          "description": "Know the formulae for Pythagoras’ theorem a^2+b^2=c^2 and the trigonometric ratios (sin, cos, tan). Apply them to find unknown angles and lengths in right-angled triangles and, where possible, general triangles in two- and three-dimensional figures (including interpreting and constructing appropriate right triangles in 3D problems).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "G4.3",
+          "Sub_topic_name": "Exact trig values at special angles (with proofs)",
+          "description": "Know the exact values of sinθ and cosθ for θ = 0°, 30°, 45°, 60°, 90°, and the exact values of tanθ for θ = 0°, 30°, 45°, 60°. Proof of these values using triangles may be tested (e.g. 30-60-90 and 45-45-90 triangles) with exact surd forms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "G4.4",
+          "Sub_topic_name": "Sine rule and cosine rule (including proof of sine rule)",
+          "description": "Know and apply the sine rule and cosine rule to find unknown lengths and angles in two- and three-dimensional figures. Proof of the sine rule using Pythagoras’ theorem may be tested; students should be able to use the rules appropriately given angle/side information and interpret ambiguous cases where relevant to sine rule use.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "G4.5",
+          "Sub_topic_name": "Area of a triangle using 1/2 ab sin C (including 3D contexts)",
+          "description": "Know and apply the triangle area formula Area = (1/2)ab sin C to calculate the area, sides or angles of any triangle. Problems may include working in 3D where a triangle is embedded in a three-dimensional figure and appropriate angles/sides must be identified.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "G4.6",
+          "Sub_topic_name": "Vectors: operations, position vectors, distance and geometric proof",
+          "description": "Apply addition and subtraction of vectors and multiplication of vectors by a scalar; use diagrammatic and column representations. Use vectors to construct geometric arguments and proofs. Understand and use position vectors; calculate the distance between two points represented by position vectors. Understand and use notation such as \u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001dAB (the vector from A to B) and relate it to position vectors (e.g. \u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001d\u001dAB = b−a).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "5",
+      "Strand": "Extended Mathematics Certificate",
+      "Topic_name": "Probability",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "P5.1",
+          "Sub_topic_name": "Systematic listing and set representations (tables, Venn, trees)",
+          "description": "Enumerate sets and combinations of sets systematically using tables, grids, Venn diagrams and tree diagrams. Understand and use set/number notation including n(B) for the number of elements in set B; interpret diagrams to count outcomes and organise sample spaces efficiently.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "P5.2",
+          "Sub_topic_name": "Combined events: independent and dependent probability (incl. trees and assumptions)",
+          "description": "Calculate the probability of independent and dependent combined events using tree diagrams and other representations; understand underlying assumptions for independence. For independent events A and B, know and use P(A and B)=P(A)×P(B). Understand and use probability notation such as P(A). Content may link strongly to algebra, including forming and solving linear/quadratic equations from probability constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "P5.3",
+          "Sub_topic_name": "Conditional probability using expected frequencies and two-way tables",
+          "description": "Calculate and interpret conditional probabilities using representations including expected frequencies with two-way tables, tree diagrams and Venn diagrams. Convert between representations and interpret conditional probability in context (e.g. P(A|B)). Content may link strongly to algebra, including forming and solving linear/quadratic equations from conditional probability information.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

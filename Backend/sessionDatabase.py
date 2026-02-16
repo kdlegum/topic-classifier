@@ -129,6 +129,7 @@ class Subtopic(SQLModel, table=True):
     specification_section_sub: str
     subtopic_name: str
     description: str
+    tier: str | None = Field(default=None)
 
 
 class QuestionLocation(SQLModel, table=True):

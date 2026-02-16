@@ -1,0 +1,457 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Further Mathematics",
+  "Exam Board": "AQA",
+  "Specification": "8365",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "1",
+      "Strand": "Further Mathematics",
+      "Topic_name": "Number",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Number system fluency (assumed GCSE knowledge)",
+          "description": "Assumed prior knowledge and secure use of the number system and arithmetic skills from Key Stage 4, including: fractions, decimals, percentages, ratio and proportion, and correct use of the order of operations (BIDMAS/PEMDAS). This fluency is expected to be applied within further-maths contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Product rule for counting",
+          "description": "Use the product rule for counting to determine the number of possible outcomes in multi-step selections/arrangements. Apply to structured counting problems with constraints (eg forming numbers with specified properties such as odd/even, fixed length, limited digits) and conditions such as 'no repetition'.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.3",
+          "Sub_topic_name": "Surds and rationalising denominators",
+          "description": "Manipulate surds in exact form, including simplifying surd expressions, combining like surds, and performing exact calculations involving surds. Rationalise denominators where the denominator contains a surd (including expressions leading to forms like a+b√n), and simplify fully to an exact simplified surd form.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "2",
+      "Strand": "Further Mathematics",
+      "Topic_name": "Algebra",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Core algebraic processes (assumed GCSE knowledge)",
+          "description": "Assumed prior knowledge and secure use of fundamental manipulative algebra, including applying the associative, commutative and distributive laws; simplifying expressions; and carrying out routine algebraic manipulation accurately as a foundation for further topics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Function definition and notation",
+          "description": "Understand the definition of a function and use function notation f(x). Interpret and work with functions given algebraically (eg f(x)=x^2−9), including substituting values and understanding f(x) as an output dependent on x.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "2.3",
+          "Sub_topic_name": "Domain and range of a function",
+          "description": "Understand and state the domain and range of a function using inequalities and exclusions (eg domain x>2, or 'for all x except x=0'; range statements such as f(x)>−1). Interpret domain/range restrictions in context and from piecewise definitions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "2.4",
+          "Sub_topic_name": "Composite functions",
+          "description": "Form and evaluate composite functions created by applying functions in succession. Use notation fg(x) meaning 'g followed by f' (ie f(g(x))). Compute compositions algebraically and interpret the order of operations in composite function notation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "2.5",
+          "Sub_topic_name": "Inverse functions",
+          "description": "Understand and use inverse functions, written f^(−1). Find or use inverses where appropriate, with domains for f chosen so that f is one-to-one (invertible). Interpret inverse as reversing the action of f and use inverse notation correctly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2.6",
+          "Sub_topic_name": "Expand brackets and simplify expressions",
+          "description": "Expand products of algebraic expressions (including multi-term brackets) and collect like terms to simplify. Includes expressions requiring multiple expansions and simplification of higher-degree polynomials formed by expansion and subtraction/addition of polynomial expressions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2.7",
+          "Sub_topic_name": "Binomial expansion (a+b)^n for positive integer n",
+          "description": "Expand (a+b)^n for positive integer n, including numeric/algebraic coefficients (eg (5x+2)^3). Use Pascal’s triangle/binomial coefficients to determine specific coefficients/terms in expansions (eg coefficient of x^3 in (3+2x)^5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2.8",
+          "Sub_topic_name": "Factorising advanced expressions",
+          "description": "Factorise algebraic expressions fully, including: difference of two squares; quadratic and higher-order polynomials (eg x^4−25x^2); expressions involving brackets squared; and factorising quadratic forms in two variables (eg 15x^2−34xy−16y^2). Recognise and apply suitable identities and techniques to achieve complete factorisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2.9",
+          "Sub_topic_name": "Rational expressions (algebraic fractions)",
+          "description": "Manipulate rational expressions using +, −, ×, ÷ with algebraic fractions whose denominators may be numeric, linear, or quadratic. Simplify complex rational expressions by finding common denominators, factorising where needed, cancelling factors correctly, and performing division by multiplying by the reciprocal.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2.10",
+          "Sub_topic_name": "Rearranging formulae and algebraic expressions",
+          "description": "Use and manipulate formulae and expressions; rearrange equations to change the subject (eg rearrange 1/f = 1/u + 1/v to make v the subject). Handle fractional forms and ensure algebraic validity throughout.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2.11",
+          "Sub_topic_name": "Factor theorem for polynomials (rational roots)",
+          "description": "Use the factor theorem for rational values of the variable to test whether (x−a) or (kx−a) is a factor of a polynomial. Factorise polynomials using identified factors (including showing a given factor is valid). Solve polynomial equations by factorisation once factors are found, including higher-degree polynomials where a factor is given or must be shown (eg show x−7 is a factor of x^5−7x^4−x+7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "2.12",
+          "Sub_topic_name": "Completing the square",
+          "description": "Complete the square for quadratic expressions and use equivalence/identity notation (≡) to match forms such as ax^2+bx+c ≡ a(x+b)^2 + c. Determine values of constants in completed-square form and use completing the square as a technique within algebraic manipulation and solving problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "2.13",
+          "Sub_topic_name": "Graphs of functions: drawing, sketching, interpretation",
+          "description": "Draw and sketch graphs of functions and interpret key features. Graphs may be linear, quadratic, and exponential; exponential graphs restricted to y = a b^x and y = a b^(−x), where a and b are rational. Functions may be piecewise with domains restricted to no more than 3 intervals; draw piecewise graphs over specified x-ranges. Identify and label intercepts with axes; interpret given sketches (eg use two points on y = a b^(−x) to determine a and b).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "2.14",
+          "Sub_topic_name": "Solving linear and quadratic equations",
+          "description": "Solve linear and quadratic equations. Quadratic solution methods include factorisation, using graphs, completing the square, and the quadratic formula. Apply equation solving in a variety of contexts that lead to linear or quadratic equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "2.15",
+          "Sub_topic_name": "Simultaneous equations (2 unknowns): algebraic and graphical",
+          "description": "Solve simultaneous equations in two unknowns algebraically and graphically. Pairs may be: both linear, or one linear and one second order (quadratic/other). Includes systems such as line with parabola, and also non-linear pairs such as xy = k with x + y = c. Interpret solutions as intersection points and find all valid solutions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "2.16",
+          "Sub_topic_name": "Linear equations in three unknowns",
+          "description": "Solve systems of linear equations in three unknowns (x, y, z) using algebraic methods (eg elimination/substitution) to obtain a unique solution where it exists.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "2.17",
+          "Sub_topic_name": "Linear and quadratic inequalities",
+          "description": "Solve inequalities including: linear inequalities (eg a(x+b) > c(x+d)) and quadratic inequalities (eg x^2 < 9; 2x^2 + 5x ≤ 3). Express solutions as intervals and use appropriate notation, considering boundary inclusion for ≤/≥ and exclusion for </>.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "2.18",
+          "Sub_topic_name": "Index laws (fractional/negative) and equations",
+          "description": "Use index laws including fractional and negative indices; simplify expressions to a single power (eg combine x^(p/q) terms). Solve equations involving indices, including those that require applying index laws and restrictions such as x>0 when square roots/fractional powers are present.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "2.19",
+          "Sub_topic_name": "Algebraic proof",
+          "description": "Construct algebraic proofs using symbolic manipulation and divisibility arguments. Prove general statements for integer n (eg show an expression is divisible by a given integer for any integer n) using expansion, simplification and factorisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "2.20",
+          "Sub_topic_name": "nth term and limiting value of a sequence",
+          "description": "Use nth term expressions of sequences to compute specific terms and differences between terms (eg between the 16th and 6th terms). Determine the limiting value of a sequence as n → ∞ for given nth-term expressions (eg rational forms such as 2n/(n+4)) and interpret the limit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "2.21",
+          "Sub_topic_name": "nth term of linear sequences",
+          "description": "Work with arithmetic (linear) sequences using the nth term formula. Determine which term has a specified value by solving for n. Find the nth term of sequences defined by patterns (including sequences expressed in terms of parameters r and s, eg r+s, r+3s, r+5s, …).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "2.22",
+          "Sub_topic_name": "nth term of quadratic sequences",
+          "description": "Find the nth term of quadratic sequences using second differences/other methods and use it to answer questions such as identifying which term equals a given value (including zero).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3",
+      "Strand": "Further Mathematics",
+      "Topic_name": "Coordinate Geometry (2 dimensions only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Gradient definition",
+          "description": "Know and use the definition of gradient for a straight line as rate of change; calculate gradients from pairs of coordinates and interpret gradient in geometric and algebraic contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Parallel and perpendicular gradients",
+          "description": "Know and use the relationships between gradients of parallel lines (equal gradients) and perpendicular lines (m1·m2 = −1 where defined). Apply to geometric problems (eg proving a triangle is right-angled from coordinates by showing a pair of sides are perpendicular).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Distance between two points",
+          "description": "Use Pythagoras’ theorem to calculate the distance between two points (x1,y1) and (x2,y2) in the coordinate plane, interpreting results as lengths in geometric problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.4",
+          "Sub_topic_name": "Section formula / ratio on a line (including midpoint)",
+          "description": "Use ratio to find the coordinates of a point dividing a line segment between two known points in a given ratio, including the special case of the midpoint. Apply internal division in coordinate geometry problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Equations of straight lines",
+          "description": "Work with equations of straight lines in forms including y = mx + c and point-slope form y − y1 = m(x − x1), and other equivalent forms. Interpret gradient m and y-intercept c from an equation, and form an equation from given information (points/gradient/intercept).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.6",
+          "Sub_topic_name": "Drawing straight line graphs from information",
+          "description": "Draw/plot a straight line from given information (equation, gradient and point, intercepts, or two points). Use accurate plotting and understanding of linear forms to produce the graph.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.7",
+          "Sub_topic_name": "Circle centred at origin: equation x^2 + y^2 = r^2",
+          "description": "Understand that x^2 + y^2 = r^2 represents a circle with centre (0,0) and radius r. Write down the equation of a circle given centre (0,0) and radius. Apply relevant circle-geometry facts where appropriate: angle in a semicircle is 90°; perpendicular from the centre to a chord bisects the chord; angle between tangent and radius is 90°; tangents from an external point are equal in length.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.8",
+          "Sub_topic_name": "Circle with centre (a,b): equation (x−a)^2 + (y−b)^2 = r^2",
+          "description": "Understand that (x−a)^2 + (y−b)^2 = r^2 represents a circle with centre (a,b) and radius r. Write down the equation of any circle given its centre and radius; interpret centre and radius from the equation by completing the square if needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.9",
+          "Sub_topic_name": "Equation of a tangent to a circle",
+          "description": "Find the equation of a tangent at a point on a circle. Use the fact that the tangent is perpendicular to the radius at the point of contact (angle between tangent and radius is 90°), combining circle equations, gradients, and point-slope/line equations as required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "4",
+      "Strand": "Further Mathematics",
+      "Topic_name": "Calculus",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Gradient function dy/dx as rate of change",
+          "description": "Know that the gradient function dy/dx gives the gradient of a curve and measures the rate of change of y with respect to x. Interpret dy/dx values as slope/rate of change in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Tangent gradient interpretation",
+          "description": "Know that the gradient of a function at a point equals the gradient of the tangent to the curve at that point. Use this to link differentiation results to geometric properties of graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.3",
+          "Sub_topic_name": "Differentiate kx^n (integer n) and sums (power rule)",
+          "description": "Differentiate expressions of the form kx^n where n is an integer, and sums of such terms, using the power rule. Includes cases where algebraic simplification/expansion is required before differentiating (eg y=(3x+2)(x−3)). Includes differentiation of negative powers (eg y = 5/x^3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "Equations of tangents and normals",
+          "description": "Find the equation of the tangent and the normal to a curve at a given point. Use dy/dx to obtain the tangent gradient and the negative reciprocal for the normal gradient, then form line equations (eg y−y1 = m(x−x1)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.5",
+          "Sub_topic_name": "Increasing and decreasing functions",
+          "description": "Determine where a function is increasing or decreasing based on the sign of its derivative: positive gradient implies increasing; negative gradient implies decreasing. Interpret monotonicity on intervals and connect to the shape of graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.6",
+          "Sub_topic_name": "Second derivative notation and meaning",
+          "description": "Understand and use the notation d^2y/dx^2. Know that d^2y/dx^2 measures the rate of change of the gradient function (the derivative of dy/dx), and interpret its sign in relation to how the slope is changing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.7",
+          "Sub_topic_name": "Maxima and minima using differentiation",
+          "description": "Use differentiation to find stationary points and determine maxima/minima on a curve. Determine the nature of a stationary point either by analysing increasing/decreasing behaviour (sign changes of dy/dx) or by using the second derivative test with d^2y/dx^2.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.8",
+          "Sub_topic_name": "Optimisation problems using calculus",
+          "description": "Use calculus to find maximum/minimum values in simple applied problems, including forming a function to optimise (with domain constraints such as x>0), differentiating, finding stationary points, and verifying a minimum/maximum. Work out the minimum/maximum value of the function once established (eg V = 49x + 81/x, x>0).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "4.9",
+          "Sub_topic_name": "Sketching curves with turning points",
+          "description": "Sketch and/or interpret a curve when maximum and minimum points are known. Use information about stationary points and increasing/decreasing behaviour (and potentially concavity via d^2y/dx^2) to produce or interpret a qualitative sketch.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "5",
+      "Strand": "Further Mathematics",
+      "Topic_name": "Matrix Transformations",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Matrix multiplication and scalar multiples (2×2, 2×1)",
+          "description": "Perform matrix multiplication restricted to 2×2 by 2×2 and 2×2 by 2×1 matrices, and multiply matrices by a scalar. Use correct row-by-column multiplication and simplify resulting matrices/vectors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Identity matrix I (2×2)",
+          "description": "Know and use the 2×2 identity matrix I, including its role as the multiplicative identity (IA = A and AI = A where defined).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "2D transformations represented by 2×2 matrices",
+          "description": "Understand transformations of the unit square in the x–y plane and represent/interpret them using 2×2 matrices. Transformations are restricted to: rotations of 90°, 180° or 270° about the origin; reflections in the lines x=0, y=0, y=x, y=−x; and enlargements centred on the origin. Apply matrices to column vectors representing points. Use of i and j notation is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "5.4",
+          "Sub_topic_name": "Combining transformations (matrix products)",
+          "description": "Combine transformations by multiplying the corresponding 2×2 matrices in the correct order. Interpret the resulting matrix as a single transformation and apply it to shapes/points in the plane.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "6",
+      "Strand": "Further Mathematics",
+      "Topic_name": "Geometry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "Mensuration and angle/circle theorem knowledge",
+          "description": "Know and use perimeter and area of rectangles and circles; area of triangles, parallelograms and trapezia; and surface area and volume of prisms, cylinders, spheres, cones and pyramids. Know angle properties of parallel/intersecting lines, triangles, special quadrilaterals and polygons. Understand and use circle theorems: angle at the centre is twice the angle at the circumference; angles in the same segment are equal; opposite angles in a cyclic quadrilateral sum to 180°; alternate segment theorem; and also apply circle facts listed in 3.7 (angle in semicircle 90°, perpendicular from centre to chord bisects chord, tangent-radius 90°, tangents from external point equal). Apply these results in problem solving and proof.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "6.2",
+          "Sub_topic_name": "Geometrical proof (formal arguments)",
+          "description": "Understand and construct geometrical proofs using formal arguments. Use theorems listed in 3.7 and 6.1 to justify statements logically and produce rigorous deductions leading to a conclusion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "6.3",
+          "Sub_topic_name": "Sine rule, cosine rule, and area formula in scalene triangles",
+          "description": "Use the sine rule and cosine rule to solve problems in scalene triangles. Use the area formula for a triangle: Area = (1/2)ab sin C. Prior knowledge of right-angled triangle trigonometry is assumed and should be used where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "6.4",
+          "Sub_topic_name": "Pythagoras’ theorem in 2D and 3D (including triples)",
+          "description": "Use Pythagoras’ theorem in 2D and 3D contexts. Recognise Pythagorean triples (3,4,5; 5,12,13; 8,15,17; 7,24,25) and simple multiples, and apply them to calculate lengths efficiently.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "6.5",
+          "Sub_topic_name": "3D trigonometry and Pythagoras applications (lines/planes)",
+          "description": "Apply trigonometry and Pythagoras’ theorem to 2D and 3D problems, including non-right-angled triangles. Includes finding angles such as the angle between a line and a plane and the angle between two planes, using appropriate right-triangle constructions within 3D diagrams and correct interpretation of lengths/angles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "6.6",
+          "Sub_topic_name": "Graphs of sin x, cos x, tan x",
+          "description": "Sketch and use graphs of y = sin x, y = cos x, and y = tan x for angles of any size (degrees). Interpret key features such as periodicity, intercepts, maxima/minima for sine/cosine, and asymptotes for tangent, and use graphs to support solving problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "6.7",
+          "Sub_topic_name": "Definitions of sin θ, cos θ, tan θ up to 360°",
+          "description": "Use the definitions of sin θ, cos θ and tan θ for any positive angle up to 360° (measured in degrees). Take angles measured anticlockwise as positive. Use these definitions to evaluate trigonometric values in all four quadrants with correct signs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "6.8",
+          "Sub_topic_name": "Exact trig values from special triangles",
+          "description": "Know and use 30°, 60°, 90° and 45°, 45°, 90° triangles to obtain exact trigonometric ratios. Use the side ratios 1 : √3 : 2 and 1 : 1 : √2 to derive exact values for sin, cos, tan of the special angles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "6.9",
+          "Sub_topic_name": "Trig identities and simplifying/proving",
+          "description": "Know and use identities tan θ = (sin θ)/(cos θ) and sin^2 θ + cos^2 θ = 1. Apply to simplify trigonometric expressions, prove identities, and solve equations that rely on these relationships.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "6.10",
+          "Sub_topic_name": "Solving simple trigonometric equations in intervals",
+          "description": "Solve simple trigonometric equations within specified intervals, restricted to single-angle equations (eg sin x = 0.5; 2 sin x = cos x for 0° ≤ x ≤ 360°; sin^2 x = 1/4 for 0° ≤ x ≤ 360°). Use exact values where appropriate and list all solutions in the interval.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

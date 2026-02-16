@@ -1,0 +1,570 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "History A (Explaining the Modern World)",
+  "Exam Board": "OCR (Cambridge OCR)",
+  "Specification": "J410 (Version 1.9, January 2026; first assessment 2021)",
+  "has_math": false,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "2c (Period study)",
+      "Strand": "Component Group 1: Period study + Non-British depth study (01–07)",
+      "Topic_name": "International Relations: the changing international order 1918–1975",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "2c (Period study introduction)",
+          "Sub_topic_name": "Period study purpose, overview and skills focus",
+          "description": "Study a substantial and coherent medium time span (1918–1975) to understand the unfolding narrative of 20th-century international relations and the forces/events shaping the modern world. Understand relevance to explaining the modern world (struggle between government types; rise/fall of Communism as political/ideological/economic model; human rights; powers/superpowers; nation/nationalism; ideology’s impact on politics; why interpretations differ). Study content for how it contributes to the overall narrative rather than treating every listed event in equal depth. Develop ability to analyse and evaluate unfamiliar historical interpretations by studying a range of interpretations, including how/why interpretations change over time. Indicative teaching time ~36 hours; this element contributes 30% of the overall specification (within the 50% paper).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Versailles and internationalism in the 1920s",
+          "description": "Explain the aims, terms and consequences of the Versailles Peace Settlement and how it shaped post-WWI international relations. Assess the League of Nations’ role in the 1920s, including successes/limitations of collective security and international cooperation. Understand the purpose, terms and impact of key international agreements in the 1920s: Dawes Plan (1924), Locarno Treaties (1925), Kellogg–Briand Pact (1928), Young Plan (1929). Explain attempts at disarmament and why they struggled/succeeded in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Depression and retreat to nationalism",
+          "description": "Analyse how the worldwide economic depression affected international relations, including undermining internationalist approaches and encouraging nationalism/protectionism. Explain how economic pressures contributed to international tension and the weakening of collective security.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "European tensions, League failure, appeasement and outbreak of war",
+          "description": "Explain rising tension in Europe in the 1930s, including reasons for and consequences of the League of Nations’ failures. Analyse the policy of Appeasement: motivations, actions, criticisms and how it related to the road to war. Explain immediate causes and context for the outbreak of war in 1939.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Post-1945 international order: USSR in Eastern Europe and Western response",
+          "description": "Explain actions of the USSR in Eastern Europe (1945–1948) and the responses of the USA and its allies. Understand the significance and outcomes of the Yalta and Potsdam conferences. Explain division of Germany and why it became a focal point of tension. Analyse the Truman Doctrine and Marshall Plan (aims, implementation, consequences) as elements of containment and their impact on East–West relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Berlin Blockade/Airlift and alliance systems",
+          "description": "Explain causes, events and consequences of the Berlin Blockade and Airlift. Analyse the development, purposes and effects of NATO and the Warsaw Pact, including how alliance systems intensified Cold War divisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Berlin Wall (1961) and its effects",
+          "description": "Explain reasons for the building of the Berlin Wall (1961) and analyse its short- and longer-term effects on international relations, Cold War tension, and the division of Europe.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Cuban Missile Crisis (1962)",
+          "description": "Explain causes, key events and outcomes of the Cuban Missile Crisis (1962), including brinkmanship, nuclear threat, superpower decision-making, and its impact on subsequent Cold War relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Origins of US involvement in Vietnam (1954–1965)",
+          "description": "Explain origins of US involvement in Vietnam (1954–1965), including containment, domino theory, and escalation from advisory support to deeper military commitment. Understand Vietnam’s place within Cold War confrontations and wider international relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "Vietnam War tactics and consequences",
+          "description": "Analyse US tactics and their consequences (military, political, social, international). Analyse Vietcong tactics and their consequences, including guerrilla warfare and its impact on US strategy and public perception. Connect tactics to the course of the war and broader Cold War tensions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "2c (Period study)",
+          "Sub_topic_name": "US withdrawal, end of war and international impact",
+          "description": "Explain reasons for US withdrawal, including opposition within the USA to the war (public opinion, protest, media, political pressures). Explain the end of the war and analyse its impact on international relations and perceptions of superpower power/limits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "2c (Historical controversy)",
+          "Sub_topic_name": "Changing interpretations of appeasement",
+          "description": "Analyse and evaluate how and why interpretations of appeasement have differed and changed over time. Study how the Second World War, the Cold War context, and the availability of new sources of evidence from c.1990 onwards have shaped historians’ and popular interpretations of appeasement (e.g., shifting judgments about motives, responsibility, and effectiveness).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "2c (Historical controversy)",
+          "Sub_topic_name": "Changing interpretations of responsibility for the Cold War",
+          "description": "Analyse and evaluate how and why interpretations of responsibility for the Cold War have differed and changed over time. Study how internal culture and politics of the USSR and USA, the Vietnam War, and new sources of evidence from c.1990 onwards have contributed to different (and changing) interpretations allocating blame/responsibility and explaining origins/escalation.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "2c (Non-British depth studies)",
+      "Strand": "Component Group 1: Period study + Non-British depth study (01–07)",
+      "Topic_name": "Non-British depth studies: The People and the State (choice of 5)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2c (Non-British depth studies introduction)",
+          "Sub_topic_name": "Depth study focus: people, state, and using sources",
+          "description": "Choose ONE non-British depth study (short, substantial, coherent time span) studied alongside the period study. Focus on the relationship between people and the state in a 20th-century country, and how international relations context affects internal politics/lives and vice versa. Learners must understand: (1) state policies (aims and implementation); (2) impact of the state on different groups (social classes, women, young people, religious and ethnic groups) across the period; (3) reasons for and extent of support and/or opposition among different groups; (4) how contemporary source material can be used to investigate these issues and the challenges/limitations of primary sources. Assessed focus includes knowledge/analysis plus source skills. Indicative teaching time ~24 hours; this element contributes 20% of overall specification (within the 50% paper).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "J410/01",
+          "Sub_topic_name": "China 1950–1981: Early purges, social and economic policies (1950–1965)",
+          "description": "Explain and analyse how Communism was established and implemented in China (1950–1965) and its impact on different groups. Include: early purges against opposition in cities, countryside and regions; intentions and impact of the Hundred Flowers campaign; Communist social policies under Mao and how they differed from Chinese traditionalism; policies towards women, young people and education; agricultural policy (early land reform, collectivisation) and impact; industrial policy including the First Five Year Plan; the Great Leap Forward—aims, effects across Chinese society, and reasons for failure; Dazhai Commune as a case study illustrating Mao’s economic policies. Use contemporary sources to investigate policy/impact/support/opposition with awareness of provenance and limitations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "J410/01",
+          "Sub_topic_name": "China 1950–1981: Cultural Revolution and repression (1966–1976)",
+          "description": "Explain reasons for the Cultural Revolution and analyse its impact on the Chinese people, including intellectuals and students. Understand the role and actions of the Red Guards and the nature of Communist propaganda and Mao’s personality cult, and how these shaped compliance, fear, enthusiasm and resistance. Analyse the impact of Communism in Tibet. Use Dazhai community as a case study of Communist Party repression in this period. Apply source evaluation to differing experiences and perceptions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "J410/01",
+          "Sub_topic_name": "China 1950–1981: After Mao—Deng’s changes and continuing control (1976–1981)",
+          "description": "Analyse changes and continuities after Mao’s death (1976–1981): attitudes to opposition and repression (Gang of Four; ‘democracy wall’); changes in economic policy under Deng (Four Modernisations) and impact; continued use/nature of Communist propaganda; social changes under Deng and impact, including role of women, changes in education and the One Child policy. Evaluate contemporary sources for evidence of policy goals, lived experience, and opposition/support.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "J410/02",
+          "Sub_topic_name": "Germany 1925–1955: Weimar weaknesses, Depression, Nazi rise and consolidation (1925–1934)",
+          "description": "Explain strengths/weaknesses of the Weimar Republic (1925–1928), including Nazi policies in the 1920s and party position in 1928. Analyse impact of the Great Depression on different groups and the political, social and economic crisis (1929–1933) leading to rising Nazi support. Explain Nazi consolidation of power (1933–1934): Reichstag Fire; suspension of Weimar constitution; Enabling Act; March 1933 elections; takeover of/collaboration with key institutions (especially the army); elimination of opposition (trade unions, opposition parties, SA). Use sources to investigate propaganda, fear, and popular responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "J410/02",
+          "Sub_topic_name": "Germany 1925–1955: Nazi control, community and persecution (1933–1939)",
+          "description": "Analyse the Nazi terror state and mechanisms of control (SA, SS, Gestapo, SD, courts, police). Evaluate Nazi use of culture and propaganda and the personal popularity of Hitler. Explain attempts to create a ‘National Community’ and assess economic policies and their effects on sections of society (winners and losers). Analyse social policies (women and youth) and explain reasons for lack of effective opposition. Explain persecution of Jews and other groups (Roma, Jehovah’s Witnesses, homosexuals) and eugenics policies. Use contemporary sources critically to reach substantiated judgments about impact/support/opposition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "J410/02",
+          "Sub_topic_name": "Germany 1925–1955: War, Holocaust, defeat, occupation and de-Nazification (1939–1955)",
+          "description": "Explain initial reaction to outbreak of war and track changing fortunes (initial gains; colonisation in the East). Analyse growing impact of war (including bombing), extent of support for war effort, and nature of opposition during war. Explain escalation of racial persecution to the Holocaust. Analyse defeat and occupation, Allied de-Nazification policy (methods and impact), and differing experiences in East and West Germany (1945–1955). Use sources to investigate wartime experience, complicity/resistance, and postwar change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "J410/05",
+          "Sub_topic_name": "South Africa 1960–1994: Apartheid consolidation, Sharpeville and resistance (c.1960s)",
+          "description": "Explain consolidation of Apartheid (Separate Development; establishment of Bantustans) and assess nature/extent of support for Apartheid. Explain methods used by the government to maintain the regime. Analyse Sharpeville Massacre and its impact. Explain reasons for, methods of and impact of resistance including ANC, continuing impact of Freedom Charter, Umkhonto we Sizwe and Poqo. Explain Rivonia Trial (1964) and consequences. Use sources to investigate state power, repression, and different groups’ experiences/support/opposition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "J410/05",
+          "Sub_topic_name": "South Africa 1960–1994: Growing resistance and repression (c.1970s)",
+          "description": "Analyse development of resistance in the 1970s: Black Consciousness Movement, SASO; women’s groups; trade unions including Durban workers’ strike (1973); young people including Soweto students’ uprising (1976). Understand ANC in exile and international Anti-Apartheid Movement. Evaluate impact of resistance on the Apartheid regime and the regime’s response (repression, policy shifts, propaganda). Use contemporary evidence critically.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "J410/05",
+          "Sub_topic_name": "South Africa 1960–1994: Collapse of apartheid (c.1980s–1994)",
+          "description": "Explain growing pressure on the regime: impact of sanctions; United Democratic Front; growth/impact of mass resistance. Analyse growth of Inkatha, ‘civil war’ and impact on Black communities. Explain opposition to 1983 constitution and State of Emergency (1985–1990). Analyse divisions within National Party government and failure of ‘total strategy’, including impact of defeat at Cuito Cuanavale. Explain roles of key figures (FW de Klerk, Ramaphosa, Mandela), negotiations between government and ANC, unbanning of ANC/PAC/SACP, and first free elections (1994). Use sources to make substantiated judgments about causation and agency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "J410/06",
+          "Sub_topic_name": "USA 1919–1948: Economy and society in the ‘Roaring Twenties’",
+          "description": "Analyse Republican policies/ideology and the US economy in the 1920s; explain which industries/social groups experienced prosperity and which did not. Evaluate government and women in the 1920s including women’s rights movements and the Sheppard–Towner Act. Explain prohibition: causes, aims, implementation and failure. Analyse prejudice and discrimination (Jim Crow laws; Ku Klux Klan). Explain Red Scare (Palmer Raids; Sacco and Vanzetti). Explain immigration restriction across the 1920s. Assess attempts to combat prejudice including NAACP and UNIA. Use contemporary sources to evaluate attitudes, lived experience and government action.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "J410/06",
+          "Sub_topic_name": "USA 1919–1948: Great Depression and the New Deal",
+          "description": "Explain economic and social effects of the Great Depression and government responses. Understand 1932 presidential election campaigns and why Roosevelt won. Explain First New Deal: Hundred Days; Alphabet Agencies including AAA, CCC, FEA/FERA, NRA, TVA. Explain Second New Deal: WPA, Social Security Act, Wagner Act, Resettlement Administration, Farm Security Administration. Analyse reactions to and impact of the New Deals on different groups; use sources to judge effectiveness and controversy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "J410/06",
+          "Sub_topic_name": "USA 1919–1948: Second World War and US society",
+          "description": "Analyse mobilisation for war: propaganda campaigns, war production and effects, end of Depression. Explain increased government and presidential powers including control of wages/prices; population response to US involvement. Analyse social impacts: rationing, tax on luxuries, housing shortages, divorce increase. Explain women’s role and experiences in the war effort. Explain Japanese internment. Analyse war as foundation for Civil Rights movement: Detroit Race Riots (1943), segregation in military, Executive Order 8802, desegregation of troops (1948). Use sources to evaluate competing perspectives on rights, security and equality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "J410/07",
+          "Sub_topic_name": "USA 1945–1974: Post-war anti-Communism and African American inequality (1945–1954)",
+          "description": "Explain US government concerns about Communist influence and responses: media campaigns promoting ‘American values’ and institutions; late-1940s Red Scare including role of J Edgar Hoover and the Rosenberg case. Analyse reactions to Red Scare and nature/support/opposition to McCarthyism. Explain position of African Americans: Jim Crow laws, education access, voting rights barriers, and employment inequality. Use contemporary sources critically, noting bias and context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "J410/07",
+          "Sub_topic_name": "USA 1945–1974: Civil Rights movement and federal action (1954–1964)",
+          "description": "Explain development/achievements of Civil Rights movement: Brown v. Board of Education (1954), Montgomery Bus Boycott (1956), leadership of Martin Luther King. Analyse roles of SNCC, SCLC, NAACP. Explain opposition (illegal organisations; police and state authorities). Assess roles of government/official institutions including Supreme Court, Kennedy and Johnson. Explain reasons for and impact of Civil Rights Act (1964). Use sources to evaluate protest strategies, state responses, and changing public opinion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "J410/07",
+          "Sub_topic_name": "USA 1945–1974: Government and dissent (c.1964–1974)",
+          "description": "Analyse development and impact of African American radical movements/leaders (Malcolm X; Black Power). Explain impact of civil rights campaigns for Native Americans and Chicanos. Explain feminist movements (Betty Friedan; National Organisation for Women) and impacts including Status Commission (1963), Equal Pay Act, using Civil Rights Act, and 1972 Supreme Court ruling on equal rights. Explain Stonewall riots (1969). Analyse political/economic/social divisions: anti-Vietnam War protests; welfare campaigns for the poor; Johnson’s ‘Great Society’; Nixon’s welfare pledges. Use sources to assess dissent, culture and state power.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "2c (Thematic studies)",
+      "Strand": "Component Group 2: British thematic study (08–10)",
+      "Topic_name": "British thematic studies (choose one)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "2c (Thematic studies introduction)",
+          "Sub_topic_name": "Thematic study skills: change/continuity and second-order concepts",
+          "description": "Study ONE British thematic study across a long sweep of British history to understand change and continuity and the significant characteristics of different ages. Be able to: identify and outline key features; explain key themes/developments and connected causes/effects; analyse change (causes, consequences, nature, rate, extent) and continuity where appropriate; explain significance; compare across sections and eras using concepts (cause, consequence, change, continuity, significance, similarity/difference). Suggested delivery: teach theme, pause to teach linked British depth study at the relevant point, then return to theme. Indicative teaching time ~30 hours; contributes 25% of overall specification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "J410/08",
+          "Sub_topic_name": "Migration to Britain c.1000–1500: early diversity, Normans, Jews, ‘aliens’",
+          "description": "Explain patterns of migration to England c.1000–1500 through themes: reasons for immigration; experiences/actions of immigrants; responses to immigration; impact of immigration; and how England’s relationship with the wider world affected immigration. Include: population diversity before 1066; impact of Norman Conquest; resistance to Normans in William’s reign. Explain Jewish arrival from 1066, treatment/experiences, and expulsion in 1290. Analyse immigrants (‘aliens’) in the Middle Ages: lives and impact, treatment by authorities and population, and extent of integration. Use concepts society, culture, economy, politics, migration, identity, racism and resistance to frame explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "J410/08",
+          "Sub_topic_name": "Migration to Britain c.1500–1900: Africans, EIC, Jews readmitted, refugees, industrialisation, law",
+          "description": "Explain migration c.1500–1900 through themes: reasons; experiences/actions; responses; impact; ideas of national ‘identity’; and Britain’s relationship with the wider world. Include: Africans in 16th-century England (reasons and experiences). Explain foundation of East India Company and arrivals from Indian subcontinent (Lascar/Asian merchant seamen, child servants, ayahs): routes and lives in England. Analyse growth of African communities: Royal African Company, trade in enslaved Africans, loss of American colonies, expansion of Empire. Explain readmission of Jews (1656) and experiences. Explain religious refugees (from 1670s) including Huguenots and Palatines: reasons, reception, impact, assimilation. Analyse Industrial Revolution impacts: Irish and Scottish migration; migrants’ impact on political movements including Abolition and Chartists; Eastern European Jewish immigrants’ experiences and impact. Explain processes of naturalisation and denization and government legislation including Naturalisation Act (1870).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "J410/08",
+          "Sub_topic_name": "Migration to Britain 1900–c.2010: port communities, refugees, Commonwealth, legislation, multiculturalism, EU",
+          "description": "Explain migration 1900–c.2010 through themes: reasons; experiences/actions; responses; impact; identity; and Britain’s relationship with the wider world. Include: continued growth of diverse port communities in early 20th century. Explain government legislation in first half of 20th century: Aliens Act (1905), Status of Aliens Act (1914), British Nationality Act (1948)—reasons and impacts. Explain Jewish refugees in 1930s and attitudes; experiences of migrants/descendants during the two World Wars; experience of Poles settling after WWII. Analyse Commonwealth migration after WWII: varied reasons, experiences, impacts; debate over immigration (political racism and antiracism); effects of race relations legislation and immigration controls including Commonwealth Immigrants Act (1962) and British Nationality Act (1981). Analyse immigration as political issue c.1990–c.2010: debate over ‘multi-cultural society’; attitudes to refugees/asylum seekers; issues raised by EU ‘open borders’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "J410/09",
+          "Sub_topic_name": "Power c.1000–c.1485: Anglo-Saxon kingship, 1066, Magna Carta and Parliament, deposition and civil conflict",
+          "description": "Explain patterns of change/continuity in power in Britain c.1000–c.1485 using themes: individuals/institutions/groups with power; claims to power; methods of maintaining power; challenges to power and power changing hands. Include: Anglo-Saxon kingship (basis, power/responsibilities, relations with thegns). Competing claims in 1066; Norman invasion; establishment of Norman monarchy; transfer of power from Saxons to Normans at all levels; extent of monarch/baron power by 1087. Struggles over power: John’s accession and revolts; Magna Carta; emergence of Parliament under Henry III and Edward I including Simon de Montfort; deposition of Richard II (1399); Wars of the Roses. Apply concepts such as legitimacy, coercion, negotiation, and institutional change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "J410/09",
+          "Sub_topic_name": "Power c.1485–c.1800: Tudors, Civil Wars, Restoration, Glorious Revolution, parties and parliamentary monarchy",
+          "description": "Explain power c.1485–c.1800 via themes: who held power, claims, methods, and challenges. Include: Tudor government—growth of royal power under Henry VIII; role of Parliament under Henry VIII and Elizabeth I. Defeat and return of monarchy: Charles I’s personal rule (1629–1640); Civil Wars and abolition of monarchy; Restoration (1660). Explain James II’s rule and reasons for 1688 Revolution; legacy including Bill of Rights. Explain development of Parliament under William III and Anne; emergence of political parties and development of a parliamentary monarchy during the 1700s.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "J410/09",
+          "Sub_topic_name": "Power c.1800–2014: reform, mass politics, wars and state, challenges to Parliament and devolution",
+          "description": "Explain power c.1800–2014 via themes: who holds power, claims, methods, challenges. Include: changing relationship between Parliament and people c.1800–c.1918—dissatisfaction with electoral system; reasons for and impacts of Reform Acts (1832, 1867, 1884); rise/effectiveness of mass trade unions and Labour Party (1880s–1914); women’s suffrage struggle and why some women won vote in 1918. Explain c.1914–c.1980: government control in World Wars; increased state role from 1945 to c.1980. Analyse challenges to Parliament c.1980–early 2000s: Miners’ Strike (1984–1985), CND, Greenpeace; Prime Ministerial power under Thatcher and Blair; devolution; challenges of coalition government.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "J410/10",
+          "Sub_topic_name": "War and British Society c.790–c.1500: Vikings, Norman Conquest, feudal tensions, medieval warfare impacts",
+          "description": "Explain relationship between war and society c.790–c.1500 through themes: different types of war; attitudes/responses; impacts on people; impacts on government/politics. Include: Viking raids (790–1066)—impact and responses. Norman Conquest—English resistance; establishment of Norman control under William I; feudal system; extent of changes’ impact on different levels of society. Feudal society c.1100–1215: feudal relationship monarchs/barons; breakdowns under Stephen (1135–1154) and John (1214–1216). Significance of war in medieval society c.1290–c.1450: changing nature of war; development/adaptation of feudal service; financial cost; impacts on populations where armies fought/stationed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "J410/10",
+          "Sub_topic_name": "War and British Society c.1500–c.1750: Spain, borders, Civil Wars, Jacobites",
+          "description": "Explain war and society c.1500–c.1750: Elizabeth I’s wars with Spain (Europe and new world)—impact on monarch’s prestige/power and relations with Parliament; actions of privateers and impacts on security/economy/people. Warfare on English-Scottish borders c.1500–c.1600 and impacts on border society. Civil Wars (1642–1651) in England, Scotland, Ireland: nature and impacts on peoples. Jacobite Wars (1715, 1745): impact of repression on Scotland.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "J410/10",
+          "Sub_topic_name": "War and British Society c.1750–c.2010: empire, total war, Cold War, Ireland, Iraq and terrorism",
+          "description": "Explain war and society c.1750–c.2010: imperial wars (18th/early 19th centuries) including Seven Years War (1756–1763) gains and effects; wars against Revolutionary/Napoleonic France and subsequent social/political effects; imperial conflicts later 19th century (Crimean War; Boer Wars 1880–1881 and 1899–1902). Analyse First and Second World Wars as beginnings of ‘total war’: impacts on lives, increased state power, changing state–people relationship. Post-1945 conflicts: Cold War and Britain (1950s/1960s); IRA campaigns (1969–1994); Iraq War (2003); terrorist threats and counter-measures post-2003; assess popular responses and divisions/unity created by war.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "2c (British depth studies)",
+      "Strand": "Component Group 3: British depth study + Historic environment (11–13)",
+      "Topic_name": "British depth studies (linked to thematic choice)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "2c (British depth studies introduction)",
+          "Sub_topic_name": "British depth study focus and source use",
+          "description": "Study ONE British depth study (short, substantial, coherent time span) linked to the chosen thematic study, to understand complexity of a society/situation and interplay of aspects within it. Recommended delivery: pause thematic teaching at relevant point to teach depth study, then return to theme. Indicative teaching time ~18 hours; contributes 15% of overall specification (with additional 10% for historic environment in same paper). Assessment emphasises knowledge/explanation/analysis and, for some depth studies, investigation using historical sources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "J410/11",
+          "Sub_topic_name": "Impact of Empire 1688–c.1730: English expansion within the British Isles",
+          "description": "Explain significance of the Glorious Revolution and Hanoverian succession for England’s position within the British Isles. Analyse military campaigns in Ireland (1688–1691) and resulting settlement. Explain England–Scotland relations after 1688 including Jacobite opposition and Massacre of Glencoe (1692). Analyse Darien Scheme and Act of Union (1707). Explain Jacobite Rebellion (1715). Analyse emigration (including forced emigration) from the British Isles to the Americas. Use sources to investigate imperial expansion’s drivers and impacts on different groups.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "J410/11",
+          "Sub_topic_name": "Impact of Empire 1688–c.1730: Economic impact of war and imperial expansion",
+          "description": "Analyse economic impacts of war and imperial expansion: changes to British economy; establishment of Bank of England (1694). Explain growing trade with India and China; establishment in Kolkata and role of East India Company. Analyse political/economic impact of lifting Royal African Company monopoly (1698). Explain Treaty of Utrecht (1713) and its relevance to imperial trade/power. Explain South Sea Bubble (1719). Analyse economic importance of North American and Caribbean colonies and origins/development of slave-based economy. Use sources to evaluate evidence of trade, finance, and exploitation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "J410/11",
+          "Sub_topic_name": "Impact of Empire 1688–c.1730: Political and social impact—consumerism, slavery, race and activism",
+          "description": "Analyse emergence of consumerism and wider political/economic impacts. Explain British population involvement in slave trade: development of ‘slave ports’ (Bristol, Liverpool, London) and smaller ports. Analyse growth of ideas of racial hierarchy and impacts on settled minority communities. Explain opposition to slavery and slave trade, including slave resistance. Analyse developing political activism including role of coffee houses. Use sources to make substantiated judgements about attitudes, interests and resistance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "J410/12",
+          "Sub_topic_name": "English Reformation c.1520–c.1535: Church, belief and early reform pressures",
+          "description": "Explain role/importance (including wealth) of Church in England c.1520; religious practice and relationship between Church and ordinary people. Explain role and impact of Lollard and Lutheran ideas; critics of English Church in 1530s; popular attitudes to reform. Understand Henry VIII’s desire to annul first marriage as context. Explain legislation of Reformation Parliament (1529–1534) and its significance for religious and political change. (International political issues of break with Rome not required beyond supporting background.)",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "J410/12",
+          "Sub_topic_name": "Dissolution of the Monasteries c.1534–c.1540",
+          "description": "Explain Cromwell’s role and Valor Ecclesiasticus; Visitation of the Monasteries; process of dissolution and Suppression Acts (1536, 1539). Analyse immediate reactions: supporters, opportunists, opponents. Evaluate effects on religious orders and on ordinary people (especially old and poor), cultural impacts, and resistance/protest including Lincolnshire Rising and Pilgrimage of Grace (1536–1537). Use sources to investigate local/national experiences and motives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "J410/12",
+          "Sub_topic_name": "Impact of Reformation in parishes c.1534–c.1550",
+          "description": "Explain changes in religious policy under Henry VIII and Edward VI and impacts on worship: church services, prayer books, Bible in English. Analyse impact on church fabric, clergy, and enforcement of policies. Evaluate responses of ordinary people and resistance/protest including Prayer Book Rebellion (1549). Use sources to assess belief, compliance, and local variation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "J410/13",
+          "Sub_topic_name": "Personal Rule to Restoration 1629–1660: Parliament and Charles I (1629–1642)",
+          "description": "Explain why Charles I called Parliament in 1640. Analyse Long Parliament criticisms of Personal Rule (1629–1640): financial measures, religious measures, and suppression of criticism. Explain attacks on Laud and Strafford. Explain events leading to civil war: Irish rebellion (1641), Grand Remonstrance (1641), attempt on Five Members (1642), Militia Ordinance (1642), Nineteen Propositions (1642). Analyse divisions within Parliament (1640–1642). Use sources in investigation of tensions and perspectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "J410/13",
+          "Sub_topic_name": "Personal Rule to Restoration 1629–1660: Political and religious impact of war (1642–1649)",
+          "description": "Explain Parliament’s attempts to reach agreement with Charles I (1646–1647), including Propositions of Newcastle. Analyse Parliament’s reaction to emergence of new religious/political groups (Levellers, Quakers, Diggers). Analyse relationship between Parliament and Army, including emergence of Presbyterian and Independent parties and debates about settlement with the King. Explain execution of Charles I (1649), Rump Parliament, and declaration of Republic (1649). Use sources to evaluate competing visions of settlement and authority.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "J410/13",
+          "Sub_topic_name": "Personal Rule to Restoration 1629–1660: Change under the Republic and Protectorate (1649–c.1660)",
+          "description": "Analyse relationship between Rump Parliament and Cromwell (1649–1653). Explain relationship between Parliament and Cromwell (1653–1658) including Instrument of Government and rule of the Major Generals. Explain Humble Petition and Advice and Cromwell’s response. Explain attempts to reach settlement (Sept 1658–Apr 1660) and restoration of monarchy, including terms of Restoration c.1660. Use sources to judge extent/nature of political and religious change.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "2c (Historic environment)",
+      "Strand": "Component Group 3: British depth study + Historic environment (11–13)",
+      "Topic_name": "Study of the historic environment (linked site study)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "2c (Historic environment introduction)",
+          "Sub_topic_name": "Historic environment purpose and evidence use",
+          "description": "Study one specified site in its historical context, examining relationship between a place and historical events/developments. Linked to the chosen theme and assessed alongside the British depth study. Develop ability to use evidence (physical fabric of site plus relevant documents/other sources) to understand change over time, purpose/function, and how historians build interpretations from material remains and documentary sources. Assessment emphasises source analysis/evaluation plus contextual knowledge/explanation/analysis. Indicative teaching time ~12 hours; contributes 10% of overall specification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "J410/11 (Urban Environments)",
+          "Sub_topic_name": "Urban Environments: patterns and methods of investigating migration in a defined port area",
+          "description": "Understand the defined urban environment (a port-city area with long/varied immigration history) as evidence for population change due to immigration (and where appropriate emigration). Explain how historians use physical fabric and accompanying documentary/other sources to understand: when immigrant groups arrived, why, and from where; how immigrants were received by settled populations; immigrants’ experiences (daily lives, occupations); key events in local migration history; and the impact of migration on the area. Evaluate how the site is presented in accompanying materials: what is emphasised/absent, and what further research is needed to understand links between site and migrant communities. Recognise specified site arrangements: from 2020 onwards site fixed at Spitalfields (earlier annual sites existed). Be able to analyse and evaluate different types of evidence (buildings and changing use/styles; names/signs; monuments/gravestones/commemorations; on-site information; related contemporary documents such as maps/plans; related oral histories; local history collections).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "J410/11 (Urban Environments contents grid)",
+          "Sub_topic_name": "Urban Environments: migration timelines and changing patterns",
+          "description": "Investigate and explain: history of immigration to and emigration from the area; migrant origins and reasons; how patterns of migration changed over time; and how these changes are reflected in the urban environment (built environment, material culture, spatial patterns). Use evidence to substantiate claims and evaluate limitations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "J410/11 (Urban Environments contents grid)",
+          "Sub_topic_name": "Urban Environments: reception by populations and authorities",
+          "description": "Investigate and explain: how/where immigrant groups settled; positive and negative responses by receiving population; positive and negative responses by authorities; and how reception is reflected in the urban environment (e.g., institutions, housing patterns, commemorations, signage). Evaluate evidence for discrimination, support, conflict and cooperation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "J410/11 (Urban Environments contents grid)",
+          "Sub_topic_name": "Urban Environments: lived experience—housing, work, faith and community",
+          "description": "Investigate and explain immigrants’ experiences: housing, welfare and living conditions; employment and occupations; faith and community organisations; and how these are reflected in the urban environment. Use physical and documentary sources to build substantiated judgements about continuity/change in everyday life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "J410/11 (Urban Environments contents grid)",
+          "Sub_topic_name": "Urban Environments: key events and commemoration",
+          "description": "Investigate and explain key significant events in the area’s immigration history: what happened, where it occurred, how it is remembered/commemorated, and how it is reflected in the urban environment. Evaluate how commemoration shapes public history and may omit perspectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "J410/11 (Urban Environments contents grid)",
+          "Sub_topic_name": "Urban Environments: overall impact and present community",
+          "description": "Investigate and explain migration’s economic, social, political and cultural impacts; how continued migration changed the area; the nature of the current multicultural community; and how impacts are reflected in the urban environment. Use evidence to assess extent of change and significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "J410/12 & J410/13 (Castles)",
+          "Sub_topic_name": "Castles: Form and Function—Kenilworth Castle as set site and evidence types",
+          "description": "Use Kenilworth Castle (set site for assessment from 2019 onwards) to explain how historians/archaeologists use physical fabric of the castle and accompanying documentary sources to understand the castle’s purpose at specific times and how that purpose changed across c.1000–1750. Understand that castles can function as: military defence; maintaining power over population; roles in civil war/rebellion/protest; elite residence combining comfort/display/intimidation; political/administrative centre (taxes, justice, prison). Be able to analyse/evaluate both physical and documentary sources (including the castle itself) as evidence for the castle’s history and the lives of those who lived/worked there.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "J410/12 & J410/13 (Castles contents grid)",
+          "Sub_topic_name": "Kenilworth Castle: strategic, geographical and physical location evidence",
+          "description": "Explain and evaluate evidence for the castle’s location: strategic reasons; specific geographical setting; specific physical siting; and evidence types historians use (e.g., maps from medieval to modern times, drawings in local histories) to interpret how location supported defence, control, administration or status.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "J410/12 & J410/13 (Castles contents grid)",
+          "Sub_topic_name": "Kenilworth Castle: appearance and layout over time",
+          "description": "Identify and explain key features (motte and bailey layouts, stone towers, defences, great hall, causeway) and analyse when/why installed or removed, including slighting. Explain what changes reveal about national history at the time (e.g., military threats, political power, elite culture). Evaluate evidence used by historians (contracts, architects’ plans, contemporary drawings, aerial photographs) and how these support/restrict conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "J410/12 & J410/13 (Castles contents grid)",
+          "Sub_topic_name": "Kenilworth Castle: day-to-day functions across periods",
+          "description": "Explain and compare castle functions across time: as means of conquest (especially Norman period); as instrument of baronial/royal power; as centre of administration/justice; as dwelling place. Evaluate evidence used by historians (e.g., royal licences, newspaper articles) to reconstruct function and change/continuity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "J410/12 & J410/13 (Castles contents grid)",
+          "Sub_topic_name": "Kenilworth Castle: life of owners and workers; running the castle",
+          "description": "Explain lives/roles of owners (De Clintons, de Montfort, Lancaster, John of Gaunt, Tudors, Dudleys, Stuarts, Hydes) and people who made the castle function (e.g., blacksmiths, cooks). Evaluate evidence such as bills/accounts and inventories to infer status, consumption, labour and organisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "J410/12 & J410/13 (Castles contents grid)",
+          "Sub_topic_name": "Kenilworth Castle: key events and national connections",
+          "description": "Explain connections between Kenilworth Castle and key events (including baronial and other rebellions, border warfare, civil war sieges). Use physical and documentary evidence to analyse how such events affected the site’s form, function, and meaning over time.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3a",
+      "Strand": "Assessment framework",
+      "Topic_name": "Assessment of GCSE (9–1) in History A (Explaining the Modern World)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3a (Component Group 1)",
+          "Sub_topic_name": "Paper 1 structure: Period study (Section A) question types and skills",
+          "description": "Understand assessment structure for Component Group 1 (01–07): 1 hour 45 minutes, 105 marks (plus 5 SPaG marks on Q4). Section A assesses period study via four questions: Q1 ‘Outline…’ (AO1 structured narrative, sequencing and relevant selection); Q2 ‘Explain…’ (AO1/AO2 using second-order concepts: continuity, change, cause, consequence, significance, similarity/difference); Q3 ‘Compare interpretations…’ (AO1/AO4 analysis and evaluation of unseen interpretation extracts); Q4 ‘Essay using interpretations…’ (AO1/AO2/AO4 extended response using unseen interpretations; plus SPaG). Recommended timing: ~1 hour for Section A; total marks for Section A = 65.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3a (Component Group 1)",
+          "Sub_topic_name": "Paper 1 structure: Non-British depth study (Section B) question types and source skills",
+          "description": "Section B assesses the chosen non-British depth study alongside the period study. Total marks for Section B = 40; recommended timing ~45 minutes. Paper may use either: (i) four/five-question format including Q5 ‘Describe…’ (AO1), Q6 ‘Explain…’ (AO1/AO2 second-order concepts), Q7 source comparison question (10 marks, AO3) with two sources, Q8 essay (18 marks, AO1/AO2); OR (ii) alternative format where Q7 is split into two 5-mark source questions (Q7a, Q7b) still based on two sources (AO3), plus Q5, Q6, Q8. Recognise OCR alternates source-question format between years while maintaining comparable demand.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3a (Component Group 2)",
+          "Sub_topic_name": "Paper 2 structure: Thematic study question types and skills",
+          "description": "Component Group 2 (08–10): 1 hour, 50 marks. Four questions: Q1 ‘Describe…’ (AO1); Q2 ‘Explain…’ (AO1/AO2 second-order concepts); Q3 ‘Second order concept…’ (AO1/AO2, typically focused on concepts such as change/continuity/cause/consequence/significance/similarity-difference); Q4 essay (AO1/AO2) requiring analysis of change and/or continuity over time, using content from two sections of the thematic content or all three sections. No AO3/AO4 in this paper.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3a (Component Group 3)",
+          "Sub_topic_name": "Paper 3 structure: British depth study (Section A) and SPaG",
+          "description": "Component Group 3 (11–13): 1 hour 15 minutes, 55 marks (plus 5 SPaG marks on the depth-study essay). Section A (British depth study) total 35 marks; recommended timing ~45 minutes. Two questions: Q1 ‘Explain…’ (AO1/AO2 using second-order concepts); Q2 ‘Essay using sources…’ (AO1/AO2/AO3 with source use to make substantiated judgement; plus 5 SPaG marks).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3a (Component Group 3)",
+          "Sub_topic_name": "Paper 3 structure: Historic environment (Section B) evidence comparison",
+          "description": "Section B (study of historic environment) total 20 marks; recommended timing ~30 minutes. Two questions: Q1 ‘Explain…’ (AO1/AO2 second-order concepts in context of site and developments); Q2 source comparison question (10 marks, AO3) requiring analysis/evaluation of two sources (physical/documentary) as evidence about the site’s history. Understand integration of site knowledge with evidence evaluation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3b",
+          "Sub_topic_name": "Assessment Objectives (AO1–AO4)",
+          "description": "AO1: demonstrate knowledge and understanding of key features/characteristics of periods studied. AO2: explain and analyse historical events/periods using second-order concepts (continuity, change, cause, consequence, significance, similarity/difference). AO3: analyse, evaluate and use contemporary sources to make substantiated judgements in context. AO4: analyse, evaluate and make substantiated judgements about interpretations (including how/why they differ) in context. Know overall weighting across qualification: AO1 35%, AO2 35%, AO3 15%, AO4 15%, and how these map to components (Group 1 assesses all AOs; Group 2 assesses AO1/AO2; Group 3 emphasises AO1/AO2/AO3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3i",
+          "Sub_topic_name": "SPaG and specialist terminology marks",
+          "description": "Understand SPaG assessment: 5% of marks across the specification credit accuracy of spelling, punctuation and grammar and use of specialist terminology. 5 SPaG marks available for Question 4 of the period study in Paper 1 and 5 SPaG marks available for Question 2 of the British depth study in Paper 3. These 10 SPaG marks are additional to the 200 marks total and are not included in component totals/percentages. SPaG expectations provided in mark schemes for these extended responses.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "2b / 2a (Course structure)",
+      "Strand": "Course structure and permitted combinations",
+      "Topic_name": "The specification overview",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "2a",
+          "Sub_topic_name": "Components, weightings and exam times",
+          "description": "Course requires three externally assessed components: Component Group 1 (01–07) Period study + non-British depth study: 1h45, 105 marks, 50% of GCSE (plus 5 SPaG). Component Group 2 (08–10) Thematic study: 1h, 50 marks, 25% of GCSE. Component Group 3 (11–13) British depth study + historic environment: 1h15, 55 marks, 25% of GCSE (plus 5 SPaG). Sites specified for historic environment (Urban Environments or Kenilworth Castle depending on pathway).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "2b",
+          "Sub_topic_name": "Required breadth: eras, timescales, contexts and five topics",
+          "description": "Learners must study: three eras (Medieval 500–1500; Early Modern 1450–1750; Modern 1700–present); three timescales (short depth study; medium period study; long thematic study); and three geographical contexts (locality via historic environment; British; European and/or wider world). This is achieved by studying five topics: 1 thematic study, 1 British depth study, 1 non-British depth study, 1 period study, 1 historic environment study. Understand course coherence aims across different historical practices (narrative/interpretations in period study; sources in depth studies and historic environment; change/continuity over long term in thematic).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "2b (Permitted combinations)",
+          "Sub_topic_name": "Linked options rule (must-take combinations)",
+          "description": "Understand mandatory link between Component Group 2 theme and Component Group 3 depth+site: (1) If taking ‘Migration to Britain c.1000–c.2010’ (J410/08), must also take ‘The Impact of Empire on Britain 1688–c.1730’ with ‘Urban Environments: Patterns of Migration’ (J410/11). (2) If taking ‘Power: Monarchy and Democracy in Britain c.1000–2014’ (J410/09), must also take ‘The English Reformation c.1520–c.1550’ with ‘Castles: Form and Function c.1000–1750’ (J410/12). (3) If taking ‘War and British Society c.790–c.2010’ (J410/10), must also take ‘Personal Rule to Restoration 1629–1660’ with ‘Castles: Form and Function c.1000–1750’ (J410/13). Any Component Group 1 option can pair with these linked pathways. Invalid combinations result in no qualification grade awarded.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1454 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Religious Studies A",
+  "Exam Board": "AQA",
+  "Specification": "8062",
+  "has_math": false,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "2.2 / 4.4",
+      "Strand": "Assessment structure",
+      "Topic_name": "Assessments",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Component 1: Study of religions (overview)",
+          "description": "Understand the assessment requirements for Component 1: students study beliefs, teachings and practices of two religions from Buddhism, Christianity, Catholic Christianity, Hinduism, Islam, Judaism, Sikhism; Christianity + Catholic Christianity is a prohibited combination. Written exam 1 hour 45 minutes; 96 marks + 6 SPaG; contributes 50% of the GCSE. For each religion: two compulsory five-part questions with mark structure 1, 1, 4, 6, 12; each religion marked out of 48.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Component 2: Thematic studies (overview)",
+          "description": "Understand the assessment requirements for Component 2: students study either four religious/philosophical/ethical themes (A–F) or two of themes (A–F) plus two textual studies themes (G–H). Written exam 1 hour 45 minutes; 96 marks + 3 SPaG; contributes 50% of the GCSE. Each theme: one compulsory five-part question with mark structure 1, 1, 4, 6, 12; each theme marked out of 24.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "2.2 / 4.4",
+          "Sub_topic_name": "Textual vs non-textual routes",
+          "description": "Know the two permitted routes through the specification and what must be entered/studied: Textual studies route—Component 1 must include either Christianity or Catholic Christianity plus one other religion; Component 2 must include two themes from A–F plus both textual studies themes G and H. Non-textual route—Component 1 includes two religions (not Christianity + Catholic Christianity together) and Component 2 includes four themes from A–F. Understand that Themes A–F are examined in 2A; Themes A–H in 2B.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Assessment objectives (AO1/AO2)",
+          "description": "AO1: demonstrate knowledge and understanding of religion and beliefs including (i) beliefs, practices and sources of authority, (ii) influence on individuals, communities and societies, (iii) similarities and differences within and/or between religions and beliefs. AO2: analyse and evaluate aspects of religion and belief, including their significance and influence. Understand that AO1 and AO2 are each weighted at approximately 50% overall (25% per paper).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "4.4.1 / 4.4.2",
+          "Sub_topic_name": "Question structure and SPaG",
+          "description": "Understand the five-part question structure used in both components: each five-part question totals 24 marks with 12 AO1 (first four parts) and 12 AO2 (12-mark evaluation). The sub-question mark pattern is 1, 1, 4, 6, 12. Understand SPaG is assessed in 12-mark questions: up to 3 marks per paper; in Component 1 SPaG marks are awarded based on performance in the 12-mark questions in the Beliefs section.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "4.3",
+          "Sub_topic_name": "Component weighting and scaling",
+          "description": "Understand overall scaling/weighting: Paper 1 Section A (one religion) maximum raw 51 scaled 51; Paper 1 Section B (second religion) maximum raw 51 scaled 51; Paper 2 maximum raw 99 scaling factor 1.03 to maximum scaled 102; total scaled mark 204 used to set grade boundaries.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3.1.1",
+      "Strand": "Component 1: Buddhism",
+      "Topic_name": "Buddhism",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "3.1.1.1",
+          "Sub_topic_name": "Dhamma (Dharma) and dependent arising",
+          "description": "Understand the concept of Dhamma (Dharma) as Buddhist teaching/truth and the concept of dependent arising (paticcasamuppada/paticcasamupada) as conditionality: all phenomena arise in dependence upon conditions; explain implications for causation, suffering and liberation within Buddhist belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "3.1.1.1",
+          "Sub_topic_name": "Three Marks of Existence",
+          "description": "Know and be able to explain the Three Marks of Existence: anicca (impermanence), anatta (no fixed/lasting self), dukkha (unsatisfactoriness/suffering). Apply these to understanding human experience, attachment/craving, and the path to liberation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "3.1.1.1",
+          "Sub_topic_name": "Human personality: Theravada and Mahayana",
+          "description": "Compare Buddhist understandings of the human personality in Theravada and Mahayana traditions: Theravada—Five Aggregates (skandhas): form, sensation, perception, mental formations, consciousness; Mahayana—sunyata (emptiness), the possibility of attaining Buddhahood, and Buddha-nature. Explain similarities/differences and influence on practice and goal of the path.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "3.1.1.1",
+          "Sub_topic_name": "Human destiny: Arhat, Bodhisattva, Buddhahood and Pure Land",
+          "description": "Explain different ideals of human destiny in Theravada and Mahayana: Arhat (‘perfected person’) ideal and Bodhisattva ideal; explain Buddhahood and the Pure Land (including its significance as a goal/realm in some Mahayana traditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "3.1.1.1",
+          "Sub_topic_name": "The Buddha’s life and significance",
+          "description": "Know key events of the Buddha’s life and why they matter: birth and life of luxury; Four Sights (illness, old age, death, holy man) (Jataka 075); ascetic life; Enlightenment. Explain how these events support Buddhist teachings about suffering, renunciation, and the Middle Way.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "3.1.1.1",
+          "Sub_topic_name": "Four Noble Truths and the Threefold Way",
+          "description": "Understand the Four Noble Truths: (1) dukkha (suffering) including different types of suffering; (2) samudaya (causes of suffering) including the Three Poisons—ignorance, greed, hate; (3) nirodha—the end of craving (tanha), interpretations of nibbana/nirvana and Enlightenment; (4) magga—the Eightfold Path to nibbana/nirvana understood as the Threefold Way: ethics (sila), meditation (samadhi), wisdom (panna). Use prescribed reference Dhammapada 190–191 to support explanation where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Places of worship (temples, shrines, monasteries, gompas)",
+          "description": "Understand the nature, use and importance of Buddhist places of worship: temples, shrines, monasteries (viharas), and halls for meditation/learning (gompas). Know key features and their significance including Buddha rupa, artefacts and offerings; link to worship, community and learning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Puja and chanting/mantras/malas",
+          "description": "Explain puja and devotional ritual in home and temple: its role and significance; chanting as devotional practice and as aid to mental concentration; mantra recitation; use of malas (prayer beads).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Meditation: Samatha, Vipassana, zazen, visualisation",
+          "description": "Understand the aims, significance and methods of Buddhist meditation: Samatha (concentration/tranquillity) including mindfulness of breathing; Vipassana (insight) including zazen; visualisation of Buddhas and Bodhisattvas. Explain how meditation relates to the Threefold Way and liberation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Death and mourning rituals",
+          "description": "Describe and explain the practice and significance of ceremonies and rituals associated with death and mourning in Theravada communities and in Japan and Tibet, including how beliefs about impermanence, rebirth and merit influence practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Festivals and retreats (Wesak, Parinirvana Day)",
+          "description": "Know celebrations, origins and significance of Wesak and Parinirvana Day; explain why festivals/retreats matter for Buddhists in Great Britain today (identity, community, remembrance, practice).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Ethical teaching: kamma, rebirth, karuna, metta",
+          "description": "Explain Buddhist ethical teaching including kamma (karma) and rebirth; compassion (karuna); loving kindness (metta). Apply to moral decision-making and impact on individuals/communities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Five moral precepts",
+          "description": "Know and apply the five moral precepts: do not take life; do not take what is not given; do not misuse the senses; do not speak falsehoods; do not take intoxicants that cloud the mind. Explain purpose (training principles), and how Buddhists may interpret them in practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Six perfections (Mahayana)",
+          "description": "Understand the six perfections (paramitas) in the Mahayana tradition—generosity, morality, patience, energy, meditation, wisdom—and how an individual develops these perfections within themselves; relate to Bodhisattva ideal.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.1.2",
+      "Strand": "Component 1: Christianity",
+      "Topic_name": "Christianity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Nature of God and the problem of evil",
+          "description": "Understand Christian beliefs about the nature of God: omnipotent, loving and just; explain how the problem of evil and suffering challenges belief in such a God and how Christians may respond.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Oneness of God and the Trinity",
+          "description": "Explain the Christian belief in the oneness of God and the Trinity: Father, Son and Holy Spirit; understand why this is significant for worship, salvation and Christian identity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Creation (Genesis 1:1–3 and John 1:1–3)",
+          "description": "Explain different Christian beliefs about creation including the role of Word and Spirit, using prescribed references John 1:1–3 and Genesis 1:1–3; understand differing interpretations (e.g., literal, non-literal) and implications for relationship between God, humanity and the world.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Afterlife (resurrection, judgement, heaven and hell)",
+          "description": "Explain different Christian beliefs about the afterlife and why they matter: resurrection and life after death; judgement; heaven and hell; apply to moral living and hope.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Incarnation and Jesus as Son of God",
+          "description": "Understand beliefs and teachings about the incarnation and Jesus as the Son of God; explain significance for authority of Jesus’ teaching and salvation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Crucifixion, resurrection and ascension",
+          "description": "Explain Christian beliefs about the crucifixion, resurrection and ascension of Jesus; understand their significance for defeating sin/death and for Christian worship and mission.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Sin and original sin",
+          "description": "Explain the concept of sin, including original sin, and its consequences in Christian belief; relate to need for salvation and forgiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Means of salvation (law, grace, Spirit) and atonement",
+          "description": "Understand means of salvation including law, grace and Spirit; explain the role of Christ in salvation including atonement; compare how different Christian traditions may understand salvation and grace.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Forms of worship and the Bible",
+          "description": "Describe and explain different forms of Christian worship and their significance: liturgical, non-liturgical and informal (including the use of the Bible), and private worship; understand diversity across Christian traditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Prayer (Lord’s Prayer, set and informal prayer)",
+          "description": "Explain prayer and its significance, including the Lord’s Prayer, set prayers and informal prayer; understand purposes (adoration, confession, thanksgiving, supplication) and differing practices.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Sacraments: meaning, baptism and Eucharist",
+          "description": "Understand the meaning of ‘sacrament’ and the role/meaning of sacraments. Explain baptism and its significance: infant vs believers’ baptism; differing beliefs about infant baptism. Explain Holy Communion/Eucharist and its significance: different ways celebrated and different interpretations of meaning (e.g., memorial vs real presence) across traditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Pilgrimage (Lourdes and Iona)",
+          "description": "Explain the role and importance of pilgrimage; study two contrasting examples: Lourdes and Iona; understand purposes (healing, devotion, reflection, community) and significance for believers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Christmas and Easter",
+          "description": "Explain the celebrations of Christmas and Easter and their importance for Christians in Great Britain today; link to beliefs about incarnation and resurrection.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3n",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Church in the local community",
+          "description": "Understand the role of the Church in the local community, including food banks and street pastors; evaluate how this reflects Christian teachings (e.g., love of neighbour) and impacts society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3o",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Mission, evangelism and Church growth",
+          "description": "Explain the place of mission, evangelism and Church growth in Christianity; understand reasons for spreading the faith and ways it is carried out in contemporary contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3p",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Worldwide Church and responses to persecution",
+          "description": "Explain the importance of the worldwide Church including working for reconciliation and how Christian churches respond to persecution; understand global solidarity and practical support.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3q",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Christian charity and aid work (CAFOD/Christian Aid/Tearfund)",
+          "description": "Know the work of one of: Catholic Agency For Overseas Development (CAFOD), Christian Aid, Tearfund; explain how such organisations express Christian beliefs about justice, compassion and mission.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.1.3",
+      "Strand": "Component 1: Catholic Christianity",
+      "Topic_name": "Catholic Christianity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Trinity (Nicene Creed and Council of Nicaea)",
+          "description": "Explain Catholic belief in One God as a Trinity of persons (Father, Son, Holy Spirit) as expressed in the Nicene Creed; understand scriptural origins and historical development including the Council of Nicaea; explain significance for Catholic doctrine and worship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Creation (Genesis 1 and 2) and human dignity",
+          "description": "Understand Biblical accounts of creation (Genesis 1 and 2) and their significance for understanding the nature of God, the dignity of human beings, and humanity’s relationship with creation; know that different Christian beliefs about creation exist and may differ from Catholic emphases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Incarnation (divine Word, fully God and fully human)",
+          "description": "Explain the Catholic belief in Jesus as incarnate Son/divine Word, both fully God and fully human; understand scriptural origins and theological significance for salvation and sacraments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Redemption, salvation and grace",
+          "description": "Explain the significance of the life, death, resurrection and ascension of Jesus for Catholic beliefs about salvation and grace; relate to redemption and lived faith.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Life after death (heaven, hell, purgatory)",
+          "description": "Understand Catholic beliefs about life after death: resurrection, judgement, heaven, hell and purgatory; explain implications for prayer, moral living and hope.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Sacrament and sacramental nature of reality",
+          "description": "Explain the meaning and significance of ‘sacrament’ in Catholicism and the importance of the sacramental nature of reality (God’s grace encountered through material signs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Seven sacraments (names, meanings, effects)",
+          "description": "Know the names, meanings and effects of the seven sacraments: baptism, confirmation, reconciliation, anointing of the sick, matrimony, holy orders, eucharist. Understand how these shape Catholic life and community.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "Eucharist as ‘source and summit’ and Christian differences",
+          "description": "Explain the eucharist’s status as ‘the source and summit of Christian life’; understand different Christian views about the eucharist’s meaning and importance (e.g., transubstantiation vs other interpretations) and why Catholics emphasise it.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Prayer (formal/informal; Lord’s Prayer)",
+          "description": "Understand Catholic teaching that prayer is ‘the raising of the mind and heart to God’; compare formal and informal prayer and different views about their relative importance; explain the meaning and importance of the Lord’s Prayer in Catholic practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Popular piety (Rosary, Stations of the Cross)",
+          "description": "Explain the role and importance of forms of popular piety including the Rosary and the Stations of the Cross; understand how these support devotion, reflection on Christ, and community identity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Pilgrimage (one Catholic site; Christian differences)",
+          "description": "Explain the role and importance of pilgrimage, including detailed study of one place of Roman Catholic pilgrimage; understand and compare different Christian views about the importance of pilgrimage (e.g., spiritual benefit vs criticism).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Funeral rite",
+          "description": "Describe the Catholic funeral rite and explain its significance (prayer for the dead, hope of resurrection, community support, relation to beliefs about judgement/purgatory).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Love of neighbour and Catholic social teaching (Gaudium et Spes 26)",
+          "description": "Understand Catholic beliefs about the essential duty to ‘love our neighbour’ in concrete ways locally, nationally and globally; explain how this is reflected in Catholic social teaching including Gaudium et Spes paragraph 26, and in teaching on justice, peace and reconciliation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Catholic agencies (CAFOD, Trocaire, Missio)",
+          "description": "Know and explain the work of Catholic agencies including CAFOD, Trocaire, and Missio; relate their work to mission, charity, development, and Catholic social teaching.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Mission and evangelism for Catholics today",
+          "description": "Explain the meaning and significance of mission and evangelism for Catholics today globally and in Great Britain, both nationally and locally; understand reasons and methods for evangelisation and service.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "SVP and peace/reconciliation communities",
+          "description": "Explain the aims and importance of the Society of Saint Vincent de Paul (SVP); explain the aims and importance of either the Corrymeela community or Pax Christi (peacebuilding, reconciliation, justice) and how these reflect Catholic beliefs.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.1.4",
+      "Strand": "Component 1: Hinduism",
+      "Topic_name": "Hinduism",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Brahman and the divine (nirguna/saguna; spiritual worlds)",
+          "description": "Explain different Hindu understandings of brahman as ultimate reality: brahman as divine consciousness without form/qualities (nirguna) and manifestation of God in form (saguna); include idea of spiritual worlds. Understand how these concepts influence worship and paths to liberation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Three features of the divine (everywhere/within/beyond)",
+          "description": "Understand different understandings of three features of the divine: everywhere as non-personal (brahman), within the heart, and beyond as a personal loving God; use Brihadaranyaka Upanishad 391 as a prescribed reference to support understanding.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "How the divine presents: Tri-murti, deities, avatara",
+          "description": "Explain how the divine is presented in Hinduism: the Tri-murti (Brahma, Vishnu, Shiva); male and female deities including Ganesha, Lakshmi, Hanuman, Saraswati; concept of avatara including Krishna and Rama. Understand how these relate to worship and belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Matter, maya and cosmology (Rig Veda 10.129.6–7; ages/worlds)",
+          "description": "Understand Hindu beliefs about matter (prakriti), the three qualities (tri-guna), illusion (maya), and cosmology including Rig Veda 10.129.6–7; explain cycle of four ages, many worlds and diverse inhabitants; relate to human life and liberation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Atman and human nature",
+          "description": "Explain the concept of atman as the individual, eternal inner self distinct from material mind and body; relate atman to brahman and to moksha in different Hindu views.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Samsara, karma and moksha",
+          "description": "Understand cycle of birth and death (samsara), law of karma (moral action and reaction), and types of liberation (moksha). Explain how these beliefs shape ethics, duty, and spiritual practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Free will, suffering, knowledge and ignorance",
+          "description": "Explain Hindu beliefs about individual free will and responses to suffering; understand the role of knowledge and ignorance in bondage and liberation; apply to interpretations of life challenges and spiritual progress.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Personal virtues (ahimsa etc.)",
+          "description": "Know and apply personal virtues including ahimsa (non-violence), respect, empathy, mind/sense control, humility, love; explain how virtues support dharma and progress toward moksha.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Four aims of life and dharma (sanatana; varnashrama)",
+          "description": "Understand the four aims of human life: dharma, artha, kama, moksha. Explain meanings of dharma, sanatana dharma, and varnashrama dharma; relate to life stages/duties and ethical decision-making.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Places of worship (home, temple, outdoors, heart)",
+          "description": "Explain places of worship and their importance: home, temple, outdoors (shrines), and ‘space of the heart’; relate to personal devotion and community.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Forms of worship/meditation; Shaivism vs Vaishnavism",
+          "description": "Describe and explain different forms of worship/meditation and their significance: havan, puja, arati, darshan, bhajan/kirtan, japa/mantra. Include key differences in worship in Shaivism and Vaishnavism and different Hindu views about importance of worship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Focuses of worship and representations (murti etc.)",
+          "description": "Understand focuses of worship and representations of the divine and their importance: one God (personal or non-personal), many deities, guru and other elders, holy land/hills/rivers, sacred plants and animals, and murti as representation of God; explain reasons for use and debates (e.g., symbolism vs idolatry).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Festivals (Diwali, Holi)",
+          "description": "Know origins and meaning of Diwali and Holi and explain their importance for Hindus in Great Britain today (identity, community, dharma, devotion).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Four paths of yoga (karma, jnana, astanga, bhakti)",
+          "description": "Explain the four paths towards yoga (union with the divine): action (karma yoga), knowledge (jnana yoga), meditation (astanga yoga), devotion (bhakti yoga). Understand differences between paths and why they are important as routes to moksha.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Pilgrimage (Varanasi, Kumbh Mela)",
+          "description": "Explain role of pilgrimage, practices and purposes; know sacred sites including Varanasi and the Kumbh Mela; relate pilgrimage to purification, merit, devotion and community.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Hindu environmental projects and charities",
+          "description": "Understand the work and significance of Hindu environmental projects including ‘cow protection’ and why they matter; know that charities may promote well-being, social inclusion and women’s rights and how these reflect Hindu teachings (dharma, ahimsa, seva).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.1.5",
+      "Strand": "Component 1: Islam",
+      "Topic_name": "Islam",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Articles of faith and roots of Usul ad-Din (Sunni vs Shi’a)",
+          "description": "Know the six articles of faith in Sunni Islam and the five roots of Usul ad-Din in Shi’a Islam; explain key similarities and differences and how these shape Muslim belief and identity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Tawhid (Surah 112)",
+          "description": "Explain tawhid (Oneness of God) and its implications for worship and life; use Qur’an Surah 112 as a prescribed reference where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Nature of God: mercy, justice and Adalat; immanence/transcendence",
+          "description": "Understand Muslim beliefs about the nature of God: omnipotence, beneficence, mercy, fairness, justice; include Adalat in Shi’a Islam. Explain different ideas about God’s relationship with the world: immanence and transcendence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Angels (Jibril, Mika’il)",
+          "description": "Describe nature and role of angels in Islam, including Jibril and Mika’il; explain how belief in angels relates to revelation, guidance, and accountability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Predestination and human freedom",
+          "description": "Explain beliefs about predestination (al-Qadr) and human freedom; analyse how these relate to moral responsibility and the Day of Judgement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Akhirah: accountability, resurrection, heaven and hell",
+          "description": "Understand beliefs about akhirah (life after death): human responsibility and accountability, resurrection, heaven and hell; explain influence on ethical living and worship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Risalah and prophets (Adam, Ibrahim, Muhammad)",
+          "description": "Explain risalah (Prophethood) including role and importance of Adam, Ibrahim and Muhammad; understand how prophets guide humanity and convey God’s message.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Holy books: Qur’an and earlier revelations",
+          "description": "Explain Qur’an as revelation and its authority; know Muslim beliefs about Torah, Psalms, Gospel, Scrolls of Abraham and their authority; understand relationship between Qur’an and earlier scriptures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Imamate (Shi’a Islam)",
+          "description": "Explain the imamate in Shi’a Islam: its role and significance as religious/political leadership and source of guidance; distinguish from Sunni perspectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Five Pillars and Ten Obligatory Acts (including jihad)",
+          "description": "Know the Five Pillars of Sunni Islam and the Ten Obligatory Acts of Shi’a Islam. Study the Five Pillars and jihad in both Sunni and Shi’a Islam, plus additional Shi’a duties; understand how these frameworks structure Muslim practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Shahadah",
+          "description": "Explain shahadah (declaration of faith) and its place in Muslim practice and identity; link to tawhid and acceptance of Muhammad as messenger.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Salah and Friday prayer; Sunni/Shi’a differences",
+          "description": "Explain salah and its significance: how and why Muslims pray including times, direction (qibla), ablution (wudu), movements (rak’ahs) and recitations; prayer in home, mosque and elsewhere; Friday prayer (Jummah). Include key differences in practice of salah in Sunni and Shi’a Islam and different Muslim views about the importance of prayer.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Sawm and the Night of Power (Qur’an 96:1–5)",
+          "description": "Explain sawm (fasting) during Ramadan: origins, duties, benefits, exceptions and reasons; explain significance of the Night of Power (Laylat al-Qadr) using Qur’an 96:1–5 as prescribed reference.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Zakah and Khums",
+          "description": "Explain zakah: origins, how and why it is given, benefits for recipients and givers; include Khums in Shi’a Islam as an additional form of giving; relate to justice and community support.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Hajj (Ka’aba, Mina, Arafat, Muzdalifah)",
+          "description": "Explain hajj pilgrimage to Makkah: origins, how it is performed; describe actions at key sites including the Ka’aba at Makkah, Mina, Arafat, Muzdalifah and their significance; relate to unity (ummah), submission and remembrance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Jihad (greater and lesser)",
+          "description": "Explain different understandings of jihad: meaning and significance of greater and lesser jihad; origins, influence and conditions for declaration of lesser jihad; address misconceptions and ethical constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Festivals and commemorations (Id-ul-Adha, Id-ul-Fitr, Ashura)",
+          "description": "Know origins and meanings of Id-ul-Adha, Id-ul-Fitr and Ashura and explain their importance for Muslims in Great Britain today; include differences of emphasis across Sunni/Shi’a where relevant (e.g., Ashura).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "3.1.6",
+      "Strand": "Component 1: Judaism",
+      "Topic_name": "Judaism",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "3.1.6.1",
+          "Sub_topic_name": "Nature of God and Shekhinah",
+          "description": "Explain Jewish beliefs about the nature of God: God as one, Creator, Law-Giver and Judge, loving and merciful. Understand the divine presence (Shekhinah) and its significance in worship and life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "3.1.6.1",
+          "Sub_topic_name": "Life after death",
+          "description": "Explain Jewish beliefs about life after death including judgement and resurrection; understand variety of views within Judaism and implications for living.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "3.1.6.1",
+          "Sub_topic_name": "Messiah (different views)",
+          "description": "Explain the nature and role of the Messiah in Judaism and different views on the Messiah’s role and importance (e.g., personal messiah vs messianic age; Orthodox vs Reform emphases).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "3.1.6.1",
+          "Sub_topic_name": "Covenant with Abraham (Genesis 12:1–3) and promised land",
+          "description": "Understand promised land and the Covenant with Abraham using Genesis 12:1–3; explain its importance for Jewish identity, relationship with God, and land/peoplehood themes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "3.1.6.1",
+          "Sub_topic_name": "Covenant at Sinai, Moses and Ten Commandments (Exodus 20:1–17)",
+          "description": "Explain the Covenant at Sinai and its importance, including the role of Moses and the Ten Commandments, using Exodus 20:1–17; relate to Torah, law and ethical living.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "3.1.6.1",
+          "Sub_topic_name": "Key moral principles and Pikuach Nefesh",
+          "description": "Know key moral principles including justice, healing the world (tikkun olam), charity and kindness to others. Explain sanctity of human life including ‘saving a life’ (Pikuach Nefesh) and how it affects ethical decisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "3.1.6.1",
+          "Sub_topic_name": "Free will and 613 mitzvot; mitzvot categories",
+          "description": "Explain relationship between free will and the 613 mitzvot. Distinguish mitzvot between man and God and mitzvot between man and man; explain differences and importance in Jewish practice and ethics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Synagogue: importance and features; Orthodox vs Reform",
+          "description": "Explain the synagogue and its importance. Know design/features: bimah (reading platform), aron hakodesh (ark), ner tamid (ever-burning light) and associated practices; include differences between Orthodox and Reform synagogues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Public worship and prayer (Amidah)",
+          "description": "Describe synagogue services in Orthodox and Reform traditions; explain significance of prayer including the Amidah (standing prayer) and its role in communal worship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Shabbat (home and synagogue)",
+          "description": "Explain Shabbat in the home and synagogue and its significance (rest, covenant, identity, family and community worship).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Home worship and private prayer",
+          "description": "Explain worship in the home and private prayer; understand how Jewish life is shaped by daily practices beyond synagogue.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Tenakh and Talmud (written and oral law)",
+          "description": "Explain Tenakh as the written law and Talmud as the oral law; describe their study, use and significance in daily life; understand authority and interpretation in Judaism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Birth rituals (Brit Milah) and coming of age",
+          "description": "Describe ceremonies associated with birth including Brit Milah; explain Bar and Bat Mitzvah and their significance for religious responsibility and identity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Marriage and mourning rituals",
+          "description": "Describe Jewish marriage ceremony and mourning rituals; explain significance and how they express beliefs about covenant, community, and respect for the dead.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Dietary laws (kosher/trefah; milk and meat)",
+          "description": "Explain Jewish dietary laws and significance; distinguish kosher and trefah and the separation of milk and meat; include different Jewish views about importance of keeping dietary laws (Orthodox vs Reform/Liberal diversity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "3.1.6.2",
+          "Sub_topic_name": "Festivals (Rosh Hashanah, Yom Kippur, Pesach)",
+          "description": "Know origins and meaning of Rosh Hashanah and Yom Kippur and Pesach; explain their importance for Jews in Great Britain today, including themes of repentance, atonement, freedom and identity.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "3.1.7",
+      "Strand": "Component 1: Sikhism",
+      "Topic_name": "Sikhism",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "Nature of God (Mool Mantra, GGS 1a)",
+          "description": "Explain Sikh beliefs about the nature of God as expressed in the Mool Mantra: content and significance; use prescribed reference Guru Granth Sahib (GGS) 1a. Relate to Sikh worship and identity (Ik Onkar, truth, creator, fearlessness, etc. as appropriate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "God as Creator and relationship with creation",
+          "description": "Explain God as Creator, including aspects of God’s relationship with creation: God shown in/through the universe and God as separate from the universe; understand implications for seeing God in all and for ethical living.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "Human life, virtues and union with God",
+          "description": "Explain Sikh view of human life as an opportunity to unite with God; know Sikh virtues such as wisdom, truthful living, justice, temperance, self-control, patience, courage, humility, contentment; relate to gurmukh living and spiritual discipline.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "Karma, rebirth and mukti (positive and negative)",
+          "description": "Explain Sikh beliefs in karma and rebirth and the aim of mukti; define mukti including positive and negative aspects; relate to liberation from ego and cycle of reincarnation and to living in hukam (God’s will).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "Five khands and barriers to mukti",
+          "description": "Describe the five stages of liberation (five khands) and barriers to mukti: illusion, self-centredness, lust, anger, greed, worldly attachment, pride; explain how Sikhs overcome these through discipline and grace.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "Gurmukh vs manmukh; haumai",
+          "description": "Explain importance of being gurmukh (God-centred) rather than manmukh (man-centred) and elimination of pride/ego (haumai); apply to ethical behaviour and spirituality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "Oneness of humanity and equality (including women)",
+          "description": "Explain Sikh belief in oneness of humanity and equality of all, including complete equality of women with men; show how equality is expressed in stories of the Gurus (including Guru Nanak and Guru Gobind Singh), the Guru Granth Sahib, and Sikhism today.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "3.1.7.1",
+          "Sub_topic_name": "Sewa and sangat",
+          "description": "Explain sewa (service) as a priority: physical (tan), mental (man) and material (dhan) service; explain role and importance of the sangat (religious community) in worship, identity and support.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Gurdwara features (palki, takht) and associated practices",
+          "description": "Describe religious features of the gurdwara: design, furniture and artefacts; explain practices associated with features including the palki and takht and their importance; relate to respect for Guru Granth Sahib and community worship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Gurdwara’s role in the Sikh community",
+          "description": "Explain the role of the gurdwara within the Sikh community (worship, education, community cohesion, sewa, langar, ceremonies) and its impact in Great Britain today.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Prayer in the home (GGS 305:4)",
+          "description": "Explain the role of prayer in the home, supported by prescribed reference GGS 305:4; link to daily discipline and remembrance of God.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Akhand path",
+          "description": "Explain role and importance of the akhand path (continuous reading of Guru Granth Sahib): when performed, purposes (blessing, remembrance, community), and significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Langar as sewa",
+          "description": "Explain meaning and significance of langar (free communal meal) as an expression of sewa and equality; relate to rejection of caste and service to all.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Nam japna (meditating on God’s name)",
+          "description": "Explain significance of meditating on the name of God (nam japna) in daily life and in the gurdwara; relate to overcoming haumai and living as gurmukh.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8o",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Festivals (Vaisakhi, Divali, Gurpurbs) and UK/India differences",
+          "description": "Know origins and significance of Vaisakhi (Baisakhi), Divali, and Gurpurbs (including Guru Nanak’s birthday). Explain importance for Sikhs in Great Britain today and differences in celebration of gurpurbs in India and Great Britain.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8p",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Visiting historical gurdwaras (Golden Temple)",
+          "description": "Explain importance of visiting Sikh historical gurdwaras, including the Golden Temple (Harimandir Sahib) in Amritsar; relate to history, identity and devotion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8q",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Birth and naming ceremonies",
+          "description": "Describe Sikh birth and naming ceremonies and explain their meaning and significance for identity and community.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8r",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Amrit Sanskar, Khalsa and the Five Ks; sahajdhari vs amritdhari",
+          "description": "Explain initiation ceremony (Amrit Sanskar): meaning and importance of the Khalsa and the Five Ks; include different perspectives of sahajdhari and amritdhari Sikhs; relate to discipline, identity and commitment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8s",
+          "Specification_section_sub": "3.1.7.2",
+          "Sub_topic_name": "Names Singh and Kaur",
+          "description": "Explain significance and use of the names Singh and Kaur; relate to equality and Khalsa identity.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "3.2.1.1",
+      "Strand": "Component 2: Thematic studies (A–F)",
+      "Topic_name": "Theme A: Relationships and families",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Human sexuality and types of relationships",
+          "description": "Understand issues around human sexuality including heterosexual and same sex relationships; explain contrasting religious and non-religious perspectives in contemporary British society and how teachings influence attitudes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Sex before/outside marriage",
+          "description": "Explain religious teachings and ethical arguments about sexual relationships before and outside of marriage; be able to give contrasting beliefs with reference to Christianity (as main UK tradition) and at least one other religious tradition; include relevant sources of wisdom/authority.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Contraception and family planning",
+          "description": "Explain religious teachings and ethical arguments about contraception and family planning; give contrasting beliefs with reference to Christianity and one or more other religious traditions; relate to responsibility, sanctity of life, marriage, and wellbeing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Nature and purpose of marriage; cohabitation and same-sex marriage",
+          "description": "Explain the nature and purpose of marriage, including religious significance and contemporary debates; address same-sex marriage and cohabitation; compare contrasting perspectives in British society and across religions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Divorce and remarriage; ethical arguments",
+          "description": "Explain divorce including reasons and views on remarrying; analyse ethical arguments about divorce including those based on sanctity of marriage vows and compassion; compare contrasting religious perspectives and contemporary British views.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Nature and purpose of families",
+          "description": "Understand nature of families (roles of parents/children; extended vs nuclear) and purposes (procreation; stability/protection of children; educating children in a faith). Apply religious teachings to contemporary family life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Contemporary family issues (same-sex parents, polygamy)",
+          "description": "Explain contemporary family issues including same-sex parents and polygamy; analyse religious, philosophical and ethical arguments and contrasting perspectives in contemporary British society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Roles of men and women; gender equality and discrimination",
+          "description": "Explain beliefs and arguments about roles of men and women, gender equality, and gender prejudice/discrimination (with examples). Compare religious teachings and contemporary British perspectives; evaluate impact on individuals and society.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "3.2.1.2",
+      "Strand": "Component 2: Thematic studies (A–F)",
+      "Topic_name": "Theme B: Religion and life",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Origins of the universe (religion and science)",
+          "description": "Explain religious teachings about origins of the universe and different interpretations; analyse relationship between scientific views (e.g., Big Bang theory) and religious views; compare perspectives and evaluate compatibility/conflict.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Value of the world and environmental responsibility",
+          "description": "Explain the value of the world and human duty to protect it, including religious teachings about stewardship, dominion, responsibility, awe and wonder. Apply to environmental issues: use/abuse of natural resources and pollution; evaluate ethical responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Use and abuse of animals (food and experimentation)",
+          "description": "Explain ethical issues about use/abuse of animals including animal experimentation and use for food. Give contrasting beliefs with reference to Christianity and one or more other religions; include religious/philosophical arguments and contemporary British perspectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Origins of human life (religion and evolution)",
+          "description": "Explain religious teachings about origins of human life and different interpretations; analyse relationship between scientific views (e.g., evolution) and religious views; evaluate implications for human uniqueness and purpose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Sanctity of life and quality of life",
+          "description": "Explain the concepts of sanctity of life and quality of life and how they are used in ethical reasoning about life and death; apply across religious and non-religious viewpoints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Abortion and ethical arguments",
+          "description": "Explain abortion including situations when the mother’s life is at risk; analyse ethical arguments about abortion including those based on sanctity of life and quality of life; give contrasting beliefs with reference to Christianity and one or more other religions; consider contemporary British perspectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Euthanasia",
+          "description": "Explain euthanasia and evaluate religious, philosophical and ethical arguments for and against; give contrasting beliefs with reference to Christianity and one or more other religions and include contemporary British viewpoints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Death, afterlife and value of human life",
+          "description": "Explain beliefs about death and an afterlife and analyse how these impact beliefs about the value of human life and end-of-life ethics; compare religious and non-religious perspectives.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "3.2.1.3",
+      "Strand": "Component 2: Thematic studies (A–F)",
+      "Topic_name": "Theme C: The existence of God and revelation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Design argument",
+          "description": "Understand the Design argument for existence of God (including its strengths and weaknesses); evaluate as religious/philosophical reasoning and include critical challenges (e.g., alternative explanations, problem of poor design).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "First Cause argument",
+          "description": "Understand the First Cause (cosmological) argument for existence of God (including strengths and weaknesses); evaluate reasoning about causation, contingency and the origin of the universe.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Miracles argument and one example",
+          "description": "Understand the argument from miracles for existence of God including strengths and weaknesses; study and be able to discuss one example of a miracle; evaluate credibility and alternative explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Evil and suffering as argument against God",
+          "description": "Explain evil and suffering as arguments against existence of God; evaluate responses such as theodicies, free will, soul-making, and non-religious critiques; consider impact on belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Science-based arguments against God",
+          "description": "Explain and evaluate arguments based on science against the existence of God (e.g., naturalistic explanations, evidential challenges); consider compatibility/conflict with religious belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Special revelation: visions and one example",
+          "description": "Explain special revelation as a source of knowledge about the divine (God, gods or ultimate reality), including visions; study one example of a vision; evaluate reliability, interpretation and impact.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Enlightenment as knowledge of the divine",
+          "description": "Explain enlightenment as a source of knowledge about the divine; compare with revelation and reason; evaluate authority and influence on belief/practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "General revelation: nature and scripture",
+          "description": "Explain general revelation: nature and scripture as ways of understanding the divine; evaluate strengths/limitations and differences in interpretation across traditions and within Christianity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Ideas about the divine (omnipotent/omniscient; personal/impersonal; immanent/transcendent)",
+          "description": "Explain different ideas about the divine arising from revelation/enlightenment: omnipotent and omniscient; personal and impersonal; immanent and transcendent. Evaluate how these ideas affect worship and belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Evaluating revelation and experience claims",
+          "description": "Evaluate the value of general and special revelation and enlightenment as sources of knowledge about the divine, including: problems of different ideas about the divine arising from experiences; alternative explanations; possibility claimants were lying or mistaken; implications for authority in contemporary society.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "3.2.1.4",
+      "Strand": "Component 2: Thematic studies (A–F)",
+      "Topic_name": "Theme D: Religion, peace and conflict",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Peace, justice, forgiveness, reconciliation",
+          "description": "Explain meaning and significance of peace, justice, forgiveness and reconciliation in religious and ethical thinking; apply to conflict resolution and personal/community relationships.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Violence, protest and terrorism",
+          "description": "Explain violence including violent protest and terrorism; analyse religious, philosophical and ethical arguments about when (if ever) violence is justified; compare contrasting perspectives in contemporary British society and across religions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Reasons for war",
+          "description": "Explain reasons for war including greed, self-defence and retaliation; evaluate in light of religious teachings and ethical frameworks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Just war theory",
+          "description": "Understand just war theory including criteria for a just war; apply criteria to evaluate real or hypothetical conflicts; compare with pacifist/holy war views.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Holy war",
+          "description": "Explain concept of holy war and evaluate arguments for/against; consider differences across religious traditions and risks of misuse/extremism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Pacifism",
+          "description": "Explain pacifism and evaluate religious/ethical arguments for rejecting violence; compare with conditional support for war/force in some traditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Religion and belief as causes of conflict today",
+          "description": "Analyse religion and belief as causes of war and violence in the contemporary world; distinguish religious causes from political/economic factors; evaluate media portrayals and impacts on communities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Nuclear weapons, deterrence and WMD",
+          "description": "Explain nuclear weapons including nuclear deterrence and the use of weapons of mass destruction; evaluate religious, philosophical and ethical arguments (e.g., proportionality, civilian harm, long-term consequences).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Peace-making and religious organisations",
+          "description": "Explain religion and peace-making in the contemporary world including work of individuals influenced by religious teaching; explain religious responses to victims of war including the work of one present day religious organisation; evaluate effectiveness and motivations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "3.2.1.5",
+      "Strand": "Component 2: Thematic studies (A–F)",
+      "Topic_name": "Theme E: Religion, crime and punishment",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Good/evil and causing suffering",
+          "description": "Explain good and evil intentions and actions, including whether it can ever be good to cause suffering; apply religious and ethical reasoning to moral dilemmas and justice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Reasons for crime and views of lawbreakers",
+          "description": "Explain reasons for crime: poverty and upbringing; mental health problems and addiction; greed and hate; opposition to an unjust law. Analyse views about people who break the law for these reasons; compare religious and non-religious perspectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Types of crime (hate crimes, theft, murder)",
+          "description": "Explain views about different types of crime including hate crimes, theft and murder; evaluate seriousness, harm and moral culpability using religious teachings and ethical arguments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Aims of punishment (retribution, deterrence, reformation)",
+          "description": "Explain aims of punishment: retribution, deterrence, reformation; evaluate which aims are most appropriate and how religions influence attitudes to justice and mercy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Treatment of criminals (prison, corporal punishment, community service)",
+          "description": "Explain treatment of criminals including prison, corporal punishment and community service; evaluate effectiveness and ethical issues; give contrasting beliefs with reference to Christianity and one or more other religions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Forgiveness",
+          "description": "Explain forgiveness in religious traditions and ethical thinking; evaluate whether/when forgiveness should be offered, its relationship to justice, reconciliation, and protection of society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Death penalty and ethical arguments (utility, sanctity of life)",
+          "description": "Explain the death penalty; analyse ethical arguments including those based on principle of utility and sanctity of life; give contrasting beliefs with reference to Christianity and one or more other religions; consider contemporary British debates.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "3.2.1.6",
+      "Strand": "Component 2: Thematic studies (A–F)",
+      "Topic_name": "Theme F: Religion, human rights and social justice",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Prejudice and discrimination in religion and belief",
+          "description": "Explain prejudice and discrimination in religion and belief, including status/treatment within religion of women and those in same sex relationships; analyse causes, impacts and religious responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Equality and freedom of religion/expression",
+          "description": "Explain issues of equality, freedom of religion and belief including freedom of religious expression; evaluate tensions between rights (e.g., free speech vs harm) in contemporary British society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Human rights, responsibilities and social justice",
+          "description": "Explain that human rights come with responsibilities, including responsibility to respect rights of others; explain social justice and how religions may support or challenge social justice movements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Racial prejudice and discrimination; ethical arguments",
+          "description": "Explain racial prejudice and discrimination; analyse ethical arguments related to racial discrimination (including positive discrimination) including those based on ideals of equality and justice; compare religious and secular approaches.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14e",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Wealth: attitudes and uses",
+          "description": "Explain wealth including right attitude to wealth and uses of wealth; compare religious teachings on materialism, generosity, and stewardship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14f",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Responsibilities of wealth and tackling poverty",
+          "description": "Explain responsibilities of wealth including duty to tackle poverty and its causes; evaluate approaches such as charity vs systemic change; link to religious teachings on justice and compassion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14g",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Exploitation: fair pay, interest, trafficking",
+          "description": "Explain exploitation of those living in poverty including issues relating to fair pay, excessive interest on loans, and people-trafficking; evaluate religious/philosophical responses and ethical duties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14h",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Responsibilities of those in poverty; charity debates",
+          "description": "Explain responsibilities of those living in poverty to help themselves overcome difficulties they face; evaluate fairness of this expectation. Explain charity and issues about giving money to those living in poverty (dependency, effectiveness, dignity) and religious motivations for giving.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "3.2.2.1",
+      "Strand": "Component 2: Textual studies (St Mark’s Gospel)",
+      "Topic_name": "Theme G: St Mark’s gospel: the life of Jesus",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Early ministry set texts (Mark 1–6)",
+          "description": "Know and be able to use the set passages on the early ministry of Jesus in St Mark: John’s preparation for Jesus’ ministry (1:1–8); Jesus’ baptism and temptation (1:9–13); the paralysed man (2:1–12); Jairus’ daughter (5:21–24a, 35–43); the rejection at Nazareth (6:1–6); the feeding of the five thousand (6:30–44). Understand narrative context, key ideas, and significance for Jesus’ identity and mission.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Later ministry set texts (Mark 8–11)",
+          "description": "Know and be able to use set passages on the later ministry: conversation at Caesarea Philippi (8:27–33); transfiguration (9:2–9); passion prediction (10:32–34); request of James and John (10:35–45); Bartimaeus (10:46–52); entry into Jerusalem (11:1–11). Understand key themes: discipleship, messiahship, suffering, service.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Final days set texts (Mark 14–16)",
+          "description": "Know and be able to use set passages on the final days in Jerusalem: Last Supper (14:12–26); Gethsemane (14:32–52); trial before Jewish authorities (14:53, 57–65); trial before Pilate (15:1–15); crucifixion and burial (15:21–47); empty tomb (16:1–8). Understand sequence, key claims and theological implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Titles of Jesus: Son of Man, Son of God, Christ, Son of David",
+          "description": "Explain titles Son of Man, Son of God, Christ (Messiah) and Son of David: meaning for 1st century Jews and for Jesus; evaluate significance for 21st century Christians of Jesus’ understanding of these titles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15e",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Jesus as teacher and miracle worker; historicity",
+          "description": "Explain St Mark’s portrayal of Jesus as a teacher and miracle worker; understand contrasting views on the historicity of miracle stories; evaluate how these views affect authority and belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15f",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Last Supper interpretations",
+          "description": "Explain differing beliefs about the meaning of Jesus’ words and actions at the Last Supper; connect to Eucharist/Holy Communion theology and differing Christian traditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15g",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Significance of death/resurrection and explanations of empty tomb",
+          "description": "Explain differing beliefs about significance of Jesus’ death and resurrection; explain different explanations for the empty tomb (faith-based and alternative/secular interpretations) and implications for belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15h",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Authority of Mark vs secular authority",
+          "description": "Evaluate differing views on the authority of St Mark’s Gospel relating to the life of Jesus in relation to challenges posed by secular sources of contemporary authority (e.g., historical criticism, science, media, personal experience).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "3.2.2.2",
+      "Strand": "Component 2: Textual studies (St Mark’s Gospel)",
+      "Topic_name": "Theme H: St Mark’s Gospel as a source of religious, moral and spiritual truths",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Kingdom of God set texts",
+          "description": "Know and be able to use set passages about the Kingdom of God: Parable of the sower (4:1–9, 14–20); growing seed (4:26–29); mustard seed (4:30–32); Jesus and the children (10:13–16); rich man (10:17–27); greatest commandment (12:28–34). Understand key teachings about receptivity, growth, priorities and love of God/neighbor.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Jesus and those disregarded by society set texts",
+          "description": "Know and be able to use set passages on Jesus’ relationships with those disregarded by society: man with leprosy (1:40–45); call of Levi (2:13–17); Greek/Syro-Phoenician woman’s daughter (7:24–30); epileptic/demon-possessed boy (9:14–29); widow at the treasury (12:41–44); anointing at Bethany (14:1–9). Understand themes of inclusion, mercy, faith and challenge to social norms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16c",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Faith and discipleship set texts",
+          "description": "Know and be able to use set passages about faith and discipleship: call of first disciples (1:16–20); woman with a haemorrhage (5:24b–34); mission of the Twelve (6:7–13); cost and rewards of discipleship (8:34–38; 10:28–31); Peter’s denials (14:27–31, 66–72); commission and ascension (16:14–20). Understand discipleship, failure/restoration, mission and faith.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16d",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Significance of events and truths for 1st century and today",
+          "description": "Explain significance and importance for Jesus, for people of his day, and for people in the 21st century of key events in the life of Jesus recorded by St Mark; relate to religious, moral and spiritual truths and lived discipleship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16e",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Understanding the Kingdom of God (present/future; inner/community)",
+          "description": "Explain different ways the Kingdom of God might be understood: present reality vs future hope; personal inner state vs community; evaluate how interpretations shape Christian ethics and mission.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16f",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "1st century attitudes to the disregarded; Jesus’ response",
+          "description": "Explain reasons for 1st century attitudes (social, religious purity, gender/ethnicity, poverty, disability) and Jesus’ attitudes to those disregarded by society; explain significance for Christians of Jesus’ attitudes and implications for equality and justice today.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16g",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Discipleship: significance for disciples and Christians today",
+          "description": "Explain different views on the significance and importance for Jesus’ disciples and for 21st century Christians of discipleship as seen in incidents involving the disciples and in Jesus’ teaching; evaluate costs, rewards and practical implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16h",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Nature and importance of faith",
+          "description": "Explain different views on the nature and importance of faith as seen in St Mark’s Gospel; relate to healing, trust, obedience and interpretation of miracles; evaluate in contemporary contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16i",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Authority of Jesus’ teaching vs secular authority",
+          "description": "Evaluate differing views on the authority of Jesus’ teaching as recorded by St Mark in relation to challenges posed by secular sources of contemporary authority; consider diversity within Christianity and reasons people accept/reject biblical authority.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

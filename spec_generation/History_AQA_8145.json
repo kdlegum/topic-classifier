@@ -1,0 +1,1432 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "History",
+  "Exam Board": "AQA",
+  "Specification": "8145",
+  "has_math": false,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "2.1",
+      "Strand": "Qualification structure and options",
+      "Topic_name": "Subject content",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Course elements (required studies)",
+          "description": "Understand the required elements that make up AQA GCSE History (8145): students study one period study, one thematic study, one wider world depth study, and one British depth study that includes the historic environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Paper 1 options: Period study choices",
+          "description": "Know the four possible Paper 1 Section A (Period study) options and that one must be selected at entry: AA America, 1840–1895: Expansion and consolidation; AB Germany, 1890–1945: Democracy and dictatorship; AC Russia, 1894–1945: Tsardom and communism; AD America, 1920–1973: Opportunity and inequality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Paper 1 options: Wider world depth study choices",
+          "description": "Know the five possible Paper 1 Section B (Wider world depth study) options and that one must be selected at entry: BA Conflict and tension: The First World War, 1894–1918; BB Conflict and tension: The inter-war years, 1918–1939; BC Conflict and tension between East and West, 1945–1972; BD Conflict and tension in Asia, 1950–1975; BE Conflict and tension in the Gulf and Afghanistan, 1990–2009.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Paper 2 options: Thematic study choices",
+          "description": "Know the three possible Paper 2 Section A (Thematic study) options and that one must be selected at entry: AA Britain: Health and the people: c1000 to the present day; AB Britain: Power and the people: c1170 to the present day; AC Britain: Migration, empires and the people: c790 to the present day.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Paper 2 options: British depth study choices (with historic environment)",
+          "description": "Know the four possible Paper 2 Section B (British depth study including the historic environment) options and that one must be selected at entry: BA Norman England, c1066–c1100; BB Medieval England: the reign of Edward I, 1272–1307; BC Elizabethan England, c1568–1603; BD Restoration England, 1660–1685.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3",
+      "Strand": "Course requirements and scope",
+      "Topic_name": "Subject content",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "3",
+          "Sub_topic_name": "Required eras, timescales, and geographical contexts",
+          "description": "Know the required scope of study: history from three eras (Medieval 500–1500; Early Modern 1450–1750; Modern 1700–present day), on three timescales (short depth study; medium period study of at least 50 years; long thematic study), and in three geographical contexts (locality via historic environment; British; European and/or wider world).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "3",
+          "Sub_topic_name": "British history minimum proportion",
+          "description": "Understand the requirement that British history must form a minimum of 40% of assessed content across the full course.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "3",
+          "Sub_topic_name": "Thematic study (long sweep) requirement",
+          "description": "Understand the purpose and requirement of the thematic study: change and continuity across a long sweep of history; must cover all three specified eras (Medieval, Early Modern, Modern).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "3",
+          "Sub_topic_name": "Period study (medium timespan) requirement",
+          "description": "Understand the purpose and requirement of the period study: a substantial and coherent medium time span of at least 50 years; requires understanding of unfolding narrative of substantial developments and issues; may be from any specified era.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "3",
+          "Sub_topic_name": "Depth studies requirement (British + wider world)",
+          "description": "Understand the requirement for two depth studies: one British depth study and one European/wider world depth study; depth studies focus on a substantial and coherent short time span; develop understanding of complexities and interplay within a society/situation; depth studies must be taken from different eras.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "3",
+          "Sub_topic_name": "Historic environment study requirement",
+          "description": "Understand the purpose of the historic environment: study a particular site in historical context to understand relationship between place and historical events/developments; no requirement to visit; may be linked to other course content or stand alone (in this specification it is embedded in the British depth study option).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.2.1",
+      "Strand": "Paper 1: Understanding the modern world (Period studies)",
+      "Topic_name": "AA America, 1840–1895: Expansion and consolidation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Geography and Manifest Destiny",
+          "description": "Understand the geography of North America and how it shaped attitudes and expansion: attitudes to the Great American Desert and the belief in ‘Manifest Destiny’ as an idea driving westward expansion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Early settlement west: motives, groups, challenges",
+          "description": "Explain why early settlers went west and the challenges faced, including case studies and groups: Brigham Young and the Mormons; pioneer migrant farmers and the journey west; miners (motivations, experiences, and difficulties).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Plains Indians and early government policy",
+          "description": "Understand Plains Indians’ way of life; early US Government policy towards Plains Indians including the Permanent Indian Frontier; explain how relationships changed between settlers/government and Plains Indians over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Fort Laramie (1851) and Indian Wars 1862–1867",
+          "description": "Analyse increasing conflict on the Plains: Fort Laramie Treaty (1851); failure of the policy of concentration; Indian Wars (1862–1867) including reasons and consequences; Sand Creek Massacre; Fetterman’s Trap.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Background to the American Civil War and impacts",
+          "description": "Explain the background causes of the American Civil War: differences between North and South; slavery; westward expansion and free states; abolitionism; breakdown of the Missouri Compromise; John Brown; roles of Abraham Lincoln and Jefferson Davis; analyse the social and economic impact of the Civil War on civilian populations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Mountain Meadows Massacre and Mormon relations",
+          "description": "Understand conflict and accommodation involving the Mormons: the Mountain Meadow(s) Massacre and its aftermath; explain how US authorities and wider society came to terms with the Mormons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Reconstruction and federal vs state power",
+          "description": "Assess the aftermath of the Civil War: 13th Amendment; Civil Rights Act; Reconstruction in the South (1866–1877); role of carpetbaggers; explain changing balance of Federal and State powers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Homesteaders, railroads and farming on the Plains",
+          "description": "Explain continued settlement of the West after the Civil War: Homesteaders and reasons for going west; government actions and laws; land and railroads; farming problems and attempted solutions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "‘Indian problem’ after 1865: reservations, Dawes Act, Wounded Knee",
+          "description": "Analyse how the US tried to resolve the ‘Indian problem’ after 1865: small reservations policy; attitudes to Native Americans; Battle of the Little Big Horn; Dawes Act; Battle of Wounded Knee; closing of the frontier and its impact on Native Americans.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.2.1",
+      "Strand": "Paper 1: Understanding the modern world (Period studies)",
+      "Topic_name": "AB Germany, 1890–1945: Democracy and dictatorship",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Kaiser Wilhelm II: governing difficulties and society",
+          "description": "Explain difficulties of ruling Germany under Kaiser Wilhelm II: growth of parliamentary government; influence of Prussian militarism; industrialisation; social reform and growth of socialism; domestic importance of the Navy Laws.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Impact of the First World War on Germany",
+          "description": "Analyse the impact of the First World War: war weariness and economic problems; defeat and end of the monarchy; post-war problems including reparations, occupation of the Ruhr, and hyperinflation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Weimar democracy and unrest, 1919–1923",
+          "description": "Understand political change and unrest in Weimar Germany 1919–1923 including Spartacists, Kapp Putsch and Munich Putsch; explain threats to democracy and government responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Stresemann era recovery, 1924–1929",
+          "description": "Evaluate the extent of recovery during the Stresemann era (1924–1929): economic developments (new currency; Dawes Plan; Young Plan); impact of international agreements on recovery; and features/impact of Weimar culture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Depression and Nazi rise, 1928–1932",
+          "description": "Explain how the Depression affected Germany and contributed to growth in support for Nazis and other extremist parties (1928–1932), including the role of the SA and Hitler’s appeal.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Failure of Weimar and Hitler appointed Chancellor",
+          "description": "Analyse why Weimar democracy failed: election results; roles of Papen and Hindenburg; reasons Hitler was appointed Chancellor.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Establishing the Nazi dictatorship, 1933–1934",
+          "description": "Explain steps in establishing Hitler’s dictatorship: Reichstag Fire; Enabling Act; elimination of political opposition; control of trade unions; Röhm and the Night of the Long Knives; Hitler becomes Führer.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Nazi economic policy and war economy effects",
+          "description": "Assess economic changes under the Nazis: benefits and drawbacks; employment; public works programmes; rearmament; self-sufficiency; and impact of war on the economy and German people including bombing, rationing, labour shortages and refugees.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Nazi social policy: women, youth, churches, race and the Holocaust",
+          "description": "Explain reasons for Nazi social policies, how they were implemented, and their impacts: on women; young people/youth groups; education; control of churches and religion; Aryan ideas and racial policy; persecution and the Final Solution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Control, propaganda, terror and opposition",
+          "description": "Analyse how the Nazis maintained control: Goebbels; propaganda and censorship; Nazi culture; repression and the police state including roles of Himmler, the SS and Gestapo; opposition and resistance including White Rose group, Swing Youth, Edelweiss Pirates and the July 1944 bomb plot.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.2.1",
+      "Strand": "Paper 1: Understanding the modern world (Period studies)",
+      "Topic_name": "AC Russia, 1894–1945: Tsardom and communism",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Russian economy and society before 1917",
+          "description": "Understand Russia’s economy and society under the Tsars: industrialisation and its effects; living and working conditions in cities and villages (urban and rural experiences).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Nicholas II’s autocracy and opposition, 1894–1914",
+          "description": "Explain Nicholas II’s autocracy and the court; growth of revolutionary opposition; the 1905 Revolution and October Manifesto; evaluate attempts to reform Russia up to 1914 including Dumas and political stalemate; Stolypin’s policies (land reform, industry, and use of oppression).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "First World War and collapse of Tsardom",
+          "description": "Analyse the First World War’s impact on Tsarist government: military defeats; social and economic effects on cities and countryside; unpopularity of the Romanovs including role of Rasputin; the Tsar’s abdication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Provisional Government and Bolshevik takeover",
+          "description": "Explain the Provisional Government’s failures to deal with Russia’s social, economic and military problems; roles of Lenin and Trotsky; growth of Bolshevik organisation; the October/November Revolution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Lenin’s dictatorship: ending WWI, Cheka, Red Army, Civil War",
+          "description": "Understand the impact of Lenin’s dictatorship: end of the First World War; role and methods of the Cheka; role of the Red Army; causes, nature and consequences of the Civil War; reasons for Bolshevik success; use of propaganda.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "War Communism, Kronstadt, NEP and Lenin/Trotsky’s achievements",
+          "description": "Explain social and economic developments under Lenin: War Communism; causes and significance of the Kronstadt Rising; the New Economic Policy (NEP); assess achievements of Lenin and Trotsky.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Stalin’s rise and dictatorship: Party control, terror and propaganda",
+          "description": "Analyse Stalin as dictator: power struggle to succeed Lenin; Communist Party control over government; Terror and Purges including the army, secret police, labour camps; censorship; cult of personality; propaganda.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Stalin’s modernisation: collectivisation and Five Year Plans",
+          "description": "Explain Stalin’s modernisation policies: collectivisation and the Five Year Plans; assess social and economic consequences for kulaks, city dwellers, women, professional and industrial workers; evaluate the extent of modernisation achieved.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "USSR and the Second World War to 1945",
+          "description": "Assess the impact of the Second World War (Great Patriotic War) on the USSR up to 1945: Stalin’s wartime leadership and resulting political, economic and social problems.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.2.1",
+      "Strand": "Paper 1: Understanding the modern world (Period studies)",
+      "Topic_name": "AD America, 1920–1973: Opportunity and inequality",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "The 1920s Boom: consumerism, production, policy and inequality",
+          "description": "Explain the causes and characteristics of the 1920s ‘Boom’: benefits; advertising and consumer society; hire purchase; mass production (Ford and the motor industry); inequalities of wealth; Republican government policies; stock market boom.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "1920s social and cultural change: entertainment and women",
+          "description": "Understand social and cultural developments in the 1920s: entertainment (cinema, jazz); position of women in society including flappers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Divisions and tension: Prohibition, crime, racism, immigration, Red Scare",
+          "description": "Analyse why American society was divided in the 1920s: organised crime; Prohibition and its impact; causes of racial tension; experiences of immigrants and impact of immigration; Ku Klux Klan; Red Scare and the significance of the Sacco and Vanzetti case.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Depression and Hoover vs Roosevelt",
+          "description": "Understand American society during the Depression: unemployment and impact on groups (farmers, businessmen); Hoover’s responses and unpopularity; reasons for Roosevelt’s election as president.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "New Deal effectiveness and opposition",
+          "description": "Evaluate the effectiveness of the New Deal for different groups: successes and limitations; opposition from the Supreme Court, Republicans and Radical politicians; Roosevelt’s contribution as president; relationship with popular culture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Second World War impact on US economy and society",
+          "description": "Explain how the Second World War affected the USA: economic recovery; Lend Lease; exports; social developments including experiences of African-Americans and women.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Post-war prosperity, culture and McCarthyism",
+          "description": "Analyse post-war American society and economy: consumerism and causes of prosperity; the ‘American Dream’; McCarthyism; popular culture including Rock and Roll and television.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Civil Rights in the 1950s–1960s",
+          "description": "Understand racial tension and developments in Civil Rights campaigns: segregation laws; Martin Luther King and peaceful protests; Malcolm X and the Black Power Movement; Civil Rights Acts of 1964 and 1968.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Kennedy/Johnson Great Society and feminism (1960s–early 1970s)",
+          "description": "Explain the ‘Great Society’ social policies of Presidents Kennedy and Johnson relating to poverty, education and health; analyse development and impact of feminist movements in the 1960s and early 1970s including equal pay; National Organisation for Women (NOW); Roe v Wade (1973); Supreme Court ruling on equal rights (1972); and opposition to the Equal Rights Amendment.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "3.2.2",
+      "Strand": "Paper 1: Understanding the modern world (Wider world depth studies)",
+      "Topic_name": "BA Conflict and tension: The First World War, 1894–1918",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Alliance system and international crises",
+          "description": "Explain the Alliance System and how it increased tension: Triple Alliance; Franco-Russian Alliance; relations between the Entente powers; crises in Morocco (1905, 1911) and the Balkans (1908–1909) and their effects on international relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Anglo-German rivalry and rearmament",
+          "description": "Analyse Anglo-German rivalry: Britain’s challenges to Splendid Isolation; Kaiser Wilhelm II’s aims (Weltpolitik); colonial tensions; European rearmament including the Anglo-German naval race.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Outbreak of war in 1914",
+          "description": "Explain outbreak of war: Slav nationalism; Serbia and Austria-Hungary; assassination of Archduke Franz Ferdinand and consequences; July Crisis; Schlieffen Plan and Belgium; reasons for escalation and outbreak of hostilities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Schlieffen Plan failure and stalemate",
+          "description": "Understand the Schlieffen Plan: reasons for the plan; reasons it failed including the Battle of Marne; explain how this contributed to stalemate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Western Front: trench warfare, tactics, technology and key battles",
+          "description": "Analyse the Western Front: military tactics and technology including trench warfare and attrition; key battles (Verdun, Somme, Passchendaele) including reasons, events and significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "The wider war: other fronts and war at sea",
+          "description": "Explain the wider war beyond the Western Front: Gallipoli and reasons for failure; war at sea including Jutland, U-Boat campaign and convoys (events and significance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Russia withdraws and USA enters the war",
+          "description": "Explain changes in Allied forces: consequences of Bolshevik Revolution and Russia’s withdrawal for German strategy; reasons for and impact of US entry into the war.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "1918 offensives and Germany’s defeat",
+          "description": "Analyse 1918 military developments leading to German defeat: evolution of tactics and technology; Ludendorff and the Spring Offensive; Allied advance during the Hundred Days.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Germany surrenders and responsibility for defeat",
+          "description": "Explain Germany’s surrender: impact of the blockade; abdication of the Kaiser; armistice; contributions of Haig and Foch to Germany’s defeat.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "3.2.2",
+      "Strand": "Paper 1: Understanding the modern world (Wider world depth studies)",
+      "Topic_name": "BB Conflict and tension: The inter-war years, 1918–1939",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Armistice and aims of the peacemakers",
+          "description": "Understand the armistice context and aims of key peacemakers: Wilson and the Fourteen Points; Clemenceau; Lloyd George; evaluate the extent to which they achieved their aims.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Treaty of Versailles terms",
+          "description": "Know and explain the Treaty of Versailles settlement: concept of diktat; territorial changes; military restrictions; war guilt clause; reparations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Impact and evaluation of the wider settlement",
+          "description": "Analyse impact of the treaty and wider settlement: reactions of the Allies; German objections; strengths and weaknesses of the settlement including problems faced by new states.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "League of Nations: structure, powers and agencies",
+          "description": "Understand the League of Nations: formation and covenant; organisation; membership and changes; powers; work of agencies; strengths/limitations implied by structure and membership.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "League successes and failures in the 1920s",
+          "description": "Evaluate the League’s contribution to peace in the 1920s through case studies: Aaland Islands; Upper Silesia; Vilna; Corfu; Bulgaria (successes, failures, and reasons).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Diplomacy outside the League",
+          "description": "Understand attempts at diplomacy outside the League: Locarno Treaties and the Kellogg–Briand Pact (aims and significance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Collapse of the League in the 1930s",
+          "description": "Explain why the League collapsed: effects of the Depression; Manchurian and Abyssinian crises and consequences; failure to avert war in 1939.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Hitler’s aims and early tensions, 1933–1935",
+          "description": "Analyse development of tension: Hitler’s aims and Allied reactions; Dollfuss Affair; Saar; German rearmament including conscription; Stresa Front; Anglo-German Naval Agreement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Appeasement and escalation to 1939",
+          "description": "Explain escalation of tension: remilitarisation of the Rhineland; Mussolini, the Axis, and the Anti-Comintern Pact; Anschluss; reasons for and against appeasement; Sudeten Crisis and Munich; ending of appeasement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Outbreak of war and responsibility",
+          "description": "Explain outbreak of the Second World War: occupation of Czechoslovakia; role of USSR and Nazi–Soviet Pact; invasion of Poland and outbreak of war (Sept 1939); assess responsibility including roles of key individuals Hitler, Stalin and Chamberlain.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "3.2.2",
+      "Strand": "Paper 1: Understanding the modern world (Wider world depth studies)",
+      "Topic_name": "BC Conflict and tension between East and West, 1945–1972",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Post-war conferences and division of Germany",
+          "description": "Understand the end of WWII and origins of Cold War tension: Yalta and Potsdam Conferences; division of Germany; contrasting attitudes/ideologies of USA and USSR including aims of Stalin, Churchill, Roosevelt, Attlee and Truman; effect of the atom bomb on post-war superpower relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Iron Curtain: Soviet expansion and US response",
+          "description": "Explain Soviet expansion in Eastern Europe and evolution of East–West rivalry; US policies including Truman Doctrine and Marshall Plan (purpose and Stalin’s reaction); Cominform; Comecon; Yugoslavia; Berlin Blockade and Airlift.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Cold War in Asia and superpower relations",
+          "description": "Analyse significance of Asia for superpower relations: USSR support for Mao Zedong and Communist revolution in China; military campaigns waged by North Korea against the UN; and by the Vietcong against France and the USA (as international context affecting superpower rivalry).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Arms race, alliances and space race",
+          "description": "Explain military rivalries: arms race; membership and purposes of NATO and the Warsaw Pact; space race including Sputnik, ICBMs, Polaris, Gagarin and Apollo (and their significance for Cold War competition).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "The Thaw: Hungary and U2 Crisis",
+          "description": "Understand the ‘Thaw’: Hungary (protest movement and Nagy’s reforms), Soviet fears and response, and effects on the Cold War; U2 Crisis and its effects on Paris Peace Summit and peace process.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Berlin Wall and Kennedy’s response",
+          "description": "Explain reasons for construction of the Berlin Wall and evaluate Kennedy’s response and significance for Cold War relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Cuban Missile Crisis and key individuals",
+          "description": "Analyse tensions over Cuba: Castro’s revolution; Bay of Pigs; missile crisis including roles of Castro, Khrushchev and Kennedy; US fears and reaction to missiles; dangers and results of the crisis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Prague Spring and Brezhnev Doctrine",
+          "description": "Explain Czechoslovakia 1968: Dubček and the Prague Spring reforms; USSR response; effects on East–West relations including Warsaw Pact action; Brezhnev Doctrine.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Détente and SALT I",
+          "description": "Understand easing of tension: sources of tension including Soviet human rights record; reasons for Détente; reasons for SALT I; role of key individuals Brezhnev and Nixon.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "3.2.2",
+      "Strand": "Paper 1: Understanding the modern world (Wider world depth studies)",
+      "Topic_name": "BD Conflict and tension in Asia, 1950–1975",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Causes of the Korean War",
+          "description": "Explain causes of the Korean War: nationalism in Korea; US relations with China; division of Korea; roles of Kim Il Sung and Syngman Rhee; reasons North invaded South in June 1950; US and UN responses; significance of USSR absence from the UN.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Course of the Korean War",
+          "description": "Understand development of the Korean War: UN campaign in South and North Korea; Inchon landings and recapture of South Korea; UN advance into North Korea; China’s reaction and intervention (Oct 1950); sacking of MacArthur.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "End and impact of the Korean War",
+          "description": "Explain end of the Korean War: stalemate around the 38th Parallel; peace talks and armistice; impact for Korea, the UN and Sino-American relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "End of French rule and origins of Vietnam conflict",
+          "description": "Explain end of French colonial rule: Dien Bien Phu and consequences; Geneva Agreement (1954); civil war in South Vietnam; opposition to Diem; Vietcong aims, support, leadership, guerrilla tactics; role of Ho Chi Minh.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Early US involvement: Domino Theory and Strategic Hamlets",
+          "description": "Understand growth of US involvement: Domino Theory; intervention under Eisenhower and Kennedy; Strategic Hamlets programme (aims, implementation, and impact).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Johnson’s War and turning points",
+          "description": "Analyse escalation under Johnson: Gulf of Tonkin; US response to Vietcong tactics; mass bombing; demands for peace and growing student protests in USA; My Lai and its public impact; Search and Destroy tactics and impact; Tet Offensive and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Nixon’s War: Vietnamisation and widening conflict",
+          "description": "Explain Nixon’s War: Vietnamisation; chemical warfare; bombing campaigns 1970–1972; relations with China; widening war into Laos and Cambodia.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Opposition to the war and the role of media",
+          "description": "Understand opposition to war: Kent State University; importance of media/TV in influencing public opinion; context and impact of the Watergate affair on perceptions of government.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "End of the war and consequences by 1975",
+          "description": "Explain end of the Vietnam War: Paris Peace talks; role of Kissinger; US withdrawal; fall of Saigon; price of conflict; problems of Vietnam in 1975.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "3.2.2",
+      "Strand": "Paper 1: Understanding the modern world (Wider world depth studies)",
+      "Topic_name": "BE Conflict and tension in the Gulf and Afghanistan, 1990–2009",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Regional instability and background tensions in the Gulf",
+          "description": "Understand sources of tension in the Gulf: consequences of the Iran–Iraq war; Western and Russian interests in/attitudes towards Iran and Iraq including the threat to oil supplies; contribution of the Israeli–Palestinian conflict to Gulf tension and to motives for global terrorism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "The Gulf War (1990): invasion of Kuwait and response",
+          "description": "Explain reasons for Iraqi invasion of Kuwait (1990); reactions and roles of Bush and Thatcher; UN campaign against Saddam Hussein; consequences of the war including US influence in the region and Arab reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Al-Qaeda and 11 September attacks",
+          "description": "Understand Al-Qaeda: its aims, and the role of Osama bin Laden; the 11 September (9/11) attacks and their significance for international relations and subsequent conflicts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Afghanistan under the Taliban and internal challenges",
+          "description": "Explain why Afghanistan was seen as a rogue state; the Taliban regime; Western and Muslim attitudes towards Taliban policies; problems faced by ethnic groups; resurgence of the Taliban.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "2001 intervention: Bush, Blair and aftermath in Afghanistan",
+          "description": "Analyse Bush’s war against terror and intervention in Afghanistan: Bush’s aims; Blair’s support; 2001 US/UK operation; overthrow and collapse of Taliban regime; UN peace conference; problems faced by Karzai’s government.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Saddam’s Iraq: repression, divisions and international attitudes",
+          "description": "Understand Saddam Hussein’s regime: treatment of Kurds and Shia Muslims; debate about Iraq’s links to Al-Qaeda and rogue state reputation; religious divisions within Iraq; international attitudes and the role of the UN.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Invasion of Iraq (2003): WMD/IAEA and the campaign",
+          "description": "Explain the invasion of Iraq 2003: IAEA inspectors and WMD issue; military campaign; Western interests including oil; opposition within Iraq and internationally; downfall of Saddam Hussein.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Impact of Iraq War: insurgency, politics and global terrorism",
+          "description": "Analyse the impact of the Iraq War: effects on Iraqi people and globally; Insurgency; elections and transfer of powers to National Assembly; global anti-US and anti-UK terrorism; 2007 US troop surge; stability of Iraq by end of Bush’s presidency.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "3.3.1",
+      "Strand": "Paper 2: Shaping the nation (Thematic studies)",
+      "Topic_name": "AA Britain: Health and the people: c1000 to the present day",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Thematic framework and factors for change in medicine",
+          "description": "Understand the thematic enquiry for medicine and public health in Britain c1000–present: track change/continuity; analyse causes, scale, nature and consequences of short/long-term developments and their impact on British society; reference wider world developments only in terms of their effects on Britain. Apply the specified factors to explanations and judgements: war; superstition and religion; chance; government; communication; science and technology; role of the individual in encouraging or inhibiting change. Be able to evaluate varying rates of change, progress, significance, and different types of causes/consequences (short/long-term; intended/unintended).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Medieval medicine: beliefs, practitioners and treatments",
+          "description": "Explain approaches to medieval medicine: natural and supernatural explanations; Hippocratic and Galenic ideas (e.g., humours) and methods/treatments; role of the medieval doctor; training; beliefs about causes of illness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Medical progress in the Middle Ages: Christianity, Islam and surgery",
+          "description": "Assess medical progress in the Middle Ages: contribution of Christianity to treatment and medical progress including hospitals; nature and importance of Islamic medicine and surgery; medieval surgery ideas and techniques.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Public health in the Middle Ages and the Black Death",
+          "description": "Understand medieval public health in towns and monasteries; explain the Black Death in Britain including contemporary beliefs about causes, treatments and prevention methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Renaissance impact: anatomy, physiology and surgical challenge",
+          "description": "Explain how the Renaissance challenged medical authority in Britain: advances in anatomy, physiology and surgery; work of Vesalius and Paré; William Harvey’s work; opposition to change and reasons for resistance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Early modern disease treatment and medical profession changes",
+          "description": "Understand dealing with disease in the early modern period: traditional and new treatments; quackery; methods of treating disease; plague; growth of hospitals; changes to training and status of surgeons and physicians; work of John Hunter.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Prevention: inoculation and Jenner’s vaccination",
+          "description": "Explain development of preventative medicine: inoculation; Edward Jenner and vaccination; opposition to vaccination and reasons for resistance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Germ Theory and bacteriology: Pasteur, Koch, Ehrlich",
+          "description": "Explain the development of Germ Theory and its impact on treatment of disease in Britain: importance of Pasteur; Robert Koch and microbe hunting; Pasteur and vaccination; Paul Ehrlich and ‘magic bullets’; links to everyday medical treatments and remedies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Revolution in surgery: anaesthetics, antiseptics and asepsis",
+          "description": "Analyse surgical revolution: development and impact of anaesthetics (including Simpson and chloroform); antiseptics (including Lister and carbolic acid); changes in surgical procedures; development of aseptic surgery.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12j",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Public health reform in industrial Britain: cholera and Public Health Acts",
+          "description": "Explain public health problems in industrial Britain; cholera epidemics; role of public health reformers; local and national government involvement including the 1848 and 1875 Public Health Acts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12k",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Modern disease treatment: pharmaceuticals and penicillin",
+          "description": "Understand modern treatment of disease: development of the pharmaceutical industry; penicillin (discovery by Fleming and subsequent development); emergence of new diseases and treatments; antibiotic resistance; alternative treatments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12l",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "War/technology and modern surgery",
+          "description": "Explain impact of war and technology on surgery: plastic surgery; blood transfusions; X-rays; transplant surgery; modern surgical methods including lasers, radiation therapy and keyhole surgery.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12m",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Modern public health and the NHS",
+          "description": "Analyse modern public health developments: importance of Booth, Rowntree and the Boer War; Liberal social reforms; impact of two world wars on public health, poverty and housing; Beveridge Report and Welfare State; creation and development of the National Health Service (NHS); costs, choices and healthcare issues in the 21st century.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "3.3.1",
+      "Strand": "Paper 2: Shaping the nation (Thematic studies)",
+      "Topic_name": "BB Britain: Power and the people: c1170 to the present day",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Thematic framework: power, protest and political development",
+          "description": "Understand the thematic enquiry into the relationship between citizen and state in Britain c1170–present: causes, scale, nature and consequences of protest and responses; journey from feudalism/serfdom to democracy/equality; how the state responds to challenges and the impact; rights and responsibilities of the citizen. Consider wider world influences on Britain. Apply factors: war; religion; chance; government; communication; economy; ideas (equality, democracy, representation); role of individuals. Evaluate rates of change, progress, significance, and types of causes/consequences (short/long-term; intended/unintended).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Magna Carta and constraints on kingship",
+          "description": "Explain barons’ dissatisfaction with King John and its resolution; terms of Magna Carta; assess its short- and long-term impact on kingship, rights and governance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Origins of Parliament: Henry III, Simon de Montfort and 1265",
+          "description": "Understand issues between Henry III and barons; role of Simon de Montfort; Provisions of Oxford; Parliament of 1265; evaluate short- and long-term impact on development of Parliament.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Peasants’ Revolt: causes, events and impact",
+          "description": "Analyse social, economic and political causes of the Peasants’ Revolt; actions of rebels and government; evaluate impact of the Revolt on royal authority and society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Pilgrimage of Grace and Tudor authority",
+          "description": "Explain social, economic, religious and political causes of the Pilgrimage of Grace; implications for royal authority; Henry VIII’s reaction; impact of the uprising.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "English Revolution and the Commonwealth",
+          "description": "Analyse causes of the English Revolution; role of the New Model Army and political radicalism during the Civil War era; assess short- and long-term impact including significance of trial and execution of Charles I, Oliver Cromwell and the Commonwealth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "American Revolution: representation and authority",
+          "description": "Explain causes of the American Revolution including relationship between government and people; assess impact and significance of the American Revolution for ideas of representation and rights.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Franchise reform: Great Reform Act and Chartism",
+          "description": "Understand extension of the franchise: radical protest; causes and impact of the Great Reform Act, including further reform; Chartism—causes, actions and impact.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13i",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Campaigning groups and social reform movements",
+          "description": "Explain protest and change through campaigning groups: methods and impact of Anti-Slavery movement; Anti-Corn Law League; factory reformers; social reformers (and how they influenced state policy).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13j",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Trade unionism and workers’ movements in the 19th century",
+          "description": "Analyse development of trade unionism and its impact: Grand National Consolidation Trades Union (GNCTU); Tolpuddle Martyrs; New Model Unions; ‘new unionism’ including match girls’ strike and dockers’ strikes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13k",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Women’s suffrage and gender equality",
+          "description": "Explain the campaign for women’s suffrage: reasons, methods and responses; role of individuals including the Pankhursts; reasons for extension of the franchise and its impact; progress towards equality in the second half of the 20th century.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13l",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Workers’ rights in the 20th century: General Strike and later reforms",
+          "description": "Understand workers’ rights developments: General Strike (1926) actions, reactions and impact; trade union reform in the late 20th century.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13m",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Minority rights since 1945 and Brixton Riots",
+          "description": "Analyse development of a multi-racial society since WWII; discrimination, protest and reform; Brixton Riots and their impact including the Scarman Report.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "3.3.1",
+      "Strand": "Paper 2: Shaping the nation (Thematic studies)",
+      "Topic_name": "AC Britain: Migration, empires and the people: c790 to the present day",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Thematic framework: migration, conquest, empire and identity",
+          "description": "Understand how British identity has been shaped by interaction with the wider world c790–present: invasions and conquests; Britain’s relationship with Europe and wider world; ebb/flow of peoples into and out of Britain; motives and achievements; acquisition and retreat from Empire and its impact/legacy for ruled and ruling. Apply factors: war; religion; government; economic resources; science and technology; ideas (imperialism, social Darwinism, civilisation); role of individuals. Evaluate rates of change, progress, significance, and short/long-term and intended/unintended consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Vikings and Anglo-Saxons: Danelaw and North Sea Empire",
+          "description": "Explain reasons for Viking invasions; creation of the Danelaw; role of Alfred and Wessex; King Cnut, Emma of Normandy and the North Sea Empire (and impacts on settlement, governance and identity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Normans, Angevin Empire and England–France–Ireland relations",
+          "description": "Understand a Norman kingdom and ‘Angevin’ Empire: relationship between England and France; Henry II; invasion of Ireland; losses under King John (and implications for power and identity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Hundred Years’ War and English identity",
+          "description": "Analyse the birth/development of English identity through the Hundred Years’ War and assess its impact on England’s future development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14e",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Caribbean sugar and the slave trade",
+          "description": "Explain looking west via Caribbean: piracy and plunder; development of the slave trade including John Hawkins; settlements in Barbados and the West Indies; economic and social impact of the slave trade on Britain.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14f",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "North American colonisation and loss of American colonies",
+          "description": "Explain British colonisation in North America: causes and consequences; Raleigh; Jamestown; contact and relations with indigenous peoples; commodities; Pilgrim Fathers; indentured servants; War of Independence and loss of American colonies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14g",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Early modern migration to/from Britain: Huguenots, clearances, Ulster",
+          "description": "Understand migrants to and from Britain: Huguenot migration; Highland clearances; Ulster plantations (motives, experiences, and impacts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14h",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "India: East India Company and British control",
+          "description": "Analyse expansion in India: causes and impact of British control; East India Company; Robert Clive; Warren Hastings; Indian Rebellion (1857); social, political, cultural and economic impact of empire on Britain and India.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14i",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Africa: Scramble, Rhodes and Boer War",
+          "description": "Explain expansion in Africa: causes and impact of British involvement; trade and missionary activity; South Africa; Egypt; Scramble for Africa; Cecil Rhodes; Boer War (1899–1902); imperial propaganda.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14j",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Industrial/imperial era migration flows",
+          "description": "Understand migrants to, from and within Britain and the Empire: Irish migration to Britain; Jewish migration to Britain; transportation; migration to and within the Empire including migration of Asians to Africa; migration from rural to urban settings.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14k",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "End of Empire: wars, Suez, and independence movements",
+          "description": "Explain reasons for and process of retreat from empire: impact of First and Second World Wars; impact of Suez; nationalism and independence in India and Africa including roles of Gandhi, Nkrumah and Kenyatta.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14l",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Legacy of Empire and post-war migration",
+          "description": "Analyse legacy of empire: Windrush and Caribbean migrants; Claudia Jones’ work in the UK; migration from Asia and Africa including role of Amin in Uganda; the Commonwealth; Falklands War (and how these shaped identity and relations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14m",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Britain and Europe: interaction and migration",
+          "description": "Understand Britain’s relationship with Europe and its impact: effects of WWII; economic, social and cultural interaction; end of Cold War and membership of the European Union; European and non-European migration (patterns and impacts).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "3.3.2",
+      "Strand": "Paper 2: Shaping the nation (British depth studies + historic environment)",
+      "Topic_name": "BA Norman England, c1066–c1100",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Succession crisis and causes of conquest (1066)",
+          "description": "Explain causes of the Norman Conquest: death of Edward the Confessor; main claimants and their claims (and why the succession crisis led to invasion).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Battles of Stamford Bridge and Hastings; tactics and castles",
+          "description": "Understand military aspects of conquest: Battle of Stamford Bridge; Battle of Hastings; compare Anglo-Saxon and Norman tactics; explain military innovations including cavalry and castles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Norman control: Harrying, revolts and William’s leadership",
+          "description": "Analyse establishing and maintaining control: Harrying of the North; revolts 1067–1075; William I’s leadership and government; William II and his inheritance (continuity/change in rule).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Feudalism, landholding, government and justice",
+          "description": "Explain feudalism and Norman governance: roles/rights/responsibilities; landholding and lordship; land distribution and patronage; compare Anglo-Saxon and Norman government systems; changes in aristocracy and society; military service; justice and legal system including ordeals and ‘murdrum’; inheritance; purpose and significance of the Domesday Book.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15e",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Economic and social life under the Normans; Forest Law",
+          "description": "Understand economic and social changes and consequences: features of Anglo-Saxon vs Norman life including towns, villages, buildings, work, food, roles and seasonal life; Forest Law and its effects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15f",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Church reforms: Lanfranc, organisation and Church–state relations",
+          "description": "Explain the Church in Norman England: features of Anglo-Saxon Church pre-1066; Archbishop Lanfranc and reforms including building churches/cathedrals; Church organisation and courts; Church–state relations; William II and the Church; wealth of the Church; relations with the Papacy; Investiture Controversy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15g",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Monasticism: reforms, learning and language",
+          "description": "Understand Norman monastic reforms: building abbeys and monasteries; monastic life; learning; schools and education; Latin usage and the vernacular (cultural impacts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15h",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Historic environment (Norman England): site study requirements",
+          "description": "Know the historic environment requirement for this depth study: historic environment is 10% of overall course (~12 hours of 120 GLH); AQA specifies a particular site to be examined in depth, changed annually and published three years in advance; no requirement to visit. Be able to answer an essay-style question applying second order concepts (change/continuity/causation/consequence) to the specified site and its relationship with wider Norman England developments. Understand how to analyse the site through: location; function; structure; people connected (designer/originator/occupants); design; how design reflects culture/values/fashions; links to events/developments from the depth study. Understand representativeness of the site and how features changed from earlier periods and during the period; make links to associated aspects such as cathedrals/abbeys/castles/towns/settlements and how trade/revolts/battles were shaped by the environment.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "3.3.2",
+      "Strand": "Paper 2: Shaping the nation (British depth studies + historic environment)",
+      "Topic_name": "BB Medieval England - the reign of Edward I, 1272–1307",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Henry III’s legacy and Edward I’s kingship",
+          "description": "Explain Henry III’s legacy: relationship between Edward and Henry III; problems faced on Edward I’s accession; relations with the nobility; Edward I’s character as a king.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Government, rights and justice reforms under Edward I",
+          "description": "Understand development of government, rights and justice: Hundred Rolls; role of Robert Burnell; Statutes of Westminster; Statutes of Mortmain; ‘Quo Warranto’ inquiries; parliaments and the ‘Model Parliament’ (1295).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16c",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Economy, trade and towns: wool, taxation and Jews (1290)",
+          "description": "Explain trade, towns and villages: agriculture and wool trade; royal finance and taxation including wool tax; Statute of Merchants; role of Italian bankers; re-coinage; expulsion of the Jews in 1290 (causes and consequences).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16d",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Education and learning: Church, universities and scholars",
+          "description": "Understand education and learning in medieval England: role of the medieval Church and universities; contributions/ideas associated with Roger Bacon and Duns Scotus.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16e",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Legal system and crime: courts, punishments and statutes",
+          "description": "Explain development of the legal system: laws and courts; trials; crimes; criminals and punishments; Statutes of Gloucester (1278) and Winchester (1285) and their impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16f",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Medieval warfare: tactics and technology",
+          "description": "Understand medieval warfare tactics and technology: siege warfare; battlefield use of cavalry and infantry; weapons and armour (and how these shaped campaigns).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16g",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Wales: conquest, colonisation and castles",
+          "description": "Explain invasion and colonisation of Wales: Edward’s Welsh Wars (1277 and 1282–1283); Statute of Rhuddlan; castle building; costs and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16h",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Scotland: succession, Wallace and war of independence",
+          "description": "Analyse relations with Scotland: ‘Great Cause’ and Scottish succession; Balliol and Bruce; Scottish campaigns; William Wallace; First War of Scottish Independence from 1297 to Edward I’s death; evaluate Edward I’s reputation as ‘Hammer of the Scots’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16i",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Historic environment (Edward I): site study requirements",
+          "description": "Know the historic environment requirement for this depth study: historic environment is 10% (~12 hours of 120 GLH); AQA specifies an annually changing site linked to Edward I content and published three years in advance; no visit required. Be able to answer a question applying change/continuity/causation/consequence to the specified site in its wider medieval context. Analyse site via location; function; structure; associated people; design and cultural values; and links to events/developments (trade, towns/villages, churches, manor houses/castles, revolts/battles/wars). Understand representativeness and how features changed from earlier periods and within the period studied.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "3.3.2",
+      "Strand": "Paper 2: Shaping the nation (British depth studies + historic environment)",
+      "Topic_name": "BC Elizabethan England, c1568–1603",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Elizabeth I’s character, court and ministers",
+          "description": "Understand Elizabeth I and her court: Elizabeth’s background and character; court life including patronage; roles and importance of key ministers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Female rule: Parliament, marriage, succession and authority",
+          "description": "Explain difficulties of a female ruler: relations with Parliament; the problem of marriage and succession; assess strength of Elizabeth’s authority by end of reign including Essex’s rebellion (1601).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Golden Age culture: living standards, gentry and theatre",
+          "description": "Understand ‘Golden Age’ claims and reality: living standards and fashions; growing prosperity and rise of the gentry; Elizabethan theatre and achievements; attitudes to the theatre.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Poverty and Poor Laws",
+          "description": "Explain reasons for increase in poverty; contemporary attitudes and responses; reasons for government action and evaluate seriousness of the problem (policy responses).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17e",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "English sailors, exploration and trade",
+          "description": "Understand role of English sailors: Hawkins and Drake; circumnavigation 1577–1580; voyages and trade; role of Raleigh (motives, methods, outcomes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17f",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Religious settlement and threats: rebellion, plots, Puritans",
+          "description": "Analyse religious matters: English Catholicism and Protestantism; Northern Rebellion; Elizabeth’s excommunication; missionaries; Catholic plots and threats to settlement; nature/ideas of Puritans and Puritanism; Elizabeth’s and government responses and policies towards religion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17g",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Mary Queen of Scots: challenge and execution",
+          "description": "Explain the challenge of Mary Queen of Scots: her background; treatment by Elizabeth and Parliament; plots; execution and its impact on domestic/foreign policy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17h",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Spain and the Armada",
+          "description": "Understand conflict with Spain: reasons; events; naval warfare tactics and technology; defeat of the Spanish Armada (causes and significance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17i",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Historic environment (Elizabethan): site study requirements",
+          "description": "Know the historic environment requirement for this depth study: historic environment is 10% (~12 hours of 120 GLH); AQA specifies an annually changing site linked to Elizabethan England, published three years in advance; no visit required. Answer a question applying change/continuity/causation/consequence to the specified site and wider Elizabethan developments. Analyse site via location; function; structure; associated people; design and cultural values/fashions; links to events/developments (Tudor manor houses/gardens, theatres, villages/towns/cities, voyages/trade, revolts, battles). Understand representativeness and how features changed from earlier periods and within the period studied.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "3.3.2",
+      "Strand": "Paper 2: Shaping the nation (British depth studies + historic environment)",
+      "Topic_name": "BD Restoration England, 1660–1685",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Restoration settlement: Crown, Parliament and politics",
+          "description": "Explain Crown and Parliament issues: legacy of Civil War and Commonwealth; restoration of monarchy; succession issue; relations/issues with Parliament including finance and religion; Cabal and emergence of ‘party politics’; Charles II’s rule without Parliament from 1681.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Catholic question: plots and Exclusion Crisis",
+          "description": "Analyse the Catholic question: Titus Oates and the Popish Plot; Rye House Plot; Exclusion Bill (1679); role and significance of James, Duke of York.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18c",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Charles II’s court culture and character",
+          "description": "Understand Charles II’s character; court life; fashions; and the political/cultural role of the court.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18d",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Great Plague (1665) and Fire of London (1666)",
+          "description": "Explain crises of Restoration London: Great Plague of 1665 (causes, contemporary views, measures to combat, records, results); Fire of London 1666 (causes, contemporary views, results and reconstruction).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18e",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Restoration culture: theatre, women, coffee houses, science and architecture",
+          "description": "Understand Restoration culture: Restoration comedy/theatres/playwrights; role and status of women; coffee houses; Charles II’s patronage of arts and sciences including the Royal Society; Samuel Pepys; architecture and design including Christopher Wren.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18f",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Empire and land: trading companies and colonies",
+          "description": "Explain land/imperial developments: powers of the East India Company; acquisition/significance of Bombay; Hudson Bay; Tangier; Captain Henry Morgan and Jamaica (and how these linked to trade/war).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18g",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Trade policy: mercantilism, Navigation Acts and slave trade",
+          "description": "Analyse Restoration trade: mercantilism; Navigation Acts and their impact; slave trade (role in economy and empire).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18h",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "War at sea: Dutch Wars and foreign relations",
+          "description": "Understand English sea power and naval warfare (tactics and technology); conflict with the Dutch including Second and Third Dutch Wars; relations with Spain and France (causes and consequences).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18i",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Historic environment (Restoration): site study requirements",
+          "description": "Know the historic environment requirement for this depth study: historic environment is 10% (~12 hours of 120 GLH); annually changing AQA-specified site linked to Restoration England, published three years in advance; no visit required. Answer an extended question applying change/continuity/causation/consequence to the specified site and wider Restoration developments. Analyse site via location; function; structure; associated people; design and cultural values/fashions; links to events/developments (stately homes/gardens, theatres, villages/towns/cities; trade; plots; revolts; battles). Understand representativeness and how features changed from earlier periods and within the period studied.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "4.2",
+      "Strand": "Assessment objectives and exam skills",
+      "Topic_name": "Assessment objectives",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO1: Knowledge and understanding",
+          "description": "AO1 requirements: demonstrate knowledge and understanding of the key features and characteristics of the period studied, including accurate and relevant detail used to support explanations and judgements across all studied options.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO2: Second-order concepts (analysis/explanation)",
+          "description": "AO2 requirements: explain and analyse historical events and periods using second-order historical concepts: continuity, change, cause, consequence, significance, similarity and difference; apply these concepts to construct explanations and reach substantiated conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19c",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO3: Sources (analysis, evaluation, use)",
+          "description": "AO3 requirements: analyse, evaluate and use contemporary sources to make substantiated judgements in context; includes using content, provenance and contextual knowledge to assess usefulness/utility and reach supported conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19d",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO4: Interpretations (analysis, evaluation, judgement)",
+          "description": "AO4 requirements: analyse, evaluate and make substantiated judgements about interpretations (including understanding how and why interpretations may differ) in the context of historical events studied; does not require historiography beyond evaluating given interpretations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 20,
+      "Specification_section": "4.4.1",
+      "Strand": "Assessment structure (Paper 1)",
+      "Topic_name": "Paper 1: Understanding the modern world",
+      "Sub_topics": [
+        {
+          "subtopic_id": "20a",
+          "Specification_section_sub": "4.4.1",
+          "Sub_topic_name": "Section A question types (Period study)",
+          "description": "Know Paper 1 Section A structure and skills: six compulsory questions (40 marks) including three AO4 interpretation questions (how interpretations differ; why interpretations differ; how convincing interpretations are), one AO1 ‘Describe…’ question on two key features/characteristics, one AO2 change question supported by AO1 knowledge, and one extended judgement essay (AO1+AO2) focused on causation/consequence/change/continuity across identified aspects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20b",
+          "Specification_section_sub": "4.4.1",
+          "Sub_topic_name": "Section B question types (Wider world depth study)",
+          "description": "Know Paper 1 Section B structure and skills: four compulsory questions (40 marks) per depth study: (1) AO3 source analysis (one source); (2) AO3 usefulness/utility of sources (two sources; written/visual); (3) AO1+AO2 ‘Write an account…’ narrative focusing on cause/consequence; (4) extended judgement essay (AO1+AO2) using second-order concepts; plus SPaG marks available on the final essay question.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20c",
+          "Specification_section_sub": "4.4.1",
+          "Sub_topic_name": "Paper 1 marks, time and weighting",
+          "description": "Know Paper 1 assessment details: written exam 2 hours; 84 marks including 4 SPaG; accounts for 50% of GCSE; Section A 40 marks, Section B 40 marks, plus 4 SPaG.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 21,
+      "Specification_section": "4.4.2",
+      "Strand": "Assessment structure (Paper 2)",
+      "Topic_name": "Paper 2: Shaping the nation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "21a",
+          "Specification_section_sub": "4.4.2",
+          "Sub_topic_name": "Section A question types (Thematic study)",
+          "description": "Know Paper 2 Section A structure and skills: four compulsory questions (40 marks): (1) AO3 usefulness of a source using content/provenance/context; (2) AO1+AO2 significance (importance at the time and over time); (3) AO1+AO2 similarity/difference comparison; (4) extended judgement essay (AO1+AO2) evaluating one stated factor against others (eg war, religion, chance, government, communication, science/technology, role of individual) across all four parts of the thematic content; SPaG marks available on the essay.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21b",
+          "Specification_section_sub": "4.4.2",
+          "Sub_topic_name": "Section B question types (British depth study + historic environment)",
+          "description": "Know Paper 2 Section B structure and skills: four questions (40 marks): (1) AO4 evaluation of one interpretation (visual or written) using contextual knowledge; (2) AO1+AO2 explanation applying causation/change/continuity/consequence; (3) AO1+AO2 ‘Write an account…’ narrative applying cause/change/continuity/consequence; (4) AO1+AO2 extended essay linked to the specified historic environment site, focusing on relationship between site and wider events/developments and applying change/continuity/cause/consequence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21c",
+          "Specification_section_sub": "4.4.2",
+          "Sub_topic_name": "Paper 2 marks, time and weighting",
+          "description": "Know Paper 2 assessment details: written exam 2 hours; 84 marks including 4 SPaG; accounts for 50% of GCSE; Section A 40 marks, Section B 40 marks, plus 4 SPaG.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 22,
+      "Specification_section": "4.4.3",
+      "Strand": "Assessment structure (SPaG)",
+      "Topic_name": "Spelling, punctuation and grammar (SPaG)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "22a",
+          "Specification_section_sub": "4.4.3",
+          "Sub_topic_name": "SPaG performance descriptors",
+          "description": "Know how SPaG marks are awarded in extended responses: High performance (4 marks) = consistent spelling/punctuation accuracy; effective grammar control of meaning; wide range of specialist terms. Intermediate (2–3 marks) = considerable accuracy; general grammar control; good range of specialist terms. Threshold (1 mark) = reasonable accuracy; some control of meaning; limited specialist terms. 0 marks if nothing written, not related, or errors severely hinder meaning.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

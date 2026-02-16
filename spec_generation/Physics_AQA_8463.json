@@ -1,0 +1,1036 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Physics",
+  "Exam Board": "AQA",
+  "Specification": "8463",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "4.1",
+      "Strand": "Physics",
+      "Topic_name": "Energy",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "4.1.1.1",
+          "Sub_topic_name": "Energy stores, systems and energy transfers",
+          "description": "Define a system as an object or group of objects and describe that when a system changes there are changes in the way energy is stored. For common situations (object projected upwards; moving object hitting an obstacle; object accelerated by a constant force; vehicle slowing down; heating water to boil in an electric kettle), describe all changes in energy stores before/after the change. Calculate changes in energy when a system is changed by heating, by work done by forces (mechanical work), and by work done when a current flows (electrical work). Use calculations to show on a common scale how total energy in a system is redistributed during a change (energy conserved but transferred between stores).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "4.1.1.2",
+          "Sub_topic_name": "Kinetic, gravitational potential and elastic potential energy",
+          "description": "Calculate energies associated with: moving objects, stretched/compressed springs (within the limit of proportionality), and objects raised above ground level. Apply equations: kinetic energy Ek = 1/2 m v^2 (J; m in kg; v in m s^-1); elastic potential energy Ee = 1/2 k e^2 (J; k in N m^-1; extension e in m, assuming limit of proportionality not exceeded); gravitational potential energy Ep = m g h (J; m in kg; g in N kg^-1 provided in calculations; h in m).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "4.1.1.3",
+          "Sub_topic_name": "Thermal energy change, specific heat capacity and required practical: SHC",
+          "description": "Calculate energy stored/released when temperature changes using ΔE = m c Δθ where ΔE is change in thermal (internal) energy in J, m in kg, c is specific heat capacity in J kg^-1 °C^-1, Δθ in °C. Define specific heat capacity as energy required to raise temperature of 1 kg of a substance by 1 °C. Required practical activity 1: determine specific heat capacity of one or more materials by linking decrease of one energy store (or work done) to temperature increase and increase in thermal energy stored (measure mass, time, temperature; safe energy transfer measurement).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "4.1.1.4",
+          "Sub_topic_name": "Power as rate of energy transfer / work done",
+          "description": "Define power as the rate at which energy is transferred or the rate at which work is done. Apply P = E/t and P = W/t (P in watts W; E and W in joules J; t in seconds s). Know that 1 J s^-1 = 1 W. Use examples comparing devices doing same work/energy transfer in different times (e.g., two motors lifting same weight through same height at different speeds).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "4.1.2.1",
+          "Sub_topic_name": "Conservation of energy and dissipation (wasted energy), thermal conductivity and insulation practical",
+          "description": "State energy cannot be created or destroyed; it can be transferred usefully, stored, or dissipated. In a closed system describe with examples that total energy has no net change (energy conserved). Explain that in all changes energy is dissipated into less useful stores (‘wasted’), often as heating of surroundings. Explain methods to reduce unwanted energy transfers (e.g., lubrication to reduce friction; thermal insulation to reduce heating). Relate rate of energy transfer by conduction to thermal conductivity: higher thermal conductivity → higher rate of conduction through a material; describe how rate of cooling of a building depends on thickness and thermal conductivity of walls (no definition of thermal conductivity required). Required practical activity 2 (physics only): investigate effectiveness of different materials as thermal insulators and factors affecting insulation properties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "4.1.2.2",
+          "Sub_topic_name": "Efficiency",
+          "description": "Calculate energy efficiency using efficiency = useful output energy transfer / total input energy transfer, and using power form efficiency = useful power output / total power input. Express efficiency as decimal or percentage. Describe (Higher Tier only) ways to increase efficiency of an intended energy transfer (reducing unwanted transfers, improving useful transfer).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "4.1.3",
+          "Sub_topic_name": "National and global energy resources (renewable vs non-renewable; impacts and reliability)",
+          "description": "Know the main energy resources: fossil fuels (coal, oil, gas), nuclear fuel, bio-fuel, wind, hydro-electricity, geothermal, tides, Sun, water waves. Define renewable as replenished as it is used; distinguish renewable vs non-renewable. Compare how different resources are used (transport, electricity generation, heating) and understand why some resources are more reliable than others. Describe environmental impacts of using different energy resources and explain patterns/trends in energy resource use. Note: detailed descriptions of how resources generate electricity are not required. Evaluate environmental issues and explain that science can identify issues but may not solve them due to political, social, ethical, economic considerations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "4.2",
+      "Strand": "Physics",
+      "Topic_name": "Electricity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "4.2.1.1",
+          "Sub_topic_name": "Standard circuit symbols and circuit diagrams",
+          "description": "Use standard circuit diagram symbols; draw and interpret circuit diagrams for common components and measuring devices.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "4.2.1.2",
+          "Sub_topic_name": "Charge and current (Q = I t) and current in a single loop",
+          "description": "Explain that for charge to flow in a closed circuit there must be a source of potential difference. Define electric current as rate of flow of electrical charge. Apply Q = I t (Q in coulombs C; I in amperes A; t in seconds s). State that current has the same value at any point in a single closed loop.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "4.2.1.3",
+          "Sub_topic_name": "Potential difference, current and resistance (V = I R) and required practical: resistance factors",
+          "description": "Explain qualitatively that current through a component depends on resistance and potential difference; greater resistance gives smaller current for a given potential difference. Use term potential difference (credit also for voltage). Apply V = I R (V in volts; I in A; R in ohms Ω). Required practical activity 3: use circuit diagrams to set up/check circuits investigating factors affecting resistance, including length of wire at constant temperature and resistor combinations in series and parallel.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "4.2.1.4",
+          "Sub_topic_name": "Ohmic conductors and non-ohmic components (lamps, diodes, thermistors, LDRs); resistance measurement; I–V characteristics practical",
+          "description": "Explain that some resistors have constant R but others change as current changes. Ohmic conductor at constant temperature: I directly proportional to V so resistance constant (linear I–V). Non-ohmic components: filament lamp resistance increases as filament temperature increases; diode conducts one direction only and has very high resistance in reverse; thermistor resistance decreases as temperature increases (applications e.g. thermostat); LDR resistance decreases as light intensity increases (applications e.g. automatic lighting). Design/use a circuit to measure resistance of a component by measuring current through and potential difference across it; draw appropriate circuit with correct symbols. Use graphs to determine whether elements are linear/non-linear and relate I–V curves to properties/functions. Required practical activity 4: construct circuits and investigate I–V characteristics of filament lamp, diode and resistor at constant temperature.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "4.2.2",
+          "Sub_topic_name": "Series and parallel circuits (qualitative rules and series calculations)",
+          "description": "Describe series vs parallel connections (including mixed circuits). Series: same current through each component; supply p.d. shared; total resistance of two components adds: R_total = R1 + R2. Parallel: p.d. same across each component; total current equals sum of branch currents; total resistance of two resistors is less than the smallest individual resistor (qualitative). Construct/check series and parallel circuits using circuit diagrams and common components; describe differences; explain qualitatively why series increases total resistance and parallel decreases it; explain design/use of dc series circuits for measurement/testing; calculate currents, potential differences and resistances in dc series circuits and solve problems using equivalent resistance for resistors in series. Not required: calculation of total resistance of two resistors in parallel.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "4.2.3.1",
+          "Sub_topic_name": "Direct and alternating potential difference; mains frequency and voltage",
+          "description": "Explain difference between direct (dc) and alternating (ac) potential difference. Know UK mains electricity is ac with frequency 50 Hz and about 230 V.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "4.2.3.2",
+          "Sub_topic_name": "Mains electricity wiring and safety (live, neutral, earth)",
+          "description": "Describe three-core cable and wire colour codes: live = brown, neutral = blue, earth = green/yellow stripes. Explain roles: live carries alternating p.d.; neutral completes circuit; earth is safety wire to stop appliance becoming live. Know p.d. between live and earth is about 230 V; neutral is at or close to earth potential (0 V); earth at 0 V and carries current only if fault. Explain that live wire may be dangerous even with switch open; explain dangers of any connection between live wire and earth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "4.2.4.1",
+          "Sub_topic_name": "Electrical power in circuits (P = V I and P = I^2 R)",
+          "description": "Relate power transfer to potential difference and current, and to energy changes over time. Apply P = V I and P = I^2 R (P in W; V in V; I in A; R in Ω).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "4.2.4.2",
+          "Sub_topic_name": "Energy transfer by electrical work (E = P t and E = Q V); appliances and power ratings",
+          "description": "Explain that appliances are designed to transfer energy; energy transferred depends on time on and power rating. Describe how appliances transfer energy from batteries or ac mains to kinetic energy in motors or heating. Explain that work is done when charge flows. Apply E = P t and E = Q V (E in J; P in W; t in s; Q in C; V in V). Explain how power relates to p.d. and current and to energy transferred in a given time. Describe with examples relationship between appliance power ratings and changes in stored energy when in use.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "4.2.4.3",
+          "Sub_topic_name": "The National Grid and efficient power transmission",
+          "description": "Describe National Grid as system of cables and transformers linking power stations to consumers. Explain power transfer using step-up transformers (increase p.d. for transmission) and step-down (decrease p.d. for domestic use). Explain why using the National Grid with high p.d. is an efficient way to transfer energy (reduced current for same power, hence reduced heating losses in cables).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "4.2.5.1",
+          "Sub_topic_name": "Static electricity: charging by friction, forces and electron transfer (physics only)",
+          "description": "Describe how rubbing insulating materials transfers electrons: material gaining electrons becomes negatively charged; material losing electrons becomes positively charged (equal magnitude). Describe that charged objects exert forces without contact: like charges repel, unlike attract; these are non-contact forces. Describe production of static electricity and sparking by rubbing; describe evidence of attraction/repulsion without contact; explain static phenomena using electron transfer model.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "4.2.5.2",
+          "Sub_topic_name": "Electric fields around charges (physics only)",
+          "description": "Explain that a charged object creates an electric field around itself; field strength is greatest near the charge and decreases with distance. A second charged object in the field experiences a force increasing as separation decreases. Draw electric field pattern for an isolated charged sphere. Explain the concept of an electric field and how it explains non-contact forces and electrostatic phenomena such as sparking.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "4.3",
+      "Strand": "Physics",
+      "Topic_name": "Particle model of matter",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "4.3.1.1",
+          "Sub_topic_name": "Density and particle model of solids, liquids and gases; required practical: density",
+          "description": "Define density by ρ = m/V (ρ in kg m^-3; m in kg; V in m^3). Apply to changes where mass is conserved. Use particle model to explain different states of matter and differences in density; recognise/draw simple particle diagrams for solids, liquids and gases; explain density differences in terms of arrangement of atoms/molecules. Required practical activity 5: measure densities of regular solids, irregular solids (displacement), and liquids using appropriate measurements (dimensions via ruler/micrometer/Vernier; mass and volume).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "4.3.1.2",
+          "Sub_topic_name": "Changes of state and conservation of mass",
+          "description": "Describe that when substances change state (melt, freeze, boil, evaporate, condense, sublimate), mass is conserved. Explain changes of state are physical changes (not chemical) and original properties are recovered if reversed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "4.3.2.1",
+          "Sub_topic_name": "Internal energy (kinetic + potential of particles) and heating effects",
+          "description": "Explain internal energy as energy stored by particles (atoms/molecules) inside a system; internal energy = total kinetic energy + total potential energy of all particles. Explain heating increases energy of particles, changing internal energy, which either raises temperature (increases particle kinetic energy) or causes change of state (involves potential energy changes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "4.3.2.2",
+          "Sub_topic_name": "Specific heat capacity and temperature change (ΔE = m c Δθ)",
+          "description": "Explain that temperature rise depends on mass, material, and energy input. Apply ΔE = m c Δθ to calculate energy change when temperature of a material changes; define specific heat capacity as energy to raise temperature of 1 kg by 1 °C.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "4.3.2.3",
+          "Sub_topic_name": "Latent heat and specific latent heat (E = m L); heating/cooling graphs",
+          "description": "Explain latent heat as energy needed for a substance to change state; during change of state energy supplied changes internal energy but not temperature. Define specific latent heat as energy to change state of 1 kg with no temperature change. Apply E = m L (E in J; m in kg; L in J kg^-1). Distinguish specific latent heat of fusion (solid↔liquid) and vaporisation (liquid↔vapour). Interpret heating and cooling graphs including plateaus during changes of state. Distinguish between specific heat capacity and specific latent heat.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "4.3.3.1",
+          "Sub_topic_name": "Particle motion in gases: temperature and pressure at constant volume",
+          "description": "State gas molecules are in constant random motion; temperature relates to average kinetic energy of molecules. Explain qualitatively how changing temperature of a gas at constant volume changes pressure using particle collision model; relate molecule motion to both temperature and pressure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "4.3.3.2",
+          "Sub_topic_name": "Gas pressure, volume and Boyle’s law (pV = constant) (physics only)",
+          "description": "Explain that gases can be compressed/expanded; pressure produces a net force normal to container walls/surfaces. Use particle model to explain that increasing volume of gas at constant temperature decreases pressure (fewer collisions per unit area). For fixed mass at constant temperature apply pV = constant (p in Pa; V in m^3) to calculate changes in pressure or volume when one is changed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "4.3.3.3",
+          "Sub_topic_name": "Work done on a gas increases internal energy and temperature (HT only)",
+          "description": "Use work as energy transfer by a force. Explain in contexts (e.g. bicycle pump) that doing work on an enclosed gas increases internal energy and can increase the gas temperature.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "4.4",
+      "Strand": "Physics",
+      "Topic_name": "Atomic structure",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.4.1.1",
+          "Sub_topic_name": "Structure and size of the atom; electron energy levels",
+          "description": "Know atoms have radius about 1 × 10^-10 m; nucleus is positively charged and contains protons and neutrons, surrounded by negatively charged electrons. Nucleus radius is less than 1/10 000 of atom radius; most mass concentrated in nucleus. Electrons occupy different energy levels (different distances). Explain electron arrangement changes by absorption of electromagnetic radiation (electron moves to higher energy level further from nucleus) or emission (moves to lower energy level closer to nucleus). Recognise standard form in such contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.4.1.2",
+          "Sub_topic_name": "Atomic number, mass number, isotopes and ions",
+          "description": "State in a neutral atom number of electrons equals number of protons (no overall charge). All atoms of an element have same number of protons; atomic number = number of protons. Mass number = number of protons + neutrons. Interpret nuclide notation (e.g. ^23_11Na). Define isotopes as atoms of same element with different numbers of neutrons. Explain atoms form positive ions by losing one or more outer electrons. Relate isotope differences to representations of identity, charge and mass.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.4.1.3",
+          "Sub_topic_name": "Development of the atomic model (plum pudding → nuclear → Bohr → proton → neutron)",
+          "description": "Explain that new experimental evidence can change/replace scientific models. Describe: pre-electron model (tiny indivisible spheres); discovery of electron leading to plum pudding model (positive ‘ball’ with embedded electrons); alpha scattering experiment leading to nuclear model (mass concentrated at centre; nucleus charged) replacing plum pudding; Bohr model with electrons orbiting at specific distances/energy levels with theoretical calculations matching observations; later subdivision of nuclear positive charge into protons; Chadwick’s evidence for neutrons in nucleus ~20 years after nucleus accepted. Explain why scattering evidence led to change in model and differences between plum pudding and nuclear model. Details of Bohr supporting experiments and Chadwick’s experimental method not required. Include peer review/scientific development over time ideas where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.4.2.1",
+          "Sub_topic_name": "Radioactive decay, activity, count-rate and types of nuclear radiation",
+          "description": "Explain some nuclei are unstable and emit radiation as they change to become more stable; radioactive decay is random. Define activity as rate of decay (Bq). Define count-rate as number of decays recorded per second by a detector (e.g. Geiger–Muller tube). Identify emitted nuclear radiation: alpha (α) = 2 protons + 2 neutrons (helium nucleus); beta (β) = high-speed electron ejected when neutron turns into proton; gamma (γ) = electromagnetic radiation from nucleus; neutron (n). Required properties knowledge limited to penetration through materials, range in air, and ionising power for α, β, γ. Apply this to uses of radiation and evaluate best source for a given situation (balancing penetration/ionisation and safety).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Nuclear equations for alpha and beta decay; gamma emission",
+          "description": "Use nuclear equations to represent decay. Represent alpha as ^4_2He and beta as ^0_-1e. Understand emission can change mass number and/or atomic number: alpha decreases both; beta leaves mass same but increases atomic number by 1; gamma causes no change to mass or charge. Write balanced nuclear equations for single α and β decay by balancing mass number and atomic number (identifying daughter element not required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.4.2.3",
+          "Sub_topic_name": "Half-life and randomness; half-life calculations",
+          "description": "Explain radioactive decay is random and relate this to the concept of half-life: time for number of nuclei in a sample to halve, or for count-rate/activity to fall to half its initial value. Determine half-life from given information (tables/graphs). Calculate (Higher Tier only) net decline as a ratio after a given number of half-lives (repeated halving).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.4.2.4",
+          "Sub_topic_name": "Radioactive contamination vs irradiation; precautions and peer review",
+          "description": "Define radioactive contamination as unwanted presence of radioactive materials on/in other materials; hazard is due to decay of contaminating atoms and depends on radiation type. Define irradiation as exposing an object to nuclear radiation; irradiated object does not become radioactive. Compare hazards of contamination vs irradiation. Explain need for suitable precautions to protect against hazards from sources used in irradiation. Explain importance of publishing and sharing studies on radiation effects for checking by peer review.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.4.3.1",
+          "Sub_topic_name": "Background radiation and dose",
+          "description": "Describe sources of background radiation: natural (rocks, cosmic rays) and man-made (fallout from weapons testing and nuclear accidents). Explain background level/dose varies with occupation and/or location. Define radiation dose measured in sieverts (Sv) with 1000 mSv = 1 Sv; unit recall not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "4.4.3.2",
+          "Sub_topic_name": "Half-life and hazard (short vs long half-life)",
+          "description": "Explain radioactive isotopes have wide range of half-lives and that hazards differ with half-life: short half-life → high activity (high count-rate) but short-lived; long half-life → lower activity but remains hazardous for long time. Use and interpret data including standard form values for half-life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "4.4.3.3",
+          "Sub_topic_name": "Uses of nuclear radiation in medicine and risk evaluation",
+          "description": "Describe and evaluate uses of nuclear radiation for exploration of internal organs (tracers/imaging) and for control/destruction of unwanted tissue (radiotherapy). Evaluate perceived risks of using nuclear radiation using given data and consequences (radiation type, dose, benefits vs harms).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "4.4.4.1",
+          "Sub_topic_name": "Nuclear fission and chain reactions (physics only)",
+          "description": "Define nuclear fission as splitting a large unstable nucleus (e.g. uranium, plutonium). Explain spontaneous fission is rare; usually nucleus must absorb a neutron. Describe products: two smaller nuclei of roughly equal size plus 2 or 3 neutrons and gamma rays; energy released; fission products have kinetic energy. Explain/interpret chain reaction as emitted neutrons causing further fissions; controlled in nuclear reactor vs uncontrolled in nuclear weapon. Draw/interpret diagrams of fission and chain reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "4.4.4.2",
+          "Sub_topic_name": "Nuclear fusion (physics only)",
+          "description": "Define nuclear fusion as joining two light nuclei to form a heavier nucleus; explain that in the process some mass may be converted into energy of radiation.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "4.5",
+      "Strand": "Physics",
+      "Topic_name": "Forces",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "4.5.1.1",
+          "Sub_topic_name": "Scalars and vectors",
+          "description": "Distinguish scalar quantities (magnitude only) from vector quantities (magnitude and direction). Represent vectors with arrows where arrow length shows magnitude and arrow direction shows vector direction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "4.5.1.2",
+          "Sub_topic_name": "Contact and non-contact forces; force pairs",
+          "description": "Define a force as a push/pull due to interaction between objects. Classify forces as contact (objects touching: friction, air resistance/drag, tension, normal contact force) or non-contact (objects separated: gravitational, electrostatic, magnetic). Recognise force is a vector. Describe interactions between pairs of objects producing forces on each object and represent forces as vectors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "4.5.1.3",
+          "Sub_topic_name": "Weight, mass and gravitational field strength (W = m g); centre of mass",
+          "description": "Define weight as force due to gravity; explain gravitational field around Earth causes gravity. Weight depends on gravitational field strength g at location. Apply W = m g (W in N; m in kg; g in N kg^-1 given when needed). Understand weight acts at centre of mass. Recognise weight is directly proportional to mass (W ∝ m). Measure weight using a calibrated spring balance/newtonmeter.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "4.5.1.4",
+          "Sub_topic_name": "Resultant force, balanced forces and free-body diagrams; resolving forces (HT)",
+          "description": "Define resultant force as single force with same effect as all forces acting together. Calculate resultant of two colinear forces. (Higher Tier only) Describe forces on isolated objects/systems; use free body diagrams to represent multiple forces and identify equilibrium/balanced forces (resultant zero). (Higher Tier only) Resolve a single force into two perpendicular components; use scale vector diagrams to determine resultant of two forces including magnitude and direction, and illustrate resolution and equilibrium situations.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "4.5.2",
+          "Sub_topic_name": "Work done by a force and energy transfer (W = F s)",
+          "description": "Explain work is done when a force causes a displacement; work done by a force transfers energy. Apply W = F s where s is distance moved along the line of action of the force (W in J; F in N; s in m). Know 1 J = 1 N m and convert between joules and newton-metres. Explain work done against friction increases temperature of objects/surroundings (dissipated energy).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "4.5.3",
+          "Sub_topic_name": "Forces and elasticity: Hooke’s law, limit of proportionality, spring constant, elastic potential energy and required practical",
+          "description": "Give examples of forces involved in stretching, bending, compressing. Explain that changing shape of a stationary object requires more than one force (e.g. equal and opposite forces). Distinguish elastic deformation (returns to original shape) vs inelastic deformation (permanent). Describe that extension of an elastic object is directly proportional to force provided limit of proportionality not exceeded (Hooke’s law). Apply F = k e (F in N; k in N m^-1; e in m) for extension or compression. Describe linear vs non-linear force–extension relationships; calculate spring constant in linear region; interpret force–extension data/graphs. Calculate work done in stretching/compressing spring up to limit of proportionality using Ee = 1/2 k e^2 and relate to energy stored (elastic potential energy equals work done if not inelastically deformed). Required practical activity 6: investigate relationship between force and extension for a spring.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "4.5.4",
+          "Sub_topic_name": "Moments, levers and gears (physics only)",
+          "description": "Describe examples where forces cause rotation. Define moment (turning effect) and apply M = F d where d is perpendicular distance from pivot to line of action (M in N m; F in N; d in m). Use principle of moments for equilibrium: total clockwise moment about pivot equals total anticlockwise moment. Calculate force or distance for balanced objects. Explain qualitatively how simple levers and gear systems transmit rotational effects of forces.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "4.5.5.1.1",
+          "Sub_topic_name": "Pressure in fluids: pressure from force and area (p = F/A)",
+          "description": "Define a fluid as a liquid or gas. Explain pressure in fluids causes a force normal to surfaces. Apply p = F/A (p in Pa; F in N; A in m^2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "4.5.5.1.2",
+          "Sub_topic_name": "Liquid pressure with depth; upthrust; floating and sinking (HT only)",
+          "description": "(Higher Tier only) Calculate pressure due to a column of liquid: p = h ρ g where h is height/depth of liquid column in m, ρ in kg m^-3, g in N kg^-1 (given). Explain why pressure increases with depth/column height and with density. Calculate pressure differences at different depths. Explain upthrust as resultant upward force due to greater pressure on bottom surface than top for partially/totally submerged objects. Describe factors influencing floating and sinking (relative density/weight vs upthrust).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "4.5.5.2",
+          "Sub_topic_name": "Atmospheric pressure and variation with height",
+          "description": "Describe Earth’s atmosphere as thin layer of air; becomes less dense with altitude. Explain atmospheric pressure as due to air molecules colliding with surfaces. Explain why pressure decreases with height: fewer air molecules/less weight of air above. Describe simple model of atmosphere and explain variation with altitude.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "4.5.6.1.1",
+          "Sub_topic_name": "Distance vs displacement",
+          "description": "Define distance as how far an object moves (scalar, no direction). Define displacement as straight-line distance from start to finish with direction (vector). Express displacement with magnitude and direction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "4.5.6.1.2",
+          "Sub_topic_name": "Speed and average speed; typical speeds; s = v t",
+          "description": "Define speed as scalar; recognise speeds vary in real life. Recall typical speeds: walking ≈ 1.5 m/s, running ≈ 3 m/s, cycling ≈ 6 m/s; and typical values for different transport systems (as context). Know typical speed of sound in air ≈ 330 m/s. Measure distance and time to calculate speed. Apply s = v t for constant speed (s in m; v in m s^-1; t in s). Calculate average speed for non-uniform motion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "4.5.6.1.3",
+          "Sub_topic_name": "Velocity vs speed; circular motion (HT)",
+          "description": "Define velocity as speed in a given direction (vector). Explain vector–scalar distinction for displacement/distance and velocity/speed. (Higher Tier only) Explain qualitatively with examples that circular motion can involve constant speed but changing velocity (direction changes).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "4.5.6.1.4",
+          "Sub_topic_name": "Distance–time graphs and speed from gradient (tangent for acceleration HT)",
+          "description": "Represent motion along a line with distance–time graphs. Determine speed from gradient of a distance–time graph. Draw distance–time graphs from measurements; extract/interpret slopes and translate between graphical and numerical data. (Higher Tier only) For accelerating objects determine instantaneous speed by drawing a tangent and measuring gradient at a point.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "4.5.6.1.5",
+          "Sub_topic_name": "Acceleration: a = Δv/t; velocity–time graphs; area under graph (HT); v^2 - u^2 = 2 a s; terminal velocity",
+          "description": "Calculate average acceleration using a = Δv/t (a in m s^-2; Δv in m s^-1; t in s). Recognise deceleration as negative acceleration; estimate magnitudes of everyday accelerations. Determine acceleration from gradient of a velocity–time graph; draw and interpret velocity–time graphs from measurements. (Higher Tier only) Determine distance travelled/displacement from area under a velocity–time graph, including measuring area by counting squares when appropriate. Apply uniform acceleration equation v^2 − u^2 = 2 a s (given on equation sheet). Know near Earth’s surface free-fall acceleration ≈ 9.8 m s^-2. Explain falling through fluid: initially accelerates due to weight; eventually resultant force becomes zero and object reaches terminal velocity. (Physics only) Draw/interpret velocity–time graphs for terminal velocity and interpret changing motion in terms of forces (weight, drag, resultant).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "4.5.6.2.1",
+          "Sub_topic_name": "Newton’s First Law and inertia (HT)",
+          "description": "State Newton’s First Law: if resultant force is zero, a stationary object remains stationary; a moving object continues at same speed and direction (constant velocity). Apply to uniform velocity and changes in speed/direction; relate steady vehicle speed to driving force balancing resistive forces. (Higher Tier only) Define inertia as tendency to continue in state of rest or uniform motion.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "4.5.6.2.2",
+          "Sub_topic_name": "Newton’s Second Law: F = m a; inertial mass (HT); estimating transport forces",
+          "description": "State Newton’s Second Law: acceleration proportional to resultant force and inversely proportional to mass. Apply F = m a (F in N; m in kg; a in m s^-2). Recognise approximate values symbol ≈/∼ and estimate speeds/accelerations/forces in road transport contexts. Required practical activity 7: investigate effect of varying force on acceleration for constant mass and effect of varying mass on acceleration for constant force. (Higher Tier only) Explain inertial mass as measure of difficulty of changing velocity and define inertial mass as ratio F/a.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "4.5.6.2.3",
+          "Sub_topic_name": "Newton’s Third Law (action–reaction pairs)",
+          "description": "State Newton’s Third Law: when two objects interact, the forces they exert on each other are equal in magnitude and opposite in direction. Apply to equilibrium situations and identify action–reaction pairs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "4.5.6.3.1",
+          "Sub_topic_name": "Stopping distance: thinking distance + braking distance; speed relationships",
+          "description": "Define stopping distance as thinking distance (during reaction time) + braking distance (during braking force). Explain that for a given braking force, higher speed gives greater stopping distance. (Physics only) Estimate emergency stopping distance over typical speed ranges for vehicles and interpret graphs of speed vs stopping distance for different vehicles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5t",
+          "Specification_section_sub": "4.5.6.3.2",
+          "Sub_topic_name": "Reaction time measurement and factors affecting thinking distance",
+          "description": "Know reaction times vary typically 0.2 s to 0.9 s. Explain methods to measure human reaction time (e.g., ruler drop), recall typical results, interpret/evaluate student measurements, and evaluate effects of tiredness, drugs, alcohol, distractions on reaction time and thinking distance using given data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5u",
+          "Specification_section_sub": "4.5.6.3.3",
+          "Sub_topic_name": "Factors affecting braking distance: road and vehicle conditions",
+          "description": "Explain braking distance depends on adverse road/weather conditions (wet/icy) and vehicle condition (brakes/tyres). Explain implications for safety; estimate how emergency stopping distance varies with speed over typical ranges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5v",
+          "Specification_section_sub": "4.5.6.3.4",
+          "Sub_topic_name": "Braking forces, energy transfer and dangers of large decelerations",
+          "description": "Explain that braking involves friction between brakes and wheels doing work to reduce kinetic energy; brakes heat up. Explain that higher initial speed requires larger braking force to stop in same distance; greater braking force gives greater deceleration; large decelerations can cause overheating and/or loss of control. Explain dangers caused by large decelerations. (Higher Tier only) Estimate deceleration forces in typical road situations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5w",
+          "Specification_section_sub": "4.5.7.1",
+          "Sub_topic_name": "Momentum (p = m v) (HT only)",
+          "description": "(Higher Tier only) Define momentum as p = m v (p in kg m s^-1; m in kg; v in m s^-1). Apply to moving objects.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5x",
+          "Specification_section_sub": "4.5.7.2",
+          "Sub_topic_name": "Conservation of momentum in closed systems (HT only)",
+          "description": "(Higher Tier only) State that in a closed system total momentum before an event equals total momentum after (conservation of momentum). Use momentum as a model to describe/explain events such as collisions; (physics only) perform calculations for collisions of two objects using conservation of momentum. Practical context: investigate collisions using trolleys and light gates/data loggers/ticker timers.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5y",
+          "Specification_section_sub": "4.5.7.3",
+          "Sub_topic_name": "Force as rate of change of momentum; safety features (HT only)",
+          "description": "(Higher Tier only, physics only) Explain that a force acting on a moving/able-to-move object causes change in momentum; combine F = m a and a = (v − u)/t to give F = m Δv/Δt (force equals rate of change of momentum; mΔv = change in momentum). Use concept to explain safety features (air bags, seat belts, crash mats, helmets, cushioned surfaces) by increasing collision time to reduce force. Apply related equations linking force, mass, velocity, acceleration to show inter-relationships.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "4.6",
+      "Strand": "Physics",
+      "Topic_name": "Waves",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "4.6.1.1",
+          "Sub_topic_name": "Transverse and longitudinal waves; evidence that waves transfer energy not matter",
+          "description": "Distinguish transverse vs longitudinal waves. Identify water surface ripples as transverse. Describe longitudinal waves as compressions and rarefactions; sound in air is longitudinal. Describe evidence that in both water ripples and sound waves, it is the wave/energy that travels, not the water/air itself.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "4.6.1.2",
+          "Sub_topic_name": "Wave properties and wave equation; measuring wave speed; required practical: waves",
+          "description": "Describe wave motion using amplitude, wavelength, frequency, and period. Define amplitude as maximum displacement from undisturbed position; wavelength as distance between equivalent points on adjacent waves; frequency as number of waves passing a point each second. Apply T = 1/f and wave equation v = f λ (v in m s^-1; f in Hz; λ in m). Identify amplitude and wavelength from diagrams. Describe methods to measure speed of sound in air and speed of water ripples (appropriate apparatus, measurements, evaluation). (Physics only) Show how changes in velocity, frequency and wavelength when sound travels between media are inter-related. Required practical activity 8: in ripple tank and in a solid, make observations and take measurements of frequency, wavelength and speed; evaluate suitability of apparatus.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "4.6.1.3",
+          "Sub_topic_name": "Reflection, transmission and absorption at boundaries (physics only)",
+          "description": "Explain that waves can be reflected at boundaries between different materials, and can also be absorbed or transmitted. Construct ray diagrams to show reflection at a surface. Describe effects of reflection, transmission and absorption at material interfaces.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "4.6.1.4",
+          "Sub_topic_name": "Sound waves in solids and hearing range (HT only)",
+          "description": "(Higher Tier only, physics only) Explain sound can travel through solids causing vibrations. Describe within the ear sound waves cause eardrum and other parts to vibrate producing sensation of sound. Explain conversion between sound waves and solid vibrations works over limited frequency range, restricting human hearing. Know normal human hearing range 20 Hz to 20 kHz. Describe processes converting wave disturbances between sound and vibrations (e.g. eardrum) and explain why limited frequency range matters for hearing.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "4.6.1.5",
+          "Sub_topic_name": "Ultrasound, seismic waves and echo sounding for detection/exploration (HT only)",
+          "description": "(Higher Tier only, physics only) Explain qualitatively how differences in wave speed, absorption and reflection in solids and liquids enable detection and exploration of hidden structures. Ultrasound: frequency above 20 kHz; partial reflection at boundaries between media; time for echoes to return used to calculate distance to boundary; applications in medical and industrial imaging. Seismic waves: P-waves longitudinal travel through solids and liquids at different speeds; S-waves transverse cannot travel through liquids; use P and S wave evidence to infer Earth’s core structure/size. Echo sounding uses high-frequency sound to detect objects in deep water and measure depth. Recognise that seismic studies provided new evidence leading to discoveries about unobservable Earth parts.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "4.6.2.1",
+          "Sub_topic_name": "Electromagnetic spectrum and basic properties",
+          "description": "State electromagnetic (EM) waves are transverse and transfer energy from source to absorber. Know EM spectrum is continuous; all EM waves travel at same speed in vacuum/space (and approximately in air). Order by wavelength/frequency (long to short λ / low to high f): radio, microwave, infrared, visible (red to violet), ultraviolet, X-rays, gamma rays. Understand eyes detect only visible range. Give examples illustrating energy transfer by EM waves.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "4.6.2.2",
+          "Sub_topic_name": "Interaction of EM waves with materials; refraction ray and wavefront diagrams (HT for wavefront)",
+          "description": "(Higher Tier only) Explain that substances may absorb, transmit, refract or reflect EM waves differently depending on wavelength. Explain some effects (e.g. refraction) are due to change in wave speed in different media. Construct ray diagrams to show refraction at boundary. (Higher Tier only) Use wavefront diagrams to explain refraction in terms of speed change when entering a different medium. Required practical activity 9 (physics only): investigate reflection of light by different surfaces and refraction of light by different substances.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "4.6.2.3",
+          "Sub_topic_name": "Radio wave production/absorption and induced oscillations (HT); ionising radiation hazards and dose",
+          "description": "(Higher Tier only) Explain radio waves can be produced by oscillations in electrical circuits and, when absorbed, can induce an alternating current of the same frequency (inducing oscillations in circuits). Explain that changes in atoms and nuclei can generate/absorb EM waves over wide frequency range; gamma rays originate from nuclear changes. Explain ultraviolet, X-rays and gamma rays can be hazardous to human tissue; effects depend on radiation type and dose; radiation dose in sieverts is measure of risk of harm. Use given data to draw conclusions about risks and consequences of exposure. Describe that UV can cause premature skin ageing and increase skin cancer risk; X-rays and gamma rays are ionising and can cause gene mutations and cancer.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "4.6.2.4",
+          "Sub_topic_name": "Uses of electromagnetic waves and suitability explanations (HT)",
+          "description": "Describe practical applications: radio (TV/radio), microwaves (satellite communications, cooking), infrared (heaters, cooking, IR cameras), visible (fibre optic communications), ultraviolet (energy efficient lamps, sun tanning), X-rays and gamma rays (medical imaging/treatments). (Higher Tier only) Give brief explanations why each type is suitable for its application (e.g. penetration, absorption, frequency/wavelength).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "4.6.2.5",
+          "Sub_topic_name": "Lenses: ray diagrams and magnification (physics only)",
+          "description": "Explain lenses form images by refraction. In a convex lens, parallel rays converge to principal focus; focal length is distance from lens to principal focus. Use ray diagrams to show image formation for convex and concave lenses; compare similarities/differences. Know convex lens can form real or virtual images; concave lens always forms virtual image. Calculate magnification = image height / object height (ratio, no units; heights measured in mm or cm consistently). Recognise standard lens symbols for convex and concave lenses. Practical context: investigate magnification for convex lenses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "4.6.2.6",
+          "Sub_topic_name": "Visible light: colour, reflection types, filters, transparency",
+          "description": "Know each visible colour corresponds to a narrow band of wavelengths/frequencies. Define specular reflection (smooth surface, single direction) and diffuse reflection/scattering (rough surface). Explain colour filters absorb certain wavelengths/colours and transmit others. Explain colour of opaque objects depends on wavelengths reflected; others absorbed: equal reflection → white; all absorbed → black. Distinguish transparent vs translucent materials (transmit light). Explain effects of viewing through filters and why an opaque object has a particular colour using absorption/transmission/reflection ideas.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "4.6.3.1",
+          "Sub_topic_name": "Infrared emission and absorption; black bodies (physics only)",
+          "description": "State all bodies emit and absorb infrared radiation at all temperatures; hotter bodies radiate more IR per unit time. Define a perfect black body as absorbing all incident radiation (no reflection/transmission) and hence (good absorber = good emitter) as best possible emitter.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "4.6.3.2",
+          "Sub_topic_name": "Black body radiation, temperature and radiation balance; Earth (HT)",
+          "description": "Explain that all bodies emit radiation and that intensity and wavelength distribution depend on temperature. (Higher Tier only) Explain that at constant temperature a body absorbs radiation at same rate as it emits; temperature increases if absorption rate exceeds emission rate. (Higher Tier only) Explain Earth’s temperature depends on absorption and emission rates and reflection into space; use information/diagrams to show how radiation affects Earth’s surface/atmosphere temperature. Required practical activity 10: investigate how IR absorbed/radiated depends on surface nature.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "4.7",
+      "Strand": "Physics",
+      "Topic_name": "Magnetism and electromagnetism",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "4.7.1.1",
+          "Sub_topic_name": "Magnetic poles; permanent vs induced magnets",
+          "description": "Describe poles as regions where magnetic forces strongest. Explain forces between magnets: like poles repel, unlike poles attract (non-contact). Define permanent magnet as producing its own magnetic field. Define induced magnet as becoming magnetised when placed in a magnetic field; induced magnetism produces attraction only; induced magnet loses most/all magnetism quickly when removed from field. Describe attraction/repulsion and distinguish permanent vs induced magnets.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "4.7.1.2",
+          "Sub_topic_name": "Magnetic fields and field patterns; compasses and Earth’s field",
+          "description": "Define magnetic field as region where force acts on another magnet or magnetic material (iron, steel, cobalt, nickel). State magnet–magnetic material force is always attraction. Describe field strength decreases with distance and is strongest at poles. Define field direction at a point as direction of force on a north pole placed there; field lines run from north-seeking to south-seeking pole. Use a compass to plot field patterns; draw bar magnet field patterns showing direction and relative strength. Explain compass behaviour as evidence Earth has a magnetic field and relate to magnetic core evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "4.7.2.1",
+          "Sub_topic_name": "Electromagnetism: magnetic field around current, solenoids and electromagnets",
+          "description": "Explain that a current in a conductor produces a magnetic field around the wire; field strength depends on current and distance. Explain that a solenoid increases field strength; field inside solenoid is strong and uniform; field pattern resembles bar magnet. Explain that adding an iron core increases solenoid field strength; electromagnet = solenoid with iron core. Describe demonstrations of magnetic effect of current. Draw field patterns for straight wire and solenoid including direction. (Physics only) Interpret diagrams of electromagnetic devices to explain how they work in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "4.7.2.2",
+          "Sub_topic_name": "Motor effect, Fleming’s left-hand rule and force on a conductor (HT only)",
+          "description": "(Higher Tier only) Explain motor effect: conductor carrying current in magnetic field experiences a force and magnet experiences equal/opposite force. Use Fleming’s left-hand rule to relate directions of force, current and magnetic field. Recall factors affecting force size (field strength, current, length in field, orientation). Apply equation for conductor at right angles to field: F = B I l (F in N; B in tesla T; I in A; l in m).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "4.7.2.3",
+          "Sub_topic_name": "Electric motors (HT only)",
+          "description": "(Higher Tier only) Explain that a coil carrying current in a magnetic field experiences forces that produce a turning effect causing rotation; this is basis of an electric motor. Explain how forces on conductors lead to coil rotation.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "4.7.2.4",
+          "Sub_topic_name": "Loudspeakers and headphones (physics only) (HT only)",
+          "description": "(Higher Tier only, physics only) Explain how loudspeakers/headphones use motor effect to convert variations in current to pressure variations in sound waves; describe moving-coil loudspeaker/headphone operation.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "4.7.3.1",
+          "Sub_topic_name": "Generator effect and induced potential difference/current (physics only) (HT only)",
+          "description": "(Higher Tier only, physics only) Explain that if a conductor moves relative to a magnetic field or field changes around a conductor, a potential difference is induced; if circuit complete, an induced current flows (generator effect). Explain induced current creates a magnetic field opposing the original change (opposition to motion/field change). Recall factors affecting size of induced p.d./current (field strength, speed of motion, number of turns, etc. as qualitative) and factors affecting direction (relative directions of motion/field). Apply generator effect principles in contexts.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "4.7.3.2",
+          "Sub_topic_name": "Alternator vs dynamo; induced p.d. graphs (HT only)",
+          "description": "(Higher Tier only, physics only) Explain generator effect in alternator to generate ac and in dynamo to generate dc. Draw/interpret graphs of induced potential difference in a coil against time (e.g., alternating waveform).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "4.7.3.3",
+          "Sub_topic_name": "Microphones (moving-coil) (HT only)",
+          "description": "(Higher Tier only) Explain how microphones use generator effect to convert pressure variations in sound waves into variations in current; describe moving-coil microphone operation.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "4.7.3.4",
+          "Sub_topic_name": "Transformers and power transmission (HT only)",
+          "description": "(Higher Tier only) Describe basic transformer: primary and secondary coils on iron core (iron easily magnetised); laminations/eddy currents not required. Explain that alternating current in primary produces changing magnetic field inducing alternating p.d. in secondary. Apply transformer equation Vp/Vs = np/ns; know step-up has Vs > Vp and step-down has Vs < Vp. For ideal transformer, power in = power out: Vs Is = Vp Ip. Calculate current drawn from input for a required output power. Relate high-voltage transmission advantages to reduced current and reduced I^2R heating losses; connect to National Grid efficiency.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "4.8",
+      "Strand": "Physics",
+      "Topic_name": "Space physics (physics only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "4.8.1.1",
+          "Sub_topic_name": "Our solar system, galaxies and star formation; equilibrium in stars",
+          "description": "Describe solar system: one star (Sun), eight planets, dwarf planets orbiting Sun; natural satellites (moons) orbit planets; solar system part of Milky Way galaxy. Explain Sun formed from nebula (dust and gas) pulled together by gravity. Explain that at start of a star’s life, gravitational attraction causes collapse heating leading to fusion reactions; fusion leads to equilibrium between gravitational collapse and outward expansion due to fusion energy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "4.8.1.2",
+          "Sub_topic_name": "Life cycle of a star and element formation",
+          "description": "Describe life cycle of a star determined by mass: for Sun-like stars and for much more massive stars (stages including protostar, main sequence, red giant/supergiant, white dwarf/black dwarf, supernova, neutron star, black hole). Explain fusion in stars produces naturally occurring elements; elements heavier than iron produced in supernovae; supernovae distribute elements through universe. Explain qualitatively how fusion processes form new elements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "4.8.1.3",
+          "Sub_topic_name": "Orbits and satellites; gravity and circular motion (HT)",
+          "description": "Explain gravity provides force for planets and satellites (natural and artificial) to maintain circular orbits. Describe similarities and differences between planets, moons, and artificial satellites. (Higher Tier only) Explain qualitatively that for circular orbits gravity causes changing velocity (direction changes) but unchanged speed; for a stable orbit, if speed changes the orbital radius must change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "4.8.2",
+          "Sub_topic_name": "Red-shift and evidence for an expanding universe (Big Bang); dark mass/energy",
+          "description": "Describe observed red-shift: increase in wavelength of light from most distant galaxies; further galaxies recede faster and show larger red-shift. Explain qualitatively red-shift for receding galaxies (Doppler/space expansion context). Explain that relation between galaxy speed and distance is evidence universe is expanding; red-shift supports Big Bang model (universe began from very small, hot, dense region). Describe that observations since 1998 of supernovae suggest expansion is accelerating. Explain how scientists use observations to develop theories and that much remains unknown (e.g., dark mass/matter and dark energy).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "3",
+      "Strand": "Physics",
+      "Topic_name": "Working scientifically",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "WS 1.1",
+          "Sub_topic_name": "Scientific methods and theories develop over time",
+          "description": "Explain with examples how scientific methods and theories change over time; explain why new experimental/observational data can lead to changes in models or theories; evaluate whether given data supports a theory.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "WS 1.2",
+          "Sub_topic_name": "Using models to solve problems and make predictions",
+          "description": "Use representational, spatial, descriptive, computational and mathematical models to solve problems, make predictions and develop explanations for familiar/unfamiliar facts. Recognise/draw/interpret diagrams; translate data into model representations; match model features to data; calculate/predict quantities from models and recognise limitations; suggest ways models can be tested by observation/experiment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "WS 1.3",
+          "Sub_topic_name": "Power and limitations of science; ethics",
+          "description": "Explain why data is needed to answer scientific questions and why it may be uncertain/incomplete/unavailable. Outline simple ethical arguments about new technologies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "WS 1.4",
+          "Sub_topic_name": "Applications of science and evaluating implications",
+          "description": "Explain everyday/technological applications of science; evaluate personal, social, economic and environmental implications; make decisions based on evidence/arguments; describe/evaluate methods to tackle environmental problems using data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "WS 1.5",
+          "Sub_topic_name": "Risk assessment and perception of risk",
+          "description": "Evaluate risks in practical science and wider society; give examples of hazards vs benefits; explain differences between perceived and measured risk (voluntary vs imposed, familiar vs unfamiliar, visible vs invisible hazards). Identify hazards in practical contexts and suggest risk reduction methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "WS 1.6",
+          "Sub_topic_name": "Peer review and communicating results",
+          "description": "Explain peer review as process to detect false claims and establish consensus; explain that popular media reports are not peer reviewed and may be oversimplified, inaccurate or biased; communicate scientific ideas and results to different audiences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "WS 2.1",
+          "Sub_topic_name": "Developing hypotheses",
+          "description": "Use scientific theories/explanations to suggest testable hypotheses to explain observations or data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "WS 2.2",
+          "Sub_topic_name": "Planning investigations: variables and procedures",
+          "description": "Plan experiments/procedures for observations, making/characterising substances, testing hypotheses, checking data, exploring phenomena. Explain need to manipulate/control variables; identify independent, dependent and control variables in context and justify controls. Suggest/justify procedures and apparatus/techniques appropriate to the purpose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "WS 2.3",
+          "Sub_topic_name": "Selecting techniques, instruments, apparatus and materials",
+          "description": "Select and justify appropriate technique, instrument, apparatus or material for a purpose based on knowledge of available options.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "WS 2.4",
+          "Sub_topic_name": "Carrying out experiments safely and accurately",
+          "description": "Carry out experiments with correct manipulation of apparatus, accurate measurements, and due regard for health and safety. Identify hazards and suggest methods to reduce risk of harm in given contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "WS 2.5",
+          "Sub_topic_name": "Sampling to ensure representative data",
+          "description": "Recognise when sampling is required and suggest/describe appropriate sampling techniques to ensure samples are representative.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9l",
+          "Specification_section_sub": "WS 2.6",
+          "Sub_topic_name": "Observations and measurements; recording data",
+          "description": "Make and record observations/measurements using appropriate apparatus/methods; read scales correctly and record data appropriately with units and suitable precision.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9m",
+          "Specification_section_sub": "WS 2.7",
+          "Sub_topic_name": "Evaluating methods and improvements",
+          "description": "Evaluate methods to judge validity; assess whether sufficient/precise measurements were taken; suggest improvements and further investigations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9n",
+          "Specification_section_sub": "WS 3.1",
+          "Sub_topic_name": "Presenting data",
+          "description": "Present observations and data using appropriate methods: frequency tables/diagrams, bar charts, histograms; plot two variables from experimental/other data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9o",
+          "Specification_section_sub": "WS 3.2",
+          "Sub_topic_name": "Translating data between forms",
+          "description": "Translate data between graphical and numerical forms and between different representations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9p",
+          "Specification_section_sub": "WS 3.3",
+          "Sub_topic_name": "Mathematical and statistical analysis of data",
+          "description": "Apply mathematical/statistical analysis: use appropriate significant figures; calculate mean and range; order-of-magnitude calculations; change subject of an equation; substitute numerical values with units; determine slope/intercept of linear graphs; draw/use tangent gradient as rate of change; interpret area under curve (area between curve and x-axis) and measure by counting squares when appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9q",
+          "Specification_section_sub": "WS 3.4",
+          "Sub_topic_name": "Uncertainty and distributions",
+          "description": "Explain that measurements have uncertainty; use range about the mean as a measure of uncertainty; represent distributions of results and make estimations of uncertainty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9r",
+          "Specification_section_sub": "WS 3.5",
+          "Sub_topic_name": "Interpreting data and drawing conclusions",
+          "description": "Interpret observations/data in verbal, diagrammatic, graphical, symbolic and numerical forms; identify patterns/trends; make predictions and inferences; draw conclusions from given observations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9s",
+          "Specification_section_sub": "WS 3.6",
+          "Sub_topic_name": "Using data to evaluate hypotheses",
+          "description": "Provide reasoned explanations relating data to hypotheses; comment on extent data supports a hypothesis; decide which hypothesis best explains data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9t",
+          "Specification_section_sub": "WS 3.7",
+          "Sub_topic_name": "Accuracy, precision, repeatability, reproducibility; random and systematic error",
+          "description": "Evaluate data in terms of accuracy (close to true value), precision (clustering), repeatability (same investigator/equipment/conditions), reproducibility (different investigators/equipment). Identify random error (unpredictable variation; reduced by repeats and mean) and systematic error (consistent offset). Identify anomalous results, investigate causes, and ignore if due to poor measurement; suggest improvements to reduce error.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9u",
+          "Specification_section_sub": "WS 3.8",
+          "Sub_topic_name": "Communicating scientific methods and findings",
+          "description": "Communicate rationale, methods, findings and conclusions via paper/electronic reports and presentations using verbal, diagrammatic, graphical, numerical and symbolic forms; produce coherent logically structured responses about practical investigations and required practicals.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9v",
+          "Specification_section_sub": "WS 4.1",
+          "Sub_topic_name": "Scientific vocabulary and definitions",
+          "description": "Use correct scientific vocabulary, terminology and definitions across physics contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9w",
+          "Specification_section_sub": "WS 4.2",
+          "Sub_topic_name": "Scientific quantities and how they are determined",
+          "description": "Recognise importance of scientific quantities and explain how they are determined/derived from measurements and definitions (e.g., density, speed, resistance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9x",
+          "Specification_section_sub": "WS 4.3",
+          "Sub_topic_name": "SI units and standard nomenclature",
+          "description": "Use SI units appropriately (e.g., kg, g, mg; km, m, mm; kJ, J) and standard scientific nomenclature as appropriate for physics contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9y",
+          "Specification_section_sub": "WS 4.4",
+          "Sub_topic_name": "Prefixes and powers of ten",
+          "description": "Use prefixes and powers of ten for orders of magnitude (tera T, giga G, mega M, kilo k, centi c, milli m, micro μ, nano n) including interpreting values in standard form where used in physics contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9z",
+          "Specification_section_sub": "WS 4.5",
+          "Sub_topic_name": "Interconverting units",
+          "description": "Interconvert units correctly (e.g., between cm and m, g and kg, kJ and J) in calculations and data handling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9aa",
+          "Specification_section_sub": "WS 4.6",
+          "Sub_topic_name": "Significant figures",
+          "description": "Use an appropriate number of significant figures in calculations and reporting measurements; understand that precision should reflect measurement resolution and uncertainty.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "7",
+      "Strand": "Physics",
+      "Topic_name": "Mathematical requirements",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "7.1",
+          "Sub_topic_name": "Arithmetic and numerical computation",
+          "description": "Demonstrate physics-appropriate arithmetic: recognise and use decimals; recognise and use standard form; use ratios, fractions and percentages; estimate results of simple calculations (including approximate symbol ≈/∼ where used).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "7.2",
+          "Sub_topic_name": "Handling data and statistics",
+          "description": "Use appropriate significant figures; calculate arithmetic means; construct and interpret frequency tables/diagrams, bar charts and histograms; understand mean, mode and median; use scatter diagrams to identify correlation; make order of magnitude calculations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "7.3",
+          "Sub_topic_name": "Algebra skills in physics",
+          "description": "Use symbols =, <, <<, >>, >, ∝, ~; change subject of an equation; substitute numerical values into algebraic equations with correct units; solve simple algebraic equations in physics contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "7.4",
+          "Sub_topic_name": "Graphs skills in physics",
+          "description": "Translate between graphical and numerical forms; understand y = mx + c as linear relationship; plot two variables; determine slope and intercept of linear graphs; draw and use tangent slope as rate of change; interpret area between curve and x-axis and measure by counting squares where appropriate (e.g., velocity–time graphs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "7.5",
+          "Sub_topic_name": "Geometry and trigonometry skills in physics",
+          "description": "Use angular measures in degrees; visualise and represent 2D/3D forms including 2D representations of 3D objects; calculate areas of triangles/rectangles and surface areas/volumes of cubes where required for physics measurement/calculation tasks.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "8",
+      "Strand": "Physics",
+      "Topic_name": "Practical assessment",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "8.1",
+          "Sub_topic_name": "Apparatus and techniques (AT) overview",
+          "description": "Understand and apply apparatus/techniques expectations across the course: AT1 measure/record length, area, mass, time, volume, temperature accurately and use to determine densities; AT2 measure/observe forces including spring extension; AT3 measure motion including speed and acceleration/deceleration; AT4 observe waves in fluids/solids and EM wave interactions to assess apparatus suitability for speed/frequency/wavelength; AT5 safely measure energy changes/transfers and related values (e.g., work done); AT6 measure current, potential difference, resistance and explore circuit element characteristics; AT7 use circuit diagrams to construct/check series and parallel circuits; AT8 (physics only) observe waves to measure effects of interaction with matter. Include requirement that safety is overriding and that scientific diagrams should be used to set up/record apparatus and procedures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "8.2.1",
+          "Sub_topic_name": "Required practical 1: specific heat capacity",
+          "description": "Carry out and understand required practical activity 1: determine specific heat capacity of one or more materials by measuring mass, energy transfer (or work done), time and temperature change; link decrease in one energy store (or work done) to increase in temperature and thermal energy stored; apply ΔE = m c Δθ and evaluate uncertainties, errors, and improvements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "8.2.2",
+          "Sub_topic_name": "Required practical 2 (physics only): thermal insulation",
+          "description": "Carry out and understand required practical activity 2 (physics only): investigate effectiveness of different materials as thermal insulators and factors affecting insulation; make appropriate measurements (e.g., temperature vs time) safely; present/analyse data and evaluate method/uncertainty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "8.2.3",
+          "Sub_topic_name": "Required practical 3: resistance factors",
+          "description": "Carry out and understand required practical activity 3: set up/check circuits using diagrams to investigate resistance changes with wire length (constant temperature) and with resistors in series/parallel; measure current and potential difference; calculate resistance; plot appropriate graphs; evaluate precision and errors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "8.2.4",
+          "Sub_topic_name": "Required practical 4: I–V characteristics",
+          "description": "Carry out and understand required practical activity 4: construct circuits to measure I–V characteristics of filament lamp, diode and resistor at constant temperature; take pairs of current and potential difference readings; plot I–V graphs; identify linear vs non-linear behaviour; consider safety and measurement uncertainty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "8.2.5",
+          "Sub_topic_name": "Required practical 5: density of solids and liquids",
+          "description": "Carry out and understand required practical activity 5: measure mass and volume to determine density of regular solids (dimensions), irregular solids (displacement), and liquids (measuring cylinder/displacement); choose appropriate instruments (ruler, micrometer, Vernier); calculate using ρ = m/V; evaluate uncertainties and method limitations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "8.2.6",
+          "Sub_topic_name": "Required practical 6: force and extension",
+          "description": "Carry out and understand required practical activity 6: investigate force–extension relationship for a spring; measure extension for a range of forces; plot force-extension graph; identify limit of proportionality; determine spring constant from linear region; consider accuracy, repeatability and safety.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "8.2.7",
+          "Sub_topic_name": "Required practical 7: Newton’s second law (force, mass, acceleration)",
+          "description": "Carry out and understand required practical activity 7: investigate how varying force affects acceleration for constant mass and how varying mass affects acceleration for constant force; measure motion (e.g., light gates/ticker timer), calculate acceleration, present and analyse results (graphs), and evaluate uncertainties/errors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "8.2.8",
+          "Sub_topic_name": "Required practical 8: waves in ripple tank and solids",
+          "description": "Carry out and understand required practical activity 8: observe waves in ripple tank and in a solid; identify suitable apparatus to measure frequency, wavelength and wave speed; take measurements and calculate speed using v = fλ; evaluate quality of measurements and method.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "8.2.9",
+          "Sub_topic_name": "Required practical 9 (physics only): reflection and refraction of light",
+          "description": "Carry out and understand required practical activity 9 (physics only): investigate reflection from different surfaces and refraction through different substances; measure angles using degrees; construct ray diagrams; record and interpret results; evaluate uncertainties and improvements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11k",
+          "Specification_section_sub": "8.2.10",
+          "Sub_topic_name": "Required practical 10: infrared absorption/emission and surface nature",
+          "description": "Carry out and understand required practical activity 10: investigate how amount of infrared radiation absorbed or radiated depends on surface nature (e.g., dull black vs shiny); measure temperature change over time with suitable sensors/thermometers; present/analyse data (tables/graphs) and evaluate method/uncertainty.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

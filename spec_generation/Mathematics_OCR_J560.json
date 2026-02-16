@@ -1,0 +1,1107 @@
+{
+  "Qualification": "GCSE (9-1)",
+  "Subject": "Mathematics",
+  "Exam Board": "OCR",
+  "Specification": "J560",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "OCR 1",
+      "Strand": "Mathematics",
+      "Topic_name": "Number Operations and Integers",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.01a",
+          "Sub_topic_name": "Four rules with integers (non-calculator)",
+          "description": "Use non-calculator methods to calculate the sum, difference, product and quotient of positive and negative whole numbers (integers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.02a",
+          "Sub_topic_name": "Number vocabulary and place value",
+          "description": "Understand and use the terms odd, even, prime, factor (divisor), multiple, common factor (divisor), common multiple, square, cube, root; understand and use place value (for whole numbers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.02b",
+          "Sub_topic_name": "Prime numbers and prime factorisation",
+          "description": "Identify prime numbers less than 20; express a whole number as a product of its prime factors (e.g. 24 = 2×2×2×3); understand that each whole number can be expressed as a product of prime factors in only one way (unique factorisation). Higher-tier extension: identify prime numbers (not restricted to <20) and use index/power notation in prime factorisation (e.g. 600 = 2^3 × 3 × 5^2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1.02c",
+          "Sub_topic_name": "HCF and LCM",
+          "description": "Find the Highest Common Factor (HCF) and Lowest Common Multiple (LCM) of two whole numbers by listing. Foundation-tier extension: find HCF and LCM of two whole numbers from their prime factorisations (using prime powers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "1.03a",
+          "Sub_topic_name": "Order of operations",
+          "description": "Know the conventional order for performing calculations involving brackets, the four rules (+, −, ×, ÷), and powers/indices, roots and reciprocals (BIDMAS/PEMDAS idea).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "1.04a",
+          "Sub_topic_name": "Inverse operations and checking",
+          "description": "Know that addition/subtraction, multiplication/division, and powers/roots are inverse operations; use inverses to simplify and check calculations, including reversing arithmetic in contexts such as “I’m thinking of a number” and “missing digit” problems (e.g. 223 − 98 = 223 + 2 − 100; 25×12 = 50×6 = 100×3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "OCR 2",
+      "Strand": "Mathematics",
+      "Topic_name": "Fractions, Decimals and Percentages",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2.01a",
+          "Sub_topic_name": "Equivalent fractions and mixed numbers",
+          "description": "Recognise and use equivalence between simple fractions and mixed numbers (convert between improper fractions and mixed numbers), e.g. 6/3 = 2 and 5/2 = 2 1/2.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "2.01b",
+          "Sub_topic_name": "Calculations with fractions",
+          "description": "Add, subtract, multiply and divide simple fractions (proper and improper), including mixed numbers and negative fractions; e.g. 1 1/2 + 3/4, (5/6)×(3/10), −3×(4/5). Higher-tier extension: carry out more complex fraction calculations, including use of improper fractions as a standard method; links to algebraic fractions (6.01g).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "2.01c",
+          "Sub_topic_name": "Fractions of a quantity and fraction comparisons",
+          "description": "Calculate a fraction of a quantity (including in money contexts), e.g. 2/5 of £3.50; express one quantity as a fraction of another (part/whole). Higher-tier extension: calculate with fractions greater than 1 in quantity contexts. (Also connects to ratios and fractions 5.01c.)",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "2.02a",
+          "Sub_topic_name": "Decimals and fractions (including recurring)",
+          "description": "Express a simple fraction as a terminating decimal or vice versa without a calculator (e.g. 0.4 = 2/5); understand and use place value in decimals. Foundation-tier extension: use division to convert a simple fraction to a decimal including recurring results (e.g. 1/6 = 0.1666…); Higher-tier extension: convert a recurring decimal to an exact fraction or vice versa (e.g. 0.41̇ = 41/99 type conversions as appropriate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "2.02b",
+          "Sub_topic_name": "Add, subtract, multiply decimals (non-calculator)",
+          "description": "Add, subtract and multiply decimals including negative decimals, without a calculator (correct alignment of decimal places; handling of signs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2.02c",
+          "Sub_topic_name": "Division with decimals (non-calculator)",
+          "description": "Divide a decimal by a whole number, including negative decimals, without a calculator (e.g. 0.24 ÷ 6). Foundation-tier extension: without a calculator, divide a decimal by a decimal (e.g. 0.3 ÷ 0.6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2.03a",
+          "Sub_topic_name": "Convert between fractions, decimals and percentages",
+          "description": "Convert between fractions, decimals and percentages, e.g. 1/4 = 0.25 = 25% and 1 1/2 = 150%.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2.03b",
+          "Sub_topic_name": "Percentages of quantities and percentage of another",
+          "description": "Understand percentage as ‘number of parts per hundred’; calculate a percentage of a quantity; express one quantity as a percentage of another, with or without a calculator.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2.03c",
+          "Sub_topic_name": "Percentage change, multipliers, original value and simple interest",
+          "description": "Increase or decrease a quantity by a simple percentage, including simple decimal or fractional multipliers; apply to simple original value problems and simple interest (e.g. add 10% to £2.50 by finding 10% then adding, or by multiplying by 1.1; find original price when reduced by 50%). Higher-tier extension: express percentage change as a decimal or fractional multiplier; apply to percentage change problems including original value problems; links to growth and decay (5.03a).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2.04a",
+          "Sub_topic_name": "Ordering integers, fractions, decimals, percentages",
+          "description": "Order integers, fractions, decimals and percentages (including negatives where relevant), e.g. 4/5, 3/4, 0.72, −0.9.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2.04b",
+          "Sub_topic_name": "Inequality and equality symbols",
+          "description": "Use the symbols <, >, ≤, ≥, =, ≠ correctly to compare numbers and express order/relationships.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "OCR 3",
+      "Strand": "Mathematics",
+      "Topic_name": "Indices and Surds",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.01a",
+          "Sub_topic_name": "Index notation (integer, negative, fractional indices)",
+          "description": "Use positive integer indices to write repeated multiplication (e.g. 2×2×2×2 = 2^4). Foundation-tier extension: use negative integer indices to represent reciprocals (a^−n = 1/a^n). Higher-tier extension: use fractional indices to represent roots and combinations of powers and roots (e.g. a^(1/2)=√a, a^(m/n)=ⁿ√(a^m)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.01b",
+          "Sub_topic_name": "Calculate and estimate powers and roots",
+          "description": "Calculate positive integer powers and exact roots (square roots, cube roots) exactly (e.g. 2^4=16, √9=3, ∛8=2). Foundation-tier extension: recognise simple powers of 2, 3, 4 and 5 (e.g. 27 = 3^3). Higher-tier extension: calculate with integer powers (including negatives), roots and fractional powers; estimate powers and roots (e.g. √51 to nearest whole number).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.01c",
+          "Sub_topic_name": "Laws of indices",
+          "description": "Know and apply index laws: a^m × a^n = a^(m+n); a^m ÷ a^n = a^(m−n); (a^m)^n = a^(mn); apply within numerical and algebraic contexts and connect to simplifying products/quotients (6.01c) and standard form calculations (3.02b).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.02a",
+          "Sub_topic_name": "Standard form (scientific notation)",
+          "description": "Interpret and order numbers expressed in standard form; convert numbers to and from standard form, including positive and negative powers of 10 (e.g. 1320 = 1.32×10^3; 0.00943 = 9.43×10^−3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.02b",
+          "Sub_topic_name": "Calculations in standard form",
+          "description": "Use a calculator to perform calculations with numbers in standard form. Higher-tier extension: add, subtract, multiply and divide numbers in standard form without a calculator, applying index laws (e.g. (a×10^m)(b×10^n) = (ab)×10^(m+n)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.03a",
+          "Sub_topic_name": "Exact calculations using fractions, π and surds",
+          "description": "Use fractions in exact calculations without a calculator. Foundation-tier extension: use multiples of π in exact calculations without a calculator (leave answers in terms of π). Higher-tier extension: use surds in exact calculations without a calculator (leave answers in surd form).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.03b",
+          "Sub_topic_name": "Manipulating surds (simplify, rationalise)",
+          "description": "Higher-tier only: simplify expressions involving surds (e.g. √12 = 2√3), perform operations with surds, and rationalise denominators (e.g. 1/√3 = √3/3; rationalising denominators of the form a + b√c as required).",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "OCR 4",
+      "Strand": "Mathematics",
+      "Topic_name": "Approximation and Estimation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.01a",
+          "Sub_topic_name": "Rounding and appropriate accuracy",
+          "description": "Round numbers to the nearest whole number, 10, 100, etc., or to a given number of significant figures (sf) or decimal places (dp). Round answers to an appropriate level of accuracy in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.01b",
+          "Sub_topic_name": "Estimation and checking",
+          "description": "Estimate or check, without a calculator, the result of a calculation by using suitable approximations (e.g. estimate cost of 2.8 kg at 68p/kg by rounding to 1 sf). Foundation-tier extension: estimate/check more complex calculations including roots; use the symbol ≈ appropriately.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.01c",
+          "Sub_topic_name": "Error intervals and bounds",
+          "description": "Use inequality notation to write an error interval for a number/measurement rounded or truncated to a given accuracy (e.g. x=2.1 to 1 dp implies 2.05 ≤ x < 2.15; truncation gives 2.1 ≤ x < 2.2). Foundation-tier extension: apply and interpret limits of accuracy; calculate upper and lower bounds of a calculation when inputs are rounded to known accuracy (e.g. area with length and width to 2 sf); understand the difference between bounds for discrete and continuous quantities (e.g. 200 cars to nearest 100 gives 150 ≤ n < 250; but for discrete, n is integer so interpret appropriately).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "OCR 5",
+      "Strand": "Mathematics",
+      "Topic_name": "Ratio, Proportion and Rates Of Change",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "5.01a",
+          "Sub_topic_name": "Form and simplify ratios (including 1:n)",
+          "description": "Find the ratio of quantities in the form a:b and simplify; find ratios in the form 1:n, including unit conversions within ratios (e.g. 50 cm : 1.5 m = 50 : 150 = 1 : 3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "5.01b",
+          "Sub_topic_name": "Divide in a given ratio (2 parts and more)",
+          "description": "Split a quantity into two parts given the ratio of the parts (e.g. £2.50 in ratio 2:3). Foundation-tier extension: express a division of a quantity into two parts as a ratio; calculate one quantity from another given their ratio; split a quantity into three or more parts given the ratio.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "5.01c",
+          "Sub_topic_name": "Ratios as fractions of a whole",
+          "description": "Interpret a ratio of two parts as a fraction of the whole (e.g. £9 split 2:1 gives 2/3×9 and 1/3×9). Connect ratio with fractions of a quantity (2.01c).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "5.01d",
+          "Sub_topic_name": "Solve ratio and proportion problems",
+          "description": "Solve simple ratio and proportion problems (e.g. scaling recipes). Foundation-tier extension: understand the relationship between ratio and linear functions (ratio reasoning as proportional scaling).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "5.02a",
+          "Sub_topic_name": "Direct proportion",
+          "description": "Solve problems involving quantities in direct proportion, including algebraic proportions using equality of ratios (e.g. if y ∝ x then y1/x1 = y2/x2). Include currency conversion problems. Foundation-tier extension: solve more formal direct proportion problems (recognise y = kx); Higher-tier extension: formulate equations and solve problems where one quantity is directly proportional to a power or root of another (e.g. y ∝ x^n or y ∝ √x).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "5.02b",
+          "Sub_topic_name": "Inverse proportion",
+          "description": "Solve problems involving quantities in inverse proportion, including word problems and simple algebraic proportions (e.g. speed–time contexts where doubling speed halves time). Foundation-tier extension: solve more formal inverse proportion problems (recognise y = k/x); Higher-tier extension: formulate equations and solve problems where one quantity is inversely proportional to a power or root of another (e.g. y ∝ 1/x^n or y ∝ 1/√x).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "5.03a",
+          "Sub_topic_name": "Growth and decay (interest, depreciation, multipliers)",
+          "description": "Calculate simple interest including in financial contexts. Foundation-tier extension: solve step-by-step problems involving multipliers over a given interval (compound interest, depreciation etc.), e.g. sequential percentage changes over years. Higher-tier extension: express exponential growth/decay as a formula (e.g. A = 100×1.1^n); solve and interpret answers in growth/decay contexts; connect to percentage change multipliers (2.03c) and exponential graphs (7.01d).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "OCR 6",
+      "Strand": "Mathematics",
+      "Topic_name": "Algebra",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "6.01a",
+          "Sub_topic_name": "Algebra language, equivalence, identities and proof",
+          "description": "Understand and use the concepts/vocabulary of expressions, equations, formulae, inequalities, terms and factors. Foundation-tier extension: recognise the difference between an equation and an identity; show algebraic expressions are equivalent (e.g. prove (x+1)^2 + 2 = x^2 + 2x + 3). Higher-tier extension: use algebra to construct arguments, proofs and generalisations (e.g. prove sum of three consecutive integers is a multiple of 3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "6.01b",
+          "Sub_topic_name": "Collecting like terms",
+          "description": "Simplify algebraic expressions by collecting like terms in sums and differences (e.g. 2a + 3a = 5a), including with negatives and multiple terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "6.01c",
+          "Sub_topic_name": "Algebraic products and quotients (incl. index laws)",
+          "description": "Simplify algebraic products and quotients (e.g. a×a×a = a^3; 2a×3b = 6ab; a^3 ÷ a = a^2). Foundation-tier extension: simplify using the laws of indices in algebraic contexts (e.g. a^2×a^3 = a^5; a^−1 = 1/a).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "6.01d",
+          "Sub_topic_name": "Expanding brackets (single bracket, two binomials, more)",
+          "description": "Expand/simplify algebraic expressions by multiplying a single term over a bracket (e.g. 2(a+3b)=2a+6b; 2(a+3b)+3(a−2b)=5a). Foundation-tier extension: expand products of two binomials (FOIL) (e.g. (x−1)(x−2)=x^2−3x+2; (a+2b)(a−b)=a^2+ab−2b^2). Higher-tier extension: expand products of more than two binomials (e.g. (x+1)(x−1)(x+2)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "6.01e",
+          "Sub_topic_name": "Factorising (common factor; quadratic factorisation)",
+          "description": "Factorise by taking out common factors (e.g. 3a−9b = 3(a−3b); 2x+3x^2 = x(2+3x)). Foundation-tier extension: factorise quadratic expressions of the form x^2 + bx + c (e.g. x^2−x−6=(x−3)(x+2); x^2−16=(x−4)(x+4); x^2−3 = (x−√3)(x+√3) where applicable). Higher-tier extension: factorise quadratic expressions of the form ax^2 + bx + c where a ≠ 0 or 1 (e.g. 2x^2+3x−2 = (2x−1)(x+2)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "6.01f",
+          "Sub_topic_name": "Completing the square",
+          "description": "Higher-tier only: complete the square for a quadratic expression to rewrite in vertex form (e.g. x^2 + 4x − 6 = (x+2)^2 − 10), including when coefficient of x^2 is not 1 (e.g. 5/2 x^2 + x + 1/2). Use completed square form for solving/graph features where required.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "6.01g",
+          "Sub_topic_name": "Algebraic fractions",
+          "description": "Higher-tier only: simplify and manipulate algebraic fractions, including forming a single fraction from expressions (e.g. (n+1)/(n−1) + ...), simplifying rational expressions such as (n^2+2)/(n^2−2) type forms, and algebraic operations requiring factorisation and cancellation.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "6.02a",
+          "Sub_topic_name": "Form algebraic expressions and formulae from contexts",
+          "description": "Formulate simple expressions and formulae from real-world contexts (e.g. cost = 50d + 0.10m; perimeter of rectangle when length is 2 cm more than width). Links to direct/inverse proportion (5.02a/5.02b) and growth/decay (5.03a).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "6.02b",
+          "Sub_topic_name": "Substitution into expressions and formulae",
+          "description": "Substitute numerical values into expressions and formulae to evaluate. Start with positive numbers in simple expressions and formulae (e.g. v = u + at). Foundation-tier extension: substitute positive or negative numbers into more complex formulae including powers, roots and algebraic fractions (e.g. v^2 = u^2 + 2as with decimal/negative inputs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "6.02c",
+          "Sub_topic_name": "Rearranging formulae (change the subject)",
+          "description": "Rearrange formulae to change the subject when the subject appears once only (e.g. c = πd; y = 3x − 2). Foundation-tier extension: rearrange formulae where the subject appears twice, or where a power/reciprocal of the subject appears (e.g. s = 1/2 at^2; v = x/t; 2ty = t + 1), including cases involving algebraic fractions (6.01g).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "6.02d",
+          "Sub_topic_name": "Recall and use standard formulae (geometry and algebra)",
+          "description": "Recall and use standard formulae without a formula sheet: circumference of a circle C = 2πr = πd; area of a circle A = πr^2. Foundation-tier extension: recall and use Pythagoras’ theorem a^2 + b^2 = c^2; right-triangle trigonometry ratios sinθ = opposite/hypotenuse, cosθ = adjacent/hypotenuse, tanθ = opposite/adjacent. Higher-tier extension: recall and use the quadratic formula x = (−b ± √(b^2 − 4ac)) / (2a); sine rule a/sinA = b/sinB = c/sinC; cosine rule a^2 = b^2 + c^2 − 2bc cosA; area of a triangle = (1/2)ab sin C.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "6.02e",
+          "Sub_topic_name": "Kinematics formulae (constant acceleration)",
+          "description": "Use the kinematics equations for constant acceleration: v = u + at; s = ut + (1/2)at^2; v^2 = u^2 + 2as, where u is initial velocity, v final velocity, a constant acceleration, s displacement from position when t = 0, and t time taken. Knowledge of the physical meaning of each letter is not required, but learners must use and rearrange these formulae as mathematical relationships.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "6.03a",
+          "Sub_topic_name": "Solving linear equations in one unknown",
+          "description": "Solve linear equations in one unknown algebraically (e.g. 3x − 1 = 5). Foundation-tier extension: set up and solve linear equations in mathematical and non-mathematical contexts, including unknowns on both sides (e.g. 5(x−1)=4−x); interpret solutions in context, including situations involving algebraic fractions (6.01g).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "6.03b",
+          "Sub_topic_name": "Quadratic equations",
+          "description": "Solve quadratic equations with coefficient of x^2 equal to 1 by factorising (e.g. x^2 − 5x + 6 = 0), including in context problems (area/geometry). Foundation-tier extension: know the quadratic formula; rearrange and solve quadratic equations by factorising, completing the square, or using the quadratic formula, including quadratics arising from algebraic fractions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "6.03c",
+          "Sub_topic_name": "Simultaneous equations (linear and involving quadratics)",
+          "description": "Set up and solve two linear simultaneous equations in two variables algebraically (e.g. 2x+3y=18 and y=3x−5). Foundation-tier extension: solve simultaneous equations where one equation is quadratic or where solving leads to a quadratic (e.g. x^2 + y^2 = 50 and y = 2x + 5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "6.03d",
+          "Sub_topic_name": "Approximate solutions using graphs",
+          "description": "Use a graph to find the approximate solution of a linear equation. Foundation-tier extension: use graphs to find approximate roots of quadratic equations and approximate solutions of two linear simultaneous equations. Higher-tier extension: know that intersection points of a curve and a straight line correspond to solutions of the simultaneous equations defining the line and curve.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "6.03e",
+          "Sub_topic_name": "Approximate solutions by iteration / numerical methods",
+          "description": "Higher-tier only: find approximate solutions to equations using systematic sign-change methods (e.g. decimal search, interval bisection) when no simple analytic method exists. Specific methods will not be explicitly requested, but learners must apply a valid iterative/sign-change approach and interpret solutions.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "6.04a",
+          "Sub_topic_name": "Inequalities in one variable",
+          "description": "Understand and use inequality symbols <, ≤, >, ≥; solve linear inequalities in one variable and represent solution sets on a number line using conventional notation (e.g. 2x+1 < 7). Foundation-tier extension: solve quadratic inequalities in one variable (e.g. x^2 − 3x ≥ 2); express solutions in set-builder notation (e.g. {x | x < 3} or {x | −2 ≤ x < 5}).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6s",
+          "Specification_section_sub": "6.04b",
+          "Sub_topic_name": "Inequalities in two variables",
+          "description": "Solve one or more linear inequalities in two variables and represent the solution set on a graph/coordinate plane as a region (including boundaries).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6t",
+          "Specification_section_sub": "6.05a",
+          "Sub_topic_name": "Functions as mappings; inverses and composites (informal)",
+          "description": "Interpret simple expressions as functions with inputs and outputs (e.g. y = 2x + 3 as a process ‘×2 then +3’). Foundation-tier extension: interpret the reverse process as an inverse function; interpret applying two functions in succession as a composite function. Formal function notation (f(x), f⁻¹(x), composite symbol) is not required, but concepts must be understood and applied.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6u",
+          "Specification_section_sub": "6.06a",
+          "Sub_topic_name": "Sequences (term-to-term and nth term; arithmetic and quadratic)",
+          "description": "Generate a sequence by spotting a pattern or using a term-to-term rule given in words or algebra (e.g. 1,4,7,10,…; 1,4,9,16,…). Foundation-tier extension: find a position-to-term (nth term) rule for simple arithmetic sequences (e.g. 2,4,6,… is 2n; 3,4,5,… is n+2); generate terms from a given nth-term formula (e.g. n^2+2n gives 3,8,15,…); find a formula for nth term of an arithmetic sequence (e.g. 40,37,34,… is 43−3n); use subscript notation for sequences (u_n, x_n; e.g. x_n = 2n+… and x_{n+1}=x_n−3); Higher-tier extension: find a formula for the nth term of a quadratic sequence (e.g. u_n = 2n^2 − 3n + 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6v",
+          "Specification_section_sub": "6.06b",
+          "Sub_topic_name": "Recognise special sequences",
+          "description": "Recognise sequences of triangular, square and cube numbers and simple arithmetic progressions. Foundation-tier extension: recognise Fibonacci and quadratic sequences and simple geometric progressions of the form r^n where n is an integer and r is a rational number > 0; generate and find nth terms of other sequences, including those involving powers and reciprocals.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "OCR 7",
+      "Strand": "Mathematics",
+      "Topic_name": "Graphs of Equations and Functions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "7.01a",
+          "Sub_topic_name": "Coordinates in all four quadrants",
+          "description": "Work with x- and y-coordinates in all four quadrants, including reading, plotting and interpreting points (x, y) with positive and negative values.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "7.01b",
+          "Sub_topic_name": "Plotting graphs from tables (linear, quadratic, and more)",
+          "description": "Use a table of values to plot graphs of linear and quadratic functions (e.g. y = 2x + 3; y = 2x^2 + 1). Foundation-tier extension: use tables to plot other polynomial graphs and reciprocal graphs (e.g. y = x^3 − 2x; y = 1/(x+2); line 2x+3y=6), and plot exponential graphs using tables (e.g. y = 3×1.1^x).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "7.01c",
+          "Sub_topic_name": "Sketching linear, quadratic, cubic and reciprocal graphs",
+          "description": "Recognise and sketch graphs of simple linear and quadratic functions (e.g. y=2, x=1, y=2x, y=x^2). Foundation-tier extension: recognise and sketch graphs of y=x^3 and y=1/x; identify intercepts and (using symmetry) the turning point of quadratic graphs; find roots of a quadratic equation algebraically. Higher-tier extension: sketch quadratic graphs identifying the turning point by completing the square.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "7.01d",
+          "Sub_topic_name": "Exponential functions graphs",
+          "description": "Recognise and sketch graphs of exponential functions in the form y = k^x for positive k, including growth/decay behaviour and key intercept/shape features.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "7.01e",
+          "Sub_topic_name": "Trigonometric function graphs (sin, cos, tan)",
+          "description": "Higher-tier only: recognise and sketch the graphs of y = sin x, y = cos x and y = tan x, including periodicity and key values/intercepts/asymptotes for tan as appropriate.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "7.01f",
+          "Sub_topic_name": "Equation of a circle (centre at origin)",
+          "description": "Higher-tier only: recognise and use the equation of a circle with centre at the origin (x^2 + y^2 = r^2), including interpreting r and using it in coordinate geometry contexts.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "7.02a",
+          "Sub_topic_name": "Straight-line graphs: gradient and intercept",
+          "description": "Find and interpret the gradient and intercept of straight lines graphically and using y = mx + c. Foundation-tier extension: use y = mx + c to find and sketch equations of straight lines; find equation of a line through two points or through one point with given gradient; identify solution sets of linear inequalities in two variables using dashed/solid boundary lines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "7.02b",
+          "Sub_topic_name": "Parallel and perpendicular lines; tangents to circles",
+          "description": "Foundation-tier extension: identify and find equations of parallel lines (same gradient). Higher-tier extension: identify and find equations of perpendicular lines (gradients m1·m2 = −1 where defined); calculate the equation of a tangent to a circle at a given point (link to circle equation x^2 + y^2 = r^2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "7.03a",
+          "Sub_topic_name": "Transformations of graphs (translations, reflections)",
+          "description": "Identify and sketch translations and reflections of a given graph or of the graph of a given equation; e.g. sketch y = sin(x) + 2, y = 2(x+1)^2, y = −x^2. Formal function notation is not required, but learners must link geometric transformation to algebraic change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "7.04a",
+          "Sub_topic_name": "Graphs in real-world contexts (interpretation)",
+          "description": "Construct and interpret graphs in real-world contexts such as distance–time, money conversion and temperature conversion; Foundation-tier extension: recognise and interpret graphs that illustrate direct and inverse proportion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "7.04b",
+          "Sub_topic_name": "Gradient as rate of change",
+          "description": "Understand relationship between gradient and ratio; interpret straight-line gradients as rates of change (e.g. gradient of a distance–time graph as velocity). Foundation-tier extension: calculate or estimate gradients of graphs (including chords/tangents) and interpret in contexts (distance–time, velocity–time, financial graphs); apply average and instantaneous rate of change concepts in numerical, algebraic and graphical contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "7.04c",
+          "Sub_topic_name": "Area under graphs (interpretation)",
+          "description": "Higher-tier only: calculate or estimate areas under graphs and interpret in context (e.g. distance from velocity–time graphs, accumulated change on financial graphs).",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "OCR 8",
+      "Strand": "Mathematics",
+      "Topic_name": "Basic Geometry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "8.01a",
+          "Sub_topic_name": "Geometric terms: points, lines, planes and perpendicular/parallel",
+          "description": "Use correct geometric terminology for 2D/3D contexts: points, lines, line segments, vertices, edges, planes; identify and use parallel and perpendicular lines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "8.01b",
+          "Sub_topic_name": "Angle types and triangle labelling conventions",
+          "description": "Know angle types: acute, obtuse, right, reflex. Use standard conventions for labelling sides and angles of triangles (e.g. AB, ∠ABC, angle ABC; side a opposite angle A).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "8.01c",
+          "Sub_topic_name": "Polygons and common 2D shapes",
+          "description": "Know and use terms: regular polygon; scalene/isosceles/equilateral triangle; quadrilateral, square, rectangle, kite, rhombus, parallelogram, trapezium; pentagon, hexagon, octagon.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "8.01d",
+          "Sub_topic_name": "3D solids terminology",
+          "description": "Recognise and use terms face, surface, edge, vertex; recognise cube, cuboid, prism, cylinder, pyramid, cone, sphere.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "8.01e",
+          "Sub_topic_name": "Drawing diagrams from descriptions",
+          "description": "Draw accurate diagrams from written descriptions as required, including labelling and representing given information clearly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "8.01f",
+          "Sub_topic_name": "Using geometric instruments",
+          "description": "Use a ruler to construct/measure straight lines; use a protractor to construct/measure angles; use compasses to construct circles; apply instrument use within geometric problem solving.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "8.01g",
+          "Sub_topic_name": "Coordinates in geometry and transformations",
+          "description": "Use x- and y-coordinates in plane geometry problems, including describing/performing transformations of simple shapes on coordinate grids.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "8.02a",
+          "Sub_topic_name": "Perpendicular bisector and midpoint construction",
+          "description": "Construct the perpendicular bisector of a line segment using ruler and compasses and identify/construct the midpoint of a line segment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "8.02b",
+          "Sub_topic_name": "Angle bisector construction",
+          "description": "Construct the bisector of an angle formed by two lines using ruler and compasses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "8.02c",
+          "Sub_topic_name": "Perpendiculars from/to a line (construction) and shortest distance",
+          "description": "Construct the perpendicular from a point to a line and the perpendicular to a line at a point; know that the perpendicular distance from a point to a line is the shortest distance from the point to the line.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "8.02d",
+          "Sub_topic_name": "Loci and equidistance",
+          "description": "Apply ruler-and-compass constructions to construct figures and identify loci of points, including in real-world contexts; understand and use the term ‘equidistant’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "8.03a",
+          "Sub_topic_name": "Angles at a point and polygon angle reasoning",
+          "description": "Know and use angles at a point sum to 360°. Foundation-tier extension: apply angle facts to find unknown angles in rectilinear figures and justify results in simple proofs (including using triangle interior sum 180°). Higher-tier extension: apply these angle properties within more formal geometric proofs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "8.03b",
+          "Sub_topic_name": "Angles on a straight line",
+          "description": "Know that angles on a line sum to 180° and apply this fact to calculate unknown angles and justify steps in angle-chasing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "8.03c",
+          "Sub_topic_name": "Angles in parallel lines (alternate/corresponding) and vertical opposites",
+          "description": "Know and use: vertically opposite angles are equal; alternate angles on parallel lines are equal; corresponding angles on parallel lines are equal; apply to find unknown angles and support reasoning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8o",
+          "Specification_section_sub": "8.03d",
+          "Sub_topic_name": "Angles in polygons (interior/exterior sums, regular polygons)",
+          "description": "Derive and use: triangle interior angles sum to 180°; exterior angles of any polygon sum to 360°. Find sum of interior angles of a polygon; find each interior angle of a regular polygon. Use these facts for angle-finding and justification (simple proofs at Foundation; more formal proofs at Higher).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8p",
+          "Specification_section_sub": "8.04a",
+          "Sub_topic_name": "Properties of triangles (including reasoning/proof)",
+          "description": "Know properties of isosceles, equilateral and right-angled triangles; give geometrical reasons to justify properties (e.g. base angles in isosceles triangle equal); use facts to find lengths/angles in rectilinear figures and within proofs (more formal at Higher, including links to circle theorems).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8q",
+          "Specification_section_sub": "8.04b",
+          "Sub_topic_name": "Properties of quadrilaterals (including reasoning/proof)",
+          "description": "Know properties of square, rectangle, parallelogram, trapezium, kite, rhombus; give geometrical reasons; use properties to find lengths/angles and justify steps in proofs (more formal at Higher, including links to circle theorems).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8r",
+          "Specification_section_sub": "8.04c",
+          "Sub_topic_name": "Symmetry of shapes",
+          "description": "Identify reflection and rotation symmetries of triangles, quadrilaterals and other polygons, including number of lines of symmetry and order of rotational symmetry.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8s",
+          "Specification_section_sub": "8.05a",
+          "Sub_topic_name": "Circle terminology (radius, chord, tangent, sector, segment)",
+          "description": "Understand and use circle terms: centre, radius, chord, diameter, circumference; Foundation-tier extension: tangent, arc, sector and segment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8t",
+          "Specification_section_sub": "8.05b",
+          "Sub_topic_name": "Angle at centre is twice angle at circumference (proof and use)",
+          "description": "Higher-tier only: apply and prove the theorem that the angle subtended by an arc at the centre is twice the angle subtended at the circumference (in the same segment).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8u",
+          "Specification_section_sub": "8.05c",
+          "Sub_topic_name": "Angle in a semicircle (proof and use)",
+          "description": "Higher-tier only: apply and prove that the angle on the circumference subtended by a diameter is a right angle.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8v",
+          "Specification_section_sub": "8.05d",
+          "Sub_topic_name": "Angles in the same segment (proof and use)",
+          "description": "Higher-tier only: apply and prove that two angles in the same segment are equal.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8w",
+          "Specification_section_sub": "8.05e",
+          "Sub_topic_name": "Radius bisects chord iff perpendicular (proof and use)",
+          "description": "Higher-tier only: apply and prove that a radius/diameter bisects a chord if and only if it is perpendicular to the chord.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8x",
+          "Specification_section_sub": "8.05f",
+          "Sub_topic_name": "Radius perpendicular to tangent (proof and use)",
+          "description": "Higher-tier only: apply and prove that the radius/diameter through the point of contact is perpendicular to the tangent at that point.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8y",
+          "Specification_section_sub": "8.05g",
+          "Sub_topic_name": "Alternate segment theorem (proof and use)",
+          "description": "Higher-tier only: apply and prove the alternate segment theorem: the angle between a tangent and a chord through the point of contact equals the angle in the opposite segment.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8z",
+          "Specification_section_sub": "8.05h",
+          "Sub_topic_name": "Cyclic quadrilaterals (opposite angles supplementary)",
+          "description": "Higher-tier only: apply and prove that opposite angles of a cyclic quadrilateral sum to 180° (are supplementary).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "8aa",
+          "Specification_section_sub": "8.06a",
+          "Sub_topic_name": "Properties of 3D solids",
+          "description": "Recognise and know properties of cube, cuboid, prism, cylinder, pyramid, cone and sphere (faces/edges/vertices where applicable; curved surfaces).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8ab",
+          "Specification_section_sub": "8.06b",
+          "Sub_topic_name": "Plans and elevations (3D representations)",
+          "description": "Interpret plans and elevations of simple 3D solids. Foundation-tier extension: construct plans and elevations of simple 3D solids and draw representations (e.g. on isometric paper) of solids from plans and elevations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "OCR 9",
+      "Strand": "Mathematics",
+      "Topic_name": "Congruence and Similarity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "9.01a",
+          "Sub_topic_name": "Reflection (including identifying mirror lines)",
+          "description": "Reflect a simple shape in a given mirror line; identify the mirror line from a shape and its image under reflection. Foundation-tier extension: identify mirror lines of the form x = a, y = b or y = ±x from a shape and its image.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "9.01b",
+          "Sub_topic_name": "Rotation (including finding centre/angle/sense)",
+          "description": "Rotate a simple shape clockwise or anticlockwise through a multiple of 90° about a given centre of rotation; identify the centre, angle and direction (sense) of a rotation from a shape and its image.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "9.01c",
+          "Sub_topic_name": "Translation using vectors",
+          "description": "Describe a translation using a column vector and perform a specified translation of a simple shape on a coordinate grid.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "9.01d",
+          "Sub_topic_name": "Combinations of transformations and invariance",
+          "description": "Perform a sequence of isometric transformations (reflections/rotations/translations) on a simple shape; describe the resulting overall transformation and identify changes and invariants (e.g. lengths, angles preserved).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "9.02a",
+          "Sub_topic_name": "Congruent triangles (tests and proof)",
+          "description": "Identify congruent triangles. Higher-tier only: prove two triangles are congruent using SSS, ASA, SAS, and RHS congruence criteria.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "9.02b",
+          "Sub_topic_name": "Using congruence in problems and proofs",
+          "description": "Apply congruent triangles to calculate unknown sides/angles and justify results in proofs (e.g. deducing base angles in isosceles triangles).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "9.03a",
+          "Sub_topic_name": "Vector arithmetic and geometric proof",
+          "description": "Higher-tier only: understand vector addition, subtraction and scalar multiplication; use vectors in geometric arguments and proofs (including expressing relationships between points and showing parallelism).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "9.03b",
+          "Sub_topic_name": "Column vectors on coordinate grids",
+          "description": "Higher-tier only: represent a 2D vector as a column vector and draw column vectors on square/coordinate grids; use them to describe translations/displacements.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "9.04a",
+          "Sub_topic_name": "Similar triangles (recognise and prove)",
+          "description": "Identify similar triangles. Higher-tier only: prove two triangles are similar (using angle/side proportionality conditions) and apply similarity reasoning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "9.04b",
+          "Sub_topic_name": "Enlargement (centre and scale factor incl. negative/fractional)",
+          "description": "Enlarge a simple shape from a given centre using a whole-number scale factor; identify the scale factor of an enlargement. Foundation-tier extension: identify the centre and scale factor (including fractional scale factors) and perform enlargement; Higher-tier extension: perform and recognise enlargements with negative scale factors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "9.04c",
+          "Sub_topic_name": "Similar shapes: lengths, areas, volumes and scale factors",
+          "description": "Compare lengths, areas and volumes using ratio notation and scale factors. Foundation-tier extension: apply similarity to calculate unknown lengths in similar figures; understand relationships between lengths, areas and volumes of similar shapes (e.g. area scale factor is (linear factor)^2; volume scale factor is (linear factor)^3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "OCR 10",
+      "Strand": "Mathematics",
+      "Topic_name": "Mensuration",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "10.01a",
+          "Sub_topic_name": "Units of measurement and conversions",
+          "description": "Use and convert standard units of measurement for length, area, volume/capacity, mass, time and money. Foundation-tier extension: use and convert standard units in algebraic contexts (e.g. expressing formulas with converted units).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "10.01b",
+          "Sub_topic_name": "Compound units (speed, density, pressure)",
+          "description": "Use and convert simple compound units (e.g. speed, rates of pay, unit pricing). Know and apply speed = distance ÷ time in simple cases. Foundation-tier extension: use and convert other compound units such as density and pressure; know and apply density = mass ÷ volume; use and convert compound units in algebraic contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "10.01c",
+          "Sub_topic_name": "Scale drawings, maps and bearings",
+          "description": "Use the scale of a map and work with bearings; construct and interpret scale drawings (including converting real distance to map distance and vice versa).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "10.02a",
+          "Sub_topic_name": "Perimeter of rectilinear shapes",
+          "description": "Calculate the perimeter of rectilinear (straight-edged) shapes, including using given side lengths and deducing missing lengths.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "10.02b",
+          "Sub_topic_name": "Circumference and arc length",
+          "description": "Know and apply circumference of a circle: C = 2πr = πd. Foundation-tier extension: calculate arc length of a sector given its angle and radius (proportional to angle/360° or using radians if provided—angles in degrees expected at GCSE).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "10.02c",
+          "Sub_topic_name": "Perimeter of composite shapes",
+          "description": "Apply perimeter methods/formulae to composite 2D shapes (including shapes with circular parts), ensuring correct inclusion/exclusion of internal edges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "10.03a",
+          "Sub_topic_name": "Area of a triangle (basic and sine area formula)",
+          "description": "Know and apply area of triangle = (1/2) × base × height. Higher-tier extension: know and apply area of triangle = (1/2)ab sin C.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "10.03b",
+          "Sub_topic_name": "Area of parallelograms and rectangles",
+          "description": "Know and apply area = base × height for parallelograms (including rectangles as a special case).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "10.03c",
+          "Sub_topic_name": "Area of a trapezium",
+          "description": "Calculate the area of a trapezium (using A = (1/2)(a+b)h or equivalent), including identifying parallel sides and perpendicular height.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10j",
+          "Specification_section_sub": "10.03d",
+          "Sub_topic_name": "Area of a circle and sector area",
+          "description": "Know and apply area of a circle A = πr^2. Foundation-tier extension: calculate area of a sector given its angle and radius (proportional to angle/360°).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10k",
+          "Specification_section_sub": "10.03e",
+          "Sub_topic_name": "Area of composite shapes",
+          "description": "Apply area formulae to calculate the area of composite 2D shapes (including subtracting holes and combining standard regions; may include circular segments/sectors where appropriate at tier).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10l",
+          "Specification_section_sub": "10.04a",
+          "Sub_topic_name": "Surface area and volume of prisms and cylinders",
+          "description": "Calculate surface area and volume of cuboids and other right prisms, including cylinders, using appropriate formulae and correct units; handle composite prism calculations where dimensions are given.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10m",
+          "Specification_section_sub": "10.04b",
+          "Sub_topic_name": "Surface area and volume of cones and spheres (formulae given)",
+          "description": "Calculate surface area and volume of spheres and cones and simple composite solids; formulae will be provided in assessments; apply accurately with correct substitution and units.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10n",
+          "Specification_section_sub": "10.04c",
+          "Sub_topic_name": "Surface area and volume of pyramids (formula given)",
+          "description": "Calculate surface area and volume of a pyramid; volume formula will be given: V = (1/3) × area of base × height; use correctly with appropriate units.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10o",
+          "Specification_section_sub": "10.05a",
+          "Sub_topic_name": "Pythagoras' theorem in 2D and 3D",
+          "description": "Know, derive and apply Pythagoras’ theorem a^2 + b^2 = c^2 to find lengths in right-angled triangles in 2D. Foundation-tier extension: apply Pythagoras in more complex figures including 3D (e.g. cuboids) requiring multi-step reasoning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10p",
+          "Specification_section_sub": "10.05b",
+          "Sub_topic_name": "Right-angled trigonometry (SOHCAHTOA) in 2D and 3D",
+          "description": "Know and apply sinθ, cosθ and tanθ to find angles and lengths in right-angled triangles in 2D. Foundation-tier extension: apply right-angled trigonometry to more complex figures including 3D contexts; connect to similarity where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10q",
+          "Specification_section_sub": "10.05c",
+          "Sub_topic_name": "Exact trigonometric values",
+          "description": "Higher-tier only: know exact values of sinθ and cosθ for θ = 0°, 30°, 45°, 60°, 90°; and exact values of tanθ for θ = 0°, 30°, 45°, 60°; use in exact calculations and reasoning.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "10r",
+          "Specification_section_sub": "10.05d",
+          "Sub_topic_name": "Sine rule (non-right triangles)",
+          "description": "Higher-tier only: know and apply the sine rule a/sinA = b/sinB = c/sinC to find unknown lengths and angles in non-right-angled triangles, including ambiguous case awareness as required by questions.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "10s",
+          "Specification_section_sub": "10.05e",
+          "Sub_topic_name": "Cosine rule (non-right triangles)",
+          "description": "Higher-tier only: know and apply the cosine rule a^2 = b^2 + c^2 − 2bc cosA to find unknown sides/angles in non-right triangles; use with appropriate rearrangement and calculator/non-calculator expectations.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "OCR 11",
+      "Strand": "Mathematics",
+      "Topic_name": "Probability",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "11.01a",
+          "Sub_topic_name": "Probability scale (0 to 1)",
+          "description": "Use the 0–1 probability scale as a measure of likelihood for random events (impossible 0, even chance 0.5, certain 1) and compare likelihoods using this scale.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "11.01b",
+          "Sub_topic_name": "Relative frequency tables and trees",
+          "description": "Record, describe and analyse the relative frequency of outcomes of repeated experiments using tables and frequency trees.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "11.01c",
+          "Sub_topic_name": "Relative frequency as probability estimate",
+          "description": "Use relative frequency as an estimate of probability; understand that relative frequencies tend to the theoretical probability as the number of trials increases (law of large numbers concept).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "11.01d",
+          "Sub_topic_name": "Equally likely outcomes and expected frequency",
+          "description": "Calculate probabilities (fractions/decimals) in simple equally likely experiments (coins, dice etc.); apply ideas of randomness and fairness. Foundation-tier extension: calculate probabilities of simple combined events (e.g. rolling two dice and totals); use probabilities to calculate expected numbers of outcomes in repeated experiments (expected frequency = probability × number of trials).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "11.02a",
+          "Sub_topic_name": "Sample spaces (tables and grids)",
+          "description": "Use tables/grids to list outcomes of single events and simple combinations and calculate theoretical probabilities (e.g. two coin flips; number of orders of letters E, F, G). Foundation-tier extension: use sample spaces for more complex combinations (e.g. sums of two dice; two spinners); recognise when a sample space is the most appropriate representation; Higher-tier extension: select and use the most appropriate diagrams to solve unstructured probability problems where structure is not given.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "11.02b",
+          "Sub_topic_name": "Systematic listing and product rule",
+          "description": "Use systematic listing strategies to enumerate outcomes. Foundation-tier extension: use the product rule for counting numbers of outcomes of combined events.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "11.02c",
+          "Sub_topic_name": "Venn diagrams and sets in probability",
+          "description": "Use a two-circle Venn diagram to enumerate sets and calculate probabilities. Use simple set notation to describe sets of numbers/objects (e.g. A={even numbers}, B={mathematics learners}, C={isosceles triangles}). Foundation-tier extension: construct Venn diagrams to classify outcomes and calculate probabilities; use set notation to describe sets (including set-builder notation e.g. D={x : 1 < x < 3}, E={x : x is a factor of 280}). Knowledge of intersection (∩), union (∪) and complement notation is not required. Higher-tier extension: construct tree diagrams, two-way tables or Venn diagrams to solve more complex probability problems, including conditional probability; diagram structure may not be given; intersection/union/complement notation still not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "11.02d",
+          "Sub_topic_name": "Tree diagrams for successive events",
+          "description": "Use tree diagrams to enumerate outcomes and to record probabilities of successive events; tree frames may be given and may be partly completed; multiply along branches and add across outcomes as appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "11.02e",
+          "Sub_topic_name": "Addition law of probability",
+          "description": "Use the addition law for mutually exclusive events; use p(A) + p(not A) = 1. Foundation-tier extension: derive or informally understand and apply p(A or B) = p(A) + p(B) − p(A and B) (general addition rule).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "11.02f",
+          "Sub_topic_name": "Multiplication law and conditional probability",
+          "description": "Use tree diagrams and other representations to calculate probabilities of independent and dependent combined events. Foundation-tier extension: understand conditional probability and calculate it from first principles in known contexts (e.g. P(diamond | red) from a 52-card deck). Higher-tier extension: derive/informally understand and apply p(A and B) = p(A given B)p(B); know that A and B are independent iff p(A given B) = p(A).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "OCR 12",
+      "Strand": "Mathematics",
+      "Topic_name": "Statistics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "12.01a",
+          "Sub_topic_name": "Populations, samples, random sampling and bias",
+          "description": "Define the population in a study; understand the difference between population and sample; infer properties of populations/distributions from a sample. Foundation-tier extension: understand simple random sampling and identify/describe bias in sampling methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "12.02a",
+          "Sub_topic_name": "Representing categorical and numerical data",
+          "description": "Interpret and construct charts appropriate to data type: frequency tables, bar charts, pie charts, pictograms for categorical data; vertical line charts for ungrouped discrete numerical data. Foundation-tier extension: interpret multiple and composite bar charts; design tables to classify data; interpret and construct line graphs for time series data and identify trends (including seasonal variation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "12.02b",
+          "Sub_topic_name": "Grouped data: histograms and cumulative frequency",
+          "description": "Interpret and construct diagrams for grouped data as appropriate: cumulative frequency graphs and histograms, including equal or unequal class intervals; understand frequency density for unequal class widths and interpret areas where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "12.03a",
+          "Sub_topic_name": "Summary statistics and box plots",
+          "description": "Calculate mean, mode, median and range for ungrouped data. Foundation-tier extension: find modal class; calculate estimates of range, mean and median for grouped data and understand why these are estimates; describe a population using statistics and make simple comparisons; compare data sets using ‘like for like’ summary values; understand advantages and disadvantages of summary values. Higher-tier extension: estimate mean/median/mode/range/quartiles/interquartile range (IQR) from graphical representations of grouped data; draw and interpret box plots; use median and IQR to compare distributions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "12.03b",
+          "Sub_topic_name": "Misleading graphs and misrepresentation",
+          "description": "Recognise graphical misrepresentation through incorrect or inconsistent scales, labels, truncated axes, or other distortions; critique and correct representations where possible.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "12.03c",
+          "Sub_topic_name": "Scatter graphs, correlation and line of best fit",
+          "description": "Plot and interpret scatter diagrams for bivariate data; recognise correlation. Foundation-tier extension: interpret correlation in context and distinguish correlation from causation; draw a line of best fit by eye and use it to make predictions; interpolate and extrapolate while acknowledging limitations of these techniques.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "12.03d",
+          "Sub_topic_name": "Outliers",
+          "description": "Identify an outlier in simple cases; appreciate that outliers may arise from errors or unusual values that do not fit a pattern; recognise outliers on scatter graphs and consider their effect on correlation and predictions.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

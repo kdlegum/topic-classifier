@@ -1,0 +1,973 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Chemistry",
+  "Exam Board": "AQA",
+  "Specification": "8462",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "4.1",
+      "Strand": "Chemistry",
+      "Topic_name": "Atomic structure and the periodic table",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "4.1.1.1",
+          "Sub_topic_name": "Atoms, elements and compounds; equations",
+          "description": "Know that all substances are made of atoms and an atom is the smallest part of an element that can exist; atoms of each element are represented by chemical symbols (eg O, Na) and there are about 100 different elements shown in the periodic table. Understand that compounds are formed from elements by chemical reactions; chemical reactions form one or more new substances and often involve a detectable energy change. Know that compounds contain two or more elements chemically combined in fixed proportions; represent compounds by formulae using element symbols; compounds can only be separated into elements by chemical reactions. Represent reactions by word equations and by symbol equations using formulae. In exams students are supplied with a periodic table and must be able to: use names and symbols of the first 20 elements, elements in Groups 1 and 7, and other specified elements; name compounds of these elements from given formulae or symbol equations; write word equations for specified reactions; write formulae and balanced chemical equations for specified reactions; (Higher Tier) write balanced half equations and ionic equations where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "4.1.1.2",
+          "Sub_topic_name": "Mixtures and separation techniques",
+          "description": "Understand a mixture as two or more elements/compounds not chemically combined; chemical properties of each substance in the mixture are unchanged. Know mixtures can be separated by physical processes (filtration, crystallisation, simple distillation, fractional distillation, chromatography) that do not involve chemical reactions and make no new substances. Be able to describe, explain and give examples of these separation methods, and suggest suitable separation and purification techniques for mixtures given information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "4.1.1.3",
+          "Sub_topic_name": "Development of the atomic model",
+          "description": "Understand that new experimental evidence may lead to scientific models being changed or replaced. Know key stages: pre-electron model (indivisible spheres); discovery of electron → plum pudding model (ball of positive charge with embedded electrons); alpha particle scattering experiment → nuclear model (mass concentrated at centre, nucleus charged) replacing plum pudding. Bohr: electrons orbit nucleus at specific distances/energy levels; Bohr calculations agreed with observations (details of supporting experiments not required). Later experiments: nuclear positive charge subdivided into equal smaller particles called protons. Chadwick: evidence for neutrons in nucleus ~20 years after acceptance of nucleus (details of experimental work not required). Be able to describe why scattering evidence led to change in model and differences between plum pudding and nuclear models.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "4.1.1.4",
+          "Sub_topic_name": "Subatomic particles and atomic number",
+          "description": "Know relative electrical charges: proton +1, neutron 0, electron −1. In an atom, number of electrons equals number of protons so overall charge is zero. Atomic number = number of protons; all atoms of an element have same proton number; different elements have different proton numbers. Use the nuclear model to describe atoms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "4.1.1.5",
+          "Sub_topic_name": "Size, mass number and isotopes; ions and particle counts",
+          "description": "Know atoms have radius about 0.1 nm (1 × 10^−10 m); nucleus radius is <1/10 000 of atom (~1 × 10^−14 m). Almost all mass is in nucleus; relative masses: proton 1, neutron 1, electron very small. Mass number = protons + neutrons. Isotopes are atoms of same element with different numbers of neutrons. Use nuclide notation (mass number over atomic number with symbol) and calculate numbers of protons, neutrons and electrons in atoms and ions given atomic and mass numbers; relate atomic size/scale to objects in physical world.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "4.1.1.6",
+          "Sub_topic_name": "Relative atomic mass (Aᵣ) from isotopes",
+          "description": "Understand relative atomic mass as an average value that accounts for isotopic abundances. Calculate relative atomic mass given percentage abundance of isotopes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "4.1.1.7",
+          "Sub_topic_name": "Electronic structure (first 20 elements)",
+          "description": "Know electrons occupy lowest available energy levels (shells). Represent electronic structure by numbers (eg Na: 2,8,1) or by diagrams showing electrons in shells/energy levels; answers may use either term. Represent electronic structures of the first 20 elements in both forms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "4.1.2.1",
+          "Sub_topic_name": "Periodic table arrangement and predictions",
+          "description": "Know elements arranged by increasing atomic (proton) number; columns are groups where elements have similar properties; periodic because properties repeat at intervals. Elements in same group have same number of outer-shell electrons, giving similar chemical properties. Explain how an element’s position relates to its electron arrangement and atomic number; use position to predict possible reactions and relative reactivity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "4.1.2.2",
+          "Sub_topic_name": "Development of the periodic table (Mendeleev)",
+          "description": "Know that before discovery of subatomic particles, elements were arranged by atomic weight; early tables incomplete and strict atomic-weight order placed some elements in inappropriate groups. Mendeleev left gaps for undiscovered elements and sometimes changed order; predicted properties of missing elements; discoveries filled gaps. Knowledge of isotopes explains why atomic-weight order not always correct. Describe these development steps and explain how testing predictions supports/refutes scientific ideas.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "4.1.2.3",
+          "Sub_topic_name": "Metals vs non-metals and periodic table position",
+          "description": "Know metals react to form positive ions; non-metals do not form positive ions. Most elements are metals (left and bottom of periodic table); non-metals toward right and top. Explain differences between metals and non-metals using characteristic physical/chemical properties; relate atomic structure to position; relate reactions to electron arrangement and atomic number.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "4.1.2.4",
+          "Sub_topic_name": "Group 0 (noble gases) trends",
+          "description": "Know Group 0 elements are noble gases; unreactive; do not easily form molecules due to stable electron arrangements; have 8 outer electrons except He has 2. Boiling points increase down the group with increasing relative atomic mass. Explain Group 0 properties in terms of outer electrons and predict properties from trends down the group.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "4.1.2.5",
+          "Sub_topic_name": "Group 1 (alkali metals) reactions and trends",
+          "description": "Know Group 1 are alkali metals with a single outer electron giving characteristic properties. Describe reactions of first three alkali metals with oxygen, chlorine and water. Reactivity increases down Group 1. Explain Group 1 properties in terms of outer electrons and predict properties from trends down the group.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "4.1.2.6",
+          "Sub_topic_name": "Group 7 (halogens) properties, trends and displacement",
+          "description": "Know Group 7 are halogens with seven outer electrons; similar reactions; non-metals; exist as diatomic molecules. Describe nature of compounds formed when Cl, Br, I react with metals and with non-metals. Down Group 7: relative molecular mass, melting point, boiling point increase; reactivity decreases. Know halogen displacement: a more reactive halogen displaces a less reactive halogen from an aqueous solution of its salt. Explain Group 7 properties via outer electrons and predict properties from trends down the group.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "4.1.3.1",
+          "Sub_topic_name": "Transition metals vs Group 1 (physical/chemical)",
+          "description": "Know transition elements are metals with similar properties different from Group 1. Describe differences compared with Group 1 in melting points, densities, strength, hardness and reactivity with oxygen, water and halogens. Exemplify using Cr, Mn, Fe, Co, Ni, Cu.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "4.1.3.2",
+          "Sub_topic_name": "Typical transition metal properties",
+          "description": "Know many transition elements: form ions with different charges, form coloured compounds, and act as catalysts. Exemplify with compounds of Cr, Mn, Fe, Co, Ni, Cu.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "4.2",
+      "Strand": "Chemistry",
+      "Topic_name": "Bonding, structure, and the properties of matter",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "4.2.1.1",
+          "Sub_topic_name": "Types of bonding and electrostatic forces",
+          "description": "Know three types of strong chemical bonds: ionic (oppositely charged ions), covalent (atoms share pairs of electrons), metallic (atoms share delocalised electrons). Ionic bonding occurs in compounds of metals with non-metals; covalent bonding in most non-metal elements and compounds of non-metals; metallic bonding in metals and alloys. Explain bonding in terms of electrostatic forces and transfer/sharing of electrons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "4.2.1.2",
+          "Sub_topic_name": "Ionic bonding: electron transfer and ion charges",
+          "description": "When a metal reacts with a non-metal, outer electrons are transferred: metals lose electrons to form positive ions; non-metals gain electrons to form negative ions. Ions formed by Group 1 and 2 metals and Group 6 and 7 non-metals achieve noble gas electronic structure. Represent electron transfer using dot-and-cross diagrams (eg NaCl). Draw dot-and-cross diagrams for ionic compounds formed by Group 1/2 metals with Group 6/7 non-metals. Deduce ion charges from group number (limited to metals in Groups 1–2 and non-metals in Groups 6–7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "4.2.1.3",
+          "Sub_topic_name": "Giant ionic lattices and formulae from models",
+          "description": "Know ionic compounds are giant structures (lattices) held by strong electrostatic attraction between oppositely charged ions acting in all directions (ionic bonding). Recognise/interpret representations of NaCl lattice (dot-cross, ball-and-stick, 2D/3D ionic lattice diagrams). Deduce a compound is ionic from a structure diagram; describe limitations of dot-and-cross, ball-and-stick and 2D/3D diagrams for giant ionic structures; determine empirical formula from a given model/diagram showing ions. Only need detailed familiarity with NaCl structure (not other ionic structures).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "4.2.1.4",
+          "Sub_topic_name": "Covalent bonding: molecules, polymers, giant covalent",
+          "description": "Know covalent bonds form when atoms share pairs of electrons; covalent bonds between atoms are strong. Covalently bonded substances may be small molecules; recognise common small-molecule substances from formula. Some are very large molecules (polymers) and some are giant covalent structures (diamond, silicon dioxide). Represent covalent bonds using dot-and-cross, displayed/structural formulae, ball-and-stick and 2D/3D models; polymer repeating unit notation with brackets and n. Be able to: draw dot-and-cross diagrams for H2, Cl2, O2, N2, HCl, H2O, NH3, CH4; represent covalent bonds with a line for a single bond in small molecules, polymer repeating units and parts of giant covalent structures; describe limitations of dot-and-cross, ball-and-stick and 2D/3D diagrams for molecules/giant structures; deduce molecular formula from a model/diagram showing atoms and bonds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "4.2.1.5",
+          "Sub_topic_name": "Metallic bonding model",
+          "description": "Know metals are giant structures of atoms in a regular pattern. Outer-shell electrons are delocalised and free to move through the structure; sharing of delocalised electrons gives strong metallic bonds. Recognise metallic giant structures from bonding/structure diagrams; understand metallic bonding representation using positive metal ions in a sea of delocalised electrons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "4.2.2.1",
+          "Sub_topic_name": "States of matter and particle model (limitations)",
+          "description": "Know three states: solid, liquid, gas; melting/freezing at melting point and boiling/condensing at boiling point. Use particle model (particles as small solid spheres) to explain melting, boiling, freezing, condensing. Understand energy needed for state changes depends on strength of forces between particles; nature of particles depends on bonding and structure; stronger forces → higher melting/boiling points. Predict state at given temperatures using data; explain different state-change temperatures in terms of energy transfers and bonding types; recognise atoms do not have bulk properties of materials. (Higher Tier) Explain limitations of simple particle model: no forces shown, particles all spheres, spheres solid/inelastic; apply these limitations to changes of state explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "4.2.2.2",
+          "Sub_topic_name": "State symbols in equations",
+          "description": "Use state symbols (s), (l), (g), (aq) in chemical equations. Include appropriate state symbols in equations for reactions in this specification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "4.2.2.3",
+          "Sub_topic_name": "Properties of ionic compounds",
+          "description": "Explain ionic compounds’ high melting/boiling points due to strong electrostatic attractions in giant ionic lattices requiring large energy to break many ionic bonds. Explain electrical conductivity when molten or dissolved: ions free to move and carry charge. No detailed knowledge of ionic structures beyond NaCl required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "4.2.2.4",
+          "Sub_topic_name": "Properties of small covalent molecules (intermolecular forces)",
+          "description": "Know substances of small molecules are usually gases or liquids with low melting/boiling points due to weak intermolecular forces between molecules; melting/boiling overcomes intermolecular forces not covalent bonds. Intermolecular forces increase with molecule size → larger molecules have higher melting/boiling points. They do not conduct electricity because molecules have no overall charge. Use comparison of weak intermolecular forces vs strong covalent bonds to explain bulk properties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "4.2.2.5",
+          "Sub_topic_name": "Polymers: bonding and physical state",
+          "description": "Know polymers have very large molecules with atoms linked by strong covalent bonds; intermolecular forces between polymer molecules are relatively strong so polymers are solids at room temperature. Recognise polymers from bonding/structure diagrams.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "4.2.2.6",
+          "Sub_topic_name": "Giant covalent structures: diamond/graphite/silica",
+          "description": "Know giant covalent structures are solids with very high melting points because all atoms are connected by strong covalent bonds that must be broken to melt/boil. Examples: diamond, graphite, silicon dioxide (silica). Recognise giant covalent structures from bonding/structure diagrams.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "4.2.2.7",
+          "Sub_topic_name": "Metals and alloys: structure and hardness",
+          "description": "Know metals have giant structures with strong metallic bonding giving generally high melting/boiling points. Pure metals have atoms arranged in layers so they can be bent/shaped; pure metals often too soft; alloys are mixtures of metals made to be harder. Explain alloys are harder because different-sized atoms distort layers and prevent them sliding easily.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "4.2.2.8",
+          "Sub_topic_name": "Metals as electrical and thermal conductors",
+          "description": "Explain metals conduct electricity because delocalised electrons carry charge through the structure; metals conduct thermal energy because energy is transferred by delocalised electrons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "4.2.3.1",
+          "Sub_topic_name": "Diamond structure and properties",
+          "description": "Know in diamond each carbon forms four covalent bonds in a giant covalent structure; explain resulting properties: very hard, very high melting point, does not conduct electricity (no delocalised electrons). Explain properties using structure and bonding.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "4.2.3.2",
+          "Sub_topic_name": "Graphite structure and properties",
+          "description": "Know in graphite each carbon forms three covalent bonds forming layers of hexagonal rings with no covalent bonds between layers; one electron per carbon is delocalised. Explain properties (eg electrical conductivity, softness/slipperiness) using structure and bonding; know graphite is similar to metals due to delocalised electrons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "4.2.3.3",
+          "Sub_topic_name": "Graphene and fullerenes (incl nanotubes): structure, properties, uses",
+          "description": "Know graphene is a single layer of graphite with useful properties for electronics and composites; explain properties using structure and bonding. Know fullerenes are carbon molecules with hollow shapes based on hexagonal rings and may include 5- or 7-membered rings; Buckminsterfullerene C60 is spherical. Know carbon nanotubes are cylindrical fullerenes with very high length:diameter ratios and useful in nanotechnology, electronics, and materials. Recognise graphene and fullerenes from diagrams/descriptions; give examples of uses of fullerenes including nanotubes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "4.2.4.1",
+          "Sub_topic_name": "Nanoparticles: size, surface area to volume ratio, properties",
+          "description": "Know nanoscience refers to structures 1–100 nm (~few hundred atoms). Distinguish nanoparticles (<100 nm) from fine particles PM2.5 (100–2500 nm; 1×10^−7 m to 2.5×10^−6 m) and coarse particles PM10 (2.5×10^−6 m to 1×10^−5 m; often called dust). Understand as the side of a cube decreases by factor 10, surface area:volume ratio increases by factor 10. Explain nanoparticles may have different properties than bulk materials due to high surface area:volume ratio and may be effective in smaller quantities. Compare ‘nano’ dimensions to typical dimensions of atoms/molecules; use standard form, ratios, and order-of-magnitude reasoning where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "4.2.4.2",
+          "Sub_topic_name": "Uses of nanoparticles: benefits and risks",
+          "description": "Know nanoparticles have applications in medicine, electronics, cosmetics/sun creams, deodorants, and as catalysts; new applications are an active research area. Evaluate advantages and disadvantages of nanoparticle use for a specified purpose given information; explain that there are possible risks associated with nanoparticles. No need for specific examples beyond those stated (applications list) or properties other than those specified.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "4.3",
+      "Strand": "Chemistry",
+      "Topic_name": "Quantitative chemistry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "4.3.1.1",
+          "Sub_topic_name": "Conservation of mass and balancing equations",
+          "description": "Know the law of conservation of mass: no atoms are lost or made during a chemical reaction so mass of products equals mass of reactants. Represent reactions by balanced symbol equations with equal numbers of each type of atom on both sides. Understand multipliers as coefficients before formulae and subscripts within formulae; interpret balanced equations accordingly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "4.3.1.2",
+          "Sub_topic_name": "Relative formula mass (Mᵣ) and percentage composition",
+          "description": "Calculate relative formula mass (Mᵣ) as sum of relative atomic masses (Aᵣ) in the formula. Understand that in a balanced chemical equation, sums of relative formula masses of reactants in given quantities equal sums for products in given quantities. Calculate percentage by mass of an element in a compound given Mᵣ and Aᵣ values.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "4.3.1.3",
+          "Sub_topic_name": "Mass changes in reactions involving gases",
+          "description": "Explain apparent mass changes in open systems using balanced equations and particle model: eg metal + oxygen → metal oxide increases mass because oxygen added; thermal decomposition of metal carbonates appears to decrease mass because CO2 produced escapes, leaving solid oxide. Given a balanced equation, explain observed mass changes in non-enclosed systems in terms of gases entering/leaving and particle model.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "4.3.1.4",
+          "Sub_topic_name": "Measurement uncertainty (range/mean)",
+          "description": "Understand every measurement has uncertainty. Represent distribution of results and estimate uncertainty; use range of repeated measurements about the mean as a measure of uncertainty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "4.3.2.1",
+          "Sub_topic_name": "The mole and Avogadro constant",
+          "description": "Chemical amounts measured in moles (mol). Mass of 1 mole in grams equals relative formula mass numerically. One mole contains the same number of stated particles (atoms, molecules, ions, electrons) as one mole of any substance; Avogadro constant = 6.02 × 10^23 mol^−1. Apply moles to atoms/molecules/ions, formulae and equations (eg 1 mol C atoms equals number of molecules in 1 mol CO2). Use Mᵣ to calculate moles from mass and mass from moles; use correct units and significant figures.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "4.3.2.2",
+          "Sub_topic_name": "Masses in balanced equations (mole ratios)",
+          "description": "Interpret balanced equations in terms of mole ratios (eg Mg + 2HCl → MgCl2 + H2 means 1 mol Mg reacts with 2 mol HCl etc). Calculate masses of substances in a balanced equation; calculate masses of reactants/products from the balanced equation and mass of a given reactant or product using mole ratios and Mᵣ.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "4.3.2.3",
+          "Sub_topic_name": "Balancing equations from masses (moles and ratios)",
+          "description": "Balance symbol equations from masses of reactants/products by converting grams to moles then converting to simple whole-number ratios. Be able to change the subject of an equation as needed in calculations.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "4.3.2.4",
+          "Sub_topic_name": "Limiting reactants",
+          "description": "Understand reactions often use an excess reactant to ensure complete use of the other; the reactant completely used up is the limiting reactant and limits product amount. Explain effect of limiting reactant on amount of product obtainable using moles or masses.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "4.3.2.5",
+          "Sub_topic_name": "Concentration in g/dm³",
+          "description": "Know concentration can be measured as mass per volume, eg g/dm^3. Calculate mass of solute in a given volume from known concentration; (Higher Tier) explain relationship between mass of solute, volume of solution, and concentration (rearrange concentration = mass/volume).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "4.3.3.1",
+          "Sub_topic_name": "Percentage yield",
+          "description": "Know actual yield may be less than theoretical because: reaction reversible/incomplete, product lost during separation, reactants undergo side reactions. Define yield and percentage yield. Calculate % yield = (mass of product actually made / maximum theoretical mass of product) × 100. (Higher Tier) Calculate theoretical mass of product from given mass of reactant and balanced equation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "4.3.3.2",
+          "Sub_topic_name": "Atom economy and choosing pathways",
+          "description": "Define atom economy (atom utilisation) as measure of how much starting material ends up as desired product; importance for sustainable development and economics. Calculate % atom economy = (Mᵣ of desired product from equation / sum of Mᵣ of all reactants from equation) × 100. (Higher Tier) Given data (atom economy, yield, rate, equilibrium position, usefulness of by-products), explain why a particular reaction pathway is chosen for a specified product.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "4.3.4",
+          "Sub_topic_name": "Concentration in mol/dm³ (titration-style calculations)",
+          "description": "Know concentration can be measured in mol/dm^3. Calculate moles of solute or mass of solute in a given volume from concentration (mol/dm^3) and vice versa; if volumes of two solutions that react completely are known and one concentration known, calculate the other concentration. Explain relationship between concentration (mol/dm^3), moles/mass of solute and volume of solution; rearrange equations; use correct units and significant figures.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "4.3.5",
+          "Sub_topic_name": "Gas volumes and molar volume at RTP",
+          "description": "Know equal moles of gases occupy same volume at same temperature and pressure. At room temperature and pressure (20°C and 1 atmosphere), molar gas volume = 24 dm^3 mol^−1. Calculate gas volume at RTP from mass and Mᵣ; calculate volumes of gaseous reactants/products from balanced equation and a given volume; change the subject of equations when required.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "4.4",
+      "Strand": "Chemistry",
+      "Topic_name": "Chemical changes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.4.1.1",
+          "Sub_topic_name": "Metal oxides and redox (oxygen transfer)",
+          "description": "Know metals react with oxygen to produce metal oxides; these are oxidation reactions because metals gain oxygen. Define reduction and oxidation in terms of loss or gain of oxygen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.4.1.2",
+          "Sub_topic_name": "Reactivity series and displacement",
+          "description": "Know when metals react they form positive ions; reactivity relates to tendency to form positive ions. Understand a reactivity series and place K, Na, Li, Ca, Mg, Zn, Fe, Cu in order based on reactions with water and dilute acids; hydrogen and carbon often included. A more reactive metal displaces a less reactive metal from a compound. Recall and describe reactions (if any) of K, Na, Li, Ca, Mg, Zn, Fe, Cu with water or dilute acids at room temperature (no steam reactions); relate reactivity to tendency to form positive ions; deduce reactivity order from experimental results.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.4.1.3",
+          "Sub_topic_name": "Extraction of metals by reduction with carbon",
+          "description": "Know unreactive metals (eg gold) can be found native, but most metals occur as compounds requiring reactions to extract. Metals less reactive than carbon can be extracted from oxides by reduction with carbon; reduction = loss of oxygen (limited to reduction of oxides using carbon). Interpret/evaluate extraction processes when given information; identify substances oxidised/reduced in terms of oxygen gain/loss. Detailed industrial process knowledge not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.4.1.4",
+          "Sub_topic_name": "Oxidation and reduction (electron transfer)",
+          "description": "Define oxidation as loss of electrons and reduction as gain of electrons. Write ionic equations for displacement reactions; identify which species are oxidised/reduced in a reaction, symbol equation or half equation.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.4.2.1",
+          "Sub_topic_name": "Acids reacting with metals (salt + hydrogen)",
+          "description": "Know acids react with some metals to produce salts and hydrogen. Knowledge limited to reactions of magnesium, zinc and iron with hydrochloric acid and sulfuric acid. (Higher Tier) Explain these as redox reactions in terms of electron gain/loss; identify oxidised and reduced species in given equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Neutralisation and salt formation (acid + base/alkali/carbonate)",
+          "description": "Know acids are neutralised by alkalis (soluble metal hydroxides) and bases (insoluble metal hydroxides and metal oxides) to produce salts and water; acids react with metal carbonates to produce salts, water and carbon dioxide. Predict products from given reactants. Determine the salt produced based on: acid (HCl → chlorides; HNO3 → nitrates; H2SO4 → sulfates) and the positive ions in base/alkali/carbonate. Use formulae of common ions to deduce salt formulae.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.4.2.3",
+          "Sub_topic_name": "Making soluble salts (required practical: preparation and crystallisation)",
+          "description": "Describe making soluble salts by reacting acids with excess solid insoluble substances (metals, metal oxides, hydroxides, carbonates): add solid until no more reacts; filter off excess solid to obtain salt solution; crystallise to obtain solid salt. Be able to describe how to make pure, dry samples of named soluble salts from provided information, including heating dilute acid, filtration, evaporation and crystallisation (Required Practical 1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.4.2.4",
+          "Sub_topic_name": "pH scale, ions and neutralisation equation",
+          "description": "Know acids produce hydrogen ions H+ in aqueous solution; alkalis produce hydroxide ions OH−. pH scale 0–14 measures acidity/alkalinity; measure using universal indicator or pH probe. pH 7 neutral; acids <7; alkalis >7. Neutralisation: H+ + OH− → H2O; write and use the ionic equation. Describe use of universal indicator or wide range indicator for approximate pH; use pH scale to identify acidic/alkaline solutions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "4.4.2.5",
+          "Sub_topic_name": "Titrations with strong acid/strong alkali (required practical)",
+          "description": "Measure reacting volumes of acid and alkali by titration using a suitable indicator. Describe how to carry out titrations using strong acids and strong alkalis only (sulfuric, hydrochloric and nitric acids; strong alkalis) to find reacting volumes accurately (Required Practical 2). (Higher Tier) Calculate quantities in titrations involving concentrations in mol/dm^3 and g/dm^3.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "4.4.2.6",
+          "Sub_topic_name": "Strong vs weak acids; pH and hydrogen ion concentration",
+          "description": "Know strong acids fully ionise in water (HCl, HNO3, H2SO4); weak acids partially ionise (ethanoic, citric, carbonic). For a given concentration, stronger acid → lower pH. Each decrease of 1 pH unit corresponds to ×10 increase in [H+]. Use and explain terms: dilute vs concentrated (amount of substance per volume) and weak vs strong (degree of ionisation). Describe neutrality and relative acidity in terms of [H+] and pH (whole numbers only).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "4.4.3.1",
+          "Sub_topic_name": "Electrolysis: electrolytes and ion movement",
+          "description": "Know when ionic compounds are molten or dissolved, ions are free to move; these liquids/solutions conduct electricity and are electrolytes. Passing current causes ions to move to electrodes: cations to cathode (negative), anions to anode (positive); ions discharged to form elements. Define electrolysis. (Higher Tier across 4.4.3) Write half equations for electrode reactions and complete/balance supplied half equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "4.4.3.2",
+          "Sub_topic_name": "Electrolysis of molten ionic compounds",
+          "description": "Know electrolysis of a simple/binary ionic compound in molten state with inert electrodes produces the metal at the cathode and the non-metal at the anode (eg PbBr2 → Pb and Br2). Predict products of electrolysis of binary ionic compounds when molten (safer practical alternative may use anhydrous ZnCl2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "4.4.3.3",
+          "Sub_topic_name": "Extracting metals by electrolysis (aluminium)",
+          "description": "Explain electrolysis is used to extract metals too reactive to be extracted by carbon reduction or which react with carbon; requires large energy to melt compounds and provide current. Aluminium manufacture: electrolysis of molten mixture of aluminium oxide and cryolite using carbon anode. Explain why cryolite mixture is used (lowers melting point/acts as solvent) and why carbon anode must be continually replaced (reacts with oxygen formed).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "4.4.3.4",
+          "Sub_topic_name": "Electrolysis of aqueous solutions (products)",
+          "description": "Predict products of electrolysis of aqueous solutions containing a single ionic compound using inert electrodes: at cathode, hydrogen produced if metal is more reactive than hydrogen; at anode, oxygen produced unless halide ions present, in which case the halogen is produced. Understand water provides H+ and OH− ions that may be discharged. Apply to unfamiliar examples (Required Practical 3 investigates electrolysis of aqueous solutions and includes hypothesis development).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "4.4.3.5",
+          "Sub_topic_name": "Half equations at electrodes",
+          "description": "Know cathode reactions are reductions (cations gain electrons); anode reactions are oxidations (anions lose electrons). Represent electrode reactions with balanced half equations, eg 2H+ + 2e− → H2 and 4OH− → O2 + 2H2O + 4e− (or 4OH− − 4e− → O2 + 2H2O). Complete and balance half equations as required.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "4.5",
+      "Strand": "Chemistry",
+      "Topic_name": "Energy changes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "4.5.1.1",
+          "Sub_topic_name": "Exothermic and endothermic reactions; applications",
+          "description": "Know energy is conserved in chemical reactions; if energy is transferred to surroundings, products have less energy than reactants by that amount. Exothermic reactions transfer energy to surroundings, increasing surrounding temperature; include combustion, many oxidation reactions, neutralisation; uses include self-heating cans and hand warmers. Endothermic reactions take in energy from surroundings, decreasing surrounding temperature; include thermal decompositions and reaction of citric acid with sodium hydrogencarbonate; uses include sports injury packs. Distinguish exothermic vs endothermic using temperature change of surroundings and evaluate uses/applications given information. Limited to measuring temperature change; no ΔH calculations required (Required Practical 4 investigates variables affecting temperature changes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "4.5.1.2",
+          "Sub_topic_name": "Reaction profiles and activation energy",
+          "description": "Know reactions occur when particles collide with sufficient energy; activation energy is the minimum energy for reaction. Use reaction profiles (energy level diagrams) to show relative energies of reactants/products, activation energy and overall energy change with a curved line as reaction proceeds. Draw simple profiles for exothermic and endothermic reactions; use profiles to identify exo/endo; explain activation energy meaning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "4.5.1.3",
+          "Sub_topic_name": "Bond energies and overall energy change",
+          "description": "Know energy must be supplied to break bonds in reactants and energy released when bonds form in products. Use supplied bond energies to calculate energy needed to break bonds and energy released on bond formation; overall energy change = (sum energy to break reactant bonds) − (sum energy released forming product bonds). Explain exothermic when energy released forming bonds > energy required to break; endothermic when energy required to break > energy released forming.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "4.5.2.1",
+          "Sub_topic_name": "Cells and batteries (simple cell, voltage factors, rechargeables)",
+          "description": "Know cells contain chemicals that react to produce electricity; voltage depends on factors including electrode type and electrolyte. A simple cell uses two different metals in contact with an electrolyte. Batteries are two or more cells in series to provide greater voltage. Non-rechargeable cells stop when reactants used up (eg alkaline). Rechargeable cells can be recharged because reactions are reversed by an external current. Interpret data for relative reactivity of metals and evaluate use of cells; no further cell detail required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "4.5.2.2",
+          "Sub_topic_name": "Hydrogen fuel cells; comparison and half equations",
+          "description": "Know fuel cells are supplied continuously with fuel (eg hydrogen) and oxygen/air; fuel oxidised electrochemically to produce potential difference; overall hydrogen fuel cell reaction oxidises hydrogen to form water. Evaluate hydrogen fuel cells compared with rechargeable cells/batteries. (Higher Tier) Write half equations for electrode reactions in hydrogen fuel cell.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "4.6",
+      "Strand": "Chemistry",
+      "Topic_name": "The rate and extent of chemical change",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "4.6.1.1",
+          "Sub_topic_name": "Mean rate, graphs and tangents",
+          "description": "Calculate mean rate of reaction as quantity of reactant used / time taken or quantity of product formed / time taken. Quantity measured by mass (g) or volume (cm^3); rate units eg g/s or cm^3/s; (Higher Tier) also use moles and mol/s. Draw and interpret graphs of quantity of product formed or reactant used up vs time; draw tangents and use slope as rate of reaction; (Higher Tier) calculate gradient of tangent at a specific time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "4.6.1.2",
+          "Sub_topic_name": "Factors affecting rate (recall)",
+          "description": "Recall factors affecting rate: concentration of reactants in solution, pressure of reacting gases, surface area of solid reactants, temperature, and catalysts; recall how changing each factor affects rate of reaction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "4.6.1.3",
+          "Sub_topic_name": "Collision theory and activation energy explanations",
+          "description": "Use collision theory: reactions occur when particles collide with sufficient energy; activation energy is minimum energy needed. Explain how increasing concentration/pressure/surface area increases collision frequency and increases rate; increasing temperature increases collision frequency and collision energy and increases rate. Predict and explain effects of changing concentration, pressure and temperature; explain effect of particle size/surface area-to-volume ratio for solids; use simple proportionality ideas in explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "4.6.1.4",
+          "Sub_topic_name": "Catalysts and reaction profile with catalyst",
+          "description": "Know catalysts change reaction rate and are not used up; different reactions need different catalysts; enzymes are biological catalysts. Catalysts increase rate by providing an alternative pathway with lower activation energy. Identify catalysts from their effect on rate and absence from chemical equation; explain catalytic action using activation energy and reaction profile comparisons. Names of catalysts not required except those specified elsewhere.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "4.6.2.1",
+          "Sub_topic_name": "Reversible reactions and conditions",
+          "description": "Know some reactions are reversible: products can react to form original reactants; represented by ⇌ (A + B ⇌ C + D). Direction can be changed by changing conditions (eg ammonium chloride ⇌ ammonia + hydrogen chloride with heat/cool).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "4.6.2.2",
+          "Sub_topic_name": "Energy changes in reversible reactions",
+          "description": "Know if a reversible reaction is exothermic in one direction, it is endothermic in the opposite direction; same energy transferred both ways. Apply to examples such as hydrated/dehydrated copper sulfate with water and heat (qualitative).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "4.6.2.3",
+          "Sub_topic_name": "Dynamic equilibrium definition",
+          "description": "Know in a closed system (no reactants/products escape) equilibrium is reached when forward and reverse reactions occur at exactly the same rate (dynamic equilibrium).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "4.6.2.4",
+          "Sub_topic_name": "Le Chatelier’s principle (qualitative)",
+          "description": "Know equilibrium compositions depend on conditions. If a system at equilibrium experiences a change, it responds to counteract the change; predict effects qualitatively using Le Chatelier’s Principle given information.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "4.6.2.5",
+          "Sub_topic_name": "Effect of concentration on equilibrium",
+          "description": "Know changing concentration of a reactant/product disturbs equilibrium; concentrations adjust until equilibrium re-established. Increasing reactant concentration shifts to form more products; decreasing product concentration shifts to form more products. Interpret given data to predict effects of concentration changes on equilibrium.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "4.6.2.6",
+          "Sub_topic_name": "Effect of temperature on equilibrium",
+          "description": "Predict temperature effects: increasing temperature increases equilibrium yield of products for endothermic forward reaction and decreases for exothermic; decreasing temperature has opposite effects. Interpret data to predict temperature-change effects on equilibrium.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "4.6.2.7",
+          "Sub_topic_name": "Effect of pressure on gaseous equilibria",
+          "description": "For gaseous equilibria, increasing pressure shifts equilibrium toward side with fewer molecules (as in balanced symbol equation); decreasing pressure shifts toward side with more molecules. Interpret data to predict pressure-change effects on equilibrium reactions.",
+          "tier": "Higher"
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "4.7",
+      "Strand": "Chemistry",
+      "Topic_name": "Organic chemistry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "4.7.1.1",
+          "Sub_topic_name": "Crude oil, hydrocarbons and alkanes",
+          "description": "Know crude oil is a finite resource found in rocks; it is ancient biomass mainly plankton buried in mud. Crude oil is a mixture of many compounds; most are hydrocarbons (H and C only). Most hydrocarbons in crude oil are alkanes with general formula C_nH_(2n+2); first four are methane, ethane, propane, butane. Recognise alkanes from molecular formulae and representations (molecular, displayed/structural). No need for other alkane names.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "4.7.1.2",
+          "Sub_topic_name": "Fractional distillation and petrochemicals",
+          "description": "Explain fractional distillation separates crude oil into fractions containing hydrocarbons with similar carbon-chain length by evaporation and condensation. Know fractions are processed into fuels and feedstock for petrochemical industry; examples of fuels: petrol, diesel, kerosene, heavy fuel oil, liquefied petroleum gases; petrochemicals produce solvents, lubricants, polymers, detergents. No need for names of other fractions/fuels beyond those specified.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "4.7.1.3",
+          "Sub_topic_name": "Hydrocarbon properties and complete combustion",
+          "description": "Know hydrocarbon properties depend on molecule size: boiling point, viscosity, flammability; recall trends with increasing molecular size (boiling point increases, viscosity increases, flammability decreases). Understand these properties influence use as fuels. Know combustion releases energy; carbon and hydrogen oxidised; complete combustion produces CO2 and H2O. Write balanced equations for complete combustion of hydrocarbons given formula.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "4.7.1.4",
+          "Sub_topic_name": "Cracking and alkenes; bromine water test",
+          "description": "Know cracking breaks hydrocarbons into smaller, more useful molecules; methods include catalytic cracking and steam cracking; describe conditions in general terms. Products include alkanes and alkenes. Know alkenes are more reactive than alkanes and decolourise bromine water (orange/brown to colourless) as a test for C=C. High demand for small-molecule fuels; some cracking products are fuels. Alkenes used to make polymers and as starting materials for other chemicals. Balance cracking equations given reactant/product formulae. Give examples to show usefulness of cracking and explain dependence of modern life on hydrocarbon uses. (Combined Science note about not needing alkene formulae/names does not apply here; GCSE Chemistry includes alkene names/formulae in 4.7.2.1.)",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "4.7.2.1",
+          "Sub_topic_name": "Alkenes: structure, general formula and first four",
+          "description": "Know alkenes contain a C=C double bond; general formula C_nH_(2n); are unsaturated (two fewer H than corresponding alkane). Know first four alkenes: ethene, propene, butene, pentene; recognise alkenes from names and formulae/representations (molecular, displayed).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "4.7.2.2",
+          "Sub_topic_name": "Reactions of alkenes (addition reactions)",
+          "description": "Know alkenes have functional group C=C; functional groups determine general reactions of organic compounds. Combustion: alkenes burn like other hydrocarbons but often with smoky flames due to incomplete combustion. Addition reactions: alkenes react with hydrogen, water, and halogens by addition across C=C to form a single C–C bond. Describe reactions and conditions for addition of hydrogen, water and halogens to alkenes. Draw fully displayed structural formulae of first four alkenes and products of their addition reactions with hydrogen, water, chlorine, bromine, iodine.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "4.7.2.3",
+          "Sub_topic_name": "Alcohols: functional group, reactions, uses, fermentation",
+          "description": "Know alcohols contain functional group –OH; first four: methanol, ethanol, propanol, butanol; recognise alcohols from names or formulae (eg CH3CH2OH) and displayed structures. Describe what happens when any of the first four alcohols: react with sodium, burn in air (combustion), dissolve/mix with water, react with an oxidising agent. Recall main uses of these alcohols. Know aqueous ethanol produced by fermentation of sugar solutions using yeast; know fermentation conditions (eg warm ~30–40°C, anaerobic, yeast, sugar solution). Not expected to write balanced equations for alcohol reactions except combustion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "4.7.2.4",
+          "Sub_topic_name": "Carboxylic acids: functional group, reactions; weak acidity",
+          "description": "Know carboxylic acids have functional group –COOH; first four: methanoic, ethanoic, propanoic, butanoic acids; recognise from names/formulae/structures (eg CH3COOH). Describe what happens when any of first four carboxylic acids: react with carbonates, dissolve in water, react with alcohols (esterification, limited to knowing ester names only for ethyl ethanoate). Not expected to write balanced equations for carboxylic acid reactions. (Higher Tier) Explain why carboxylic acids are weak acids in terms of partial ionisation and pH, linking to strong/weak acids concept.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "4.7.3.1",
+          "Sub_topic_name": "Addition polymerisation (poly(ethene), poly(propene))",
+          "description": "Know alkenes form addition polymers (eg poly(ethene), poly(propene)) by addition polymerisation: many monomer molecules join to form a polymer. In addition polymers, repeating unit contains same atoms as monomer (no other molecule formed). Recognise addition polymers and monomers from diagrams, including identifying C=C in monomers; draw polymer formation from a given alkene monomer using repeating unit notation; relate repeating unit to monomer.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "4.7.3.2",
+          "Sub_topic_name": "Condensation polymerisation (polyesters) principles",
+          "description": "Know condensation polymerisation involves monomers with two functional groups; monomers join and usually eliminate a small molecule such as water (condensation). Simplest polymers from two different monomers each with two of the same functional groups. Example: ethanediol and hexanedioic acid form a polyester plus water. Explain principles of condensation polymerisation by reference to functional groups in monomers and repeating units in polymers; interpret/draw repeating units as shown.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "4.7.3.3",
+          "Sub_topic_name": "Amino acids and polypeptides/proteins",
+          "description": "Know amino acids contain two different functional groups; amino acids polymerise by condensation to form polypeptides (eg glycine H2NCH2COOH → polypeptide with repeating –NHCH2CO– units plus water). Know different amino acids can combine in same chain to produce proteins.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "4.7.3.4",
+          "Sub_topic_name": "DNA and naturally occurring polymers (monomers)",
+          "description": "Know DNA is a large molecule essential for life and encodes genetic instructions. Most DNA molecules consist of two polymer chains made from four nucleotide monomers forming a double helix. Know other naturally occurring polymers important for life: proteins, starch, cellulose. Name types of monomers: DNA → nucleotides; proteins → amino acids; starch and cellulose → sugars (glucose).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "4.8",
+      "Strand": "Chemistry",
+      "Topic_name": "Chemical analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "4.8.1.1",
+          "Sub_topic_name": "Pure substances and melting/boiling points",
+          "description": "Know a pure substance in chemistry is a single element or compound not mixed with anything else. Pure elements/compounds melt and boil at specific temperatures; melting/boiling point data distinguish pure substances from mixtures/impure samples. Recognise everyday meaning of 'pure' may differ (eg unadulterated milk). Use melting/boiling point data to distinguish pure from impure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "4.8.1.2",
+          "Sub_topic_name": "Formulations",
+          "description": "Know a formulation is a mixture designed as a useful product; complex mixtures where each chemical has a purpose; components mixed in carefully measured quantities to achieve required properties. Examples include fuels, cleaning agents, paints, medicines, alloys, fertilisers, foods. Identify formulations given information; no need to know proprietary component names.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "4.8.1.3",
+          "Sub_topic_name": "Paper chromatography and Rf values (required practical)",
+          "description": "Know chromatography separates mixtures and helps identify substances using a stationary phase and mobile phase; separation depends on distribution between phases. Explain paper chromatography separation; suggest how chromatography distinguishes pure vs impure (pure gives single spot in all solvents; mixture may give multiple; Rf varies by solvent/compound). Interpret chromatograms; calculate Rf = (distance moved by substance)/(distance moved by solvent) using centre of spot from origin and solvent front distance; use appropriate significant figures (Required Practical 6 includes calculating Rf).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "4.8.2.1",
+          "Sub_topic_name": "Test for hydrogen",
+          "description": "Hydrogen gas test: burning splint at open end of test tube; hydrogen burns rapidly with a squeaky pop sound.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "4.8.2.2",
+          "Sub_topic_name": "Test for oxygen",
+          "description": "Oxygen gas test: glowing splint inserted into gas; splint relights in oxygen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "4.8.2.3",
+          "Sub_topic_name": "Test for carbon dioxide",
+          "description": "Carbon dioxide test: bubble/shake gas through aqueous calcium hydroxide (limewater); limewater turns milky/cloudy due to precipitate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "4.8.2.4",
+          "Sub_topic_name": "Test for chlorine",
+          "description": "Chlorine gas test: damp litmus paper is bleached and turns white.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "4.8.3.1",
+          "Sub_topic_name": "Flame tests (metal ions)",
+          "description": "Use flame tests to identify cations: Li+ crimson, Na+ yellow, K+ lilac, Ca2+ orange-red, Cu2+ green. Know mixtures may mask colours. Identify species from test results for ions covered by 4.8.3.1–4.8.3.5; no need for other flame colours.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "4.8.3.2",
+          "Sub_topic_name": "Sodium hydroxide test for metal hydroxide precipitates",
+          "description": "Use NaOH(aq) to identify cations: Al3+, Ca2+, Mg2+ give white precipitates; only Al(OH)3 dissolves in excess NaOH. Cu2+ gives blue precipitate; Fe2+ green; Fe3+ brown. Write balanced equations for formation of insoluble hydroxides (not required to write equation for sodium aluminate formation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "4.8.3.3",
+          "Sub_topic_name": "Carbonate test (acid + CO₂)",
+          "description": "Carbonates react with dilute acids to produce carbon dioxide; identify CO2 using limewater turning milky.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "4.8.3.4",
+          "Sub_topic_name": "Halide test with silver nitrate",
+          "description": "Test halide ions in solution by adding AgNO3(aq) in presence of dilute HNO3: AgCl white, AgBr cream, AgI yellow precipitates.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "4.8.3.5",
+          "Sub_topic_name": "Sulfate test with barium chloride",
+          "description": "Test sulfate ions: BaCl2(aq) in presence of dilute HCl produces white precipitate of barium sulfate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "4.8.3.6",
+          "Sub_topic_name": "Instrumental methods: advantages",
+          "description": "Know instrumental methods detect and identify elements/compounds and are accurate, sensitive and rapid. State advantages of instrumental methods compared with chemical tests in this specification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "4.8.3.7",
+          "Sub_topic_name": "Flame emission spectroscopy (interpretation)",
+          "description": "Know flame emission spectroscopy analyses metal ions in solutions: sample in flame; emitted light passed through spectroscope; produces line spectrum to identify ions and measure concentrations. Interpret instrumental results (charts/tables) when provided with reference data set in same form; limited to flame emission spectroscopy.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "4.9",
+      "Strand": "Chemistry",
+      "Topic_name": "Chemistry of the atmosphere",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "4.9.1.1",
+          "Sub_topic_name": "Current composition of the atmosphere",
+          "description": "Know that for ~200 million years atmospheric composition has been roughly: ~80% nitrogen, ~20% oxygen, with small proportions of other gases including carbon dioxide, water vapour and noble gases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "4.9.1.2",
+          "Sub_topic_name": "Earth’s early atmosphere and evidence limitations",
+          "description": "Know theories about early atmosphere and its formation have changed; evidence limited due to 4.6 billion-year timescale. One theory: intense volcanic activity released gases forming early atmosphere; water vapour condensed to oceans. Early atmosphere may have been like Mars/Venus today: mainly CO2 with little/no O2. Volcanoes also produced N2 which built up; possibly small amounts of methane and ammonia. When oceans formed, CO2 dissolved and carbonates precipitated as sediments reducing atmospheric CO2. Interpret evidence and evaluate theories about early atmosphere given information; no other theories required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "4.9.1.3",
+          "Sub_topic_name": "Increase of oxygen via photosynthesis",
+          "description": "Know algae and plants produced atmospheric oxygen by photosynthesis: 6CO2 + 6H2O → C6H12O6 + 6O2 (in presence of light/chlorophyll). Algae produced O2 about 2.7 billion years ago; O2 then appeared in atmosphere; over next billion years plants evolved and O2 increased enabling animals to evolve.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "4.9.1.4",
+          "Sub_topic_name": "Decrease of carbon dioxide; formation of fossil fuels and limestone",
+          "description": "Know CO2 decreased by photosynthesis and by formation of sedimentary rocks and fossil fuels containing carbon. Describe main atmospheric changes over time and likely causes; describe and explain formation of deposits of limestone (carbonate sediments), coal, crude oil and natural gas.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "4.9.2.1",
+          "Sub_topic_name": "Greenhouse effect and greenhouse gases",
+          "description": "Know greenhouse gases maintain Earth’s temperature to support life; greenhouse gases include water vapour, carbon dioxide and methane. Describe greenhouse effect in terms of interaction of short- and long-wavelength radiation with matter (short-wave solar passes in; long-wave IR absorbed/re-emitted).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "4.9.2.2",
+          "Sub_topic_name": "Human activities increasing CO₂ and CH₄; evaluating evidence and peer review",
+          "description": "Recall two human activities that increase carbon dioxide and two that increase methane in the atmosphere (eg CO2: burning fossil fuels, deforestation; CH4: cattle/rice farming, landfill, fossil fuel extraction). Understand many scientists believe increased greenhouse gases will raise global temperatures and cause climate change based on peer-reviewed evidence; recognise climate modelling is complex leading to simplified models and media reports that may be biased or not peer-reviewed. Evaluate quality of evidence in reports about climate change given information; describe uncertainties in evidence base; recognise importance of peer review and communicating results to varied audiences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "4.9.2.3",
+          "Sub_topic_name": "Effects and risks of global climate change",
+          "description": "Know increased average global temperature is a major cause of climate change. Describe briefly four potential effects of global climate change (eg sea-level rise, changes in rainfall, extreme weather, habitat loss). Discuss scale, risk and environmental implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "4.9.2.4",
+          "Sub_topic_name": "Carbon footprint and reduction strategies",
+          "description": "Define carbon footprint as total CO2 and other greenhouse gases emitted over full life cycle of a product/service/event. Describe actions to reduce CO2 and methane emissions and give reasons why actions may be limited (economic, social, technological constraints).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "4.9.3.1",
+          "Sub_topic_name": "Pollutants from fuel combustion (formation)",
+          "description": "Know combustion of fuels is a major source of pollutants. Fuels (including coal) contain C/H and may contain sulfur. Burning can release: CO2, H2O vapour, CO, SO2, oxides of nitrogen (NOx); also particulates (solid particles/soot) and unburned hydrocarbons. Describe how CO, soot, SO2 and NOx are produced during fuel burning (incomplete combustion, sulfur impurities, high-temperature reaction of N2/O2 in air). Predict combustion products given fuel composition and conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "4.9.3.2",
+          "Sub_topic_name": "Effects of pollutants: CO, SO₂/NOx, particulates",
+          "description": "Know carbon monoxide is toxic, colourless and odourless. Know sulfur dioxide and oxides of nitrogen cause respiratory problems and contribute to acid rain. Know particulates cause global dimming and health problems. Describe and explain problems caused by increased levels of these pollutants.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "4.10",
+      "Strand": "Chemistry",
+      "Topic_name": "Using resources",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "4.10.1.1",
+          "Sub_topic_name": "Earth’s resources and sustainable development; finite vs renewable",
+          "description": "Know humans use Earth’s resources for warmth, shelter, food, transport; natural resources plus agriculture provide food, timber, clothing, fuels. Finite resources from Earth/oceans/atmosphere are processed into energy/materials. Define sustainable development as meeting needs of current generations without compromising future generations. Give examples of natural products supplemented/replaced by agricultural and synthetic products; distinguish finite vs renewable resources using information; extract/interpret resource data from charts/graphs/tables; use orders of magnitude to evaluate significance of data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "4.10.1.2",
+          "Sub_topic_name": "Potable water and treatment methods (required practical)",
+          "description": "Know potable water is safe to drink with low dissolved salts and microbes; not chemically pure because it contains dissolved substances. Treatment depends on supply/local conditions. UK fresh water treatment: choose appropriate source, filter through beds, sterilise (chlorine, ozone or UV). If fresh water limited, desalination of salty/sea water needed by distillation or membrane processes such as reverse osmosis; these require large energy. Distinguish potable vs pure water; describe differences in treating ground/fresh water vs salty water; explain reasons for treatment steps. (Required Practical 8 includes analysis and purification of water samples: pH, dissolved solids, distillation.)",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "4.10.1.3",
+          "Sub_topic_name": "Waste water treatment (sewage) and relative ease of obtaining potable water",
+          "description": "Know urban/industrial processes produce waste water requiring treatment before release. Sewage/agricultural waste water needs removal of organic matter and microbes; industrial waste water may also need removal of harmful chemicals. Sewage treatment stages: screening and grit removal; sedimentation to produce sewage sludge and effluent; anaerobic digestion of sludge; aerobic biological treatment of effluent. Comment on relative ease of obtaining potable water from waste, ground and salt water.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "4.10.1.4",
+          "Sub_topic_name": "Alternative metal extraction: phytomining and bioleaching",
+          "description": "Know metal ore resources are limited; copper ores becoming scarce. Alternative extraction from low-grade ores: phytomining (plants absorb metal compounds; harvested and burned to ash containing metal compounds) and bioleaching (bacteria produce leachate solutions containing metal compounds). Metals obtained from solutions by displacement (eg scrap iron) or electrolysis. Evaluate alternative biological extraction methods given information, including environmental impacts and efficiency.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "4.10.2.1",
+          "Sub_topic_name": "Life cycle assessment (LCA) and value judgements",
+          "description": "Know LCAs assess environmental impact across stages: extracting/processing raw materials; manufacturing/packaging; use/operation; disposal including transport/distribution at each stage. Some impacts (water/resources/energy/wastes) can be quantified; assigning numerical values to pollutant effects involves value judgements so LCA is not purely objective. Understand selective/abbreviated LCAs can be misused to support predetermined conclusions (eg advertising). Carry out simple comparative LCAs for plastic vs paper shopping bags; interpret LCAs given information, quantifying where data is available.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "4.10.2.2",
+          "Sub_topic_name": "Reducing resource use: reduce, reuse, recycle",
+          "description": "Know reduce, reuse and recycling reduces use of limited resources, energy use, waste and environmental impacts. Metals, glass, building materials, clay ceramics and most plastics come from limited raw materials; processes often use energy from finite resources; quarrying/mining has environmental impacts. Know examples: glass bottles can be reused; glass can be crushed and remelted; metals can be recycled by melting/recasting or reforming; separation required depends on material and required properties; eg adding scrap steel to blast-furnace iron reduces need to extract iron ore. Evaluate ways of reducing use of limited resources given information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "4.10.3.1",
+          "Sub_topic_name": "Corrosion (rusting) and prevention; sacrificial protection",
+          "description": "Know corrosion is destruction of materials by chemical reactions with environment; rusting is corrosion of iron requiring both air (oxygen) and water. Corrosion prevention by barrier coatings (grease, paint, electroplating); aluminium protected by oxide layer; sacrificial protection uses more reactive metal coatings (eg zinc galvanising iron). Describe experiments and interpret results showing both air and water needed for rusting; explain sacrificial protection using relative reactivity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "4.10.3.2",
+          "Sub_topic_name": "Alloys: bronze, brass, gold carats, steels, aluminium alloys",
+          "description": "Know most metals used are alloys. Bronze = copper + tin; brass = copper + zinc. Gold jewellery is usually alloyed with silver/copper/zinc; carats measure gold proportion: 24 carat = 100% gold; 18 carat = 75% gold. Steels are iron alloys with specific carbon/metal amounts: high carbon steel strong but brittle; low carbon steel softer/easily shaped; stainless steels with chromium and nickel are hard and corrosion-resistant. Aluminium alloys low density. Recall a use of each specified alloy; interpret/evaluate compositions and uses of other alloys given information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "4.10.3.3",
+          "Sub_topic_name": "Ceramics, polymers and composites; thermosetting vs thermosoftening",
+          "description": "Know soda-lime glass made by heating sand (silicon dioxide), sodium carbonate and limestone; borosilicate glass made from sand and boron trioxide and melts at higher temperature. Clay ceramics (pottery/bricks) made by shaping wet clay then heating in a furnace. Know polymer properties depend on monomers and conditions; LD and HD poly(ethene) both made from ethene under different conditions; thermosoftening polymers melt on heating; thermosetting polymers do not melt. Explain how LDPE and HDPE produced from ethene; explain thermosoftening vs thermosetting in terms of structure (eg cross-linking). Know composites: matrix/binder surrounds reinforcement (fibres/fragments). Recall examples of composites. Given information, compare quantitatively physical properties of glass/clay ceramics, polymers, composites and metals; relate properties to uses and select appropriate materials.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10j",
+          "Specification_section_sub": "4.10.4.1",
+          "Sub_topic_name": "Haber process for ammonia (equilibrium and economics)",
+          "description": "Know Haber process manufactures ammonia for nitrogen fertilisers. Raw materials: nitrogen and hydrogen; recall sources (nitrogen from air; hydrogen from natural gas via methane). Purified gases passed over iron catalyst at ~450°C and ~200 atm; reaction reversible: N2 + 3H2 ⇌ 2NH3. On cooling ammonia liquefies and removed; unreacted gases recycled. (Higher Tier) Interpret graphs of conditions vs rate; apply dynamic equilibrium to Haber process; explain trade-off between rate and equilibrium position; explain chosen industrial conditions in terms of raw material/energy availability and cost, equilibrium control and rate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10k",
+          "Specification_section_sub": "4.10.4.2",
+          "Sub_topic_name": "NPK fertilisers: production routes and phosphate rock reactions",
+          "description": "Know N, P, K compounds used as fertilisers; NPK fertilisers contain all three and are formulations of salts with appropriate percentages. Industrial NPK production uses integrated processes and various raw materials. Ammonia used to make ammonium salts and nitric acid. Potassium chloride, potassium sulfate, phosphate rock mined; phosphate rock cannot be used directly. Treat phosphate rock with nitric acid or sulfuric acid to produce soluble salts; recall salts formed when phosphate rock treated with nitric acid, sulfuric acid and phosphoric acid. Compare industrial fertiliser production with laboratory preparations given information.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "4.11",
+      "Strand": "Chemistry",
+      "Topic_name": "Key ideas",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "4.11",
+          "Sub_topic_name": "Core chemistry key ideas (synoptic)",
+          "description": "Understand and apply the overarching chemistry key ideas across the specification: matter is composed of atoms (~100 naturally occurring elements); elements show periodic relationships in chemical and physical properties explained by atomic structure; atoms bond by electron transfer or sharing; molecular shapes and arrangements of giant structures strongly influence behaviour/properties; reactions have barriers so proceed at different rates; chemical reactions occur in three main ways—proton transfer, electron transfer, electron sharing; energy is conserved in chemical reactions (cannot be created or destroyed). Use these ideas to connect and explain topics throughout the course.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

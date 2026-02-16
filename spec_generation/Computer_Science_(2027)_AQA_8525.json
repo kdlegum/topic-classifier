@@ -1,0 +1,648 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Computer Science (2027)",
+  "Exam Board": "AQA",
+  "Specification": "8525",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "3.1",
+      "Strand": "Computer Science",
+      "Topic_name": "Fundamentals of algorithms",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Algorithms, decomposition and abstraction",
+          "description": "Understand and explain the term algorithm (a sequence of steps that can be followed to complete a task). Know that a computer program is an implementation of an algorithm and that an algorithm is not a computer program. Understand and explain decomposition (breaking a problem into sub-problems so each accomplishes an identifiable task, which may be further subdivided). Understand and explain abstraction (removing unnecessary detail from a problem).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Representing algorithms (pseudo-code, code, flowcharts)",
+          "description": "Use a systematic approach to problem solving and algorithm creation, and represent algorithms using pseudo-code, program code and flowcharts. Any exam question that provides pseudo-code will use the AQA standard pseudo-code; questions will indicate the required response form (eg pseudo-code, program code or a flowchart).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Inputs, processing and outputs in algorithms",
+          "description": "Explain simple algorithms in terms of their inputs, processing and outputs; be able to identify where inputs, processing and outputs are occurring within an algorithm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Determining an algorithm’s purpose (tracing)",
+          "description": "Determine the purpose of simple algorithms using trace tables and visual inspection to work out how an algorithm works and what it does.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Algorithm efficiency (time)",
+          "description": "Understand that more than one algorithm can solve the same problem. Compare the time efficiency of algorithms and explain why some are more efficient than others; formal complexity measures are not required and questions will refer only to time efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Linear search",
+          "description": "Understand and explain how the linear search algorithm works; know the mechanics of the algorithm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Binary search",
+          "description": "Understand and explain how the binary search algorithm works; know the mechanics of the algorithm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Linear vs binary search (comparison)",
+          "description": "Compare and contrast linear and binary search algorithms, including advantages and disadvantages of each (eg requirements such as sorted data for binary search).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "3.1.4",
+          "Sub_topic_name": "Merge sort",
+          "description": "Understand and explain how merge sort works; know the mechanics of the algorithm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "3.1.4",
+          "Sub_topic_name": "Bubble sort",
+          "description": "Understand and explain how bubble sort works; know the mechanics of the algorithm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "3.1.4",
+          "Sub_topic_name": "Merge sort vs bubble sort (comparison)",
+          "description": "Compare and contrast merge sort and bubble sort algorithms, including advantages and disadvantages of both.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3.2",
+      "Strand": "Computer Science",
+      "Topic_name": "Programming",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Data types (core set)",
+          "description": "Understand the concept of a data type and be able to use appropriately: integer, real (may be called float in some languages), Boolean, character, string. In exams, the general names integer/real/Boolean/character/string are used regardless of language-specific names.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Core programming constructs and statements",
+          "description": "Use, understand and know how these statement types combine in programs: variable declaration, constant declaration, assignment, iteration, selection, subroutine (procedure/function). Understand the three combining principles: sequence, iteration/repetition, selection/choice. Be able to interpret and write algorithms/programs using these constructs and explain why named constants and variables are used.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Iteration (definite and indefinite; conditions at start/end)",
+          "description": "Use definite (count-controlled) and indefinite (condition-controlled) iteration, including indefinite iteration with the condition at the start (eg WHILE NotSolved ... ENDWHILE) or at the end (eg REPEAT ... UNTIL Solved; DO ... WHILE NotSolved). A theoretical understanding of conditions at either end is required even if the chosen language does not support all forms. Definite iteration example: FOR i ← 1 TO 5 ... ENDFOR.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Nested selection and nested iteration",
+          "description": "Use nested selection structures (eg IF GameWon THEN ... IF Score > HighScore THEN ... ENDIF ... ENDIF) and nested iteration structures (eg WHILE NotSolved ... FOR i ← 1 TO 5 ... ENDFOR ... ENDWHILE).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Meaningful identifiers",
+          "description": "Use meaningful identifier names (variables, constants, subroutines) and know why meaningful naming is important for clarity/maintainability and to make program logic clearly identifiable to examiners.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Arithmetic operations (incl. integer division and remainder)",
+          "description": "Use arithmetic operations: addition, subtraction, multiplication, real division, integer division including remainders. Understand integer division as quotient and remainder using modular arithmetic: eg 11 DIV 2 = 5 and 11 MOD 2 = 1.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Relational operators",
+          "description": "Use and interpret relational operations: equal to, not equal to, less than, greater than, less than or equal to, greater than or equal to. Recognise that languages may use different symbols but the same comparisons are assessed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "3.2.5",
+          "Sub_topic_name": "Boolean operators (NOT, AND, OR)",
+          "description": "Use Boolean operations NOT, AND, OR (including combinations) within conditions for selection and iteration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "3.2.6",
+          "Sub_topic_name": "Data structures (concept)",
+          "description": "Understand the concept of data structures and how they can be used in practical contexts to organise/handle data within solutions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "3.2.6",
+          "Sub_topic_name": "Arrays (1D and 2D)",
+          "description": "Use arrays (or equivalent) when designing solutions to simple problems; only one-dimensional and two-dimensional arrays are required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "3.2.6",
+          "Sub_topic_name": "Records (or equivalent)",
+          "description": "Use records (or equivalent) when designing solutions to simple problems. Be able to interpret/define a record structure, eg RECORD Car: make:String, model:String, reg:String, price:Real, noOfDoors:Integer ENDRECORD.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "3.2.7",
+          "Sub_topic_name": "Input and output (keyboard/display)",
+          "description": "Obtain user input from the keyboard and output data/information from a program to the computer display.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "3.2.8",
+          "Sub_topic_name": "String handling operations",
+          "description": "Use string handling operations: length, position, substring, concatenation, convert character to character code, convert character code to character, and string conversion operations. Expected conversions: string→integer, string→real, integer→string, real→string.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "3.2.9",
+          "Sub_topic_name": "Random number generation",
+          "description": "Use random number generation in programs. Understanding how pseudo-random numbers are generated is not required, but students must be able to apply random generation to solve problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "3.2.10",
+          "Sub_topic_name": "Subroutines (concept and benefits)",
+          "description": "Understand the concept of a subroutine as a named ‘out of line’ block of code that can be executed (called) by using its name in a statement. Explain advantages of subroutines (eg decomposition/modularity, reuse, readability, testing).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "3.2.10",
+          "Sub_topic_name": "Parameters and return values",
+          "description": "Describe and use parameters to pass data into subroutines (including more than one parameter). Use subroutines (functions) that return values to the calling routine, and describe how data is passed out via return values. Note: in examinable material the term parameter is used for both arguments and parameters.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "3.2.10",
+          "Sub_topic_name": "Local variables and scope",
+          "description": "Know that subroutines may declare local variables; local variables usually exist only while the subroutine executes and are accessible only within the subroutine. Use local variables and explain why this is good practice (eg avoids unintended interactions, improves clarity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "3.2.10",
+          "Sub_topic_name": "Structured programming approach",
+          "description": "Describe structured programming as modularised programming with clear, well-documented interfaces (local variables, parameters) and return values. Explain advantages of structured approach (eg maintainability, reliability, testability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "3.2.11",
+          "Sub_topic_name": "Data validation routines",
+          "description": "Write simple data validation routines to check user-entered data is valid. Examples include: checking a string has a minimum length, checking if a string is empty, checking a value lies within a range (eg 1 to 10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "3.2.11",
+          "Sub_topic_name": "Authentication routines (username/password)",
+          "description": "Write simple authentication routines using a username and password. Only plain-text usernames and passwords are required (no password encryption required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "3.2.11",
+          "Sub_topic_name": "Testing, debugging and correcting errors",
+          "description": "Understand testing in the context of algorithms and programs and be able to correct errors in algorithms and programs (debugging). Understand that errors include syntax errors and logic errors; identify and categorise errors within algorithms and programs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "3.2.11",
+          "Sub_topic_name": "Test data types and selection/justification",
+          "description": "Understand what test data is and describe normal (typical), boundary (extreme) and erroneous test data. Boundary examples for allowed range 1 to 10 include 0, 1, 10, 11 (either side of boundaries). Select and justify suitable test data for a given problem.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.3",
+      "Strand": "Computer Science",
+      "Topic_name": "Fundamentals of data representation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Number bases and why binary/hex are used",
+          "description": "Understand decimal (base 10), binary (base 2) and hexadecimal (base 16). Understand computers use binary to represent all data and instructions, and that the same bit pattern can represent different types of data (text, image, sound, integer). Explain why hexadecimal is often used in computer science (eg compact representation of binary, easier readability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Representing and converting whole numbers (0–255)",
+          "description": "Understand how binary represents whole numbers and be able to represent decimal values 0 to 255 in binary. Understand how hexadecimal represents whole numbers and be able to represent decimal values 0 to 255 in hexadecimal. Convert both directions between: binary↔decimal, binary↔hexadecimal, decimal↔hexadecimal. Use maximum equivalents: decimal 255 = binary 1111 1111 = hexadecimal FF.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Bits, bytes and decimal prefixes (kB, MB, GB, TB)",
+          "description": "Know a bit is the fundamental unit of information (0 or 1) and a byte is 8 bits; use b for bit and B for byte. Know decimal prefixes for quantities of bytes and their values: kilo (1 kB = 1,000 bytes), mega (1 MB = 1,000 kB), giga (1 GB = 1,000 MB), tera (1 TB = 1,000 GB). Compare quantities using these prefixes. Be aware historically prefixes were sometimes used as powers of 2, but in this specification SI decimal (powers of 10) meanings are used; kibi/mebi etc are not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.3.4",
+          "Sub_topic_name": "Binary addition (up to three 8-bit numbers)",
+          "description": "Add up to three binary numbers, each up to 8 bits. Only need to add up to three 1s in a single column. Answers will be up to 8 bits and will not require carrying beyond the 8th bit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.3.4",
+          "Sub_topic_name": "Logical binary shifts and uses",
+          "description": "Apply a logical binary shift to a binary number (up to 8 bits). Fractional representations are not required. Describe situations where binary shifts are used, including multiplication/division by powers of 2.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.3.5",
+          "Sub_topic_name": "Character sets, ASCII and Unicode",
+          "description": "Understand what a character set is. Describe 7-bit ASCII and Unicode. Use a given encoding table to convert characters→character codes and character codes→characters. Understand codes are commonly grouped and run in sequence (eg ASCII 'A'=65, 'B'=66, so other capitals can be inferred; similar for lowercase and digits). Describe Unicode’s purpose and advantages over ASCII, including representing many alphabets/symbols; know Unicode uses same codes as ASCII up to 127. UTF-8/UTF-16 details are not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.3.6",
+          "Sub_topic_name": "Bitmap images: pixels, size, colour depth and file size",
+          "description": "Understand what a pixel (picture element) is and how pixels relate to images and display. For bitmaps describe image size (width × height in pixels) and colour depth (bits per pixel). Explain how a bitmap represents an image using pixels and colour depth. Describe with examples how pixel count and colour depth affect file size. Calculate bitmap file sizes using: Size(bits)=W×H×D and Size(bytes)=(W×H×D)/8 where W=width (pixels), H=height (pixels), D=colour depth (bits). Only pixels and colour depth are needed (ignore metadata/compression).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.3.6",
+          "Sub_topic_name": "Bitmap ↔ binary conversion (simple images)",
+          "description": "Convert binary data into a simple bitmap image by drawing pixels from a given bit pattern. Convert a simple bitmap image into binary data by writing the corresponding bit pattern.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.3.7",
+          "Sub_topic_name": "Sound digitisation: sampling and file size",
+          "description": "Understand sound is analogue and must be converted to digital for storage/processing. Understand analogue signals are sampled; a sample is a measurement of amplitude at a point in time. Describe digital sound representation in terms of sampling rate (samples per second, hertz) and sample resolution (bits per sample). Calculate sound file size: File size(bits)=rate×res×secs where rate=sampling rate, res=sample resolution, secs=duration in seconds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3.3.8",
+          "Sub_topic_name": "Data compression (purpose and methods overview)",
+          "description": "Explain what data compression is and why data may be compressed; understand there are different ways to compress data (eg reducing storage/transmission requirements).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3.3.8",
+          "Sub_topic_name": "Huffman coding (trees and storage calculations)",
+          "description": "Explain how Huffman coding compresses data. Interpret Huffman trees and use them to determine codes. Calculate number of bits required to store compressed data using Huffman coding. Calculate bits required to store uncompressed data in ASCII and determine bits saved by compression (compare totals).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "3.3.8",
+          "Sub_topic_name": "Run length encoding (RLE)",
+          "description": "Explain how run length encoding (RLE) compresses data using frequency/data pairs. Represent data as RLE frequency/data pairs (typically per row for bitmaps), eg 0000011100000011 → 5 0 3 1 6 0 2 1.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.4",
+      "Strand": "Computer Science",
+      "Topic_name": "Computer systems",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Hardware and software (definitions)",
+          "description": "Define hardware and software and understand the relationship between them (hardware as physical components; software as programs/instructions that run on hardware).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Logic gates truth tables (NOT, AND, OR, XOR)",
+          "description": "Construct truth tables for NOT, AND, OR and XOR gates. NAND and NOR are not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Truth tables for simple logic circuits (up to 3 inputs)",
+          "description": "Construct and interpret truth tables for simple logic circuits using combinations of NOT, AND, OR and XOR gates. Truth tables may include up to three inputs; interpret outputs from given tables.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Logic circuit diagrams (create/modify/interpret)",
+          "description": "Create, modify and interpret simple logic circuit diagrams using only NOT, AND, OR and XOR. Recognise and use the standard circuit symbols for AND, OR, NOT, XOR. Circuits will contain up to three inputs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Boolean expressions and mapping to circuits",
+          "description": "Create and interpret simple Boolean expressions using operators: '.' for AND, '+' for OR, '⊕' for XOR, and overbar for NOT (eg (A AND B) OR (NOT C) = A.B + C̅). Create the Boolean expression for a simple logic circuit and create a logic circuit from a simple Boolean expression.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "System vs application software",
+          "description": "Explain system software and application software; give examples. Understand system software manages system resources and provides a platform for applications; application software performs end-user tasks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Operating systems and utilities (need and functions)",
+          "description": "Understand the need for operating systems (OS) and utility programs and their functions. Understand the OS manages: processor(s), memory, input/output (I/O) devices, applications, and security.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Low-level vs high-level languages",
+          "description": "Know there are different levels of programming language: low-level and high-level. Explain main differences and why most programs are written in high-level languages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Machine code vs assembly language",
+          "description": "Know machine code and assembly are low-level languages and explain differences. Understand processors execute machine code; each processor/family has its own instruction set. Understand assembly is often used for embedded systems and controlling specific hardware components and has a 1:1 correspondence with machine code.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Translation requirement and machine code characteristics",
+          "description": "Understand code written in high-level or assembly languages must be translated. Understand machine code is expressed in binary and is specific to a processor or processor family. Explain advantages/disadvantages of low-level language programming compared with high-level programming (eg performance/control vs complexity/portability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Translators: interpreter, compiler, assembler",
+          "description": "Understand three common translator types: interpreter, compiler, assembler. Explain main differences and when each is appropriate. Know assemblers and compilers translate input into machine code directly; each assembly line corresponds to a single machine code instruction; interpreters do not generate machine code directly and instead call machine-code subroutines within the interpreter to execute statements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "CPU components and buses; main memory role",
+          "description": "Explain the role/operation of main memory and major CPU components: arithmetic logic unit (ALU), control unit, clock, registers, buses. Understand a bus is a collection of wires transmitting data/signals between components; knowledge of specific named registers is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "CPU performance factors (clock speed, cores, cache)",
+          "description": "Explain the effect on CPU performance of: clock speed, number of processor cores, cache size.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Fetch–Decode–Execute cycle",
+          "description": "Understand and explain the Fetch–Execute cycle: fetch the next instruction from main memory to CPU; decode to determine what it is; execute (carry out), which may include reading/writing to main memory. Understand CPU continuously repeats this cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Memory types (RAM, ROM, cache, registers) and uses",
+          "description": "Understand types of memory: RAM, ROM, cache, registers. Know what each is used for and why required (eg working memory vs permanent firmware vs fast local storage vs immediate CPU storage).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Main memory vs secondary storage; volatile vs non-volatile",
+          "description": "Understand differences between main memory and secondary storage. Understand differences between RAM and ROM and the meaning of volatile vs non-volatile. Main memory is any memory directly accessible by the CPU (excluding cache and registers). Secondary storage is non-volatile storage not directly accessible by the CPU.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Secondary storage types, operation and comparison",
+          "description": "Understand why secondary storage is required. Be aware of solid state and magnetic secondary storage; explain operation of each (high-level) and discuss advantages/disadvantages (eg speed, durability, capacity, cost). For SSDs, know they use electrical circuits to persistently store data; detailed NAND implementation not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4r",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Cloud storage (definition and evaluation)",
+          "description": "Explain cloud storage as using magnetic and/or solid state storage at a remote location. Explain advantages and disadvantages compared with local storage (eg access anywhere, dependency on internet, security/privacy, cost, reliability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4s",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Embedded systems",
+          "description": "Understand the term embedded system and explain how it differs from a non-embedded system. Give examples of embedded and non-embedded systems.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.5",
+      "Strand": "Computer Science",
+      "Topic_name": "Fundamentals of computer networks",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Networks (definition) and pros/cons",
+          "description": "Define a computer network. Discuss advantages and disadvantages of computer networks (eg resource sharing, communication, security risks, cost/maintenance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Network types (PAN, LAN, WAN)",
+          "description": "Describe main network types: PAN (only Bluetooth required), LAN (covers small geographic areas; often owned/controlled/managed by a single person/organisation), WAN (covers wide geographic area; often under collective/distributed ownership; Internet as biggest example).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Wired vs wireless networks",
+          "description": "Understand networks can be wired or wireless. Discuss advantages/disadvantages of wireless compared with wired. Know wired networks can use different cable types such as fibre and copper and when each is appropriate (eg speed/distance/interference/cost).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Network protocols (definition and purpose)",
+          "description": "Define network protocol. Explain the purpose/uses of common protocols: TCP, IP, HTTP, HTTPS, and email protocols SMTP and IMAP (eg HTTPS provides an encrypted version of HTTP for more secure web transactions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Need for network security",
+          "description": "Understand the need for and importance of network security (protecting data, devices, users, and services from unauthorised access/attack).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Network security methods (authentication, encryption, firewall, MAC filtering)",
+          "description": "Explain network security methods: authentication, encryption, firewall, MAC address filtering; explain using examples what each is and when used. Understand these methods can be combined for greater security. Understand a firewall as a network security device that monitors incoming/outgoing traffic and allows/blocks traffic based on security rules. Understand MAC address filtering allows or blocks devices based on the physical (MAC) address embedded in a device’s network adapter.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "4-layer TCP/IP model and protocol layers",
+          "description": "Describe the 4-layer TCP/IP model: application, transport, internet, link. Know HTTP, HTTPS, SMTP, IMAP operate at the application layer; TCP at transport layer; IP at internet layer. Name the layers and describe main functions: application layer (network applications such as web browser/email), transport layer (sets up host-to-host communication and agrees settings such as packet size), internet layer (addresses/packages data and routes packets), link layer (network hardware eg NIC and OS device drivers).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.6",
+      "Strand": "Computer Science",
+      "Topic_name": "Cyber security",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.6.1",
+          "Sub_topic_name": "Cyber security (definition and purposes)",
+          "description": "Define cyber security and describe main purposes. Know cyber security consists of processes, practices and technologies designed to protect networks, computers, programs and data from attack, damage or unauthorised access.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.6.2",
+          "Sub_topic_name": "Cyber security threats (overview list)",
+          "description": "Understand and explain common threats: social engineering techniques, malicious code (malware), pharming (redirecting a website’s traffic to a fake website), weak/default passwords, misconfigured access rights, removable media, unpatched and/or outdated software.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.6.2",
+          "Sub_topic_name": "Penetration testing (what it is and types)",
+          "description": "Explain what penetration testing is and what it is used for: attempting to gain access to resources without knowledge of usernames/passwords and other normal access methods. Understand two types: (1) with knowledge of and possibly basic credentials for the target system (simulating an internal malicious insider attack), and (2) with no knowledge of any credentials (simulating an external attack).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Social engineering: definition, forms and protection",
+          "description": "Define social engineering as manipulating people to give up confidential information. Describe what it is and how to protect against it. Explain forms: blagging/pretexting (invented scenario to encourage disclosure/actions), phishing (fraudulently obtaining private information, often via email or SMS), shouldering/shoulder surfing (observing private information over someone’s shoulder, eg ATM PINs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Malware: definition, types and protection",
+          "description": "Define malware as an umbrella term for hostile/intrusive software. Describe what malware is and how it can be protected against. Describe types: computer virus, trojan, spyware.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Detecting and preventing threats (security measures)",
+          "description": "Understand and explain security measures: biometric measures (particularly for mobile devices), password systems, CAPTCHA (or similar), using email confirmations to confirm a user’s identity, and automatic software updates.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "3.7",
+      "Strand": "Computer Science",
+      "Topic_name": "Relational databases and structured query language (SQL)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Databases and relational databases (concepts and keys)",
+          "description": "Explain the concept of a database and of a relational database. Understand database concepts: table, record, field, data type, primary key, foreign key. Understand that relational databases help eliminate data inconsistency and data redundancy. Note: although entity/attribute/entity identifier may be used in abstract modelling, exam content will use table/record/field/primary key/foreign key for both abstract models and implementations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "3.7.2",
+          "Sub_topic_name": "SQL retrieval queries (SELECT, FROM, WHERE, ORDER BY)",
+          "description": "Use SQL to retrieve data using SELECT, FROM, WHERE, and ORDER BY ... ASC | DESC. Exam questions will extract data from no more than two tables in any one query.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "3.7.2",
+          "Sub_topic_name": "SQL insert (INSERT INTO ... VALUES)",
+          "description": "Use SQL to insert data into a relational database using: INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "3.7.2",
+          "Sub_topic_name": "SQL update and delete (UPDATE/DELETE with WHERE)",
+          "description": "Use SQL to edit and delete data using: UPDATE table_name SET column1=value1, column2=value2, ... WHERE condition; and DELETE FROM table_name WHERE condition.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "3.8",
+      "Strand": "Computer Science",
+      "Topic_name": "Ethical, legal and environmental impacts of digital technology on wider society, including issues of privacy",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "3.8",
+          "Sub_topic_name": "Impacts, risks and privacy trade-offs across technologies",
+          "description": "Explain current ethical, legal and environmental impacts and risks of digital technology on society, considering data privacy issues where they arise. Exam contexts include: cyber security, mobile technologies, wireless networking, cloud storage, hacking (unauthorised access to a computer system), wearable technologies, computer-based implants, autonomous vehicles. Focus on general principles rather than detailed knowledge of specific cases. Understand differing viewpoints on privacy: citizens may value privacy and dislike excessive access by governments/security services; governments/security services may argue access to private data is needed to protect citizens from terrorism and other threats.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Statistics",
+  "Exam Board": "Edexcel",
+  "Specification": "1ST0",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "1",
+      "Strand": "Statistics",
+      "Topic_name": "The collection of data",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1a.01",
+          "Sub_topic_name": "Hypotheses and testing (informal)",
+          "description": "Know that a hypothesis can be tested only through the appropriate collection and analysis of data. Formal use of a null hypothesis is not required. Be able to specify a hypothesis in context (e.g. ‘as motor cycles get older their value is likely to go down’).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1a.02",
+          "Sub_topic_name": "Constraints in investigations",
+          "description": "Know the constraints that may be faced in designing an investigation to test a hypothesis, including time, costs, ethical issues, confidentiality and convenience; be able to give contextual examples (e.g. salaries, or difficulty finding data).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1a.03",
+          "Sub_topic_name": "Mitigating issues in the enquiry process",
+          "description": "Determine proactive strategies to mitigate issues that might arise during the statistical enquiry process, e.g. difficulty identifying the population, non-response, unexpected outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1b.01",
+          "Sub_topic_name": "Types of data and variables",
+          "description": "Know and apply terminology describing data for statistical analysis: raw data; quantitative/qualitative; categorical; ordinal; discrete/continuous; ungrouped/grouped; bivariate (and multivariate for Higher tier). Use correct statistical terminology to describe given data; recognise more than one term may apply. Identify variables relevant to an investigation or hypothesis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "1b.02",
+          "Sub_topic_name": "Merging categories and grouping into class intervals",
+          "description": "Know the advantages and implications of merging data into more general categories and of grouping numerical data into class intervals. Know class width and implications of grouping (e.g. loss of accuracy in calculations and presentations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "1b.03",
+          "Sub_topic_name": "Explanatory and response variables",
+          "description": "Know and apply the terms explanatory (independent) variable and response (dependent) variable. Know that on a scatter diagram the explanatory/independent variable should be on the x-axis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "1b.04",
+          "Sub_topic_name": "Primary vs secondary data",
+          "description": "Know the difference between primary and secondary data, including advantages and disadvantages of each. Consider reliability and accuracy (including rounding) and recognise constraints in accessing data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "1c.01",
+          "Sub_topic_name": "Population, sampling frame and sample",
+          "description": "Know the difference between population, sampling frame and sample. Identify a population and suggest a suitable sampling frame in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "1c.02",
+          "Sub_topic_name": "Meaning of population in context",
+          "description": "Know that ‘population’ can have different meanings depending on context (e.g. all employees in an office; all females in the UK; all items produced in a factory).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "1c.03",
+          "Sub_topic_name": "Judgement/opportunity sampling and bias (incl. cluster/quota)",
+          "description": "Know reasons for employing judgement sampling or opportunity (convenience) sampling, and associated risks of bias. Include cluster sampling and quota sampling; reasons may include convenience, cost and time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "1c.04",
+          "Sub_topic_name": "Choosing sampling techniques to avoid bias",
+          "description": "Know appropriate sampling techniques in context to avoid bias; understand random sampling, systematic sampling and quota sampling, including advantages/disadvantages. Know that systematic and quota techniques are generally non-random. Know that the period of systematic sampling may coincide with a periodicity in the data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "1c.05",
+          "Sub_topic_name": "Simple random sampling methods",
+          "description": "Know key features of a simple random sample and demonstrate understanding of how physical/electronic methods select random members from a population, including dice, cards, random number lists and calculator functions. Understand that all items should have equal likelihood of inclusion. Be able to select items for a sample, dealing with repeated random numbers and out-of-range random numbers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "1c.06",
+          "Sub_topic_name": "Stratified sampling",
+          "description": "Use stratification and know when it is appropriate before sampling. Identify suitable strata (e.g. gender, age group). Calculate appropriate stratum sample sizes: stratify by one category (Foundation) or one/more categories (Higher).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "1d.01",
+          "Sub_topic_name": "Data sources and acknowledging sources",
+          "description": "Know that data can be collected from different sources: experimental (laboratory, field and natural), simulation, questionnaires, observation, reference, census, population and sampling. Design data collection sheets. Simulations may include random numbers. Know that sources of secondary data should be acknowledged.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "1d.02",
+          "Sub_topic_name": "Reliability and validity",
+          "description": "Know the importance of reliability and validity regarding collected data: reliability is the extent to which repeated measurements yield similar results; validity is the extent to which a test measures what was intended.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "1d.03",
+          "Sub_topic_name": "Bias, sensitivity and minimising distortion (incl. random response)",
+          "description": "Determine factors that may lead to bias (including sensitivity of content matter). For Higher tier also include level of control; know how to minimise data distortion and know the ‘random response’ technique for sensitive questions.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "1d.04",
+          "Sub_topic_name": "Designing data collection (questionnaire/interview/experiment)",
+          "description": "Know key features when planning data collection: leading questions; avoiding biased sources; time factors; open/closed questions; different interview techniques. Design suitable questions and data collection sheets. Be aware of advantages/disadvantages of data collection techniques. Know rationale for pilots (questionnaires) and pre-tests (experiments).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1r",
+          "Specification_section_sub": "1d.05",
+          "Sub_topic_name": "Dealing with missing/incorrect/non-response data",
+          "description": "Know and demonstrate understanding of techniques to deal with problems in collected data (e.g. missing data, incorrect formats, non-responses, incomplete responses).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1s",
+          "Specification_section_sub": "1d.06",
+          "Sub_topic_name": "Cleaning data (incl. spreadsheets, outliers/anomalies)",
+          "description": "Know why data may need to be cleaned before further processing, including issues arising on spreadsheets, and apply data cleaning techniques in context. In pre-processing: consider genuine and other outliers/anomalies; remove extraneous symbols/notation when using technology (e.g. spreadsheets/statistical software). (See also outliers topic 2c.03.)",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1t",
+          "Specification_section_sub": "1d.07",
+          "Sub_topic_name": "Extraneous variables, controls and matched pairs",
+          "description": "Know the importance of identifying and controlling extraneous variables. For Higher tier: include use of control groups; understand advantage of matched pairs when using control groups.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "2",
+      "Strand": "Statistics",
+      "Topic_name": "Processing, representing and analysing data",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2a.01",
+          "Sub_topic_name": "Pictorial representations and two-way tables",
+          "description": "Represent data sets pictorially using calculated key values as necessary, and interpret/compare pictorial displays: tabulation, tally, pictogram, pie chart, stem-and-leaf diagram, Venn diagram. Use two-way tables. Provide keys where appropriate. Order stem-and-leaf diagrams to identify key values.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "2a.02",
+          "Sub_topic_name": "Population pyramids and choropleth maps (and comparative displays)",
+          "description": "Interpret and compare data sets displayed pictorially: population pyramid; choropleth map. Higher tier also includes comparative pie charts, comparative 2D representations and comparative 3D representations; understand relationship between area and frequency and be able to calculate radius for comparative pie charts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "2a.03",
+          "Sub_topic_name": "Graphical representations (bar/line/time series/scatter/CF/histogram/box plot)",
+          "description": "Represent data sets graphically using calculated key values as necessary, and interpret/compare graphical displays: bar charts; line graphs; time series; scatter diagrams; bar line (vertical line) charts; frequency polygons; cumulative frequency charts (discrete and grouped); histograms with equal class width; box plots. Use multiple and composite bar charts (including percentage composite). No distinction between cumulative frequency polygons (other than step polygons) and curves; frequency polygons may be open or closed. For histograms with equal class widths, y-axis may be labelled ‘frequency’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "2a.04",
+          "Sub_topic_name": "Histograms with unequal class widths (frequency density)",
+          "description": "Calculate and use frequency density to draw histograms with unequal class widths, and interpret/compare data displayed in such histograms. Know frequency density = frequency / class width (from GCSE Maths content). Correctly label frequency density axis or use an appropriate key (note: for equal class widths, ‘frequency’ axis label may be used). Use of a standard class width with appropriate units is acceptable.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "2a.05",
+          "Sub_topic_name": "Choosing and justifying appropriate visualisations (incl. technology)",
+          "description": "Justify the appropriate format and produce accurate data visualisations. Be familiar with capabilities and advantages of using statistical software/spreadsheets to produce diagrams/graphs, and know to avoid inappropriate use. Choice of format may take account of target audience (e.g. when simple vs more technical visualisation is appropriate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2a.06",
+          "Sub_topic_name": "Misrepresentation and errors in graphs/diagrams",
+          "description": "Recognise errors in construction that lead to graphical misrepresentation, including incorrect scales, truncated axes, distorted sizing; and for Higher tier include misuse of formula when calculating frequency densities for histograms. Correct use of class boundaries is required (including when calculating frequency densities). Understand possible distortion when interpreting 3D representations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2a.07",
+          "Sub_topic_name": "Comparing data across formats; extracting/calculating corresponding values",
+          "description": "Extract and calculate corresponding values to compare data sets presented in different formats, and present the same information in multiple formats. Include extracting information from spreadsheets, lists of statistics, or graphs produced by statistical software.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2a.08",
+          "Sub_topic_name": "Selecting representation appropriate to data type",
+          "description": "Select and justify an appropriate form of representation with regard to the nature of the data (e.g. scatter diagrams for bivariate data; histograms for grouped data).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2a.09",
+          "Sub_topic_name": "Skewness (inspection and calculation)",
+          "description": "Determine skewness from data by inspection (Foundation) and by inspection and calculation (Higher). Indicators by inspection include: positive skew may be indicated by mean > median > mode and by median − LQ < UQ − median. For Higher tier also use skewness coefficient Skew = 3(mean − median) / standard deviation (formula provided in formulae sheet).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2a.10",
+          "Sub_topic_name": "Interpreting skewness in context",
+          "description": "Interpret a distribution in terms of skewness identified from inspection (Foundation) or inspection/calculation (Higher). For example, with positive skew values above the median have a greater spread than values below the median.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2b.01",
+          "Sub_topic_name": "Averages for discrete and grouped data",
+          "description": "Calculate averages for discrete and grouped data. Foundation: mode, median, arithmetic mean. Higher: mode, median, arithmetic mean, weighted mean, geometric mean, mean seasonal variation. Understand ‘mean’ as arithmetic mean unless geometric mean is stated. For grouped data: calculate mean/median for equal class widths (Foundation) and equal/unequal class widths (Higher); linear interpolation for median is expected. Use class midpoints (mid-interval values) to estimate mean of grouped data. Understand effects on mean/mode/median of changes to data (adding/withdrawing a population/sample member). Understand effect of simple transformations (scaling and translation) on mean/mode/median.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "2b.02",
+          "Sub_topic_name": "Choosing an appropriate average",
+          "description": "Justify the rationale for selecting an appropriate type of average in context, e.g. mode for most common category/size or when data are non-numeric; median rather than mean for skewed data; mean to take account of all data (and at Higher, enables calculation of standard deviation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "2b.03",
+          "Sub_topic_name": "Comparing datasets using averages",
+          "description": "Compare different data sets using appropriate calculated or given measures of central tendency (mode/modal class/median/mean). Be aware of which measure is appropriate and select appropriate values (e.g. from statistical software output).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "2c.01",
+          "Sub_topic_name": "Measures of spread (range, quartiles, percentiles, SD etc.)",
+          "description": "Calculate measures of spread. Foundation: range, quartiles, interquartile range (IQR), percentiles. Higher: range, quartiles, IQR, percentiles, interpercentile range (e.g. 10th to 90th), interdecile range, and standard deviation. For quartiles/percentiles: any n may occur; bounds may or may not be actual data values; alternative methods acceptable if method is clear (e.g. if median is between two values, use their arithmetic mean). For Higher standard deviation: formulae for a set of values are given; students must be able to apply to grouped data, using σ = sqrt( (∑f(x−x̄)^2)/(∑f) ) or equivalently σ = sqrt( (∑fx^2)/(∑f) − ( (∑fx)/(∑f) )^2 ) (as presented).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "2c.02",
+          "Sub_topic_name": "Identifying outliers (inspection and calculation)",
+          "description": "Identify outliers by inspection (Foundation) and by inspection and using calculations (Higher). Higher calculations: small outlier < LQ − 1.5×IQR; large outlier > UQ + 1.5×IQR; or outlier outside μ ± 3σ.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "2c.03",
+          "Sub_topic_name": "Interpreting and explaining outliers",
+          "description": "Comment on outliers with reference to the original data; know outliers may be genuine unusual values or due to errors in recording. For Higher, outlier boundaries may need to be calculated before commenting.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "2c.04",
+          "Sub_topic_name": "Comparing datasets using spread",
+          "description": "Compare different data sets using appropriate calculated or given measures of spread. Foundation: range, IQR, percentiles. Higher: range, IQR, percentiles and standard deviation. Be aware of appropriateness and select appropriate values (e.g. from statistical software).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "2c.05",
+          "Sub_topic_name": "Comparing samples and populations using paired statistics",
+          "description": "Use calculated or given measures to compare data samples and to compare sample data with population data. Foundation: median with IQR. Higher: median with IQR/interpercentile/interdecile range, or mean with standard deviation. Understand appropriate pairing of central tendency and dispersion (e.g. mean with IQR is not appropriate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "2c.06",
+          "Sub_topic_name": "Standardising scores (z-scores) across samples",
+          "description": "Use calculated or given means and standard deviation to standardise and interpret data collected in two comparable samples. Know standardised score z = (x − μ)/σ (formula not provided). Standard deviation formulae are provided in the formulae sheet.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "2d.01",
+          "Sub_topic_name": "Index numbers (simple, chain, weighted)",
+          "description": "Use index numbers in context (e.g. RPI, CPI, GDP). Foundation: calculate and interpret simple index numbers. Higher: use different types of index and weighted index numbers; calculate and interpret simple and chain-based index numbers; weighted index number uses weights applied to index values (see formulae included in content).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "2d.02",
+          "Sub_topic_name": "Rates of change over time (incl. standardisation)",
+          "description": "Interpret data related to rates of change over time (e.g. percentage change, births, deaths, house prices, unemployment) when given graphically; calculate and interpret rates of change over time from tables using context-specific formulae; make predictions using rates of change formulae. Example: crude birth rate = (number of births / total population) × 1000 (formula given). Higher may include standardised birth rate = (crude rate / 1000) × standard population (formulae given).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "2e.01",
+          "Sub_topic_name": "Correlation vocabulary and axes",
+          "description": "Know and apply vocabulary of correlation: positive, negative, zero, causation, association, interpolation, extrapolation. Know a dependent variable should be plotted on the y-axis (and, from topic 1b.03, explanatory/independent on x-axis).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2w",
+          "Specification_section_sub": "2e.02",
+          "Sub_topic_name": "Strength of correlation by inspection",
+          "description": "Describe and compare correlation by inspection as strong or weak, using scatter diagrams informally.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2x",
+          "Specification_section_sub": "2e.03",
+          "Sub_topic_name": "Correlation vs causation; spurious correlation",
+          "description": "Know correlation does not necessarily imply causation. Foundation: be aware of spurious correlation (e.g. car ownership vs birth rate may correlate because both depend on city population size). Higher: additionally know multiple factors may interact and cause apparent association.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2y",
+          "Specification_section_sub": "2e.04",
+          "Sub_topic_name": "Line of best fit and regression line; double-mean point",
+          "description": "Determine a line of best fit: by eye; by drawing through a calculated double-mean point (x̄, ȳ) where x̄ = (∑fx)/(∑f), ȳ = (∑fy)/(∑f). Higher: also determine using the equation of the (linear) regression line y = a + bx. Understand/interpret interpolation and extrapolation and interpret gradient and intercept in context. Non-linear models will not be tested.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2z",
+          "Specification_section_sub": "2e.05",
+          "Sub_topic_name": "Spearman’s rank correlation coefficient (calculation)",
+          "description": "Apply a formula to determine Spearman’s rank correlation coefficient r_s; calculator function values are permissible. The formula is given in the formulae sheet. Tied ranks will not be tested; scientific calculator functions are sufficient.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2aa",
+          "Specification_section_sub": "2e.06",
+          "Sub_topic_name": "Spearman’s rank correlation coefficient (interpretation)",
+          "description": "Interpret calculated or given Spearman’s rank correlation coefficient in context. Know values lie between −1 and +1; values closer to ±1 indicate stronger correlation (no formal strength scale required). Example context: comparing ranks from two judges: +1 perfect agreement, −1 complete opposite ranks, 0 no agreement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ab",
+          "Specification_section_sub": "2e.07",
+          "Sub_topic_name": "Pearson product moment correlation coefficient (PMCC) interpretation",
+          "description": "Interpret a given Pearson product moment correlation coefficient (PMCC) in context. Know values lie between −1 and +1; values closer to ±1 indicate stronger linear correlation (no formal strength scale required). Know +1 perfect linear positive correlation, −1 perfect linear negative correlation, 0 no linear correlation. Calculation of PMCC is not required.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2ac",
+          "Specification_section_sub": "2e.08",
+          "Sub_topic_name": "Spearman vs Pearson (rank vs linear correlation)",
+          "description": "Understand the distinction between Spearman’s rank correlation coefficient and Pearson’s product moment correlation coefficient (PMCC): recognise relative strengths on a scatter graph; PMCC measures strength of linear correlation; calculation of PMCC not required. Example: for positive non-linear correlation both coefficients positive but Spearman’s coefficient greater than PMCC.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2ad",
+          "Specification_section_sub": "2f.01",
+          "Sub_topic_name": "Trends and moving averages",
+          "description": "Identify trends in data through inspection and by calculating moving averages. Foundation: 4-point moving averages. Higher: 4-point or other determined appropriate point moving averages. Draw a trend line by eye or using averages; interpret gradient of trend lines in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ae",
+          "Specification_section_sub": "2f.02",
+          "Sub_topic_name": "Seasonal and cyclic variation; predictions",
+          "description": "Interpret seasonal and cyclic trends in context. Higher: use such trends to make predictions; demonstrate calculation of predictions using average seasonal effect; be aware of dangers of extrapolation when predicting.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2af",
+          "Specification_section_sub": "2g.01",
+          "Sub_topic_name": "Sampling distribution of the mean (less variation)",
+          "description": "Know that a set of sample means is more closely distributed than individual values from the same population (e.g. mean heights of classes vary less than individual student heights).",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2ag",
+          "Specification_section_sub": "2g.02",
+          "Sub_topic_name": "Control charts: warning/action lines",
+          "description": "Use action and warning lines in quality assurance sampling applications. Use control charts for sample mean, median or range. Understand action limits and warning limits: almost all means/medians/ranges fall inside action lines; only about 1 in 20 fall outside warning lines. Know warning lines are at expected value ±2 standard deviations of the sample mean, action lines at expected value ±3 standard deviations. Know actions to be taken when a sample statistic falls outside each type of limit.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2ah",
+          "Specification_section_sub": "2h.01",
+          "Sub_topic_name": "Estimating population characteristics from samples",
+          "description": "Use calculated or given summary statistics to estimate population characteristics. Use samples to estimate population mean and to predict population proportions; e.g. predict approximately half the population will be above the sample median.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ai",
+          "Specification_section_sub": "2h.02",
+          "Sub_topic_name": "Capture–recapture (Petersen estimate)",
+          "description": "Apply the Petersen capture–recapture formula to estimate population size: N ≈ (sample size 1 × sample size 2) / (number marked in sample 2). Know the assumptions required and be familiar with their appropriateness in practice.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "2aj",
+          "Specification_section_sub": "2h.03",
+          "Sub_topic_name": "Sample size, reliability and replication",
+          "description": "Know sample size affects reliability and replication; results/conclusions are generally more reliable when based on larger samples.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3",
+      "Strand": "Statistics",
+      "Topic_name": "Probability",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3p.01",
+          "Sub_topic_name": "Estimating probability from data (relative frequency)",
+          "description": "Use collected data to calculate estimates of probabilities, using relative frequency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3p.02",
+          "Sub_topic_name": "Probability scale and likelihood language",
+          "description": "Compare probabilities of outcomes using the 0–1 scale or 0–100% scale and statements of likelihood. Place events on a probability scale and use likelihood language (e.g. certain, impossible, evens, likely, very unlikely).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3p.03",
+          "Sub_topic_name": "Expected frequency",
+          "description": "Use probability values to calculate expected frequency of a specified characteristic within a sample or population; given total frequency, use probability as a proportion to find expected frequency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3p.04",
+          "Sub_topic_name": "Absolute risk and relative risk",
+          "description": "Use collected data and calculated probabilities to determine and interpret absolute risk and relative risk; express risk in terms of expected frequencies in groups. Example: driving test pass rates for Instructor A and B: absolute risk P(pass|A), and relative risk = (risk of passing with A)/(risk of passing with B).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3p.05",
+          "Sub_topic_name": "Experimental vs theoretical probability (detecting bias)",
+          "description": "Compare experimental data with theoretical predictions to identify possible bias in experimental design (e.g. whether dice rolls suggest a die is fair).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3p.06",
+          "Sub_topic_name": "Law of large numbers and reliability of estimates",
+          "description": "Recognise experimental probability tends towards theoretical probability as number of trials increases when variables are random. Understand increasing sample size generally gives better estimates of probability and population parameters. Be able to estimate probabilities from relative frequency diagrams and frequency tables.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3p.07",
+          "Sub_topic_name": "Representing outcomes (tables/trees/Venn/sample space) and addition law",
+          "description": "Use two-way tables, sample space diagrams, tree diagrams and Venn diagrams to represent all outcomes for at most three events; use these representations to calculate conditional probability (see 3p.09). Sample space diagrams may list or tabulate outcomes for single or successive events systematically. Understand mutually exclusive and exhaustive. Know addition law: for mutually exclusive events P(A or B)=P(A)+P(B); Higher also knows general addition law P(A or B)=P(A)+P(B)−P(A and B).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3p.08",
+          "Sub_topic_name": "Independent events: notation and multiplication law",
+          "description": "Know and apply formal notation for independent events; understand difference between independent and conditional events. Know multiplication law for independent events: P(A and B)=P(A)×P(B). Know for independent events: P(A|B)=P(A) and P(B|A)=P(B).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3p.09",
+          "Sub_topic_name": "Conditional probability: notation and formula",
+          "description": "Know and apply formal notation for conditional probability. Know formula: P(B|A)=P(A and B)/P(A) (equivalently P(A and B)=P(B|A)P(A)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3p.10",
+          "Sub_topic_name": "Comparing observed and expected (informal significance)",
+          "description": "Comment on differences between experimental and theoretical values in terms of possible bias; formal tests of significance are not required. Example: compare observed outcomes with expected frequencies from a binomial model.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3p.11",
+          "Sub_topic_name": "Binomial distribution",
+          "description": "Know and interpret characteristics/conditions for suitability of a binomial distribution; notation B(n,p) may be used. Be familiar with mean np and conditions for binomial model. Calculate probabilities or use given probabilities using standard methods (calculator functions, spreadsheets, Pascal’s triangle). Questions will not use n>10.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "3p.12",
+          "Sub_topic_name": "Normal distribution (shape and parameters)",
+          "description": "Know and interpret characteristics of a normal distribution; notation N(μ,σ^2) may be used. Normal tables not expected. Know distribution is symmetric and bell-shaped; mean = median = mode.",
+          "tier": "Higher"
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "3p.13",
+          "Sub_topic_name": "Normal distribution: 68–95 rule and unusual values",
+          "description": "Know that for a normal distribution: values more than 3 standard deviations from the mean are very unusual; approximately 95% of data lie within 2 standard deviations of mean; about 68% (just over two-thirds) within 1 standard deviation. Be familiar with conditions for suitability of a normal model (continuous data; symmetric bell-shaped; mean, median, mode approximately equal).",
+          "tier": "Higher"
+        }
+      ]
+    }
+  ]
+}

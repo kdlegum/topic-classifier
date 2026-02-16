@@ -1,0 +1,928 @@
+{
+  "Qualification": "GCSE",
+  "Subject": "Geography",
+  "Exam Board": "AQA",
+  "Specification": "8035",
+  "has_math": true,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "3.1",
+      "Strand": "Living with the physical environment",
+      "Topic_name": "Living with the physical environment",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Physical processes, systems and management (overview)",
+          "description": "Understand that the physical geography unit focuses on the dynamic nature of physical processes and systems (tectonic, geomorphological, biological and meteorological) and how humans interact with them at different places, scales and environments. Understand the need for management strategies governed by sustainability and consideration of direct and indirect effects of human interaction with the Earth and atmosphere.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3.1.1",
+      "Strand": "Living with the physical environment",
+      "Topic_name": "Section A: The challenge of natural hazards",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "3.1.1.1",
+          "Sub_topic_name": "Natural hazards: definition, types and risk",
+          "description": "Define a natural hazard. Know different types of natural hazard. Understand factors affecting hazard risk (how risk varies between places and over time due to physical and human factors).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Tectonic hazards: plate tectonics and global distribution",
+          "description": "Understand plate tectonics theory. Know the global distribution of earthquakes and volcanic eruptions and how this relates to plate margins. Understand the physical processes at constructive, destructive and conservative plate margins that lead to earthquakes and volcanic activity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Tectonic hazards: effects and responses in contrasting wealth",
+          "description": "Understand that primary and secondary effects of a tectonic hazard differ, and that immediate and long-term responses vary between areas of contrasting levels of wealth. Use named examples to show how effects and responses vary between two areas of contrasting wealth (e.g. HIC vs LIC/NEE).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "3.1.1.2",
+          "Sub_topic_name": "Tectonic hazards: living with risk and management strategies",
+          "description": "Explain reasons why people continue to live in areas at risk from tectonic hazards. Understand how monitoring, prediction, protection and planning reduce risks and impacts of tectonic hazards (hazard management).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "3.1.1.3",
+          "Sub_topic_name": "Global atmospheric circulation model",
+          "description": "Understand the general atmospheric circulation model including global pressure belts and surface winds, and how circulation helps determine global patterns of weather and climate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "3.1.1.3",
+          "Sub_topic_name": "Tropical storms: distribution, links to circulation, formation and structure",
+          "description": "Know the global distribution of tropical storms (hurricanes/cyclones/typhoons). Understand the relationship between tropical storms and general atmospheric circulation. Explain the causes of tropical storms and the sequence of their formation and development. Describe the structure and features of a tropical storm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "3.1.1.3",
+          "Sub_topic_name": "Tropical storms and climate change",
+          "description": "Understand how climate change might affect the distribution, frequency and intensity of tropical storms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "3.1.1.3",
+          "Sub_topic_name": "Tropical storms: effects, responses and mitigation of impacts",
+          "description": "Explain primary and secondary effects of tropical storms and distinguish between immediate and long-term responses. Use a named example of a tropical storm to illustrate its effects and responses. Understand how monitoring, prediction, protection and planning can reduce impacts of tropical storms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "3.1.1.3",
+          "Sub_topic_name": "UK weather hazards: types, impacts and management",
+          "description": "Give an overview of types of weather hazard experienced in the UK. Use an example of a recent UK extreme weather event to illustrate its causes, social/economic/environmental impacts, and how management strategies reduce risk.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "3.1.1.3",
+          "Sub_topic_name": "Evidence of more extreme UK weather",
+          "description": "Understand evidence that weather is becoming more extreme in the UK (trends/observations and implications).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "3.1.1.4",
+          "Sub_topic_name": "Climate change: evidence and causes",
+          "description": "Know evidence for climate change from the beginning of the Quaternary period to the present day. Understand possible natural causes (orbital changes, volcanic activity, solar output) and human causes (use of fossil fuels, agriculture, deforestation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "3.1.1.4",
+          "Sub_topic_name": "Climate change: impacts on people and environment",
+          "description": "Give an overview of the effects of climate change on people and the environment (social, economic and environmental consequences at different scales).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "3.1.1.4",
+          "Sub_topic_name": "Managing climate change: mitigation and adaptation",
+          "description": "Understand that managing climate change involves mitigation (reducing causes) and adaptation (responding to change). Know mitigation strategies (alternative energy production, carbon capture, planting trees, international agreements) and adaptation strategies (changes in agricultural systems, managing water supply, reducing risk from rising sea levels).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.1.2",
+      "Strand": "Living with the physical environment",
+      "Topic_name": "Section B: The living world",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Ecosystems: components, interrelationships and nutrient cycling (UK example)",
+          "description": "Understand ecosystems at a range of scales and the interaction between biotic and abiotic components. Use an example of a small-scale UK ecosystem to illustrate interrelationships within a natural system, including producers, consumers, decomposers, food chain, food web and nutrient cycling. Understand balance between components and the impact of changing one component on the ecosystem.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.1.2.1",
+          "Sub_topic_name": "Global ecosystems: distribution and characteristics",
+          "description": "Know an overview of the distribution and characteristics of large-scale natural global ecosystems (biomes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Tropical rainforests: characteristics, interdependence and adaptations",
+          "description": "Describe physical characteristics of a tropical rainforest. Understand interdependence of climate, water, soils, plants, animals and people. Explain plant and animal adaptations to tropical rainforest conditions. Understand issues related to biodiversity in tropical rainforests.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Tropical rainforests: deforestation causes, rates and impacts (case study)",
+          "description": "Understand changing rates of deforestation. Use a case study of a tropical rainforest to illustrate causes of deforestation (subsistence and commercial farming, logging, road building, mineral extraction, energy development, settlement, population growth) and impacts (economic development, soil erosion, contribution to climate change).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.1.2.2",
+          "Sub_topic_name": "Tropical rainforests: value and sustainable management",
+          "description": "Understand the value of tropical rainforests to people and the environment. Know strategies for sustainable management: selective logging and replanting, conservation and education, ecotourism, international agreements on tropical hardwood use, and debt reduction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.1.2.3",
+          "Sub_topic_name": "Hot deserts: characteristics, interdependence, adaptations and biodiversity",
+          "description": "Describe physical characteristics of a hot desert ecosystem. Understand interdependence of climate, water, soils, plants, animals and people. Explain plant and animal adaptations to hot desert conditions. Understand issues related to biodiversity in hot deserts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.1.2.3",
+          "Sub_topic_name": "Hot deserts: opportunities and challenges of development (case study)",
+          "description": "Use a case study of a hot desert to illustrate development opportunities (mineral extraction, energy, farming, tourism) and challenges (extreme temperatures, water supply, inaccessibility).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.1.2.3",
+          "Sub_topic_name": "Desertification risk and management on desert fringes",
+          "description": "Explain causes of desertification (climate change, population growth, removal of fuel wood, overgrazing, over-cultivation, soil erosion). Know strategies to reduce desertification risk: water and soil management, tree planting, and appropriate technology.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.1.2.4",
+          "Sub_topic_name": "Cold environments: characteristics, interdependence, adaptations and biodiversity",
+          "description": "Describe physical characteristics of cold environments (polar and tundra). Understand interdependence of climate, permafrost, soils, plants, animals and people. Explain plant and animal adaptations to cold environment conditions. Understand issues related to biodiversity in cold environments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3.1.2.4",
+          "Sub_topic_name": "Cold environments: opportunities and challenges of development (case study)",
+          "description": "Use a case study of a cold environment to illustrate development opportunities (mineral extraction, energy, fishing, tourism) and challenges (extreme temperature, inaccessibility, provision of buildings and infrastructure).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3.1.2.4",
+          "Sub_topic_name": "Cold environments: pressures, value and strategies to balance development and conservation",
+          "description": "Understand that cold environments are at risk from economic development. Explain the value of cold environments as wilderness areas and why they are fragile and should be protected. Know strategies to balance economic development and conservation: use of technology, role of governments, international agreements and conservation groups.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.1.3",
+      "Strand": "Living with the physical environment",
+      "Topic_name": "Section C: Physical landscapes in the UK",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "3.1.3.1",
+          "Sub_topic_name": "UK physical landscapes: uplands, lowlands and river systems",
+          "description": "Know an overview of the location of major upland and lowland areas and major river systems in the UK (broad spatial patterns).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Coasts: waves and coastal processes",
+          "description": "Understand wave types and characteristics. Explain coastal processes: weathering (mechanical and chemical), mass movement (sliding, slumping, rock falls), erosion (hydraulic power, abrasion, attrition), transportation (longshore drift), and deposition (why sediment is deposited in coastal areas).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Coastal landforms: geology/structure, erosion and deposition",
+          "description": "Understand how geological structure and rock type influence coastal forms. Explain characteristics and formation of erosional landforms (headlands and bays, cliffs and wave-cut platforms, caves, arches, stacks) and depositional landforms (beaches, sand dunes, spits, bars).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "UK coastline example: erosional and depositional landforms",
+          "description": "Use an example of a section of UK coastline to identify major landforms of erosion and deposition, linking observed features to processes and geology.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "Coastal management strategies: costs and benefits",
+          "description": "Evaluate costs and benefits of coastal management strategies: hard engineering (sea walls, rock armour, gabions, groynes), soft engineering (beach nourishment and reprofiling, dune regeneration), and managed retreat (coastal realignment).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "3.1.3.2",
+          "Sub_topic_name": "UK coastal management scheme (case study): reasons, strategies, impacts and conflict",
+          "description": "Use an example of a UK coastal management scheme to explain reasons for management, the chosen management strategy, and resulting effects and conflicts between stakeholders/places.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "3.1.3.3",
+          "Sub_topic_name": "Rivers: long profile, cross profile and fluvial processes",
+          "description": "Understand the river long profile and how river valley cross profile changes downstream. Explain fluvial erosion (hydraulic action, abrasion, attrition, solution; vertical and lateral erosion), transportation (traction, saltation, suspension, solution) and deposition (why rivers deposit sediment).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "3.1.3.3",
+          "Sub_topic_name": "Fluvial landforms: erosion, deposition and combined processes",
+          "description": "Explain characteristics and formation of erosional landforms (interlocking spurs, waterfalls, gorges); landforms from erosion and deposition (meanders, ox-bow lakes); and depositional landforms (levées, flood plains, estuaries).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "3.1.3.3",
+          "Sub_topic_name": "UK river valley example: landforms",
+          "description": "Use an example of a UK river valley to identify major fluvial landforms of erosion and deposition and relate them to processes and changes downstream.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "3.1.3.3",
+          "Sub_topic_name": "Flood risk factors and hydrographs",
+          "description": "Understand how physical and human factors affect flood risk (precipitation, geology, relief, land use). Use hydrographs to show and interpret the relationship between precipitation and river discharge (lag time, peak discharge, rising/falling limb).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "3.1.3.3",
+          "Sub_topic_name": "River flood management: hard and soft engineering (costs/benefits)",
+          "description": "Evaluate costs and benefits of hard engineering (dams and reservoirs, straightening, embankments, flood relief channels) and soft engineering (flood warnings and preparation, flood plain zoning, planting trees, river restoration) for flood risk management.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "3.1.3.3",
+          "Sub_topic_name": "UK flood management scheme (case study): need, strategy and issues",
+          "description": "Use an example of a UK flood management scheme to explain why it was required, the management strategy used, and the associated social, economic and environmental issues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "3.1.3.4",
+          "Sub_topic_name": "UK glaciation: last ice age extent and glacial processes",
+          "description": "Know the maximum extent of ice cover across the UK during the last ice age. Explain glacial processes: freeze-thaw weathering; erosion (abrasion, plucking); movement and transportation (rotational slip, bulldozing); deposition (why glaciers deposit sediment; till and outwash).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "3.1.3.4",
+          "Sub_topic_name": "Glacial landforms: erosion, transportation and deposition",
+          "description": "Explain characteristics and formation of erosional glacial landforms (corries, arêtes, pyramidal peaks, truncated spurs, glacial troughs, ribbon lakes, hanging valleys) and transportation/depositional landforms (erratics, drumlins, moraine types).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "3.1.3.4",
+          "Sub_topic_name": "UK upland glaciated landscape example: landforms",
+          "description": "Use an example of a UK upland area affected by glaciation to identify major landforms of erosion and deposition and relate them to glacial processes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "3.1.3.4",
+          "Sub_topic_name": "Glaciated uplands: economic activities and land-use conflicts",
+          "description": "Know an overview of economic activities in glaciated upland areas (tourism, farming, forestry, quarrying). Understand conflicts between different land uses and between development and conservation, and the need for management strategies to reduce conflicts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "3.1.3.4",
+          "Sub_topic_name": "UK glaciated upland tourism case study: impacts and management",
+          "description": "Use an example of a UK glaciated upland area used for tourism to explain attractions for tourists, and the social, economic and environmental impacts of tourism, including strategies used to manage tourism impacts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.2",
+      "Strand": "Challenges in the human environment",
+      "Topic_name": "Challenges in the human environment",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Human processes, development contexts and sustainability (overview)",
+          "description": "Understand that the human geography unit studies human processes, systems and outcomes, how they change spatially and temporally, and how these are experienced in places at different levels of development (HICs, NEEs, LICs). Understand aims: why human environments are diverse, dynamic over time/place, and require sustainable management; and that there are current/future challenges and opportunities.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.2.1",
+      "Strand": "Challenges in the human environment",
+      "Topic_name": "Section A: Urban issues and challenges",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Global urban change patterns and drivers",
+          "description": "Know the global pattern of urban change and urban trends in different world regions including HICs and LICs. Understand factors affecting the rate of urbanisation, including migration (push–pull theory) and natural increase. Understand the emergence and significance of megacities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "LIC/NEE city case study: location, importance and growth",
+          "description": "Use a case study of a major city in an LIC or NEE to describe its location and importance regionally, nationally and internationally, and explain causes of its growth (natural increase and migration).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "LIC/NEE city case study: opportunities and challenges",
+          "description": "Use a case study of a major LIC/NEE city to explain how urban growth creates opportunities (social: access to services such as health and education; access to resources such as water supply and energy; economic: urban industrial areas stimulating economic development) and challenges (managing urban growth including slums/squatter settlements; providing clean water, sanitation and energy; providing access to services; reducing unemployment and crime; managing environmental issues such as waste disposal, air/water pollution and traffic congestion).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Urban planning for the urban poor (example)",
+          "description": "Use an example of how urban planning is improving the quality of life for the urban poor (e.g. improving housing, services, sanitation, transport, formalising settlements) and understand how/why it works.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "UK urban patterns and major cities",
+          "description": "Know the distribution of population and major cities in the UK (overview of settlement pattern and urban hierarchy).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "UK city case study: location, importance and migration impacts",
+          "description": "Use a case study of a major UK city to describe its location and importance in the UK and wider world, and explain impacts of national and international migration on growth and character of the city (demographic, cultural and economic change).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "UK city case study: opportunities and challenges of urban change",
+          "description": "Use a case study of a major UK city to explain opportunities created by urban change (social/economic: cultural mix, recreation and entertainment, employment, integrated transport systems; environmental: urban greening) and challenges (social/economic: urban deprivation and inequalities in housing, education, health and employment; environmental: dereliction, building on brownfield/greenfield sites, waste disposal; rural–urban fringe impacts including urban sprawl and growth of commuter settlements).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Urban regeneration project in the UK (example)",
+          "description": "Use an example of an urban regeneration project to explain reasons the area needed regeneration and identify the main features of the project (what was done and intended outcomes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Sustainable urban living: resource management and transport",
+          "description": "Understand that urban sustainability requires managing resources and transport. Know features of sustainable urban living: water and energy conservation, waste recycling, and creating green space. Understand how urban transport strategies are used to reduce traffic congestion.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "3.2.2",
+      "Strand": "Challenges in the human environment",
+      "Topic_name": "Section B: The changing economic world",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Measuring development: classifications, indicators and limitations",
+          "description": "Understand different ways of classifying parts of the world by level of economic development and quality of life. Use economic and social measures of development: GNI per head, birth and death rates, infant mortality, life expectancy, people per doctor, literacy rates, access to safe water, HDI. Understand limitations of economic and social measures (what they miss, reliability, inequality within countries).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Development and the Demographic Transition Model (DTM)",
+          "description": "Understand the link between stages of the Demographic Transition Model and level of development (how birth/death rates change with development and associated population structures).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Uneven development: causes and consequences",
+          "description": "Explain causes of uneven development (physical, economic and historical factors). Understand consequences of uneven development including disparities in wealth and health and international migration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Reducing the global development gap: strategies",
+          "description": "Know an overview of strategies to reduce the development gap: investment, industrial development and tourism, aid, intermediate technology, fairtrade, debt relief, microfinance loans; be able to compare effectiveness and limitations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Tourism in an LIC/NEE (example) and development gap",
+          "description": "Use an example of how growth of tourism in an LIC or NEE helps reduce the development gap (economic multipliers, jobs, infrastructure) and consider possible drawbacks/leakage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "LIC/NEE case study: location, context and changing economy",
+          "description": "Use a case study of one LIC or NEE to describe its location and importance regionally and globally, and explain its wider political, social, cultural and environmental context. Understand its changing industrial structure and balance between economic sectors, and how manufacturing can stimulate economic development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "TNCs and industrial development in an LIC/NEE",
+          "description": "Explain the role of transnational corporations (TNCs) in industrial development. Evaluate advantages and disadvantages of a named TNC(s) to the host country (employment, investment, technology transfer vs low wages, environmental impacts, profit repatriation, dependency).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Political/trading relationships and aid in an LIC/NEE",
+          "description": "Understand changing political and trading relationships with the wider world for the case study country. Understand international aid: types of aid and impacts on the receiving country (benefits, dependency, appropriate vs inappropriate aid).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Impacts of economic development in an LIC/NEE",
+          "description": "Explain environmental impacts of economic development and the effects of economic development on quality of life for the population in the case study country (social, economic and health outcomes and inequalities).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "UK economic change: causes and shift to post-industrial",
+          "description": "Understand causes of economic change in the UK: de-industrialisation and decline of traditional industrial base, globalisation and government policies. Understand movement towards a post-industrial economy including development of information technology, service industries, finance, research, science and business parks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "UK industry and the environment: sustainability example",
+          "description": "Understand impacts of industry on the physical environment. Use an example of how modern industrial development can be more environmentally sustainable (e.g. brownfield redevelopment, cleaner technologies, energy efficiency, pollution control).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Rural change in the UK: growth and decline areas",
+          "description": "Understand social and economic changes in the rural landscape in one area of population growth and one area of population decline (drivers, impacts on services, housing, employment, community).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "UK infrastructure: road, rail, ports and airports",
+          "description": "Understand improvements and new developments in road and rail infrastructure, and changes to port and airport capacity, and how these affect regional/national growth and connectivity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "The north–south divide and strategies to address it",
+          "description": "Understand the north–south divide in the UK. Know and evaluate strategies used to attempt to resolve regional differences (e.g. investment, enterprise zones, transport improvements, decentralisation, regeneration).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "UK in the wider world: trade, culture and political links",
+          "description": "Understand the UK’s links through trade, culture, transport and electronic communication, and economic/political links including the European Union (EU) and Commonwealth.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "3.2.3",
+      "Strand": "Challenges in the human environment",
+      "Topic_name": "Section C: The challenge of resource management",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "3.2.3.1",
+          "Sub_topic_name": "Resource management: importance and global inequalities",
+          "description": "Understand why food, water and energy are fundamental to human development and to economic and social well-being. Know an overview of global inequalities in supply and consumption of resources (surplus/deficit patterns and implications).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "3.2.3.1",
+          "Sub_topic_name": "UK resources: changing demand and provision (food, water, energy)",
+          "description": "Understand changing demand and provision of UK resources creates opportunities and challenges. Food: increasing demand for high-value exports from LICs and year-round seasonal/organic produce; increased carbon footprints/‘food miles’ and moves to local sourcing; trend toward agribusiness. Water: changing demand; water quality and pollution management; matching supply and demand (deficit and surplus areas); need for transfers. Energy: changing energy mix (fossil fuels vs renewables); reduced domestic coal/gas/oil; economic and environmental issues of exploiting energy sources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "3.2.3.2",
+          "Sub_topic_name": "Food: global supply insecurity, causes and impacts",
+          "description": "Understand global patterns of food surplus (security) and deficit (insecurity) using calorie intake and food supply patterns. Explain reasons for increasing food consumption (economic development, rising population) and factors affecting food supply (climate, technology, pests and disease, water stress, conflict, poverty). Understand impacts of food insecurity: famine, undernutrition, soil erosion, rising prices, social unrest.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "3.2.3.2",
+          "Sub_topic_name": "Food: increasing supply strategies and large-scale farming example",
+          "description": "Know strategies to increase food supply: irrigation; aeroponics and hydroponics; the new green revolution; biotechnology; appropriate technology. Use an example of a large-scale agricultural development to show it has both advantages and disadvantages (economic, social and environmental trade-offs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "3.2.3.2",
+          "Sub_topic_name": "Food: sustainable future and local LIC/NEE scheme example",
+          "description": "Understand the potential for sustainable food supplies: organic farming, permaculture, urban farming initiatives, fish/meat from sustainable sources, seasonal consumption, reduced waste and losses. Use an example of a local scheme in an LIC or NEE to increase sustainable food supplies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "3.2.3.3",
+          "Sub_topic_name": "Water: global insecurity, causes and impacts",
+          "description": "Understand global patterns of water surplus (security) and deficit (insecurity). Explain reasons for increasing water consumption (economic development, rising population) and factors affecting availability (climate, geology, pollution, over-abstraction, limited infrastructure, poverty). Understand impacts of water insecurity: waterborne disease and pollution, impacts on food production and industrial output, and potential for conflict where demand exceeds supply.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "3.2.3.3",
+          "Sub_topic_name": "Water: increasing supply strategies and transfer scheme example",
+          "description": "Know strategies to increase water supply: diverting supplies and increasing storage (dams and reservoirs), water transfers, desalination. Use an example of a large-scale water transfer scheme to show advantages and disadvantages of its development (economic, social and environmental).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "3.2.3.3",
+          "Sub_topic_name": "Water: sustainable future and local LIC/NEE scheme example",
+          "description": "Know sustainable water strategies: water conservation, groundwater management, recycling, ‘grey’ water. Use an example of a local scheme in an LIC or NEE to increase sustainable water supplies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "3.2.3.4",
+          "Sub_topic_name": "Energy: global insecurity, causes and impacts",
+          "description": "Understand global distribution of energy consumption and supply (surplus/deficit). Explain reasons for increasing energy consumption (economic development, rising population, technology) and factors affecting supply (physical factors, cost of exploitation/production, technology, political factors). Understand impacts of energy insecurity including exploration of difficult/environmentally sensitive areas, economic/environmental costs, impacts on food production and industrial output, and potential for conflict where demand exceeds supply.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "3.2.3.4",
+          "Sub_topic_name": "Energy: increasing supply and fossil fuel extraction example",
+          "description": "Know strategies to increase energy supply including renewable sources (biomass, wind, hydro, tidal, geothermal, wave, solar) and non-renewable sources (fossil fuels, nuclear power). Use an example to show how extraction of a fossil fuel has advantages and disadvantages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "3.2.3.4",
+          "Sub_topic_name": "Energy: sustainable future and local renewable scheme example",
+          "description": "Understand individual energy use and carbon footprints and how energy conservation reduces demand (designing homes/workplaces/transport for sustainability, demand reduction, using technology to increase efficiency of fossil fuel use). Use an example of a local renewable energy scheme in an LIC or NEE to provide sustainable energy supplies.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "3.3",
+      "Strand": "Geographical applications",
+      "Topic_name": "Geographical applications",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Synoptic understanding across the course (overview)",
+          "description": "Understand that Geographical applications is synoptic and requires drawing together knowledge, understanding and skills from across the full course (physical and human themes) to evaluate interrelationships and apply geography to real issues and contexts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "3.3.1",
+      "Strand": "Geographical applications",
+      "Topic_name": "Section A: Issue evaluation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Issue evaluation: using pre-release resources and secondary sources",
+          "description": "Understand that the issue(s) assessed can arise from any compulsory content and may extend beyond it through unseen contexts and resources. Use a pre-release resource booklet (available 12 weeks before the exam; clean copy provided in exam) containing secondary sources such as maps at different scales, diagrams, graphs, statistics, photographs, satellite images, sketches, extracts and stakeholder quotes. Apply geographical skills and knowledge to interpret, analyse and evaluate the pre-release and unseen materials.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Issue evaluation: synoptic analysis, stakeholders and judgement",
+          "description": "Analyse an issue at a range of scales using learning from more than one theme from units 3.1 and 3.2. Examine conflicting viewpoints and stakeholder perspectives. Appraise advantages and disadvantages of options/alternatives and make a justified evaluative judgement/decision. Consider physical–human interrelationships and justify solutions in terms of likely impacts on people and the physical environment.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "3.3.2",
+      "Strand": "Geographical applications",
+      "Topic_name": "Section B: Fieldwork",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Fieldwork requirement: two enquiries in contrasting environments",
+          "description": "Undertake two geographical enquiries, each including primary data collection via fieldwork outside the classroom and school grounds on at least two occasions. Enquiries must link to subject content in units 3.1 and/or 3.2, be in contrasting environments, include both physical and human geography, and in at least one enquiry demonstrate understanding of physical–human interaction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Fieldwork assessment approach",
+          "description": "Understand fieldwork will be assessed through (1) questions using fieldwork materials from an unfamiliar context and (2) questions based on students’ individual enquiry work, for which students must identify the titles of their individual enquiries. Be able to apply knowledge and understanding to interpret, analyse and evaluate enquiry information/issues and to select, adapt and use skills/techniques to investigate and communicate findings.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Enquiry process 1: selecting a suitable enquiry question",
+          "description": "Understand factors to consider when selecting suitable fieldwork questions/hypotheses. Know the geographical theory/concept underpinning the enquiry. Identify appropriate primary and secondary evidence sources and suitable fieldwork locations. Understand potential human and physical risks in fieldwork and how risks can be reduced (risk assessment and safe practice).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Enquiry process 2: primary vs secondary data; selecting, measuring and recording",
+          "description": "Understand the difference between primary and secondary data. Identify and select appropriate physical and human data for the enquiry. Measure and record data using different sampling methods. Describe and justify data collection methods (accuracy, reliability and suitability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Enquiry process 3: processing and presenting fieldwork data",
+          "description": "Understand that a range of visual, graphical and cartographic presentation methods is available. Select and accurately use appropriate presentation methods. Describe, explain and adapt presentation methods to the data and enquiry aim.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Enquiry process 4: describing, analysing and explaining fieldwork data",
+          "description": "Describe, analyse and explain fieldwork results. Establish links between data sets. Use appropriate statistical techniques where relevant. Identify anomalies in fieldwork data and consider explanations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Enquiry process 5: conclusions",
+          "description": "Draw evidenced conclusions that relate directly to the original aims/hypothesis of the enquiry, supported by fieldwork findings and appropriate analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Enquiry process 6: evaluation and improving reliability",
+          "description": "Evaluate the enquiry by identifying problems with data collection methods and limitations of the data collected. Suggest additional/alternative data that would be useful. Assess the extent to which conclusions are reliable and how the enquiry could be improved.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Fieldwork administration requirement (centre statement)",
+          "description": "Understand centres must submit a written statement as evidence the fieldwork requirement has been met, recording date, location, number of students, main issues/questions investigated and the linked specification content; statement must be signed by the Head of Centre. Understand failure to provide the statement in time is treated as malpractice/maladministration.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "3.4",
+      "Strand": "Geographical skills",
+      "Topic_name": "Geographical skills",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "3.4",
+          "Sub_topic_name": "Geographical skills assessed across all papers (overview)",
+          "description": "Develop and demonstrate cartographic, graphical, numerical and statistical skills throughout the course. Understand skills are assessed in all three written exams and may use Ordnance Survey (OS) maps and other map extracts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Atlas map skills (latitude/longitude and patterns)",
+          "description": "Use and understand coordinates (latitude and longitude). Recognise and describe distributions and patterns of human and physical features on atlas maps at global and other scales (e.g. population distribution/movements, transport networks, settlement layout, relief, drainage). Analyse inter-relationships between physical and human factors on maps and establish associations between observed patterns on thematic maps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "OS map skills: grid references, scale, distance, direction and relief",
+          "description": "Use and interpret OS maps at a range of scales including 1:50 000 and 1:25 000. Use four- and six-figure grid references. Use scale, distance and direction; measure straight-line and curved distances using different scales. Use and understand gradient, contours and spot heights. Extract and use numerical and statistical information from maps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "OS map interpretation: landscape features, inferences and cross sections",
+          "description": "Identify basic landscape features and describe characteristics from map evidence. Identify major relief features and relate cross-sectional drawings to relief. Draw inferences about physical and human landscapes by interpreting patterns of relief, drainage, settlement, communication and land use. Interpret cross sections and transects of physical and human landscapes. Describe physical features shown on large-scale maps of two landscapes from coastlines, fluvial and glacial landscapes. Infer human activity from map evidence including tourism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Maps with photographs, sketches and annotation",
+          "description": "Compare maps. Draw, label, understand and interpret sketch maps. Use and interpret ground, aerial and satellite photographs. Describe human and physical landscapes (landforms, natural vegetation, land use, settlement) and geographical phenomena from photographs. Draw sketches from photographs. Label and annotate diagrams, maps, graphs, sketches and photographs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Constructing graphs and choosing representations",
+          "description": "Select and construct appropriate graphs/charts using appropriate scales: line charts, bar charts, pie charts, pictograms, histograms with equal class intervals, divided bar charts, scattergraphs, population pyramids. Suggest appropriate graphical representations for given data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Completing and interpreting maps/graphs (including thematic maps)",
+          "description": "Complete a variety of graphs and maps including choropleth, isoline, dot maps, desire lines, proportional symbols, flow lines. Use and understand gradient, contour and value on isoline maps. Plot information when axes and scales are provided. Interpret and extract information from different maps/graphs/charts including population pyramids, choropleth maps, flow-line maps and dispersion graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Numeracy in geography: scale, accuracy, sampling, ratio and conclusions",
+          "description": "Demonstrate understanding of number, area and scales and quantitative relationships between units. Design fieldwork data collection sheets and collect data with understanding of accuracy, sample size and procedures, control groups and reliability. Use proportion and ratio correctly, and understand magnitude and frequency. Draw informed conclusions from numerical data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Statistics: central tendency, spread and percent change",
+          "description": "Use measures of central tendency and spread and cumulative frequency: median, mean, range, quartiles and inter-quartile range, mode and modal class. Calculate percentage increase/decrease and understand use of percentiles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12j",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Bivariate data: scatter plots, best fit and prediction; spotting misuse",
+          "description": "Describe relationships in bivariate data: sketch trend lines through scatter plots, draw estimated lines of best fit, make predictions, interpolate and extrapolate trends. Identify weaknesses in selective statistical presentation of data (misleading graphs, biased selection, missing context).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12k",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Using qualitative and quantitative data sources (including GIS)",
+          "description": "Use qualitative and quantitative data from primary and secondary sources to obtain, illustrate, communicate, interpret, analyse and evaluate geographical information. Understand examples of data types: maps, fieldwork data, geo-spatial data in a GIS framework, satellite imagery, written/digital sources, visual/graphical sources, numerical/statistical information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12l",
+          "Specification_section_sub": "3.4.6",
+          "Sub_topic_name": "Formulating enquiry and extended argument",
+          "description": "Identify questions and sequences of enquiry. Write descriptively, analytically and critically. Communicate ideas effectively. Develop an extended written argument and draw well-evidenced, informed conclusions about geographical questions and issues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12m",
+          "Specification_section_sub": "3.4.7",
+          "Sub_topic_name": "Literacy and communication for audiences",
+          "description": "Understand the importance of literacy for written communication. Communicate geographical information appropriately for a range of target audiences (clarity, structure, specialist terminology).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "2.2",
+      "Strand": "Assessment and administration (for tracking)",
+      "Topic_name": "Assessments",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Paper 1: Living with the physical environment (structure)",
+          "description": "Know Paper 1 assesses 3.1.1 The challenge of natural hazards; 3.1.2 The living world; 3.1.3 Physical landscapes in the UK; and 3.4 Geographical skills. Written exam 1 hour 30 minutes; 88 marks including 3 SPaG; 35% of GCSE. Question structure: Section A answer all (33 marks), Section B answer all (25 marks), Section C answer any two from Q3/4/5 (30 marks). Question types include multiple-choice, short answer, levels of response, extended prose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Paper 2: Challenges in the human environment (structure)",
+          "description": "Know Paper 2 assesses 3.2.1 Urban issues and challenges; 3.2.2 The changing economic world; 3.2.3 The challenge of resource management; and 3.4 Geographical skills. Written exam 1 hour 30 minutes; 88 marks including 3 SPaG; 35% of GCSE. Question structure: Section A answer all (33 marks), Section B answer all (30 marks), Section C answer Q3 and one from Q4/5/6 (25 marks). Question types include multiple-choice, short answer, levels of response, extended prose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Paper 3: Geographical applications (structure)",
+          "description": "Know Paper 3 assesses 3.3.1 Issue evaluation; 3.3.2 Fieldwork; and 3.4 Geographical skills. Written exam 1 hour 30 minutes; 76 marks including 6 SPaG; 30% of GCSE. Pre-release resources booklet issued 12 weeks before the exam; clean copy provided in exam. Question structure: Section A answer all (37 marks), Section B answer all (39 marks). Question types include multiple-choice, short answer, levels of response, extended prose.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "4.2",
+      "Strand": "Assessment and administration (for tracking)",
+      "Topic_name": "Assessment objectives",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO1: Knowledge",
+          "description": "AO1: Demonstrate knowledge of locations, places, processes, environments and different scales (15%).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO2: Understanding and interrelationships",
+          "description": "AO2: Demonstrate geographical understanding of concepts and how they are used in relation to places, environments and processes; and the interrelationships between places, environments and processes (25%).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO3: Applying, analysing, evaluating and making judgements (including fieldwork)",
+          "description": "AO3: Apply knowledge and understanding to interpret, analyse and evaluate geographical information and issues to make judgements (35%), including 10% applied to fieldwork context(s).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "AO4: Skills and techniques (including fieldwork data)",
+          "description": "AO4: Select, adapt and use a variety of skills and techniques to investigate questions and issues and communicate findings (25%), including 5% used to respond to fieldwork data and context(s).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "4.4",
+      "Strand": "Assessment and administration (for tracking)",
+      "Topic_name": "Spelling, Punctuation and Grammar (SPaG)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "SPaG: High performance (3 marks)",
+          "description": "High performance (3): spelling and punctuation with consistent accuracy; grammar rules used with effective control of meaning overall; wide range of specialist terms used as appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "SPaG: Intermediate performance (2 marks)",
+          "description": "Intermediate performance (2): spelling and punctuation with considerable accuracy; grammar rules used with general control of meaning overall; good range of specialist terms used as appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "SPaG: Threshold performance (1 mark)",
+          "description": "Threshold performance (1): spelling and punctuation with reasonable accuracy; grammar rules used with some control of meaning and errors do not significantly hinder meaning overall; limited range of specialist terms used as appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "SPaG: No marks (0)",
+          "description": "No marks (0): writes nothing; response does not relate to the question; or SPaG performance below threshold such that errors severely hinder meaning.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}
