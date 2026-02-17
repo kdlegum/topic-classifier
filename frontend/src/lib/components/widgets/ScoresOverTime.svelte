@@ -29,15 +29,15 @@
 		const data = markedSessions.map((s) => s.percentage!);
 
 		const colors = data.map((pct) => {
-			if (pct >= 70) return 'rgba(40, 167, 69, 0.7)';
-			if (pct >= 50) return 'rgba(255, 193, 7, 0.7)';
-			return 'rgba(220, 53, 69, 0.7)';
+			if (pct >= 70) return 'rgba(34, 197, 94, 0.7)';
+			if (pct >= 50) return 'rgba(245, 158, 11, 0.7)';
+			return 'rgba(239, 68, 68, 0.7)';
 		});
 
 		const borderColors = data.map((pct) => {
-			if (pct >= 70) return '#28a745';
-			if (pct >= 50) return '#ffc107';
-			return '#dc3545';
+			if (pct >= 70) return '#22C55E';
+			if (pct >= 50) return '#F59E0B';
+			return '#EF4444';
 		});
 
 		return {
@@ -50,7 +50,8 @@
 						data,
 						backgroundColor: colors,
 						borderColor: borderColors,
-						borderWidth: 1
+						borderWidth: 1,
+						borderRadius: 4
 					}
 				]
 			},
@@ -107,7 +108,7 @@
 	}
 	.empty-message {
 		text-align: center;
-		color: #666;
+		color: var(--color-text-secondary);
 		padding: 48px 24px;
 	}
 </style>

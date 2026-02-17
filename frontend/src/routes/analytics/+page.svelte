@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fly, fade } from 'svelte/transition';
 	import { getAnalyticsSummary, getProgress } from '$lib/api';
 	import ScoresOverTime from '$lib/components/widgets/ScoresOverTime.svelte';
 	import StrandPerformance from '$lib/components/widgets/StrandPerformance.svelte';
 	import ProgressTracker from '$lib/components/widgets/ProgressTracker.svelte';
+	import { shouldAnimate, DURATIONS } from '$lib/motion';
 
 	type SessionEntry = {
 		session_id: string;
@@ -66,6 +68,7 @@
 	let error = $state('');
 	let selectedSpec = $state('');
 	let selectedTimeframe = $state('all');
+	let ready = $state(false);
 
 	// Raw data from the single API fetch
 	let allSessions: SessionEntry[] = $state([]);
@@ -289,6 +292,7 @@
 			error = e.message || 'Failed to load analytics';
 		} finally {
 			loading = false;
+			ready = true;
 		}
 	});
 </script>
@@ -298,20 +302,27 @@
 </svelte:head>
 
 <main class="page-content analytics-page">
-	<h1>Analytics</h1>
+	{#if ready}
+		<div in:fly={{ y: 20, duration: 300 }}>
+			<h1>Analytics</h1>
+		</div>
+	{/if}
 
 	{#if loading}
-		<p class="loading">Loading analytics...</p>
+		<p class="loading">
+			<span class="loading-spinner"></span>
+			Loading analytics...
+		</p>
 	{:else if error}
-		<div class="error-state">
+		<div class="error-state" in:fade={{ duration: 200 }}>
 			<p>Failed to load analytics: {error}</p>
 		</div>
 	{:else if allSessions.length === 0}
-		<div class="empty-state">
+		<div class="empty-state" in:fade={{ duration: 200 }}>
 			<p>No sessions found. <a href="/classify">Classify some questions</a> to see your analytics.</p>
 		</div>
 	{:else}
-		<div class="filters-row">
+		<div class="filters-row" in:fly={{ y: 15, duration: 250, delay: 50 }}>
 			{#if specs.length > 1}
 				<div class="filter-group">
 					<label for="spec-select">Specification:</label>
@@ -335,17 +346,17 @@
 		</div>
 
 		{#if sessionsOverTime.length === 0}
-			<div class="empty-state">
+			<div class="empty-state" in:fade={{ duration: 200 }}>
 				<p>No sessions found in this timeframe.</p>
 			</div>
 		{:else}
 			<div class="analytics-grid">
-				<div class="widget-card">
+				<div class="widget-card" in:fly={{ y: 20, duration: 300, delay: 100 }}>
 					<h2>Scores Over Time</h2>
 					<ScoresOverTime sessions={filteredSessions} />
 				</div>
 
-				<div class="widget-card">
+				<div class="widget-card" in:fly={{ y: 20, duration: 300, delay: 150 }}>
 					<h2>{performanceHeading}</h2>
 					<StrandPerformance
 					strandData={selectedSpec ? filteredStrands : []}
@@ -356,10 +367,13 @@
 				</div>
 
 				{#if selectedSpec}
-					<div class="widget-card widget-wide">
+					<div class="widget-card widget-wide" in:fly={{ y: 20, duration: 300, delay: 200 }}>
 						<h2>Progress Tracker</h2>
 						{#if progressLoading}
-							<p class="loading">Loading progress...</p>
+							<p class="loading">
+								<span class="loading-spinner"></span>
+								Loading progress...
+							</p>
 						{:else if progressError}
 							<p class="error-message">{progressError}</p>
 						{:else}
@@ -375,6 +389,22 @@
 <style>
 	.analytics-page {
 		max-width: 1100px;
+	}
+
+	.loading-spinner {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		border: 2.5px solid var(--color-border);
+		border-top-color: var(--color-primary);
+		border-radius: 50%;
+		animation: spin 0.7s linear infinite;
+		vertical-align: middle;
+		margin-right: 8px;
+	}
+
+	@keyframes spin {
+		to { transform: rotate(360deg); }
 	}
 
 	.filters-row {
@@ -399,12 +429,13 @@
 
 	.filter-group select {
 		padding: 8px 12px;
-		border: 1px solid #ccc;
-		border-radius: 4px;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
 		font-size: 0.95rem;
 		min-width: 0;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		background: var(--color-surface);
 	}
 
 	.analytics-grid {
@@ -420,16 +451,22 @@
 	}
 
 	.widget-card {
-		border: 1px solid #ddd;
-		border-radius: 8px;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-lg);
 		padding: 20px;
-		background: #fff;
+		background: var(--color-surface);
+		box-shadow: var(--shadow-sm);
+		transition: box-shadow var(--transition-normal);
+	}
+
+	.widget-card:hover {
+		box-shadow: var(--shadow-md);
 	}
 
 	.widget-card h2 {
 		margin: 0 0 16px 0;
 		font-size: 1.1rem;
-		color: #333;
+		color: var(--color-text);
 	}
 
 	.widget-wide {
@@ -437,7 +474,7 @@
 	}
 
 	.error-message {
-		color: #b71c1c;
+		color: var(--color-error);
 		text-align: center;
 		padding: 24px;
 	}

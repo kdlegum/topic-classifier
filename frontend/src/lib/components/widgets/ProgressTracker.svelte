@@ -100,21 +100,24 @@
 	.search-input {
 		width: 100%;
 		padding: 10px 14px;
-		border: 1px solid #ccc;
-		border-radius: 6px;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
 		font-size: 0.95rem;
+		font-family: var(--font-body);
 		box-sizing: border-box;
+		background: var(--color-surface);
+		transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 	}
 
 	.search-input:focus {
 		outline: none;
-		border-color: #0077cc;
-		box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.15);
+		border-color: var(--color-primary);
+		box-shadow: 0 0 0 3px var(--color-primary-glow);
 	}
 
 	.empty-message {
 		text-align: center;
-		color: #666;
+		color: var(--color-text-secondary);
 		padding: 48px 24px;
 	}
 
@@ -131,9 +134,9 @@
 	}
 
 	.status-column {
-		border-radius: 8px;
+		border-radius: var(--radius-md);
 		overflow: hidden;
-		border: 1px solid #e0e0e0;
+		border: 1.5px solid var(--color-border);
 	}
 
 	.column-header {
@@ -146,28 +149,28 @@
 	}
 
 	.status-not_revised .column-header {
-		background: #f0f0f0;
-		color: #555;
+		background: var(--color-surface-alt);
+		color: var(--color-text-secondary);
 	}
 
 	.status-insecure .column-header {
-		background: #fdecea;
-		color: #b71c1c;
+		background: var(--color-error-bg);
+		color: var(--color-error);
 	}
 
 	.status-secure .column-header {
-		background: #fff8e1;
-		color: #e65100;
+		background: var(--color-warning-bg);
+		color: #D97706;
 	}
 
 	.status-mastered .column-header {
-		background: #e8f5e9;
-		color: #2e7d32;
+		background: var(--color-success-bg);
+		color: var(--color-success);
 	}
 
 	.count-badge {
-		background: rgba(0, 0, 0, 0.1);
-		border-radius: 12px;
+		background: rgba(0, 0, 0, 0.08);
+		border-radius: var(--radius-full);
 		padding: 2px 8px;
 		font-size: 0.8rem;
 		min-width: 20px;
@@ -182,35 +185,36 @@
 
 	.subtopic-item {
 		padding: 8px 10px;
-		border-radius: 4px;
+		border-radius: var(--radius-sm);
 		margin-bottom: 4px;
+		transition: background var(--transition-fast);
 	}
 
 	.subtopic-item:hover {
-		background: #f5f5f5;
+		background: var(--color-surface-alt);
 	}
 
 	.subtopic-name {
 		font-size: 0.88rem;
-		font-weight: 500;
-		color: #333;
+		font-weight: 600;
+		color: var(--color-text);
 	}
 
 	.subtopic-meta {
 		font-size: 0.78rem;
-		color: #888;
+		color: var(--color-text-muted);
 		margin-top: 2px;
 	}
 
 	.full-marks {
 		margin-left: 6px;
-		color: #2e7d32;
-		font-weight: 500;
+		color: var(--color-success);
+		font-weight: 600;
 	}
 
 	.column-empty {
 		text-align: center;
-		color: #aaa;
+		color: var(--color-text-muted);
 		padding: 20px;
 		font-size: 0.85rem;
 	}

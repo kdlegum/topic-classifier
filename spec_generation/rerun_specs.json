@@ -1,0 +1,10 @@
+[
+  {"pdf": "spec_pdfs/8145-AQA-history.PDF", "qualification": "GCSE", "subject": "History", "board": "AQA", "code": "8145"},
+  {"pdf": "spec_pdfs/J410-OCR-HistoryA.pdf", "qualification": "GCSE", "subject": "History A", "board": "OCR", "code": "J410"},
+  {"pdf": "spec_pdfs/J411-OCR-historyB.pdf", "qualification": "GCSE", "subject": "History B", "board": "OCR", "code": "J411"},
+  {"pdf": "spec_pdfs/1HI0_ed_history.pdf", "qualification": "GCSE", "subject": "History", "board": "Edexcel", "code": "1HI0"},
+  {"pdf": "spec_pdfs/8461-aqa-biology.PDF", "qualification": "GCSE", "subject": "Biology", "board": "AQA", "code": "8461"},
+  {"pdf": "spec_pdfs/8464-aqa-combined-science-trilogy.PDF", "qualification": "GCSE", "subject": "Combined Science (Trilogy)", "board": "AQA", "code": "8464"},
+  {"pdf": "spec_pdfs/8062-aqa-rs-a.pdf", "qualification": "GCSE", "subject": "Religious Studies A", "board": "AQA", "code": "8062"},
+  {"pdf": "spec_pdfs/1RB0-edexcel-rs-b.pdf", "qualification": "GCSE", "subject": "Religious Studies B", "board": "Edexcel", "code": "1RB0"}
+]

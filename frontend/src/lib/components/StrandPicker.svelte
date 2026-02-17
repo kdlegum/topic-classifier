@@ -49,12 +49,13 @@
 		display: block;
 		margin-bottom: 4px;
 		font-size: 0.95rem;
+		color: var(--color-text);
 	}
 
 	.hint {
 		margin: 0 0 8px 0;
 		font-size: 0.85rem;
-		color: #666;
+		color: var(--color-text-secondary);
 	}
 
 	.pills {
@@ -66,24 +67,34 @@
 	.pill {
 		width: auto;
 		padding: 6px 16px;
-		border: 1px solid #ccc;
-		border-radius: 20px;
-		background: #fff;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-full);
+		background: var(--color-surface);
 		cursor: pointer;
 		font-size: 0.9rem;
-		transition:
-			background 0.15s,
-			border-color 0.15s,
-			color 0.15s;
+		font-weight: 600;
+		font-family: var(--font-body);
+		color: var(--color-text-secondary);
+		transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 	}
 
 	.pill:hover {
-		border-color: #0077cc;
+		border-color: var(--color-primary);
+		color: var(--color-primary);
+	}
+
+	.pill:active {
+		transform: scale(0.95);
 	}
 
 	.pill.active {
-		background: #0077cc;
+		background: var(--color-primary);
 		color: #fff;
-		border-color: #0077cc;
+		border-color: var(--color-primary);
+	}
+
+	.pill.active:hover {
+		background: var(--color-primary-hover);
+		border-color: var(--color-primary-hover);
 	}
 </style>

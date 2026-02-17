@@ -1,11 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { fly, fade } from 'svelte/transition';
 	import { getSpecs, addUserSpec, removeUserSpec, deleteSpec, type SpecInfo } from '$lib/api';
+	import { shouldAnimate, DURATIONS } from '$lib/motion';
 
 	let allSpecs: SpecInfo[] = $state([]);
 	let loading = $state(true);
 	let error = $state(false);
+	let ready = $state(false);
 
 	// Search & filters
 	let searchQuery = $state('');
@@ -38,6 +41,7 @@
 			error = true;
 		} finally {
 			loading = false;
+			ready = true;
 		}
 	});
 
@@ -74,6 +78,10 @@
 			alert('Failed to delete specification. It may have sessions referencing it.');
 		}
 	}
+
+	function staggerDelay(i: number): number {
+		return shouldAnimate() ? i * 30 : 0;
+	}
 </script>
 
 <svelte:head>
@@ -81,23 +89,28 @@
 </svelte:head>
 
 <main class="page-content specs-page">
-	<div class="specs-header">
-		<div>
-			<h1>Specifications</h1>
-			<p>Browse all specifications and choose which ones you study.</p>
+	{#if ready}
+		<div class="specs-header" in:fly={{ y: 20, duration: 300 }}>
+			<div>
+				<h1>Specifications</h1>
+				<p>Browse all specifications and choose which ones you study.</p>
+			</div>
+			<a href="/specs/create" class="btn-create">Create Specification</a>
 		</div>
-		<a href="/specs/create" class="btn-create">Create Specification</a>
-	</div>
+	{/if}
 
 	{#if loading}
-		<div class="loading">Loading specifications...</div>
+		<div class="loading">
+			<span class="loading-spinner"></span>
+			Loading specifications...
+		</div>
 	{:else if error}
-		<div class="error-state">
+		<div class="error-state" in:fade={{ duration: 200 }}>
 			<p>Failed to load specifications. Please try again.</p>
 		</div>
 	{:else}
 		<!-- Search & filters -->
-		<div class="filters">
+		<div class="filters" in:fly={{ y: 15, duration: 250, delay: 50 }}>
 			<input
 				type="text"
 				placeholder="Search by subject, spec code, or exam board..."
@@ -121,13 +134,18 @@
 		</div>
 
 		{#if filteredSpecs.length === 0}
-			<div class="empty-state">
+			<div class="empty-state" in:fade={{ duration: 200 }}>
 				<p>No specifications match your search.</p>
 			</div>
 		{:else}
 			<div class="spec-grid">
-				{#each filteredSpecs as spec}
-					<a class="spec-card" class:selected={spec.is_selected} href="/specs/{spec.spec_code}">
+				{#each filteredSpecs as spec, i (spec.spec_code)}
+					<a
+						class="spec-card"
+						class:selected={spec.is_selected}
+						href="/specs/{spec.spec_code}"
+						in:fly={{ y: 15, duration: 250, delay: staggerDelay(i) }}
+					>
 						<div class="spec-card-body">
 							<div class="spec-card-top">
 								<h3 class="spec-subject">{spec.subject}</h3>
@@ -183,6 +201,22 @@
 		max-width: 900px;
 	}
 
+	.loading-spinner {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		border: 2.5px solid var(--color-border);
+		border-top-color: var(--color-primary);
+		border-radius: 50%;
+		animation: spin 0.7s linear infinite;
+		vertical-align: middle;
+		margin-right: 8px;
+	}
+
+	@keyframes spin {
+		to { transform: rotate(360deg); }
+	}
+
 	.specs-header {
 		display: flex;
 		justify-content: space-between;
@@ -192,25 +226,26 @@
 	}
 
 	.specs-header p {
-		color: #666;
+		color: var(--color-text-secondary);
 		margin: 4px 0 0;
 	}
 
 	.btn-create {
 		display: inline-block;
 		padding: 10px 20px;
-		background: #0077cc;
+		background: var(--color-primary);
 		color: white;
 		text-decoration: none;
-		border-radius: 6px;
+		border-radius: var(--radius-md);
 		font-size: 0.95rem;
-		font-weight: 500;
+		font-weight: 600;
 		white-space: nowrap;
-		transition: background 0.2s;
+		transition: background var(--transition-fast), box-shadow var(--transition-fast);
 	}
 
 	.btn-create:hover {
-		background: #005fa3;
+		background: var(--color-primary-hover);
+		box-shadow: var(--shadow-md);
 	}
 
 	.filters {
@@ -221,15 +256,18 @@
 		width: 100%;
 		padding: 10px 14px;
 		font-size: 1rem;
-		border: 1px solid #ddd;
-		border-radius: 6px;
+		font-family: var(--font-body);
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
 		margin-bottom: 10px;
+		background: var(--color-surface);
+		transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 	}
 
 	.search-input:focus {
 		outline: none;
-		border-color: #0077cc;
-		box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.15);
+		border-color: var(--color-primary);
+		box-shadow: 0 0 0 3px var(--color-primary-glow);
 	}
 
 	.filter-row {
@@ -241,8 +279,10 @@
 		flex: 1;
 		padding: 8px 10px;
 		font-size: 0.9rem;
-		border: 1px solid #ddd;
-		border-radius: 6px;
+		font-family: var(--font-body);
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-surface);
 	}
 
 	.spec-grid {
@@ -256,22 +296,25 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 16px 20px;
-		border: 2px solid #e0e0e0;
-		border-radius: 8px;
-		background: #fff;
-		transition: border-color 0.2s, background 0.2s;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-lg);
+		background: var(--color-surface);
+		box-shadow: var(--shadow-sm);
+		transition: border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 		text-decoration: none;
 		color: inherit;
 		cursor: pointer;
 	}
 
 	.spec-card:hover {
-		border-color: #b0b0b0;
+		border-color: var(--color-border-hover);
+		box-shadow: var(--shadow-md);
+		transform: translateY(-1px);
 	}
 
 	.spec-card.selected {
-		border-color: #0077cc;
-		background: #f0f7ff;
+		border-color: var(--color-primary);
+		background: var(--color-primary-light);
 	}
 
 	.spec-card-body {
@@ -299,43 +342,43 @@
 	.badge {
 		font-size: 0.7rem;
 		padding: 2px 8px;
-		border-radius: 10px;
-		font-weight: 600;
+		border-radius: var(--radius-full);
+		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.3px;
 	}
 
 	.badge.reviewed {
-		background: #e8f5e9;
-		color: #2e7d32;
-		border: 1px solid #a5d6a7;
+		background: var(--color-success-bg);
+		color: var(--color-success);
+		border: 1px solid rgba(34, 197, 94, 0.3);
 	}
 
 	.spec-details {
 		display: flex;
 		gap: 12px;
 		font-size: 0.85rem;
-		color: #666;
+		color: var(--color-text-secondary);
 		margin-bottom: 4px;
 	}
 
 	.spec-code {
 		font-family: monospace;
-		background: #f0f0f0;
+		background: var(--color-surface-alt);
 		padding: 1px 6px;
 		border-radius: 3px;
 	}
 
 	.spec-description {
 		font-size: 0.85rem;
-		color: #555;
+		color: var(--color-text-secondary);
 		margin: 4px 0 0;
 		line-height: 1.3;
 	}
 
 	.spec-count {
 		font-size: 0.8rem;
-		color: #888;
+		color: var(--color-text-muted);
 		margin-top: 2px;
 	}
 
@@ -349,53 +392,59 @@
 	.btn-toggle {
 		padding: 8px 20px;
 		font-size: 0.85rem;
-		border: 1px solid #ddd;
-		border-radius: 6px;
-		background: #f5f5f5;
-		color: #333;
+		font-weight: 600;
+		font-family: var(--font-body);
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-surface);
+		color: var(--color-text);
 		cursor: pointer;
-		transition: all 0.2s;
+		transition: all var(--transition-fast);
 		width: auto;
 		white-space: nowrap;
 	}
 
 	.btn-toggle:hover {
-		background: #e8e8e8;
+		background: var(--color-surface-alt);
+	}
+
+	.btn-toggle:active {
+		transform: scale(0.97);
 	}
 
 	.btn-toggle.active {
-		background: #0077cc;
+		background: var(--color-primary);
 		color: white;
-		border-color: #0077cc;
+		border-color: var(--color-primary);
 	}
 
 	.btn-toggle.active:hover {
-		background: #005fa3;
+		background: var(--color-primary-hover);
 	}
 
 	.btn-edit-spec,
 	.btn-delete-spec {
 		background: none;
 		border: none;
-		color: #999;
+		color: var(--color-text-muted);
 		cursor: pointer;
 		padding: 6px;
-		border-radius: 4px;
+		border-radius: var(--radius-sm);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		transition: color 0.15s, background 0.15s;
+		transition: color var(--transition-fast), background var(--transition-fast);
 		width: auto;
 	}
 
 	.btn-edit-spec:hover {
-		color: #0077cc;
-		background: #e8f0fe;
+		color: var(--color-primary);
+		background: var(--color-primary-light);
 	}
 
 	.btn-delete-spec:hover {
-		color: #d32f2f;
-		background: #fdecea;
+		color: var(--color-error);
+		background: var(--color-error-bg);
 	}
 
 	@media (max-width: 600px) {

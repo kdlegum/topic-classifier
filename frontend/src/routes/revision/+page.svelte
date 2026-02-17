@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fly, fade } from 'svelte/transition';
 	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, getSpecs } from '$lib/api';
 	import type { RevisionQuestion, SpecInfo } from '$lib/api';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
+	import { celebrateFullMarks } from '$lib/celebrations';
 
 	let specFilter: string = $state('');
 	let questionBatch: RevisionQuestion[] = $state([]);
@@ -20,6 +22,7 @@
 	let downloading: boolean = $state(false);
 	let submitting: boolean = $state(false);
 	let deleting: boolean = $state(false);
+	let questionKey: number = $state(0);
 
 	function specDisplayName(code: string): string {
 		const spec = specs.find((s) => s.spec_code === code);
@@ -32,6 +35,7 @@
 		submitResult = null;
 		showPdf = false;
 		marksInput = 0;
+		questionKey++;
 
 		if (questionBatch.length === 0) {
 			currentQuestion = null;
@@ -92,6 +96,7 @@
 			submitted = true;
 			if (result.is_full_marks) {
 				totalCount = Math.max(0, totalCount - 1);
+				celebrateFullMarks();
 			}
 		} catch (e) {
 			console.error('Failed to record attempt:', e);
@@ -167,110 +172,117 @@
 			<p class="muted">Loading revision pool...</p>
 		</div>
 	{:else if !currentQuestion}
-		<div class="centered">
+		<div class="centered" in:fade={{ duration: 200 }}>
 			<div class="empty-icon">&#10003;</div>
 			<h2 class="empty-title">No questions available</h2>
 			<p class="muted">Questions appear here when you've scored below full marks on a session. Mark some exam sessions to build your revision pool.</p>
 		</div>
 	{:else}
-		<div class="revision-content">
-			<div class="top-bar">
-				<div class="top-bar-left">
-					<span class="spec-badge">{specDisplayName(currentQuestion.spec_code)}</span>
-					<span class="meta">Q{currentQuestion.question_number}</span>
-					<span class="meta-dot">·</span>
-					<span class="meta">{currentQuestion.marks_available} mark{currentQuestion.marks_available !== 1 ? 's' : ''}</span>
-				</div>
-				<div class="top-bar-right">
-					<select class="spec-filter" value={specFilter} onchange={handleFilterChange}>
-						<option value="">All specs</option>
-						{#each specCodes as code}
-							<option value={code}>{specDisplayName(code)}</option>
-						{/each}
-					</select>
-					<span class="pool-count">{totalCount} left</span>
-				</div>
-			</div>
-
-			<div class="question-body">
-				{#if showPdf && currentQuestion.pdf_location}
-					<PdfQuestionView
-						sessionId={currentQuestion.session_id}
-						pdfLocation={currentQuestion.pdf_location}
-					/>
-				{:else}
-					<div class="question-text">
-						<MathText text={currentQuestion.question_text} />
+		{#key questionKey}
+			<div class="revision-content" in:fly={{ x: 30, duration: 300 }} out:fade={{ duration: 150 }}>
+				<div class="top-bar">
+					<div class="top-bar-left">
+						<span class="spec-badge">{specDisplayName(currentQuestion.spec_code)}</span>
+						<span class="meta">Q{currentQuestion.question_number}</span>
+						<span class="meta-dot">·</span>
+						<span class="meta">{currentQuestion.marks_available} mark{currentQuestion.marks_available !== 1 ? 's' : ''}</span>
 					</div>
-				{/if}
-			</div>
+					<div class="top-bar-right">
+						<select class="spec-filter" value={specFilter} onchange={handleFilterChange}>
+							<option value="">All specs</option>
+							{#each specCodes as code}
+								<option value={code}>{specDisplayName(code)}</option>
+							{/each}
+						</select>
+						<span class="pool-count">{totalCount} left</span>
+					</div>
+				</div>
 
-			<div class="bottom-controls">
-				<div class="actions-row">
-					{#if currentQuestion.has_pdf && currentQuestion.pdf_location}
-						<button class="action-btn" onclick={() => (showPdf = !showPdf)}>
-							{showPdf ? 'View text' : 'View full question'}
-						</button>
+				<div class="question-body">
+					{#if showPdf && currentQuestion.pdf_location}
+						<PdfQuestionView
+							sessionId={currentQuestion.session_id}
+							pdfLocation={currentQuestion.pdf_location}
+						/>
+					{:else}
+						<div class="question-text">
+							<MathText text={currentQuestion.question_text} />
+						</div>
 					{/if}
-					<button class="action-btn" onclick={handleDownloadPdf} disabled={downloading || !currentQuestion.has_pdf}>
-						{downloading ? 'Downloading...' : 'Download PDF'}
-					</button>
-					<button class="action-btn remove" onclick={handleDeleteFromPool} disabled={deleting || submitted}>
-						{deleting ? 'Removing...' : 'Remove from pool'}
-					</button>
 				</div>
 
-				{#if !submitted}
-					<div class="submit-row">
-						<div class="marks-group">
-							<input
-								type="number"
-								class="marks-input"
-								bind:value={marksInput}
-								min="0"
-								max={currentQuestion.marks_available}
-							/>
-							<span class="marks-divider">/ {currentQuestion.marks_available} marks</span>
-						</div>
-						<div class="submit-actions">
-							<button class="action-btn" onclick={pickNext}>Skip</button>
-							<button class="primary-btn" onclick={handleSubmit} disabled={submitting}>
-								{submitting ? 'Submitting...' : 'Submit'}
+				<div class="bottom-controls">
+					<div class="actions-row">
+						{#if currentQuestion.has_pdf && currentQuestion.pdf_location}
+							<button class="action-btn" onclick={() => (showPdf = !showPdf)}>
+								{showPdf ? 'View text' : 'View full question'}
 							</button>
-						</div>
+						{/if}
+						<button class="action-btn" onclick={handleDownloadPdf} disabled={downloading || !currentQuestion.has_pdf}>
+							{downloading ? 'Downloading...' : 'Download PDF'}
+						</button>
+						<button class="action-btn remove" onclick={handleDeleteFromPool} disabled={deleting || submitted}>
+							{deleting ? 'Removing...' : 'Remove from pool'}
+						</button>
 					</div>
-				{:else if submitResult}
-					<div class="result-section" class:full-marks={submitResult.is_full_marks} class:partial={!submitResult.is_full_marks}>
-						<div class="result-banner">
-							{#if submitResult.is_full_marks}
-								<span class="result-icon">&#10003;</span>
-								<span>Full marks — removed from pool</span>
-							{:else}
-								<span class="result-icon">&#8635;</span>
-								<span>Stays in pool for next time</span>
-							{/if}
-						</div>
 
-						<div class="result-details">
-							<div class="result-row">
-								<span class="detail-label">Topic</span>
-								<span class="detail-value">{topicDisplay(currentQuestion)}</span>
+					{#if !submitted}
+						<div class="submit-row">
+							<div class="marks-group">
+								<input
+									type="number"
+									class="marks-input"
+									bind:value={marksInput}
+									min="0"
+									max={currentQuestion.marks_available}
+								/>
+								<span class="marks-divider">/ {currentQuestion.marks_available} marks</span>
 							</div>
-							<div class="result-row">
-								<span class="detail-label">Original</span>
-								<span class="detail-value">{currentQuestion.original_marks_achieved}/{currentQuestion.marks_available}</span>
-							</div>
-							<div class="result-row">
-								<span class="detail-label">This attempt</span>
-								<span class="detail-value">{marksInput}/{currentQuestion.marks_available}</span>
+							<div class="submit-actions">
+								<button class="action-btn" onclick={pickNext}>Skip</button>
+								<button class="primary-btn" onclick={handleSubmit} disabled={submitting}>
+									{submitting ? 'Submitting...' : 'Submit'}
+								</button>
 							</div>
 						</div>
+					{:else if submitResult}
+						<div
+							class="result-section"
+							class:full-marks={submitResult.is_full_marks}
+							class:partial={!submitResult.is_full_marks}
+							in:fly={{ y: 15, duration: 250 }}
+						>
+							<div class="result-banner">
+								{#if submitResult.is_full_marks}
+									<span class="result-icon">&#10003;</span>
+									<span>Full marks — removed from pool</span>
+								{:else}
+									<span class="result-icon">&#8635;</span>
+									<span>Stays in pool for next time</span>
+								{/if}
+							</div>
 
-						<button class="primary-btn next-btn" onclick={pickNext}>Next Question</button>
-					</div>
-				{/if}
+							<div class="result-details">
+								<div class="result-row">
+									<span class="detail-label">Topic</span>
+									<span class="detail-value">{topicDisplay(currentQuestion)}</span>
+								</div>
+								<div class="result-row">
+									<span class="detail-label">Original</span>
+									<span class="detail-value">{currentQuestion.original_marks_achieved}/{currentQuestion.marks_available}</span>
+								</div>
+								<div class="result-row">
+									<span class="detail-label">This attempt</span>
+									<span class="detail-value">{marksInput}/{currentQuestion.marks_available}</span>
+								</div>
+							</div>
+
+							<button class="primary-btn next-btn" onclick={pickNext}>Next Question</button>
+						</div>
+					{/if}
+				</div>
 			</div>
-		</div>
+		{/key}
 	{/if}
 </div>
 
@@ -296,14 +308,14 @@
 		font-size: 0.92rem;
 		max-width: 400px;
 		line-height: 1.5;
-		color: #888;
+		color: var(--color-text-muted);
 	}
 
 	.spinner {
 		width: 28px;
 		height: 28px;
-		border: 3px solid #e0e0e0;
-		border-top-color: #0077cc;
+		border: 3px solid var(--color-border);
+		border-top-color: var(--color-primary);
 		border-radius: 50%;
 		animation: spin 0.7s linear infinite;
 		margin: 0 auto 12px;
@@ -317,8 +329,8 @@
 		width: 48px;
 		height: 48px;
 		border-radius: 50%;
-		background: #e8f5e9;
-		color: #2e7d32;
+		background: var(--color-success-bg);
+		color: var(--color-success);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -328,8 +340,8 @@
 
 	.empty-title {
 		font-size: 1.1rem;
-		font-weight: 600;
-		color: #333;
+		font-weight: 700;
+		color: var(--color-text);
 		margin: 0 0 6px;
 	}
 
@@ -337,9 +349,11 @@
 	.revision-content {
 		display: flex;
 		flex-direction: column;
-		background: #f8f8fa;
-		border-radius: 14px;
+		background: var(--color-surface);
+		border-radius: var(--radius-lg);
 		padding: 24px 28px;
+		border: 1.5px solid var(--color-border);
+		box-shadow: var(--shadow-md);
 	}
 
 	/* Top bar */
@@ -348,7 +362,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-bottom: 16px;
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid var(--color-border);
 		flex-wrap: wrap;
 		gap: 8px;
 	}
@@ -367,35 +381,36 @@
 
 	.spec-badge {
 		font-size: 0.78rem;
-		background: #e8f0fe;
-		color: #1a56db;
+		background: var(--color-primary-light);
+		color: #0F766E;
 		padding: 2px 8px;
 		border-radius: 3px;
-		font-weight: 500;
+		font-weight: 600;
 	}
 
 	.meta {
 		font-size: 0.85rem;
-		color: #777;
+		color: var(--color-text-secondary);
 	}
 
 	.meta-dot {
-		color: #ccc;
+		color: var(--color-border);
 		font-size: 0.85rem;
 	}
 
 	.spec-filter {
 		padding: 4px 8px;
-		border: 1px solid #d5d5d5;
-		border-radius: 5px;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
 		font-size: 0.82rem;
-		background: #fff;
-		color: #444;
+		background: var(--color-surface);
+		color: var(--color-text);
+		font-family: var(--font-body);
 	}
 
 	.pool-count {
 		font-size: 0.8rem;
-		color: #999;
+		color: var(--color-text-muted);
 		white-space: nowrap;
 	}
 
@@ -407,13 +422,13 @@
 
 	.question-text {
 		line-height: 1.7;
-		color: #222;
+		color: var(--color-text);
 		font-size: 1rem;
 	}
 
 	/* Bottom controls */
 	.bottom-controls {
-		border-top: 1px solid #eee;
+		border-top: 1px solid var(--color-border);
 	}
 
 	.actions-row {
@@ -426,19 +441,25 @@
 
 	.action-btn {
 		padding: 6px 12px;
-		border-radius: 5px;
+		border-radius: var(--radius-sm);
 		font-size: 0.82rem;
-		font-weight: 500;
+		font-weight: 600;
 		cursor: pointer;
-		border: 1px solid #d8d8d8;
-		background: #fff;
-		color: #555;
-		transition: background 0.12s, color 0.12s;
+		border: 1.5px solid var(--color-border);
+		background: var(--color-surface);
+		color: var(--color-text-secondary);
+		transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 		white-space: nowrap;
+		font-family: var(--font-body);
 	}
 
 	.action-btn:hover:not(:disabled) {
-		background: #f0f0f0;
+		background: var(--color-surface-alt);
+		color: var(--color-text);
+	}
+
+	.action-btn:active:not(:disabled) {
+		transform: scale(0.97);
 	}
 
 	.action-btn:disabled {
@@ -449,13 +470,13 @@
 	.action-btn.remove {
 		border-color: transparent;
 		background: transparent;
-		color: #bbb;
+		color: var(--color-text-muted);
 		margin-left: auto;
 	}
 
 	.action-btn.remove:hover:not(:disabled) {
-		color: #d32f2f;
-		background: #fef2f2;
+		color: var(--color-error);
+		background: var(--color-error-bg);
 	}
 
 	/* Submit row */
@@ -464,7 +485,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 12px 0;
-		border-top: 1px solid #eee;
+		border-top: 1px solid var(--color-border);
 		flex-wrap: wrap;
 		gap: 10px;
 	}
@@ -478,16 +499,24 @@
 	.marks-input {
 		width: 56px;
 		padding: 10px 8px;
-		border: 1px solid #d0d0d0;
-		border-radius: 7px;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
 		font-size: 1.1rem;
 		text-align: center;
-		font-weight: 600;
+		font-weight: 700;
+		font-family: var(--font-body);
+		transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+	}
+
+	.marks-input:focus {
+		outline: none;
+		border-color: var(--color-primary);
+		box-shadow: 0 0 0 3px var(--color-primary-glow);
 	}
 
 	.marks-divider {
 		font-size: 0.95rem;
-		color: #888;
+		color: var(--color-text-muted);
 	}
 
 	.submit-actions {
@@ -499,24 +528,29 @@
 	.submit-actions .action-btn {
 		padding: 10px 16px;
 		font-size: 0.9rem;
-		border-radius: 7px;
+		border-radius: var(--radius-sm);
 	}
 
 	.primary-btn {
 		padding: 10px 24px;
-		border-radius: 7px;
+		border-radius: var(--radius-sm);
 		font-size: 0.92rem;
-		font-weight: 600;
+		font-weight: 700;
 		cursor: pointer;
 		border: none;
-		background: #0077cc;
+		background: var(--color-primary);
 		color: #fff;
-		transition: background 0.12s;
+		transition: background var(--transition-fast), transform var(--transition-fast);
 		white-space: nowrap;
+		font-family: var(--font-body);
 	}
 
 	.primary-btn:hover:not(:disabled) {
-		background: #005fa3;
+		background: var(--color-primary-hover);
+	}
+
+	.primary-btn:active:not(:disabled) {
+		transform: scale(0.97);
 	}
 
 	.primary-btn:disabled {
@@ -527,28 +561,28 @@
 	/* Result */
 	.result-section {
 		padding: 12px 0 4px;
-		border-top: 1px solid #eee;
+		border-top: 1px solid var(--color-border);
 	}
 
 	.result-banner {
 		display: flex;
 		align-items: center;
 		gap: 8px;
-		padding: 8px 12px;
-		border-radius: 6px;
-		font-size: 0.85rem;
-		font-weight: 500;
+		padding: 10px 14px;
+		border-radius: var(--radius-md);
+		font-size: 0.88rem;
+		font-weight: 600;
 		margin-bottom: 12px;
 	}
 
 	.full-marks .result-banner {
-		background: #e8f5e9;
-		color: #2e7d32;
+		background: var(--color-success-bg);
+		color: var(--color-success);
 	}
 
 	.partial .result-banner {
-		background: #fff8e1;
-		color: #f57f17;
+		background: var(--color-warning-bg);
+		color: #D97706;
 	}
 
 	.result-icon {
@@ -569,12 +603,12 @@
 	}
 
 	.detail-label {
-		color: #888;
+		color: var(--color-text-muted);
 	}
 
 	.detail-value {
-		color: #333;
-		font-weight: 500;
+		color: var(--color-text);
+		font-weight: 600;
 		text-align: right;
 		max-width: 60%;
 	}

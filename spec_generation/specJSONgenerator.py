@@ -36,6 +36,10 @@ via cosine similarity. This means:
 - Sub_topic_name should be a concise, recognisable label a student would understand.
 - Every assessable point in the spec should appear as a subtopic somewhere — missing subtopics
   mean questions on that content can never be correctly classified.
+- Subtopics must be as granular as possible. Each subtopic should correspond to a single testable
+  concept or fact. If a spec bullet point covers multiple distinct ideas that could each appear
+  as separate exam questions, split them into separate subtopics. Never lump together content
+  that a student would revise independently — one subtopic = one thing to know or be able to do.
 
 ## Metadata for this specification
 
@@ -69,7 +73,17 @@ via cosine similarity. This means:
 
 4. **Skip** explicitly optional content.
 
-5. Set has_math to true if the subject involves mathematical notation (formulae, symbols, equations).
+5. **Skip non-assessable administrative content.** Do NOT create subtopics for:
+   - Course structure descriptions (e.g. "students study one period study and one thematic study")
+   - Paper/component option listings (e.g. "Paper 1 Section A options: AA, AB, AC...")
+   - Assessment rules (e.g. "British history must form 40% of assessed content")
+   - Teaching time or weighting information (e.g. "indicative teaching time ~36 hours")
+   - Study purpose/rationale statements (e.g. "develop ability to analyse interpretations")
+   - Skills or assessment objective descriptions
+   Only include content that a student could actually be **examined on** — i.e. substantive
+   knowledge, understanding, or skills that appear as learning outcomes in the spec.
+
+6. Set has_math to true if the subject involves mathematical notation (formulae, symbols, equations).
 
 ## Example output (OCR A Level Maths, first two topics)
 

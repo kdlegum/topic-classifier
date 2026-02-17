@@ -45,7 +45,7 @@
 	});
 
 	const STRAND_PALETTE = [
-		'#0077cc', '#2ecc71', '#e67e22', '#9b59b6', '#e74c3c', '#1abc9c', '#f39c12', '#3498db'
+		'#14B8A6', '#F97316', '#A78BFA', '#F59E0B', '#EF4444', '#22C55E', '#EC4899', '#3B82F6'
 	];
 
 	let strandColorMap = $derived.by(() => {
@@ -72,7 +72,7 @@
 						label: 'Score %',
 						data,
 						backgroundColor: STRAND_PALETTE.slice(0, subjectData.length),
-						borderRadius: 4
+						borderRadius: 6
 					}
 				]
 			},
@@ -105,7 +105,7 @@
 		const data = strandData.map((s) =>
 			s.marks_available > 0 ? Math.round((s.marks_achieved / s.marks_available) * 100) : 0
 		);
-		const colors = strandData.map((s) => strandColorMap[s.strand] || '#0077cc');
+		const colors = strandData.map((s) => strandColorMap[s.strand] || '#14B8A6');
 		return {
 			type: 'radar' as const,
 			data: {
@@ -114,8 +114,8 @@
 					{
 						label: 'Score %',
 						data,
-						backgroundColor: 'rgba(0, 119, 204, 0.15)',
-						borderColor: '#0077cc',
+						backgroundColor: 'rgba(20, 184, 166, 0.15)',
+						borderColor: '#14B8A6',
 						borderWidth: 2,
 						pointBackgroundColor: colors,
 						pointRadius: 5
@@ -165,7 +165,7 @@
 				backgroundColor: color + 'cc',
 				borderColor: color,
 				borderWidth: 1,
-				borderRadius: 3
+				borderRadius: 4
 			};
 		});
 
@@ -209,10 +209,10 @@
 					{
 						label: 'Score %',
 						data,
-						backgroundColor: 'rgba(0, 119, 204, 0.2)',
-						borderColor: '#0077cc',
+						backgroundColor: 'rgba(20, 184, 166, 0.2)',
+						borderColor: '#14B8A6',
 						borderWidth: 2,
-						pointBackgroundColor: '#0077cc'
+						pointBackgroundColor: '#14B8A6'
 					}
 				]
 			},
@@ -276,11 +276,11 @@
 	.subsection-heading {
 		margin: 20px 0 8px 0;
 		font-size: 0.95rem;
-		color: #555;
+		color: var(--color-text-secondary);
 	}
 	.empty-message {
 		text-align: center;
-		color: #666;
+		color: var(--color-text-secondary);
 		padding: 48px 24px;
 	}
 </style>

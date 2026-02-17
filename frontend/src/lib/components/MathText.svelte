@@ -18,7 +18,7 @@
 		// Build HTML from text, rendering LaTeX segments with KaTeX
 		let html = '';
 		let lastIndex = 0;
-		const combined = [...processed.matchAll(/\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)/g)];
+		const combined = [...processed.matchAll(/\\\[([\s\S]*?)\\\]|\\\(([\s\S]*?)\\\)|\$\$([\s\S]*?)\$\$|\$([^$\n]+?)\$/g)];
 		combined.sort((a, b) => a.index! - b.index!);
 
 		for (const match of combined) {
@@ -27,8 +27,8 @@
 				html += formatScripts(processed.slice(lastIndex, start));
 			}
 
-			const isDisplay = match[0].startsWith('\\[');
-			const latex = isDisplay ? match[1] : match[2];
+			const isDisplay = match[0].startsWith('\\[') || match[0].startsWith('$$');
+			const latex = match[1] ?? match[2] ?? match[3] ?? match[4];
 
 			try {
 				html += katex.renderToString(latex, {
@@ -121,24 +121,25 @@
 	.rendered-math {
 		cursor: text;
 		padding: 8px;
-		border: 1px solid transparent;
-		border-radius: 6px;
+		border: 1.5px solid transparent;
+		border-radius: var(--radius-sm);
 		white-space: pre-wrap;
 		word-break: break-word;
 		line-height: 1.6;
 		min-height: 2em;
+		transition: border-color var(--transition-fast), background var(--transition-fast);
 	}
 
 	.rendered-math:hover {
-		border-color: #d0d0d0;
-		background: #fafafa;
+		border-color: var(--color-border);
+		background: var(--color-surface-alt);
 	}
 
 	textarea.editable-question-text {
 		width: 100%;
 		padding: 8px;
-		border: 1px solid #4a90d9;
-		border-radius: 6px;
+		border: 1.5px solid var(--color-primary);
+		border-radius: var(--radius-sm);
 		font-family: inherit;
 		font-size: inherit;
 		line-height: 1.6;
@@ -146,10 +147,11 @@
 		overflow: hidden;
 		box-sizing: border-box;
 		outline: none;
+		box-shadow: 0 0 0 3px var(--color-primary-glow);
 	}
 
 	:global(.katex-error) {
-		color: #cc0000;
+		color: var(--color-error);
 		font-family: monospace;
 	}
 </style>

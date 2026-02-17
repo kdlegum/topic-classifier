@@ -8,762 +8,2007 @@
   "Topics": [
     {
       "Topic_id": 1,
-      "Specification_section": "Component Group 1",
-      "Strand": "British History",
-      "Topic_name": "Thematic Study",
+      "Specification_section": "2c (Thematic Study)",
+      "Strand": "Thematic Study (British History)",
+      "Topic_name": "The People’s Health, c.1250 to present",
       "Sub_topics": [
         {
           "subtopic_id": "1a",
-          "Specification_section_sub": "2a",
-          "Sub_topic_name": "Thematic Study overview and options",
-          "description": "Understand the Thematic Study element of OCR GCSE (9–1) History B (SHP) J411: choose ONE option (The People’s Health, c.1250 to present; Crime and Punishment, c.1250 to present; Migrants to Britain, c.1250 to present). Understand that the thematic study requires analysis of change and continuity across a long time span from the later Middle Ages to the present, linking past and present and using second-order concepts: change/continuity, cause, consequence, and significance. Understand the study is divided into four periods: Medieval Britain c.1250–c.1500; Early Modern Britain c.1500–c.1750; Industrial Britain c.1750–c.1900; Britain since c.1900. In each period, the first bullet gives wider contextual features shaping the theme; remaining bullets address the theme’s three consistent issues. Understand five specified factors for the chosen theme must be used to explain change/continuity across periods; teaching time should be allocated roughly equally across bullets as assessment samples widely across content.",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval Britain overview (c.1250–c.1500)",
+          "description": "Characteristic features of medieval Britain (c.1250–c.1500): overview context for public health, including typical living conditions, governance and beliefs shaping health, and the societal setting in which epidemics and public health measures occurred.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval living conditions: housing",
+          "description": "Impact of medieval living conditions on health: housing quality and crowding; how building materials, ventilation, damp, vermin and household layout affected disease and wellbeing (c.1250–c.1500).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval living conditions: food",
+          "description": "Impact of medieval living conditions on health: food supply, diet, nutrition, seasonal shortages and food storage; how diet and malnutrition influenced vulnerability to illness (c.1250–c.1500).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval living conditions: clean water",
+          "description": "Impact of medieval living conditions on health: access to clean water; wells/streams and contamination; links between water quality and disease risk (c.1250–c.1500).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval living conditions: waste and sanitation",
+          "description": "Impact of medieval living conditions on health: waste disposal and sanitation; street filth, latrines/cesspits and environmental hazards; consequences for disease spread (c.1250–c.1500).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Black Death responses: beliefs",
+          "description": "Responses to the Black Death: beliefs and explanations (e.g., religious/supernatural and contemporary ideas) and how beliefs influenced reactions to the epidemic.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Black Death responses: actions",
+          "description": "Responses to the Black Death: actions taken by individuals/communities/authorities (e.g., practical measures and social responses) and their intended effects on controlling disease and protecting health.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Late-medieval towns: public health approaches",
+          "description": "Approaches to public health in late-medieval towns: measures to improve hygiene/sanitation and manage risks; role of local regulation and community action in protecting health (c.1250–c.1500).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Monasteries: public health approaches",
+          "description": "Approaches to public health in monasteries: practices and organisation affecting cleanliness, water supply, care and disease management; how monastic routines and facilities supported health.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern overview (c.1500–c.1750): growth of towns",
+          "description": "Cultural, social and economic change in Early Modern Britain (c.1500–c.1750), including growth of towns: overview context for how changing population patterns, work and urban development affected public health risks and responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern living conditions: housing",
+          "description": "Changing living conditions in Early Modern Britain: housing conditions and their effects on health, including crowding and the impact of expanding towns (c.1500–c.1750).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern living conditions: food",
+          "description": "Changing living conditions in Early Modern Britain: food availability, diet and nutrition; how changes in society and economy affected health outcomes (c.1500–c.1750).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern living conditions: clean water",
+          "description": "Changing living conditions in Early Modern Britain: access to clean water and contamination risks in growing settlements (c.1500–c.1750).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern living conditions: waste and sanitation",
+          "description": "Changing living conditions in Early Modern Britain: waste disposal, sanitation and environmental hazards; links to disease patterns in towns (c.1500–c.1750).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Plague outbreaks: national plague orders",
+          "description": "Responses to outbreaks of plague in Early Modern Britain: national plague orders (government directives), what they required and how they aimed to limit spread.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Plague outbreaks: local reactions",
+          "description": "Responses to outbreaks of plague in Early Modern Britain: local reactions and enforcement in communities (e.g., town measures), and how these reflected beliefs, resources and governance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern government: improving the urban environment",
+          "description": "Impact of local and national government on public health in Early Modern Britain: measures designed to improve the urban environment (e.g., regulation of sanitation and hazards), and how governance affected living conditions and disease control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Government response to the gin craze (1660–1751)",
+          "description": "Impact of local and national government on public health: government response to the gin craze, 1660–1751; why it was seen as a public health/social problem and how legislation/policy aimed to reduce harm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Industrial Britain overview (c.1750–c.1900)",
+          "description": "Industrialisation, growth of major cities and political change (c.1750–c.1900): overview context for public health, including urbanisation, population increase and changing political attitudes toward reform.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1t",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early 19th-century urban housing conditions",
+          "description": "Urban living conditions in the early nineteenth century: housing quality, crowding, slums and their effects on disease and mortality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1u",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early 19th-century urban food conditions",
+          "description": "Urban living conditions in the early nineteenth century: food supply, diet and nutrition in cities, including impacts of poverty and industrial work on health.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1v",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early 19th-century clean water and contamination",
+          "description": "Urban living conditions in the early nineteenth century: access to clean water, contamination of supplies and links to disease spread.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1w",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early 19th-century waste and sanitation",
+          "description": "Urban living conditions in the early nineteenth century: waste disposal, sewage and environmental hazards; how poor sanitation contributed to epidemics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1x",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Cholera epidemics: responses",
+          "description": "Responses to cholera epidemics in the nineteenth century: beliefs about causes, public reactions and actions by authorities; how responses changed over time with developing knowledge and policy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1y",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "19th-century Public Health Acts",
+          "description": "Public health reform in the nineteenth century: Public Health Acts—what they introduced, how they were enforced, and their role in improving sanitation, water and urban conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1z",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "19th-century local public health initiatives",
+          "description": "Public health reform in the nineteenth century: local initiatives to improve conditions (e.g., municipal improvements), and how local action interacted with national legislation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1aa",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Britain since c.1900 overview",
+          "description": "Economic, political, social and cultural change since c.1900: overview context for public health, including modern state capacity, changing lifestyles and new medical/scientific developments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ab",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern living conditions: housing",
+          "description": "Living conditions and lifestyles since c.1900: housing standards, public housing, overcrowding changes, and how housing affects health outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ac",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern living conditions: food and diet",
+          "description": "Living conditions and lifestyles since c.1900: food supply, diet, nutrition and changing consumption patterns; links to public health concerns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ad",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern living conditions: air quality and pollution",
+          "description": "Living conditions and lifestyles since c.1900: air quality and pollution as determinants of health; how industrial/urban pollution and later controls affected public health.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ae",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern living conditions: inactivity and lifestyle disease",
+          "description": "Living conditions and lifestyles since c.1900: inactivity and its health impacts; how lifestyle change contributed to modern public health challenges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1af",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Spanish Influenza: responses",
+          "description": "Responses to Spanish Influenza: actions by government/local authorities/communities; public information and healthcare responses; challenges of epidemic control in the early twentieth century.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ag",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "AIDS: responses",
+          "description": "Responses to AIDS: public health strategies, education, stigma and policy; how responses reflected medical knowledge and social attitudes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ah",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Pollution controls and public health",
+          "description": "Growing government involvement in public health since c.1900: pollution controls—why introduced, what they targeted, and how they aimed to improve population health.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ai",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Anti-smoking initiatives",
+          "description": "Growing government involvement in public health since c.1900: anti-smoking initiatives—public information, regulation and policy measures designed to reduce smoking-related harm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1aj",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Promotion of healthy lifestyles",
+          "description": "Growing government involvement in public health since c.1900: promotion of healthy lifestyles (e.g., diet/exercise messaging and interventions) and reasons for increased state role in prevention.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 2,
-      "Specification_section": "2c (The People’s Health)",
-      "Strand": "British History",
-      "Topic_name": "The People’s Health, c.1250 to present",
+      "Specification_section": "2c (Thematic Study)",
+      "Strand": "Thematic Study (British History)",
+      "Topic_name": "Crime and Punishment, c.1250 to present",
       "Sub_topics": [
         {
           "subtopic_id": "2a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "People’s Health framework: issues and factors",
-          "description": "Understand the thematic focus: changes and continuities in public health in Britain from c.1250 to present, including diverse views/experiences of different groups. Apply three consistent issues throughout: (1) impact of living conditions on people’s health, (2) responses to epidemics, (3) attempts to improve public health. Explain change/continuity by reference to five factors: beliefs/attitudes/values; local and national government; science and technology; urbanisation; wealth and poverty. Use these issues and factors across the four defined periods and make comparisons within and across periods.",
+          "Sub_topic_name": "Medieval Britain overview (c.1250–c.1500)",
+          "description": "Characteristic features of medieval Britain (c.1250–c.1500): overview context for crime and punishment, including society, authority structures and values that shaped what was seen as crime and how it was dealt with.",
           "tier": null
         },
         {
           "subtopic_id": "2b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Medieval Britain (c.1250–c.1500): public health",
-          "description": "Medieval Britain overview for public health: characteristic features of medieval Britain (overview context). Living conditions affecting health: housing, food, clean water, waste disposal. Responses to Black Death: beliefs (e.g., religious explanations, miasma) and actions (e.g., prayer, flagellants, avoidance, local measures). Approaches to public health in late-medieval towns and monasteries (e.g., rudimentary sanitation, regulation, monastic infirmaries) and how these relate to attempts to improve health.",
+          "Sub_topic_name": "Medieval crimes and criminals",
+          "description": "Crimes and criminals in medieval Britain: types of crime, who committed them, and factors affecting the nature/extent of offending (c.1250–c.1500).",
           "tier": null
         },
         {
           "subtopic_id": "2c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Early Modern Britain (c.1500–c.1750): public health",
-          "description": "Early Modern overview context: cultural, social, economic change including growth of towns. Changing living conditions: housing, food, clean water, waste. Responses to plague outbreaks: national plague orders and local reactions (e.g., quarantine, watchmen, pesthouses, marking houses). Impact of local and national government on public health: measures to improve urban environment and government response to gin craze, 1660–1751 (linking health concerns to policy and regulation).",
+          "Sub_topic_name": "Medieval policing and community law enforcement",
+          "description": "Enforcing law and order in medieval Britain: policing methods and community responsibility for maintaining order (e.g., local systems), and their strengths/limitations.",
           "tier": null
         },
         {
           "subtopic_id": "2d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Industrial Britain (c.1750–c.1900): public health",
-          "description": "Industrial Britain overview context: industrialisation, growth of major cities, political change. Urban living conditions in early 19th century: housing, food, clean water, waste (e.g., overcrowding, pollution, contaminated water). Responses to cholera epidemics (e.g., miasma vs contagion debate, local boards, public fear, investigation). Public health reform in the 19th century: Public Health Acts and local initiatives (e.g., sanitation, sewers, clean water, regulation) and how reform developed over time.",
+          "Sub_topic_name": "Medieval courts: types and roles",
+          "description": "Enforcing law and order in medieval Britain: different types of court, what they dealt with, and how justice operated (c.1250–c.1500).",
           "tier": null
         },
         {
           "subtopic_id": "2e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Britain since c.1900: public health",
-          "description": "Britain since c.1900 overview context: economic, political, social, cultural change. Living conditions and lifestyles affecting health: housing, food, air quality, inactivity (including chronic disease risks). Responses to epidemics: Spanish Influenza and AIDS (public reaction, government/medical responses, stigma). Growing government involvement in public health: pollution controls, anti-smoking initiatives, promotion of healthy lifestyles; evaluate how/why the state’s role expanded and the impact on population health.",
+          "Sub_topic_name": "Medieval punishments: capital punishment",
+          "description": "Punishing offenders in medieval Britain: capital punishment—forms used and reasons for use, including deterrence and public example.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval punishments: fines",
+          "description": "Punishing offenders in medieval Britain: fines—how and why financial penalties were used, and what this suggests about status/wealth and justice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval punishments: whipping",
+          "description": "Punishing offenders in medieval Britain: whipping—use as corporal punishment and intended purpose (punishment/deterrence/shaming).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval punishments: public humiliation",
+          "description": "Punishing offenders in medieval Britain: public humiliation—forms (e.g., stocks/pillory-type punishments) and the social logic of shame penalties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval punishments: imprisonment",
+          "description": "Punishing offenders in medieval Britain: imprisonment—when used, typical conditions/purpose, and how it compared to other penalties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern overview (c.1500–c.1750)",
+          "description": "Major religious, political and social changes in Early Modern Britain (c.1500–c.1750): overview context for changing definitions of crime, enforcement and punishment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern crime: vagrancy",
+          "description": "Changing nature of crime in Early Modern Britain: vagrancy—why it grew/was targeted, how it was perceived, and how authorities responded.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern moral crime",
+          "description": "Changing nature of crime in Early Modern Britain: moral crime—types, why they were criminalised/targeted, and links to beliefs/values and social control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern witchcraft",
+          "description": "Changing nature of crime in Early Modern Britain: witchcraft—belief context, accusations, and how witchcraft was treated within the legal system.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern courts: secular courts",
+          "description": "Enforcing law and order in Early Modern Britain: secular courts—roles, jurisdiction and how they operated in maintaining order.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern courts: church courts",
+          "description": "Enforcing law and order in Early Modern Britain: church courts—roles and types of offences addressed; relationship with beliefs/values and social discipline.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern law enforcers",
+          "description": "Enforcing law and order in Early Modern Britain: roles of different law enforcers (local officials/constables etc.), and how enforcement worked in practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Bloody Code: introduction and features",
+          "description": "Changes in punishment in Early Modern Britain: introduction of the ‘Bloody Code’—what it was (expansion of capital offences) and key features of this approach to deterrence and property protection.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Industrial Britain overview (c.1750–c.1900)",
+          "description": "The Enlightenment, urbanisation and political change in industrial Britain (c.1750–c.1900): overview context for shifts in crime, policing and punishment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Industrial crime: patterns and criminals",
+          "description": "Crimes and criminals in industrial Britain: typical crimes and offenders; social/economic factors shaping crime and perceptions of criminality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Industrial Britain: rise in crime (early 19th century)",
+          "description": "Increase in crime in the first half of the nineteenth century: evidence/patterns and explanations linked to urbanisation, poverty and social change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Police force: introduction",
+          "description": "Introduction and development of the police force: why formal policing was introduced, initial models and aims, and how it changed law enforcement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Police force: development",
+          "description": "Development of the police force in the nineteenth century: expansion, professionalisation and changing relationship with communities and crime control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2w",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Punishment: growth of prisons",
+          "description": "Changes in punishment in industrial Britain: growth of prisons—reasons for expansion and role of imprisonment as a dominant punishment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2x",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Punishment: transportation to Australia",
+          "description": "Changes in punishment in industrial Britain: transportation to Australia—purpose, operation and reasons for use/decline.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2y",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Punishment: prison reform",
+          "description": "Changes in punishment in industrial Britain: prison reform—aims and features (e.g., discipline/rehabilitation ideas) and reasons reform was pursued.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2z",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Britain since c.1900 overview",
+          "description": "Major technological, social and political changes since c.1900: overview context for modern crime patterns, policing and punishment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2aa",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern crime rate changes",
+          "description": "Changes in the crime rate since c.1900: overall trends and factors influencing rises/falls and reporting/recording.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ab",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern types of crime",
+          "description": "Changes in types of crime since c.1900: emergence/importance of new crimes and shifting priorities in law enforcement and society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ac",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern law enforcement: technology",
+          "description": "Changes in law enforcement since c.1900: use of new technology in policing and investigation, and its impact on detection, evidence and public expectations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ad",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Abolition of capital punishment",
+          "description": "Changes in punishment since c.1900: abolition of capital punishment—reasons, debates and consequences for the justice system.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ae",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Modern prisons: changes",
+          "description": "Changes in punishment since c.1900: changes in prisons—conditions, aims (punishment vs rehabilitation), and responses to crime and society.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 3,
-      "Specification_section": "2c (Crime and Punishment)",
-      "Strand": "British History",
-      "Topic_name": "Crime and Punishment, c.1250 to present",
+      "Specification_section": "2c (Thematic Study)",
+      "Strand": "Thematic Study (British History)",
+      "Topic_name": "Migrants to Britain, c.1250 to present",
       "Sub_topics": [
         {
           "subtopic_id": "3a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Crime and Punishment framework: issues and factors",
-          "description": "Understand the thematic focus: changes and continuities in crime and punishment in Britain from c.1250 to present, including diverse experiences of different groups. Apply three consistent issues: (1) nature and extent of crime, (2) enforcement of law and order, (3) punishment of offenders. Explain change/continuity by reference to five factors: beliefs/attitudes/values; wealth and poverty; urbanisation; government; technology. Use these across the four periods and make comparisons within/across periods.",
+          "Sub_topic_name": "Medieval Britain overview (c.1250–c.1500)",
+          "description": "Characteristic features of medieval Britain (c.1250–c.1500): overview context for migration, including society, economy and Britain’s connections shaping who moved and how migrants were received.",
           "tier": null
         },
         {
           "subtopic_id": "3b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Medieval Britain (c.1250–c.1500): crime and punishment",
-          "description": "Medieval overview context: characteristic features of medieval Britain. Crimes and criminals: typical offences and who committed them (e.g., theft, violence, poaching, heresy). Law enforcement and courts: policing methods (e.g., hue and cry, tithings), and different court types. Punishments: capital punishment, fines, whipping, public humiliation, imprisonment; understand purposes (deterrence, retribution, restitution) and typicality for the period.",
+          "Sub_topic_name": "Jewish communities and expulsion (1290)",
+          "description": "Jewish communities in medieval England and their expulsion in 1290: reasons for Jewish settlement, experiences and roles; causes and consequences of expulsion, including official actions and wider attitudes.",
           "tier": null
         },
         {
           "subtopic_id": "3c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Early Modern Britain (c.1500–c.1750): crime and punishment",
-          "description": "Early Modern overview context: major religious, political, social changes. Changing nature of crime: vagrancy, moral crime, witchcraft (and why these rose/changed). Enforcement: secular and church courts; roles of different law enforcers. Punishment changes including introduction of the ‘Bloody Code’; understand reasons for harsher statutory punishments and how they were applied in practice.",
+          "Sub_topic_name": "Medieval migrant diversity: Dutch and Flemish",
+          "description": "Diversity of migrant communities in medieval Britain: Dutch and Flemish migrants—reasons for migration, typical occupations/settlement patterns and interactions with local society.",
           "tier": null
         },
         {
           "subtopic_id": "3d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Industrial Britain (c.1750–c.1900): crime and punishment",
-          "description": "Industrial overview context: Enlightenment, urbanisation, political change. Crimes and criminals in industrial Britain including increase in crime in first half of 19th century (and explanations linked to poverty/urban conditions). Introduction and development of the police force (e.g., professionalisation, Peel’s principles). Changes in punishment: growth of prisons, transportation to Australia, prison reform; understand shifts towards deterrence/rehabilitation and changing attitudes.",
+          "Sub_topic_name": "Medieval migrant diversity: other European migrants",
+          "description": "Diversity of migrant communities in medieval Britain: other European migrants—variety of origins, reasons for movement and roles within Britain.",
           "tier": null
         },
         {
           "subtopic_id": "3e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Britain since c.1900: crime and punishment",
-          "description": "Modern overview context: major technological, social, political changes. Changes in crime rate and types of crime (e.g., organised crime, white-collar, cyber-enabled). Changes in law enforcement: use of new technology (e.g., forensics, surveillance, databases). Changes in punishment: abolition of capital punishment and changes in prisons; understand debates about punishment aims (rehabilitation vs deterrence vs public protection).",
+          "Sub_topic_name": "Medieval attitudes to migrants: official responses",
+          "description": "Attitudes towards migrants in medieval Britain: official responses (laws, regulation, protection or persecution) and how authorities shaped migrant experiences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Medieval attitudes to migrants: unofficial responses",
+          "description": "Attitudes towards migrants in medieval Britain: unofficial responses (popular attitudes, tensions, acceptance) and their impact on migrant communities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Modern overview: Reformation and world trade",
+          "description": "Early Modern Britain (c.1500–c.1750) overview: European Reformation and the growth in world trade—context for changing patterns of refuge, labour movement and Britain’s international links influencing migration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Protestant refugees: Huguenots",
+          "description": "Protestant refugees in Early Modern Britain: Huguenots—reasons for flight, settlement and work, experiences in Britain, and impacts on economy/culture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Protestant refugees: Palatines",
+          "description": "Protestant refugees in Early Modern Britain: Palatines—reasons for migration, experiences in Britain, support/opposition, and longer-term impact.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Other European migrants: Jews (Early Modern)",
+          "description": "Diversity of other European migrants in Early Modern Britain: Jews—reasons for movement, experiences, and changing attitudes/policies affecting settlement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Other European migrants: Romany Gypsies",
+          "description": "Diversity of other European migrants in Early Modern Britain: Romany Gypsies—reasons for arrival, lifestyle/occupation, experiences of regulation and prejudice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early African migrants: free Africans",
+          "description": "Early African migrants to Britain: free Africans—routes into Britain, types of work/roles, and experiences within British society in the Early Modern period.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Early Indian migrants: ayahs",
+          "description": "Early Indian migrants to Britain: ayahs—how and why they came (links to empire/trade), work roles and experiences in Britain.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Child servants from Africa/India",
+          "description": "Early African and Indian migrants: child servants—routes into Britain, conditions and roles, and what this reveals about power, wealth and empire connections.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Industrial & Imperial overview (c.1750–c.1900)",
+          "description": "Industrial and Imperial Britain (c.1750–c.1900) overview: industrialisation and the growth of empire—context shaping large-scale labour movement, seafaring migration and refugee flows.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Irish migration and communities",
+          "description": "Large-scale migration from Ireland and growth of Irish communities: causes (economic/political pressures), settlement, work, discrimination/acceptance, and impacts on Britain.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Lascars and maritime labour migration",
+          "description": "Lascars and the growth of Indian communities: reasons for lascar migration (shipping/empire), experiences in ports and workplaces, and community development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Chinese communities (c.1750–c.1900)",
+          "description": "Growth of Chinese communities in Britain in the industrial/imperial era: routes and reasons for migration, occupations and settlement patterns, experiences and perceptions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "African communities (c.1750–c.1900)",
+          "description": "Growth of African communities in Britain in the industrial/imperial era: routes (including maritime/empire links), work and settlement, experiences and impact.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3t",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Italian migrants (c.1750–c.1900)",
+          "description": "Diversity of European migrants: Italians—reasons for migration, work/enterprise, settlement, and local reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3u",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Eastern European Jewish migrants (c.1750–c.1900)",
+          "description": "Diversity of European migrants: Eastern European Jews—push/pull factors, settlement (e.g., urban areas), experiences including prejudice and community building, and impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3v",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Britain since c.1900 overview",
+          "description": "Britain since c.1900 overview: world wars, end of empire, and changing relationship with Europe and the wider world—context shaping modern migration flows and policy debates.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3w",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "‘Enemy aliens’ attacks (WWI/WWII)",
+          "description": "‘Aliens’ and refugees during the First and Second World Wars: attacks on ‘enemy aliens’—causes, nature of hostility/violence, and impacts on communities and policy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3x",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Internment camps (WWI/WWII)",
+          "description": "‘Aliens’ and refugees during the First and Second World Wars: internment camps—reasons for internment, who was interned, conditions and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3y",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Kindertransport",
+          "description": "‘Aliens’ and refugees during the Second World War: Kindertransport—why it happened, who was involved, experiences of child refugees and significance/impact.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3z",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Commonwealth migration since WWII",
+          "description": "Commonwealth migrants since the Second World War: reasons for migration, settlement and work; experiences including discrimination and community formation; contributions to British society and culture.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3aa",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Post-war immigration legislation",
+          "description": "Commonwealth migration since WWII: immigration legislation—why introduced, what it restricted/allowed, and how it shaped migration patterns and experiences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3ab",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Racist and anti-racist movements",
+          "description": "Commonwealth migration since WWII: racist and anti-racist movements—nature of activism/opposition, key drivers, and impact on society and politics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3ac",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Economic migrants, refugees and asylum-seekers since the 1980s",
+          "description": "Economic migrants, refugees and asylum-seekers since the 1980s: reasons for movement, experiences in Britain, public/political responses and impacts on Britain.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 4,
-      "Specification_section": "2c (Migrants to Britain)",
-      "Strand": "British History",
-      "Topic_name": "Migrants to Britain, c.1250 to present",
+      "Specification_section": "2c (British Depth Study)",
+      "Strand": "British Depth Study",
+      "Topic_name": "The Norman Conquest, 1065–1087",
       "Sub_topics": [
         {
           "subtopic_id": "4a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Migration framework: issues and factors",
-          "description": "Understand the thematic focus: changes and continuities in migration to Britain from c.1250 to present; similarities/differences within and between migrant groups; and how migration connects to wider societal change. Apply three consistent issues: (1) reasons people migrated to Britain, (2) experiences of migrants in Britain, (3) impact of migrants on Britain. Explain change/continuity by reference to five factors: Britain’s connections with the wider world; beliefs/attitudes/values; government; economic forces; communications. Use these issues and factors across the four periods and compare within/across periods.",
+          "Sub_topic_name": "Late Anglo-Saxon society: nature and diversity",
+          "description": "England on the eve of the conquest: the nature, structure and diversity of late Anglo-Saxon society, including social hierarchy, regional diversity and how society was organised (c.1065).",
           "tier": null
         },
         {
           "subtopic_id": "4b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Medieval Britain (c.1250–c.1500): migration",
-          "description": "Medieval overview context: characteristic features of medieval Britain. Jewish communities and their expulsion from England in 1290 (causes, consequences). Diversity of migrant communities including Dutch, Flemish and other European migrants. Attitudes towards migrants: official and unofficial responses (e.g., monarchy/local authorities, guilds, popular hostility/tolerance) and how these shaped experiences and impact.",
+          "Sub_topic_name": "Religion in late Anglo-Saxon England",
+          "description": "England on the eve of the conquest: religion in late Anglo-Saxon England, including the role of the Church, religious practice and its influence on society and power.",
           "tier": null
         },
         {
           "subtopic_id": "4c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Early Modern Britain (c.1500–c.1750): migration",
-          "description": "Early Modern overview context: European Reformation and growth in world trade. Protestant refugees including Huguenots and Palatines (push/pull factors; settlement; contribution). Diversity of other European migrants including Jews and Romany Gypsies (experiences and responses). Early African and Indian migrants to Britain including free Africans, ayahs and child servants (nature of migration, roles, lived experience, attitudes encountered).",
+          "Sub_topic_name": "Anglo-Saxon culture: buildings, art and literature",
+          "description": "England on the eve of the conquest: Anglo-Saxon culture—buildings, art and literature—and what these reveal about values, identity and society.",
           "tier": null
         },
         {
           "subtopic_id": "4d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Industrial and Imperial Britain (c.1750–c.1900): migration",
-          "description": "Industrial/Imperial overview context: industrialisation and growth of empire. Large-scale migration from Ireland and growth of Irish communities (causes such as famine and work; settlement patterns; reactions). Lascars and growth of Indian, Chinese and African communities (links to empire and trade; experiences). Diversity of European migrants including Italians and Eastern European Jews (reasons, occupations, settlement, responses including prejudice and support).",
+          "Sub_topic_name": "Norman society and culture pre-1066",
+          "description": "Invasion and victory: Norman society and culture before 1066, including social structures and cultural features relevant to conquest.",
           "tier": null
         },
         {
           "subtopic_id": "4e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Britain since c.1900: migration",
-          "description": "Modern overview context: world wars, end of empire, changing relationship with Europe and wider world. ‘Aliens’ and refugees during First and Second World Wars: attacks on ‘enemy aliens’, internment camps, Kindertransport; impacts on communities and policy. Commonwealth migrants since Second World War: immigration legislation; racist and anti-racist movements; experiences and contributions. Economic migrants, refugees and asylum-seekers since the 1980s: reasons, routes, policy debates, experiences, and impacts on Britain.",
+          "Sub_topic_name": "Norman warfare pre-1066",
+          "description": "Invasion and victory: Norman warfare before 1066—military organisation, cavalry/knights, tactics and why it was effective in invasion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Succession crisis of 1066",
+          "description": "Invasion and victory: the succession crisis of 1066—claims to the throne, key contenders and why the succession led to conflict.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Battle of Fulford",
+          "description": "Invasion and victory: the battle of Fulford—who fought, why, key events and significance for control in 1066.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Battle of Stamford Bridge",
+          "description": "Invasion and victory: the battle of Stamford Bridge—who fought, why, key events and consequences for Harold’s position and England’s defence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Battle of Hastings",
+          "description": "Invasion and victory: the battle of Hastings—forces, tactics, turning points and reasons for William’s victory and Harold’s defeat.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "First uprisings: resistance in the west and Mercia",
+          "description": "Resistance and response: first uprisings against Norman rule, including resistance in the west and in Mercia—causes, leadership, Norman responses and outcomes (1067 onwards).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Northern resistance and Harrying of the North",
+          "description": "Resistance and response: northern resistance and William’s ‘Harrying of the North’—reasons, actions taken, scale of violence and consequences for control and society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Hereward’s rebellion and end of resistance",
+          "description": "Resistance and response: rebellion of Hereward in the east and the end of English resistance—events, support, Norman suppression and significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Pre-conquest fortifications and first Norman castles",
+          "description": "Castles: pre-conquest fortifications and the first Norman castles in England—types of defences before 1066 and how early Norman castle-building began.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Castle distribution and design (to 1087)",
+          "description": "Castles: distribution and design of Norman castles in England to 1087—where castles were built, key design features and how design supported control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Castles: military purpose",
+          "description": "Castles: military functions—defence, intimidation, garrisoning troops, and rapid response; how castles helped enforce Norman rule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Castles: economic purpose",
+          "description": "Castles: economic functions—control of land/markets/tolls, administrative centres, and how economic power supported political control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Domesday Book: creation and purpose",
+          "description": "Conquest and control: Domesday Book—why it was compiled, how it was created, what information it collected and how it served Norman government and control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Social structure and land ownership changes",
+          "description": "Conquest and control: social structure of Norman England—changes in land ownership and the elite; replacement of Anglo-Saxon elites, feudal relationships and consequences for society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Language: change and continuity",
+          "description": "Conquest and control: changes and continuities in language after the conquest—use of Norman French/Latin vs English and social/political implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4t",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Laws: change and continuity",
+          "description": "Conquest and control: changes and continuities in laws after the conquest—legal practices, authority and how law supported Norman rule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4u",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Church: change and continuity",
+          "description": "Conquest and control: changes and continuities in the Church after the conquest—reform, leadership changes and relationship between Church and monarchy.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 5,
-      "Specification_section": "Component Group 1",
-      "Strand": "British History",
-      "Topic_name": "British Depth Study",
+      "Specification_section": "2c (British Depth Study)",
+      "Strand": "British Depth Study",
+      "Topic_name": "The Elizabethans, 1580–1603",
       "Sub_topics": [
         {
           "subtopic_id": "5a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "British Depth Study overview and options",
-          "description": "Understand the British depth study element: choose ONE option (The Norman Conquest, 1065–1087; The Elizabethans, 1580–1603; Britain in Peace and War, 1900–1918). Understand depth studies focus on a coherent short time span when Britain faced severe pressure due to potential/actual invasion; require understanding of interplay of political, military, religious, economic, social and cultural forces; and diverse lived experiences/attitudes. Understand explicit focus on interpretations: learners study a range of written/visual interpretations (academic, educational, popular, fictional), frame historical enquiries prompted by interpretations, and use second-order concepts (continuity, change, cause, consequence, significance, similarity/difference). Understand each depth option has an overarching interpretive issue: Norman Conquest—‘the Norman Yoke’; Elizabethans—a ‘golden age’; Britain in Peace and War—the ‘golden age’ of the pre-war years. Understand prohibited pairings with world depth studies from the same era (Norman Conquest + First Crusade; Elizabethans + Aztecs; Britain in Peace and War + Living under Nazi Rule).",
+          "Sub_topic_name": "Court, patronage and Privy Council",
+          "description": "Elizabeth and government: Elizabeth and her court—patronage, the Privy Council and how court politics operated in governing England after 1580.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Rebellion of the Earl of Essex",
+          "description": "Elizabeth and government: rebellion of the Earl of Essex—causes, events and significance for perceptions of the queen’s authority and court faction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Parliaments and Puritan opposition",
+          "description": "Elizabeth and government: Elizabeth and her parliaments, including opposition from Puritans—sources of tension, issues debated and impact on governance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Local government and propaganda",
+          "description": "Elizabeth and government: Elizabeth and her people—local government structures and the use of propaganda to shape loyalty and the ‘cult of Gloriana’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Enforcing the religious settlement (after 1580)",
+          "description": "Catholics: enforcement of Elizabeth’s religious settlement after 1580—laws, pressures and consequences for Catholics and conformity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Catholic links abroad and plots",
+          "description": "Catholics: Catholic links abroad and plots against Elizabeth—foreign support, threats and the nature of conspiracies in the 1580s–1590s.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Elizabethan spy network",
+          "description": "Catholics: the Elizabethan spy network—purpose, methods and effectiveness in countering threats (e.g., surveillance and intelligence).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Mary Queen of Scots",
+          "description": "Catholics: Mary Queen of Scots—why she was a focus of Catholic threat, key events leading to her execution and its significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Spanish Armada",
+          "description": "Catholics: the Armada—causes, nature of the threat and significance for religion, security and national identity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "War with Spain",
+          "description": "Catholics: war with Spain—why conflict occurred, how it affected England and perceptions of threat in 1580–1603.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Rich, middling and poor: contrasting lives",
+          "description": "Daily lives: contrasting lives of rich, middling and poor Elizabethans—work, housing, diet, leisure and vulnerability to hardship.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Family life and gender roles",
+          "description": "Daily lives: family life—husbands and wives, parents and children, wider kinship; expectations, roles and how family shaped social order.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Poverty: causes",
+          "description": "Daily lives: poverty—its causes (economic/social factors) and who was most affected in Elizabethan England.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Poverty: Elizabethan explanations",
+          "description": "Daily lives: Elizabethan explanations of poverty—attitudes and beliefs about deserving/undeserving poor and moral interpretations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Poverty: responses",
+          "description": "Daily lives: responses to poverty—local/national measures (e.g., poor relief approaches) and how society attempted to manage poverty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Theatres and opponents",
+          "description": "Popular culture: theatres and their opponents—growth of theatre, audiences and reasons for criticism/opposition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Puritan attack on popular pastimes",
+          "description": "Popular culture: the Puritan attack on popular pastimes—what was targeted, why, and what this reveals about religion, morality and social control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Persecution of witches",
+          "description": "Popular culture: persecution of witches—belief context, accusations, legal process and significance within Elizabethan culture and fear.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Adventurers: motives and achievements",
+          "description": "The wider world: imperial ambition—motives and achievements of Elizabethan adventurers; links to wealth, prestige, religion and rivalry with Spain.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5t",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Roanoke colony attempt",
+          "description": "The wider world: Roanoke—England’s attempt at an American colony; aims, challenges and reasons for failure/significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5u",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Trade with the east and first contacts with India",
+          "description": "The wider world: trade with the east, including first contacts with India—drivers of trade expansion, early encounters and significance for later empire.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 6,
-      "Specification_section": "2c (The Norman Conquest)",
-      "Strand": "British History",
-      "Topic_name": "The Norman Conquest, 1065–1087",
+      "Specification_section": "2c (British Depth Study)",
+      "Strand": "British Depth Study",
+      "Topic_name": "Britain in Peace and War, 1900–1918",
       "Sub_topics": [
         {
           "subtopic_id": "6a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Norman Conquest interpretive focus: ‘Norman Yoke’",
-          "description": "Understand the complexity of the Norman Conquest and interplay of political, military, religious, economic, social and cultural forces in England 1065–1087; identify features of late Anglo-Saxon and early Norman England; understand diverse experiences of Saxons and Normans. Understand how/why different interpretations of Norman England have been constructed, including the myth of the ‘Norman Yoke’ and the extent it reflects reality; engage with written/visual interpretations (academic, educational, popular, fictional) across the course content.",
+          "Sub_topic_name": "Britain’s power and wealth (c.1900 overview)",
+          "description": "Wealth: Britain’s power and wealth at the beginning of the twentieth century—overview of industry, empire, military strength, technology and cities; how these shaped society and tensions.",
           "tier": null
         },
         {
           "subtopic_id": "6b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "England on the eve of the conquest",
-          "description": "Issue: character of late Anglo-Saxon England. Study: nature, structure and diversity of late Anglo-Saxon society (social hierarchy, economy, regional diversity); religion in late Anglo-Saxon England (church organisation, monasticism, practices); Anglo-Saxon culture (buildings, art, literature) as evidence for society and identity.",
+          "Sub_topic_name": "Class distinctions and lived experience",
+          "description": "Wealth: class distinctions—lives of the upper, middle and working classes; differences in housing, work, leisure, education and health, and sources of tension in Edwardian society.",
           "tier": null
         },
         {
           "subtopic_id": "6c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Invasion and victory (1066)",
-          "description": "Issue: how and why William became King in 1066. Study: Norman society, culture and warfare pre-1066; succession crisis of 1066 (claims, key contenders, political context); battles of Fulford, Stamford Bridge and Hastings (sequence, tactics, leadership, reasons for outcomes).",
+          "Sub_topic_name": "Rowntree’s investigation into poverty",
+          "description": "Wealth: Rowntree’s investigation into the nature of poverty—methods/findings and why it mattered for understanding social conditions and reform.",
           "tier": null
         },
         {
           "subtopic_id": "6d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Resistance and response (1067–1071)",
-          "description": "Issue: establishment of Norman rule 1067–1071. Study: first uprisings against Norman rule including resistance in the west and in Mercia; northern resistance and William’s ‘Harrying of the North’ (methods, motives, consequences); rebellion of Hereward in the east and end of English resistance.",
+          "Sub_topic_name": "Established parties and rise of Labour",
+          "description": "Politics: strengths and weaknesses of the established parties and rise of the Labour Party—why Labour grew and how politics faced instability.",
           "tier": null
         },
         {
           "subtopic_id": "6e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Castles",
-          "description": "Issue: nature and purpose of Norman castles in England to 1087. Study: pre-conquest fortifications and first Norman castles; distribution and design of Norman castles to 1087 (e.g., motte-and-bailey, stone keeps, siting); purposes including military and economic functions (control, defence, administration, symbolism).",
+          "Sub_topic_name": "Liberal reforms",
+          "description": "Politics: the Liberal reforms—key aims and measures and how they addressed social problems and contributed to political tensions.",
           "tier": null
         },
         {
           "subtopic_id": "6f",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Conquest and control",
-          "description": "Issue: impact of the Norman Conquest on English society to 1087. Study: Domesday Book—creation and purpose (surveying, taxation, control); social structure of Norman England including changes in land ownership and the elite; changes and continuities in language, laws and Church (what changed, what remained, reasons and effects).",
+          "Sub_topic_name": "People’s Budget and clash with the Lords",
+          "description": "Politics: People’s Budget and clash with the Lords—causes of conflict, constitutional issues and significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Parliament Act (1911)",
+          "description": "Politics: Parliament Act of 1911—what it changed in the constitution and why it was significant for political stability and power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Militant labour and crisis years (1910–1914)",
+          "description": "Politics: challenge from militant labour including the crisis years 1910–1914—causes, actions (strikes/industrial unrest) and impact on government and society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Women’s lives (c.1900)",
+          "description": "Women: women’s lives at the beginning of the twentieth century—social and legal position, work, family expectations and barriers shaping the suffrage debate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Suffragists and suffragettes: campaigns",
+          "description": "Women: campaigns for the vote—suffragists and suffragettes; methods, aims, key actions and differences between groups.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Support and opposition to women’s suffrage",
+          "description": "Women: support and opposition to women’s suffrage—arguments, social/political groups involved and reasons for resistance or backing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Government responses and campaign changes (1910–1914)",
+          "description": "Women: relationship between Government responses and changes to the campaigns, 1910–1914—how repression/negotiation shaped suffrage tactics and public opinion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Attitudes to empire and Boer War responses",
+          "description": "Empire: differing attitudes towards the British Empire at the beginning of the twentieth century, including responses to the Boer War—patriotism, criticism and imperial debate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "India and attitudes to the Raj (1900–1914)",
+          "description": "Empire: India—differing British attitudes toward the Raj, 1900–1914; views on rule, reform, resistance and imperial responsibility.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Ireland and Home Rule crisis (1912–1914)",
+          "description": "Empire: Ireland—differing attitudes to the Home Rule crisis, 1912–1914; unionist/nationalist positions and implications for stability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Recruitment and propaganda",
+          "description": "War: Government policy and propaganda in response to changing demands of war—early recruitment strategies and messaging; how government tried to mobilise society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Conscription",
+          "description": "War: Government policy in response to changing demands of war—conscription; reasons introduced and effects on society and debate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "DORA",
+          "description": "War: Government policy—DORA (Defence of the Realm Act); powers granted, how used, and impact on civil liberties and daily life.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Volunteering and motivations",
+          "description": "War: men’s responses—volunteering; motivations, social pressures and how volunteering reflected attitudes to war and duty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6t",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Pals’ battalions",
+          "description": "War: men’s responses—pals’ battalions; recruitment methods, community dimension and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6u",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Conscientious objection",
+          "description": "War: men’s responses—conscientious objection; reasons, treatment and significance for attitudes and state power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6v",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Women’s war volunteering",
+          "description": "War: women’s responses—volunteering; roles undertaken and how they contributed to the war effort and social change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6w",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Women’s wartime employment",
+          "description": "War: women’s responses—employment; types of work, reasons for change and impact on gender roles and society.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6x",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "War and the suffrage campaign",
+          "description": "War: women’s responses—development in the suffrage campaign during wartime; how war altered strategies, public attitudes and political outcomes.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 7,
-      "Specification_section": "2c (The Elizabethans)",
-      "Strand": "British History",
-      "Topic_name": "The Elizabethans, 1580–1603",
+      "Specification_section": "2c (Period Study)",
+      "Strand": "Period Study (World History)",
+      "Topic_name": "Viking Expansion, c.750–c.1050",
       "Sub_topics": [
         {
           "subtopic_id": "7a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Elizabethans interpretive focus: ‘golden age’ debate",
-          "description": "Understand the complexity of late-Elizabethan society (1580–1603) and interplay of political, religious, economic, social and cultural forces; identify main features and diverse experiences. Understand how/why differing interpretations have been constructed, especially ‘golden age’ interpretations and challenges to them; engage with varied written/visual interpretations (academic, educational, popular, fictional) across the specified issues.",
+          "Sub_topic_name": "Vikings in Scandinavia: landscape and society",
+          "description": "Homelands: Vikings in Scandinavia—landscape, society and everyday life; how geography and social organisation shaped livelihoods and expansion (c.750).",
           "tier": null
         },
         {
           "subtopic_id": "7b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Elizabeth and government",
-          "description": "Issue: power of the queen. Study: Elizabeth and her court—patronage, Privy Council, rebellion of the Earl of Essex; Elizabeth and her parliaments including opposition from Puritans; Elizabeth and her people including local government and propaganda (how authority was exercised/maintained).",
+          "Sub_topic_name": "Viking ships and seafaring",
+          "description": "Homelands: Viking ships and seafaring—design/features enabling long-distance travel, raiding and trade (c.750).",
           "tier": null
         },
         {
           "subtopic_id": "7c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Catholics",
-          "description": "Issue: nature and extent of Catholic threat. Study: enforcement of Elizabeth’s religious settlement after 1580; Catholic links abroad, plots against Elizabeth, and the Elizabethan spy network; Mary Queen of Scots, the Armada and war with Spain (connections between internal/external threats).",
+          "Sub_topic_name": "Viking trade (c.750)",
+          "description": "Homelands: Viking trade c.750—goods, routes and motivations; how trade networks supported expansion and cultural contact.",
           "tier": null
         },
         {
           "subtopic_id": "7d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Daily lives",
-          "description": "Issue: nature and dynamics of Elizabethan society. Study: contrasting lives of rich, middling and poor; family life—husbands/wives, parents/children, wider kinship; poverty—causes, Elizabethan explanations, and responses (e.g., Poor Laws, charity, attitudes).",
+          "Sub_topic_name": "Viking beliefs and rituals",
+          "description": "Homelands: Viking beliefs and rituals—religious worldview, gods, practices and their influence on society and identity.",
           "tier": null
         },
         {
           "subtopic_id": "7e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Popular culture",
-          "description": "Issue: “Merry England”? Study: theatres and their opponents; Puritan attack on popular pastimes; persecution of witches (beliefs, community tensions, authorities’ roles).",
+          "Sub_topic_name": "Rus trade and settlement changes (from c.750)",
+          "description": "Volga Vikings: changing nature of Viking (Rus) trade and settlement in Russia from c.750—development over time, reasons for change and consequences.",
           "tier": null
         },
         {
           "subtopic_id": "7f",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "The wider world",
-          "description": "Issue: nature and significance of England’s connections with the wider world. Study: imperial ambition—motives and achievements of Elizabethan adventurers; Roanoke—England’s attempt at an American colony; trade with the east including first contacts with India (economic/strategic motives and outcomes).",
+          "Sub_topic_name": "Interaction with the Arab world",
+          "description": "Volga Vikings: nature of Viking trade and interaction with the Arab world—routes, exchanges, cultural contact and impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Relations with Constantinople and Byzantium",
+          "description": "Volga Vikings: Viking relations with Constantinople and the Byzantine Empire—trade, military service and diplomacy; significance for Viking power and wealth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Viking raids (793–850): causes and nature",
+          "description": "Raiders and Invaders: nature and causes of Viking raids in Britain, Ireland, the Scottish Islands and France, 793–850; targets, motivations and patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Viking warfare: warships",
+          "description": "Raiders and Invaders: nature of Viking warfare—warships; how ship technology supported tactics such as rapid attack and mobility.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Viking warfare: warriors and tactics",
+          "description": "Raiders and Invaders: nature of Viking warfare—warriors and tactics; weaponry, organisation and battlefield methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Great Heathen Army and Danelaw (865–879)",
+          "description": "Raiders and Invaders: ‘great heathen army’ in England and establishment of Danelaw, 865–879; key events, reasons for success and consequences for England.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Settlement in British Isles and France",
+          "description": "Settlers: nature and extent of Viking settlement in the British Isles and France; where and why settlement occurred and its impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Life in Jorvik",
+          "description": "Settlers: Viking life in Jorvik—urban life, trade, crafts, culture and evidence for everyday life under Viking influence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Atlantic settlement: Iceland",
+          "description": "Settlers: Viking settlement across the Atlantic—nature and extent of settlement in Iceland; reasons, challenges and outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Atlantic settlement: Greenland",
+          "description": "Settlers: Viking settlement across the Atlantic—nature and extent of settlement in Greenland; reasons, sustainability and outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Atlantic settlement: North America",
+          "description": "Settlers: Viking settlement across the Atlantic—nature and extent of settlement in North America; evidence, motives and significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Harald Bluetooth and conversion to Christianity",
+          "description": "Kings: Harald Bluetooth, Jelling and conversion of the Vikings to Christianity—reasons for conversion, process and consequences for society and power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Svein Forkbeard’s invasions of England",
+          "description": "Kings: Svein Forkbeard and his invasions of England—causes, events and impact on English politics and Viking power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Cnut’s Anglo-Scandinavian Empire (1016–1035)",
+          "description": "Kings: Cnut’s Anglo-Scandinavian Empire, 1016–1035—how it was created and governed, and significance for England and Scandinavia.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 8,
-      "Specification_section": "2c (Britain in Peace and War)",
-      "Strand": "British History",
-      "Topic_name": "Britain in Peace and War, 1900–1918",
+      "Specification_section": "2c (Period Study)",
+      "Strand": "Period Study (World History)",
+      "Topic_name": "The Mughal Empire, 1526–1707",
       "Sub_topics": [
         {
           "subtopic_id": "8a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Britain 1900–1918 interpretive focus: ‘golden age’ of pre-war years",
-          "description": "Understand early 20th-century British society and interplay of political, economic, social and cultural forces; diverse lives/experiences; and how society responded to demands of total war. No requirement to study conflict experiences except as they shape responses within British society. Understand how/why interpretations of early 20th-century Britain have been constructed, particularly the ‘golden age’ interpretation of pre-war years and challenges to it; use a range of written/visual interpretations (academic, educational, popular, fictional).",
+          "Sub_topic_name": "Babur’s invasion and beginnings of empire (1526–1530)",
+          "description": "First Mughal Emperors: Babur and his invasion of northern India—how conquest began the Mughal Empire, 1526–1530; key reasons and outcomes.",
           "tier": null
         },
         {
           "subtopic_id": "8b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Wealth",
-          "description": "Issue: tensions in Edwardian society. Study: Britain’s power and wealth at start of 20th century—overview of industry, empire, military strength, technology and cities; class distinctions—lives of upper, middle, working classes; Rowntree’s investigation into nature of poverty (findings, significance for debates on deprivation).",
+          "Sub_topic_name": "Northern India and its people (c.1530)",
+          "description": "First Mughal Emperors: the nature of the prize—northern India and its people c.1530; society, economy and political landscape the Mughals sought to control.",
           "tier": null
         },
         {
           "subtopic_id": "8c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Politics",
-          "description": "Issue: threats to political stability. Study: strengths/weaknesses of established parties and rise of Labour Party; Liberal reforms, People’s Budget, clash with Lords, Parliament Act 1911; challenge from militant labour including crisis years 1910–1914 (strikes, unrest, government response).",
+          "Sub_topic_name": "Humayun and the empire by 1556",
+          "description": "First Mughal Emperors: Humayun’s struggle to retain control and condition of the Mughal Empire by 1556; challenges to authority and stability.",
           "tier": null
         },
         {
           "subtopic_id": "8d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Women",
-          "description": "Issue: nature and extent of support for women’s suffrage. Study: women’s lives at start of 20th century; campaigns for the vote—suffragists and suffragettes, support and opposition; relationship between government responses and changes to campaigns, 1910–1914 (escalation, repression, tactics).",
+          "Sub_topic_name": "Akbar’s expansion (1556–1605)",
+          "description": "Akbar: extension of the Mughal Empire during Akbar’s reign, 1556–1605; methods of conquest and consolidation and significance for imperial power.",
           "tier": null
         },
         {
           "subtopic_id": "8e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Empire",
-          "description": "Issue: attitudes in Britain towards the Empire. Study: differing attitudes at beginning of 20th century including responses to Boer War; India—differing British attitudes toward the Raj, 1900–1914; Ireland—differing attitudes to Home Rule crisis, 1912–1914 (identity, governance, conflict potential).",
+          "Sub_topic_name": "Akbar’s court and administration",
+          "description": "Akbar: Akbar’s court and imperial administration—structures of rule, governance and how administration helped manage a diverse empire.",
           "tier": null
         },
         {
           "subtopic_id": "8f",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "War",
-          "description": "Issue: responses to demands of total war. Study: government policy and propaganda responding to changing war demands including recruitment, conscription, DORA; men’s responses including volunteering, pals’ battalions, conscientious objection; women’s responses including volunteering, employment, and developments in suffrage campaign during war.",
+          "Sub_topic_name": "Akbar’s search for knowledge and religious policies",
+          "description": "Akbar: Akbar’s search for knowledge and religious policies—approach to religion and debate; how policy affected unity, tolerance and authority.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Jahangir and Nur Jahan’s influence",
+          "description": "Jahangir: Jahangir, influence of his wife Nur Jahan and impact of their rule—court politics, governance and consequences for the empire.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Mughal economy and European traders",
+          "description": "Jahangir: Mughal economy and European traders—trade relationships, goods and how European presence affected the empire.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Mughal miniature painting",
+          "description": "Jahangir: patronage of painting and development of the Mughal miniature—features, purposes and cultural significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Shah Jahan’s court luxury and rule",
+          "description": "Shah Jahan: luxury of court and nature of his rule—style of kingship, display of power and implications for governance and resources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Taj Mahal and patronage of building",
+          "description": "Shah Jahan: patronage of building including the Taj Mahal—why built, architectural/cultural significance and what it reveals about Mughal power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "New capital in Delhi",
+          "description": "Shah Jahan: patronage of building—new capital in Delhi; reasons for relocation/building and significance for administration and symbolism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Wars of expansion under Shah Jahan",
+          "description": "Shah Jahan: wars to extend the empire—aims, campaigns and consequences for territory, finances and stability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "War of succession: Dara vs Aurangzeb",
+          "description": "Shah Jahan: war of succession between Dara and Aurangzeb—causes, conflict and significance for Mughal rule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Aurangzeb’s religious piety and impact",
+          "description": "Aurangzeb: Aurangzeb and impact of his religious piety—policies, intolerance/tolerance debates and effects on cohesion and legitimacy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Campaigns against the Marathas (from 1681)",
+          "description": "Aurangzeb: campaigns against the Marathas in the Deccan from 1681—reasons, nature of conflict and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Empire condition at Aurangzeb’s death (1707)",
+          "description": "Aurangzeb: condition of the Mughal Empire at Aurangzeb’s death in 1707—strengths/weaknesses and reasons for subsequent decline pressures.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 9,
-      "Specification_section": "Component Group 2",
-      "Strand": "History Around Us",
-      "Topic_name": "History Around Us",
+      "Specification_section": "2c (Period Study)",
+      "Strand": "Period Study (World History)",
+      "Topic_name": "The Making of America, 1789–1900",
       "Sub_topics": [
         {
           "subtopic_id": "9a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "History Around Us purpose, evidence base, and site choice rules",
-          "description": "Understand the ‘History Around Us’ (site study) requirement: study one chosen site in its historical context, worth 20% of GCSE; assessed in a separate exam. Understand evidential focus: how physical features/remains of the site (primary evidence) and wider contextual knowledge inform understanding of events/developments; strengths and weaknesses of physical remains as evidence; how the site fits wider historical context. While contextual sources (artefacts, images, documents, oral history) may be used for teaching, assessment targets the site itself (no specific extra sources targeted). Understand centre must choose a site within OCR parameters; site can be any period, any scale, local or distant (including abroad), iconic or unknown, heavily interpreted or not; fieldwork visit desirable but not required; acceptable to focus on one important part of a large/complex site. Site must NOT be directly linked to other topics studied. Centres must submit a History Around Us Site Proposal Form for OCR approval and wait for confirmation before teaching; submit by 31 January in year of entry; approval remains for lifetime unless changed (then re-submit).",
+          "Sub_topic_name": "US expansion (1789–1838): how and why",
+          "description": "America’s expansion 1789–1838: how and why the USA expanded—key drivers such as settlement pressure, ideology and opportunity, and consequences for territory and peoples.",
           "tier": null
         },
         {
           "subtopic_id": "9b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Site study criteria a–n (assessable enquiry framework)",
-          "description": "Be able to use the site’s physical features (and supporting historical sources as appropriate for learning) to address ALL required aspects: (a) reasons for the location of the site within its surroundings; (b) when and why people first created the site; (c) ways the site has changed over time; (d) how the site has been used throughout its history; (e) diversity of activities and people associated with the site; (f) reasons for changes to the site and to the way it was used; (g) significant times in the site’s past (peak activity, major developments, turning points); (h) significance of specific features in the physical remains; (i) importance of the whole site locally or nationally (as appropriate); (j) typicality of the site compared with other similar sites; (k) what the site reveals about everyday life, attitudes, values in particular periods; (l) how physical remains prompt questions about the past and how historians frame these as valid historical enquiries; (m) how physical remains inform artistic reconstructions and other interpretations of the site; (n) challenges and benefits of studying the historic environment.",
+          "Sub_topic_name": "Cotton expansion and slavery (1793–1838)",
+          "description": "America’s expansion 1789–1838: expansion of southern cotton plantations and slavery, 1793–1838; links between economy, land, forced labour and sectional tension.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Removal of Indigenous peoples from the east (1830–1838)",
+          "description": "America’s expansion 1789–1838: removal of Indigenous people from the east, 1830–1838; causes, methods, experiences and consequences for Native communities and the USA.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Plains Native cultures: Lakota Sioux case study",
+          "description": "The West 1839–1860: culture of the Native Americans of the Plains, including a case study of the Lakota Sioux—social structure, economy, belief and relationship with environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Journeys to California and Oregon",
+          "description": "The West 1839–1860: journeys of early migrants to California and Oregon—routes, hardships, motivations and impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Mormon settlement of Utah",
+          "description": "The West 1839–1860: Mormon settlement of Utah—reasons for migration, community building, conflict/cooperation and significance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Californian Gold Rush (1848–1849)",
+          "description": "The West 1839–1860: nature and impact of the Californian Gold Rush (1848–1849)—migration, economy, society and effects on Indigenous people and environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Pikes Peak Gold Rush (1858–1859): consequences",
+          "description": "The West 1839–1860: consequences of the Pikes Peak Gold Rush (1858–1859)—settlement growth, conflict and economic/social change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Causes of the Civil War (divisions over slavery)",
+          "description": "Civil War and Reconstruction 1861–1877: divisions over slavery and causes of the Civil War—economic, social and sectional factors and escalating conflict.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "African American experience of the Civil War (1861–1865)",
+          "description": "Civil War and Reconstruction: African American experience of the Civil War, 1861–1865—enslavement, emancipation process, military/service roles and lived experience.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Reconstruction and limits to African American liberty",
+          "description": "Civil War and Reconstruction: Reconstruction and continuing limitations to African American liberty—legal changes, resistance, segregation/violence and long-term consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Railroads, ranches and cow towns on the Plains",
+          "description": "Settlement and conflict on the Plains 1861–1877: causes and nature of white American exploitation—railroads, ranches and cow towns; economic motives and impacts on the Plains.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Homesteaders: living and farming",
+          "description": "Settlement and conflict on the Plains 1861–1877: homesteaders—living and farming on the Plains; challenges, adaptations and outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Little Crow’s War (1862)",
+          "description": "Settlement and conflict on the Plains: Indian Wars—Little Crow’s War (1862); causes, events and consequences for Native peoples and US policy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Red Cloud’s War (1865–1868)",
+          "description": "Settlement and conflict on the Plains: Indian Wars—Red Cloud’s War (1865–1868); causes, events and consequences, including treaties and conflict escalation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Great Sioux War (1876–1877)",
+          "description": "Settlement and conflict on the Plains: Indian Wars—Great Sioux War (1876–1877); causes, major events and consequences for Lakota and US expansion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Reservations and destruction of the buffalo",
+          "description": "American cultures 1877–1900: changes to Native Americans of the Plains’ way of life—impact of reservations and destruction of the buffalo; consequences for culture, economy and autonomy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "African American lives after 1877",
+          "description": "American cultures 1877–1900: impact of economic, social and political change on African Americans—segregation, rights limitations and survival/agency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Big business, cities and mass migration",
+          "description": "American cultures 1877–1900: growth of big business, cities and mass migration—industrialisation, urbanisation and immigration and their social/economic effects.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 10,
-      "Specification_section": "Component Group 3",
-      "Strand": "World History",
-      "Topic_name": "Period Study",
+      "Specification_section": "2c (World Depth Study)",
+      "Strand": "World Depth Study",
+      "Topic_name": "The First Crusade, c.1070–1100",
       "Sub_topics": [
         {
           "subtopic_id": "10a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Period Study overview and options",
-          "description": "Understand the Period Study element: choose ONE option (Viking Expansion, c.750–c.1050; The Mughal Empire, 1526–1707; The Making of America, 1789–1900). Understand period studies cover long time spans (more than 50 years) to develop an ‘unfolding narrative’ of a wider world society and interactions between cultures; require knowledge and ability to identify/describe/explain events, situations, developments; and apply second-order concepts: change/continuity, cause, consequence, significance. Understand structure: five sections (mostly chronological; some parallel where appropriate) with both narrative and situational bullets; allocate roughly equal teaching time across bullets; understand diverse lives/experiences of people from different cultures in the period.",
+          "Sub_topic_name": "Islamic world: diversity and relations with Christians",
+          "description": "Origins (c.1070–1095): the Islamic world—its diversity and relations with Christians; political/religious variety and interactions shaping the crusading context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Pressures on the Byzantine Empire",
+          "description": "Origins (c.1070–1095): pressures on the Byzantine Empire—military and political threats and why Byzantium sought help.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Latin Christendom and papal power",
+          "description": "Origins (c.1070–1095): Latin Christendom and the power of the papacy—papal authority and motivations enabling the calling of crusade.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Urban II and preaching the crusade",
+          "description": "Responses (Nov 1095–Dec 1096): Urban II and the preaching of the First Crusade—message, aims and how preaching mobilised participants.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Who went and why",
+          "description": "Responses (Nov 1095–Dec 1096): joining the First Crusade—who went (social groups) and why (religious, economic, political motives).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "People’s Crusade: challenges",
+          "description": "Responses (Nov 1095–Dec 1096): the People’s Crusade and the challenges it faced—organisation, leadership, conflict and outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Alexios I and negotiations",
+          "description": "Into Asia Minor (Dec 1096–Oct 1097): Alexios I and negotiations with crusade leaders—agreements, tensions and significance for progress.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Siege of Nicaea",
+          "description": "Into Asia Minor: siege of Nicaea—events and significance; cooperation/conflict between Byzantines and crusaders.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Battle of Dorylaeum and warfare",
+          "description": "Into Asia Minor: Battle of Dorylaeum—nature of Christian and Muslim warfare; tactics, organisation and outcomes shaping the crusade’s survival.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Journey across Asia Minor: challenges and disunity",
+          "description": "Into Asia Minor: journey across Asia Minor—physical challenges and disunity among leadership; effects on morale and effectiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Siege of Antioch by crusaders",
+          "description": "Antioch (Oct 1097–Jun 1098): the siege by the crusaders—conditions, strategy and challenges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Capture of Antioch: rivalries, strategies and atrocities",
+          "description": "Antioch: capture of Antioch—rivalries, strategies and atrocities; how internal divisions and violence shaped outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Defeat of Kerbogha (June 1098)",
+          "description": "Antioch: events of June and defeat of Kerbogha—turning point, leadership and significance for crusader progress.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Disputes, delays and journey to Jerusalem",
+          "description": "Jerusalem (Jul 1098–Jul 1100): disputes, delays and journey to Jerusalem—leadership tensions, decision-making and logistical issues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Capture of Jerusalem and sack of the city",
+          "description": "Jerusalem: capture of Jerusalem—preparations, tactics and sack of the city; scale of violence and consequences for populations and perceptions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Kingdom of Jerusalem and Muslim response",
+          "description": "Jerusalem: establishment of the Kingdom of Jerusalem and the Muslim response—nature of new rule and immediate reactions/continuing conflict.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 11,
-      "Specification_section": "2c (Viking Expansion)",
-      "Strand": "World History",
-      "Topic_name": "Viking Expansion, c.750–c.1050",
+      "Specification_section": "2c (World Depth Study)",
+      "Strand": "World Depth Study",
+      "Topic_name": "Aztecs and the Spanish Conquest, 1519–1535",
       "Sub_topics": [
         {
           "subtopic_id": "11a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Viking homelands",
-          "description": "Study Vikings in Scandinavia: landscape, society, everyday life; Viking ships, seafaring and trade c.750 (technology and its role in expansion); Viking beliefs and rituals (religion/culture shaping society and actions).",
+          "Sub_topic_name": "Aztec Empire extent and nature (1519)",
+          "description": "Moctezuma’s Empire: extent and nature of Moctezuma’s Aztec empire in 1519—political structure, tributary rule and territorial reach.",
           "tier": null
         },
         {
           "subtopic_id": "11b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Volga Vikings (Rus)",
-          "description": "Study changing nature of Viking (Rus) trade and settlement in Russia from c.750; nature of Viking trade and interaction with Arab world; Viking relations with Constantinople and the Byzantine Empire (diplomacy, trade, military service) as part of eastern expansion narrative.",
+          "Sub_topic_name": "Aztec agriculture",
+          "description": "Moctezuma’s Empire: wealth of empire—agriculture; production systems and how agriculture supported population and power.",
           "tier": null
         },
         {
           "subtopic_id": "11c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Raiders and invaders (west)",
-          "description": "Study nature and causes of Viking raids in Britain, Ireland, Scottish Islands and France, 793–850; nature of Viking warfare (warships, warriors, tactics); the ‘great heathen army’ in England and establishment of Danelaw, 865–879 (conquest, settlement beginnings, political impact).",
+          "Sub_topic_name": "Aztec crafts and trade",
+          "description": "Moctezuma’s Empire: wealth of empire—crafts and trade; markets, goods and economic organisation supporting wealth.",
           "tier": null
         },
         {
           "subtopic_id": "11d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Settlers",
-          "description": "Study nature and extent of Viking settlement in British Isles and France; Viking life in Jorvik (economy, society, culture, evidence); nature and extent of settlement across Atlantic including Iceland, Greenland and North America (motives, routes, sustainability).",
+          "Sub_topic_name": "Tenochtitlan: splendour and significance",
+          "description": "Moctezuma’s Empire: centre of empire—the splendour of Tenochtitlan; urban features, governance and what it reveals about Aztec civilisation.",
           "tier": null
         },
         {
           "subtopic_id": "11e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Kings and the end of the Viking Age",
-          "description": "Study Harald Bluetooth, Jelling and conversion to Christianity (political and religious change); Svein Forkbeard and invasions of England; Cnut’s Anglo-Scandinavian Empire, 1016–1035 (governance, integration, significance) and links to the decline/end of Viking Age c.1050.",
+          "Sub_topic_name": "Territorial expansion and Aztec warfare",
+          "description": "Controlling the Empire: territorial expansion and nature of warfare—aims of war, methods and how conquest maintained the empire.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Land, tribute and elites",
+          "description": "Controlling the Empire: land, tribute and role of elites—how tribute worked, social hierarchy and how elites sustained control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Aztec religion: beliefs",
+          "description": "Controlling the Empire: Aztec religion—core beliefs and worldview shaping society and politics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Aztec religion: temples",
+          "description": "Controlling the Empire: Aztec religion—temples and religious practice; role of sacred architecture in power and ritual.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Aztec religion: sacrifice",
+          "description": "Controlling the Empire: Aztec religion—sacrifice; purposes, meanings and how it related to warfare, control and belief.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Motives for Spanish expansion",
+          "description": "Encounters: motives for Spanish expansion into the Caribbean and central America—wealth, religion, status and empire-building goals.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11k",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Cortés expedition and first encounter (Feb–Apr 1519)",
+          "description": "Encounters: Cortés—expedition to Mexico and first encounter with the Aztecs (Feb 1519 to Apr 1519); key events and early relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11l",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Aztec subject dissatisfaction and Spanish alliances",
+          "description": "Encounters: dissatisfaction among Aztec subjects and Spanish alliances—why subject peoples opposed Aztec rule and how alliances affected conquest.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11m",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Spanish in Tenochtitlan and Cortés–Moctezuma relationship",
+          "description": "Conquest (1519–1521): Spanish in Tenochtitlan and relationship between Cortés and Moctezuma—power dynamics, diplomacy and control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11n",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Moctezuma’s capture and death; Spanish flight (1 July 1520)",
+          "description": "Conquest (1519–1521): hostilities—capture and death of Moctezuma and Spanish flight from the city on 1 July 1520; causes and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11o",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Siege of Tenochtitlan and reasons for Spanish victory",
+          "description": "Conquest (1519–1521): siege of Tenochtitlan and reasons for Spanish victory—military, technological, political and disease-related factors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11p",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Encomienda and tribute reorganisation",
+          "description": "Birth of New Spain: nature and impact of Spanish rule—Encomienda system and reorganisation of tribute; exploitation, labour and governance impacts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11q",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Church role and conduct",
+          "description": "Birth of New Spain: role and conduct of the Church—conversion, control, cultural change and relationship with colonial власти.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11r",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Transformation: animals and ecological change",
+          "description": "Birth of New Spain: transformation of landscape and people—grazing animals and ecological devastation; how environment and economy changed under Spanish rule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11s",
+          "Specification_section_sub": "2c",
+          "Sub_topic_name": "Mestizos and social change",
+          "description": "Birth of New Spain: transformation of people—mestizos; new social categories, identities and consequences of conquest for population and culture.",
           "tier": null
         }
       ]
     },
     {
       "Topic_id": 12,
-      "Specification_section": "2c (The Mughal Empire)",
-      "Strand": "World History",
-      "Topic_name": "The Mughal Empire, 1526–1707",
+      "Specification_section": "2c (World Depth Study)",
+      "Strand": "World Depth Study",
+      "Topic_name": "Living under Nazi Rule, 1933–1945",
       "Sub_topics": [
         {
           "subtopic_id": "12a",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "First Mughal Emperors (1526–1556)",
-          "description": "Study Babur and invasion of northern India: beginning of Mughal Empire, 1526–1530; nature of the ‘prize’: northern India and its people c.1530 (society, economy, diversity); Humayun’s struggle to retain control and condition of Mughal Empire by 1556 (instability, threats, continuity/change).",
+          "Sub_topic_name": "Hitler and the Nazi Party (Jan 1933)",
+          "description": "Dictatorship: Hitler and the Nazi Party in January 1933—position of Nazis in government and political context at Hitler’s appointment.",
           "tier": null
         },
         {
           "subtopic_id": "12b",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Akbar (1556–1605)",
-          "description": "Study Akbar and extension of Mughal Empire territory during his reign; Akbar’s court and imperial administration (systems of governance, elites, military/finance); Akbar’s search for knowledge and religious policies (tolerance, debates, Din-i Ilahi context) and impact on rule/people.",
+          "Sub_topic_name": "Establishing the dictatorship (Jan–Jul 1933)",
+          "description": "Dictatorship: establishing the dictatorship, January 1933 to July 1933—key steps used to remove opposition and change the political system.",
           "tier": null
         },
         {
           "subtopic_id": "12c",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Jahangir (1605–1627)",
-          "description": "Study Jahangir, influence of Nur Jahan, and impact of their rule; Mughal economy and European traders (trade relations, company presence, effects); Jahangir’s patronage of painting and development of Mughal miniature (cultural achievements and significance).",
+          "Sub_topic_name": "Achieving total power (Jul 1933–Aug 1934)",
+          "description": "Dictatorship: achieving total power, July 1933 to August 1934—consolidation of authority and elimination of threats within/outside the Nazi movement.",
           "tier": null
         },
         {
           "subtopic_id": "12d",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Shah Jahan (1627–1658)",
-          "description": "Study Shah Jahan: luxury of court and nature of rule; patronage of building including Taj Mahal and new capital in Delhi (architecture as power/culture); wars to extend empire and war of succession between Dara and Aurangzeb (causes, consequences for stability).",
+          "Sub_topic_name": "SS, courts, camps and Gestapo",
+          "description": "Control and Opposition (1933–1939): machinery of terror—SS, law courts, concentration camps and Gestapo; how repression worked and its effects.",
           "tier": null
         },
         {
           "subtopic_id": "12e",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Aurangzeb (1658–1707) and condition of empire",
-          "description": "Study Aurangzeb and impact of religious piety (policy, tolerance/intolerance, administration); campaigns against Marathas in Deccan from 1681 and consequences; condition of Mughal Empire at Aurangzeb’s death in 1707 (strengths/weaknesses, legacy, reasons for change).",
+          "Sub_topic_name": "Nazi propaganda: range and effectiveness",
+          "description": "Control and Opposition (1933–1939): range and effectiveness of Nazi propaganda—methods, messages, audiences and how propaganda shaped beliefs/behaviour.",
           "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 13,
-      "Specification_section": "2c (The Making of America)",
-      "Strand": "World History",
-      "Topic_name": "The Making of America, 1789–1900",
-      "Sub_topics": [
+        },
         {
-          "subtopic_id": "13a",
+          "subtopic_id": "12f",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "America’s expansion (1789–1838)",
-          "description": "Study how and why USA expanded, 1789–1838 (territorial growth drivers); expansion of southern cotton plantations and slavery, 1793–1838 (economic causes, human impact, political tensions as relevant); removal of indigenous people from the east, 1830–1838 (policy, experiences, consequences).",
+          "Sub_topic_name": "Opposition: the Left",
+          "description": "Control and Opposition (1933–1939): opposition to Nazi rule from the Left—forms of resistance, limitations and Nazi responses.",
           "tier": null
         },
         {
-          "subtopic_id": "13b",
+          "subtopic_id": "12g",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "The West (1839–1860)",
-          "description": "Study culture of Native Americans of the Plains including a case study of the Lakota Sioux (society, economy, beliefs); journeys of early migrants to California and Oregon and Mormon settlement of Utah (motives, routes, challenges); nature and impact of Californian Gold Rush (1848–1849) and consequences of Pikes Peak Gold Rush (1858–1859) (migration, conflict, economic/social change).",
+          "Sub_topic_name": "Opposition: church leaders",
+          "description": "Control and Opposition (1933–1939): opposition from church leaders—nature of dissent, issues contested and outcomes.",
           "tier": null
         },
         {
-          "subtopic_id": "13c",
+          "subtopic_id": "12h",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Civil War and Reconstruction (1861–1877)",
-          "description": "Study divisions over slavery and causes of Civil War; African American experience of Civil War, 1861–1865 (roles, emancipation impacts, limitations); Reconstruction and continuing limitations to African American liberty (policies, resistance, social/economic constraints). Note: political events only required insofar as they relate directly to the identified cultural/conflict issues.",
+          "Sub_topic_name": "Opposition: youth groups",
+          "description": "Control and Opposition (1933–1939): opposition from youth groups—why youth resisted, forms of resistance and repression.",
           "tier": null
         },
         {
-          "subtopic_id": "13d",
+          "subtopic_id": "12i",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Settlement and conflict on the Plains (1861–1877)",
-          "description": "Study causes and nature of white American exploitation of the Plains: railroads, ranches, cow towns; homesteaders—living and farming on the Plains (environment, technology, hardship); Indian Wars including Little Crow’s War (1862), Red Cloud’s War (1865–1868), Great Sioux War (1876–1877) (causes, course, consequences).",
+          "Sub_topic_name": "Work and home: impact on men and women",
+          "description": "Changing Lives (1933–1939): work and home—impact of Nazi policies on men and women, including employment, gender roles and family policy.",
           "tier": null
         },
         {
-          "subtopic_id": "13e",
+          "subtopic_id": "12j",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "American cultures (1877–1900)",
-          "description": "Study changes to Native Americans of the Plains’ way of life including reservations and destruction of buffalo (cultural/economic impacts); impact of economic, social and political change on lives of African Americans (segregation, rights, labour, migration as relevant); growth of big business, cities and mass migration (industrialisation/urbanisation and societal change).",
+          "Sub_topic_name": "Education and youth movements",
+          "description": "Changing Lives (1933–1939): lives of young people—education and youth movements; indoctrination, conformity and experiences.",
           "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 14,
-      "Specification_section": "Component Group 3",
-      "Strand": "World History",
-      "Topic_name": "World Depth Study",
-      "Sub_topics": [
+        },
         {
-          "subtopic_id": "14a",
+          "subtopic_id": "12k",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "World Depth Study overview and options",
-          "description": "Understand the World Depth Study element: choose ONE option (The First Crusade, c.1070–1100; Aztecs and the Spanish Conquest, 1519–1535; Living under Nazi Rule, 1933–1945). Understand focus: a traumatic short period in world history with conflict between cultures/ideologies; interplay of political, military, religious, economic, social and cultural forces. Learners must analyse/evaluate a wide range of contemporary sources (documents, visual sources, artefacts, sites, oral testimony as appropriate) and understand how/why interpretations are constructed; study a range of written/visual interpretations (academic, educational, popular, fictional). Understand structure: five sections (mostly chronological; some parallel); bullets include narrative and situational depth; allocate roughly equal teaching time across bullets. Understand prohibited combinations with British depth options from same era (Norman+Crusade; Elizabethans+Aztecs; Britain 1900–1918+Nazi Rule).",
+          "Sub_topic_name": "Persecution of Jews (1933–1939)",
+          "description": "Changing Lives (1933–1939): Nazi racial policy—growing persecution of Jews; discrimination, exclusion and escalation toward violence.",
           "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 15,
-      "Specification_section": "2c (The First Crusade)",
-      "Strand": "World History",
-      "Topic_name": "The First Crusade, c.1070–1100",
-      "Sub_topics": [
+        },
         {
-          "subtopic_id": "15a",
+          "subtopic_id": "12l",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Origins (c.1070–1095)",
-          "description": "Study origins of First Crusade: Islamic world (diversity and relations with Christians); pressures on Byzantine Empire; Latin Christendom and power of papacy (context for calls to crusade). Understand interplay of political/religious/cultural forces shaping relationships among Islamic world, Byzantium, Latin Christendom.",
+          "Sub_topic_name": "War economy and impact (1939–1942)",
+          "description": "Germany in War: move to a war economy and impact on German people, 1939–1942; mobilisation, rationing, labour and social effects.",
           "tier": null
         },
         {
-          "subtopic_id": "15b",
+          "subtopic_id": "12m",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Responses (Nov 1095–Dec 1096)",
-          "description": "Study Urban II and preaching of First Crusade; who joined and why (motivations across classes/regions, religious and material incentives); People’s Crusade and challenges it faced (organisation, violence, logistics, outcomes).",
+          "Sub_topic_name": "Growing opposition including within the army",
+          "description": "Germany in War: growing opposition from German people including elements within the army—motivations, actions and risks under dictatorship.",
           "tier": null
         },
         {
-          "subtopic_id": "15c",
+          "subtopic_id": "12n",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Into Asia Minor (Dec 1096–Oct 1097)",
-          "description": "Study Alexios I negotiations with crusade leaders; siege of Nicaea and Battle of Dorylaeum (nature of Christian and Muslim warfare); journey across Asia Minor (physical challenges and disunity among leadership).",
+          "Sub_topic_name": "Total war impact (1943–1945)",
+          "description": "Germany in War: impact of total war on German people, 1943–1945—bombing, shortages, morale and social breakdown.",
           "tier": null
         },
         {
-          "subtopic_id": "15d",
+          "subtopic_id": "12o",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Antioch (Oct 1097–Jun 1098)",
-          "description": "Study siege by crusaders; capture of Antioch (rivalries, strategies, atrocities); events of June and defeat of Kerbogha (turning points, leadership, morale, religious interpretations).",
+          "Sub_topic_name": "Nazi rule: eastern vs western Europe",
+          "description": "Occupation: contrasting nature of Nazi rule in eastern and western Europe—different aims, brutality levels and policies toward populations.",
           "tier": null
         },
         {
-          "subtopic_id": "15e",
+          "subtopic_id": "12p",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Jerusalem (Jul 1098–Jul 1100)",
-          "description": "Study disputes, delays, journey to Jerusalem; capture of Jerusalem (preparations, tactics, sack of city); establishment of Kingdom of Jerusalem and Muslim response (immediate consequences, longer-term impact and reactions).",
+          "Sub_topic_name": "Einsatzgruppen",
+          "description": "Occupation: Holocaust—Einsatzgruppen; mobile killing operations, methods and significance in genocide.",
           "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 16,
-      "Specification_section": "2c (Aztecs and the Spanish Conquest)",
-      "Strand": "World History",
-      "Topic_name": "Aztecs and the Spanish Conquest, 1519–1535",
-      "Sub_topics": [
+        },
         {
-          "subtopic_id": "16a",
+          "subtopic_id": "12q",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Moctezuma’s Empire (1519)",
-          "description": "Study extent and nature of Moctezuma’s Aztec empire in 1519; wealth of empire (agriculture, crafts, trade); splendour of Tenochtitlan as centre of empire (urban features, organisation, symbolism) and what these reveal about Aztec society.",
+          "Sub_topic_name": "Ghettos",
+          "description": "Occupation: Holocaust—ghettos; purpose, living conditions, control and role in the genocidal process.",
           "tier": null
         },
         {
-          "subtopic_id": "16b",
+          "subtopic_id": "12r",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Controlling the Empire",
-          "description": "Study territorial expansion and nature of warfare; land, tribute and role of elites (political/economic control mechanisms); Aztec religion including beliefs, temples and sacrifice (worldview, social cohesion, political legitimacy).",
+          "Sub_topic_name": "Death camps",
+          "description": "Occupation: Holocaust—death camps; function, processes of mass murder and significance.",
           "tier": null
         },
         {
-          "subtopic_id": "16c",
+          "subtopic_id": "12s",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Encounters (1519)",
-          "description": "Study motives for Spanish expansion into Caribbean and Central America; Cortés expedition and first encounter with Aztecs (Feb 1519–Apr 1519); dissatisfaction among Aztec subjects and Spanish alliances (inter-societal dynamics influencing conquest).",
+          "Sub_topic_name": "Responses to Nazi rule: collaboration",
+          "description": "Occupation: responses to Nazi rule—collaboration; reasons people collaborated and effects on occupation and communities.",
           "tier": null
         },
         {
-          "subtopic_id": "16d",
+          "subtopic_id": "12t",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Conquest (1519–1521)",
-          "description": "Study Spanish in Tenochtitlan and relationship between Cortés and Moctezuma; hostilities including capture and death of Moctezuma and Spanish flight on 1 July 1520; siege of Tenochtitlan and reasons for Spanish victory (alliances, technology, disease, tactics, internal divisions).",
+          "Sub_topic_name": "Responses to Nazi rule: accommodation",
+          "description": "Occupation: responses to Nazi rule—accommodation; forms of coping/complying without active support, and why it occurred.",
           "tier": null
         },
         {
-          "subtopic_id": "16e",
+          "subtopic_id": "12u",
           "Specification_section_sub": "2c",
-          "Sub_topic_name": "Birth of New Spain (to 1535)",
-          "description": "Study nature and impact of Spanish rule including Encomienda and reorganisation of tribute system; role and conduct of the Church; transformation of landscape and people (grazing animals, ecological devastation, mestizos) and how conquest reshaped society and identities.",
-          "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 17,
-      "Specification_section": "2c (Living under Nazi Rule)",
-      "Strand": "World History",
-      "Topic_name": "Living under Nazi Rule, 1933–1945",
-      "Sub_topics": [
-        {
-          "subtopic_id": "17a",
-          "Specification_section_sub": "2c",
-          "Sub_topic_name": "Dictatorship (1933–1934)",
-          "description": "Study Hitler and Nazi Party in January 1933; establishing the dictatorship January–July 1933; achieving total power July 1933–August 1934 (legal changes, intimidation, elimination of opposition, consolidation).",
-          "tier": null
-        },
-        {
-          "subtopic_id": "17b",
-          "Specification_section_sub": "2c",
-          "Sub_topic_name": "Control and opposition (1933–1939)",
-          "description": "Study machinery of terror (SS, law courts, concentration camps, Gestapo); range and effectiveness of Nazi propaganda; opposition to Nazi rule including Left, church leaders, youth groups (forms of resistance, limits and risks).",
-          "tier": null
-        },
-        {
-          "subtopic_id": "17c",
-          "Specification_section_sub": "2c",
-          "Sub_topic_name": "Changing lives (1933–1939)",
-          "description": "Study work and home: impact of Nazi policies on men and women (employment, family, roles, expectations); lives of young people including education and youth movements; Nazi racial policy: growing persecution of Jews (legal discrimination, social exclusion, escalating violence).",
-          "tier": null
-        },
-        {
-          "subtopic_id": "17d",
-          "Specification_section_sub": "2c",
-          "Sub_topic_name": "Germany in war (1939–1945)",
-          "description": "Study move to war economy and impact on German people, 1939–1942; growing opposition from German people including elements within the army; impact of total war on German people, 1943–1945 (bombing, shortages, mobilisation, morale). Note: WWII events only required insofar as they relate directly to these issues about life under Nazi rule.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "17e",
-          "Specification_section_sub": "2c",
-          "Sub_topic_name": "Occupation and the Holocaust",
-          "description": "Study contrasting nature of Nazi rule in eastern vs western Europe; the Holocaust including Einsatzgruppen, ghettos, death camps; responses to Nazi rule: collaboration, accommodation, resistance (range and motives, risks, outcomes).",
-          "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 18,
-      "Specification_section": "3a",
-      "Strand": "Assessment and Administration",
-      "Topic_name": "Forms of assessment",
-      "Sub_topics": [
-        {
-          "subtopic_id": "18a",
-          "Specification_section_sub": "3a",
-          "Sub_topic_name": "Qualification structure and components",
-          "description": "Understand GCSE (9–1) History B (SHP) J411 assessment structure: three component groups; learners take one component from each group; all externally assessed. Component Group 1: Paper 1 British History (thematic + British depth), 1h45, 80 marks total (40+40), each worth 20% of GCSE. Component Group 2: Paper History Around Us, 1h, 40 marks plus 10 marks SPaG (SPaG marks additional to total 200), worth 20% of GCSE. Component Group 3: Paper 2 World History (period + world depth), 1h45, 80 marks total (40+40), each worth 20% of GCSE. Understand rule: British and wider world depth studies must be from different eras (Medieval 500–1500; Early Modern 1450–1750; Modern 1700–present).",
-          "tier": null
-        },
-        {
-          "subtopic_id": "18b",
-          "Specification_section_sub": "3a",
-          "Sub_topic_name": "Thematic Study paper question types",
-          "description": "Understand Paper 1 thematic study question demands: Q1 factual recall via three short items (e.g., “Give one example of…”, “Name one…”), sampling significant detail across periods. Q2 structured account: “Write a clear and organised summary that analyses…” requiring selection/organisation/communication in chronological narrative or situation summary, using second-order concepts (cause, consequence, similarity/difference). Q3 explanation task (e.g., “Why…?”, “What was the impact of…?”, “What caused…?”, “Why do you think…?”). Q4/5 choice of two judgement questions: “How far…” agreement with a statement, drawing on any relevant knowledge across the thematic content.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "18c",
-          "Specification_section_sub": "3a",
-          "Sub_topic_name": "British Depth Study paper question types (interpretations)",
-          "description": "Understand Paper 1 British depth study question demands focused on interpretations: Q6a analysis of a single interpretation, identifying and explaining features using contextual knowledge. Q6b propose an area of further research prompted by the interpretation and justify how it would help analyse/understand the issue. Q7 explain how far and why two interpretations differ (comparison plus explanation of differences). Q8/9 choice of two judgement questions: “How far…” agreement with a quotation from an interpretation, using contextual knowledge and evaluation of interpretations.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "18d",
-          "Specification_section_sub": "3a",
-          "Sub_topic_name": "History Around Us paper question types and SPaG",
-          "description": "Understand History Around Us assessment: separate paper, 20% of GCSE. Learners answer two questions from a choice of three; must state name of site studied at start of each answer. Questions draw from site-selection criteria aspects a–n; each question combines two or more aspects. Responses must use physical features of site plus own knowledge to analyse/evaluate; must clearly indicate period(s) discussed using dates or period terms. Additional 10 marks available for spelling, punctuation and grammar and specialist terminology (SPaG), assessed via extended responses (clearly indicated).",
-          "tier": null
-        },
-        {
-          "subtopic_id": "18e",
-          "Specification_section_sub": "3a",
-          "Sub_topic_name": "Period Study paper question types",
-          "description": "Understand Paper 2 period study question demands: Q1 factual recall via three short items across sections. Q2 structured account: “Write a clear and organised summary that analyses…” using chronological narrative or situation summary and second-order concepts (cause, consequence, similarity/difference). Q3 explanation task (Why/impact/cause). Q4/5 choice of two judgement questions: “How far…” agreement with a statement; reward any relevant knowledge across period content.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "18f",
-          "Specification_section_sub": "3a",
-          "Sub_topic_name": "World Depth Study paper question types (sources and interpretations)",
-          "description": "Understand Paper 2 world depth study question demands: Q6 analyse a single source (extract/data/object(s)/picture/photograph etc) using source content and own knowledge: “What can this … tell us about …? In your answer refer to the … and your own knowledge.” Q7 evaluate usefulness of a collection of sources/interpretations for a stated line of enquiry: “How useful are B, C and D for a historian studying X?” Q8/9 choice of two judgement questions: “How far…” agreement with a view/quotation from an interpretation, using evaluation and contextual knowledge.",
-          "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 19,
-      "Specification_section": "3b",
-      "Strand": "Assessment and Administration",
-      "Topic_name": "Assessment objectives (AOs)",
-      "Sub_topics": [
-        {
-          "subtopic_id": "19a",
-          "Specification_section_sub": "3b",
-          "Sub_topic_name": "AO1–AO4 definitions",
-          "description": "Know the four assessment objectives for OCR GCSE History B (SHP) J411: AO1 demonstrate knowledge and understanding of key features and characteristics of the periods studied; AO2 explain and analyse historical events and periods using second-order historical concepts; AO3 analyse, evaluate and use sources contemporary to the period to make substantiated judgements in historical context; AO4 analyse, evaluate and make substantiated judgements about interpretations (including how/why interpretations differ) in historical context.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "19b",
-          "Specification_section_sub": "3b",
-          "Sub_topic_name": "AO weightings by component",
-          "description": "Understand AO weightings across the qualification and by component: Thematic + British depth (J411/11–19): AO1 14%, AO2 13.5%, AO3 0%, AO4 12.5%. History Around Us (J411/21): AO1 6%, AO2 4%, AO3 10%, AO4 0%. Period + world depth (J411/31–39): AO1 15%, AO2 17.5%, AO3 5%, AO4 2.5%. Totals: AO1 35%, AO2 35%, AO3 15%, AO4 15%.",
-          "tier": null
-        }
-      ]
-    },
-    {
-      "Topic_id": 20,
-      "Specification_section": "3c–3k",
-      "Strand": "Assessment and Administration",
-      "Topic_name": "Qualification time, availability, rules, and administration",
-      "Sub_topics": [
-        {
-          "subtopic_id": "20a",
-          "Specification_section_sub": "3c",
-          "Sub_topic_name": "Total qualification time (TQT) and guided learning hours",
-          "description": "Know the time expectations: Total Qualification Time (TQT) is 140 hours; guided learning time is 120–140 hours. TQT includes guided learning plus preparation, study, and assessment time.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20b",
-          "Specification_section_sub": "3d",
-          "Sub_topic_name": "Qualification availability outside England",
-          "description": "Know availability statement: qualification available in England; for Wales and Northern Ireland check QIW / NI Department of Education Performance Measures / NIEFQAN list for current availability (availability may vary).",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20c",
-          "Specification_section_sub": "3e",
-          "Sub_topic_name": "Language of assessment",
-          "description": "Know language rules: qualification available in English only; all assessment materials in English; all candidate work must be in English.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20d",
-          "Specification_section_sub": "3f",
-          "Sub_topic_name": "Assessment availability and series rules",
-          "description": "Know assessment availability: one exam series each year in May/June; all examined components must be taken in the same series at end of course; specification certificated from June 2018 onwards.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20e",
-          "Specification_section_sub": "3g",
-          "Sub_topic_name": "Retaking the qualification",
-          "description": "Know retake rule: learners may retake as many times as they wish; they retake all components of the qualification.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20f",
-          "Specification_section_sub": "3h",
-          "Sub_topic_name": "Extended response assessment",
-          "description": "Understand extended response is assessed within marking criteria: materials provide opportunity to construct/develop a sustained, coherent line of reasoning; marks for extended responses are integrated into levels/criteria across relevant questions.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20g",
-          "Specification_section_sub": "3i",
-          "Sub_topic_name": "SPaG and specialist terminology",
-          "description": "Understand spelling, punctuation and grammar and specialist terminology (SPaG): across the specification, 5% of marks credit SPaG. For this qualification, 10 SPaG marks are available in History Around Us paper; these 10 marks are additional to the 200 raw marks used for qualification grading; SPaG assessed on extended responses and indicated in assessment materials; expectations described in mark schemes.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20h",
-          "Specification_section_sub": "3j",
-          "Sub_topic_name": "Synoptic assessment",
-          "description": "Understand synoptic assessment meaning and purpose: explicit drawing together of knowledge, skills and understanding across different parts of the course; encourages understanding of History as a discipline; content selection provides diversity; combination of overview/depth and historical methodology promotes disciplinary understanding.",
-          "tier": null
-        },
-        {
-          "subtopic_id": "20i",
-          "Specification_section_sub": "3k",
-          "Sub_topic_name": "Calculating qualification results",
-          "description": "Understand result calculation: overall grade determined by adding marks from the three components taken to give total weighted mark; compare to qualification-level grade boundaries for the entry option and exam series to determine overall grade.",
+          "Sub_topic_name": "Responses to Nazi rule: resistance",
+          "description": "Occupation: responses to Nazi rule—resistance; types of resistance, risks and impact/limitations.",
           "tier": null
         }
       ]

@@ -92,7 +92,9 @@ class Specification(SQLModel, table=True):
     creator_id: str | None = Field(default=None, index=True)
     creator_is_guest: bool = Field(default=False)
     is_reviewed: bool = Field(default=False)
+    is_hidden: bool = Field(default=False)
     description: str | None = Field(default=None)
+    content_hash: str | None = Field(default=None)
     created_at: datetime = Field(default_factory=datetime.utcnow)
 
 class UserModuleSelection(SQLModel, table=True):

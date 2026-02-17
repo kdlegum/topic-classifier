@@ -1,11 +1,14 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import { fly, fade, slide } from 'svelte/transition';
 	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
 	import { formatScripts } from '$lib/formatText';
+	import { celebrateFullMarks, celebrateCompletion } from '$lib/celebrations';
+	import { shouldAnimate, DURATIONS } from '$lib/motion';
 
 	type Correction = {
 		subtopic_id: string;
@@ -19,6 +22,7 @@
 	let session: any = $state(null);
 	let loading = $state(true);
 	let error = $state('');
+	let ready = $state(false);
 
 	let pendingMarks = new Map<number, number>();
 	let saveTimeout: ReturnType<typeof setTimeout> | null = null;
@@ -26,6 +30,10 @@
 
 	let currentMarks = $state(new Map<number, number>());
 	let expandedDescs = $state(new Set<string>());
+
+	// Track which questions have had full marks celebration
+	let celebratedFullMarks = new Set<number>();
+	let allMarkedCelebrated = false;
 
 	// Corrections state: question_id -> array of corrections
 	let correctionsMap = $state(new Map<number, Correction[]>());
@@ -135,6 +143,13 @@
 			currentMarks = initial;
 			correctionsMap = initialCorrections;
 
+			// Pre-populate celebrated set for already full-marks questions
+			for (const q of session.questions) {
+				if (q.marks_achieved != null && q.marks_available != null && q.marks_achieved >= q.marks_available) {
+					celebratedFullMarks.add(q.question_id);
+				}
+			}
+
 			// Build spec_sub_section -> subtopic_id lookup from hierarchy
 			try {
 				const hierarchy = await getTopicHierarchy(session.spec_code);
@@ -159,6 +174,7 @@
 			}
 		} finally {
 			loading = false;
+			ready = true;
 		}
 	});
 
@@ -231,8 +247,26 @@
 		pendingMarks.set(questionId, marks);
 		saveStatus = 'saving';
 
+		// Check for full marks celebration
+		if (marksAvailable != null && marks >= marksAvailable && !celebratedFullMarks.has(questionId)) {
+			celebratedFullMarks.add(questionId);
+			celebrateFullMarks();
+		}
+
 		if (saveTimeout) clearTimeout(saveTimeout);
-		saveTimeout = setTimeout(() => saveChanges(), 600);
+		saveTimeout = setTimeout(() => {
+			saveChanges();
+			checkAllMarked();
+		}, 600);
+	}
+
+	function checkAllMarked() {
+		if (!session || allMarkedCelebrated) return;
+		const allMarked = session.questions.every((q: any) => currentMarks.has(q.question_id));
+		if (allMarked) {
+			allMarkedCelebrated = true;
+			setTimeout(() => celebrateCompletion(), 300);
+		}
 	}
 
 	function getCorrections(questionId: number): Correction[] {
@@ -323,6 +357,10 @@
 			saveStatus = 'error';
 		}
 	}
+
+	function staggerDelay(i: number): number {
+		return shouldAnimate() ? i * DURATIONS.stagger : 0;
+	}
 </script>
 
 <svelte:head>
@@ -333,22 +371,25 @@
 	<a href="/history" class="btn-secondary back-link">Back to History</a>
 
 	{#if loading}
-		<div class="loading">Loading session...</div>
+		<div class="loading">
+			<span class="loading-spinner"></span>
+			Loading session...
+		</div>
 	{:else if error}
-		<div class="error-state">
+		<div class="error-state" in:fade={{ duration: 200 }}>
 			<p>{error}</p>
 			<p><a href="/history">Return to My Sessions</a></p>
 		</div>
 	{:else if session}
 		{#if saveStatus !== 'idle'}
-			<span class="save-indicator {saveStatus}">
+			<span class="save-indicator {saveStatus}" in:fly={{ x: 20, duration: 200 }}>
 				{#if saveStatus === 'saving'}Saving...{/if}
 				{#if saveStatus === 'saved'}Saved{/if}
 				{#if saveStatus === 'error'}Save failed{/if}
 			</span>
 		{/if}
 
-		<div class="session-header">
+		<div class="session-header" in:fly={{ y: 15, duration: 300 }}>
 			<h2>{getTitle(session)}</h2>
 			<p class="session-meta">{session.exam_board} - {formatDate(session.created_at)}</p>
 			{#if session.session_strands && session.session_strands.length > 0}
@@ -365,8 +406,12 @@
 			{/if}
 		</div>
 
-		{#each session.questions as question}
-			<div class="question-block">
+		{#each session.questions as question, i}
+			<div
+				class="question-block"
+				class:full-marks-glow={getMarksTier(question.question_id, question.marks_available) === 'marks-full'}
+				in:fly={{ y: 20, duration: 300, delay: staggerDelay(i) }}
+			>
 				<div class="question-header">
 					<h3>Question {question.question_number}:</h3>
 					{#if question.pdf_location}
@@ -415,7 +460,7 @@
 					oninput={(e) => handleMarksInput(question.question_id, e.currentTarget.value, question.marks_available)}
 				/>
 				{#if isMarksInvalid(question.question_id, question.marks_available)}
-					<p class="marks-error">Please enter a value between 0 and {question.marks_available ?? '?'}</p>
+					<p class="marks-error" in:fade={{ duration: 150 }}>Please enter a value between 0 and {question.marks_available ?? '?'}</p>
 				{/if}
 
 				{#each question.predictions as pred}
@@ -447,7 +492,7 @@
 							</button>
 						</p>
 						{#if expandedDescs.has(`desc-${question.question_id}-${pred.rank}`)}
-							<div class="description">
+							<div class="description" transition:slide={{ duration: 200 }}>
 								{@html formatScripts(pred.description)}
 							</div>
 						{/if}
@@ -465,6 +510,22 @@
 </main>
 
 <style>
+	.loading-spinner {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		border: 2.5px solid var(--color-border);
+		border-top-color: var(--color-primary);
+		border-radius: 50%;
+		animation: spin 0.7s linear infinite;
+		vertical-align: middle;
+		margin-right: 8px;
+	}
+
+	@keyframes spin {
+		to { transform: rotate(360deg); }
+	}
+
 	.session-strands {
 		display: flex;
 		flex-wrap: wrap;
@@ -474,12 +535,12 @@
 
 	.strand-pill {
 		display: inline-block;
-		padding: 3px 12px;
-		border-radius: 12px;
-		background: #e8f4fd;
-		color: #0077cc;
+		padding: 4px 14px;
+		border-radius: var(--radius-full);
+		background: var(--color-primary-light);
+		color: #0F766E;
 		font-size: 0.85rem;
-		font-weight: 500;
+		font-weight: 600;
 	}
 
 	.question-header {
@@ -495,45 +556,55 @@
 		width: auto;
 		margin-left: auto;
 		padding: 6px 10px;
-		border: 1px solid #d0d0d0;
-		border-radius: 4px;
-		background: #fff;
-		color: #555;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-surface);
+		color: var(--color-text-secondary);
 		font-size: 0.75rem;
 		font-weight: 600;
 		cursor: pointer;
-		transition: all 0.15s;
+		transition: all var(--transition-fast);
 		line-height: 1;
 		margin-bottom: 4px;
 	}
 
 	.toggle-btn:hover {
-		background: #f5f5f5;
+		border-color: var(--color-primary);
+		color: var(--color-primary);
 	}
 
 	.toggle-btn.active {
-		background: #0077cc;
+		background: var(--color-primary);
 		color: #fff;
-		border-color: #0077cc;
+		border-color: var(--color-primary);
 	}
 
 	.btn-download-pdf {
 		margin-top: 10px;
 		padding: 8px 16px;
-		border: 1px solid #ddd;
-		border-radius: 4px;
-		background: #f5f5f5;
-		color: #333;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-surface);
+		color: var(--color-text);
 		font-size: 0.9rem;
+		font-weight: 600;
+		font-family: var(--font-body);
 		cursor: pointer;
+		transition: all var(--transition-fast);
 	}
 
 	.btn-download-pdf:hover:not(:disabled) {
-		background: #eee;
+		border-color: var(--color-primary);
+		color: var(--color-primary);
 	}
 
 	.btn-download-pdf:disabled {
 		opacity: 0.6;
 		cursor: not-allowed;
+	}
+
+	.full-marks-glow {
+		border-color: var(--color-success) !important;
+		box-shadow: 0 0 0 2px var(--color-success-bg), var(--shadow-md) !important;
 	}
 </style>

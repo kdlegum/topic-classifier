@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Query, UploadFile, File, BackgroundTasks, Request, Depends
+from fastapi import FastAPI, Header, HTTPException, Query, UploadFile, File, BackgroundTasks, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from slowapi import Limiter
 from slowapi.util import get_remote_address
@@ -104,7 +104,7 @@ def load_specs_from_db():
     for s in all_subtopics:
         subtopics_by_topic.setdefault(s.topic_db_id, []).append(s)
 
-    for spec in specs:
+    for spec in [s for s in specs if not s.is_hidden]:
         topics_list = []
         for t in topics_by_spec.get(spec.id, []):
             sub_topics_list = []
@@ -535,6 +535,28 @@ def delete_spec(spec_code: str, request: Request, user=Depends(get_user)):
     reload_specs()
 
     return {"detail": "Specification deleted"}
+
+
+@app.patch("/specs/{spec_code}/hide")
+def toggle_hide_spec(spec_code: str, x_admin_secret: str = Header()):
+    """Toggle the is_hidden flag on a seeded specification. Requires ADMIN_SECRET."""
+    if x_admin_secret != os.environ.get("ADMIN_SECRET"):
+        raise HTTPException(status_code=403, detail="Invalid admin secret")
+    with Session(engine) as db:
+        db_spec = db.exec(
+            select(Specification).where(Specification.spec_code == spec_code)
+        ).first()
+        if not db_spec:
+            raise HTTPException(status_code=404, detail="Specification not found")
+
+        db_spec.is_hidden = not db_spec.is_hidden
+        db.add(db_spec)
+        db.commit()
+        db.refresh(db_spec)
+        hidden = db_spec.is_hidden
+
+    reload_specs()
+    return {"detail": f"Specification {'hidden' if hidden else 'unhidden'}", "is_hidden": hidden}
 
 
 # ── User Spec Selections ──────────────────────────────────────────
