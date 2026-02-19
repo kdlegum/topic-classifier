@@ -24,7 +24,7 @@
 	<div class="nav-links">
 		<a href="/classify" class:active={isClassify}>Classify</a>
 		<a href="/specs" class:active={isSpecs}>Specs</a>
-		<a href="/history" class:active={isHistory}>My Sessions</a>
+		<a href="/history" class:active={isHistory}><span class="shorten-text">My&nbsp;</span>Sessions</a>
 		<a href="/analytics" class:active={isAnalytics}>Analytics</a>
 		<a href="/revision" class:active={isRevision}>Revision</a>
 	</div>
@@ -125,6 +125,10 @@
 	}
 
 	@media (max-width: 700px) {
+		.shorten-text {
+			display: none;
+		}
+
 		.main-nav {
 			flex-wrap: wrap;
 			padding: 10px 16px;
