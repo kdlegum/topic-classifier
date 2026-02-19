@@ -260,6 +260,26 @@
 		}, 600);
 	}
 
+	function handleMarksKeydown(e: KeyboardEvent) {
+		if (e.key !== 'Tab') return;
+		const all = Array.from(document.querySelectorAll<HTMLInputElement>('.marks-achieved'));
+		const idx = all.indexOf(e.currentTarget as HTMLInputElement);
+		const next = all[idx + (e.shiftKey ? -1 : 1)];
+		if (!next) return;
+		e.preventDefault();
+		next.focus({ preventScroll: true });
+		const block = next.closest('.question-block') as HTMLElement | null;
+		const target = block ?? next;
+		const scrollContainer = document.querySelector('.app-content') as HTMLElement | null;
+		if (scrollContainer) {
+			const TOP_MARGIN = 24;
+			const containerRect = scrollContainer.getBoundingClientRect();
+			const targetRect = target.getBoundingClientRect();
+			const newScrollTop = scrollContainer.scrollTop + targetRect.top - containerRect.top - TOP_MARGIN;
+			scrollContainer.scrollTo({ top: newScrollTop, behavior: 'smooth' });
+		}
+	}
+
 	function checkAllMarked() {
 		if (!session || allMarkedCelebrated) return;
 		const allMarked = session.questions.every((q: any) => currentMarks.has(q.question_id));
@@ -458,6 +478,7 @@
 					placeholder="Marks achieved"
 					value={question.marks_achieved ?? ''}
 					oninput={(e) => handleMarksInput(question.question_id, e.currentTarget.value, question.marks_available)}
+					onkeydown={handleMarksKeydown}
 				/>
 				{#if isMarksInvalid(question.question_id, question.marks_available)}
 					<p class="marks-error" in:fade={{ duration: 150 }}>Please enter a value between 0 and {question.marks_available ?? '?'}</p>
