@@ -30,34 +30,13 @@ export function celebrateFullMarks() {
 export function celebrateCompletion() {
 	if (!shouldAnimate()) return;
 
-	const colors = [TEAL, CORAL, AMBER, GREEN, '#A78BFA'];
-	const duration = 1500;
-	const end = Date.now() + duration;
-
-	function frame() {
-		confetti({
-			particleCount: 3,
-			angle: 60,
-			spread: 55,
-			origin: { x: 0, y: 0.6 },
-			colors,
-			scalar: 0.8,
-			ticks: 100
-		});
-		confetti({
-			particleCount: 3,
-			angle: 120,
-			spread: 55,
-			origin: { x: 1, y: 0.6 },
-			colors,
-			scalar: 0.8,
-			ticks: 100
-		});
-
-		if (Date.now() < end) {
-			requestAnimationFrame(frame);
-		}
-	}
-
-	frame();
+	confetti({
+		particleCount: 80,
+		spread: 60,
+		origin: { y: 0.65 },
+		colors: [TEAL, CORAL, AMBER, GREEN, '#A78BFA'],
+		scalar: 0.9,
+		gravity: 1.2,
+		ticks: 130
+	});
 }

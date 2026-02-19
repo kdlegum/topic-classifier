@@ -482,7 +482,7 @@
 							>
 								{@html formatScripts(pred.subtopic)}
 							</span>
-							(Similarity score {pred.similarity_score})
+							(Similarity score {pred.similarity_score.toFixed(3)})
 							<button
 								class="btn-select-pred {selected ? 'selected' : ''}"
 								tabindex="-1"
