@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fly, fade } from 'svelte/transition';
+	import { fly, fade, slide } from 'svelte/transition';
 	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, getSpecs } from '$lib/api';
 	import type { RevisionQuestion, SpecInfo } from '$lib/api';
 	import MathText from '$lib/components/MathText.svelte';
@@ -178,123 +178,137 @@
 			<p class="muted">Questions appear here when you've scored below full marks on a session. Mark some exam sessions to build your revision pool.</p>
 		</div>
 	{:else}
-		{#key questionKey}
-			<div class="revision-content" in:fly={{ x: 30, duration: 300 }} out:fade={{ duration: 150 }}>
-				<div class="top-bar">
-					<div class="top-bar-left">
-						<span class="spec-badge">{specDisplayName(currentQuestion.spec_code)}</span>
-						<span class="meta">Q{currentQuestion.question_number}</span>
-						<span class="meta-dot">·</span>
-						<span class="meta">{currentQuestion.marks_available} mark{currentQuestion.marks_available !== 1 ? 's' : ''}</span>
-					</div>
-					<div class="top-bar-right">
-						<select class="spec-filter" value={specFilter} onchange={handleFilterChange}>
-							<option value="">All specs</option>
-							{#each specCodes as code}
-								<option value={code}>{specDisplayName(code)}</option>
-							{/each}
-						</select>
-						<span class="pool-count">{totalCount} left</span>
-					</div>
-				</div>
-
-				<div class="question-body">
-					{#if showPdf && currentQuestion.pdf_location}
-						<PdfQuestionView
-							sessionId={currentQuestion.session_id}
-							pdfLocation={currentQuestion.pdf_location}
-						/>
-					{:else}
-						<div class="question-text">
-							<MathText text={currentQuestion.question_text} />
+	<!-- TODO: Take content out especially for mobile since info like cards left shouldn't be part of the revision card. -->
+		<div class = "transition-container">
+			{#key questionKey}
+				<div class="revision-content" in:fly={{ x: 300, duration: 300, delay: 50 }} out:fly={{ x: -300, duration: 300 }}>
+					<div class="top-bar">
+						<div class="top-bar-left">
+							<span class="spec-badge">{specDisplayName(currentQuestion.spec_code)}</span>
+							<span class="meta">Q{currentQuestion.question_number}</span>
+							<span class="meta-dot">·</span>
+							<span class="meta">{currentQuestion.marks_available} mark{currentQuestion.marks_available !== 1 ? 's' : ''}</span>
 						</div>
-					{/if}
-				</div>
+						<div class="top-bar-right">
+							<select class="spec-filter" value={specFilter} onchange={handleFilterChange}>
+								<option value="">All specs</option>
+								{#each specCodes as code}
+									<option value={code}>{specDisplayName(code)}</option>
+								{/each}
+							</select>
+							<span class="pool-count">{totalCount} left</span>
+						</div>
+					</div>
 
-				<div class="bottom-controls">
-					<div class="actions-row">
-						{#if currentQuestion.has_pdf && currentQuestion.pdf_location}
-							<button class="action-btn" onclick={() => (showPdf = !showPdf)}>
-								{showPdf ? 'View text' : 'View full question'}
-							</button>
+					<div class="question-body">
+						{#if showPdf && currentQuestion.pdf_location}
+							<PdfQuestionView
+								sessionId={currentQuestion.session_id}
+								pdfLocation={currentQuestion.pdf_location}
+							/>
+						{:else}
+							<div class="question-text">
+								<MathText text={currentQuestion.question_text} />
+							</div>
 						{/if}
-						<button class="action-btn" onclick={handleDownloadPdf} disabled={downloading || !currentQuestion.has_pdf}>
-							{downloading ? 'Downloading...' : 'Download PDF'}
-						</button>
-						<button class="action-btn remove" onclick={handleDeleteFromPool} disabled={deleting || submitted}>
-							{deleting ? 'Removing...' : 'Remove from pool'}
-						</button>
 					</div>
 
-					{#if !submitted}
-						<div class="submit-row">
-							<div class="marks-group">
-								<input
-									type="number"
-									class="marks-input"
-									bind:value={marksInput}
-									min="0"
-									max={currentQuestion.marks_available}
-								/>
-								<span class="marks-divider">/ {currentQuestion.marks_available} marks</span>
-							</div>
-							<div class="submit-actions">
-								<button class="action-btn" onclick={pickNext}>Skip</button>
-								<button class="primary-btn" onclick={handleSubmit} disabled={submitting}>
-									{submitting ? 'Submitting...' : 'Submit'}
+					<div class="bottom-controls">
+						<div class="actions-row">
+							{#if currentQuestion.has_pdf && currentQuestion.pdf_location}
+								<button class="action-btn" onclick={() => (showPdf = !showPdf)}>
+									{showPdf ? 'View text' : 'View full question'}
 								</button>
-							</div>
+							{/if}
+							<button class="action-btn" onclick={handleDownloadPdf} disabled={downloading || !currentQuestion.has_pdf}>
+								{downloading ? 'Downloading...' : 'Download PDF'}
+							</button>
+							<button class="action-btn remove" onclick={handleDeleteFromPool} disabled={deleting || submitted}>
+								{deleting ? 'Removing...' : 'Remove from pool'}
+							</button>
 						</div>
-					{:else if submitResult}
-						<div
-							class="result-section"
-							class:full-marks={submitResult.is_full_marks}
-							class:partial={!submitResult.is_full_marks}
-							in:fly={{ y: 15, duration: 250 }}
-						>
-							<div class="result-banner">
-								{#if submitResult.is_full_marks}
-									<span class="result-icon">&#10003;</span>
-									<span>Full marks — removed from pool</span>
-								{:else}
-									<span class="result-icon">&#8635;</span>
-									<span>Stays in pool for next time</span>
-								{/if}
-							</div>
 
-							<div class="result-details">
-								<div class="result-row">
-									<span class="detail-label">Topic</span>
-									<span class="detail-value">{topicDisplay(currentQuestion)}</span>
-								</div>
-								<div class="result-row">
-									<span class="detail-label">Original</span>
-									<span class="detail-value">{currentQuestion.original_marks_achieved}/{currentQuestion.marks_available}</span>
-								</div>
-								<div class="result-row">
-									<span class="detail-label">This attempt</span>
-									<span class="detail-value">{marksInput}/{currentQuestion.marks_available}</span>
+						{#if !submitted}
+							<div class = "slide-wrapper" out:slide={{ duration: 200, axis: 'y' }}>
+								<div class="submit-row">
+									<div class="marks-group">
+										<input
+											type="number"
+											class="marks-input"
+											bind:value={marksInput}
+											min="0"
+											max={currentQuestion.marks_available}
+										/>
+										<span class="marks-divider">/ {currentQuestion.marks_available} marks</span>
+									</div>
+									<div class="submit-actions">
+										<button class="action-btn" onclick={pickNext}>Skip</button>
+										<button class="primary-btn" onclick={handleSubmit} disabled={submitting}>
+											{submitting ? 'Submitting...' : 'Submit'}
+										</button>
+									</div>
 								</div>
 							</div>
+						{:else if submitResult}
+							<div
+								class="result-section"
+								class:full-marks={submitResult.is_full_marks}
+								class:partial={!submitResult.is_full_marks}
+								in:slide={{ duration: 300, axis: 'y' }}
+							>
+								<div class="result-banner">
+									{#if submitResult.is_full_marks}
+										<span class="result-icon">&#10003;</span>
+										<span>Full marks — removed from pool</span>
+									{:else}
+										<span class="result-icon">&#8635;</span>
+										<span>Stays in pool for next time</span>
+									{/if}
+								</div>
 
-							<button class="primary-btn next-btn" onclick={pickNext}>Next Question</button>
-						</div>
-					{/if}
+								<div class="result-details">
+									<div class="result-row">
+										<span class="detail-label">Topic</span>
+										<span class="detail-value">{topicDisplay(currentQuestion)}</span>
+									</div>
+									<div class="result-row">
+										<span class="detail-label">Original</span>
+										<span class="detail-value">{currentQuestion.original_marks_achieved}/{currentQuestion.marks_available}</span>
+									</div>
+									<div class="result-row">
+										<span class="detail-label">This attempt</span>
+										<span class="detail-value">{marksInput}/{currentQuestion.marks_available}</span>
+									</div>
+								</div>
+
+								<button class="primary-btn next-btn" onclick={pickNext}>Next Question</button>
+							</div>
+						{/if}
+					</div>
+
 				</div>
-			</div>
-		{/key}
+			{/key}
+		</div>
 	{/if}
 </div>
 
 <style>
+	.transition-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		width: 100%;
+		align-items: start;
+	}
+
 	.revision-page {
 		max-width: 720px;
 		margin: 0 auto;
-		padding: 24px 20px;
+		padding: 80px 20px 40px;
 		min-height: calc(100vh - 80px);
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 
 	/* Centered states */
@@ -354,6 +368,11 @@
 		padding: 24px 28px;
 		border: 1.5px solid var(--color-border);
 		box-shadow: var(--shadow-md);
+
+		grid-column: 1;
+		grid-row: 1;
+		width: 100%;
+		backface-visibility: hidden;
 	}
 
 	/* Top bar */
