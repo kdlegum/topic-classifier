@@ -1,0 +1,2214 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Physics",
+  "Exam Board": "AQA",
+  "Specification": "7408",
+  "has_math": true,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "3.1",
+      "Strand": "Core content",
+      "Topic_name": "Measurements and their errors",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "SI base units and derived units",
+          "description": "Use the specified SI fundamental (base) units for mass, length, time, amount of substance, temperature and electric current (note: candela/light intensity is excluded). Use SI derived units where appropriate. Students are not expected to recall formal definitions of the fundamental quantities. Dimensional analysis is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "SI prefixes and standard form",
+          "description": "Know and use SI prefixes T, G, M, k, c, m, μ, n, p, f and express quantities using appropriate prefixes and standard form.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Unit conversions (including eV and kW h)",
+          "description": "Convert between different units for the same quantity, including conversions such as J ↔ eV and J ↔ kW h, and handle mixed-prefix conversions correctly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Random vs systematic error",
+          "description": "Understand random errors and systematic errors in measurements, identify them in experimental contexts, and suggest practical methods to reduce random error or remove/correct systematic error.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Precision, accuracy, resolution, repeatability, reproducibility",
+          "description": "Define and apply the terms precision, accuracy, resolution, repeatability and reproducibility when evaluating measurement quality and experimental method.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Uncertainty types (absolute, fractional, percentage)",
+          "description": "Use absolute uncertainty, fractional uncertainty and percentage uncertainty to represent uncertainty in a quantity and in a final calculated answer; understand the link between significant figures and uncertainty.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Combining uncertainties",
+          "description": "Combine uncertainties when quantities are added/subtracted (absolute uncertainties), multiplied/divided (percentage/fractional uncertainties) or raised to powers; combinations involving trigonometric or logarithmic functions are not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Uncertainty on graphs (error bars)",
+          "description": "Represent uncertainty in plotted data using error bars (points may or may not have error bars) and interpret the meaning of error bars in evaluating trends and agreement with models.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Uncertainty in gradient and intercept",
+          "description": "Determine uncertainties in the gradient and intercept of a straight-line graph using appropriate graphical methods and use these to assess results.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Orders of magnitude and estimation",
+          "description": "Estimate approximate values of physical quantities to the nearest order of magnitude and use these estimates with physics knowledge to make further derived order-of-magnitude estimates.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3.2",
+      "Strand": "Core content",
+      "Topic_name": "Particles and radiation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Simple atomic model (p, n, e) and their charges/masses",
+          "description": "Use a simple model of the atom containing proton, neutron and electron. Know the charge and mass of the proton, neutron and electron in SI units and relative units, and apply these values in calculations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Specific charge",
+          "description": "Understand and use specific charge (charge-to-mass ratio) for the proton, electron, nuclei and ions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Proton number Z, nucleon number A, nuclide notation",
+          "description": "Define proton number Z and nucleon number A and interpret/use nuclide notation \\(^{A}_{Z}X\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Isotopes and isotopic data",
+          "description": "Explain what isotopes are (same Z, different A) and use isotopic data appropriately in questions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Strong nuclear force (range and behaviour)",
+          "description": "Describe the strong nuclear force and its role in nuclear stability, including short-range attraction up to approximately 3 fm and very-short-range repulsion closer than approximately 0.5 fm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Unstable nuclei: alpha and beta-minus decay equations (incl neutrino)",
+          "description": "Recognise unstable nuclei and write/interpret nuclear equations for α decay and β− decay, including the need for the (anti)neutrino to satisfy conservation laws; understand that the neutrino was hypothesised to account for conservation of energy in β decay.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Antiparticles (properties and examples)",
+          "description": "Know that every particle has a corresponding antiparticle. Compare particle/antiparticle masses, charges and rest energies in MeV. Know positron, antiproton, antineutron and antineutrino as antiparticles of electron, proton, neutron and neutrino respectively.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Photon model and Planck constant; \\(E=hf=hc/\\lambda\\)",
+          "description": "Use the photon model of electromagnetic radiation and the Planck constant \\(h\\). Apply \\(E=hf=hc/\\lambda\\) to calculate photon energy, frequency and wavelength.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Annihilation and pair production (energies)",
+          "description": "Explain and apply the ideas of annihilation and pair production, including energy considerations; calculations do not require use of \\(E=mc^2\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Four fundamental interactions",
+          "description": "Recall the four fundamental interactions: gravitational, electromagnetic, weak nuclear, strong nuclear (strong nuclear force may be referred to as the strong interaction).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "3.2.1.4",
+          "Sub_topic_name": "Exchange particles (virtual photons, W±); diagrams of interactions",
+          "description": "Use the concept of exchange particles to explain forces between elementary particles. For electromagnetic interaction, identify virtual photons as exchange particles. For weak interaction limited to β− and β+ decay, electron capture, and electron–proton collisions, identify W+ and W− as exchange particles. Represent these interactions using simple particle-exchange diagrams showing incoming/outgoing particles and exchange particles (knowledge of gluon, Z0 and graviton not tested).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Hadrons and strong interaction; baryons vs mesons",
+          "description": "Know that hadrons are subject to the strong interaction and classify hadrons into baryons (proton, neutron) and antibaryons (antiproton, antineutron) and mesons (pion, kaon).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Baryon number conservation",
+          "description": "Use baryon number as a quantum number and apply conservation of baryon number in interactions; know the proton is the only stable baryon into which other baryons eventually decay.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Pion exchange model of strong nuclear force",
+          "description": "Understand the pion as the exchange particle of the strong nuclear force (nucleon–nucleon interaction model).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Kaons and decay to pions",
+          "description": "Know kaons as mesons that can decay into pions and relate this to particle classification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Leptons and lepton numbers (electron and muon families)",
+          "description": "Identify leptons: electron, muon, neutrino (electron and muon types only) and their antiparticles. Use lepton number as a quantum number and apply conservation of lepton number separately for electron leptons and muon leptons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Muon decay",
+          "description": "Know the muon as a particle that decays into an electron (and associated neutrinos/antineutrinos consistent with lepton-number conservation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "3.2.1.5",
+          "Sub_topic_name": "Strange particles and strangeness quantum number",
+          "description": "Define strange particles as produced through the strong interaction and decaying through the weak interaction (eg kaons). Use strangeness (symbol s) as a quantum number reflecting that strange particles are created in pairs. Apply conservation of strangeness in strong interactions and that strangeness can change by 0, +1 or −1 in weak interactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Quark properties (u, d, s only)",
+          "description": "Use properties of quarks and antiquarks: charge, baryon number and strangeness. Only up (u), down (d) and strange (s) quarks and their antiquarks are required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Quark combinations for p, n, π, K and antiparticles",
+          "description": "Determine quark/antiquark combinations for baryons (proton, neutron only), antibaryons (antiproton, antineutron only) and mesons (pion and kaon only).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "3.2.1.6",
+          "Sub_topic_name": "Neutron beta decay (quark-level)",
+          "description": "Know the decay of the neutron and relate β− decay to change of quark character (d → u) within conservation laws.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "3.2.1.7",
+          "Sub_topic_name": "Conservation laws in particle interactions (charge, baryon, lepton, strangeness)",
+          "description": "Apply conservation of charge, baryon number, lepton number and strangeness to particle interactions; required particle data will be provided for particles outside the specification. Recognise that energy and momentum are conserved in interactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2w",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Photoelectric effect: threshold frequency and photon explanation",
+          "description": "Define threshold frequency and explain it using the photon model (no emission below threshold regardless of intensity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2x",
+          "Specification_section_sub": "3.2.2.1",
+          "Sub_topic_name": "Work function, stopping potential, photoelectric equation",
+          "description": "Use work function \\(\\phi\\), stopping potential and the photoelectric equation \\(hf = \\phi + E_k(\\max)\\), where \\(E_k(\\max)\\) is the maximum kinetic energy of photoelectrons. Experimental determination of stopping potential is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2y",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Ionisation and excitation; fluorescent tube context",
+          "description": "Distinguish ionisation and excitation of atoms, including applying these ideas to the operation of a fluorescent tube.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2z",
+          "Specification_section_sub": "3.2.2.2",
+          "Sub_topic_name": "Electron volt (eV) and conversions",
+          "description": "Use the electron volt as a unit of energy and convert between eV and joules (J).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2aa",
+          "Specification_section_sub": "3.2.2.3",
+          "Sub_topic_name": "Line spectra and discrete energy levels; \\(hf=E_1-E_2\\)",
+          "description": "Explain line spectra (eg hydrogen) as evidence for transitions between discrete atomic energy levels and apply \\(hf = E_1 - E_2\\) with energy levels given in J or eV.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ab",
+          "Specification_section_sub": "3.2.2.4",
+          "Sub_topic_name": "Wave–particle duality evidence (photoelectric and electron diffraction)",
+          "description": "Explain that electron diffraction suggests matter (particles) has wave properties and the photoelectric effect suggests electromagnetic waves have a particulate nature; details of diffraction methods are not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ac",
+          "Specification_section_sub": "3.2.2.4",
+          "Sub_topic_name": "de Broglie wavelength \\(\\lambda=h/mv\\) and diffraction vs momentum",
+          "description": "Use de Broglie wavelength \\(\\lambda = h/(mv)\\) where \\(mv\\) is momentum. Explain qualitatively how and why diffraction changes when particle momentum changes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.3",
+      "Strand": "Core content",
+      "Topic_name": "Waves",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.3.1.1",
+          "Sub_topic_name": "Progressive wave quantities and wave equation",
+          "description": "Define and use amplitude, frequency, wavelength, wave speed, phase and phase difference for progressive waves. Apply \\(c=f\\lambda\\) and \\(f=1/T\\). Phase difference may be expressed in degrees/radians or fractions of a cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.3.1.2",
+          "Sub_topic_name": "Longitudinal vs transverse waves and examples",
+          "description": "Distinguish longitudinal and transverse waves and give examples including sound, electromagnetic waves and waves on a string. State the direction of displacement of particles/fields relative to direction of energy transfer and that all electromagnetic waves travel at the same speed in a vacuum.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.3.1.2",
+          "Sub_topic_name": "Polarisation and applications",
+          "description": "Use polarisation as evidence that a wave is transverse. Describe applications of polarisers including Polaroid material and alignment of aerials for transmission and reception; Malus’s law is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.3.1.3",
+          "Sub_topic_name": "Principle of superposition",
+          "description": "State and apply the principle of superposition of waves: when waves overlap, resultant displacement is the vector (algebraic) sum of individual displacements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.3.1.3",
+          "Sub_topic_name": "Stationary waves: formation, nodes and antinodes",
+          "description": "Explain the formation of stationary waves by superposition of two waves of the same frequency travelling in opposite directions, using a graphical explanation. Identify nodes and antinodes on strings and relate spacing to wavelength.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.3.1.3",
+          "Sub_topic_name": "Stationary waves on strings: harmonics and \\(f=\\frac{1}{2l}\\sqrt{T/\\mu}\\)",
+          "description": "Describe stationary waves on strings in terms of harmonics (do not use 'fundamental'/'overtone'). For the first harmonic use \\(f = \\frac{1}{2l}\\sqrt{\\frac{T}{\\mu}}\\) where \\(l\\) is string length, \\(T\\) tension and \\(\\mu\\) mass per unit length. Consider stationary waves produced with sound and microwaves as well as strings.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.3.2.1",
+          "Sub_topic_name": "Interference: coherence and path difference",
+          "description": "Define coherence and path difference and apply them to explain conditions for sustained interference patterns.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.3.2.1",
+          "Sub_topic_name": "Young’s double-slit experiment and fringe spacing",
+          "description": "Describe Young’s double-slit experiment using two coherent sources or a single source with double slits. Use the fringe spacing equation \\(w = \\frac{\\lambda D}{s}\\) where \\(w\\) is fringe spacing, \\(\\lambda\\) wavelength, \\(D\\) slit-to-screen distance, \\(s\\) slit separation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.3.2.1",
+          "Sub_topic_name": "Interference with white light and with sound/EM waves",
+          "description": "Describe production of interference patterns using white light. Describe and explain interference produced with sound and electromagnetic waves (not limited to light).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3.3.2.2",
+          "Sub_topic_name": "Single-slit diffraction patterns (qualitative)",
+          "description": "Describe the appearance of single-slit diffraction patterns using monochromatic and white light. Qualitatively relate the width of the central maximum to wavelength and slit width (no intensity–angle graph required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3.3.2.2",
+          "Sub_topic_name": "Diffraction grating equation \\(d\\sin\\u03b8=n\\lambda\\) and applications",
+          "description": "Use a plane transmission diffraction grating at normal incidence and apply/derive \\(d\\sin\\theta = n\\lambda\\). Use this for spectral measurement and describe applications of diffraction gratings (no spectrometer use required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "3.3.2.3",
+          "Sub_topic_name": "Refractive index and Snell’s law",
+          "description": "Define refractive index \\(n=c/c_s\\) and recall that air has \\(n \\approx 1\\). Apply Snell’s law at a boundary \\(n_1\\sin\\theta_1 = n_2\\sin\\theta_2\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "3.3.2.3",
+          "Sub_topic_name": "Total internal reflection and critical angle",
+          "description": "Explain and apply total internal reflection and use \\(\\sin\\theta_c = n_2/n_1\\) for light going from higher to lower refractive index.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3n",
+          "Specification_section_sub": "3.3.2.3",
+          "Sub_topic_name": "Fibre optics (step-index), cladding, dispersion and absorption",
+          "description": "Explain step-index optical fibres, including the function of the cladding. Understand material dispersion and modal dispersion, and the principles and consequences of pulse broadening and absorption in fibre systems.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.4",
+      "Strand": "Core content",
+      "Topic_name": "Mechanics and materials",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "3.4.1.1",
+          "Sub_topic_name": "Scalars and vectors (examples and meaning)",
+          "description": "Distinguish scalars and vectors and apply to examples including velocity/speed, mass, force/weight, acceleration, displacement/distance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "3.4.1.1",
+          "Sub_topic_name": "Vector addition (calculation and scale diagrams)",
+          "description": "Add vectors by calculation or scale drawing. Calculations are limited to two vectors at right angles; scale drawings may use other angles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "3.4.1.1",
+          "Sub_topic_name": "Resolving vectors into perpendicular components",
+          "description": "Resolve vectors into two components at right angles, including resolving forces on an inclined plane (components parallel and perpendicular).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "3.4.1.1",
+          "Sub_topic_name": "Equilibrium of coplanar forces at a point",
+          "description": "Apply conditions for equilibrium for two or three coplanar forces acting at a point; solve by resolved forces or a closed triangle. Interpret equilibrium as object at rest or moving with constant velocity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "3.4.1.2",
+          "Sub_topic_name": "Moments and principle of moments",
+          "description": "Define moment as force × perpendicular distance from a point to the line of action of the force, and apply the principle of moments to equilibrium situations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "3.4.1.2",
+          "Sub_topic_name": "Couple and moment of a couple",
+          "description": "Define a couple as a pair of equal and opposite coplanar forces and define moment of a couple as force × perpendicular distance between the forces’ lines of action.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "3.4.1.2",
+          "Sub_topic_name": "Centre of mass",
+          "description": "Understand centre of mass and know that the centre of mass of a uniform regular solid is at its geometric centre.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "3.4.1.3",
+          "Sub_topic_name": "Kinematics definitions and instantaneous vs average values",
+          "description": "Define displacement, speed, velocity and acceleration. Use \\(v=\\Delta s/\\Delta t\\) and \\(a=\\Delta v/\\Delta t\\) for average values and interpret instantaneous values from graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "3.4.1.3",
+          "Sub_topic_name": "Motion graphs: gradients and areas",
+          "description": "Use displacement–time, velocity–time and acceleration–time graphs for uniform and non-uniform motion; interpret gradients and areas (eg area under v–t gives displacement; gradient of v–t gives acceleration), including examples such as a bouncing ball.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "3.4.1.3",
+          "Sub_topic_name": "Equations of motion for constant acceleration",
+          "description": "Use the constant-acceleration equations: \\(v=u+at\\), \\(s=\\frac{(u+v)}{2}t\\), \\(s=ut+\\frac{1}{2}at^2\\), \\(v^2=u^2+2as\\). Use and interpret acceleration due to gravity \\(g\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "3.4.1.4",
+          "Sub_topic_name": "Projectile motion in uniform gravitational field",
+          "description": "Analyse projectile motion as independent horizontal and vertical components in a uniform gravitational field; solve using constant-acceleration equations. Treat friction qualitatively only.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "3.4.1.4",
+          "Sub_topic_name": "Drag, lift, terminal speed (qualitative)",
+          "description": "Describe lift and drag forces qualitatively, explain terminal speed and that air resistance increases with speed, and understand qualitatively how air resistance affects projectile trajectories and vehicle maximum speed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "3.4.1.5",
+          "Sub_topic_name": "Newton’s laws and \\(F=ma\\) (constant mass)",
+          "description": "State and apply Newton’s three laws of motion. Use \\(F=ma\\) in situations where mass is constant, using free-body diagrams where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "3.4.1.6",
+          "Sub_topic_name": "Momentum and conservation of linear momentum (1D)",
+          "description": "Define momentum \\(p=mv\\). Apply conservation of linear momentum quantitatively in one dimension to collisions and explosions; distinguish elastic and inelastic collisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "3.4.1.6",
+          "Sub_topic_name": "Force as rate of change of momentum; impulse; force–time graphs",
+          "description": "Use \\(F=\\Delta(mv)/\\Delta t\\) and impulse \\(F\\Delta t=\\Delta(mv)\\) for constant force. Interpret area under a force–time graph as impulse, including variable forces. Relate impact forces to contact time (eg crumple zones, packaging).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "3.4.1.7",
+          "Sub_topic_name": "Work done \\(W=Fs\\cos\\theta\\)",
+          "description": "Calculate energy transferred/work done using \\(W=Fs\\cos\\theta\\), including cases with non-parallel force and displacement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "3.4.1.7",
+          "Sub_topic_name": "Power \\(P=\\Delta W/\\Delta t=Fv\\)",
+          "description": "Use power as rate of doing work/rate of energy transfer: \\(P=\\Delta W/\\Delta t\\) and for motion at speed \\(v\\), \\(P=Fv\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4r",
+          "Specification_section_sub": "3.4.1.7",
+          "Sub_topic_name": "Force–displacement graphs and variable forces",
+          "description": "Interpret the area under a force–displacement graph as work done/energy transferred, including variable force situations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4s",
+          "Specification_section_sub": "3.4.1.7",
+          "Sub_topic_name": "Efficiency definition and calculations",
+          "description": "Calculate efficiency using \\(\\text{efficiency}=\\frac{\\text{useful output power}}{\\text{input power}}\\) and express as a percentage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4t",
+          "Specification_section_sub": "3.4.1.8",
+          "Sub_topic_name": "Conservation of energy; GPE and KE equations",
+          "description": "Apply the principle of conservation of energy. Use \\(\\Delta E_p = mg\\Delta h\\) and \\(E_k=\\tfrac{1}{2}mv^2\\) and include work done against resistive forces in energy balances.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4u",
+          "Specification_section_sub": "3.4.2.1",
+          "Sub_topic_name": "Density \\(\\rho=m/V\\)",
+          "description": "Define and use density \\(\\rho = m/V\\), including practical estimation of volume where needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4v",
+          "Specification_section_sub": "3.4.2.1",
+          "Sub_topic_name": "Hooke’s law and elastic limit; spring constant",
+          "description": "Use Hooke’s law up to the elastic limit: \\(F=k\\Delta L\\). Interpret \\(k\\) as stiffness/spring constant and identify elastic limit from data/graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4w",
+          "Specification_section_sub": "3.4.2.1",
+          "Sub_topic_name": "Stress and strain (tensile)",
+          "description": "Define tensile stress and tensile strain and apply them to stretched-wire/material problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4x",
+          "Specification_section_sub": "3.4.2.1",
+          "Sub_topic_name": "Elastic strain energy and force–extension graphs",
+          "description": "Calculate elastic strain energy stored as \\(E=\\tfrac{1}{2}F\\Delta L\\) and as the area under a force–extension graph. Link graph shape to plastic behaviour, fracture and brittle behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4y",
+          "Specification_section_sub": "3.4.2.1",
+          "Sub_topic_name": "Stress–strain curves (interpretation)",
+          "description": "Interpret simple stress–strain curves to identify features such as elastic region, yield/plastic region and breaking point (as appropriate to given graph).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4z",
+          "Specification_section_sub": "3.4.2.2",
+          "Sub_topic_name": "Young modulus equation and use",
+          "description": "Define and use Young modulus: \\(E=\\frac{\\text{tensile stress}}{\\text{tensile strain}}=\\frac{FL}{A\\Delta L}\\). Use stress–strain graphs to determine Young modulus; one simple measurement method is required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.5",
+      "Strand": "Core content",
+      "Topic_name": "Electricity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "3.5.1.1",
+          "Sub_topic_name": "Current as rate of flow of charge; \\(I=\\Delta Q/\\Delta t\\)",
+          "description": "Define electric current as rate of flow of charge and apply \\(I=\\Delta Q/\\Delta t\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "3.5.1.1",
+          "Sub_topic_name": "Potential difference as work per unit charge; \\(V=W/Q\\)",
+          "description": "Define potential difference as work done/energy transferred per unit charge and apply \\(V=W/Q\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "3.5.1.1",
+          "Sub_topic_name": "Resistance definition \\(R=V/I\\)",
+          "description": "Define resistance as \\(R=V/I\\) and apply to circuit calculations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "3.5.1.2",
+          "Sub_topic_name": "I–V characteristics: ohmic conductor, filament lamp, diode",
+          "description": "Recognise and interpret I–V characteristic curves for an ohmic conductor, a filament lamp and a semiconductor diode, including cases where either I or V is plotted on the horizontal axis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "3.5.1.2",
+          "Sub_topic_name": "Ohm’s law as special case (constant conditions)",
+          "description": "Use Ohm’s law as a special case where \\(I \\propto V\\) under constant physical conditions and recognise deviations when conditions change (eg temperature changes in filament lamp).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "3.5.1.2",
+          "Sub_topic_name": "Ideal meters assumption",
+          "description": "Unless stated otherwise, treat ammeters as ideal (zero resistance) and voltmeters as ideal (infinite resistance) in circuit analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "3.5.1.3",
+          "Sub_topic_name": "Resistivity equation \\(\\rho=RA/L\\)",
+          "description": "Define and use resistivity \\(\\rho = RA/L\\) and apply to uniform conductors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "3.5.1.3",
+          "Sub_topic_name": "Temperature effects on resistance (metals and thermistors)",
+          "description": "Describe qualitatively the effect of temperature on resistance of metal conductors and of thermistors (only negative temperature coefficient, ntc, thermistors). Use resistance–temperature graphs and explain applications as temperature sensors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "3.5.1.3",
+          "Sub_topic_name": "Superconductivity (critical temperature) and applications",
+          "description": "Describe superconductivity as zero resistivity at and below a critical temperature (material dependent). Describe applications including strong magnetic fields and reduced energy loss in power transmission; critical field is not assessed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "3.5.1.4",
+          "Sub_topic_name": "Series resistors and current/voltage rules",
+          "description": "Analyse series circuits including \\(R_T=R_1+R_2+\\dots\\), same current, and potential differences sharing according to resistance; apply to cells in series and identical cells in parallel where specified.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "3.5.1.4",
+          "Sub_topic_name": "Parallel resistors and current/voltage rules",
+          "description": "Analyse parallel circuits including \\(\\frac{1}{R_T}=\\frac{1}{R_1}+\\frac{1}{R_2}+\\dots\\), same potential difference across branches, and currents sharing between branches.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "3.5.1.4",
+          "Sub_topic_name": "Electrical energy and power equations",
+          "description": "Use electrical energy and power relationships: \\(E=IVt\\); \\(P=IV=I^2R=V^2/R\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "3.5.1.4",
+          "Sub_topic_name": "Conservation of charge and energy in DC circuits",
+          "description": "Apply conservation of charge (Kirchhoff’s first law) and conservation of energy (Kirchhoff’s second law) in dc circuit reasoning and calculations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "3.5.1.5",
+          "Sub_topic_name": "Potential divider (basic idea)",
+          "description": "Use a potential divider to supply a constant or variable potential difference from a power supply; the potentiometer as a measuring instrument is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "3.5.1.5",
+          "Sub_topic_name": "Potential divider with variable resistor, thermistor, LDR",
+          "description": "Analyse and design potential divider circuits including the use of a variable resistor, thermistor and light-dependent resistor (LDR) to achieve desired output behaviours (qualitative and quantitative).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "3.5.1.6",
+          "Sub_topic_name": "EMF definition and relation to energy per charge",
+          "description": "Define electromotive force (emf) \\(\\varepsilon = E/Q\\) as energy transferred per unit charge by a source; distinguish emf from terminal potential difference (pd).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "3.5.1.6",
+          "Sub_topic_name": "Internal resistance and terminal pd equation",
+          "description": "Use internal resistance \\(r\\) and apply \\(\\varepsilon = IR + Ir\\) (equivalently \\(\\varepsilon = V + Ir\\) where \\(V\\) is terminal pd). Perform calculations where internal resistance is not negligible.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.6",
+      "Strand": "A-level only core content",
+      "Topic_name": "Further mechanics and thermal physics (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.6.1.1",
+          "Sub_topic_name": "Centripetal force and acceleration in circular motion",
+          "description": "Understand that motion in a circular path at constant speed requires centripetal acceleration and centripetal force directed towards the centre. Use \\(a = v^2/r = \\omega^2 r\\) and \\(F = mv^2/r = m\\omega^2 r\\). Derivation of centripetal acceleration is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.6.1.1",
+          "Sub_topic_name": "Angular speed and radian measure",
+          "description": "Use angular speed \\(\\omega = v/r = 2\\pi f\\). Use radian measure for angles (direction of angular velocity not considered).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.6.1.2",
+          "Sub_topic_name": "SHM condition and defining equation",
+          "description": "Analyse simple harmonic motion (SHM) using the condition \\(a \\propto -x\\) and defining equation \\(a = -\\omega^2 x\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.6.1.2",
+          "Sub_topic_name": "SHM displacement and velocity equations",
+          "description": "Use \\(x = A\\cos(\\omega t)\\) and \\(v = \\pm \\omega\\sqrt{A^2 - x^2}\\) to relate displacement and velocity in SHM.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.6.1.2",
+          "Sub_topic_name": "SHM graphs and phase relationships (x, v, a vs t)",
+          "description": "Interpret and sketch graphical relationships showing how displacement \\(x\\), velocity \\(v\\) and acceleration \\(a\\) vary with time for SHM; understand links via gradients (v–t from gradient of x–t; a–t from gradient of v–t).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.6.1.2",
+          "Sub_topic_name": "Maximum speed and acceleration in SHM",
+          "description": "Use \\(v_{\\max}=\\omega A\\) and \\(a_{\\max}=\\omega^2 A\\) for SHM.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3.6.1.3",
+          "Sub_topic_name": "Mass–spring SHM period",
+          "description": "Use the time period for a mass–spring system: \\(T = 2\\pi\\sqrt{m/k}\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "3.6.1.3",
+          "Sub_topic_name": "Simple pendulum SHM period and small-angle approximation",
+          "description": "Use the time period for a simple pendulum: \\(T = 2\\pi\\sqrt{l/g}\\) and recognise the use/meaning of the small-angle approximation in derivations for approximate SHM.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "3.6.1.3",
+          "Sub_topic_name": "Energy in SHM (Ek, Ep, total) vs x and t",
+          "description": "Describe and interpret how kinetic energy \\(E_k\\), potential energy \\(E_p\\) and total energy vary with displacement and with time in SHM.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "3.6.1.3",
+          "Sub_topic_name": "Damping effects",
+          "description": "Describe the effects of damping on oscillations (energy loss, amplitude reduction) and implications for motion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "3.6.1.4",
+          "Sub_topic_name": "Free vs forced vibrations (qualitative)",
+          "description": "Distinguish free vibrations from forced vibrations and describe their qualitative behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "3.6.1.4",
+          "Sub_topic_name": "Resonance and damping effect on resonance",
+          "description": "Explain resonance and describe how damping affects the sharpness of resonance, including examples in mechanical systems and stationary-wave situations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Internal energy and first-law idea (qualitative)",
+          "description": "Define internal energy as the sum of randomly distributed kinetic and potential energies of particles in a body. Understand qualitatively that internal energy increases when energy is transferred by heating or when work is done on the system (and vice versa), as an introduction to the first law of thermodynamics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Heating, temperature change and specific heat capacity",
+          "description": "Calculate energy for temperature changes using \\(Q = mc\\Delta\\theta\\), where \\(c\\) is specific heat capacity; calculations may include continuous flow contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Change of state and latent heat",
+          "description": "Understand that during a change of state particle potential energies change but kinetic energies do not. Calculate energy for changes of state using \\(Q = ml\\), where \\(l\\) is specific latent heat.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Gas laws and absolute zero",
+          "description": "Understand gas laws as experimental relationships between pressure \\(p\\), volume \\(V\\), temperature \\(T\\) and gas mass, and the concept of absolute zero.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Ideal gas equations \\(pV=nRT\\) and \\(pV=NkT\\)",
+          "description": "Use the ideal gas equation \\(pV=nRT\\) for \\(n\\) moles and \\(pV=NkT\\) for \\(N\\) molecules. Use Avogadro constant \\(N_A\\), molar gas constant \\(R\\) and Boltzmann constant \\(k\\); relate molar mass and molecular mass.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Work done by a gas \\(W=p\\Delta V\\)",
+          "description": "Calculate mechanical work done by a gas using \\(W = p\\Delta V\\) (for appropriate processes/conditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6s",
+          "Specification_section_sub": "3.6.2.3",
+          "Sub_topic_name": "Brownian motion evidence for atoms",
+          "description": "Explain Brownian motion as evidence for the existence of atoms/molecules.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6t",
+          "Specification_section_sub": "3.6.2.3",
+          "Sub_topic_name": "Kinetic theory vs empirical gas laws",
+          "description": "Understand that gas laws are empirical, whereas the kinetic theory model is theoretical; explain qualitative links between \\(p\\), \\(V\\), \\(T\\) and molecular motion/collisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6u",
+          "Specification_section_sub": "3.6.2.3",
+          "Sub_topic_name": "Derivation and use of \\(pV=\\frac{1}{3}Nm c_{rms}^2\\)",
+          "description": "Use assumptions of the simple molecular model to derive and apply \\(pV = \\tfrac{1}{3}N m c_{\\mathrm{rms}}^2\\). A simple algebraic derivation using momentum change on collisions is required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6v",
+          "Specification_section_sub": "3.6.2.3",
+          "Sub_topic_name": "Internal energy of ideal gas and mean molecular kinetic energy",
+          "description": "Understand that for an ideal gas internal energy is the kinetic energy of the atoms. Use \\(\\tfrac{1}{2}m c_{\\mathrm{rms}}^2 = \\tfrac{3}{2}kT = \\tfrac{3RT}{2N_A}\\) for average molecular kinetic energy.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "3.7",
+      "Strand": "A-level only core content",
+      "Topic_name": "Fields and their consequences (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Concept of a field and field vectors",
+          "description": "Understand a force field as a region in which a body experiences a non-contact force; recognise field representation as a vector and determine direction by inspection. Know that force fields arise from mass interaction, static charges, and moving charges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Gravitational vs electrostatic fields: similarities and differences",
+          "description": "Compare gravitational and electrostatic forces/fields: inverse-square laws with similar features (field lines, potential, equipotentials) but gravity always attractive while electrostatic interaction can attract or repel.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "3.7.2.1",
+          "Sub_topic_name": "Newton’s law of gravitation",
+          "description": "Use Newton’s law of gravitation for point masses: \\(F = G m_1 m_2 / r^2\\), where \\(G\\) is the gravitational constant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "3.7.2.2",
+          "Sub_topic_name": "Gravitational field strength definition and radial field equation",
+          "description": "Define gravitational field strength as force per unit mass \\(g = F/m\\). Use the radial field equation \\(g = GM/r^2\\). Interpret gravitational field lines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "3.7.2.3",
+          "Sub_topic_name": "Gravitational potential and potential difference; zero at infinity",
+          "description": "Define gravitational potential \\(V\\) with zero at infinity and gravitational potential difference. Use work done relation \\(\\Delta W = m\\Delta V\\). Understand equipotential surfaces and that no work is done moving along an equipotential.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "3.7.2.3",
+          "Sub_topic_name": "Gravitational potential in radial field \\(V=-GM/r\\) and sign",
+          "description": "Use \\(V = -GM/r\\) for a radial gravitational field and explain the significance of the negative sign (potential well, zero at infinity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "3.7.2.3",
+          "Sub_topic_name": "Graphs of g and V vs r; relation \\(g=-\\Delta V/\\Delta r\\) and area concept",
+          "description": "Interpret graphical variations of \\(g\\) and \\(V\\) with radius \\(r\\). Use \\(g = -\\Delta V/\\Delta r\\) and understand that \\(\\Delta V\\) can be found from the area under a graph of \\(g\\) against \\(r\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "3.7.2.4",
+          "Sub_topic_name": "Circular orbits and Kepler-type relationship \\(T^2\\propto r^3\\)",
+          "description": "Relate orbital period and speed to radius for circular orbits and derive/apply \\(T^2 \\propto r^3\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "3.7.2.4",
+          "Sub_topic_name": "Energy of orbiting satellites and total energy",
+          "description": "Apply energy considerations to orbiting satellites, including kinetic energy, gravitational potential energy and total energy in circular orbit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "3.7.2.4",
+          "Sub_topic_name": "Escape velocity",
+          "description": "Define and calculate escape velocity from a gravitational field using energy arguments and radial-field relationships.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "3.7.2.4",
+          "Sub_topic_name": "Synchronous and geostationary orbits (uses and parameters)",
+          "description": "Explain synchronous orbits. Describe uses of satellites in low Earth orbit and geostationary orbit, including the required plane and radius of a geostationary orbit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "3.7.3.1",
+          "Sub_topic_name": "Coulomb’s law and permittivity of free space",
+          "description": "Use Coulomb’s law for point charges in vacuum: \\(F = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Q_1Q_2}{r^2}\\). Define \\(\\varepsilon_0\\) (permittivity of free space) and treat air as vacuum when calculating forces; for a charged sphere take charge as acting at the centre.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "3.7.3.1",
+          "Sub_topic_name": "Comparing gravitational and electrostatic forces between subatomic particles",
+          "description": "Compare magnitudes of gravitational and electrostatic forces between subatomic particles using inverse-square laws and relevant constants.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "3.7.3.2",
+          "Sub_topic_name": "Electric field strength definition \\(E=F/Q\\)",
+          "description": "Define electric field strength as force per unit charge \\(E=F/Q\\) and represent electric fields with field lines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "3.7.3.2",
+          "Sub_topic_name": "Uniform electric field \\(E=V/d\\) and derivation from work",
+          "description": "Use \\(E=V/d\\) for uniform fields between parallel plates. Derive from work done: \\(Fd = Q\\Delta V\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "3.7.3.2",
+          "Sub_topic_name": "Charged particle trajectory in uniform E-field",
+          "description": "Describe/analyse the trajectory of a charged particle entering a uniform electric field with initial velocity at right angles to the field, using constant acceleration principles where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7q",
+          "Specification_section_sub": "3.7.3.2",
+          "Sub_topic_name": "Radial electric field equation",
+          "description": "Use the radial electric field equation \\(E = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{r^2}\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7r",
+          "Specification_section_sub": "3.7.3.3",
+          "Sub_topic_name": "Electric potential and potential difference; work relation",
+          "description": "Define absolute electric potential with zero at infinity and electric potential difference. Use \\(\\Delta W = Q\\Delta V\\). Understand equipotential surfaces and that no work is done moving along an equipotential.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7s",
+          "Specification_section_sub": "3.7.3.3",
+          "Sub_topic_name": "Electric potential in radial field",
+          "description": "Use the radial-field electric potential equation \\(V = \\frac{1}{4\\pi\\varepsilon_0}\\frac{Q}{r}\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7t",
+          "Specification_section_sub": "3.7.3.3",
+          "Sub_topic_name": "Graphs of E and V vs r; relation \\(E=\\Delta V/\\Delta r\\) and area concept",
+          "description": "Interpret graphical variations of \\(E\\) and \\(V\\) with \\(r\\). Use \\(E = \\Delta V/\\Delta r\\) and understand that \\(\\Delta V\\) can be obtained from the area under an \\(E\\) vs \\(r\\) graph (as specified).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7u",
+          "Specification_section_sub": "3.7.4.1",
+          "Sub_topic_name": "Capacitance definition \\(C=Q/V\\)",
+          "description": "Define capacitance and use \\(C = Q/V\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7v",
+          "Specification_section_sub": "3.7.4.2",
+          "Sub_topic_name": "Parallel-plate capacitor with dielectric \\(C=\\varepsilon_0\\varepsilon_r A/d\\)",
+          "description": "Describe dielectric action in a capacitor and use \\(C = \\varepsilon_0\\varepsilon_r A/d\\). Define relative permittivity \\(\\varepsilon_r\\) (dielectric constant) and describe rotation of simple polar molecules in an electric field.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7w",
+          "Specification_section_sub": "3.7.4.3",
+          "Sub_topic_name": "Energy stored in a capacitor (area under Q–V graph)",
+          "description": "Interpret the area under a charge–potential difference graph as energy stored. Use \\(E=\\tfrac{1}{2}QV=\\tfrac{1}{2}CV^2=\\tfrac{1}{2}Q^2/C\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7x",
+          "Specification_section_sub": "3.7.4.4",
+          "Sub_topic_name": "Capacitor charge/discharge graphs; time constant RC",
+          "description": "Interpret charge, discharge and associated graphs of \\(Q\\), \\(V\\) and \\(I\\) vs time for capacitors through resistors; interpret gradients and areas where appropriate. Define time constant \\(RC\\) and calculate it (including from graphs). Use time to halve \\(T_{1/2}=0.69RC\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7y",
+          "Specification_section_sub": "3.7.4.4",
+          "Sub_topic_name": "Exponential discharge equation and related V and I",
+          "description": "Use quantitative treatment of discharge: \\(Q = Q_0 e^{-t/RC}\\) and the corresponding equations for \\(V\\) and \\(I\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7z",
+          "Specification_section_sub": "3.7.4.4",
+          "Sub_topic_name": "Exponential charging equation",
+          "description": "Use quantitative treatment of charging: \\(Q = Q_0(1-e^{-t/RC})\\) (and corresponding forms for \\(V\\) and \\(I\\)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7aa",
+          "Specification_section_sub": "3.7.5.1",
+          "Sub_topic_name": "Force on current-carrying wire; \\(F=BIl\\); Fleming’s left-hand rule",
+          "description": "Use the motor effect: force on a wire of length \\(l\\) carrying current \\(I\\) in a magnetic field of flux density \\(B\\) (perpendicular case): \\(F=BIl\\). Use Fleming’s left-hand rule to determine force direction. Define tesla via \\(B\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ab",
+          "Specification_section_sub": "3.7.5.2",
+          "Sub_topic_name": "Force on moving charge; \\(F=BQv\\); directions for ± charge",
+          "description": "Use the magnetic force on a moving charge: \\(F=BQv\\) when velocity is perpendicular to field. Determine direction for positive and negative charges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ac",
+          "Specification_section_sub": "3.7.5.2",
+          "Sub_topic_name": "Circular motion of charged particles; cyclotron idea",
+          "description": "Explain why a charged particle moves in a circular path in a uniform magnetic field and apply this to devices such as the cyclotron (conceptual and quantitative where data provided).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ad",
+          "Specification_section_sub": "3.7.5.3",
+          "Sub_topic_name": "Magnetic flux \\(\\Phi=BA\\) (normal)",
+          "description": "Define magnetic flux \\(\\Phi = BA\\) for field normal to area \\(A\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ae",
+          "Specification_section_sub": "3.7.5.3",
+          "Sub_topic_name": "Flux linkage \\(N\\Phi\\) and rotating coil \\(N\\Phi=BAN\\cos\\theta\\)",
+          "description": "Define flux linkage as \\(N\\Phi\\). For a rectangular coil rotated in a magnetic field use \\(N\\Phi = BAN\\cos\\theta\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7af",
+          "Specification_section_sub": "3.7.5.4",
+          "Sub_topic_name": "Faraday’s and Lenz’s laws; \\(\\varepsilon = N\\Delta\\Phi/\\Delta t\\)",
+          "description": "Describe electromagnetic induction phenomena and state Faraday’s and Lenz’s laws. Use magnitude of induced emf as rate of change of flux linkage: \\(\\varepsilon = N\\Delta\\Phi/\\Delta t\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ag",
+          "Specification_section_sub": "3.7.5.4",
+          "Sub_topic_name": "Induced emf in a rotating coil \\(\\varepsilon=BAN\\omega\\sin\\omega t\\)",
+          "description": "Use emf induced in a coil rotating uniformly in a magnetic field: \\(\\varepsilon = BAN\\omega\\sin(\\omega t)\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ah",
+          "Specification_section_sub": "3.7.5.5",
+          "Sub_topic_name": "AC sinusoidal quantities and RMS relationships",
+          "description": "Work with sinusoidal voltages/currents: define peak, peak-to-peak and rms values. Use \\(I_{\\mathrm{rms}}=I_0/\\sqrt{2}\\) and \\(V_{\\mathrm{rms}}=V_0/\\sqrt{2}\\). Apply to mains to find peak and peak-to-peak voltages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ai",
+          "Specification_section_sub": "3.7.5.5",
+          "Sub_topic_name": "Oscilloscope measurements (voltage, time, frequency)",
+          "description": "Use an oscilloscope as a dc/ac voltmeter, to measure time intervals and frequencies, and to display ac waveforms; understand and use time-base and volts/div controls (no internal structure required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7aj",
+          "Specification_section_sub": "3.7.5.6",
+          "Sub_topic_name": "Transformer equation and efficiency",
+          "description": "Use the transformer equation \\(\\frac{N_s}{N_p}=\\frac{V_s}{V_p}\\). Calculate transformer efficiency \\(\\eta=\\frac{I_sV_s}{I_pV_p}\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7ak",
+          "Specification_section_sub": "3.7.5.6",
+          "Sub_topic_name": "Transformer losses: eddy currents and inefficiencies",
+          "description": "Explain production of eddy currents and identify causes of inefficiency in a transformer (eg resistive heating, eddy currents, flux leakage).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7al",
+          "Specification_section_sub": "3.7.5.6",
+          "Sub_topic_name": "Power transmission at high voltage and power loss calculations",
+          "description": "Explain and calculate power loss in transmission lines and why high voltage reduces losses for a given transmitted power.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "3.8",
+      "Strand": "A-level only core content",
+      "Topic_name": "Nuclear physics (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "3.8.1.1",
+          "Sub_topic_name": "Rutherford scattering (qualitative)",
+          "description": "Describe Rutherford scattering qualitatively and use it as evidence for the nuclear model/structure of the atom.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "3.8.1.2",
+          "Sub_topic_name": "Properties and identification of α, β, γ (absorption) and hazards",
+          "description": "Compare α, β and γ radiation in terms of properties and identify them using simple absorption experiments. Apply to relative hazards to humans. Include applications such as thickness measurements of aluminium foil, paper and steel.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "3.8.1.2",
+          "Sub_topic_name": "Gamma inverse-square law",
+          "description": "Use inverse-square law for γ intensity: \\(I = k/x^2\\) and apply to safety/handling contexts; understand experimental verification idea.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "3.8.1.2",
+          "Sub_topic_name": "Background radiation correction",
+          "description": "Define background radiation, give examples of its origins, and apply background correction in radioactive measurements and calculations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "3.8.1.3",
+          "Sub_topic_name": "Random decay and decay constant; differential equation idea",
+          "description": "Explain the random nature of radioactive decay and constant decay probability. Use the decay model \\(\\Delta N/\\Delta t = -\\lambda N\\) and interpret \\(\\lambda\\) as decay constant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "3.8.1.3",
+          "Sub_topic_name": "Exponential decay equations for N and activity",
+          "description": "Use \\(N = N_0 e^{-\\lambda t}\\) and activity \\(A=\\lambda N\\). Use activity form \\(A = A_0 e^{-\\lambda t}\\). Questions may require use of molar mass and Avogadro constant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "3.8.1.3",
+          "Sub_topic_name": "Half-life and determination from graphs/log plots",
+          "description": "Use \\(T_{1/2} = \\ln 2 / \\lambda\\). Determine half-life from graphical decay data including decay curves and log graphs. Apply to contexts such as radioactive waste storage and dating.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "3.8.1.4",
+          "Sub_topic_name": "Stability line: N vs Z and decay modes (α, β±, electron capture)",
+          "description": "Interpret the graph of neutron number N against proton number Z for stable nuclei. Identify possible decay modes of unstable nuclei: α, β+, β− and electron capture, and represent changes in N and Z with decay equations (including use of nuclear energy level diagrams where given).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "3.8.1.4",
+          "Sub_topic_name": "Nuclear excited states and gamma emission; technetium-99m",
+          "description": "Understand existence of nuclear excited states and γ emission from de-excitation; apply to use of technetium-99m as a γ source in medical diagnosis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "3.8.1.5",
+          "Sub_topic_name": "Nuclear radius estimation (closest approach and diffraction)",
+          "description": "Know typical nuclear radii and methods of determining/estimating radius: closest approach of α particles (using Coulomb equation) and electron diffraction (intensity vs angle familiarity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "3.8.1.5",
+          "Sub_topic_name": "Radius–nucleon number relationship \\(R=R_0A^{1/3}\\)",
+          "description": "Use \\(R = R_0 A^{1/3}\\) and interpret as evidence for approximately constant nuclear density; use it to estimate radii for different nuclei.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "3.8.1.5",
+          "Sub_topic_name": "Nuclear density calculation",
+          "description": "Calculate nuclear density using nuclear radius and nucleon number, using the interpretation of constant density of nuclear material.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "3.8.1.6",
+          "Sub_topic_name": "Mass–energy equivalence in nuclear context; binding energy",
+          "description": "Apply \\(E=mc^2\\) to energy changes in nuclear processes. Perform calculations involving mass difference and binding energy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "3.8.1.6",
+          "Sub_topic_name": "Atomic mass unit and conversion \\(1\\,u=931.5\\,MeV\\)",
+          "description": "Use the atomic mass unit \\(u\\) and convert between mass units and energy using \\(1\\,u = 931.5\\,MeV\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8o",
+          "Specification_section_sub": "3.8.1.6",
+          "Sub_topic_name": "Fission and fusion; energy release calculations",
+          "description": "Describe fission and fusion processes and calculate energy released from given nuclear masses/energies in fission and fusion reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8p",
+          "Specification_section_sub": "3.8.1.6",
+          "Sub_topic_name": "Binding energy per nucleon graph and energy-release regions",
+          "description": "Interpret the graph of average binding energy per nucleon against nucleon number and identify regions where nuclei release energy by fission or fusion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8q",
+          "Specification_section_sub": "3.8.1.7",
+          "Sub_topic_name": "Induced fission, chain reaction and critical mass",
+          "description": "Explain fission induced by thermal neutrons, the possibility of a chain reaction, and the meaning of critical mass.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8r",
+          "Specification_section_sub": "3.8.1.7",
+          "Sub_topic_name": "Thermal reactor components and roles",
+          "description": "Describe the functions of moderator, control rods and coolant in a thermal nuclear reactor; detailed reactor designs not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8s",
+          "Specification_section_sub": "3.8.1.7",
+          "Sub_topic_name": "Moderation as elastic collisions; material choices",
+          "description": "Describe moderation using a simple mechanical model of elastic collisions. Explain factors affecting choice of materials for moderator, control rods and coolant, and give examples of materials used.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8t",
+          "Specification_section_sub": "3.8.1.8",
+          "Sub_topic_name": "Nuclear safety: fuel handling, shielding, shutdown, waste",
+          "description": "Describe safety aspects of nuclear power: fuel used, remote handling of fuel, shielding, emergency shut-down, and production/remote handling/storage of radioactive waste.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "3.9",
+      "Strand": "Optional topics (choose one)",
+      "Topic_name": "Astrophysics (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "3.9.1.1",
+          "Sub_topic_name": "Refracting telescope (two converging lenses) ray diagram",
+          "description": "Draw/interpret ray diagrams for an astronomical telescope consisting of two converging lenses in normal adjustment, showing image formation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "3.9.1.1",
+          "Sub_topic_name": "Angular magnification of telescope \\(M=f_o/f_e\\)",
+          "description": "Define angular magnification in normal adjustment as ratio of angle subtended at eye with telescope to that without, and use \\(M = f_o/f_e\\) with focal lengths of objective \\(f_o\\) and eyepiece \\(f_e\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "3.9.1.2",
+          "Sub_topic_name": "Cassegrain reflecting telescope arrangement",
+          "description": "Describe the Cassegrain arrangement (parabolic concave primary mirror with convex secondary mirror) and interpret the ray path up to the eyepiece.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "3.9.1.2",
+          "Sub_topic_name": "Reflectors vs refractors; spherical and chromatic aberration (qualitative)",
+          "description": "Compare reflecting and refracting telescopes, including qualitative treatment of spherical aberration and chromatic aberration and relative merits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "3.9.1.3",
+          "Sub_topic_name": "Radio vs optical telescopes; other wavelength telescopes (I-R, U-V, X-ray)",
+          "description": "Discuss similarities and differences between single-dish radio telescopes and optical telescopes, including structure, positioning and use, and comparisons of resolving and collecting power; extend to I-R, U-V and X-ray telescopes at the level of these comparisons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "3.9.1.4",
+          "Sub_topic_name": "Rayleigh criterion \\(\\theta\\approx\\lambda/D\\)",
+          "description": "Use minimum angular resolution of a telescope via the Rayleigh criterion \\(\\theta \\approx \\lambda/D\\); use radians as the unit of angle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "3.9.1.4",
+          "Sub_topic_name": "Collecting power proportional to \\(D^2\\)",
+          "description": "Use the idea that collecting power is proportional to diameter squared \\(\\propto D^2\\) and apply to comparisons of telescope performance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "3.9.1.4",
+          "Sub_topic_name": "Eye vs CCD detector comparison",
+          "description": "Compare the eye and CCD detectors in terms of quantum efficiency, resolution and convenience; no knowledge of CCD structure required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "3.9.2.1",
+          "Sub_topic_name": "Apparent magnitude scale and intensity ratio 2.51",
+          "description": "Define apparent magnitude \\(m\\) (Hipparcos scale). Know dimmest visible stars have magnitude 6. Use the relation that a magnitude difference of 1 corresponds to an intensity ratio of 2.51 and recognise brightness as subjective.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "3.9.2.2",
+          "Sub_topic_name": "Parsec, light year, and distance modulus",
+          "description": "Use parsec and light year. Define absolute magnitude \\(M\\) and use distance modulus \\(m - M = 5\\log_{10}(d/10)\\) where \\(d\\) is distance in parsecs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "3.9.2.3",
+          "Sub_topic_name": "Black-body curves and Wien’s displacement law",
+          "description": "Describe general shape of black-body spectra. Use Wien’s displacement law \\(\\lambda_{\\max}T = 2.9\\times 10^{-3}\\,\\mathrm{m\\,K}\\) to estimate temperature; experimental verification not required. Assume stars approximate black bodies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9l",
+          "Specification_section_sub": "3.9.2.3",
+          "Sub_topic_name": "Inverse-square law for intensity (stellar radiation assumptions)",
+          "description": "Apply the inverse-square law for intensity/flux from a source, stating assumptions/conditions for its use in astronomy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9m",
+          "Specification_section_sub": "3.9.2.3",
+          "Sub_topic_name": "Stefan–Boltzmann law \\(P=\\sigma AT^4\\) comparisons",
+          "description": "Use Stefan’s law \\(P=\\sigma AT^4\\) to compare power output, temperature and size (surface area) of stars.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9n",
+          "Specification_section_sub": "3.9.2.4",
+          "Sub_topic_name": "Spectral classes OBAFGKM and temperature/lines",
+          "description": "Recall/interpret the main stellar spectral classes O, B, A, F, G, K, M with their intrinsic colour, temperature ranges and prominent absorption lines as given. Relate temperature to absorption spectra limited to Hydrogen Balmer absorption lines, including requirement for atoms in an \\(n=2\\) state.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9o",
+          "Specification_section_sub": "3.9.2.5",
+          "Sub_topic_name": "HR diagram axes and key regions; Sun position",
+          "description": "Interpret the Hertzsprung–Russell diagram: main sequence, dwarfs and giants. Use axis conventions (absolute magnitude −10 to +15; temperature 50 000 K to 2 500 K or OBAFGKM). Know approximate position of the Sun.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9p",
+          "Specification_section_sub": "3.9.2.5",
+          "Sub_topic_name": "Stellar evolution track (Sun-like) to white dwarf",
+          "description": "Describe the evolutionary path of a star similar to the Sun on the HR diagram from formation to white dwarf.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9q",
+          "Specification_section_sub": "3.9.2.6",
+          "Sub_topic_name": "Supernovae, neutron stars, black holes; defining properties",
+          "description": "State defining properties: rapid absolute magnitude increase for supernovae; composition/density of neutron stars; black holes with escape velocity > c. Describe gamma ray bursts due to collapse of supergiant stars to neutron stars/black holes and compare energy output with Sun’s total output.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9r",
+          "Specification_section_sub": "3.9.2.6",
+          "Sub_topic_name": "Type Ia supernovae as standard candles; accelerating universe/dark energy",
+          "description": "Explain use of type Ia supernovae as standard candles to determine distances and be familiar with typical type Ia light curve; know the controversy regarding accelerating universe and dark energy from these observations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9s",
+          "Specification_section_sub": "3.9.2.6",
+          "Sub_topic_name": "Supermassive black holes and Schwarzschild radius",
+          "description": "Know that supermassive black holes exist at centres of galaxies. Calculate event horizon radius using Schwarzschild radius \\(R_s \\approx 2GM/c^2\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9t",
+          "Specification_section_sub": "3.9.3.1",
+          "Sub_topic_name": "Doppler shift and redshift for \\(v\\ll c\\)",
+          "description": "Apply Doppler relationships for \\(v\\ll c\\): \\(\\Delta f/f = v/c\\) and redshift \\(z = \\Delta\\lambda/\\lambda = -v/c\\), for optical and radio frequencies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9u",
+          "Specification_section_sub": "3.9.3.1",
+          "Sub_topic_name": "Binary stars Doppler calculations",
+          "description": "Perform Doppler calculations for binary stars viewed in the plane of orbit (using provided data).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9v",
+          "Specification_section_sub": "3.9.3.1",
+          "Sub_topic_name": "Redshifts of galaxies and quasars (interpretation)",
+          "description": "Apply Doppler/redshift ideas to galaxies and quasars, interpreting observed shifts as recessional motion for \\(v\\ll c\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9w",
+          "Specification_section_sub": "3.9.3.2",
+          "Sub_topic_name": "Hubble’s law \\(v=Hd\\) and age estimate",
+          "description": "Use Hubble’s law \\(v = Hd\\) and interpret as expansion of the universe. Estimate the age of the universe assuming \\(H\\) is constant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9x",
+          "Specification_section_sub": "3.9.3.2",
+          "Sub_topic_name": "Big Bang evidence (CMBR, H/He abundance)",
+          "description": "Describe qualitatively the Big Bang theory and evidence including cosmological microwave background radiation and relative abundance of hydrogen and helium.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9y",
+          "Specification_section_sub": "3.9.3.3",
+          "Sub_topic_name": "Quasars: discovery, redshift, distance and power estimates",
+          "description": "Describe quasars as most distant measurable objects, discovered as bright radio sources, showing large optical redshifts. Use redshift-based reasoning to estimate distance and power output (given appropriate assumptions/data).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9z",
+          "Specification_section_sub": "3.9.3.3",
+          "Sub_topic_name": "Quasar formation from active supermassive black holes",
+          "description": "Describe formation of quasars from active supermassive black holes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9aa",
+          "Specification_section_sub": "3.9.3.4",
+          "Sub_topic_name": "Exoplanet detection difficulties and methods (radial velocity and transit)",
+          "description": "Explain difficulties of direct exoplanet detection. Describe detection by Doppler shift variation (radial velocity) and the transit method, including interpretation of a typical transit light curve.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "3.10",
+      "Strand": "Optional topics (choose one)",
+      "Topic_name": "Medical physics (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "3.10.1.1",
+          "Sub_topic_name": "Eye as optical system; ray diagrams",
+          "description": "Describe the eye as an optical refracting system and use ray diagrams of image formation in the eye.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "3.10.1.1",
+          "Sub_topic_name": "Eye sensitivity and spectral response",
+          "description": "Describe sensitivity of the eye and its spectral response as a photodetector.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "3.10.1.1",
+          "Sub_topic_name": "Eye spatial resolution (rods and cones)",
+          "description": "Explain spatial resolution of the eye in terms of the behaviour/distribution of rods and cones.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "3.10.1.2",
+          "Sub_topic_name": "Lens properties: focal length, power, lens equation, magnification",
+          "description": "Use properties of converging/diverging lenses including principal focus, focal length and power \\(P=1/f\\). Use lens equation \\(1/u + 1/v = 1/f\\) and magnification \\(m=v/u\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "3.10.1.2",
+          "Sub_topic_name": "Myopia and hypermetropia corrections (ray diagrams and power calculations)",
+          "description": "Explain and correct myopia and hypermetropia using lenses. Use ray diagrams and calculate correcting lens powers in dioptres.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "3.10.1.2",
+          "Sub_topic_name": "Astigmatism and prescriptions format",
+          "description": "Describe astigmatism and interpret the format of prescriptions for astigmatism (no additional physiology beyond spec).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "3.10.2.1",
+          "Sub_topic_name": "Ear structure and transmission processes",
+          "description": "Describe the simple structure of the ear and the processes by which sound is transmitted to produce detection.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "3.10.2.2",
+          "Sub_topic_name": "Equal loudness curves",
+          "description": "Explain/interpret equal loudness curves as describing ear sensitivity versus frequency at different perceived loudness levels.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "3.10.2.2",
+          "Sub_topic_name": "Sound intensity and intensity level in decibels",
+          "description": "Define sound intensity. Use intensity level \\(=10\\log_{10}(I/I_0)\\) with threshold of hearing \\(I_0=1.0\\times 10^{-12}\\,\\mathrm{W\\,m^{-2}}\\). Understand why a logarithmic scale is used for perception.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10j",
+          "Specification_section_sub": "3.10.2.2",
+          "Sub_topic_name": "dB vs dBA and typical levels",
+          "description": "Describe measurement of sound intensity levels and use/interpret dB and dBA scales, including relative intensity levels of sounds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10k",
+          "Specification_section_sub": "3.10.2.3",
+          "Sub_topic_name": "Hearing defects and equal loudness curves changes",
+          "description": "Describe effects of hearing defects on equal loudness curves, including hearing loss from excessive noise exposure or deterioration with age (exclude physiological changes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10l",
+          "Specification_section_sub": "3.10.3.1",
+          "Sub_topic_name": "ECG principles and normal waveform features",
+          "description": "Explain principles of operation of a simple ECG machine for obtaining an ECG waveform and explain the characteristic shape/features of a normal ECG waveform.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10m",
+          "Specification_section_sub": "3.10.4.1",
+          "Sub_topic_name": "Ultrasound at boundaries: reflection/transmission, impedance, attenuation",
+          "description": "Describe reflection and transmission of ultrasound at tissue boundaries, acoustic impedance \\(Z\\), and attenuation. Use \\(Z=\\rho c\\) and reflection intensity ratio \\(I_r/I_i = \\left(\\frac{Z_2-Z_1}{Z_2+Z_1}\\right)^2\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10n",
+          "Specification_section_sub": "3.10.4.1",
+          "Sub_topic_name": "Ultrasound imaging: advantages/disadvantages, safety, resolution; A-scan and B-scan",
+          "description": "Compare ultrasound imaging with alternatives in terms of advantages/disadvantages including safety and resolution. Describe A-scans and B-scans and typical applications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10o",
+          "Specification_section_sub": "3.10.4.1",
+          "Sub_topic_name": "Piezoelectric generation and detection of ultrasound pulses",
+          "description": "Explain principles of generation and detection of ultrasound pulses using piezoelectric devices.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10p",
+          "Specification_section_sub": "3.10.4.2",
+          "Sub_topic_name": "Fibre optics in medicine; TIR at core–cladding",
+          "description": "Describe properties of fibre optics and medical applications, including total internal reflection at the core–cladding interface.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10q",
+          "Specification_section_sub": "3.10.4.2",
+          "Sub_topic_name": "Endoscopy optics: coherent vs non-coherent bundles and benefits",
+          "description": "Explain physical principles of the optical system of a flexible endoscope, including coherent and non-coherent fibre bundles, and advantages/uses for internal imaging.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10r",
+          "Specification_section_sub": "3.10.4.3",
+          "Sub_topic_name": "MR scanner basic principles and imaging process",
+          "description": "Describe basic principles of MR scanning: cross-sectional scanning using magnetic fields; proton spin alignment; precession about superconducting magnet field lines; gradient coils; RF pulses causing excitation and spin-state changes in successive regions; de-excitation RF emission, detection and computer image formation. Not required: production of fields or relaxation times.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10s",
+          "Specification_section_sub": "3.10.5.1",
+          "Sub_topic_name": "X-ray production and spectrum; rotating anode tube controls",
+          "description": "Explain physical principles of X-ray production in an X-ray tube, including maximum photon energy and the energy spectrum (continuous and characteristic). Describe rotating-anode tube and methods of controlling beam intensity, photon energy, image sharpness/contrast and patient dose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10t",
+          "Specification_section_sub": "3.10.5.2",
+          "Sub_topic_name": "Flat panel (FTP) detector and advantages",
+          "description": "Describe flat panel (FTP) detectors: X-ray scintillator, photodiode pixels and electronic scanning. Compare advantages versus photographic detection.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10u",
+          "Specification_section_sub": "3.10.5.2",
+          "Sub_topic_name": "Contrast enhancement and X-ray opaque tracers (barium meal)",
+          "description": "Explain contrast enhancement using X-ray opaque materials, illustrated by barium meal technique.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10v",
+          "Specification_section_sub": "3.10.5.2",
+          "Sub_topic_name": "Photographic detection aids: intensifying screen and fluoroscopic intensification",
+          "description": "Describe photographic detection using intensifying screens and fluoroscopic image intensification and explain reasons for their use.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10w",
+          "Specification_section_sub": "3.10.5.3",
+          "Sub_topic_name": "Exponential attenuation and half-value thickness",
+          "description": "Use exponential attenuation of X-rays: \\(I=I_0 e^{-\\mu x}\\). Define linear attenuation coefficient \\(\\mu\\), mass attenuation coefficient \\(\\mu_m=\\mu/\\rho\\), and half-value thickness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10x",
+          "Specification_section_sub": "3.10.5.3",
+          "Sub_topic_name": "Differential absorption in tissues (qualitative)",
+          "description": "Explain differential tissue absorption of X-rays qualitatively (excluding detailed absorption mechanisms).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10y",
+          "Specification_section_sub": "3.10.5.4",
+          "Sub_topic_name": "CT scanner principles and comparisons",
+          "description": "Describe basic principles of a CT scanner: movement of X-ray tube, narrow monochromatic beam, detector array, and computer processing to form image. Compare CT with alternatives limited to resolution, cost and safety; no construction/operation of detectors required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10z",
+          "Specification_section_sub": "3.10.6.1",
+          "Sub_topic_name": "Gamma tracers (Tc-99m, I-131, In-111) properties and labelling",
+          "description": "Explain use of gamma-emitting radioisotopes as tracers (technetium-99m, iodine-131, indium-111) and relevant properties: radiation emitted, half-life, gamma energy, and ability to be labelled with compounds targeting particular organs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10aa",
+          "Specification_section_sub": "3.10.6.1",
+          "Sub_topic_name": "Molybdenum–Technetium generator (use and importance)",
+          "description": "Describe the Molybdenum–Technetium generator, its basic use and why it is important for medical tracers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10ab",
+          "Specification_section_sub": "3.10.6.1",
+          "Sub_topic_name": "PET scans (principle)",
+          "description": "Describe PET scans as an imaging technique based on positron emission and annihilation photons (conceptual level consistent with spec).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10ac",
+          "Specification_section_sub": "3.10.6.2",
+          "Sub_topic_name": "Physical, biological and effective half-life relationship",
+          "description": "Define physical half-life \\(T_P\\), biological half-life \\(T_B\\) and effective half-life \\(T_E\\), and use \\(1/T_E = 1/T_B + 1/T_P\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10ad",
+          "Specification_section_sub": "3.10.6.3",
+          "Sub_topic_name": "Gamma camera and photomultiplier tube (basic workings)",
+          "description": "Describe basic structure and workings of a photomultiplier tube and gamma camera.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10ae",
+          "Specification_section_sub": "3.10.6.4",
+          "Sub_topic_name": "Radiotherapy using high-energy X-rays (external)",
+          "description": "Describe external treatment using high-energy X-rays and methods used to limit exposure to healthy cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10af",
+          "Specification_section_sub": "3.10.6.5",
+          "Sub_topic_name": "Radioactive implants (internal beta)",
+          "description": "Describe internal treatment using beta-emitting radioactive implants.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10ag",
+          "Specification_section_sub": "3.10.6.6",
+          "Sub_topic_name": "Comparing medical imaging techniques (resolution, convenience, safety)",
+          "description": "Make comparisons between imaging techniques limited to image resolution, convenience and safety issues.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "3.11",
+      "Strand": "Optional topics (choose one)",
+      "Topic_name": "Engineering physics (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "3.11.1.1",
+          "Sub_topic_name": "Moment of inertia for point mass and extended objects",
+          "description": "Use moment of inertia for a point mass \\(I=mr^2\\) and for an extended object \\(I=\\sum mr^2\\). Understand qualitatively factors affecting moment of inertia; required expressions will be given when needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "3.11.1.2",
+          "Sub_topic_name": "Rotational kinetic energy \\(E_k=\\tfrac12 I\\omega^2\\) and flywheels",
+          "description": "Use rotational kinetic energy \\(E_k=\\tfrac{1}{2}I\\omega^2\\). Explain factors affecting energy storage capacity of a flywheel and applications of flywheels for smoothing torque/speed and storing energy in vehicles and machines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "3.11.1.3",
+          "Sub_topic_name": "Angular displacement/speed/acceleration and graphs",
+          "description": "Define angular displacement \\(\\theta\\), angular speed/velocity \\(\\omega=\\Delta\\theta/\\Delta t\\), and angular acceleration \\(\\alpha=\\Delta\\omega/\\Delta t\\). Interpret graphs for uniform and non-uniform angular acceleration and recognise analogy with translational motion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "3.11.1.3",
+          "Sub_topic_name": "Equations for uniform angular acceleration",
+          "description": "Use equations for uniform angular acceleration: \\(\\omega_2=\\omega_1+\\alpha t\\), \\(\\theta=\\frac{\\omega_1+\\omega_2}{2}t\\), \\(\\theta=\\omega_1 t + \\tfrac{1}{2}\\alpha t^2\\), \\(\\omega_2^2=\\omega_1^2+2\\alpha\\theta\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "3.11.1.4",
+          "Sub_topic_name": "Torque equations \\(\\tau=Fr\\) and \\(\\tau=I\\alpha\\)",
+          "description": "Define torque \\(\\tau\\) and use \\(\\tau=Fr\\) and \\(\\tau=I\\alpha\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "3.11.1.5",
+          "Sub_topic_name": "Angular momentum and conservation",
+          "description": "Define angular momentum \\(L=I\\omega\\) and apply conservation of angular momentum, including applications such as sport.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "3.11.1.5",
+          "Sub_topic_name": "Angular impulse",
+          "description": "Use angular impulse as change in angular momentum: \\(\\tau\\Delta t = \\Delta(I\\omega)\\) for constant torque.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "3.11.1.6",
+          "Sub_topic_name": "Rotational work and power \\(W=\\tau\\theta\\), \\(P=\\tau\\omega\\)",
+          "description": "Calculate rotational work and power using \\(W=\\tau\\theta\\) and \\(P=\\tau\\omega\\); include awareness that frictional torque affects rotating machinery.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "3.11.2.1",
+          "Sub_topic_name": "First law of thermodynamics (quantitative)",
+          "description": "Use the first law of thermodynamics quantitatively: \\(Q = \\Delta U + W\\), where \\(Q\\) is energy transferred to the system by heating, \\(\\Delta U\\) increase in internal energy, and \\(W\\) work done by the system; apply to practical situations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "3.11.2.2",
+          "Sub_topic_name": "Non-flow processes: isothermal/adiabatic/constant p/constant V",
+          "description": "Understand isothermal, adiabatic, constant pressure and constant volume changes. Use \\(pV=nRT\\). Use relationships: adiabatic \\(pV^\\gamma=\\text{constant}\\), isothermal \\(pV=\\text{constant}\\), and at constant pressure \\(W=p\\Delta V\\). Apply the first law to these processes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11k",
+          "Specification_section_sub": "3.11.2.3",
+          "Sub_topic_name": "p–V diagrams and work (area) including cycles",
+          "description": "Represent processes on p–V diagrams and estimate work done as area under the graph. For cyclic processes, work done per cycle equals area enclosed by the loop; expressions not required except \\(W=p\\Delta V\\) at constant pressure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11l",
+          "Specification_section_sub": "3.11.2.4",
+          "Sub_topic_name": "Four-stroke petrol and diesel cycles; indicator diagrams",
+          "description": "Understand four-stroke petrol and diesel engine cycles and corresponding indicator diagrams; compare with theoretical diagrams and use indicator diagrams for predicting/measuring power and efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11m",
+          "Specification_section_sub": "3.11.2.4",
+          "Sub_topic_name": "Engine power and efficiencies (overall/thermal/mechanical)",
+          "description": "Use: input power = calorific value × fuel flow rate. Indicated power = (area of p–V loop) × (cycles per second) × (number of cylinders). Brake/output power \\(P=\\tau\\omega\\). Friction power = indicated power − brake power. Calculate overall, thermal and mechanical efficiencies: overall = brake/input; thermal = indicated/input; mechanical = brake/indicated.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11n",
+          "Specification_section_sub": "3.11.2.5",
+          "Sub_topic_name": "Second law: need for source and sink; efficiency limits",
+          "description": "Explain why the first law alone does not allow an engine to work and state the second law requirement for a heat engine operating between a source and a sink. Use \\(\\eta = W/Q_H = (Q_H-Q_C)/Q_H\\) and maximum theoretical efficiency \\(\\eta_{max}=(T_H-T_C)/T_H\\). Explain reasons practical engines have lower efficiency and the idea of combined heat and power to maximise use of \\(W\\) and \\(Q_H\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11o",
+          "Specification_section_sub": "3.11.2.6",
+          "Sub_topic_name": "Reversed heat engines: refrigerators and heat pumps; COP",
+          "description": "Describe basic principles and uses of refrigerators and heat pumps (no detailed cycles required). Use coefficients of performance: \\(COP_{ref}=Q_C/W=Q_C/(Q_H-Q_C)=T_C/(T_H-T_C)\\) and \\(COP_{hp}=Q_H/W=Q_H/(Q_H-Q_C)=T_H/(T_H-T_C)\\).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "3.12",
+      "Strand": "Optional topics (choose one)",
+      "Topic_name": "Turning points in physics (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "3.12.1.1",
+          "Sub_topic_name": "Cathode rays in discharge tubes",
+          "description": "Describe production of cathode rays in a discharge tube.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "3.12.1.2",
+          "Sub_topic_name": "Thermionic emission and electron acceleration energy",
+          "description": "Explain thermionic emission. Use work done on an electron accelerated through pd \\(V\\): \\(\\tfrac{1}{2}mv^2 = eV\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "3.12.1.3",
+          "Sub_topic_name": "Specific charge \\(e/m\\) measurement (one method) and significance",
+          "description": "Describe determination of specific charge of the electron \\(e/m\\) by any one method. Explain significance of Thomson’s determination and compare with specific charge of hydrogen ion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "3.12.1.4",
+          "Sub_topic_name": "Millikan oil-drop: balance condition and droplet motion",
+          "description": "Describe the principle of Millikan’s experiment: condition for holding droplet of charge \\(Q\\) stationary between parallel plates \\(QV/d = mg\\). Describe droplet motion with/without electric field, terminal speed use to determine mass and charge.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "3.12.1.4",
+          "Sub_topic_name": "Stokes’ law for viscous drag in oil-drop experiment",
+          "description": "Use Stokes’ law for viscous force on a droplet: \\(F = 6\\pi\\eta r v\\) and apply to calculating droplet radius (within Millikan context).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "3.12.1.4",
+          "Sub_topic_name": "Quantisation of charge and significance of Millikan’s results",
+          "description": "Explain the significance of Millikan’s results and the quantisation of electric charge.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "3.12.2.1",
+          "Sub_topic_name": "Newton corpuscular theory vs Huygens wave theory (reasons for preference)",
+          "description": "Compare Newton’s corpuscular theory of light with Huygens’ wave theory in general terms and explain why Newton’s theory was historically preferred.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "3.12.2.2",
+          "Sub_topic_name": "Young’s double-slit significance (qualitative fringes)",
+          "description": "Explain qualitatively how fringes arise in Young’s double-slit experiment (no calculations) and its significance in delayed acceptance of wave theory.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "3.12.2.3",
+          "Sub_topic_name": "Maxwell’s speed of EM waves \\(c=1/\\sqrt{\\mu_0\\varepsilon_0}\\) and meaning of constants",
+          "description": "Describe nature of electromagnetic waves. Use Maxwell’s formula \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\). Appreciate that \\(\\varepsilon_0\\) relates to electric field strength due to a charged object and \\(\\mu_0\\) to magnetic flux density due to a current-carrying wire in free space.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12j",
+          "Specification_section_sub": "3.12.2.3",
+          "Sub_topic_name": "Hertz radio waves and speed measurement; Fizeau speed of light implications",
+          "description": "Describe Hertz’s discovery of radio waves including measurements of their speed, and Fizeau’s determination of the speed of light and its implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12k",
+          "Specification_section_sub": "3.12.2.4",
+          "Sub_topic_name": "Ultraviolet catastrophe and Planck quanta",
+          "description": "Describe the ultraviolet catastrophe in black-body radiation and Planck’s interpretation in terms of energy quanta.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12l",
+          "Specification_section_sub": "3.12.2.4",
+          "Sub_topic_name": "Photoelectricity: failure of classical wave theory and Einstein explanation",
+          "description": "Explain why classical wave theory failed for photoelectric observations and describe Einstein’s photon explanation and its significance for the nature of electromagnetic radiation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12m",
+          "Specification_section_sub": "3.12.2.5",
+          "Sub_topic_name": "de Broglie hypothesis and electron wavelength from accelerating voltage",
+          "description": "Use de Broglie hypothesis \\(p=h/\\lambda\\) and \\(\\lambda = h/\\sqrt{2m_e eV}\\) for electrons accelerated through pd \\(V\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12n",
+          "Specification_section_sub": "3.12.2.5",
+          "Sub_topic_name": "Low-energy electron diffraction and effect of speed on pattern",
+          "description": "Describe low-energy electron diffraction experiments qualitatively and explain how changing electron speed changes the diffraction pattern.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12o",
+          "Specification_section_sub": "3.12.2.6",
+          "Sub_topic_name": "Electron microscope: estimate voltage for atomic-scale wavelength",
+          "description": "Estimate anode voltage needed to produce electron wavelengths comparable to atomic dimensions using de Broglie relationship (order-of-magnitude).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12p",
+          "Specification_section_sub": "3.12.2.6",
+          "Sub_topic_name": "Transmission electron microscope (TEM) principle",
+          "description": "Describe the principle of operation of the transmission electron microscope (TEM).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12q",
+          "Specification_section_sub": "3.12.2.6",
+          "Sub_topic_name": "Scanning tunnelling microscope (STM) principle",
+          "description": "Describe the principle of operation of the scanning tunnelling microscope (STM).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12r",
+          "Specification_section_sub": "3.12.3.1",
+          "Sub_topic_name": "Michelson–Morley interferometer and null result significance",
+          "description": "Describe the principle of the Michelson–Morley interferometer and outline the experiment as a test for absolute motion (aether). Explain significance of failure to detect absolute motion and invariance of speed of light.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12s",
+          "Specification_section_sub": "3.12.3.2",
+          "Sub_topic_name": "Inertial frames and Einstein’s two postulates",
+          "description": "Define an inertial frame of reference and state Einstein’s two postulates: (1) laws of physics same form in all inertial frames; (2) speed of light in free space is invariant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12t",
+          "Specification_section_sub": "3.12.3.3",
+          "Sub_topic_name": "Time dilation equation and proper time; muon evidence",
+          "description": "Define proper time and time dilation. Use \\(t = \\frac{t_0}{\\sqrt{1-v^2/c^2}}\\). Describe evidence for time dilation from muon decay.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12u",
+          "Specification_section_sub": "3.12.3.4",
+          "Sub_topic_name": "Length contraction equation",
+          "description": "Use length contraction for an object moving at speed \\(v\\): \\(l = l_0\\sqrt{1-v^2/c^2}\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12v",
+          "Specification_section_sub": "3.12.3.5",
+          "Sub_topic_name": "Mass–energy equivalence and relativistic energy expression",
+          "description": "Use mass–energy equivalence \\(E=mc^2\\) and relativistic total energy \\(E = \\frac{m_0c^2}{\\sqrt{1-v^2/c^2}}\\). Interpret graphs of mass and kinetic energy versus speed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12w",
+          "Specification_section_sub": "3.12.3.5",
+          "Sub_topic_name": "Bertozzi experiment evidence for KE-speed relation",
+          "description": "Describe Bertozzi’s experiment as evidence for variation of kinetic energy with speed (relativistic effects).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "3.13",
+      "Strand": "Optional topics (choose one)",
+      "Topic_name": "Electronics (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "3.13.1.1",
+          "Sub_topic_name": "MOSFET structure/characteristics and key terms",
+          "description": "Use a simplified model of an N-channel enhancement-mode MOSFET: identify drain, source and gate; understand behaviour and characteristics including meanings of \\(V_{DS}\\), \\(V_{GS}\\), \\(I_{DSS}\\) and threshold voltage \\(V_{th}\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "3.13.1.1",
+          "Sub_topic_name": "MOSFET as a switch and high input resistance device",
+          "description": "Explain MOSFET use as an electronic switch and as a device with very high input resistance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "3.13.1.2",
+          "Sub_topic_name": "Zener diode I–V curve and breakdown; operating current",
+          "description": "Interpret zener diode characteristic curve including breakdown voltage and typical minimum operating current; identify anode and cathode.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "3.13.1.2",
+          "Sub_topic_name": "Zener diode as constant voltage/reference source",
+          "description": "Use a zener diode with a resistor as a constant voltage source and as a reference voltage (stabiliser details not required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "3.13.1.3",
+          "Sub_topic_name": "Photodiode characteristic and spectral response; photoconductive mode",
+          "description": "Interpret photodiode characteristic curves and spectral response curves. Describe use in photoconductive mode as a detector in optical systems and with a scintillator to detect atomic particles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "3.13.1.4",
+          "Sub_topic_name": "Hall effect sensor applications",
+          "description": "Describe applications of Hall effect sensors as magnetic field sensors (eg monitoring attitude, tachometers). Principles of operation are not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "3.13.2.1",
+          "Sub_topic_name": "Analogue vs digital signals; bits and bytes",
+          "description": "Distinguish analogue and digital signals and define bits and bytes in digital data contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "3.13.2.1",
+          "Sub_topic_name": "Analogue-to-digital conversion: sampling, quantisation, sampling rate, bit depth, noise",
+          "description": "Explain analogue-to-digital conversion including sampling audio signals, using two voltage levels, quantisation, sampling rate, effects of sampling rate and bits per sample on quality, advantages/disadvantages of digital sampling, recovering original data from noisy signals, and effects of noise in communication systems. Understand pulse code modulation conceptually.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13i",
+          "Specification_section_sub": "3.13.2.1",
+          "Sub_topic_name": "Binary numbers (1 to 10) expectation",
+          "description": "Know binary numbers 1 to 10; binary arithmetic beyond this is not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13j",
+          "Specification_section_sub": "3.13.3.1",
+          "Sub_topic_name": "LC resonance: \\(f_0=1/(2\\pi\\sqrt{LC})\\), parallel only, Q factor",
+          "description": "Use resonance frequency \\(f_0 = 1/(2\\pi\\sqrt{LC})\\) for LC resonance filters (parallel resonance only). Understand energy (voltage) response curve. Use Q factor \\(Q=f_0/f_B\\) where \\(f_B\\) is bandwidth at the 50% energy points; derivation not required. Use analogy between LC and mass–spring systems (inductance ↔ mass, capacitance ↔ spring).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13k",
+          "Specification_section_sub": "3.13.3.2",
+          "Sub_topic_name": "Ideal operational amplifier characteristics; open-loop behaviour; comparator",
+          "description": "Describe ideal op-amp operation: power supplies and signal connections, infinite open-loop gain, infinite input resistance. For real op-amp open-loop transfer: \\(V_{out}=A_{OL}(V_+ - V_-)\\). Use op-amp as a comparator; treat op-amp as a building block.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13l",
+          "Specification_section_sub": "3.13.4.1",
+          "Sub_topic_name": "Inverting amplifier gain and virtual earth",
+          "description": "Derive and use inverting amplifier gain: \\(\\frac{V_{out}}{V_{in}} = -\\frac{R_f}{R_{in}}\\). Explain virtual earth and apply virtual-earth analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13m",
+          "Specification_section_sub": "3.13.4.2",
+          "Sub_topic_name": "Non-inverting amplifier gain",
+          "description": "Use non-inverting amplifier gain: \\(\\frac{V_{out}}{V_{in}} = 1 + \\frac{R_f}{R_1}\\) (derivation not required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13n",
+          "Specification_section_sub": "3.13.4.3",
+          "Sub_topic_name": "Summing amplifier equation",
+          "description": "Use summing amplifier: \\(V_{out} = -R_f\\left(\\frac{V_1}{R_1}+\\frac{V_2}{R_2}+\\frac{V_3}{R_3}+\\dots\\right)\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13o",
+          "Specification_section_sub": "3.13.4.3",
+          "Sub_topic_name": "Difference amplifier equation",
+          "description": "Use difference amplifier configuration: \\(V_{out} = (V_+ - V_-)\\frac{R_f}{R_1}\\) (derivation not required) and interpret meaning in signal processing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13p",
+          "Specification_section_sub": "3.13.4.4",
+          "Sub_topic_name": "Real op-amp limitations and gain–bandwidth",
+          "description": "Describe limitations of real operational amplifiers using frequency response curve and use gain × bandwidth = constant for a given device.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13q",
+          "Specification_section_sub": "3.13.5.1",
+          "Sub_topic_name": "Boolean algebra notation and basic gates",
+          "description": "Use Boolean algebra linked to truth tables and logic gates: \\(\\overline{A}\\) = NOT A, \\(A\\cdot B\\) = A AND B, \\(A+B\\) = A OR B. Identify/use AND, NAND, OR, NOR, NOT and EOR gates in logic circuits; internal gate structure not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13r",
+          "Specification_section_sub": "3.13.5.1",
+          "Sub_topic_name": "Logic circuits from truth tables (construct/deduce)",
+          "description": "Construct a logic circuit from a truth table and deduce a truth table/logic function from a given logic circuit using gate building blocks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13s",
+          "Specification_section_sub": "3.13.5.2",
+          "Sub_topic_name": "Sequential logic counters (binary, BCD, Johnson) and controls",
+          "description": "Describe counting circuits: binary counter, BCD counter, Johnson counter. Identify inputs (clock, reset, up/down) and outputs; use modulo-n counter concept using logic driving a reset pin; internal gate structure not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13t",
+          "Specification_section_sub": "3.13.5.3",
+          "Sub_topic_name": "Astable oscillator timing terms and RC control",
+          "description": "Describe the astable as an oscillator producing clock pulses. Define/relate clock rate (frequency), pulse width, period, duty cycle and mark-to-space ratio. Describe varying running frequency using an external RC network; no knowledge of specific devices (eg 555) required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13u",
+          "Specification_section_sub": "3.13.6.1",
+          "Sub_topic_name": "Communication system block diagram (real time) and purpose of stages",
+          "description": "Interpret a block diagram of a real-time communication system and state the purpose of each stage (input transducer, modulator, amplifier, transmitter, transmission path, receiver, demodulator, output transducer).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13v",
+          "Specification_section_sub": "3.13.6.2",
+          "Sub_topic_name": "Transmission media and propagation effects; satellite links",
+          "description": "Compare transmission media: metal wire, optical fibre and electromagnetic (radio, microwave). Describe ground wave, refraction/reflection of sky waves, diffraction of long-wavelength radiation around Earth’s surface. Describe satellite systems and typical transmission frequencies, including need for different up- and down-link frequencies to avoid de-sensing receivers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13w",
+          "Specification_section_sub": "3.13.6.2",
+          "Sub_topic_name": "Transmission media comparison criteria (rate, cost, security)",
+          "description": "Evaluate advantages/disadvantages of transmission media in terms of data transmission rate, cost and security issues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13x",
+          "Specification_section_sub": "3.13.6.3",
+          "Sub_topic_name": "Time-division multiplexing (basic principles)",
+          "description": "Describe the basic principles of time-division multiplexing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13y",
+          "Specification_section_sub": "3.13.6.4",
+          "Sub_topic_name": "AM and FM modulation concepts; identify frequencies from graphs",
+          "description": "Explain principles of modulation including carrier and information signal and bandwidth concept; no circuit details required. Interpret graphs of AM and FM signals to identify carrier frequency and information frequency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13z",
+          "Specification_section_sub": "3.13.6.4",
+          "Sub_topic_name": "Bandwidth requirements for AM and FM; data capacity idea",
+          "description": "Use bandwidth relationships: for AM, bandwidth = \\(2f_M\\); for FM, bandwidth = \\(2\\Delta f + f_M\\). Relate bandwidth to channel data capacity and compare bandwidth availability across media.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

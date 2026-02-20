@@ -1,0 +1,1403 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Computer Science",
+  "Exam Board": "OCR",
+  "Specification": "H446",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "1.1.1",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Structure and function of the processor",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1.1(a)",
+          "Sub_topic_name": "CPU components and registers (ALU/CU/Registers)",
+          "description": "Know the roles of the Arithmetic and Logic Unit (ALU), Control Unit (CU) and key registers: Program Counter (PC), Accumulator (ACC), Memory Address Register (MAR), Memory Data Register (MDR), Current Instruction Register (CIR). Be able to explain what each register stores and why it is needed during program execution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1.1(a)",
+          "Sub_topic_name": "Buses and relation to assembly language",
+          "description": "Understand data, address and control buses: what each carries, direction of flow, and how bus activity relates to assembly language execution (e.g., moving instruction/data between memory and CPU).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.1.1(b)",
+          "Sub_topic_name": "Fetch-Decode-Execute cycle (including register effects)",
+          "description": "Explain the Fetch–Decode–Execute cycle in detail, including changes to PC, MAR, MDR, CIR and ACC (where relevant): fetching instruction from memory, decoding in CU, executing via ALU/control signals, and storing results.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1.1.1(c)",
+          "Sub_topic_name": "CPU performance factors",
+          "description": "Explain factors affecting CPU performance: clock speed, number of cores, and cache (size/levels). Apply to scenarios to compare performance implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "1.1.1(d)",
+          "Sub_topic_name": "Pipelining",
+          "description": "Understand pipelining as overlapping stages of instruction processing to improve throughput/efficiency; describe benefits and typical issues (e.g., hazards/stalls) at the conceptual level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "1.1.1(e)",
+          "Sub_topic_name": "Processor architectures: Von Neumann vs Harvard vs contemporary",
+          "description": "Compare Von Neumann and Harvard architectures (shared vs separate instruction/data memory and buses) and relate to contemporary CPU features (e.g., caches, separate pathways) at a conceptual level.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "1.1.2",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Types of processor",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "1.1.2(a)",
+          "Sub_topic_name": "CISC vs RISC",
+          "description": "Understand differences between CISC and RISC processors (instruction complexity, instruction count, execution cycles, typical trade-offs) and describe appropriate uses/contexts for each.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "1.1.2(b)",
+          "Sub_topic_name": "GPUs and non-graphics uses",
+          "description": "Explain what GPUs are and why they are effective for highly parallel workloads. Describe uses including non-graphics tasks (e.g., general-purpose parallel computation, AI/ML, simulation, cryptography).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "1.1.2(c)",
+          "Sub_topic_name": "Multicore and parallel systems",
+          "description": "Understand multicore CPUs and parallel systems; explain parallel execution conceptually and discuss benefits/trade-offs (performance scaling, concurrency overheads) in context.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "1.1.3",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Input, output and storage",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "1.1.3(a)",
+          "Sub_topic_name": "Selecting I/O and storage devices for problems",
+          "description": "Apply knowledge of different input, output and storage devices to justify appropriate choices for given problem scenarios (considering performance, capacity, portability, reliability, cost, user needs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "1.1.3(b)",
+          "Sub_topic_name": "Magnetic, flash and optical storage uses",
+          "description": "Describe how magnetic, flash (solid state) and optical storage work at a high level and justify typical uses (e.g., magnetic for large/cheap, SSD for speed/robustness, optical for distribution/archival).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "1.1.3(c)",
+          "Sub_topic_name": "RAM vs ROM",
+          "description": "Explain RAM and ROM: purpose, volatility, typical use in system operation (working memory vs firmware/boot code).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "1.1.3(d)",
+          "Sub_topic_name": "Virtual storage",
+          "description": "Understand virtual storage (secondary storage used to extend main memory); explain paging/swap conceptually and performance implications (thrashing, latency).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "1.2.1",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Systems Software",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "1.2.1(a)",
+          "Sub_topic_name": "Operating systems: need, function and purpose",
+          "description": "Explain why an operating system is needed and its core functions/purpose (resource management, providing user interface, file management, device management, security, multitasking).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "1.2.1(b)",
+          "Sub_topic_name": "Memory management: paging, segmentation, virtual memory",
+          "description": "Understand memory management techniques: paging and segmentation (concepts, address translation at a high level) and virtual memory; explain benefits and drawbacks in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "1.2.1(c)",
+          "Sub_topic_name": "Interrupts and ISRs in the FDE cycle",
+          "description": "Explain interrupts, their role, and Interrupt Service Routines (ISR). Relate interrupt handling to the Fetch–Decode–Execute cycle (e.g., saving state, servicing, returning).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "1.2.1(d)",
+          "Sub_topic_name": "Scheduling algorithms",
+          "description": "Compare scheduling strategies: round robin, first come first served (FCFS), multi-level feedback queues, shortest job first (SJF), shortest remaining time (SRT). Apply to scenarios (throughput, responsiveness, fairness, starvation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "1.2.1(e)",
+          "Sub_topic_name": "Operating system types",
+          "description": "Understand and distinguish distributed, embedded, multi-tasking, multi-user and real-time operating systems; describe typical use cases and constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "1.2.1(f)",
+          "Sub_topic_name": "BIOS",
+          "description": "Explain BIOS purpose (firmware/boot process, hardware initialisation, bootstrapping OS) and its role in system startup.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "1.2.1(g)",
+          "Sub_topic_name": "Device drivers",
+          "description": "Explain device drivers: what they do, why they are needed (hardware abstraction/OS-device communication), and typical issues (compatibility, updates).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "1.2.1(h)",
+          "Sub_topic_name": "Virtual machines and emulation of machine functions",
+          "description": "Understand virtual machines: software providing the function of a machine, including executing intermediate code (e.g., bytecode) and running an operating system within another; explain benefits (portability, isolation, testing) and costs (overhead).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "1.2.2",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Applications Generation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "1.2.2(a)",
+          "Sub_topic_name": "Nature of applications and suitability/justification",
+          "description": "Understand what applications software is and be able to justify selecting suitable applications for a specific purpose (features, platform constraints, user needs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "1.2.2(b)",
+          "Sub_topic_name": "Utilities",
+          "description": "Explain utility software (e.g., backup, antivirus, compression tools) and their functions in maintaining/optimising systems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "1.2.2(c)",
+          "Sub_topic_name": "Open source vs closed source",
+          "description": "Compare open source and closed source software: licensing, source availability, development models, security/quality considerations, cost, support; apply to contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "1.2.2(d)",
+          "Sub_topic_name": "Translators: interpreter, compiler, assembler",
+          "description": "Distinguish interpreters, compilers and assemblers: how they translate code, when translation occurs, typical outputs (machine code, bytecode), and implications (speed, debugging, portability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "1.2.2(e)",
+          "Sub_topic_name": "Stages of compilation",
+          "description": "Understand compilation stages: lexical analysis (tokenising), syntax analysis (parsing), code generation, and optimisation; explain purpose of each stage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "1.2.2(f)",
+          "Sub_topic_name": "Linkers, loaders and libraries",
+          "description": "Explain linkers and loaders and how libraries are used; understand linking (combining object code and libraries), loading into memory, and resolving external references.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "1.2.3",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Software Development",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "1.2.3(a)",
+          "Sub_topic_name": "Development methodologies overview",
+          "description": "Understand software development approaches: waterfall lifecycle, agile methodologies, extreme programming (XP), spiral model and rapid application development (RAD).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "1.2.3(b)",
+          "Sub_topic_name": "Choosing a methodology: merits/drawbacks",
+          "description": "Evaluate relative merits and drawbacks of waterfall, agile/XP, spiral and RAD, and decide when each might be used (risk, requirements volatility, stakeholder involvement, delivery speed).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "1.2.3(c)",
+          "Sub_topic_name": "Writing and following algorithms",
+          "description": "Be able to write, trace and follow algorithms accurately (step-by-step logic, correctness, and clarity), including in preparation for coding.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "1.2.4",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Types of Programming Language",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "1.2.4(a)",
+          "Sub_topic_name": "Programming paradigms: need and characteristics",
+          "description": "Understand why different programming paradigms exist and identify key characteristics/uses of different paradigms (e.g., procedural, object-oriented, low-level/assembly).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "1.2.4(b)",
+          "Sub_topic_name": "Procedural languages",
+          "description": "Understand procedural/imperative languages: sequence, selection, iteration, procedures/functions, state and variables; apply to describing program structure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "1.2.4(c)",
+          "Sub_topic_name": "Assembly language and Little Man Computer (LMC)",
+          "description": "Understand assembly language concepts and be able to follow and write simple programs using the Little Man Computer (LMC) instruction set (e.g., ADD, SUB, STA/STO, LDA/LOAD, BRA/BR, BRZ/BZ, BRP/BP, INP, OUT, HLT/COB/END, DAT).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "1.2.4(d)",
+          "Sub_topic_name": "Addressing modes",
+          "description": "Understand modes of addressing memory: immediate, direct, indirect and indexed; explain how the operand is obtained and why each mode is useful.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "1.2.4(e)",
+          "Sub_topic_name": "Object-oriented programming (OOP) concepts",
+          "description": "Understand OOP concepts and terminology: classes, objects, methods, attributes, inheritance, encapsulation and polymorphism; be able to interpret and design simple class structures and interactions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "1.3.1",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Compression, Encryption and Hashing",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "1.3.1(a)",
+          "Sub_topic_name": "Lossy vs lossless compression",
+          "description": "Distinguish lossy and lossless compression; explain typical use cases, trade-offs (quality vs size), and implications for data reconstruction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "1.3.1(b)",
+          "Sub_topic_name": "Run-length encoding (RLE)",
+          "description": "Understand and apply run-length encoding for lossless compression; be able to encode and decode simple data sequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "1.3.1(b)",
+          "Sub_topic_name": "Dictionary coding",
+          "description": "Understand dictionary-based lossless compression (building/using a dictionary of repeated patterns/strings); be able to describe and apply to examples at a conceptual level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "1.3.1(c)",
+          "Sub_topic_name": "Symmetric encryption",
+          "description": "Understand symmetric encryption: same key used to encrypt/decrypt; describe benefits/limitations (key distribution) and typical use cases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "1.3.1(c)",
+          "Sub_topic_name": "Asymmetric encryption",
+          "description": "Understand asymmetric (public/private key) encryption: how keys are used for confidentiality and key exchange; compare to symmetric encryption conceptually.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "1.3.1(d)",
+          "Sub_topic_name": "Hashing: purposes and uses",
+          "description": "Explain hashing and different uses (e.g., password storage/verification, integrity checks, digital signatures support, indexing/lookup). Understand one-way property and collision conceptually.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "1.3.2",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Databases",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "1.3.2(a)",
+          "Sub_topic_name": "Database models and keys (relational/flat file; PK/FK/secondary)",
+          "description": "Understand flat-file vs relational databases. Define and apply key concepts: primary key, foreign key, secondary key; explain how keys support relationships and retrieval.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "1.3.2(a)",
+          "Sub_topic_name": "Entity-relationship modelling (ER modelling)",
+          "description": "Understand entity relationship modelling (entities, relationships and cardinalities) and be able to interpret/construct ER models consistent with OCR ERD conventions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "1.3.2(a)",
+          "Sub_topic_name": "Indexing in databases",
+          "description": "Explain indexing: why it is used to speed up queries, basic trade-offs (extra storage and slower writes), and contexts where indexing is beneficial.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "1.3.2(b)",
+          "Sub_topic_name": "Capturing, selecting, managing and exchanging data",
+          "description": "Understand methods of capturing, selecting, managing and exchanging data (data collection approaches, validation, data management practices, data interchange considerations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "1.3.2(c)",
+          "Sub_topic_name": "Normalisation to Third Normal Form (3NF)",
+          "description": "Understand and apply normalisation up to 3NF: identify repeating groups, partial and transitive dependencies; decompose tables to reduce redundancy and anomalies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "1.3.2(d)",
+          "Sub_topic_name": "SQL: interpret and modify queries",
+          "description": "Be able to interpret and write/modify SQL using required constructs (as per OCR guidance): SELECT (including nested SELECTs), FROM, WHERE, LIKE, AND, OR, JOIN (INNER JOIN), DELETE, INSERT, DROP; use wildcards ‘*’ and ‘%’ appropriately where relevant in OCR contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "1.3.2(e)",
+          "Sub_topic_name": "Referential integrity",
+          "description": "Understand referential integrity: ensuring foreign keys reference existing primary keys; effects of insert/update/delete; why constraints prevent orphan records.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "1.3.2(f)",
+          "Sub_topic_name": "Transaction processing and ACID",
+          "description": "Understand transaction processing and ACID properties: Atomicity, Consistency, Isolation, Durability; explain why these matter for correctness and reliability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "1.3.2(f)",
+          "Sub_topic_name": "Record locking and redundancy",
+          "description": "Explain record locking in concurrent database access and how it prevents conflicts; understand redundancy and its relationship to normalisation and reliability (including risks of inconsistency).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "1.3.3",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Networks",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "1.3.3(a)",
+          "Sub_topic_name": "Network characteristics; protocols and standards",
+          "description": "Understand characteristics of networks (e.g., topology/scale/performance) and explain why protocols and standards are essential for interoperability and reliable communication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "1.3.3(b)",
+          "Sub_topic_name": "TCP/IP stack and protocol layering",
+          "description": "Understand the internet structure using the TCP/IP stack and protocol layering: roles of layers, encapsulation, and why layering is used.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "1.3.3(b)",
+          "Sub_topic_name": "DNS",
+          "description": "Explain Domain Name System (DNS): translating domain names to IP addresses, hierarchical structure, and why caching affects performance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "1.3.3(b)",
+          "Sub_topic_name": "LANs vs WANs",
+          "description": "Distinguish LANs and WANs: scale, ownership, typical technologies and performance considerations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "1.3.3(b)",
+          "Sub_topic_name": "Packet vs circuit switching",
+          "description": "Compare packet switching and circuit switching; explain implications for reliability, latency, throughput and suitability for different applications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "1.3.3(c)",
+          "Sub_topic_name": "Network security threats; firewalls, proxies, encryption",
+          "description": "Understand common network security threats (conceptual) and how firewalls, proxies and encryption mitigate risks; apply to scenario-based reasoning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "1.3.3(d)",
+          "Sub_topic_name": "Network hardware",
+          "description": "Identify and explain roles of network hardware (e.g., switches, routers, access points, NICs) at an appropriate conceptual level for A Level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "1.3.3(e)",
+          "Sub_topic_name": "Client-server vs peer-to-peer",
+          "description": "Compare client-server and peer-to-peer architectures; explain advantages/disadvantages and suitable use cases.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "1.3.4",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Web Technologies",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "1.3.4(a)",
+          "Sub_topic_name": "HTML fundamentals (required tags)",
+          "description": "Understand and use core HTML tags per OCR guidance: <html>, <head>, <title>, <body>, headings <h1>/<h2>/<h3>, <img> (src, alt, height, width), <a> (href), <div>, <form>, <input type=\"text\" name=... and <input type=\"submit\">, <p>, lists <li>, <ol>, <ul>, and <script>. Be able to interpret and write simple HTML structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "1.3.4(a)",
+          "Sub_topic_name": "CSS styling (inline, external, selectors and properties)",
+          "description": "Understand CSS used inline via style attribute and via external stylesheets. Use element selectors (e.g., h1{...}), class selectors (e.g., .infoBox{...}), and id selectors (e.g., #menu{...}). Know required properties: background-color, border-color, border-style, border-width, color (named and hex), font-family, font-size, height, width; apply to create and interpret styling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "1.3.4(a)",
+          "Sub_topic_name": "JavaScript basics (control structures and DOM output)",
+          "description": "Be able to follow and write basic JavaScript using equivalent control structures to OCR pseudocode (sequence/selection/iteration, variables, expressions). Understand input via reading form values (method given in questions) and output methods: document.getElementById(...).innerHTML=..., document.write(...), alert(...). Minor syntax inaccuracies not penalised; focus on logic.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "1.3.4(b)",
+          "Sub_topic_name": "Search engine indexing",
+          "description": "Explain how search engines index web pages (crawling, building an index of terms/metadata/links) and implications for retrieval and ranking.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "1.3.4(c)",
+          "Sub_topic_name": "PageRank algorithm",
+          "description": "Understand the idea of the PageRank algorithm: ranking pages using link structure/importance; be able to explain conceptually how inbound links contribute to rank.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "1.3.4(d)",
+          "Sub_topic_name": "Server-side vs client-side processing",
+          "description": "Distinguish server-side and client-side processing; explain where code runs, what tasks suit each (security, performance, user interaction), and impacts on latency and scalability.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "1.4.1",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Data Types",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "1.4.1(a)",
+          "Sub_topic_name": "Primitive data types",
+          "description": "Know and use primitive data types: integer, real/floating point, character, string and Boolean; select appropriate types for given data and constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "1.4.1(b)",
+          "Sub_topic_name": "Binary representation of positive integers",
+          "description": "Represent positive integers in binary; understand place value and convert simple values to/from denary.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "1.4.1(c)",
+          "Sub_topic_name": "Negative numbers: sign-and-magnitude and two’s complement",
+          "description": "Understand sign-and-magnitude and two’s complement representations; convert negative denary integers to binary and interpret given binary values.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "1.4.1(d)",
+          "Sub_topic_name": "Binary integer addition and subtraction",
+          "description": "Perform addition and subtraction of binary integers (including with two’s complement where relevant); identify overflow conceptually.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "1.4.1(e)",
+          "Sub_topic_name": "Hexadecimal representation of positive integers",
+          "description": "Represent positive integers in hexadecimal; understand base-16 place value and digit mapping (0–9, A–F).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "1.4.1(f)",
+          "Sub_topic_name": "Convert between denary, binary and hexadecimal",
+          "description": "Convert positive integers between binary, hexadecimal and denary; use grouping of bits (nibbles) for binary↔hex conversion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "1.4.1(g)",
+          "Sub_topic_name": "Floating point representation and normalisation (binary)",
+          "description": "Understand floating point representation in binary (sign, exponent, mantissa/significand) and normalisation; convert simple values and explain precision limits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "1.4.1(h)",
+          "Sub_topic_name": "Floating point arithmetic (add/subtract)",
+          "description": "Carry out floating point addition and subtraction conceptually: aligning exponents, operating on mantissas, renormalising; include positive and negative numbers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "1.4.1(i)",
+          "Sub_topic_name": "Bitwise manipulation and masks",
+          "description": "Use bitwise operations and masks: shifts, AND, OR, XOR to combine/manipulate bits; apply to setting/clearing/toggling bits and extracting fields.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12j",
+          "Specification_section_sub": "1.4.1(j)",
+          "Sub_topic_name": "Character sets: ASCII and Unicode",
+          "description": "Explain how character sets (ASCII and Unicode) represent text; understand why Unicode is needed and implications for storage/encoding.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "1.4.2",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Data Structures",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "1.4.2(a)",
+          "Sub_topic_name": "Arrays (up to 3D)",
+          "description": "Understand arrays (0-based where relevant in OCR pseudocode), including up to 3 dimensions; access/update elements; explain typical uses and limitations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "1.4.2(a)",
+          "Sub_topic_name": "Records, lists and tuples",
+          "description": "Understand records (structured fields), lists (dynamic sequences) and tuples (fixed-size ordered collections); choose appropriate structures for problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "1.4.2(b)",
+          "Sub_topic_name": "Linked lists",
+          "description": "Understand linked lists: node structure and pointers/references; be able to create, traverse, add and remove nodes conceptually/with pseudocode.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "1.4.2(b)",
+          "Sub_topic_name": "Stacks",
+          "description": "Understand stack ADT (LIFO) operations: push, pop, peek/top; implement or describe using arrays or linked structures; apply to use cases (e.g., call stack, undo).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "1.4.2(b)",
+          "Sub_topic_name": "Queues",
+          "description": "Understand queue ADT (FIFO) operations: enqueue, dequeue, front/rear; implement or describe (array/circular buffer or linked) and apply to scenarios (e.g., scheduling).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "1.4.2(b)",
+          "Sub_topic_name": "Trees (general)",
+          "description": "Understand tree terminology (root, node, edge, parent/child, leaf, subtree, depth/height). Create and traverse trees; add/remove nodes at a conceptual/algorithmic level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "1.4.2(b)",
+          "Sub_topic_name": "Binary search trees (BST)",
+          "description": "Understand binary search tree property and operations: search, insert, delete (conceptual), and traversal; evaluate efficiency implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "1.4.2(b)",
+          "Sub_topic_name": "Graphs (directed and undirected)",
+          "description": "Understand graphs: vertices/nodes and edges; directed vs undirected; represent graphs (e.g., adjacency list/matrix conceptually) and traverse/explore at an algorithmic level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13i",
+          "Specification_section_sub": "1.4.2(b)",
+          "Sub_topic_name": "Hash tables",
+          "description": "Understand hash tables: hashing to map keys to indices, collision concept and typical handling approaches (conceptual); create, insert, search and delete at a high level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13j",
+          "Specification_section_sub": "1.4.2(c)",
+          "Sub_topic_name": "Core operations across structures (create/traverse/add/remove)",
+          "description": "Be able to create, traverse, add data to and remove data from the listed data structures (arrays, records/lists/tuples, linked lists, stacks, queues, trees/BSTs, graphs, hash tables) using either arrays/procedural techniques or an object-oriented approach as appropriate.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "1.4.3",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Boolean Algebra",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "1.4.3(a)",
+          "Sub_topic_name": "Defining problems using Boolean logic",
+          "description": "Define and model problems using Boolean logic/expressions; use appropriate operators and clearly express conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "1.4.3(b)",
+          "Sub_topic_name": "Simplifying Boolean expressions with Karnaugh maps",
+          "description": "Manipulate and simplify Boolean expressions, including use of Karnaugh maps (K-maps) to minimise expressions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "1.4.3(c)",
+          "Sub_topic_name": "Boolean algebra laws (De Morgan, distribution, etc.)",
+          "description": "Use Boolean algebra rules to derive/simplify expressions: De Morgan’s Laws, distribution, association, commutation, double negation; show correct symbolic manipulation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "1.4.3(d)",
+          "Sub_topic_name": "Logic gates and truth tables",
+          "description": "Interpret and construct logic gate diagrams and truth tables; map between expressions, truth tables and gate-level implementations (AND, OR, NOT, XOR as required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14e",
+          "Specification_section_sub": "1.4.3(e)",
+          "Sub_topic_name": "D-type flip-flops",
+          "description": "Understand the logic/behaviour of D-type flip-flops (latching on clock edge) and how they store state in digital systems at a conceptual level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14f",
+          "Specification_section_sub": "1.4.3(e)",
+          "Sub_topic_name": "Half adders and full adders",
+          "description": "Understand half adder and full adder logic; be able to derive outputs (Sum/Carry) from truth tables and relate to binary addition circuits.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "1.5.1",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Computing related legislation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "1.5.1(a)",
+          "Sub_topic_name": "Data Protection Act 1998",
+          "description": "Understand requirements and implications of the Data Protection Act 1998 in computing contexts (personal data handling, compliance responsibilities, risks of misuse).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "1.5.1(b)",
+          "Sub_topic_name": "Computer Misuse Act 1990",
+          "description": "Understand the Computer Misuse Act 1990: offences related to unauthorised access, unauthorised modification, and related cybercrime; apply to scenarios.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "1.5.1(c)",
+          "Sub_topic_name": "Copyright, Designs and Patents Act 1988",
+          "description": "Understand the Copyright, Designs and Patents Act 1988 as it applies to software and digital content: ownership, copying/licensing, infringement and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "1.5.1(d)",
+          "Sub_topic_name": "Regulation of Investigatory Powers Act 2000 (RIPA)",
+          "description": "Understand the Regulation of Investigatory Powers Act 2000: lawful interception/monitoring powers and implications for privacy and communications data in computing contexts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "1.5.2",
+      "Strand": "Computer systems (Component 01)",
+      "Topic_name": "Moral and ethical Issues",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Computers in the workforce",
+          "description": "Evaluate moral/social/ethical impacts of computers in the workforce: automation, job displacement/creation, deskilling/reskilling, productivity and wellbeing implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Automated decision making",
+          "description": "Analyse ethical issues of automated decision making: bias, transparency, accountability, explainability, error handling and appeal processes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16c",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Artificial intelligence ethics",
+          "description": "Discuss opportunities and risks of AI: fairness, safety, misuse, reliability, dependency, and societal impacts; apply ethical reasoning to examples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16d",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Environmental effects of digital technology",
+          "description": "Evaluate environmental effects: energy use, e-waste, resource extraction, sustainability of data centres and devices; trade-offs and mitigation strategies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16e",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Censorship and the Internet",
+          "description": "Discuss censorship online: motivations (legal, political, safety), methods, impacts on freedom of speech, access to information, and societal consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16f",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Monitoring behaviour",
+          "description": "Analyse monitoring of behaviour (surveillance, tracking, workplace/school monitoring): consent, proportionality, privacy, security benefits vs harms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16g",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Analysing personal information",
+          "description": "Discuss collection and analysis of personal information (profiling, targeted advertising): data ethics, privacy, informed consent, anonymisation limits and risk.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16h",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Piracy and offensive communications",
+          "description": "Evaluate issues of piracy (intellectual property infringement) and offensive communications online: legal/ethical consequences, moderation, harms and responsibilities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16i",
+          "Specification_section_sub": "1.5.2",
+          "Sub_topic_name": "Layout, colour paradigms and character sets (cultural issues)",
+          "description": "Understand cultural/usability issues in digital systems relating to layout, colour paradigms (meaning/accessibility across cultures) and character sets (language support, inclusivity).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "2.1.1",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Thinking abstractly",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "2.1.1(a)",
+          "Sub_topic_name": "Abstraction: nature",
+          "description": "Understand what abstraction is in computational thinking: reducing complexity by focusing on essential details while omitting irrelevant information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "2.1.1(b)",
+          "Sub_topic_name": "Why abstraction is needed",
+          "description": "Explain why abstraction is needed (manage complexity, improve understanding, enable generalisation/reuse, support modelling).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "2.1.1(c)",
+          "Sub_topic_name": "Abstraction vs reality",
+          "description": "Understand differences between an abstraction and reality; explain limitations/assumptions and how they affect validity of solutions/models.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "2.1.1(d)",
+          "Sub_topic_name": "Creating abstract models",
+          "description": "Devise an abstract model for varied situations (identifying entities, attributes, relationships, constraints) suitable for computational solutions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "2.1.2",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Thinking ahead",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "2.1.2(a)",
+          "Sub_topic_name": "Identify inputs and outputs",
+          "description": "Identify required inputs and outputs for a given problem situation, including data types/ranges where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "2.1.2(b)",
+          "Sub_topic_name": "Preconditions for solutions",
+          "description": "Determine preconditions for devising a solution (assumptions, constraints, required resources, initial states) and how they affect algorithm design.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18c",
+          "Specification_section_sub": "2.1.2(c)",
+          "Sub_topic_name": "Caching: nature, benefits and drawbacks",
+          "description": "Understand caching conceptually (storing results/data for reuse) and evaluate benefits (speed) and drawbacks (staleness, memory usage, invalidation complexity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18d",
+          "Specification_section_sub": "2.1.2(d)",
+          "Sub_topic_name": "Reusable program components",
+          "description": "Explain the need for reusable components (functions, modules, classes) and how reuse supports maintainability, reliability and efficiency of development.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "2.1.3",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Thinking procedurally",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "2.1.3(a)",
+          "Sub_topic_name": "Identify problem components",
+          "description": "Identify the components of a problem (data, processes, constraints) in preparation for computational solution design.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19b",
+          "Specification_section_sub": "2.1.3(b)",
+          "Sub_topic_name": "Identify solution components",
+          "description": "Identify components of a solution (subtasks, modules, data structures, algorithms) and how they fit together.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19c",
+          "Specification_section_sub": "2.1.3(c)",
+          "Sub_topic_name": "Order of steps (sequencing)",
+          "description": "Determine the correct order of steps needed to solve a problem; express as algorithmic sequence and justify ordering constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19d",
+          "Specification_section_sub": "2.1.3(d)",
+          "Sub_topic_name": "Sub-procedures (decomposition into procedures)",
+          "description": "Identify sub-procedures necessary to solve a problem; define clear interfaces (parameters/returns) and responsibilities.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 20,
+      "Specification_section": "2.1.4",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Thinking logically",
+      "Sub_topics": [
+        {
+          "subtopic_id": "20a",
+          "Specification_section_sub": "2.1.4(a)",
+          "Sub_topic_name": "Decision points in solutions",
+          "description": "Identify points in an algorithm/program where decisions must be taken (branching) and the consequences for control flow.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20b",
+          "Specification_section_sub": "2.1.4(b)",
+          "Sub_topic_name": "Logical conditions and outcomes",
+          "description": "Determine logical conditions that affect decision outcomes; construct Boolean expressions and reason about truth conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20c",
+          "Specification_section_sub": "2.1.4(c)",
+          "Sub_topic_name": "Effect of decisions on flow",
+          "description": "Determine how decisions affect program flow (paths, loops, termination) and be able to trace execution for given inputs.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 21,
+      "Specification_section": "2.1.5",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Thinking concurrently",
+      "Sub_topics": [
+        {
+          "subtopic_id": "21a",
+          "Specification_section_sub": "2.1.5(a)",
+          "Sub_topic_name": "Identify concurrent parts of a problem",
+          "description": "Determine which parts of a problem can be tackled at the same time (parallelisable tasks) and identify dependencies/synchronisation needs conceptually.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21b",
+          "Specification_section_sub": "2.1.5(b)",
+          "Sub_topic_name": "Concurrency benefits and trade-offs",
+          "description": "Outline benefits and trade-offs of concurrent processing in context (speed-up, responsiveness vs overheads, complexity, race conditions/resource contention at a conceptual level).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 22,
+      "Specification_section": "2.2.1",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Programming techniques",
+      "Sub_topics": [
+        {
+          "subtopic_id": "22a",
+          "Specification_section_sub": "2.2.1(a)",
+          "Sub_topic_name": "Programming constructs (sequence/iteration/branching)",
+          "description": "Use and reason about core programming constructs: sequence, iteration (count- and condition-controlled), and branching/selection (if/else, switch/case).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22b",
+          "Specification_section_sub": "2.2.1(b)",
+          "Sub_topic_name": "Recursion vs iteration",
+          "description": "Understand recursion: how it works (base case, recursive step, call stack conceptually), where it is used, and compare to iterative approaches (clarity, performance, memory).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22c",
+          "Specification_section_sub": "2.2.1(c)",
+          "Sub_topic_name": "Global vs local variables",
+          "description": "Understand scope: global and local variables; explain lifetime/visibility and risks (side effects) vs benefits (shared state).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22d",
+          "Specification_section_sub": "2.2.1(d)",
+          "Sub_topic_name": "Modularity and subroutines; parameter passing",
+          "description": "Understand modularity via functions/procedures. Use parameters and returns appropriately. Understand passing by value vs by reference and effects on data/mutability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22e",
+          "Specification_section_sub": "2.2.1(e)",
+          "Sub_topic_name": "Using an IDE for development/debugging",
+          "description": "Use an Integrated Development Environment (IDE) to develop and debug programs: breakpoints, stepping, variable inspection, error messages, testing tools.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22f",
+          "Specification_section_sub": "2.2.1(f)",
+          "Sub_topic_name": "Object-oriented techniques in programming",
+          "description": "Apply object-oriented techniques in writing programs (classes/objects, encapsulation, methods/attributes, inheritance/polymorphism where appropriate).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 23,
+      "Specification_section": "2.2.2",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Computational methods",
+      "Sub_topics": [
+        {
+          "subtopic_id": "23a",
+          "Specification_section_sub": "2.2.2(a)",
+          "Sub_topic_name": "What makes a problem computationally solvable",
+          "description": "Explain features that make a problem solvable by computational methods (definable inputs/outputs, algorithmic steps, constraints, decidability/feasibility at A Level).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23b",
+          "Specification_section_sub": "2.2.2(b)",
+          "Sub_topic_name": "Problem recognition",
+          "description": "Recognise and classify problems that can be addressed computationally; identify patterns and suitable known approaches.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23c",
+          "Specification_section_sub": "2.2.2(c)",
+          "Sub_topic_name": "Problem decomposition",
+          "description": "Decompose problems into subproblems suitable for computational solutions; specify interfaces and manage dependencies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23d",
+          "Specification_section_sub": "2.2.2(d)",
+          "Sub_topic_name": "Divide and conquer",
+          "description": "Understand divide and conquer approach: split problem, solve subproblems, combine results; identify where suitable and benefits for efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23e",
+          "Specification_section_sub": "2.2.2(e)",
+          "Sub_topic_name": "Applying abstraction in solutions",
+          "description": "Apply abstraction to simplify problems/solutions (data models, interfaces, generalised algorithms) and justify abstraction choices.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23f",
+          "Specification_section_sub": "2.2.2(f)",
+          "Sub_topic_name": "Backtracking",
+          "description": "Apply backtracking conceptually to solve problems (searching decision tree, undoing choices when constraints violated); recognise suitable problem types (e.g., puzzles/constraint satisfaction).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23g",
+          "Specification_section_sub": "2.2.2(f)",
+          "Sub_topic_name": "Data mining",
+          "description": "Understand data mining at a conceptual level: extracting patterns/knowledge from large datasets; typical tasks (classification, clustering, association) and limitations/ethics link.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23h",
+          "Specification_section_sub": "2.2.2(f)",
+          "Sub_topic_name": "Heuristics",
+          "description": "Understand heuristics as approximate/rule-of-thumb methods to find good solutions where exact methods are too slow; evaluate trade-offs (speed vs optimality).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23i",
+          "Specification_section_sub": "2.2.2(f)",
+          "Sub_topic_name": "Performance modelling",
+          "description": "Understand performance modelling: estimating/analysing system/algorithm performance using models/assumptions; apply to compare options conceptually.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23j",
+          "Specification_section_sub": "2.2.2(f)",
+          "Sub_topic_name": "Pipelining as a computational method",
+          "description": "Apply pipelining concept (staged processing) as a computational method beyond CPU architecture, where relevant to improving throughput in processes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23k",
+          "Specification_section_sub": "2.2.2(f)",
+          "Sub_topic_name": "Visualisation",
+          "description": "Use visualisation conceptually to aid problem solving and understanding of data/algorithms (graphs/charts/diagrams) and evaluate effectiveness.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 24,
+      "Specification_section": "2.3.1",
+      "Strand": "Algorithms and programming (Component 02)",
+      "Topic_name": "Algorithms",
+      "Sub_topics": [
+        {
+          "subtopic_id": "24a",
+          "Specification_section_sub": "2.3.1(a)",
+          "Sub_topic_name": "Algorithm analysis and design for situations",
+          "description": "Analyse requirements and design algorithms appropriate to a given situation; express using pseudocode/structured description and justify design choices.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24b",
+          "Specification_section_sub": "2.3.1(b)",
+          "Sub_topic_name": "Algorithm suitability: time vs space trade-offs",
+          "description": "Evaluate suitability of different algorithms for a task/dataset in terms of execution time and space; understand trade-offs and constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24c",
+          "Specification_section_sub": "2.3.1(c)",
+          "Sub_topic_name": "Big O complexity classes",
+          "description": "Understand measures/methods to determine algorithm efficiency using Big O notation: constant O(1), linear O(n), polynomial O(n^k), logarithmic O(log n), exponential O(2^n) (or similar). Be able to assign/justify complexity for simple algorithms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24d",
+          "Specification_section_sub": "2.3.1(d)",
+          "Sub_topic_name": "Comparing algorithm complexity",
+          "description": "Compare complexities of algorithms and interpret what differences mean for performance as input size scales; select better algorithm for constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24e",
+          "Specification_section_sub": "2.3.1(e)",
+          "Sub_topic_name": "Algorithms for stacks and queues",
+          "description": "Know and apply algorithms for stacks and queues (push/pop/peek; enqueue/dequeue) and be able to trace or implement them with suitable structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24f",
+          "Specification_section_sub": "2.3.1(e)",
+          "Sub_topic_name": "Tree traversal: depth-first (post-order) and breadth-first",
+          "description": "Understand and apply depth-first traversal (post-order) and breadth-first traversal of trees; be able to trace order and implement conceptually (e.g., recursion/stack for DFS, queue for BFS).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24g",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "Bubble sort",
+          "description": "Understand and apply bubble sort; trace passes, swaps and determine complexity; identify when it is inefficient.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24h",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "Insertion sort",
+          "description": "Understand and apply insertion sort; trace insertion steps, determine complexity characteristics and appropriate contexts (nearly sorted lists).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24i",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "Merge sort",
+          "description": "Understand merge sort as divide-and-conquer; trace splitting/merging, understand time/space complexity implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24j",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "Quick sort",
+          "description": "Understand quick sort; partitioning around pivot, recursion; discuss average vs worst-case complexity conceptually and recursion depth considerations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24k",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "Linear search",
+          "description": "Understand linear search; trace and identify time complexity O(n); know when used (unsorted data).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24l",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "Binary search",
+          "description": "Understand binary search on sorted data; trace midpoints and comparisons; identify time complexity O(log n) and precondition of sorted list.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24m",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "Dijkstra’s shortest path algorithm",
+          "description": "Understand and apply Dijkstra’s algorithm for shortest paths in weighted graphs with non-negative edge weights; trace steps (tentative distances, visited set) and interpret results.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24n",
+          "Specification_section_sub": "2.3.1(f)",
+          "Sub_topic_name": "A* algorithm",
+          "description": "Understand A* pathfinding: uses cost-so-far + heuristic estimate; explain role of heuristic, admissibility conceptually, and compare with Dijkstra in purpose/performance.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 25,
+      "Specification_section": "3.1",
+      "Strand": "Programming project (Component 03/04)",
+      "Topic_name": "Analysis of the problem",
+      "Sub_topics": [
+        {
+          "subtopic_id": "25a",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Problem identification for computational solution",
+          "description": "Describe and justify features that make the chosen project problem solvable by computational methods, and explain why it is amenable to a computational approach.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25b",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Stakeholders and user needs",
+          "description": "Identify and describe stakeholders (individuals, groups, or personas) who have an interest in the solution; explain how they will use it and why it meets their needs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25c",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Researching similar solutions and approaches",
+          "description": "Research the problem and existing/similar solutions to identify suitable approaches; describe essential features of a computational solution and justify choices; explain limitations of the proposed solution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25d",
+          "Specification_section_sub": "3.1.4",
+          "Sub_topic_name": "Requirements and success criteria",
+          "description": "Specify and justify solution requirements (including hardware/software configuration if appropriate) and identify measurable, justified success criteria for evaluating the final solution.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 26,
+      "Specification_section": "3.2",
+      "Strand": "Programming project (Component 03/04)",
+      "Topic_name": "Design of the solution",
+      "Sub_topics": [
+        {
+          "subtopic_id": "26a",
+          "Specification_section_sub": "3.2.1",
+          "Sub_topic_name": "Decomposition of the problem (project)",
+          "description": "Break down the project problem into smaller parts suitable for computational solutions; justify decomposition decisions and how parts support an overall solution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26b",
+          "Specification_section_sub": "3.2.2(a)",
+          "Sub_topic_name": "Solution structure (project design)",
+          "description": "Explain and justify the overall structure/architecture of the solution (modules/components/classes, data flow, interfaces) appropriate to the problem and users.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26c",
+          "Specification_section_sub": "3.2.2(b)",
+          "Sub_topic_name": "Algorithms for solution parts",
+          "description": "Describe solution parts using algorithms (pseudocode/flow/structured English) and justify how they integrate into a complete solution to the problem.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26d",
+          "Specification_section_sub": "3.2.2(c)",
+          "Sub_topic_name": "Usability features (project design)",
+          "description": "Describe usability features to be included (UI layout, accessibility, feedback, navigation, error messages) and relate to stakeholder needs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26e",
+          "Specification_section_sub": "3.2.2(d)",
+          "Sub_topic_name": "Key variables/data structures/classes and validation",
+          "description": "Identify key variables, data structures and/or classes; justify choices and specify necessary validation (type/range checks, presence checks, constraints).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26f",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Test plan and test data selection",
+          "description": "Identify and justify test data for iterative development and post-development testing, including normal/boundary/erroneous cases as appropriate; explain how tests support validation of requirements and success criteria.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 27,
+      "Specification_section": "3.3",
+      "Strand": "Programming project (Component 03/04)",
+      "Topic_name": "Developing the solution",
+      "Sub_topics": [
+        {
+          "subtopic_id": "27a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Iterative development with evidence and prototypes",
+          "description": "Provide annotated evidence of each stage of iterative development (aligned to agile principles), including prototype versions; justify key decisions and show progression from analysis/design to implementation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27b",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Testing during development and remedial actions",
+          "description": "Provide annotated evidence of testing at each stage of development with justification for each test; record failed tests and document remedial actions taken with reasoning/justification.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 28,
+      "Specification_section": "3.4",
+      "Strand": "Programming project (Component 03/04)",
+      "Topic_name": "Evaluation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "28a",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Post-development testing: function, robustness and usability",
+          "description": "Provide annotated evidence of end-of-development testing for robustness and function, plus usability testing via user feedback; explain how evidence was collected and what it shows.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28b",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Evaluate against success criteria",
+          "description": "Use development and post-development test evidence to evaluate the completed solution against the measurable success criteria defined in analysis; state whether each criterion is met/partially met/unmet with evidence-based reasoning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28c",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Evaluate usability features in final product",
+          "description": "Provide annotated evidence of implemented usability features and comment on their effectiveness; identify improvements where usability is only partially successful.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28d",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Maintainability and further development",
+          "description": "Discuss maintainability (code structure, readability, documentation, modularity, naming, extensibility) and propose realistic further development/improvements addressing limitations and new requirements.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

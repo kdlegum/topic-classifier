@@ -1,0 +1,1233 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Mathematics",
+  "Exam Board": "AQA",
+  "Specification": "7357",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "3.2",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "A: Proof",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "A1",
+          "Sub_topic_name": "Structure of proof and proof methods",
+          "description": "Understand and use the structure of mathematical proof: proceed from given assumptions through a series of logically connected steps to a conclusion. Use proof by deduction and proof by exhaustion. Disprove statements by counterexample. Use proof by contradiction, including proofs of the irrationality of √2 and the infinity of primes, and apply contradiction to unfamiliar proofs.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3.3",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "B: Algebra and functions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "B1",
+          "Sub_topic_name": "Laws of indices (rational powers)",
+          "description": "Understand and use the laws of indices for all rational exponents, including a^x a^y ≡ a^(x+y), a^x ÷ a^y ≡ a^(x−y), and (a^x)^y ≡ a^(xy) for rational x,y (as applicable).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "B2",
+          "Sub_topic_name": "Surds and rationalising denominators",
+          "description": "Use and manipulate surds, including simplifying expressions involving surds and rationalising the denominator (eg removing surds from denominators by multiplying by a suitable surd/conjugate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "B3",
+          "Sub_topic_name": "Quadratics: graphs and discriminant",
+          "description": "Work with quadratic functions and their graphs. Use the discriminant b^2−4ac to determine conditions for real, repeated, or complex (non-real) roots; interpret these conditions in relation to intersections with the x-axis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "B3",
+          "Sub_topic_name": "Quadratics: completing the square",
+          "description": "Complete the square for a quadratic ax^2+bx+c to rewrite it in vertex form; use this to find turning points/vertex and support graph sketching and solving problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "B3",
+          "Sub_topic_name": "Solving quadratic equations (including in a function of the unknown)",
+          "description": "Solve quadratic equations, including cases where the quadratic is in a function of the unknown (eg solve f(x)^2+pf(x)+q=0 by substitution). Use appropriate methods such as factorisation, completing the square, or the quadratic formula.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "B4",
+          "Sub_topic_name": "Simultaneous equations (linear + quadratic)",
+          "description": "Solve simultaneous equations in two variables by elimination and by substitution, including systems consisting of one linear equation and one quadratic equation; interpret solutions as intersection points.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "B5",
+          "Sub_topic_name": "Linear inequalities in one variable",
+          "description": "Solve linear inequalities in a single variable, including inequalities with brackets and fractions; express solutions using correct logical language (‘and’, ‘or’) and/or set notation and interval notation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "B5",
+          "Sub_topic_name": "Quadratic inequalities in one variable",
+          "description": "Solve quadratic inequalities in a single variable (including with brackets and fractions) and interpret solutions graphically (eg via sign diagrams/graphs of quadratics). Express solution sets using ‘and’/‘or’ or set/interval notation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "B5",
+          "Sub_topic_name": "Inequalities in two variables: graphical regions",
+          "description": "Represent and interpret linear and quadratic inequalities graphically, including regions defined by inequalities such as y > x + 1 and y > ax^2 + bx + c.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "B6",
+          "Sub_topic_name": "Polynomial manipulation: expand, collect, factorise",
+          "description": "Manipulate polynomials algebraically: expand brackets, collect like terms, and factorise expressions (including common factor, difference of squares, quadratics etc as appropriate at A level).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "B6",
+          "Sub_topic_name": "Algebraic division (polynomials)",
+          "description": "Carry out simple algebraic division of polynomials; divide by linear expressions only where specified. Use division results to simplify expressions and support factorisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "B6",
+          "Sub_topic_name": "Factor theorem",
+          "description": "Use the factor theorem: relate factors (x−a) of a polynomial f(x) to roots via f(a)=0; use this to test for factors and support factorisation/solving polynomial equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "B6",
+          "Sub_topic_name": "Simplifying rational expressions",
+          "description": "Simplify rational expressions by factorising and cancelling, and by algebraic division (division by linear expressions only). Understand restrictions on the domain where denominators are zero.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "B7",
+          "Sub_topic_name": "Graphs of functions: sketching standard curves and asymptotes",
+          "description": "Understand and use graphs of functions; sketch curves defined by simple equations including polynomials, the modulus of a linear function y=|mx+c| (or equivalent), y=a/x and y=a/x^2, including identifying and sketching their vertical and horizontal asymptotes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "B7",
+          "Sub_topic_name": "Graphical solution of equations (intersections)",
+          "description": "Interpret algebraic solutions of equations graphically; use intersection points of graphs to solve equations (eg solve f(x)=g(x) by graphing y=f(x) and y=g(x)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "B7",
+          "Sub_topic_name": "Proportional relationships and graphs",
+          "description": "Understand and use proportional relationships (eg y∝x, y∝1/x, y∝x^n where relevant) and their graphs; interpret proportionality constants and graph shapes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "B8",
+          "Sub_topic_name": "Composite functions",
+          "description": "Understand and use composite functions: form and evaluate (g∘f)(x)=g(f(x)); understand domain restrictions for composites.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "B8",
+          "Sub_topic_name": "Inverse functions and inverse graphs",
+          "description": "Find and use inverse functions f^−1 where they exist; understand conditions for invertibility (one-to-one on a domain). Use graphs of inverses, including reflection in the line y=x, and domain/range interchange.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "B9",
+          "Sub_topic_name": "Graph transformations (y = a f(x), f(x)+a, f(x+a), f(ax))",
+          "description": "Understand the effect of simple transformations on y=f(x) and sketch associated graphs: vertical scaling y=a f(x); vertical translation y=f(x)+a; horizontal translation y=f(x+a); horizontal scaling y=f(ax); and combinations of these transformations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "B10",
+          "Sub_topic_name": "Partial fractions (up to squared linear terms, max 3 terms)",
+          "description": "Decompose rational functions into partial fractions where denominators are no more complicated than squared linear terms and with no more than 3 terms; numerators constant or linear (eg A/(x−a)+B/(x−a)^2+C/(x−b)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "B11",
+          "Sub_topic_name": "Functions in modelling",
+          "description": "Use functions to model situations; consider limitations of a model and possible refinements (eg domain restrictions, suitability of functional form, assumptions).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.4",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "C: Coordinate geometry in the ( x , y ) plane",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "C1",
+          "Sub_topic_name": "Straight line equations (forms)",
+          "description": "Understand and use the equation of a straight line, including point–slope form y−y1 = m(x−x1) and general form ax+by+c=0. Interpret gradient m and intercepts where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "C1",
+          "Sub_topic_name": "Parallel and perpendicular line conditions",
+          "description": "Use gradient conditions for straight lines to be parallel (m1=m2) or perpendicular (m1 m2 = −1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "C1",
+          "Sub_topic_name": "Straight-line models in context",
+          "description": "Use straight line models in a variety of contexts (eg interpreting slope as a rate, intercepts as initial values, forming models from data/conditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "C2",
+          "Sub_topic_name": "Circle equation in centre-radius form",
+          "description": "Understand and use the equation of a circle in the form (x−a)^2 + (y−b)^2 = r^2; interpret centre (a,b) and radius r.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "C2",
+          "Sub_topic_name": "Completing the square for circles",
+          "description": "Complete the square to rewrite a general circle equation into (x−a)^2+(y−b)^2=r^2 and hence find the centre and radius.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "C2",
+          "Sub_topic_name": "Angle in a semicircle property",
+          "description": "Use the circle property that the angle in a semicircle is a right angle in coordinate geometry/proof/problem contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "C2",
+          "Sub_topic_name": "Perpendicular from centre to chord bisects chord",
+          "description": "Use the property that the perpendicular from the centre of a circle to a chord bisects the chord, in coordinate geometry arguments and problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "C2",
+          "Sub_topic_name": "Radius–tangent perpendicularity",
+          "description": "Use the property that the radius at a point on the circumference is perpendicular to the tangent at that point; apply to finding tangent equations and related geometry.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "C3",
+          "Sub_topic_name": "Parametric equations and conversion",
+          "description": "Understand and use parametric equations of curves; convert between Cartesian and parametric forms (eg eliminate parameter t, introduce parameterisation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "C4",
+          "Sub_topic_name": "Parametric modelling",
+          "description": "Use parametric equations in modelling in a variety of contexts; interpret parameters and constraints within a model.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.5",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "D: Sequences and series",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "D1",
+          "Sub_topic_name": "Binomial expansion for positive integer n",
+          "description": "Understand and use the binomial expansion of (a+bx)^n for positive integer n. Use factorial notation n!, binomial coefficients nCr and (n r). Recognise the link between binomial coefficients and binomial probabilities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "D1",
+          "Sub_topic_name": "Binomial expansion for rational n (including approximation and validity)",
+          "description": "Extend the binomial expansion to any rational n, including use for approximation. Know the expansion is valid for |bx/a| < 1. (Proof of validity not required.)",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "D2",
+          "Sub_topic_name": "Sequences defined by nth term formula",
+          "description": "Work with sequences given by a formula for the nth term u_n (or x_n), including evaluating terms and analysing behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "D2",
+          "Sub_topic_name": "Iterative/recursive sequences x_{n+1}=f(x_n)",
+          "description": "Work with sequences generated by a simple recurrence relation of the form x_{n+1}=f(x_n); compute terms and interpret behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "D2",
+          "Sub_topic_name": "Monotonic and periodic sequences",
+          "description": "Recognise and work with increasing sequences, decreasing sequences, and periodic sequences; determine/justify sequence type from definition or recurrence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "D3",
+          "Sub_topic_name": "Sigma notation",
+          "description": "Understand and use sigma notation (∑) for sums of series, including manipulating and evaluating standard sums.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "D4",
+          "Sub_topic_name": "Arithmetic sequences: nth term",
+          "description": "Understand and work with arithmetic sequences; use the nth term formula u_n = a + (n−1)d.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "D4",
+          "Sub_topic_name": "Arithmetic series: sum to n terms",
+          "description": "Understand and work with arithmetic series; use the formula for the sum to n terms S_n (eg S_n = n/2 (2a+(n−1)d) or equivalent).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "D5",
+          "Sub_topic_name": "Geometric sequences: nth term",
+          "description": "Understand and work with geometric sequences; use the nth term formula u_n = ar^(n−1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "D5",
+          "Sub_topic_name": "Finite geometric series: sum",
+          "description": "Find the sum of a finite geometric series S_n, using the standard formula and interpretation of common ratio r.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "D5",
+          "Sub_topic_name": "Infinite geometric series: convergence and sum to infinity",
+          "description": "Understand and use the sum to infinity S_∞ of a convergent geometric series, including conditions |r| < 1 (use modulus notation) and S_∞ = a/(1−r) where applicable.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "D6",
+          "Sub_topic_name": "Sequences and series in modelling",
+          "description": "Use sequences and series to model situations; form models (arithmetic/geometric/iterative) and interpret parameters and limitations in context.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.6",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "E: Trigonometry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "E1",
+          "Sub_topic_name": "Trig definitions for all arguments",
+          "description": "Understand and use the definitions of sine, cosine and tangent for all arguments (including negative angles and angles outside 0 to 2π), with appropriate use of unit circle/graphs/symmetries.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "E1",
+          "Sub_topic_name": "Sine rule, cosine rule, triangle area (1/2 ab sin C)",
+          "description": "Use the sine rule and cosine rule in triangle problems. Use the area formula for a triangle: Area = 1/2 ab sin C.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "E1",
+          "Sub_topic_name": "Radian measure; arc length and sector area",
+          "description": "Work with radian measure; convert between degrees and radians when needed. Use arc length s = rθ and sector area A = 1/2 r^2 θ (θ in radians).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "E2",
+          "Sub_topic_name": "Small-angle approximations",
+          "description": "Understand and use standard small-angle approximations (θ in radians): sinθ ≈ θ, cosθ ≈ 1 − θ^2/2, tanθ ≈ θ.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "E3",
+          "Sub_topic_name": "Graphs of sin, cos, tan; symmetry and periodicity",
+          "description": "Understand and use the sine, cosine and tangent functions and their graphs, including symmetries (odd/even where appropriate) and periodicity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "E3",
+          "Sub_topic_name": "Exact trig values at standard angles",
+          "description": "Know and use exact values of sin and cos for 0, π/6, π/4, π/3, π/2, π and multiples thereof; and exact values of tan for 0, π/6, π/4, π/3, π and multiples thereof.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "E4",
+          "Sub_topic_name": "sec, cosec, cot and inverse trig functions",
+          "description": "Understand and use definitions of secant, cosecant and cotangent; and of arcsin, arccos and arctan. Use their relationships to sin, cos, tan; understand their graphs and their restricted ranges and domains.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "E5",
+          "Sub_topic_name": "tan identity and Pythagorean identities",
+          "description": "Understand and use tanθ ≡ sinθ/cosθ. Understand and use identities: sin^2θ + cos^2θ ≡ 1; sec^2θ ≡ 1 + tan^2θ; cosec^2θ ≡ 1 + cot^2θ.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "E6",
+          "Sub_topic_name": "Angle addition/subtraction formulae",
+          "description": "Use formulae for sin(A±B), cos(A±B), tan(A±B); understand geometrical proofs of these formulae (ability to apply and interpret the proofs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "E6",
+          "Sub_topic_name": "Double-angle formulae",
+          "description": "Understand and use double-angle formulae, including sin2A ≡ 2sinAcosA, cos2A ≡ cos^2A − sin^2A, and tan2A ≡ 2tanA/(1−tan^2A) (or equivalent forms).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "E6",
+          "Sub_topic_name": "R-form for a cosθ + b sinθ",
+          "description": "Understand and use expressions of the form a cosθ + b sinθ in equivalent ‘R-form’: r cos(θ ± α) or r sin(θ ± α), including finding r and α.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "E7",
+          "Sub_topic_name": "Solving trig equations in an interval",
+          "description": "Solve simple trigonometric equations in a given interval, including quadratic equations in sin, cos, tan and equations involving multiples of the unknown angle (eg sin2x, cos3x).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "E8",
+          "Sub_topic_name": "Proofs with trig identities",
+          "description": "Construct proofs involving trigonometric functions and identities (eg show two expressions are identical using known identities and algebraic manipulation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "E9",
+          "Sub_topic_name": "Trig in context (including vectors, kinematics, forces)",
+          "description": "Use trigonometric functions to solve problems in context, including problems involving vectors, kinematics and forces (eg resolving components, directions, bearings/angles).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.7",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "F: Exponentials and logarithms",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "F1",
+          "Sub_topic_name": "Exponential function a^x",
+          "description": "Know and use the function a^x (a>0) and its graph; understand key features such as intercept (0,1), monotonicity, and asymptote y=0.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "F1",
+          "Sub_topic_name": "Natural exponential e^x",
+          "description": "Know and use the function e^x and its graph; understand key features and use in algebra/calculus contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "F2",
+          "Sub_topic_name": "Derivative/gradient of e^{kx} and exponential modelling rationale",
+          "description": "Know that the gradient (derivative) of e^{kx} is k e^{kx}; use this to understand why exponential functions are suitable models in many applications (rate of change proportional to amount).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "F3",
+          "Sub_topic_name": "Logarithms as inverses; log_a(x) definition",
+          "description": "Know and use the definition of log_a x as the inverse of a^x (a>0), with domain x≥0 as specified; relate a^n=x to n=log_a x.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "F3",
+          "Sub_topic_name": "Natural logarithm ln x and its graph",
+          "description": "Know and use ln x and its graph; understand domain x>0, range ℝ, and key features such as ln 1=0.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "F3",
+          "Sub_topic_name": "ln x as inverse of e^x",
+          "description": "Know and use that ln x is the inverse function of e^x; use inverse relationships e^{ln x}=x (x>0) and ln(e^x)=x.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "F4",
+          "Sub_topic_name": "Laws of logarithms",
+          "description": "Understand and use log laws: log_a x + log_a y ≡ log_a(xy); log_a x − log_a y ≡ log_a(x/y); k log_a x ≡ log_a(x^k), including cases such as k=−1 and k=−1/2.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "F5",
+          "Sub_topic_name": "Solve equations a^x = b",
+          "description": "Solve exponential equations of the form a^x = b, typically by taking logarithms (including natural logs) and handling cases with exact/approximate solutions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "F6",
+          "Sub_topic_name": "Logarithmic graphs to estimate parameters (power/exponential laws)",
+          "description": "Use logarithmic graphs to estimate parameters in relationships y = a x^n and y = k b^x, given data for x and y (eg linearise using logs: ln y = ln a + n ln x; ln y = ln k + x ln b).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "F7",
+          "Sub_topic_name": "Exponential growth/decay modelling (and limitations)",
+          "description": "Understand and use exponential growth and decay models in context (eg continuous compound interest using e, radioactive decay, drug concentration decay, population growth). Consider limitations of exponential models and possible refinements/assumptions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "3.8",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "G: Differentiation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "G1",
+          "Sub_topic_name": "Derivative as gradient and as a limit; rate of change",
+          "description": "Understand and use the derivative of f(x) as the gradient of the tangent to y=f(x) at a general point (x,y). Understand the gradient of the tangent as a limit (difference quotient). Interpret derivative as a rate of change.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "G1",
+          "Sub_topic_name": "Sketching the gradient function",
+          "description": "Given a curve y=f(x), sketch the gradient function y=f′(x) using knowledge of where f increases/decreases and the size/sign of gradients.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "G1",
+          "Sub_topic_name": "Second derivative interpretation; concavity and inflection",
+          "description": "Understand and use second derivatives. Interpret f″(x) as the rate of change of gradient; connect sign of f″ to convex/concave sections and identify points of inflection.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "G1",
+          "Sub_topic_name": "Differentiation from first principles (x^n, sin x, cos x)",
+          "description": "Differentiate from first principles (using limits) for small positive integer powers of x and for sin x and cos x.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "G2",
+          "Sub_topic_name": "Power rule for rational n",
+          "description": "Differentiate x^n for rational n, and related constant multiples, sums and differences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "G2",
+          "Sub_topic_name": "Differentiate exponentials e^{kx} and a^{kx}",
+          "description": "Differentiate e^{kx} and a^{kx} (a>0), using appropriate rules and constants; include constant multiples and sums/differences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "G2",
+          "Sub_topic_name": "Differentiate trig functions with kx arguments",
+          "description": "Differentiate sin(kx), cos(kx), tan(kx) and related sums, differences and constant multiples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "G2",
+          "Sub_topic_name": "Derivative of ln x",
+          "description": "Understand and use d/dx(ln x)=1/x (for x>0 in standard real context) and apply in differentiation problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "G3",
+          "Sub_topic_name": "Tangents and normals",
+          "description": "Apply differentiation to find gradients, equations of tangents and equations of normals at points on curves.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "G3",
+          "Sub_topic_name": "Stationary points and optimisation (max/min)",
+          "description": "Use differentiation to find stationary points and determine local maxima/minima; apply to optimisation problems (including in context).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "G3",
+          "Sub_topic_name": "Increasing/decreasing intervals",
+          "description": "Identify where functions are increasing or decreasing using the sign of f′(x) and interpret results.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "G3",
+          "Sub_topic_name": "Points of inflection",
+          "description": "Find and interpret points of inflection using f″(x) and/or changes in concavity, and apply in curve sketching and modelling contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "G4",
+          "Sub_topic_name": "Product rule",
+          "description": "Differentiate products using the product rule: d/dx[f(x)g(x)] = f′(x)g(x)+f(x)g′(x), including with constants and sums.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "G4",
+          "Sub_topic_name": "Quotient rule",
+          "description": "Differentiate quotients using the quotient rule: d/dx[f(x)/g(x)] = (f′g−fg′)/g^2, and apply in algebraic/trig/log contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "G4",
+          "Sub_topic_name": "Chain rule",
+          "description": "Differentiate composite functions using the chain rule: d/dx f(g(x)) = f′(g(x)) g′(x), including functions with kx arguments and exponentials/logs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "G4",
+          "Sub_topic_name": "Connected rates of change",
+          "description": "Solve problems involving connected rates of change by differentiating with respect to time or another parameter and using the chain rule; interpret answers in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7q",
+          "Specification_section_sub": "G4",
+          "Sub_topic_name": "Differentiating inverse functions",
+          "description": "Differentiate inverse functions where appropriate, using relationships between f and f^−1 and/or implicit differentiation methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7r",
+          "Specification_section_sub": "G5",
+          "Sub_topic_name": "Implicit differentiation (simple)",
+          "description": "Differentiate simple functions and relations defined implicitly (first derivative only), eg dy/dx found from F(x,y)=0 by differentiating both sides w.r.t. x.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7s",
+          "Specification_section_sub": "G5",
+          "Sub_topic_name": "Parametric differentiation (first derivative)",
+          "description": "Differentiate relations defined parametrically to find dy/dx = (dy/dt)/(dx/dt), for first derivative only.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7t",
+          "Specification_section_sub": "G6",
+          "Sub_topic_name": "Constructing simple differential equations",
+          "description": "Construct simple differential equations in pure mathematics and in context (eg kinematics, population growth, modelling price–demand), translating statements about rates of change into equations such as dy/dx = ky.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "3.9",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "H: Integration",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "H1",
+          "Sub_topic_name": "Fundamental Theorem of Calculus",
+          "description": "Know and use the Fundamental Theorem of Calculus, linking differentiation and integration; use antiderivatives to evaluate definite integrals.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "H2",
+          "Sub_topic_name": "Integrate x^n (n ≠ −1)",
+          "description": "Integrate x^n for n≠−1 and related sums, differences and constant multiples: ∫x^n dx = x^(n+1)/(n+1) + C.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "H2",
+          "Sub_topic_name": "Integrate e^{kx}",
+          "description": "Integrate e^{kx} and related constant multiples/sums: ∫e^{kx} dx = (1/k)e^{kx}+C (k≠0).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "H2",
+          "Sub_topic_name": "Integrate 1/x",
+          "description": "Integrate 1/x: ∫(1/x) dx = ln|x| + C, and apply appropriately with domain considerations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "H2",
+          "Sub_topic_name": "Integrate sin(kx) and cos(kx)",
+          "description": "Integrate sin(kx) and cos(kx) and related sums/differences/constant multiples, eg ∫cos(kx)dx = (1/k)sin(kx)+C and ∫sin(kx)dx = −(1/k)cos(kx)+C.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "H3",
+          "Sub_topic_name": "Definite integrals (evaluation)",
+          "description": "Evaluate definite integrals using antiderivatives and correct use of limits: ∫_a^b f(x) dx.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "H3",
+          "Sub_topic_name": "Area under a curve and between curves",
+          "description": "Use a definite integral to find area under a curve (including where y≥0) and the area between two curves (including finding intersections and integrating the difference).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "H4",
+          "Sub_topic_name": "Integration as limit of a sum",
+          "description": "Understand and use integration as the limit of a sum (Riemann sums), linking Σ f(x_i)Δx to ∫ f(x) dx.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "H5",
+          "Sub_topic_name": "Integration by substitution (simple cases)",
+          "description": "Carry out simple cases of integration by substitution; choose a suitable substitution leading to an integrable function (limited to cases where one substitution suffices). Understand as inverse of the chain rule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "H5",
+          "Sub_topic_name": "Integration by parts (simple cases)",
+          "description": "Carry out integration by parts, possibly with more than one application, excluding reduction formulae. Understand as inverse of the product rule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "H6",
+          "Sub_topic_name": "Integrate using partial fractions (linear denominators)",
+          "description": "Integrate functions by first decomposing into partial fractions with linear factors in the denominator (as set up in algebra content) and integrating resulting terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "H7",
+          "Sub_topic_name": "Solve separable first-order differential equations",
+          "description": "Evaluate analytical solutions of simple first-order differential equations with separable variables, including finding particular solutions using initial conditions. Separation may require factorisation involving a common factor.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "H8",
+          "Sub_topic_name": "Interpret differential equation solutions in context",
+          "description": "Interpret the solution of a differential equation in context, including identifying limitations of the solution and links to kinematics (eg interpreting constants/initial conditions and model validity).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "3.10",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "I: Numerical methods",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "I1",
+          "Sub_topic_name": "Change of sign root location",
+          "description": "Locate roots of f(x)=0 by considering changes of sign of f(x) in an interval of x on which f(x) is sufficiently well-behaved; use this to bracket roots.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "I1",
+          "Sub_topic_name": "Failure of change of sign methods",
+          "description": "Understand how change of sign methods can fail (eg roots of even multiplicity where f does not change sign, discontinuities, or intervals where f is not well-behaved).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "I2",
+          "Sub_topic_name": "Simple iterative methods and diagrams",
+          "description": "Solve equations approximately using simple iterative methods; draw and interpret associated cobweb and staircase diagrams for iterations x_{n+1}=g(x_n).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "I2",
+          "Sub_topic_name": "Newton–Raphson method",
+          "description": "Solve equations using the Newton–Raphson method; form the iteration x_{n+1}=x_n − f(x_n)/f′(x_n) and apply to approximate roots to a required accuracy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "I2",
+          "Sub_topic_name": "Recurrence relations x_{n+1}=g(x_n) and convergence issues",
+          "description": "Use other recurrence relations of the form x_{n+1}=g(x_n). Understand how iterative methods can fail (eg divergence, oscillation, convergence to wrong fixed point, issues with starting values).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "I3",
+          "Sub_topic_name": "Trapezium rule for numerical integration",
+          "description": "Understand and use numerical integration, including the trapezium rule, to estimate ∫_a^b f(x) dx and hence approximate area under a curve.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "I3",
+          "Sub_topic_name": "Bounds/limits for numerical integration estimates",
+          "description": "Estimate the approximate area under a curve and determine limits/bounds that it must lie between, based on properties such as concavity and trapezium rule behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "I4",
+          "Sub_topic_name": "Numerical methods in context",
+          "description": "Use numerical methods (root finding, iteration, numerical integration) to solve problems in context; interpret approximations and accuracy in applied settings.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "3.11",
+      "Strand": "Pure Mathematics",
+      "Topic_name": "J: Vectors",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "J1",
+          "Sub_topic_name": "Vectors in 2D and 3D",
+          "description": "Use vectors in two dimensions and in three dimensions; represent vectors in component form (eg ai+bj(+ck)) and as column vectors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "J2",
+          "Sub_topic_name": "Magnitude and direction; conversions",
+          "description": "Calculate magnitude and direction of a vector; convert between component form and magnitude/direction form where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "J3",
+          "Sub_topic_name": "Vector addition and scalar multiplication (geometric meaning)",
+          "description": "Add vectors diagrammatically and perform algebraic operations of vector addition and multiplication by scalars; understand geometrical interpretations (triangle/parallelogram rules, scaling).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "J4",
+          "Sub_topic_name": "Position vectors and distance between points",
+          "description": "Understand and use position vectors; calculate the distance between two points represented by position vectors (eg |AB| from r_B−r_A).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "J5",
+          "Sub_topic_name": "Vectors to solve problems (pure and applied)",
+          "description": "Use vectors to solve problems in pure mathematics and in context, including forces and kinematics (eg resultant displacement/velocity, resolving, modelling directions).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "3.12",
+      "Strand": "Statistics",
+      "Topic_name": "K: Statistical sampling",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "K1",
+          "Sub_topic_name": "Population vs sample; informal inference",
+          "description": "Understand and use the terms ‘population’ and ‘sample’. Use samples to make informal inferences about the population, recognising variability between samples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "K1",
+          "Sub_topic_name": "Sampling techniques: simple random and opportunity sampling",
+          "description": "Understand and use sampling techniques including simple random sampling and opportunity sampling; describe how these samples could be obtained in practice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "K1",
+          "Sub_topic_name": "Selecting/critiquing sampling techniques",
+          "description": "Select or critique sampling techniques in context, recognising bias and practical constraints; understand that different samples can lead to different conclusions about the population.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "3.13",
+      "Strand": "Statistics",
+      "Topic_name": "L: Data presentation and interpretation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "L1",
+          "Sub_topic_name": "Single-variable diagrams; histograms and area=freq",
+          "description": "Interpret diagrams for single-variable data, including understanding that area in a histogram represents frequency (or relative frequency via frequency density). Connect interpretation to probability distributions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "L2",
+          "Sub_topic_name": "Scatter diagrams and regression lines (interpretation only)",
+          "description": "Interpret scatter diagrams and regression lines for bivariate data, including recognising scatter diagrams that include distinct sections of the population. (Calculations involving regression lines are excluded.)",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "L2",
+          "Sub_topic_name": "Correlation and causation",
+          "description": "Understand informal interpretation of correlation strength/direction from scatter plots. Understand that correlation does not imply causation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "L3",
+          "Sub_topic_name": "Measures of central tendency and variation; standard deviation",
+          "description": "Interpret measures of central tendency and variation, extending to standard deviation; choose and interpret appropriate measures for a dataset and context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "L3",
+          "Sub_topic_name": "Calculating standard deviation (including from summary stats)",
+          "description": "Calculate standard deviation (and related variation measures) including calculation from summary statistics using calculator technology and/or formulae provided by calculator outputs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "L4",
+          "Sub_topic_name": "Outliers: recognising and interpreting",
+          "description": "Recognise and interpret possible outliers in data sets and statistical diagrams; understand the effect of outliers on summary measures and conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "L4",
+          "Sub_topic_name": "Choosing/critiquing data presentation methods",
+          "description": "Select or critique data presentation techniques in the context of a statistical problem (eg suitability of histogram vs box plot vs scatter).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "L4",
+          "Sub_topic_name": "Cleaning data (missing data, errors, outliers)",
+          "description": "Clean data, including dealing with missing data, errors and outliers; understand implications of removal/correction choices for interpretation.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "3.14",
+      "Strand": "Statistics",
+      "Topic_name": "M: Probability",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "M1",
+          "Sub_topic_name": "Mutually exclusive and independent events",
+          "description": "Understand and use mutually exclusive events and independent events when calculating probabilities; apply P(A∩B)=0 for mutually exclusive events and P(A∩B)=P(A)P(B) for independent events as appropriate. Link ideas to discrete and continuous distributions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "M2",
+          "Sub_topic_name": "Conditional probability representations",
+          "description": "Understand and use conditional probability using tree diagrams, Venn diagrams and two-way tables; interpret conditional probabilities in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "M2",
+          "Sub_topic_name": "Conditional probability formula",
+          "description": "Understand and use the conditional probability formula: P(A|B) = P(A∩B)/P(B) (with P(B)>0).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "M3",
+          "Sub_topic_name": "Probability modelling assumptions and critique",
+          "description": "Model situations with probability; critique assumptions made (eg independence, constant probability) and explain likely effects of more realistic assumptions on calculated probabilities.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "3.15",
+      "Strand": "Statistics",
+      "Topic_name": "N: Statistical distributions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "N1",
+          "Sub_topic_name": "Discrete distributions; binomial model and probabilities",
+          "description": "Understand and use simple discrete probability distributions as models. Use the binomial distribution B(n,p) as a model; calculate probabilities using binomial probabilities (mean/variance of discrete random variables excluded).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "N2",
+          "Sub_topic_name": "Normal distribution model and probabilities",
+          "description": "Understand and use the Normal distribution N(μ,σ^2) as a model; find probabilities using the Normal distribution (including standardising with Z=(X−μ)/σ and using Φ).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "N2",
+          "Sub_topic_name": "Links between Normal, histograms, μ/σ, inflection points, and binomial",
+          "description": "Link the Normal distribution to histograms, mean and standard deviation, points of inflection of the Normal curve, and to the binomial distribution (eg Normal approximation ideas at a conceptual level).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "N3",
+          "Sub_topic_name": "Choosing an appropriate distribution model",
+          "description": "Select an appropriate probability distribution for a context with appropriate reasoning, including recognising when the binomial or Normal model may not be appropriate (eg dependence, changing p, non-Normal shape).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "3.16",
+      "Strand": "Statistics",
+      "Topic_name": "O: Statistical hypothesis testing",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "O1",
+          "Sub_topic_name": "Hypothesis testing language and concepts",
+          "description": "Understand and apply the language of statistical hypothesis testing (developed through a binomial model): null hypothesis H0, alternative hypothesis H1, significance level, test statistic, one-tailed test, two-tailed test, critical value, critical region, acceptance region, p-value.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "O1",
+          "Sub_topic_name": "Correlation coefficient interpretation using p-values/critical values",
+          "description": "Extend hypothesis testing ideas to correlation coefficients: treat correlation coefficients as measures of how close data points lie to a straight line and interpret a given correlation coefficient using a given p-value or critical value (calculation of correlation coefficients is excluded).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "O2",
+          "Sub_topic_name": "Binomial proportion test",
+          "description": "Conduct a statistical hypothesis test for a proportion using a binomial model B(n,p) and interpret results in context. Understand the sample is used to infer about the population; interpret significance level as probability of incorrectly rejecting H0 (Type I error).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "O3",
+          "Sub_topic_name": "Normal mean test with known/assumed variance",
+          "description": "Conduct a statistical hypothesis test for the mean of a Normal distribution with known, given or assumed variance; use standardisation and critical values/p-values as required, and interpret results in context.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "3.17",
+      "Strand": "Mechanics",
+      "Topic_name": "P: Quantities and units in mechanics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "P1",
+          "Sub_topic_name": "SI base quantities and units (length, time, mass)",
+          "description": "Understand and use fundamental quantities and units in the SI system: length (m), time (s), mass (kg). Use consistent units in mechanics calculations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "P1",
+          "Sub_topic_name": "Derived quantities and units (velocity, acceleration, force, weight, moment)",
+          "description": "Understand and use derived quantities and units: velocity (m s^−1), acceleration (m s^−2), force/weight (newton, N), and moment (N m).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "3.18",
+      "Strand": "Mechanics",
+      "Topic_name": "Q: Kinematics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "Q1",
+          "Sub_topic_name": "Kinematics terminology",
+          "description": "Understand and use the language of kinematics: position, displacement, distance travelled, velocity, speed, acceleration; distinguish scalar vs vector quantities where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "Q2",
+          "Sub_topic_name": "Displacement–time and velocity–time graphs",
+          "description": "Understand, use and interpret kinematics graphs for motion in a straight line: displacement–time graphs (gradient as velocity) and velocity–time graphs (gradient as acceleration, area under graph as displacement).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "Q3",
+          "Sub_topic_name": "Constant acceleration formulae (SUVAT)",
+          "description": "Understand, use and derive the formulae for constant acceleration for motion in a straight line (SUVAT relationships between s,u,v,a,t). Extend to 2 dimensions using vectors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "Q4",
+          "Sub_topic_name": "Calculus in kinematics (1D and 2D vectors)",
+          "description": "Use calculus in kinematics for motion in a straight line: v = dr/dt, a = dv/dt = d^2r/dt^2, r = ∫ v dt, v = ∫ a dt. Extend these ideas to 2 dimensions using vectors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17e",
+          "Specification_section_sub": "Q5",
+          "Sub_topic_name": "Projectiles under gravity (vector model)",
+          "description": "Model motion under gravity in a vertical plane using vectors; analyse projectile motion with constant gravitational acceleration g, including resolving into horizontal and vertical components.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "3.19",
+      "Strand": "Mechanics",
+      "Topic_name": "R: Forces and Newton’s laws",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "R1",
+          "Sub_topic_name": "Force concept and Newton’s first law",
+          "description": "Understand the concept of a force and represent forces (including as vectors where appropriate). Understand and use Newton’s first law: a particle remains at rest or in uniform motion unless acted on by a resultant force.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "R2",
+          "Sub_topic_name": "Newton’s second law (1D/2D) and resolving forces",
+          "description": "Understand and use Newton’s second law for motion in a straight line: resultant force F = ma. Apply in 2D where restricted to forces in two perpendicular directions or simple cases of forces given as 2D vectors; extend to situations requiring resolving forces in 2 dimensions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18c",
+          "Specification_section_sub": "R3",
+          "Sub_topic_name": "Weight and motion under gravity; value of g",
+          "description": "Understand and use weight W = mg and motion in a straight line under gravity. Use gravitational acceleration g (SI units) to varying degrees of accuracy. Know g may be assumed constant in modelling but depends on location (not a universal constant).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18d",
+          "Specification_section_sub": "R4",
+          "Sub_topic_name": "Newton’s third law",
+          "description": "Understand and use Newton’s third law: forces between two interacting bodies are equal in magnitude and opposite in direction and act on different bodies; apply in connected particle and contact force situations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18e",
+          "Specification_section_sub": "R4",
+          "Sub_topic_name": "Equilibrium and connected particles (including smooth pulleys)",
+          "description": "Use equilibrium of forces on a particle (resultant force zero) and apply to motion in a straight line with forces in two perpendicular directions or simple 2D vector forces. Apply to problems involving smooth pulleys and connected particles; set up and solve simultaneous equations for tensions/accelerations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18f",
+          "Specification_section_sub": "R4",
+          "Sub_topic_name": "Resolving forces; equilibrium under coplanar forces",
+          "description": "Resolve forces into components in 2 dimensions and apply to equilibrium of a particle under coplanar forces (resultant zero in both perpendicular directions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18g",
+          "Specification_section_sub": "R5",
+          "Sub_topic_name": "Resultant forces and dynamics in a plane",
+          "description": "Understand and use addition of forces and resultant forces; apply dynamics for motion in a plane (2D) using vector/component methods within specification constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18h",
+          "Specification_section_sub": "R6",
+          "Sub_topic_name": "Friction model F ≤ μR; limiting friction and statics",
+          "description": "Understand and use the friction model F ≤ μR, coefficient of friction μ, and normal reaction R. Solve problems involving motion on rough surfaces; distinguish limiting friction (F=μR) and static situations where F<μR.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "3.20",
+      "Strand": "Mechanics",
+      "Topic_name": "S: Moments",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "S1",
+          "Sub_topic_name": "Moments in statics",
+          "description": "Understand and use moments in simple static contexts: moment = force × perpendicular distance from pivot; apply equilibrium conditions including sum of moments about a point equals zero.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

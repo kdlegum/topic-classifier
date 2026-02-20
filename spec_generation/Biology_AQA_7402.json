@@ -1,0 +1,1838 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Biology",
+  "Exam Board": "AQA",
+  "Specification": "7402",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "3.1",
+      "Strand": "Biology",
+      "Topic_name": "Biological molecules",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Monomers and polymers: definitions",
+          "description": "Understand that life has a common biochemical basis; monomers are small units from which larger molecules are made; polymers are large molecules made from many monomers joined together; examples of monomers include monosaccharides, amino acids and nucleotides.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Condensation reactions",
+          "description": "Understand that a condensation reaction joins two molecules together with formation of a chemical bond and elimination of a molecule of water (H2O).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "3.1.1",
+          "Sub_topic_name": "Hydrolysis reactions",
+          "description": "Understand that a hydrolysis reaction breaks a chemical bond between two molecules and involves the use of a water molecule (H2O).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Monosaccharides: examples",
+          "description": "Know that monosaccharides are monomers from which larger carbohydrates are made; common monosaccharides include glucose, galactose and fructose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Glycosidic bonds and disaccharide formation",
+          "description": "Understand that a condensation reaction between two monosaccharides forms a glycosidic bond; disaccharides formed by condensation: maltose (glucose + glucose), sucrose (glucose + fructose), lactose (glucose + galactose).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "α-glucose vs β-glucose (isomers)",
+          "description": "Recognise that glucose exists as two isomers, α-glucose and β-glucose, with different structural arrangements (as shown in spec diagrams), and that this structural difference affects polymer formation and properties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Polysaccharides: formation from glucose",
+          "description": "Understand that polysaccharides are formed by condensation of many glucose units; glycogen and starch are formed by condensation of α-glucose; cellulose is formed by condensation of β-glucose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Starch: structure and function",
+          "description": "Know the basic structure and functions of starch (a polysaccharide of α-glucose) and relate its structure to its function in plants (storage, compactness, insolubility, branching/amylose vs amylopectin as appropriate to spec-level structure-function).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Glycogen: structure and function",
+          "description": "Know the basic structure and functions of glycogen (a polysaccharide of α-glucose) and relate its highly branched structure to rapid hydrolysis and its role as an energy store in animals.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Cellulose: structure and function",
+          "description": "Know the basic structure and functions of cellulose (a polysaccharide of β-glucose); relate β-1,4 linked chains and hydrogen bonding between chains to strength/rigidity and its role in plant cell walls.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "3.1.2",
+          "Sub_topic_name": "Carbohydrate tests: Benedict’s and iodine",
+          "description": "Know biochemical tests: Benedict’s solution for reducing sugars; method/interpretation for non-reducing sugars after hydrolysis; iodine/potassium iodide test for starch; interpret positive/negative results in qualitative contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Triglycerides: structure and formation",
+          "description": "Know that triglycerides are lipids formed by condensation of one molecule of glycerol and three molecules of fatty acid; condensation between glycerol and fatty acid (RCOOH) forms ester bonds; relate triglyceride structure to properties such as insolubility and use as energy store/thermal insulation/buoyancy (as required through spec contexts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Saturated vs unsaturated fatty acids",
+          "description": "Understand that the R-group of a fatty acid may be saturated or unsaturated; be able to recognise saturated and unsaturated fatty acids from diagrams (presence/absence of C=C double bonds) and relate unsaturation to chain ‘kinks’ and melting point differences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Phospholipids: structure",
+          "description": "Know that phospholipids are lipids in which one fatty acid of a triglyceride is substituted by a phosphate-containing group; understand amphipathic nature (hydrophilic phosphate head, hydrophobic fatty acid tails) and role in membranes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Triglycerides vs phospholipids: properties",
+          "description": "Explain different properties of triglycerides and phospholipids related to their different structures (eg triglycerides nonpolar energy stores; phospholipids form bilayers and membranes due to hydrophilic/hydrophobic regions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "3.1.3",
+          "Sub_topic_name": "Emulsion test for lipids",
+          "description": "Know the emulsion test for lipids and interpret results (white/milky emulsion indicates lipid).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Amino acids: general structure and diversity",
+          "description": "Know amino acids are monomers of proteins; general structure includes amine group (NH2), carboxyl group (COOH), hydrogen and variable R side chain; know the 20 amino acids common to all organisms differ only by their side group.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1r",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Peptide bonds, dipeptides and polypeptides",
+          "description": "Understand condensation between two amino acids forms a peptide bond; dipeptides are formed by condensation of two amino acids; polypeptides are formed by condensation of many amino acids.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1s",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Functional proteins and polypeptide chains",
+          "description": "Know that a functional protein may contain one or more polypeptides (basis of quaternary structure when multiple polypeptides are present).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1t",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Bonds in protein structure",
+          "description": "Understand roles of hydrogen bonds, ionic bonds and disulfide bridges in maintaining protein structure (especially secondary/tertiary/quaternary).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1u",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Protein structure levels and function",
+          "description": "Relate primary, secondary, tertiary and quaternary structure to protein function; understand how folding and bonding produces specific 3D shapes (including active sites, binding sites, structural proteins).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1v",
+          "Specification_section_sub": "3.1.4.1",
+          "Sub_topic_name": "Biuret test for proteins",
+          "description": "Know the biuret test for proteins and interpret results (purple/lilac indicates peptide bonds/protein).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1w",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Enzymes lower activation energy",
+          "description": "Understand that each enzyme lowers the activation energy of the reaction it catalyses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1x",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Induced-fit model",
+          "description": "Understand the induced-fit model of enzyme action and that models of enzyme action have changed over time based on evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1y",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Active site specificity and ES complex",
+          "description": "Understand that enzyme properties relate to the tertiary structure of the active site; complementary binding to substrate(s) forms an enzyme–substrate complex; enzyme specificity arises from active site shape/chemistry.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1z",
+          "Specification_section_sub": "3.1.4.2",
+          "Sub_topic_name": "Factors affecting enzyme-controlled reaction rate",
+          "description": "Know and apply effects on enzyme-controlled reaction rate: enzyme concentration, substrate concentration, concentration of competitive inhibitors, concentration of non-competitive inhibitors, pH, temperature; interpret rate graphs and explain in terms of collisions/active site changes/denaturation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1aa",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Roles of DNA, RNA and ribosomes",
+          "description": "Know DNA and RNA are information-carrying molecules: in living cells DNA holds genetic information; RNA transfers genetic information from DNA to ribosomes; ribosomes are formed from RNA and proteins.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ab",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Nucleotides: components (DNA vs RNA)",
+          "description": "Know DNA and RNA are polymers of nucleotides; each nucleotide contains pentose sugar, nitrogen-containing organic base, phosphate group; DNA nucleotides: deoxyribose + phosphate + A/C/G/T; RNA nucleotides: ribose + phosphate + A/C/G/U.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ac",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "Phosphodiester bonds",
+          "description": "Understand that a condensation reaction between two nucleotides forms a phosphodiester bond (sugar–phosphate backbone).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ad",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "DNA double helix and complementary base pairing",
+          "description": "Know DNA is a double helix of two polynucleotide chains held by hydrogen bonds between specific complementary base pairs (A–T, C–G); use base-pairing rules to deduce base frequencies between strands when given partial data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ae",
+          "Specification_section_sub": "3.1.5.1",
+          "Sub_topic_name": "RNA as short polynucleotide",
+          "description": "Know RNA is relatively short polynucleotide chain (single-stranded compared with DNA) and contains uracil instead of thymine.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1af",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "Semi-conservative DNA replication: overview",
+          "description": "Understand that DNA replication is semi-conservative, ensuring genetic continuity between generations of cells (each daughter DNA molecule contains one original/template strand and one newly synthesised strand).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ag",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "DNA replication: helicase and strand separation",
+          "description": "Know DNA replication steps: unwinding of the double helix; breakage of hydrogen bonds between complementary bases; role of DNA helicase in unwinding and breaking hydrogen bonds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ah",
+          "Specification_section_sub": "3.1.5.2",
+          "Sub_topic_name": "DNA replication: base pairing and polymerase action",
+          "description": "Know DNA replication steps: new DNA nucleotides attracted to exposed bases on template strands by complementary base pairing; role of DNA polymerase in condensation reactions joining adjacent nucleotides to form phosphodiester bonds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ai",
+          "Specification_section_sub": "3.1.6",
+          "Sub_topic_name": "ATP structure",
+          "description": "Know ATP is a nucleotide derivative made of ribose, adenine and three phosphate groups.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1aj",
+          "Specification_section_sub": "3.1.6",
+          "Sub_topic_name": "ATP hydrolysis and ATP hydrolase",
+          "description": "Know hydrolysis of ATP to ADP + Pi is catalysed by ATP hydrolase; understand ATP hydrolysis releases energy and can be coupled to energy-requiring reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ak",
+          "Specification_section_sub": "3.1.6",
+          "Sub_topic_name": "ATP phosphorylation of compounds",
+          "description": "Understand that Pi released during ATP hydrolysis can phosphorylate other compounds, often making them more reactive.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1al",
+          "Specification_section_sub": "3.1.6",
+          "Sub_topic_name": "ATP resynthesis and ATP synthase",
+          "description": "Know ATP is resynthesised by condensation of ADP + Pi, catalysed by ATP synthase during photosynthesis or respiration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1am",
+          "Specification_section_sub": "3.1.7",
+          "Sub_topic_name": "Water as a metabolite",
+          "description": "Know water is a metabolite in many metabolic reactions including condensation and hydrolysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1an",
+          "Specification_section_sub": "3.1.7",
+          "Sub_topic_name": "Water as a solvent",
+          "description": "Know water is an important solvent in which many metabolic reactions occur.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ao",
+          "Specification_section_sub": "3.1.7",
+          "Sub_topic_name": "Water high heat capacity",
+          "description": "Explain that water has a relatively high heat capacity, buffering changes in temperature in organisms and environments.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ap",
+          "Specification_section_sub": "3.1.7",
+          "Sub_topic_name": "Water latent heat of vaporisation",
+          "description": "Explain that water has a relatively large latent heat of vaporisation, providing cooling with little water loss through evaporation (eg sweating, transpiration).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1aq",
+          "Specification_section_sub": "3.1.7",
+          "Sub_topic_name": "Water cohesion and surface tension",
+          "description": "Explain that strong cohesion between water molecules supports columns of water in tube-like transport cells of plants (xylem) and produces surface tension where water meets air.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1ar",
+          "Specification_section_sub": "3.1.8",
+          "Sub_topic_name": "Inorganic ions in cytoplasm and fluids",
+          "description": "Know inorganic ions occur in solution in cytoplasm and body fluids at varying concentrations; understand that each ion has specific roles depending on properties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1as",
+          "Specification_section_sub": "3.1.8",
+          "Sub_topic_name": "Hydrogen ions and pH (ion role)",
+          "description": "Recognise the role of hydrogen ions (H+) in determining pH, and that pH can affect enzyme activity and biological systems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1at",
+          "Specification_section_sub": "3.1.8",
+          "Sub_topic_name": "Iron ions in haemoglobin (ion role)",
+          "description": "Recognise iron ions (Fe2+) as a component of haemoglobin important for oxygen transport.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1au",
+          "Specification_section_sub": "3.1.8",
+          "Sub_topic_name": "Sodium ions in co-transport (ion role)",
+          "description": "Recognise sodium ions (Na+) role in co-transport of glucose and amino acids (eg in ileum epithelial cells).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1av",
+          "Specification_section_sub": "3.1.8",
+          "Sub_topic_name": "Phosphate ions in DNA and ATP (ion role)",
+          "description": "Recognise phosphate ions (PO4^3− / Pi) as components of DNA nucleotides (phosphodiester backbone) and ATP/ADP; link to phosphorylation and energy transfer contexts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "3.2",
+      "Strand": "Biology",
+      "Topic_name": "Cells",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Eukaryotic cell structures and functions",
+          "description": "Know the structure and function of eukaryotic cell components: cell-surface membrane; nucleus (chromosomes of protein-bound linear DNA and one or more nucleoli); mitochondria; chloroplasts (plants and algae); Golgi apparatus and Golgi vesicles; lysosomes (membrane-bound, release hydrolytic enzymes); ribosomes; rough endoplasmic reticulum; smooth endoplasmic reticulum; cell wall (plants, algae, fungi); cell vacuole (plants). Apply knowledge to explain adaptations of eukaryotic cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "3.2.1.1",
+          "Sub_topic_name": "Cell specialisation and organisation",
+          "description": "Understand that in complex multicellular organisms, eukaryotic cells become specialised; specialised cells form tissues; tissues form organs; organs form systems; apply organelle/structure knowledge to specialised cell adaptations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Prokaryotic cell features vs eukaryotes",
+          "description": "Know prokaryotic cells are smaller and differ by: cytoplasm lacking membrane-bound organelles; smaller ribosomes; no nucleus (single circular DNA free in cytoplasm, not associated with proteins); cell wall containing murein (glycoprotein). Many have plasmids, capsule, flagella (detail beyond presence not required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "3.2.1.2",
+          "Sub_topic_name": "Virus structure and status",
+          "description": "Know viruses are acellular and non-living; understand structure of virus particles includes genetic material (nucleic acid), capsid and attachment protein.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Microscopy: optical vs TEM vs SEM (principles and limitations)",
+          "description": "Understand principles and limitations of optical microscopes, transmission electron microscopes (TEM) and scanning electron microscopes (SEM), including what each can reveal (eg resolution vs magnification; 2D vs 3D surface imaging for SEM) and practical constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Magnification vs resolution; magnification equation",
+          "description": "Know the difference between magnification and resolution; use magnification = size of image / size of real object; measure object size viewed with optical microscope using appropriate scaling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "3.2.1.3",
+          "Sub_topic_name": "Cell fractionation and ultracentrifugation",
+          "description": "Understand principles of cell fractionation and ultracentrifugation used to separate cell components (homogenisation, filtration, differential centrifugation based on size/density and sequential speeds).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Cell cycle and DNA replication timing",
+          "description": "Know that not all cells retain ability to divide; dividing eukaryotic cells show a cell cycle; DNA replication occurs during interphase.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Mitosis purpose and outcome",
+          "description": "Understand mitosis is part of the cell cycle where a eukaryotic cell divides to produce two daughter cells with identical copies of DNA produced during DNA replication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Chromosome behaviour in mitosis stages",
+          "description": "Know behaviour of chromosomes during interphase, prophase, metaphase, anaphase and telophase; role of spindle fibres attached to centromeres in separation of chromatids; cytokinesis usually produces two new cells; recognise stages and explain appearance of cells in each stage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Mitosis control, tumours and cancer treatment concepts",
+          "description": "Understand mitosis is controlled; uncontrolled cell division can form tumours and cancers; many cancer treatments target/control rate of cell division (conceptual link to cell cycle).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Binary fission in prokaryotes",
+          "description": "Know binary fission involves replication of circular DNA and plasmids, then cytoplasmic division to produce two daughter cells each with one circular DNA copy and variable plasmid copies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "3.2.2",
+          "Sub_topic_name": "Viral replication in host cells",
+          "description": "Understand viruses do not undergo cell division; after injection of nucleic acid, infected host cell replicates virus particles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Fluid-mosaic model components and movement",
+          "description": "Know cell membranes share basic structure; describe arrangement and movement of phospholipids, proteins, glycoproteins and glycolipids in the fluid-mosaic model; know cholesterol may be present and restrict movement of other membrane molecules.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Simple diffusion across membranes",
+          "description": "Explain simple diffusion across membranes, including limitations imposed by the phospholipid bilayer (small nonpolar molecules pass; charged/polar require proteins; rate depends on gradient and surface area).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Facilitated diffusion: channels and carriers",
+          "description": "Explain facilitated diffusion via channel proteins and carrier proteins; relate protein presence/number to transport rate and specificity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Osmosis and water potential",
+          "description": "Explain osmosis in terms of water potential (movement of water from higher water potential to lower water potential across partially permeable membrane); apply to cells/tissues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Active transport and ATP",
+          "description": "Explain active transport via carrier proteins, against concentration gradients; importance of ATP hydrolysis in providing energy for conformational changes and transport.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Co-transport in ileum (Na+/glucose)",
+          "description": "Explain co-transport using absorption of Na+ and glucose by epithelial cells in mammalian ileum: Na+ gradient created by active transport drives uptake of glucose via co-transporter; glucose then leaves by facilitated diffusion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "3.2.3",
+          "Sub_topic_name": "Membrane transport rate factors and cell adaptations",
+          "description": "Explain how surface area, number of channel/carrier proteins, and differences in concentration gradients or water potential gradients affect transport rates; explain adaptations of specialised cells for rapid transport across internal/external membranes (eg microvilli, many mitochondria, membrane folds, high carrier density).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Cell-surface molecules and immune recognition",
+          "description": "Know cells have specific surface molecules (often proteins) enabling immune system to identify pathogens, cells from other organisms of same species, abnormal body cells, and toxins.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Antigens and antigen variability",
+          "description": "Define antigen; understand that antigen variability affects disease and disease prevention (eg pathogens change antigens to evade immunity; implications for vaccines).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2w",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Phagocytosis and lysozymes",
+          "description": "Describe phagocytosis of pathogens and subsequent destruction of ingested pathogens by lysozymes (hydrolytic enzymes) within phagocytes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2x",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "T lymphocyte (cell-mediated) response and APCs",
+          "description": "Explain cellular response: antigen-presenting cells (APCs) present foreign antigen; helper T (TH) cells stimulate cytotoxic T (TC) cells, B cells and phagocytes; roles of other T cells not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2y",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "B lymphocyte (humoral) response and clonal selection",
+          "description": "Explain humoral response: B lymphocytes respond to antigen; clonal selection; release of monoclonal antibodies; roles of plasma cells and memory cells in primary vs secondary immune responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2z",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Antibodies: definition and structure",
+          "description": "Define antibody; know antibody structure (variable regions, constant regions, heavy/light chains, disulfide bonds; specificity due to variable region/antigen-binding site).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2aa",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Antigen–antibody complexes: agglutination and phagocytosis",
+          "description": "Explain formation of antigen–antibody complex leading to antigen destruction limited to agglutination and phagocytosis of bacterial cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ab",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Vaccination and herd immunity",
+          "description": "Explain how vaccines provide protection for individuals and populations; concept of herd immunity; consider effects of antigen variability on vaccine effectiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ac",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Active vs passive immunity",
+          "description": "Distinguish active immunity (immune system produces antibodies and memory cells after exposure/vaccination) from passive immunity (antibodies acquired, no memory cells; short-lived).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ad",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "HIV structure and replication in helper T cells",
+          "description": "Describe structure of HIV and its replication in helper T (TH) cells (attachment, entry, reverse transcription, integration, transcription/translation, assembly and budding at conceptual level required by spec).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ae",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "HIV leading to AIDS; antibiotics ineffective vs viruses",
+          "description": "Explain how HIV causes symptoms of AIDS via depletion/dysfunction of helper T cells and loss of immune coordination; explain why antibiotics are ineffective against viruses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2af",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Monoclonal antibodies: targeting drugs",
+          "description": "Explain use of monoclonal antibodies in targeting medication to specific cell types by attaching a therapeutic drug to an antibody (specific binding to antigen on target cells).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ag",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Monoclonal antibodies: diagnosis",
+          "description": "Explain use of monoclonal antibodies in medical diagnosis (binding to specific antigens; detection via labels). Production details not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ah",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "Ethical issues: vaccines and monoclonal antibodies",
+          "description": "Discuss ethical issues associated with use of vaccines and monoclonal antibodies; be able to evaluate methodology, evidence and data relating to their use (benefit-risk, consent, equity, animal use, cost, public health vs individual choice).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ai",
+          "Specification_section_sub": "3.2.4",
+          "Sub_topic_name": "ELISA test using antibodies",
+          "description": "Explain use of antibodies in ELISA (enzyme-linked immunosorbent assay): specific antigen/antibody binding; use of enzyme-linked secondary antibody; colour change indicates presence/amount; interpret ELISA results conceptually.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "3.3",
+      "Strand": "Biology",
+      "Topic_name": "Organisms exchange substances with their environment",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Surface area to volume ratio and exchange",
+          "description": "Explain relationship between size of organism/structure and surface area to volume ratio; explain how as size increases SA:V decreases, reducing efficiency of diffusion/exchange; link SA:V to metabolic rate and need for specialised exchange surfaces and transport systems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.3.1",
+          "Sub_topic_name": "Adaptations for exchange as SA:V decreases",
+          "description": "Explain changes to body shape and development of systems in larger organisms as adaptations facilitating exchange as SA:V ratio reduces (eg flattened shapes, folding, specialised exchange organs, ventilation and circulation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Gas exchange in single-celled organisms",
+          "description": "Explain gas exchange across body surface of single-celled organisms by diffusion; link to SA:V and short diffusion pathway.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Insect gas exchange: tracheal system",
+          "description": "Describe adaptations for gas exchange in insects: tracheae, tracheoles and spiracles; explain diffusion of O2/CO2 to/from tissues; relate to water loss constraints and ventilation movements where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Fish gas exchange: gills and counter-current",
+          "description": "Describe gas exchange across gills of fish: filaments and lamellae; explain counter-current principle maintaining diffusion gradient for O2 uptake; link structure to function (large SA, thin epithelium, blood flow).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Plant gas exchange: leaves, mesophyll and stomata",
+          "description": "Describe gas exchange in dicot leaves via mesophyll and stomata; explain role of intercellular air spaces, diffusion pathway, stomatal opening, and compromise with water loss.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Structural/functional compromises: water loss vs gas exchange",
+          "description": "Explain compromises between efficient gas exchange and limitation of water loss in terrestrial insects and xerophytic plants (eg spiracle control, waxy cuticle, sunken stomata, reduced SA, stomatal timing).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Human gas exchange system gross structure",
+          "description": "Know gross structure of human gas exchange system limited to alveoli, bronchioles, bronchi, trachea and lungs; relate structure to function in ventilation and gas exchange.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Alveolar epithelium features for exchange",
+          "description": "Describe essential features of alveolar epithelium as gas exchange surface (large surface area, thin diffusion pathway, moist lining, good blood supply, ventilation maintaining gradients).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "3.3.2",
+          "Sub_topic_name": "Ventilation and breathing mechanism",
+          "description": "Explain ventilation and gas exchange in lungs; mechanism of breathing including diaphragm role and antagonistic interaction between external and internal intercostal muscles causing pressure changes in thoracic cavity (inspiration vs expiration).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Digestion by hydrolysis (general)",
+          "description": "Understand digestion hydrolyses large biological molecules into smaller molecules absorbable across cell membranes; link to enzyme specificity and sites of digestion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3l",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Carbohydrate digestion enzymes",
+          "description": "Describe mammalian carbohydrate digestion by amylases and membrane-bound disaccharidases; link to production of monosaccharides for absorption.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3m",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Lipid digestion: lipase and bile salts",
+          "description": "Describe mammalian lipid digestion by lipase; explain action of bile salts in emulsification (increasing surface area, forming micelles) and aiding lipase action and lipid absorption.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3n",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Protein digestion enzymes",
+          "description": "Describe mammalian protein digestion by endopeptidases, exopeptidases and membrane-bound dipeptidases; link to production of amino acids/dipeptides for absorption.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3o",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Absorption: co-transport of glucose and amino acids",
+          "description": "Explain absorption mechanisms in ileum epithelium including co-transport for amino acids and monosaccharides (Na+ dependent); link to gradients and active transport maintaining Na+ gradient.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3p",
+          "Specification_section_sub": "3.3.3",
+          "Sub_topic_name": "Absorption of lipids via micelles",
+          "description": "Explain role of micelles in absorption of lipids (transport fatty acids/monoglycerides to epithelial surface; diffusion into cells; re-esterification and packaging where relevant).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3q",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Haemoglobin structure (quaternary) and role",
+          "description": "Know haemoglobins are a group of chemically similar molecules; haemoglobin is a protein with quaternary structure; explain role of haemoglobin and red blood cells in transporting oxygen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3r",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Oxyhaemoglobin dissociation curve and loading/unloading",
+          "description": "Explain loading, transport and unloading of oxygen in relation to oxyhaemoglobin dissociation curve; include cooperative binding (binding of first O2 causes conformational change increasing affinity for subsequent O2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3s",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Bohr effect (CO2 and dissociation curve)",
+          "description": "Explain effects of carbon dioxide concentration on oxyhaemoglobin dissociation (Bohr effect): increased CO2 lowers affinity, shifts curve to the right, aiding O2 unloading in respiring tissues; relate to pH where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3t",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Different haemoglobins as adaptations",
+          "description": "Understand that animals may possess different types of haemoglobin with different oxygen transport properties as adaptations to their environment (eg altitude, diving).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3u",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Mammalian circulation: general pattern and vessel names",
+          "description": "Know general pattern of blood circulation in a mammal; required names only: coronary arteries and blood vessels entering/leaving heart, lungs and kidneys (major arteries/veins associated with these organs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3v",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Heart structure (gross)",
+          "description": "Know gross structure of human heart (chambers, valves, major vessels) at level required to relate to cardiac cycle and unidirectional flow.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3w",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Cardiac cycle: pressure/volume and valves",
+          "description": "Explain pressure and volume changes and associated valve movements during cardiac cycle maintaining unidirectional flow of blood; interpret data/graphs of pressure and volume changes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3x",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Arteries, arterioles and veins: structure-function",
+          "description": "Describe structure of arteries, arterioles and veins in relation to function (wall thickness, muscle/elastic tissue, lumen size, valves, pressure).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3y",
+          "Specification_section_sub": "3.3.4.1",
+          "Sub_topic_name": "Capillaries and capillary beds; tissue fluid",
+          "description": "Describe capillary structure and importance of capillary beds as exchange surfaces; explain formation of tissue fluid (filtration at arteriole end due to hydrostatic pressure; return at venule end due to oncotic pressure) and its return to circulatory system (including lymphatic return conceptually).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3z",
+          "Specification_section_sub": "3.3.4.2",
+          "Sub_topic_name": "Xylem and cohesion-tension theory",
+          "description": "Know xylem transports water in stem and leaves; explain cohesion-tension theory for water transport in xylem (transpiration pull, cohesion between water molecules, adhesion, continuous column under tension).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3aa",
+          "Specification_section_sub": "3.3.4.2",
+          "Sub_topic_name": "Phloem and mass flow hypothesis (translocation)",
+          "description": "Know phloem transports organic substances; explain mass flow hypothesis for translocation: loading/unloading of sucrose, water potential changes, osmosis, hydrostatic pressure gradient drives flow; interpret evidence from tracer and ringing experiments; evaluate evidence for/against mass flow hypothesis.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "3.4",
+      "Strand": "Biology",
+      "Topic_name": "Genetic information, variation and relationships between organisms",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "DNA in prokaryotes vs eukaryotes vs organelles",
+          "description": "Know that prokaryotic DNA molecules are short, circular, not associated with proteins; eukaryotic nuclear DNA molecules are very long, linear and associated with histone proteins forming chromosomes; mitochondria and chloroplasts contain short, circular DNA not associated with protein.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Gene definition and locus",
+          "description": "Define a gene as a base sequence of DNA coding for the amino acid sequence of a polypeptide or a functional RNA (including rRNA and tRNA); know a gene occupies a fixed position (locus) on a particular DNA molecule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Triplet code and genetic code properties",
+          "description": "Understand that a sequence of three DNA bases (a triplet) codes for a specific amino acid; genetic code is universal, non-overlapping and degenerate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "3.4.1",
+          "Sub_topic_name": "Non-coding DNA, exons and introns",
+          "description": "Know that in eukaryotes much nuclear DNA does not code for polypeptides; non-coding multiple repeats occur between genes; within genes only exons code for amino acid sequences; introns are non-coding sequences separating exons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Genome and proteome concepts",
+          "description": "Understand the genome as the complete set of genes in a cell; proteome as the full range of proteins that a cell is able to produce.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "mRNA and tRNA structure",
+          "description": "Know the structure of messenger RNA (mRNA) and transfer RNA (tRNA), including that tRNA carries specific amino acids and has an anticodon complementary to mRNA codon.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Transcription and RNA polymerase; prokaryotes vs eukaryotes",
+          "description": "Explain transcription as production of mRNA from DNA; role of RNA polymerase joining RNA nucleotides; in prokaryotes transcription directly produces mRNA; in eukaryotes transcription produces pre-mRNA which is spliced to form mRNA.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "3.4.2",
+          "Sub_topic_name": "Translation: ribosomes, tRNA and ATP",
+          "description": "Explain translation as production of polypeptides from codon sequence on mRNA; roles of ribosomes, tRNA and ATP; apply genetic code information (provided) to relate base sequences to amino acid sequences; specific codons/amino acids not required to be recalled.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Gene mutations: deletion and substitution; degeneracy",
+          "description": "Understand gene mutations are changes in base sequence; can arise spontaneously during DNA replication; include base deletion and base substitution; due to degeneracy, not all base substitutions change amino acid sequence; mutagenic agents increase mutation rate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Chromosome number mutations (non-disjunction)",
+          "description": "Understand mutations in chromosome number can arise spontaneously by chromosome non-disjunction during meiosis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Meiosis outcomes and haploid daughter cells",
+          "description": "Explain meiosis produces genetically different daughter cells; two nuclear divisions usually produce four haploid daughter cells from one diploid parent cell.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Independent segregation in meiosis",
+          "description": "Explain how genetically different daughter cells result from independent segregation of homologous chromosomes during meiosis I; be able to complete chromosome-content diagrams after meiosis divisions when given parent cell information.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Crossing over in meiosis",
+          "description": "Explain how crossing over between homologous chromosomes produces further genetic variation among daughter cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Mitosis vs meiosis comparison",
+          "description": "Explain different outcomes of mitosis and meiosis (genetic identity vs variation; diploid vs haploid; number of divisions; role in growth/repair vs gamete formation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Meiosis occurrence in life cycles",
+          "description": "Recognise where meiosis occurs when given information about unfamiliar life cycle (identify stage and purpose).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "3.4.3",
+          "Sub_topic_name": "Random fertilisation and variation",
+          "description": "Explain how random fertilisation of haploid gametes further increases genetic variation within a species.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Genetic diversity definition (alleles)",
+          "description": "Define genetic diversity as number of different alleles of genes in a population; understand it enables natural selection to occur.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4r",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Natural selection principles (allele frequency change)",
+          "description": "Explain principles of natural selection: random mutation creates new alleles; most mutations harmful but may be beneficial in certain environments; beneficial alleles increase reproductive success; advantageous allele inherited; over generations allele frequency increases in population.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4s",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Directional vs stabilising selection examples",
+          "description": "Distinguish directional selection (eg antibiotic resistance in bacteria) and stabilising selection (eg human birth weights) and interpret data showing selection effects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4t",
+          "Specification_section_sub": "3.4.4",
+          "Sub_topic_name": "Adaptation types from natural selection",
+          "description": "Understand natural selection results in species better adapted; adaptations may be anatomical, physiological or behavioural; use unfamiliar information to explain selection-driven change within populations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4u",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Species concept and fertile offspring",
+          "description": "Define species as organisms able to produce fertile offspring; understand courtship behaviour as precursor to successful mating and role in species recognition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4v",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Phylogenetic classification and taxon hierarchy",
+          "description": "Explain phylogenetic classification groups species by evolutionary origins/relationships; uses hierarchy with no overlap; taxa: domain, kingdom, phylum, class, order, family, genus, species.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4w",
+          "Specification_section_sub": "3.4.5",
+          "Sub_topic_name": "Binomial naming",
+          "description": "Know each species is identified by binomial name (genus + species), eg Homo sapiens; apply rules of binomial nomenclature in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4x",
+          "Specification_section_sub": "3.4.6",
+          "Sub_topic_name": "Biodiversity and species richness",
+          "description": "Understand biodiversity can refer to habitats from local to global; species richness measures number of different species in a community.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4y",
+          "Specification_section_sub": "3.4.6",
+          "Sub_topic_name": "Index of diversity calculation",
+          "description": "Calculate index of diversity (d) using d = N(N − 1) / Σn(n − 1), where N = total number of organisms of all species and n = total number of organisms of each species; interpret significance of calculated values.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4z",
+          "Specification_section_sub": "3.4.6",
+          "Sub_topic_name": "Farming and biodiversity; conservation balance",
+          "description": "Understand farming techniques reduce biodiversity; explain and evaluate balance between conservation and farming (trade-offs, sustainability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4aa",
+          "Specification_section_sub": "3.4.7",
+          "Sub_topic_name": "Comparing sequences to infer genetic relationships",
+          "description": "Understand genetic diversity within/between species can be assessed by comparing frequency of characteristics, base sequence of DNA/mRNA, and amino acid sequences of encoded proteins; interpret data on sequence similarities/differences to suggest relationships within species and between species.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4ab",
+          "Specification_section_sub": "3.4.7",
+          "Sub_topic_name": "Quantitative variation: random sampling, mean and SD interpretation",
+          "description": "Know quantitative investigations of variation involve random sampling, calculating mean and standard deviation, and interpreting mean values and standard deviations; students not required to calculate SD in exams but must interpret SD values when provided.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "3.5",
+      "Strand": "Biology",
+      "Topic_name": "Energy transfers in and between organisms (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Light-dependent reaction: photoionisation of chlorophyll",
+          "description": "Explain light-dependent reaction: chlorophyll absorbs light causing photoionisation and release of electrons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Light-dependent reaction: ATP and reduced NADP production",
+          "description": "Explain that energy from released electrons is conserved in producing ATP and reduced NADP (NADPH).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Photophosphorylation and chemiosmotic theory (chloroplast)",
+          "description": "Explain ATP production involves electron transfer down electron transfer chain, proton (H+) transfer across chloroplast membranes creating electrochemical gradient; ATP synthase embedded in membranes catalyses ATP synthesis as protons diffuse down gradient (chemiosmotic theory).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Photolysis of water",
+          "description": "Explain photolysis of water produces protons (H+), electrons and oxygen (O2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Light-independent reaction: CO2 fixation by rubisco",
+          "description": "Explain Calvin cycle step: carbon dioxide reacts with ribulose bisphosphate (RuBP) to form two molecules of glycerate 3-phosphate (GP), catalysed by rubisco.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Reduction of GP to triose phosphate",
+          "description": "Explain ATP and reduced NADP from light-dependent reaction reduce GP to triose phosphate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Regeneration of RuBP and product synthesis",
+          "description": "Explain that some triose phosphate regenerates RuBP and some is converted to useful organic substances (eg glucose, starch, lipids, amino acids).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "3.5.1",
+          "Sub_topic_name": "Limiting factors of photosynthesis and agricultural practices",
+          "description": "Identify environmental limiting factors of photosynthesis (light intensity, CO2 concentration, temperature) and evaluate data on agricultural practices to overcome limitations (glasshouses, heating, supplemental lighting, CO2 enrichment).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Respiration produces ATP (overview)",
+          "description": "Understand respiration produces ATP and involves pathways common to organisms; link ATP generation to substrate breakdown and electron/proton transfers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Glycolysis stages and net ATP/reduced NAD",
+          "description": "Explain glycolysis (cytoplasm, anaerobic): phosphorylation of glucose to glucose phosphate using ATP; production of triose phosphate; oxidation of triose phosphate to pyruvate with net gain of ATP and reduced NAD.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Anaerobic respiration pathways (ethanol/lactate)",
+          "description": "Explain that if anaerobic only, pyruvate is converted to ethanol or lactate using reduced NAD; oxidised NAD produced allows continued glycolysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Pyruvate transport into mitochondria (aerobic)",
+          "description": "Know that during aerobic respiration, pyruvate enters mitochondrial matrix by active transport.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Link reaction: pyruvate to acetate and acetylcoenzyme A",
+          "description": "Explain aerobic steps: pyruvate oxidised to acetate producing reduced NAD; acetate combines with coenzyme A in link reaction to form acetylcoenzyme A.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Krebs cycle: entry and products",
+          "description": "Explain acetylcoenzyme A reacts with a 4-carbon molecule releasing coenzyme A and producing a 6-carbon molecule entering Krebs cycle; series of redox reactions generates reduced coenzymes and ATP by substrate-level phosphorylation; CO2 is released.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Oxidative phosphorylation and chemiosmotic theory (mitochondria)",
+          "description": "Explain ATP synthesis by oxidative phosphorylation is associated with electron transfer down electron transfer chain, proton passage across inner mitochondrial membranes creating electrochemical gradient; ATP synthase catalyses ATP synthesis as protons diffuse down gradient (chemiosmotic theory).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "3.5.2",
+          "Sub_topic_name": "Other respiratory substrates enter Krebs cycle",
+          "description": "Know other respiratory substrates include breakdown products of lipids and amino acids, which enter Krebs cycle at various points; relate to deamination and conversion steps conceptually as required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "3.5.3",
+          "Sub_topic_name": "Biomass and energy content estimation",
+          "description": "Know plants synthesise organic compounds from CO2; sugars used in respiration and to make other biomolecules forming biomass; biomass measured as mass of carbon or dry mass per area; chemical energy in dry biomass estimated using calorimetry.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "3.5.3",
+          "Sub_topic_name": "GPP and NPP equation",
+          "description": "Define gross primary production (GPP) as chemical energy store in plant biomass per area/volume; define net primary production (NPP) as chemical energy store after respiratory losses: NPP = GPP − R; apply calculations and units.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "3.5.3",
+          "Sub_topic_name": "Net production of consumers equation",
+          "description": "Calculate net production of consumers: N = I − (F + R), where I is energy ingested, F is energy lost in faeces/urine, R is respiratory losses; interpret in ecological contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5t",
+          "Specification_section_sub": "3.5.3",
+          "Sub_topic_name": "Primary and secondary productivity (rates)",
+          "description": "Define primary and secondary productivity as rates of primary/secondary production measured as biomass per area per time (eg kJ ha−1 year−1); interpret productivity data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5u",
+          "Specification_section_sub": "3.5.3",
+          "Sub_topic_name": "Farming practices and energy transfer efficiency",
+          "description": "Explain how production is affected by farming practices increasing energy transfer efficiency: simplifying food webs to reduce losses to non-human chains; reducing respiratory losses within human food chain (eg intensive rearing, controlled environments).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5v",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Nutrient recycling and microorganism roles",
+          "description": "Explain nutrient recycling in ecosystems using nitrogen and phosphorus cycles; roles of microorganisms: saprobionts in decomposition; mycorrhizae increasing uptake of water and inorganic ions; bacteria roles in nitrogen cycle to illustrate saprobiotic nutrition, ammonification, nitrification, nitrogen fixation and denitrification (species names not required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5w",
+          "Specification_section_sub": "3.5.4",
+          "Sub_topic_name": "Fertilisers, leaching and eutrophication",
+          "description": "Explain use of natural and artificial fertilisers to replace nitrates/phosphates lost by harvesting and livestock removal; evaluate environmental issues: leaching and eutrophication (algal blooms, oxygen depletion, biodiversity loss).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "3.6",
+      "Strand": "Biology",
+      "Topic_name": "Organisms respond to changes in their internal and external environments (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "3.6.1.1",
+          "Sub_topic_name": "Plant growth factors and directional responses",
+          "description": "Explain that organisms increase survival by responding to environment; in flowering plants growth factors move from growing regions to other tissues regulating growth in response to directional stimuli.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "3.6.1.1",
+          "Sub_topic_name": "IAA concentration effects: tropisms",
+          "description": "Explain effects of different concentrations of indoleacetic acid (IAA) on cell elongation in roots and shoots as explanation of gravitropism and phototropism in flowering plants.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "3.6.1.1",
+          "Sub_topic_name": "Taxes and kineses",
+          "description": "Define and distinguish taxes and kineses as simple responses maintaining a mobile organism in a favourable environment (directional vs non-directional).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "3.6.1.1",
+          "Sub_topic_name": "Simple reflex arc (three-neurone)",
+          "description": "Explain protective effect of a simple reflex using a three-neurone reflex (sensory neurone → relay neurone → motor neurone); details of spinal cord roots not required; relate to rapid, automatic responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "3.6.1.2",
+          "Sub_topic_name": "Pacinian corpuscle as receptor: specificity and generator potential",
+          "description": "Use Pacinian corpuscle to illustrate receptors respond only to specific stimuli and stimulation leads to generator potential; know basic structure of Pacinian corpuscle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "3.6.1.2",
+          "Sub_topic_name": "Stretch-mediated Na+ channels and generator potential",
+          "description": "Explain how deformation of stretch-mediated sodium ion channels in Pacinian corpuscle leads to establishment of generator potential (local depolarisation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "3.6.1.2",
+          "Sub_topic_name": "Retina: rods, cones and visual acuity/colour",
+          "description": "Describe human retina to explain differences in sensitivity to light, colour, and visual acuity by differences in optical pigments of rods and cones and the connections rods and cones make in optic nerve.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "3.6.1.3",
+          "Sub_topic_name": "Myogenic heart and conduction system (SAN, AVN, bundle of His/Purkyne)",
+          "description": "Explain myogenic stimulation of heart and transmission of electrical activity; roles of sinoatrial node (SAN), atrioventricular node (AVN) and Purkyne tissue in bundle of His.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "3.6.1.3",
+          "Sub_topic_name": "Control of heart rate: receptors, autonomic NS and effectors",
+          "description": "Explain control of heart rate via chemoreceptors and pressure receptors, autonomic nervous system and effectors; include locations and roles at required level (eg medulla oblongata involvement implicit).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Myelinated motor neurone structure",
+          "description": "Know structure of a myelinated motor neurone (cell body, dendrites, axon, myelin sheath, nodes of Ranvier, Schwann cells where applicable, synaptic terminals).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Resting potential: permeability and ion movement",
+          "description": "Explain establishment of resting potential in terms of differential membrane permeability, electrochemical gradients, and movement of Na+ and K+ ions (including sodium–potassium pump role where needed).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Action potential and all-or-nothing",
+          "description": "Explain depolarisation due to changes in membrane permeability generates action potential; understand all-or-nothing principle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Impulse propagation: myelinated vs non-myelinated",
+          "description": "Explain passage of action potential along non-myelinated and myelinated axons producing nerve impulses; include saltatory conduction in myelinated fibres.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Refractory period significance",
+          "description": "Explain nature and importance of refractory period in producing discrete impulses and limiting frequency of impulse transmission.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "3.6.2.1",
+          "Sub_topic_name": "Factors affecting conduction speed",
+          "description": "Explain factors affecting speed of conduction: myelination/saltatory conduction, axon diameter, temperature.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Synapse and neuromuscular junction structure",
+          "description": "Know detailed structure of a synapse and a neuromuscular junction (presynaptic knob, vesicles, Ca2+ channels, synaptic cleft, postsynaptic receptors; motor end plate features for NMJ).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6q",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Cholinergic synaptic transmission sequence",
+          "description": "Explain sequence of events at cholinergic synapse sufficient to explain unidirectionality, temporal and spatial summation, and inhibition by inhibitory synapses (neurotransmitter release, diffusion, receptor binding, ion channel opening, neurotransmitter breakdown/removal).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6r",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Synapse vs neuromuscular junction comparison",
+          "description": "Compare transmission across a cholinergic synapse and across a neuromuscular junction (similarities and differences such as postsynaptic response type, junction structure, effect).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6s",
+          "Specification_section_sub": "3.6.2.2",
+          "Sub_topic_name": "Drug effects on synapses (data interpretation)",
+          "description": "Use given information to predict and explain effects of specific drugs on synapse function; recall of individual drug names/modes not required; focus on mechanisms (eg receptor blockade, acetylcholinesterase inhibition).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6t",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Antagonistic muscles and skeleton",
+          "description": "Explain that muscles act in antagonistic pairs against an incompressible skeleton to cause movement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6u",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Skeletal muscle structure (gross, microscopic, myofibril ultrastructure)",
+          "description": "Know gross and microscopic structure of skeletal muscle and ultrastructure of a myofibril (sarcomeres, actin and myosin filaments, Z-lines, etc) at required level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6v",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Sliding filament mechanism roles (actin, myosin, Ca2+, ATP)",
+          "description": "Explain roles of actin, myosin, calcium ions and ATP in myofibril contraction (cross-bridge cycle, power stroke, detachment, re-cocking; Ca2+ regulation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6w",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Tropomyosin and Ca2+ in cross-bridge cycle",
+          "description": "Explain roles of calcium ions and tropomyosin in actin–myosin bridge formation cycle; troponin role not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6x",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "ATP and phosphocreatine in muscle contraction",
+          "description": "Explain roles of ATP (energy for cross-bridge cycling and ion pumping) and phosphocreatine (rapid ATP regeneration) in muscle contraction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6y",
+          "Specification_section_sub": "3.6.3",
+          "Sub_topic_name": "Slow vs fast muscle fibres",
+          "description": "Describe structure, location and general properties of slow and fast skeletal muscle fibres (mitochondria, myoglobin, glycogen, contraction speed, fatigue resistance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6z",
+          "Specification_section_sub": "3.6.4.1",
+          "Sub_topic_name": "Homeostasis principles and internal stability",
+          "description": "Explain homeostasis in mammals as physiological control systems maintaining internal environment within restricted limits; importance of stable core temperature and blood pH for enzyme activity; importance of stable blood glucose for respiration substrate availability and blood water potential.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6aa",
+          "Specification_section_sub": "3.6.4.1",
+          "Sub_topic_name": "Negative feedback and control in both directions",
+          "description": "Explain negative feedback restores systems to original level; understand separate mechanisms for departures in different directions from original state provide greater control; interpret examples of negative and positive feedback when given.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ab",
+          "Specification_section_sub": "3.6.4.2",
+          "Sub_topic_name": "Blood glucose concentration: influencing factors",
+          "description": "Know factors influencing blood glucose concentration (dietary intake, exercise, metabolism, hormonal control) and interpret changes over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ac",
+          "Specification_section_sub": "3.6.4.2",
+          "Sub_topic_name": "Liver roles: glycogenesis, glycogenolysis, gluconeogenesis",
+          "description": "Explain role of liver in glycogenesis (glucose → glycogen), glycogenolysis (glycogen → glucose) and gluconeogenesis (glycerol/amino acids → glucose).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ad",
+          "Specification_section_sub": "3.6.4.2",
+          "Sub_topic_name": "Insulin mechanism of action",
+          "description": "Explain insulin action: binds receptors on target cell membranes; controls glucose uptake by regulating inclusion of channel proteins in surface membranes; activates enzymes converting glucose to glycogen.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ae",
+          "Specification_section_sub": "3.6.4.2",
+          "Sub_topic_name": "Glucagon mechanism of action",
+          "description": "Explain glucagon action: binds receptors on target cell membranes; activates enzymes converting glycogen to glucose; activates enzymes converting glycerol and amino acids into glucose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6af",
+          "Specification_section_sub": "3.6.4.2",
+          "Sub_topic_name": "Adrenaline effects on blood glucose",
+          "description": "Explain adrenaline action: binds receptors on target cell membranes; activates enzymes converting glycogen to glucose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ag",
+          "Specification_section_sub": "3.6.4.2",
+          "Sub_topic_name": "Second messenger model (cAMP) for adrenaline/glucagon",
+          "description": "Explain second messenger model for adrenaline and glucagon: receptor activation stimulates adenylate cyclase; produces cyclic AMP (cAMP); activates protein kinase; triggers phosphorylation cascade leading to metabolic response (eg glycogen breakdown).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ah",
+          "Specification_section_sub": "3.6.4.2",
+          "Sub_topic_name": "Diabetes types I and II: causes and control",
+          "description": "Explain causes of type I and type II diabetes and their control by insulin and/or dietary manipulation; evaluate viewpoints on increased incidence of type II diabetes (health advisers vs food industry) using evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ai",
+          "Specification_section_sub": "3.6.4.3",
+          "Sub_topic_name": "Osmoregulation concept and ADH system",
+          "description": "Define osmoregulation as control of blood water potential; explain roles of hypothalamus, posterior pituitary and antidiuretic hormone (ADH) in osmoregulation (detection of water potential changes and ADH release).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6aj",
+          "Specification_section_sub": "3.6.4.3",
+          "Sub_topic_name": "Nephron structure and glomerular filtration",
+          "description": "Know nephron structure and explain its role in formation of glomerular filtrate (ultrafiltration at glomerulus/Bowman’s capsule driven by pressure and selective barrier).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6ak",
+          "Specification_section_sub": "3.6.4.3",
+          "Sub_topic_name": "Proximal convoluted tubule reabsorption",
+          "description": "Explain reabsorption of glucose and water by proximal convoluted tubule (selective reabsorption; glucose via co-transport; water by osmosis).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6al",
+          "Specification_section_sub": "3.6.4.3",
+          "Sub_topic_name": "Loop of Henle and medullary Na+ gradient",
+          "description": "Explain how loop of Henle maintains a gradient of sodium ions in the medulla (counter-current multiplier concept; water leaving descending limb; Na+ leaving ascending limb).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6am",
+          "Specification_section_sub": "3.6.4.3",
+          "Sub_topic_name": "DCT and collecting duct water reabsorption (ADH effect)",
+          "description": "Explain reabsorption of water by distal convoluted tubule and collecting ducts; relate to ADH increasing permeability (aquaporins) and producing concentrated urine in low water potential conditions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "3.7",
+      "Strand": "Biology",
+      "Topic_name": "Genetics, populations, evolution and ecosystems (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Genotype vs phenotype",
+          "description": "Define genotype as genetic constitution and phenotype as expression of genotype interacting with environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Alleles: dominant, recessive, codominant; homozygous/heterozygous",
+          "description": "Understand there may be many alleles of a gene; alleles may be dominant, recessive or codominant; in diploids alleles at a locus may be homozygous or heterozygous.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Genetic diagrams: monohybrid and dihybrid crosses",
+          "description": "Use fully labelled genetic diagrams to interpret/predict outcomes of monohybrid and dihybrid crosses involving dominant, recessive and codominant alleles (genotypes, phenotypes, ratios, probabilities).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Sex linkage and autosomal linkage",
+          "description": "Use genetic diagrams to interpret/predict crosses involving sex-linkage and autosomal linkage; relate linkage to loci on same chromosome and recombination effects where relevant to given data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Multiple alleles and epistasis",
+          "description": "Use genetic diagrams to interpret/predict inheritance involving multiple alleles and epistasis (interaction between genes affecting phenotype).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "3.7.1",
+          "Sub_topic_name": "Chi-squared (χ²) test: goodness of fit",
+          "description": "Use χ² test to compare observed phenotypic ratios with expected ratios: calculate χ² from data, determine degrees of freedom, compare with critical values, interpret significance and accept/reject null hypothesis in genetics contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "3.7.2",
+          "Sub_topic_name": "Population definition and interbreeding",
+          "description": "Define population as group of organisms of same species occupying particular space at particular time that can potentially interbreed; understand species exist as one or more populations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "3.7.2",
+          "Sub_topic_name": "Gene pool and allele frequency",
+          "description": "Understand concepts of gene pool and allele frequency; interpret allele frequency changes as evolution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "3.7.2",
+          "Sub_topic_name": "Hardy–Weinberg principle conditions",
+          "description": "Understand Hardy–Weinberg principle as mathematical model predicting allele frequencies do not change between generations; know conditions required (large population, random mating, no mutation, no migration/gene flow, no selection) and why deviations occur.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "3.7.2",
+          "Sub_topic_name": "Hardy–Weinberg equation calculations",
+          "description": "Calculate allele, genotype and phenotype frequencies using p^2 + 2pq + q^2 = 1 where p and q are allele frequencies; apply to data and interpret biological meaning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "3.7.3",
+          "Sub_topic_name": "Sources of phenotypic variation",
+          "description": "Explain why individuals in a population show phenotypic variation due to genetic and environmental factors; mutation as primary source of genetic variation; meiosis and random fertilisation increase variation in sexual reproduction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "3.7.3",
+          "Sub_topic_name": "Natural selection and differential reproductive success",
+          "description": "Explain how predation, disease and competition cause differential survival and reproduction; individuals with selective advantages produce more offspring; favourable alleles passed on; effect on allele frequencies in gene pool.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "3.7.3",
+          "Sub_topic_name": "Stabilising, directional and disruptive selection",
+          "description": "Explain effects of stabilising, directional and disruptive selection on phenotype distributions and allele frequencies; interpret selection data/graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "3.7.3",
+          "Sub_topic_name": "Evolution definition (allele frequency change)",
+          "description": "Define evolution as change in allele frequencies in a population over time; apply to scenarios.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "3.7.3",
+          "Sub_topic_name": "Speciation via reproductive isolation",
+          "description": "Explain reproductive separation/isolated populations accumulate differences in gene pools; new species arise when genetic differences prevent interbreeding producing fertile offspring; understand speciation arises from existing species.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "3.7.3",
+          "Sub_topic_name": "Allopatric vs sympatric speciation",
+          "description": "Distinguish allopatric speciation (geographical isolation) from sympatric speciation (reproductive isolation without geographical separation, eg polyploidy/behavioural isolation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7q",
+          "Specification_section_sub": "3.7.3",
+          "Sub_topic_name": "Genetic drift in small populations",
+          "description": "Explain genetic drift as random changes in allele frequency, important in small populations; link to sampling effects and potential fixation/loss of alleles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7r",
+          "Specification_section_sub": "3.7.4",
+          "Sub_topic_name": "Communities, ecosystems and niches",
+          "description": "Define community as populations of different species; ecosystem as community plus non-living components; explain niche as species’ role governed by abiotic and biotic adaptations; ecosystems range from very small to very large.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7s",
+          "Specification_section_sub": "3.7.4",
+          "Sub_topic_name": "Carrying capacity and population size factors",
+          "description": "Explain carrying capacity as maximum population size supported; population size varies due to abiotic factors and biotic interactions (interspecific/intraspecific competition, predation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7t",
+          "Specification_section_sub": "3.7.4",
+          "Sub_topic_name": "Estimating population size: quadrats and transects",
+          "description": "Explain estimating population size using randomly placed quadrats or belt transects for slow-moving/non-motile organisms; understand measures of abundance such as percentage cover and frequency for sessile species.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7u",
+          "Specification_section_sub": "3.7.4",
+          "Sub_topic_name": "Mark–release–recapture method and assumptions",
+          "description": "Explain estimating population size for motile organisms using mark–release–recapture; know assumptions (marks not lost, mixing, no migration, births/deaths negligible, marking does not affect survival) and use given data to calculate population size.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7v",
+          "Specification_section_sub": "3.7.4",
+          "Sub_topic_name": "Ecosystems are dynamic; succession stages",
+          "description": "Explain ecosystems are dynamic; describe primary succession from pioneer species colonisation to climax community; explain how species change abiotic environment to make it more suitable for others and may make it less suitable for previous species; link to biodiversity changes and management for conservation.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "3.8",
+      "Strand": "Biology",
+      "Topic_name": "The control of gene expression (A-level only)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "3.8.1",
+          "Sub_topic_name": "Types of gene mutation (base sequence alterations)",
+          "description": "Know gene mutations can arise during DNA replication and include addition, deletion, substitution, inversion, duplication and translocation of bases; occur spontaneously; rate increased by mutagenic agents.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "3.8.1",
+          "Sub_topic_name": "Mutation effects: amino acid sequence change and silent mutations",
+          "description": "Explain mutations can change amino acid sequence of encoded polypeptide; some mutations change only one triplet and due to degeneracy may not change amino acid (silent mutation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "3.8.1",
+          "Sub_topic_name": "Frameshift mutations",
+          "description": "Explain some mutations cause frameshift, changing nature of all downstream base triplets, typically altering polypeptide dramatically; relate mutation type to protein effect.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "3.8.2.1",
+          "Sub_topic_name": "Totipotent cells and early embryos",
+          "description": "Define totipotent cells as able to divide and produce any type of body cell; know they occur only for limited time in early mammalian embryos; explain that during development cells translate only part of their DNA leading to specialisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "3.8.2.1",
+          "Sub_topic_name": "Pluripotent, multipotent and unipotent stem cells",
+          "description": "Distinguish pluripotent stem cells (embryos; unlimited division; many cell types), multipotent and unipotent cells (mature mammals; limited differentiation); include unipotent example of forming cardiomyocytes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "3.8.2.1",
+          "Sub_topic_name": "Induced pluripotent stem cells (iPS)",
+          "description": "Know iPS cells can be produced from adult somatic cells using appropriate protein transcription factors; understand implications for therapy and ethics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "3.8.2.1",
+          "Sub_topic_name": "Evaluating stem cell use in treatment",
+          "description": "Evaluate use of stem cells in treating human disorders, considering benefits, limitations, risks, and ethical issues (embryonic sources, consent, tumorigenesis, rejection, regulation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "3.8.2.2",
+          "Sub_topic_name": "Transcription factors and oestrogen example",
+          "description": "Explain that in eukaryotes transcription of target genes can be stimulated or inhibited when specific transcription factors move from cytoplasm to nucleus; describe role of steroid hormone oestrogen in initiating transcription (hormone binds receptor, complex acts as transcription factor).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "3.8.2.2",
+          "Sub_topic_name": "Epigenetic control: methylation and histone acetylation",
+          "description": "Define epigenetics as heritable changes in gene function without base sequence change; explain environmental changes inhibit transcription by increased DNA methylation and/or decreased acetylation of associated histones (leading to tighter chromatin and reduced transcription).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "3.8.2.2",
+          "Sub_topic_name": "Epigenetics in disease (cancer)",
+          "description": "Explain relevance of epigenetics to development and treatment of disease, especially cancer; interpret data from investigations into gene expression and evaluate genetic vs environmental influences on phenotype.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "3.8.2.2",
+          "Sub_topic_name": "RNA interference (RNAi) inhibiting translation",
+          "description": "Explain that in eukaryotes and some prokaryotes translation of mRNA can be inhibited by RNA interference (RNAi) (small RNA binds mRNA leading to degradation/blocking translation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "3.8.2.3",
+          "Sub_topic_name": "Benign vs malignant tumours",
+          "description": "Describe main characteristics of benign and malignant tumours (growth rate, invasiveness, metastasis potential, encapsulation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "3.8.2.3",
+          "Sub_topic_name": "Oncogenes and tumour suppressor genes in cancer",
+          "description": "Explain roles of tumour suppressor genes and oncogenes in development of tumours; understand that mutations/altered expression can disrupt cell cycle control and apoptosis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "3.8.2.3",
+          "Sub_topic_name": "Cancer and abnormal methylation",
+          "description": "Explain role of abnormal methylation of tumour suppressor genes and oncogenes in tumour development (silencing tumour suppressors and/or enabling oncogene expression).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8o",
+          "Specification_section_sub": "3.8.2.3",
+          "Sub_topic_name": "Oestrogen and breast cancer risk",
+          "description": "Explain how increased oestrogen concentrations can contribute to development of some breast cancers via effects on gene transcription and cell proliferation; interpret correlation data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8p",
+          "Specification_section_sub": "3.8.2.3",
+          "Sub_topic_name": "Using oncogene/tumour suppressor understanding in cancer control",
+          "description": "Interpret information on how understanding oncogenes and tumour suppressor genes could be used in prevention, treatment and cure of cancer; evaluate evidence on genetic/environmental correlations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8q",
+          "Specification_section_sub": "3.8.3",
+          "Sub_topic_name": "Genome sequencing projects and proteomes",
+          "description": "Know sequencing projects have read genomes of many organisms including humans; explain that in simpler organisms genome knowledge allows proteome determination and applications such as identifying potential antigens for vaccines; explain why in complex organisms non-coding DNA and regulatory genes mean genome cannot easily predict proteome; know sequencing methods updated and automated.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8r",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "Recombinant DNA technology concept (transgenics and universal code)",
+          "description": "Explain recombinant DNA technology transfers DNA fragments between organisms/species; because genetic code and transcription/translation are universal, transferred DNA can be expressed in recipient (transgenic) organism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8s",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "Producing DNA fragments: cDNA, restriction enzymes, gene machine",
+          "description": "Know methods to produce DNA fragments: convert mRNA to cDNA using reverse transcriptase; cut DNA using restriction enzymes to obtain desired gene; create gene in a gene machine (synthetic gene).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8t",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "DNA amplification: PCR principles",
+          "description": "Explain polymerase chain reaction (PCR) as in vitro method to amplify DNA fragments (denaturation, primer annealing, extension via DNA polymerase; cycles leading to exponential amplification).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8u",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "In vivo amplification and transformed host cell culture",
+          "description": "Explain culture of transformed host cells as in vivo amplification; understand concept of transformation and cloning of inserted DNA in host cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8v",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "Promoters and terminators in constructs",
+          "description": "Explain addition of promoter and terminator regions to DNA fragments to enable transcription in host cells; relate to gene expression control in recombinant constructs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8w",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "Vectors, restriction endonucleases and ligases",
+          "description": "Explain use of restriction endonucleases and DNA ligase to insert DNA fragments into vectors; transformation of host cells using vectors; interpret recombinant DNA process steps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8x",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "Marker genes for identifying GM cells",
+          "description": "Explain use of marker genes to detect genetically modified cells/organisms (specific marker genes not required to be recalled); interpret selection/screening outcomes in given data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8y",
+          "Specification_section_sub": "3.8.4.1",
+          "Sub_topic_name": "Ethical, financial and social issues in recombinant DNA tech",
+          "description": "Evaluate ethical, financial and social issues associated with use and ownership of recombinant DNA technology in agriculture, industry and medicine; balance humanitarian benefits with environmentalist/anti-globalisation concerns; relate recombinant DNA technology to gene therapy at conceptual level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8z",
+          "Specification_section_sub": "3.8.4.2",
+          "Sub_topic_name": "DNA probes and hybridisation for allele detection",
+          "description": "Explain use of labelled DNA probes and DNA hybridisation to locate specific alleles of genes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8aa",
+          "Specification_section_sub": "3.8.4.2",
+          "Sub_topic_name": "Screening and personalised medicine",
+          "description": "Explain use of labelled probes to screen patients for heritable conditions, drug responses or health risks; use of information in genetic counselling and personalised medicine; evaluate screening information (benefits, limitations, ethics).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8ab",
+          "Specification_section_sub": "3.8.4.3",
+          "Sub_topic_name": "VNTRs and individuality basis for genetic fingerprinting",
+          "description": "Know genomes contain variable number tandem repeats (VNTRs) with very low probability of identical VNTR patterns between individuals; link variability to identification power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8ac",
+          "Specification_section_sub": "3.8.4.3",
+          "Sub_topic_name": "Genetic fingerprinting method using PCR and electrophoresis",
+          "description": "Explain genetic fingerprinting analyses DNA fragments cloned/amplified by PCR; interpret gel electrophoresis patterns separating DNA fragments; use to determine genetic relationships and genetic variability within a population.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8ad",
+          "Specification_section_sub": "3.8.4.3",
+          "Sub_topic_name": "Applications of genetic fingerprinting",
+          "description": "Explain why genetic fingerprinting is used in forensic science, medical diagnosis, and animal/plant breeding; apply to scenarios and interpret conclusions from banding patterns.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

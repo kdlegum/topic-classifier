@@ -1,0 +1,3191 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Chemistry",
+  "Exam Board": "OCR",
+  "Specification": "H432",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "1.1.1",
+      "Strand": "Module 1 – Development of practical skills in chemistry",
+      "Topic_name": "Planning",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1.1(a)",
+          "Sub_topic_name": "Experimental design in practical contexts",
+          "description": "Demonstrate and apply knowledge and understanding of experimental design to solve problems set in a practical context, including selecting suitable apparatus, equipment and techniques for the proposed experiment; apply scientific knowledge from across the specification to the practical context (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1.1(b)",
+          "Sub_topic_name": "Control variables",
+          "description": "Identify variables that must be controlled in an experiment where appropriate, and explain why control is necessary for valid conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.1.1(c)",
+          "Sub_topic_name": "Evaluate suitability of method",
+          "description": "Evaluate whether a proposed experimental method is appropriate to meet expected outcomes; judge fitness for purpose, limitations, and whether the design addresses the question (HSW6).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "1.1.2",
+      "Strand": "Module 1 – Development of practical skills in chemistry",
+      "Topic_name": "Implementing",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "1.1.2(a)",
+          "Sub_topic_name": "Correct use of apparatus and techniques",
+          "description": "Demonstrate and apply understanding of how to use a wide range of practical apparatus and techniques correctly, as required across the specification and as outlined for the Practical Endorsement (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "1.1.2(b)",
+          "Sub_topic_name": "Appropriate units for measurements",
+          "description": "Select and use appropriate units for measurements in practical work and reporting results (M0.0).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "1.1.2(c)",
+          "Sub_topic_name": "Presenting observations and data",
+          "description": "Present observations and data in an appropriate scientific format (tables, annotated observations, recorded readings) suitable for analysis and evaluation (HSW8).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "1.1.3",
+      "Strand": "Module 1 – Development of practical skills in chemistry",
+      "Topic_name": "Analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "1.1.3(a)",
+          "Sub_topic_name": "Process and interpret results",
+          "description": "Process, analyse and interpret qualitative and quantitative experimental results, including reaching valid conclusions where appropriate; distinguish trends, patterns, and outcomes supported by evidence (HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "1.1.3(b)",
+          "Sub_topic_name": "Maths in quantitative analysis",
+          "description": "Use appropriate mathematical skills to analyse quantitative data, selecting suitable calculations and methods as required by the chemistry context; competence aligned to Section 5 mathematical skills (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "1.1.3(c)",
+          "Sub_topic_name": "Significant figures",
+          "description": "Use significant figures appropriately when recording and reporting measurements and calculated values; understand rounding consistent with measurement precision (M1.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "1.1.3(d)",
+          "Sub_topic_name": "Graphs: axes, gradients and intercepts",
+          "description": "Plot and interpret suitable graphs from experimental results, including selecting and labelling axes with appropriate scales, quantities and units; measure gradients and intercepts correctly (M3.2, M3.3, M3.4, M3.5).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "1.1.4",
+      "Strand": "Module 1 – Development of practical skills in chemistry",
+      "Topic_name": "Evaluation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "1.1.4(a)",
+          "Sub_topic_name": "Evaluate results and draw conclusions",
+          "description": "Evaluate experimental results and draw conclusions that are justified by evidence; relate conclusions to the aim/hypothesis and data quality (HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "1.1.4(b)",
+          "Sub_topic_name": "Identify anomalies",
+          "description": "Identify anomalies in experimental measurements or observations; decide whether data points are inconsistent and require investigation or exclusion with justification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "1.1.4(c)",
+          "Sub_topic_name": "Limitations of procedures",
+          "description": "Explain limitations in experimental procedures, including methodological constraints and apparatus limitations that affect reliability/validity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "1.1.4(d)",
+          "Sub_topic_name": "Precision, accuracy, errors and uncertainties",
+          "description": "Discuss precision and accuracy of measurements and data; calculate/interpret margins of error, percentage errors, and uncertainties associated with apparatus and combined measurements (M1.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "1.1.4(e)",
+          "Sub_topic_name": "Refine experimental design",
+          "description": "Suggest improvements to procedures and apparatus to refine experimental design, improve accuracy/precision, manage variables and reduce uncertainties (HSW3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "1.2.1",
+      "Strand": "Module 1 – Development of practical skills in chemistry",
+      "Topic_name": "Practical skills",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "1.2.1(a)",
+          "Sub_topic_name": "Investigative approaches in practical work",
+          "description": "Apply investigative approaches and methods to practical work, including solving problems in a practical context; demonstrate independent thinking and appropriate decision-making during investigations (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "1.2.1(b)",
+          "Sub_topic_name": "Safe use of equipment and materials",
+          "description": "Safely and correctly use a range of practical equipment and materials; identify potential hazards and understand how to minimise risk in chemistry practicals (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "1.2.1(c)",
+          "Sub_topic_name": "Follow written instructions",
+          "description": "Follow written practical instructions accurately to carry out procedures as intended, with appropriate sequencing and attention to detail.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "1.2.1(d)",
+          "Sub_topic_name": "Make and record observations/measurements",
+          "description": "Make and record observations and measurements accurately and appropriately during practical work (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "1.2.1(e)",
+          "Sub_topic_name": "Keep appropriate practical records",
+          "description": "Keep appropriate records of experimental activities (e.g. methods, raw data, observations, processing, conclusions) as required for practical competency evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "1.2.1(f)",
+          "Sub_topic_name": "Present information scientifically",
+          "description": "Present information and data in a scientific way, including appropriate tables, graphs, units, significant figures, and clear written communication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "1.2.1(g)",
+          "Sub_topic_name": "Use software/tools for processing and reporting",
+          "description": "Use appropriate software and tools to process data, carry out research and report findings; include digital handling of data such as graphing and calculations (M3.1, HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "1.2.1(h)",
+          "Sub_topic_name": "Research skills (online/offline)",
+          "description": "Use online and offline research skills including websites, textbooks and other printed scientific sources of information to support practical work and chemical understanding.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "1.2.1(i)",
+          "Sub_topic_name": "Referencing and citations",
+          "description": "Correctly cite sources of information used in research and reporting, using appropriate citation methods suitable for scientific work.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "1.2.1(j)",
+          "Sub_topic_name": "Use a wide range of instruments/techniques",
+          "description": "Use a wide range of experimental and practical instruments, equipment and techniques appropriate to the knowledge and understanding included in the specification (HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "1.2.2",
+      "Strand": "Module 1 – Development of practical skills in chemistry",
+      "Topic_name": "Use of apparatus and techniques",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "1.2.2(a)",
+          "Sub_topic_name": "Measure mass, time, volume, temperature",
+          "description": "Use appropriate apparatus to record a range of measurements including mass, time, volume of liquids and gases, and temperature (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "1.2.2(b)",
+          "Sub_topic_name": "Heating: water bath/electric heater/sand bath",
+          "description": "Use a water bath, electric heater or sand bath safely and effectively for heating in practical procedures (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "1.2.2(c)",
+          "Sub_topic_name": "Measure pH (charts/meters/probes)",
+          "description": "Measure pH using pH charts, pH meter, or pH probe/data logger appropriately; understand suitable use and recording (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "1.2.2(d)(i)",
+          "Sub_topic_name": "Titration technique (burette/pipette)",
+          "description": "Carry out titration using burette and pipette with correct technique (rinsing, reading meniscus, repeat titres) and appropriate recording (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "1.2.2(d)(ii)",
+          "Sub_topic_name": "Distillation and heating under reflux setup",
+          "description": "Set up and use apparatus for distillation and for heating under reflux, including safe assembly of glassware with retort stand and clamps (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "1.2.2(d)(iii)",
+          "Sub_topic_name": "Qualitative tests (ions and organic functional groups)",
+          "description": "Perform qualitative tests for ions and organic functional groups using correct test-tube scale procedures and interpret observations (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "1.2.2(d)(iv)",
+          "Sub_topic_name": "Filtration (incl. reduced pressure)",
+          "description": "Carry out filtration including use of fluted filter paper and filtration under reduced pressure (vacuum filtration) where appropriate (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "1.2.2(e)",
+          "Sub_topic_name": "Volumetric flask: standard solution preparation",
+          "description": "Use a volumetric flask accurately to make up a standard solution to a known concentration, including correct filling to the calibration mark and mixing (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "1.2.2(f)",
+          "Sub_topic_name": "Indicators in weak/strong titrations",
+          "description": "Use acid–base indicators appropriately in titrations of weak/strong acids with weak/strong alkalis; choose suitable indicator ranges and recognise end points (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "1.2.2(g)(i)",
+          "Sub_topic_name": "Purify solids by recrystallisation",
+          "description": "Purify a solid product by recrystallisation, including dissolving, hot filtration if needed, crystallisation, and drying (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "1.2.2(g)(ii)",
+          "Sub_topic_name": "Purify liquids and use separating funnel",
+          "description": "Purify a liquid product, including correct use of a separating funnel for liquid–liquid separation and collection of layers (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "1.2.2(h)",
+          "Sub_topic_name": "Melting point determination",
+          "description": "Use melting point apparatus to determine melting points of solids and interpret melting point as an indicator of purity (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6m",
+          "Specification_section_sub": "1.2.2(i)",
+          "Sub_topic_name": "Chromatography (TLC/paper) practical use",
+          "description": "Use thin layer chromatography or paper chromatography, including safe solvent use, spotting, developing, and interpreting separated components (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6n",
+          "Specification_section_sub": "1.2.2(j)",
+          "Sub_topic_name": "Electrochemical cells: set up and measure voltage",
+          "description": "Set up electrochemical cells and measure voltages safely and accurately; record and interpret readings (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6o",
+          "Specification_section_sub": "1.2.2(k)",
+          "Sub_topic_name": "Handling hazardous substances",
+          "description": "Safely and carefully handle solids and liquids including corrosive, irritant, flammable and toxic substances; apply appropriate safety measures and risk controls (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6p",
+          "Specification_section_sub": "1.2.2(l)",
+          "Sub_topic_name": "Measure reaction rates (two methods)",
+          "description": "Measure rates of reaction by at least two different methods, e.g. an initial rate method (clock reaction) and a continuous monitoring method; collect suitable time and/or continuous data (HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "2.1.1",
+      "Strand": "Module 2 – Foundations in chemistry",
+      "Topic_name": "Atomic structure and isotopes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "2.1.1(a)",
+          "Sub_topic_name": "Definition of isotopes",
+          "description": "Explain isotopes as atoms of the same element with different numbers of neutrons and therefore different masses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "2.1.1(b)",
+          "Sub_topic_name": "Subatomic particles in atoms and ions",
+          "description": "Determine numbers of protons, neutrons and electrons in atoms and ions given atomic number, mass number and ionic charge.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "2.1.1(c)",
+          "Sub_topic_name": "Relative isotopic mass vs relative atomic mass",
+          "description": "Explain relative isotopic mass (mass compared with 1/12 of a 12C atom) and relative atomic mass (weighted mean mass compared with 1/12 of a 12C atom); understand the carbon-12 standard. Definitions required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "2.1.1(d)(i)",
+          "Sub_topic_name": "Mass spectrometry: isotopic masses and abundances",
+          "description": "Use mass spectrometry data to determine relative isotopic masses and relative abundances of isotopes; knowledge of instrument not required; limited to singly charged ions (M0.2, M1.2, M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "2.1.1(d)(ii)",
+          "Sub_topic_name": "Calculate Ar from isotopic abundances",
+          "description": "Calculate relative atomic mass, Ar, from isotopic abundances and isotopic masses provided by mass spectrometry (M0.2, M1.2, M3.1); limited to singly charged ions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "2.1.1(e)",
+          "Sub_topic_name": "Mr and relative formula mass calculations",
+          "description": "Calculate relative molecular mass, Mr, and relative formula mass from relative atomic masses; use Mr for simple molecules and relative formula mass for giant structures. Definitions not required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "2.1.2",
+      "Strand": "Module 2 – Foundations in chemistry",
+      "Topic_name": "Compounds, formulae and equations",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "2.1.2(a)(i)",
+          "Sub_topic_name": "Predict ionic charge from periodic table position",
+          "description": "Predict ionic charge from an element’s position in the periodic table for forming common ions; use this to write formulae of ionic compounds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "2.1.2(a)(ii)",
+          "Sub_topic_name": "Recall common ion names and formulae",
+          "description": "Recall names and formulae of ions: NO3−, CO3²−, SO4²−, OH−, NH4+, Zn2+, Ag+. Assume ‘nitrate’ = NO3− and ‘sulfate’ = SO4²− unless stated. Other ion charges will be provided.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "2.1.2(a)",
+          "Sub_topic_name": "Write ionic compound formulae from charges",
+          "description": "Write formulae of ionic compounds from ionic charges, combining ions in ratios to give charge neutrality; apply to familiar and unfamiliar examples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "2.1.2(b)",
+          "Sub_topic_name": "Balanced chemical and ionic equations with state symbols",
+          "description": "Construct balanced chemical equations (including ionic equations) with state symbols for studied reactions and unfamiliar reactions given appropriate information (M0.2).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "2.1.3",
+      "Strand": "Module 2 – Foundations in chemistry",
+      "Topic_name": "Amount of substance",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "2.1.3(a)(i)",
+          "Sub_topic_name": "Amount of substance terminology",
+          "description": "Explain and use the term amount of substance, expressed using the formula of the substance (e.g. amount of NaCl; amount of O2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "2.1.3(a)(ii)",
+          "Sub_topic_name": "Mole as unit (mol)",
+          "description": "Explain and use the mole (mol) as the unit of amount of substance (M0.0, M0.1, M0.2, M0.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "2.1.3(a)(iii)",
+          "Sub_topic_name": "Avogadro constant NA",
+          "description": "Explain and use the Avogadro constant NA = 6.02 × 10^23 mol−1 as number of particles per mole; value provided on Data Sheet (M0.0, M0.1, M0.2, M0.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "2.1.3(a)(iv)",
+          "Sub_topic_name": "Molar mass (g mol−1)",
+          "description": "Explain and use molar mass as mass per mole with units g mol−1; relate molar mass to Ar/Mr and mass calculations (M0.0, M0.1, M0.2, M0.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "2.1.3(a)(v)",
+          "Sub_topic_name": "Molar gas volume at RTP (24.0 dm3 mol−1)",
+          "description": "Explain and use molar gas volume as gas volume per mole (dm3 mol−1); use molar gas volume at RTP (24.0 dm3 mol−1) from Data Sheet (M0.0, M0.1, M0.2, M0.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "2.1.3(b)",
+          "Sub_topic_name": "Empirical formula vs molecular formula (terms)",
+          "description": "Use the terms empirical formula (simplest whole-number ratio of atoms) and molecular formula (actual numbers of each atom type in a molecule). Definitions not required, but meaning must be understood.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "2.1.3(c)",
+          "Sub_topic_name": "Calculate empirical and molecular formulae",
+          "description": "Calculate empirical formulae and molecular formulae from composition by mass or percentage composition by mass and relative molecular mass; include elemental analysis data contexts (M0.2, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "2.1.3(d)",
+          "Sub_topic_name": "Hydrated salts and water of crystallisation",
+          "description": "Use the terms anhydrous, hydrated, water of crystallisation; calculate formula of a hydrated salt from percentage composition, mass composition, or experimental results (M0.2, M2.2, M2.3, M2.4; PAG1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "2.1.3(e)",
+          "Sub_topic_name": "Mole calculations: mass, gas volume, solution concentration",
+          "description": "Perform calculations using amount of substance (mol) involving mass, gas volume, and solution volume and concentration; express concentration in mol dm−3 and g dm−3 (M0.0, M0.1, M0.4, M1.1, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "2.1.3(f)",
+          "Sub_topic_name": "Ideal gas equation pV = nRT",
+          "description": "Use the ideal gas equation pV = nRT for gas calculations; express quantities in SI units; R provided on Data Sheet (M0.0, M0.1, M0.4, M1.1, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "2.1.3(g)",
+          "Sub_topic_name": "Stoichiometry in calculations",
+          "description": "Use stoichiometric relationships in quantitative calculations based on balanced equations, including limiting reagents/amount ratios where relevant (M0.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9l",
+          "Specification_section_sub": "2.1.3(h)(i)",
+          "Sub_topic_name": "Percentage yield calculations",
+          "description": "Calculate percentage yield of a reaction and related quantities using actual vs theoretical yield based on stoichiometry (M0.2, M1.1, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9m",
+          "Specification_section_sub": "2.1.3(h)(ii)",
+          "Sub_topic_name": "Atom economy calculations",
+          "description": "Calculate atom economy of reactions and related quantities; interpret in context of reaction equations (M0.2, M1.1, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9n",
+          "Specification_section_sub": "2.1.3(i)",
+          "Sub_topic_name": "Techniques for measuring mass/volumes/gas volumes",
+          "description": "Describe techniques and procedures required during experiments that measure masses, volumes of solutions and gas volumes accurately; link to quantitative experimental skills (PAG1; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9o",
+          "Specification_section_sub": "2.1.3(j)",
+          "Sub_topic_name": "Atom economy and sustainability",
+          "description": "Explain benefits for sustainability of developing chemical processes with high atom economy, particularly in industry and resource efficiency (HSW10).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "2.1.4",
+      "Strand": "Module 2 – Foundations in chemistry",
+      "Topic_name": "Acids",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "2.1.4(a)",
+          "Sub_topic_name": "Common acids and alkalis; H+ and OH− in aqueous solution",
+          "description": "Recall formulae of common acids (HCl, H2SO4, HNO3, CH3COOH) and common alkalis (NaOH, KOH, NH3); explain acids release H+ ions in aqueous solution and alkalis release OH− ions in aqueous solution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "2.1.4(b)",
+          "Sub_topic_name": "Strong vs weak acids (qualitative dissociation)",
+          "description": "Explain qualitatively strong vs weak acids in terms of relative dissociation/ionisation in water (extent of H+ release).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "2.1.4(c)(i)",
+          "Sub_topic_name": "Neutralisation: H+ + OH− → H2O",
+          "description": "Describe neutralisation as reaction of H+ and OH− to form H2O; write appropriate ionic equation and relate to acid–alkali reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "2.1.4(c)(ii)",
+          "Sub_topic_name": "Acids with bases/carbonates/oxides/alkalis to form salts",
+          "description": "Explain neutralisation as reaction of acids with bases including carbonates, metal oxides and alkalis to form salts (and water/CO2 where relevant); write full equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "2.1.4(d)",
+          "Sub_topic_name": "Standard solution preparation and acid–base titration technique",
+          "description": "Describe and apply techniques/procedures for preparing a standard solution of required concentration and carrying out acid–base titrations (PAG2; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "2.1.4(e)",
+          "Sub_topic_name": "Titration calculations (structured/unstructured)",
+          "description": "Carry out structured and non-structured titration calculations using experimental results for familiar and unfamiliar acids and bases; use stoichiometry, concentrations, volumes, significant figures (M0.1, M0.2, M1.1, M1.2, M2.2, M2.3, M2.4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "2.1.5",
+      "Strand": "Module 2 – Foundations in chemistry",
+      "Topic_name": "Redox",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "2.1.5(a)",
+          "Sub_topic_name": "Assign oxidation numbers (rules)",
+          "description": "Apply rules for assigning and calculating oxidation numbers for atoms in elements, compounds and ions; include oxidation number of O in peroxides and H in metal hydrides.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "2.1.5(b)",
+          "Sub_topic_name": "Write formulae using oxidation numbers",
+          "description": "Write chemical formulae using oxidation numbers to determine charge balance and stoichiometry; communicate using oxidation-state reasoning (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "2.1.5(c)",
+          "Sub_topic_name": "Roman numerals for oxidation state in names",
+          "description": "Use Roman numerals to indicate oxidation number magnitude in compound/ion names when elements have multiple oxidation states (e.g. iron(II), iron(III)); convert between names and formulae including chlorate(I), chlorate(III); assume nitrate and sulfate as NO3− and SO4²− unless specified (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "2.1.5(d)",
+          "Sub_topic_name": "Oxidation and reduction definitions",
+          "description": "Define oxidation and reduction in terms of electron transfer and changes in oxidation number; apply to examples from s-, p- and d-block elements.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "2.1.5(e)",
+          "Sub_topic_name": "Metals + acids → salts + H2 (equations)",
+          "description": "Write full equations for redox reactions of metals (s-, p-, d-block e.g. Mg, Al, Fe, Zn) with acids to form salts and hydrogen; limited to reactions producing salt + H2; ionic equations not required; note reactions with HNO3 or conc. H2SO4 may be considered elsewhere.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "2.1.5(f)",
+          "Sub_topic_name": "Interpret/predict redox via oxidation numbers and electrons",
+          "description": "Interpret redox equations (including those in 2.1.5(e)) and unfamiliar redox reactions to predict oxidation numbers, electron loss/gain and overall changes; use oxidation-state bookkeeping (M0.2).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "2.2.1",
+      "Strand": "Module 2 – Foundations in chemistry",
+      "Topic_name": "Electron structure",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "2.2.1(a)",
+          "Sub_topic_name": "Electron capacity of first four shells",
+          "description": "Recall and use the number of electrons that can fill the first four electron shells (principal energy levels).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "2.2.1(b)(i)",
+          "Sub_topic_name": "Atomic orbital definition and electron spins",
+          "description": "Define an atomic orbital as a region around the nucleus that can hold up to two electrons with opposite spins; relate to electron configuration models (HSW1, HSW7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "2.2.1(b)(ii)",
+          "Sub_topic_name": "Shapes of s and p orbitals",
+          "description": "Recognise and describe the shapes of s-orbitals and p-orbitals as used in chemical bonding and electron structure models.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "2.2.1(b)(iii)",
+          "Sub_topic_name": "Numbers of orbitals and electron capacities in subshells",
+          "description": "State the number of orbitals in s, p and d subshells and hence the maximum number of electrons in each subshell (s, p, d).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "2.2.1(c)(i)",
+          "Sub_topic_name": "Aufbau filling order up to 4p",
+          "description": "Fill orbitals for the first three shells and the 4s and 4p orbitals in order of increasing energy; use correct energy ordering for electron configurations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "2.2.1(c)(ii)",
+          "Sub_topic_name": "Hund’s rule and pairing",
+          "description": "For orbitals of the same energy, place electrons singly before pairing; use ‘electrons in boxes’ representations consistent with Hund’s rule.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "2.2.1(d)(i)",
+          "Sub_topic_name": "Electron configuration of atoms up to Z=36",
+          "description": "Deduce electron configurations of atoms up to atomic number Z = 36 using subshell notation (e.g. O: 1s2 2s2 2p4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "2.2.1(d)(ii)",
+          "Sub_topic_name": "Electron configuration of ions (s/p-block) up to Z=36",
+          "description": "Deduce electron configurations of ions (limited to s- and p-block up to Z = 36) given atomic number and ionic charge; apply electron gain/loss to subshell notation.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "2.2.2",
+      "Strand": "Module 2 – Foundations in chemistry",
+      "Topic_name": "Bonding and structure",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "2.2.2(a)",
+          "Sub_topic_name": "Ionic bonding and dot-and-cross diagrams",
+          "description": "Explain ionic bonding as electrostatic attraction between positive and negative ions; construct dot-and-cross diagrams for ionic compounds.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "2.2.2(b)",
+          "Sub_topic_name": "Giant ionic lattice structure",
+          "description": "Explain solids of ionic compounds as giant ionic lattices with oppositely charged ions strongly attracted in all directions (e.g. NaCl).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "2.2.2(c)",
+          "Sub_topic_name": "Properties of ionic compounds from structure/bonding",
+          "description": "Explain melting/boiling points, solubility, and electrical conductivity of ionic compounds in solid, molten (liquid) and aqueous states in terms of ionic structure, strong attractions, and ion mobility (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "2.2.2(d)",
+          "Sub_topic_name": "Covalent bond definition",
+          "description": "Define a covalent bond as the strong electrostatic attraction between a shared pair of electrons and the nuclei of the bonded atoms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "2.2.2(e)(i)",
+          "Sub_topic_name": "Dot-and-cross for single covalent bonds",
+          "description": "Construct dot-and-cross diagrams for molecules/ions showing single covalent bonding; include lone pairs as needed (up to six electron pairs around central atom).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "2.2.2(e)(ii)",
+          "Sub_topic_name": "Dot-and-cross for multiple bonds",
+          "description": "Construct dot-and-cross diagrams for molecules/ions showing multiple covalent bonding (double/triple as required), including appropriate shared pairs and lone pairs (up to six electron pairs around central atom).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "2.2.2(e)(iii)",
+          "Sub_topic_name": "Dative (coordinate) bonding diagrams",
+          "description": "Construct dot-and-cross diagrams showing dative covalent (coordinate) bonding; identify electron pair donation from lone pair to an electron-deficient species.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "2.2.2(f)",
+          "Sub_topic_name": "Average bond enthalpy as bond strength measure",
+          "description": "Use the term average bond enthalpy as a measure of covalent bond strength; understand larger average bond enthalpy implies stronger bond. Definition/calculations not required here (covered in 3.2.1(f)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13i",
+          "Specification_section_sub": "2.2.2(g)",
+          "Sub_topic_name": "Electron pair repulsion and bond angles (up to 6 pairs)",
+          "description": "Predict shapes and bond angles for molecules/ions with up to six electron pairs (including lone pairs) around central atom using electron pair repulsion; compare repulsive strengths of bonded pairs vs lone pairs; draw 3-D diagrams (M4.1, M4.2; HSW1,2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13j",
+          "Specification_section_sub": "2.2.2(h)",
+          "Sub_topic_name": "Common molecular shapes: linear to octahedral",
+          "description": "Use electron pair repulsion to explain shapes: linear, non-linear (bent), trigonal planar, pyramidal, tetrahedral, octahedral; know lone pairs repel more than bonded pairs; recall common bond angles e.g. CH4 109.5°, NH3 107°, H2O 104.5°.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13k",
+          "Specification_section_sub": "2.2.2(i)",
+          "Sub_topic_name": "Electronegativity (Pauling values)",
+          "description": "Define electronegativity as ability of an atom to attract bonding electrons in a covalent bond; interpret Pauling electronegativity values; recognise trend increases towards F across a period and up a group (HSW1,2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13l",
+          "Specification_section_sub": "2.2.2(j)(i)",
+          "Sub_topic_name": "Polar bonds and permanent dipoles",
+          "description": "Explain polar bonds and permanent dipoles in molecules with covalently bonded atoms of different electronegativity; show dipole direction and partial charges.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13m",
+          "Specification_section_sub": "2.2.2(j)(ii)",
+          "Sub_topic_name": "Polar molecules and overall dipole vs shape",
+          "description": "Explain when a molecule is polar in terms of bond dipoles and molecular shape; distinguish cases where dipoles cancel (e.g. CO2) vs not (e.g. H2O).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13n",
+          "Specification_section_sub": "2.2.2(k)",
+          "Sub_topic_name": "Van der Waals forces: permanent and induced dipoles",
+          "description": "Explain intermolecular forces based on permanent dipole–dipole interactions and induced dipole–dipole (London dispersion) interactions; recognise both may be called van der Waals’ forces (HSW1,2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13o",
+          "Specification_section_sub": "2.2.2(l)",
+          "Sub_topic_name": "Hydrogen bonding requirements",
+          "description": "Explain hydrogen bonding as intermolecular bonding between molecules containing N, O or F and the H atom of –NH, –OH or HF; include role of lone pairs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13p",
+          "Specification_section_sub": "2.2.2(m)",
+          "Sub_topic_name": "Anomalous properties of water from H-bonding",
+          "description": "Explain anomalous properties of water resulting from hydrogen bonding, including (i) density of ice vs water, and (ii) relatively high melting and boiling points (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13q",
+          "Specification_section_sub": "2.2.2(n)",
+          "Sub_topic_name": "Simple molecular lattices (I2, ice)",
+          "description": "Explain solid structures of simple molecular lattices as covalently bonded molecules attracted by intermolecular forces, e.g. I2 and ice.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13r",
+          "Specification_section_sub": "2.2.2(o)",
+          "Sub_topic_name": "Properties of simple molecular substances",
+          "description": "Explain melting/boiling points, solubility and electrical conductivity of covalent compounds with simple molecular lattice structures in terms of intermolecular forces and lack of mobile charged particles.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "3.1.1",
+      "Strand": "Module 3 – Periodic table and energy",
+      "Topic_name": "Periodicity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "3.1.1(a)",
+          "Sub_topic_name": "Periodic table structure and periodicity",
+          "description": "Explain periodic table arrangement by increasing atomic (proton) number; elements in periods show repeating trends in physical and chemical properties (periodicity); elements in groups have similar chemical properties; understand development/extension of periodic table as scientific knowledge (HSW1,7,11).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "3.1.1(b)(i)",
+          "Sub_topic_name": "Electron configurations across Periods 2 and 3",
+          "description": "Describe periodic trend in electron configurations across Periods 2 and 3; relate to shell/subshell filling and valence electrons (see also 2.2.1(d)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "3.1.1(b)(ii)",
+          "Sub_topic_name": "Classify elements as s-, p-, d-block",
+          "description": "Classify elements into s-block, p-block and d-block based on the subshell being filled in ground-state electron configuration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "3.1.1(c)",
+          "Sub_topic_name": "First and successive ionisation energies",
+          "description": "Define first ionisation energy as removal of 1 mol of electrons from 1 mol of gaseous atoms; understand successive ionisation energy concept; use in explanations and predictions (definition required for first only).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14e",
+          "Specification_section_sub": "3.1.1(c)(i)",
+          "Sub_topic_name": "Ionisation energy trends across periods and down groups",
+          "description": "Explain trends in first ionisation energies across Periods 2 and 3 and down a group in terms of attraction between nucleus and outer electron, nuclear charge, atomic radius, shielding; include anomalies due to s vs p subshell energies (Be→B) and p-orbital repulsion (N→O) (M3.1; HSW1,2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14f",
+          "Specification_section_sub": "3.1.1(c)(ii)",
+          "Sub_topic_name": "Use successive IE to deduce shells and group",
+          "description": "Use successive ionisation energies to predict number of electrons in each shell and hence deduce the group of an element; interpret large jumps in IE (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14g",
+          "Specification_section_sub": "3.1.1(d)(i)",
+          "Sub_topic_name": "Metallic bonding model",
+          "description": "Explain metallic bonding as strong electrostatic attraction between cations (positive ions) and delocalised electrons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14h",
+          "Specification_section_sub": "3.1.1(d)(ii)",
+          "Sub_topic_name": "Giant metallic lattice structure",
+          "description": "Explain metals as giant metallic lattice structures; no details of cubic or hexagonal packing required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14i",
+          "Specification_section_sub": "3.1.1(e)",
+          "Sub_topic_name": "Giant covalent structures: diamond, graphite, graphene, silicon",
+          "description": "Explain solid giant covalent lattices of carbon (diamond, graphite, graphene) and silicon as networks of atoms bonded by strong covalent bonds; link to strength and conductivity; recognise graphene applications (HSW1,9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14j",
+          "Specification_section_sub": "3.1.1(f)",
+          "Sub_topic_name": "Properties of giant metallic and giant covalent lattices",
+          "description": "Explain melting/boiling points, solubility and electrical conductivity of giant metallic and giant covalent lattices in terms of structure and bonding: particle types, relative force/bond strength, and mobility of particles/charge carriers as appropriate (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14k",
+          "Specification_section_sub": "3.1.1(g)",
+          "Sub_topic_name": "Melting point trends across Periods 2 and 3",
+          "description": "Explain variation in melting points across Periods 2 and 3 in terms of changes in structure and bonding (giant metallic → giant covalent → simple molecular lattice); relate to bonding models and intermolecular forces (M3.1).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "3.1.2",
+      "Strand": "Module 3 – Periodic table and energy",
+      "Topic_name": "Group 2",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "3.1.2(a)",
+          "Sub_topic_name": "Group 2 electron configuration and 2+ ions",
+          "description": "Explain Group 2 outer shell s2 electron configuration and loss of these two electrons in redox reactions to form 2+ ions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "3.1.2(b)(i)",
+          "Sub_topic_name": "Group 2 reactions with oxygen",
+          "description": "Describe and compare reactivities of Group 2 metals Mg → Ba via redox reactions with oxygen; write appropriate equations and observations where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "3.1.2(b)(ii)",
+          "Sub_topic_name": "Group 2 reactions with water",
+          "description": "Describe and compare reactivities of Group 2 metals Mg → Ba via redox reactions with water; write appropriate equations; understand trends in reaction vigour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "3.1.2(b)(iii)",
+          "Sub_topic_name": "Group 2 reactions with dilute acids",
+          "description": "Describe and compare reactivities of Group 2 metals Mg → Ba via redox reactions with dilute acids; limited to salt + hydrogen formation; write full equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15e",
+          "Specification_section_sub": "3.1.2(c)",
+          "Sub_topic_name": "Explain Group 2 reactivity trend using ionisation energies",
+          "description": "Explain trend in reactivity down Group 2 in terms of first and second ionisation energies; write equation for second ionisation energy change though definition not required (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15f",
+          "Specification_section_sub": "3.1.2(d)",
+          "Sub_topic_name": "Group 2 oxides with water; pH trend",
+          "description": "Explain action of water on Group 2 oxides and approximate pH of resulting solutions; describe trend of increasing alkalinity down group.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15g",
+          "Specification_section_sub": "3.1.2(e)(i)",
+          "Sub_topic_name": "Ca(OH)2 in agriculture (neutralise acid soils)",
+          "description": "Explain use of Ca(OH)2 as a base in agriculture to neutralise acid soils; write relevant neutralisation equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15h",
+          "Specification_section_sub": "3.1.2(e)(ii)",
+          "Sub_topic_name": "Antacids: Mg(OH)2 and CaCO3",
+          "description": "Explain use of Mg(OH)2 and CaCO3 as antacids to neutralise stomach acid; write relevant equations including carbonate reactions where appropriate.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "3.1.3",
+      "Strand": "Module 3 – Periodic table and energy",
+      "Topic_name": "The halogens",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "3.1.3(a)",
+          "Sub_topic_name": "Halogens as diatomic molecules; boiling point trend",
+          "description": "Explain halogens as diatomic molecules and explain trend in boiling points of Cl2, Br2, I2 in terms of increasing induced dipole–dipole (London dispersion) forces (see also 2.2.2(k)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "3.1.3(b)",
+          "Sub_topic_name": "Halogen electron configuration and halide ions",
+          "description": "Explain outer shell s2p5 electron configuration of halogens and that in many redox reactions they gain one electron to form 1− ions; emphasise electron transfer and oxidation number changes; include full and ionic equations where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16c",
+          "Specification_section_sub": "3.1.3(c)",
+          "Sub_topic_name": "Halogen displacement reactions (reactivity trend)",
+          "description": "Describe and interpret trend in reactivity of Cl2, Br2, I2 shown by reactions with other halide ions; include expected colour changes in aqueous and organic solutions; write ionic equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16d",
+          "Specification_section_sub": "3.1.3(d)",
+          "Sub_topic_name": "Explain halogen reactivity trend (forming 1−)",
+          "description": "Explain trend in halogen reactivity (Cl2 > Br2 > I2) via decreasing ease of forming 1− ions in terms of attraction, atomic radius, and electron shielding.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16e",
+          "Specification_section_sub": "3.1.3(e)",
+          "Sub_topic_name": "Disproportionation (definition + chlorine examples)",
+          "description": "Define disproportionation as oxidation and reduction of the same element; illustrate with (i) reaction of chlorine with water (water treatment), (ii) reaction of chlorine with cold, dilute NaOH(aq) (bleach formation), and (iii) analogous reactions; write equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16f",
+          "Specification_section_sub": "3.1.3(f)",
+          "Sub_topic_name": "Chlorine in water treatment: benefits vs risks",
+          "description": "Evaluate benefits of chlorine use in water treatment (killing bacteria) against risks (toxic chlorine gas hazards; possible risks from formation of chlorinated hydrocarbons); consider alternatives and ethical decisions (HSW9,10,12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16g",
+          "Specification_section_sub": "3.1.3(g)",
+          "Sub_topic_name": "Test for halide ions with Ag+ and NH3",
+          "description": "Describe precipitation reactions (with ionic equations) of Cl−, Br−, I− with Ag+(aq) followed by reaction with aqueous NH3; use observations as test for halide ions; complexes with NH3 not required beyond observations (PAG4; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "3.1.4",
+      "Strand": "Module 3 – Periodic table and energy",
+      "Topic_name": "Qualitative analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "3.1.4(a)(i)",
+          "Sub_topic_name": "Test for carbonate ions CO3²−",
+          "description": "Carry out and interpret qualitative analysis on test-tube scale for CO3²− by reaction with H+(aq) forming CO2(g); write ionic equation and state observation (effervescence). Sequence of tests: carbonate first (PAG4; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "3.1.4(a)(i)",
+          "Sub_topic_name": "Test for sulfate ions SO4²−",
+          "description": "Carry out and interpret test for SO4²− by precipitation with Ba2+(aq); write ionic equation and state observation; perform after carbonate test due to insolubility issues (BaCO3 insoluble). Sequence: sulfate second (PAG4; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "3.1.4(a)(i)",
+          "Sub_topic_name": "Tests for halide ions in analysis sequence",
+          "description": "Apply halide tests for Cl−, Br−, I− as part of qualitative analysis sequence after carbonate then sulfate; use Ag+(aq) precipitation and NH3 to distinguish; record observations (PAG4; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "3.1.4(a)(ii)",
+          "Sub_topic_name": "Test for ammonium ions NH4+",
+          "description": "Carry out and interpret test for NH4+ by warming with NaOH(aq) to form NH3; recognise ammonia (e.g. smell, turns damp red litmus blue); write ionic equation where appropriate (PAG4; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "3.2.1",
+      "Strand": "Module 3 – Periodic table and energy",
+      "Topic_name": "Enthalpy changes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "3.2.1(a)",
+          "Sub_topic_name": "Exothermic vs endothermic reactions (ΔH sign)",
+          "description": "Explain that chemical reactions may be accompanied by enthalpy changes; identify exothermic reactions with ΔH negative and endothermic reactions with ΔH positive.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "3.2.1(b)",
+          "Sub_topic_name": "Enthalpy profile diagrams (reactants vs products)",
+          "description": "Construct enthalpy profile diagrams showing relative enthalpy of reactants and products and the overall ΔH; include correct energy level depiction (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18c",
+          "Specification_section_sub": "3.2.1(c)",
+          "Sub_topic_name": "Activation energy (Ea) on profile diagrams",
+          "description": "Explain activation energy qualitatively as minimum energy required for a reaction; use enthalpy profile diagrams to show Ea for forward (and reverse where appropriate) reactions (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18d",
+          "Specification_section_sub": "3.2.1(d)(i)",
+          "Sub_topic_name": "Standard conditions and standard states",
+          "description": "Explain and use standard conditions and standard states (physical states under standard conditions), taking standard conditions as 100 kPa and stated temperature 298 K.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18e",
+          "Specification_section_sub": "3.2.1(d)(ii)",
+          "Sub_topic_name": "Enthalpy change of reaction (ΔrH)",
+          "description": "Use enthalpy change of reaction ΔrH as enthalpy change associated with a stated equation; interpret ΔrH in thermochemical equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18f",
+          "Specification_section_sub": "3.2.1(d)(iii)",
+          "Sub_topic_name": "Standard enthalpy of formation (ΔfH)",
+          "description": "Define and use standard enthalpy change of formation ΔfH as formation of 1 mol of a compound from its elements in their standard states under standard conditions; apply in calculations and cycles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18g",
+          "Specification_section_sub": "3.2.1(d)(iv)",
+          "Sub_topic_name": "Standard enthalpy of combustion (ΔcH)",
+          "description": "Define and use standard enthalpy change of combustion ΔcH as complete combustion of 1 mol of a substance; apply to fuels and Hess cycles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18h",
+          "Specification_section_sub": "3.2.1(d)(v)",
+          "Sub_topic_name": "Enthalpy of neutralisation (ΔneutH)",
+          "description": "Define and use enthalpy change of neutralisation ΔneutH as formation of 1 mol of water from neutralisation; apply to calorimetry contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18i",
+          "Specification_section_sub": "3.2.1(e)",
+          "Sub_topic_name": "Calorimetry: determine ΔH using q = mcΔT",
+          "description": "Determine enthalpy changes directly from experimental results using q = mcΔT; handle units and conversions; apply to suitable calorimetry experiments (M0.0, M0.2, M2.2, M2.3, M2.4; PAG3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18j",
+          "Specification_section_sub": "3.2.1(f)(i)",
+          "Sub_topic_name": "Average bond enthalpy meaning",
+          "description": "Explain average bond enthalpy as breaking 1 mol of specified bonds in gaseous molecules; formal definition not required but meaning must be understood; recognise actual bond enthalpies may differ from averages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18k",
+          "Specification_section_sub": "3.2.1(f)(ii)",
+          "Sub_topic_name": "Bond breaking/making and exo/endo reactions",
+          "description": "Explain exothermic and endothermic reactions in terms of enthalpy changes associated with breaking (endothermic) and making (exothermic) covalent bonds; relate net ΔH to balance of these energies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18l",
+          "Specification_section_sub": "3.2.1(f)(iii)",
+          "Sub_topic_name": "Calculate ΔH using average bond enthalpies",
+          "description": "Use average bond enthalpies to calculate enthalpy changes and related quantities for reactions; apply stoichiometry and unit consistency (M0.0, M0.2, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18m",
+          "Specification_section_sub": "3.2.1(g)(i)",
+          "Sub_topic_name": "Hess’ law cycles using combustion data",
+          "description": "Apply Hess’ law to construct enthalpy cycles and calculate ΔrH indirectly from enthalpy changes of combustion; definitions of Hess’ law not required; unfamiliar cycles will be provided (M0.0, M0.2, M1.1, M2.2, M2.3, M2.4, M3.1; HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18n",
+          "Specification_section_sub": "3.2.1(g)(ii)",
+          "Sub_topic_name": "Hess’ law cycles using formation data",
+          "description": "Apply Hess’ law to construct cycles and calculate ΔrH indirectly from enthalpy changes of formation; interpret provided cycles (M0.0, M0.2, M1.1, M2.2, M2.3, M2.4, M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18o",
+          "Specification_section_sub": "3.2.1(g)(iii)",
+          "Sub_topic_name": "Unfamiliar enthalpy cycles (general)",
+          "description": "Use Hess’ law with unfamiliar enthalpy cycles provided to determine unknown enthalpy changes; set up equations correctly and solve (M0.0, M0.2, M1.1, M2.2, M2.3, M2.4, M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18p",
+          "Specification_section_sub": "3.2.1(h)",
+          "Sub_topic_name": "Techniques for direct and indirect ΔH determination",
+          "description": "Describe techniques and procedures used to determine enthalpy changes directly and indirectly (including those covered later in 5.2.1(c)); include practical considerations and method reliability (M3.1, M3.2; PAG3; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "3.2.2",
+      "Strand": "Module 3 – Periodic table and energy",
+      "Topic_name": "Reaction rates",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "3.2.2(a)",
+          "Sub_topic_name": "Concentration/pressure and rate (collision frequency)",
+          "description": "Explain effect of concentration (and gas pressure) on rate of reaction in terms of collision theory and frequency of collisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19b",
+          "Specification_section_sub": "3.2.2(b)",
+          "Sub_topic_name": "Calculate rate from gradient of graphs",
+          "description": "Calculate reaction rate from gradients of graphs of a physical quantity vs time; suitable quantities include concentration, gas volume, mass etc.; interpret slope as rate (M3.1, M3.2, M3.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19c",
+          "Specification_section_sub": "3.2.2(c)(i)",
+          "Sub_topic_name": "Catalyst not used up; increases rate",
+          "description": "Explain role of a catalyst in increasing reaction rate without being used up in the overall reaction; distinguish from stoichiometric reactants.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19d",
+          "Specification_section_sub": "3.2.2(c)(ii)",
+          "Sub_topic_name": "Catalyst lowers activation energy route",
+          "description": "Explain that a catalyst provides an alternative reaction pathway with lower activation energy; illustrate using enthalpy profile diagrams.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19e",
+          "Specification_section_sub": "3.2.2(d)(i)",
+          "Sub_topic_name": "Homogeneous vs heterogeneous catalysts",
+          "description": "Define and distinguish homogeneous catalysts (same phase as reactants) and heterogeneous catalysts (different phase).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19f",
+          "Specification_section_sub": "3.2.2(d)(ii)",
+          "Sub_topic_name": "Catalysts: sustainability and CO2 reduction",
+          "description": "Explain economic importance of catalysts and sustainability benefits: lower operating temperatures, reduced energy demand from fossil fuel combustion, reduced CO2 emissions; evaluate toxicity risks of some catalysts (HSW9,10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19g",
+          "Specification_section_sub": "3.2.2(e)",
+          "Sub_topic_name": "Practical methods to investigate rates",
+          "description": "Describe techniques and procedures to investigate reaction rates including measuring mass, gas volumes and time; plan/execute suitable experiments (PAG9; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19h",
+          "Specification_section_sub": "3.2.2(f)",
+          "Sub_topic_name": "Boltzmann distribution (qualitative) and Ea",
+          "description": "Explain qualitatively the Boltzmann distribution of molecular energies and its relationship to activation energy; interpret effect of Ea threshold (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19i",
+          "Specification_section_sub": "3.2.2(g)(i)",
+          "Sub_topic_name": "Temperature effect via Boltzmann distributions",
+          "description": "Use Boltzmann distributions to explain qualitatively how increasing temperature increases proportion of molecules with energy ≥ Ea, increasing reaction rate (M3.1; HSW1,2,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19j",
+          "Specification_section_sub": "3.2.2(g)(ii)",
+          "Sub_topic_name": "Catalyst effect via Boltzmann distributions",
+          "description": "Use Boltzmann distributions to explain catalyst effect as lowering Ea, increasing proportion of molecules with energy ≥ Ea at a given temperature, increasing reaction rate (M3.1; HSW1,2,5).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 20,
+      "Specification_section": "3.2.3",
+      "Strand": "Module 3 – Periodic table and energy",
+      "Topic_name": "Chemical equilibrium",
+      "Sub_topics": [
+        {
+          "subtopic_id": "20a",
+          "Specification_section_sub": "3.2.3(a)",
+          "Sub_topic_name": "Dynamic equilibrium definition",
+          "description": "Explain dynamic equilibrium in a closed system: forward rate equals reverse rate and concentrations of reactants/products remain constant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20b",
+          "Specification_section_sub": "3.2.3(b)",
+          "Sub_topic_name": "Le Chatelier’s principle (qualitative)",
+          "description": "Apply Le Chatelier’s principle to homogeneous equilibria to deduce qualitatively effects of changes in temperature, pressure or concentration on position of equilibrium; definition not required (HSW1,2,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20c",
+          "Specification_section_sub": "3.2.3(c)",
+          "Sub_topic_name": "Catalysts and equilibrium position",
+          "description": "Explain that a catalyst increases rates of both forward and reverse reactions equally and therefore does not change equilibrium position (but reaches equilibrium faster).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20d",
+          "Specification_section_sub": "3.2.3(d)",
+          "Sub_topic_name": "Practical investigation of equilibrium shifts",
+          "description": "Describe techniques/procedures to investigate changes to equilibrium position with changes in concentration and temperature; qualitative effects only; include observation and interpretation (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20e",
+          "Specification_section_sub": "3.2.3(e)",
+          "Sub_topic_name": "Industry: compromise between equilibrium and rate",
+          "description": "Explain importance to chemical industry of compromise between equilibrium yield and reaction rate when choosing operating conditions; include safety/economics context (e.g. Haber) (HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20f",
+          "Specification_section_sub": "3.2.3(f)",
+          "Sub_topic_name": "Kc expressions and calculations",
+          "description": "Write expressions for equilibrium constant Kc for homogeneous reactions; calculate Kc from provided equilibrium concentrations; units not required (M0.2, M1.1, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20g",
+          "Specification_section_sub": "3.2.3(g)",
+          "Sub_topic_name": "Estimate position of equilibrium from Kc magnitude",
+          "description": "Estimate position of equilibrium qualitatively from magnitude of Kc (e.g. very large Kc implies products favoured); qualitative estimation only (M0.3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 21,
+      "Specification_section": "4.1.1",
+      "Strand": "Module 4 – Core organic chemistry",
+      "Topic_name": "Basic concepts of organic chemistry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "21a",
+          "Specification_section_sub": "4.1.1(a)",
+          "Sub_topic_name": "IUPAC naming of organic compounds (spec scope)",
+          "description": "Apply IUPAC nomenclature rules to systematically name organic compounds limited to functional groups in this specification; know first ten alkane names and corresponding alkyl groups; e.g. CH3CH2CH(CH3)CH2OH is 2-methylbutan-1-ol (HSW8, HSW11).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21b",
+          "Specification_section_sub": "4.1.1(b)(i)",
+          "Sub_topic_name": "General formula (homologous series)",
+          "description": "Interpret and use general formulae as simplest algebraic formula for a member of a homologous series (e.g. alkane CnH2n+2); definitions not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21c",
+          "Specification_section_sub": "4.1.1(b)(ii)",
+          "Sub_topic_name": "Structural formula representations",
+          "description": "Interpret and use structural formulae showing minimal detail of atom arrangement (e.g. butane CH3CH2CH2CH3 or CH3(CH2)2CH3); understand conventions: carboxyl group written as COOH; ester group as COO.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21d",
+          "Specification_section_sub": "4.1.1(b)(iii)",
+          "Sub_topic_name": "Displayed formula representations",
+          "description": "Interpret and use displayed formulae showing relative positions of atoms and bonds (e.g. ethanol displayed with all bonds).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21e",
+          "Specification_section_sub": "4.1.1(b)(iv)",
+          "Sub_topic_name": "Skeletal formula representations",
+          "description": "Interpret and use skeletal formulae removing H atoms from alkyl chains to show carbon skeleton and functional groups; use standard ring symbols for cyclohexane and benzene; recognise as communication tool (M4.2; HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21f",
+          "Specification_section_sub": "4.1.1(c)(i)",
+          "Sub_topic_name": "Homologous series concept",
+          "description": "Use and interpret homologous series as series of organic compounds with same functional group where successive members differ by CH2; definition required for homologous series.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21g",
+          "Specification_section_sub": "4.1.1(c)(ii)",
+          "Sub_topic_name": "Functional group concept",
+          "description": "Use and interpret functional group as group of atoms responsible for characteristic reactions of a compound.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21h",
+          "Specification_section_sub": "4.1.1(c)(iii)",
+          "Sub_topic_name": "Alkyl group (CnH2n+1)",
+          "description": "Use and interpret alkyl groups of formula CnH2n+1; use R to represent alkyl groups and other non-reacting fragments as appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21i",
+          "Specification_section_sub": "4.1.1(c)(iv)",
+          "Sub_topic_name": "Aliphatic definition (non-aromatic chains/rings)",
+          "description": "Use and interpret aliphatic compounds as carbon/hydrogen in straight chains, branched chains or non-aromatic rings.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21j",
+          "Specification_section_sub": "4.1.1(c)(v)",
+          "Sub_topic_name": "Alicyclic definition",
+          "description": "Use and interpret alicyclic compounds as aliphatic compounds arranged in non-aromatic rings with or without side chains.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21k",
+          "Specification_section_sub": "4.1.1(c)(vi)",
+          "Sub_topic_name": "Aromatic definition",
+          "description": "Use and interpret aromatic compounds as those containing a benzene ring.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21l",
+          "Specification_section_sub": "4.1.1(c)(vii)",
+          "Sub_topic_name": "Saturated vs unsaturated (C=C, C≡C, aromatic)",
+          "description": "Use and interpret saturated as containing single C–C bonds only; unsaturated as presence of multiple carbon–carbon bonds including C=C, C≡C and aromatic rings; note usage distinct from broader ‘degree of saturation’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21m",
+          "Specification_section_sub": "4.1.1(d)",
+          "Sub_topic_name": "Use general formula to predict member formula",
+          "description": "Use the general formula of a homologous series to predict the molecular formula of any member of that series.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21n",
+          "Specification_section_sub": "4.1.1(e)",
+          "Sub_topic_name": "Structural isomerism and generating isomers",
+          "description": "Explain structural isomers as compounds with same molecular formula but different structural formulae; determine possible structural formulae given a molecular formula (M4.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21o",
+          "Specification_section_sub": "4.1.1(f)(i)",
+          "Sub_topic_name": "Homolytic fission and radicals (concept)",
+          "description": "Explain homolytic covalent bond fission: each bonding atom receives one electron from the shared pair forming two radicals; represent radicals appropriately in mechanisms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21p",
+          "Specification_section_sub": "4.1.1(f)(ii)",
+          "Sub_topic_name": "Heterolytic fission (concept)",
+          "description": "Explain heterolytic covalent bond fission: one bonding atom receives both electrons from the bond; relate to formation of ions/dipoles in polar reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21q",
+          "Specification_section_sub": "4.1.1(g)",
+          "Sub_topic_name": "Radical definition and dot notation",
+          "description": "Define radical as species with an unpaired electron; use single dot (•) to represent radicals in mechanisms and equations (e.g. Cl•, CH3•). Dots not required for diradicals (e.g. O).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21r",
+          "Specification_section_sub": "4.1.1(h)",
+          "Sub_topic_name": "Curly arrow meaning (electron pair movement)",
+          "description": "Describe curly arrow as movement of an electron pair showing heterolytic fission or covalent bond formation; half-curly arrows are not required for this spec’s radical substitution mechanism.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21s",
+          "Specification_section_sub": "4.1.1(i)",
+          "Sub_topic_name": "Drawing reaction mechanisms with curly arrows and dipoles",
+          "description": "Draw reaction mechanisms using diagrams to show movement of an electron pair with curly arrows and relevant dipoles; arrows start from bond, lone pair, or negative charge; include dipoles where relevant (HSW1,2,8).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 22,
+      "Specification_section": "4.1.2",
+      "Strand": "Module 4 – Core organic chemistry",
+      "Topic_name": "Alkanes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "22a",
+          "Specification_section_sub": "4.1.2(a)",
+          "Sub_topic_name": "σ bonds in alkanes and free rotation",
+          "description": "Explain alkanes as saturated hydrocarbons containing single C–C and C–H bonds as σ-bonds (direct orbital overlap); describe free rotation about σ bonds; hybridisation not required (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22b",
+          "Specification_section_sub": "4.1.2(b)",
+          "Sub_topic_name": "Tetrahedral geometry around carbon in alkanes",
+          "description": "Explain tetrahedral shape and bond angle around each carbon in alkanes using electron pair repulsion; draw 3-D diagrams (M4.1, M4.2; see also 2.2.2(g–h)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22c",
+          "Specification_section_sub": "4.1.2(c)",
+          "Sub_topic_name": "Alkane boiling points: chain length and branching",
+          "description": "Explain variation in boiling points of alkanes with carbon chain length and branching in terms of London (induced dipole–dipole) forces and surface area effects (M3.1; see also 2.2.2(k)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22d",
+          "Specification_section_sub": "4.1.2(d)",
+          "Sub_topic_name": "Low reactivity of alkanes (bond enthalpy/polarity)",
+          "description": "Explain low reactivity of alkanes with many reagents due to high bond enthalpy and very low polarity of σ bonds; link to stability and non-polar nature (HSW1; see also 2.2.2(j)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22e",
+          "Specification_section_sub": "4.1.2(e)",
+          "Sub_topic_name": "Complete vs incomplete combustion of alkanes",
+          "description": "Write and interpret equations for complete combustion of alkanes (CO2 + H2O) and incomplete combustion in limited oxygen; explain dangers from CO formation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22f",
+          "Specification_section_sub": "4.1.2(f)",
+          "Sub_topic_name": "Radical substitution of alkanes with halogens (mechanism)",
+          "description": "Describe and apply radical substitution of alkanes with chlorine/bromine under UV, including mechanism steps: initiation (homolytic fission), propagation, termination; represent radicals with dots; half-curly arrows not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22g",
+          "Specification_section_sub": "4.1.2(g)",
+          "Sub_topic_name": "Limitations of radical substitution in synthesis",
+          "description": "Explain limitations of radical substitution for synthesis: mixture of products due to further substitution and substitution at different positions in carbon chain; relate to selectivity issues.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 23,
+      "Specification_section": "4.1.3",
+      "Strand": "Module 4 – Core organic chemistry",
+      "Topic_name": "Alkenes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "23a",
+          "Specification_section_sub": "4.1.3(a)",
+          "Sub_topic_name": "π bond and σ bond in alkenes; restricted rotation",
+          "description": "Explain alkenes as unsaturated hydrocarbons with C=C comprising a π bond (sideways p-orbital overlap) and a σ bond (direct overlap); explain restricted rotation about π bond; hybridisation not required (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23b",
+          "Specification_section_sub": "4.1.3(b)",
+          "Sub_topic_name": "Trigonal planar geometry at C=C",
+          "description": "Explain trigonal planar shape and bond angle around each carbon in the C=C using electron pair repulsion; draw 3-D representations where appropriate (M4.1, M4.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23c",
+          "Specification_section_sub": "4.1.3(c)(i)",
+          "Sub_topic_name": "Stereoisomers and E/Z isomerism conditions",
+          "description": "Explain stereoisomers as same structural formula with different spatial arrangement; explain E/Z isomerism due to restricted rotation about C=C and requirement of two different groups on each carbon of C=C; explain cis–trans as special case where two substituents are the same.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23d",
+          "Specification_section_sub": "4.1.3(c)(ii)",
+          "Sub_topic_name": "CIP priority rules for E/Z assignment",
+          "description": "Apply Cahn–Ingold–Prelog (CIP) priority rules to identify E and Z stereoisomers; note E≡trans and Z≡cis only consistently when H on each C; CIP for double/triple bonds within R groups not required (M4.2, M4.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23e",
+          "Specification_section_sub": "4.1.3(d)",
+          "Sub_topic_name": "Determine E/Z or cis–trans stereoisomers from structure",
+          "description": "Determine possible E/Z or cis–trans stereoisomers given structural formula; identify when isomerism is possible (M4.2, M4.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23f",
+          "Specification_section_sub": "4.1.3(e)",
+          "Sub_topic_name": "Alkene reactivity from π bond enthalpy",
+          "description": "Explain alkene reactivity in terms of relatively low bond enthalpy of π bond compared to σ bonds; relate to addition reactions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23g",
+          "Specification_section_sub": "4.1.3(f)(i)",
+          "Sub_topic_name": "Hydrogenation of alkenes to alkanes",
+          "description": "Describe addition of hydrogen to alkenes in presence of suitable catalyst (e.g. Ni) to form alkanes; write equations and conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23h",
+          "Specification_section_sub": "4.1.3(f)(ii)",
+          "Sub_topic_name": "Halogen addition; bromine test for C=C",
+          "description": "Describe addition of halogens to alkenes to form dihaloalkanes; use bromine to test for unsaturation via decolourisation; write equations and relate to qualitative analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23i",
+          "Specification_section_sub": "4.1.3(f)(iii)",
+          "Sub_topic_name": "Hydrogen halide addition to form haloalkanes",
+          "description": "Describe addition of hydrogen halides (H–X) to alkenes to form haloalkanes; write equations and identify products for symmetrical/unsymmetrical alkenes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23j",
+          "Specification_section_sub": "4.1.3(f)(iv)",
+          "Sub_topic_name": "Hydration of alkenes to alcohols (steam, acid catalyst)",
+          "description": "Describe addition of steam to alkenes in presence of acid catalyst (e.g. H3PO4) to form alcohols; write equations and state conditions (PAG7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23k",
+          "Specification_section_sub": "4.1.3(g)",
+          "Sub_topic_name": "Electrophile definition",
+          "description": "Define electrophile as an electron pair acceptor; apply to electrophilic addition mechanisms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23l",
+          "Specification_section_sub": "4.1.3(h)",
+          "Sub_topic_name": "Electrophilic addition mechanism in alkenes",
+          "description": "Describe and apply mechanism of electrophilic addition to alkenes via heterolytic fission; show curly arrows, carbocation intermediate; for halogen addition, carbocation or halonium ion intermediate acceptable (HSW1,2,8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23m",
+          "Specification_section_sub": "4.1.3(i)",
+          "Sub_topic_name": "Markownikoff’s rule and carbocation stability",
+          "description": "Use Markownikoff’s rule to predict major product of H–X addition to unsymmetrical alkenes; explain in terms of relative stability of primary/secondary/tertiary carbocation intermediates (no need to explain why stabilities differ) (HSW1,2,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23n",
+          "Specification_section_sub": "4.1.3(j)(i)",
+          "Sub_topic_name": "Deduce addition polymer repeat unit from monomer",
+          "description": "Explain addition polymerisation of alkenes/substituted alkenes; deduce repeat unit structure from given monomer (show brackets and n).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23o",
+          "Specification_section_sub": "4.1.3(j)(ii)",
+          "Sub_topic_name": "Identify monomer from polymer section",
+          "description": "Given a section of an addition polymer, identify the monomer that would produce it; relate to C=C opening and substituents.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23p",
+          "Specification_section_sub": "4.1.3(k)",
+          "Sub_topic_name": "Sustainability: processing waste polymers",
+          "description": "Explain benefits for sustainability of processing waste polymers by (i) combustion for energy, (ii) use as organic feedstock to produce plastics/chemicals, (iii) removal of toxic products such as HCl during combustion of halogenated plastics (e.g. PVC) (HSW9,10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23q",
+          "Specification_section_sub": "4.1.3(l)",
+          "Sub_topic_name": "Biodegradable and photodegradable polymers",
+          "description": "Explain environmental benefits of developing biodegradable and photodegradable polymers: reduced dependency on finite resources and reduced persistent waste problems (HSW9,10).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 24,
+      "Specification_section": "4.2.1",
+      "Strand": "Module 4 – Core organic chemistry",
+      "Topic_name": "Alcohols",
+      "Sub_topics": [
+        {
+          "subtopic_id": "24a",
+          "Specification_section_sub": "4.2.1(a)(i)",
+          "Sub_topic_name": "Alcohol polarity, H-bonding, solubility and volatility",
+          "description": "Explain polarity of alcohols and, in terms of hydrogen bonding, explain water solubility and relatively low volatility compared with alkanes (see 2.2.2(l), 4.1.2(c)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24b",
+          "Specification_section_sub": "4.2.1(a)(ii)",
+          "Sub_topic_name": "Classify alcohols (primary/secondary/tertiary)",
+          "description": "Classify alcohols as primary, secondary or tertiary based on carbon atom bearing –OH group and number of attached alkyl groups.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24c",
+          "Specification_section_sub": "4.2.1(b)",
+          "Sub_topic_name": "Combustion of alcohols",
+          "description": "Write and interpret equations for combustion of alcohols; relate to fuels and energy release.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24d",
+          "Specification_section_sub": "4.2.1(c)(i)",
+          "Sub_topic_name": "Oxidation of primary alcohols: aldehydes vs carboxylic acids",
+          "description": "Describe oxidation of primary alcohols using oxidising agent Cr2O7²−/H+ (K2Cr2O7/H2SO4): primary alcohols oxidise to aldehydes and then to carboxylic acids; control product using conditions (distillation vs reflux); use [O] in equations (PAG7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24e",
+          "Specification_section_sub": "4.2.1(c)(ii)",
+          "Sub_topic_name": "Oxidation of secondary alcohols to ketones",
+          "description": "Describe oxidation of secondary alcohols with Cr2O7²−/H+ to form ketones; use [O] notation and appropriate conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24f",
+          "Specification_section_sub": "4.2.1(c)(iii)",
+          "Sub_topic_name": "Tertiary alcohols resist oxidation",
+          "description": "Explain resistance to oxidation of tertiary alcohols under specified oxidising conditions; recognise lack of reaction with dichromate under normal conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24g",
+          "Specification_section_sub": "4.2.1(d)",
+          "Sub_topic_name": "Elimination (dehydration) of alcohols to alkenes",
+          "description": "Describe elimination of H2O from alcohols with acid catalyst (H3PO4 or H2SO4) and heat to form alkenes; write equations; mechanism not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24h",
+          "Specification_section_sub": "4.2.1(e)",
+          "Sub_topic_name": "Substitution to haloalkanes using halide ions and acid",
+          "description": "Describe substitution of alcohols with halide ions in presence of acid (e.g. NaBr/H2SO4) to form haloalkanes; write equations; mechanism not required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 25,
+      "Specification_section": "4.2.2",
+      "Strand": "Module 4 – Core organic chemistry",
+      "Topic_name": "Haloalkanes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "25a",
+          "Specification_section_sub": "4.2.2(a)(i)",
+          "Sub_topic_name": "Hydrolysis with aqueous alkali",
+          "description": "Describe hydrolysis of haloalkanes via substitution with aqueous alkali; write equations to form alcohols and halide ions/salts; recognise conditions (e.g. warm, reflux) where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25b",
+          "Specification_section_sub": "4.2.2(a)(ii)",
+          "Sub_topic_name": "Compare hydrolysis rates (AgNO3/ethanol method)",
+          "description": "Describe hydrolysis of haloalkanes with water in presence of AgNO3 and ethanol to compare experimentally rates of hydrolysis of different C–X bonds; relate precipitate formation timing to rate (PAG7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25c",
+          "Specification_section_sub": "4.2.2(b)",
+          "Sub_topic_name": "Nucleophile definition",
+          "description": "Define nucleophile as an electron pair donor; apply to nucleophilic substitution mechanisms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25d",
+          "Specification_section_sub": "4.2.2(c)",
+          "Sub_topic_name": "SN2 mechanism: primary haloalkane + OH−",
+          "description": "Describe mechanism of nucleophilic substitution (SN2) in hydrolysis of primary haloalkanes with aqueous alkali; show curly arrows from nucleophile lone pair to carbon and from C–X bond to halide; include relevant dipoles (HSW1,2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25e",
+          "Specification_section_sub": "4.2.2(d)",
+          "Sub_topic_name": "Hydrolysis rate trend vs C–X bond enthalpy",
+          "description": "Explain trend in rates of hydrolysis of primary haloalkanes in terms of C–X bond enthalpies (C–F, C–Cl, C–Br, C–I); weaker bonds hydrolyse faster.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25f",
+          "Specification_section_sub": "4.2.2(e)",
+          "Sub_topic_name": "CFCs, radicals and ozone depletion mechanism",
+          "description": "Explain production of halogen radicals by UV photodissociation of CFCs in upper atmosphere and resulting catalysed breakdown of ozone; write equations for (i) radical production (e.g. CF2Cl2 → CF2Cl• + •Cl) and (ii) catalytic cycle for ozone breakdown by Cl• (and other radicals e.g. •NO): •Cl + O3 → •ClO + O2; •ClO + O → •Cl + O2; construct analogous equations for stated radicals; relate to evidence and legislation (HSW9,10,11,12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 26,
+      "Specification_section": "4.2.3",
+      "Strand": "Module 4 – Core organic chemistry",
+      "Topic_name": "Organic synthesis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "26a",
+          "Specification_section_sub": "4.2.3(a)(i)",
+          "Sub_topic_name": "Quickfit apparatus: distillation and reflux",
+          "description": "Use techniques and procedures for Quickfit apparatus including distillation and heating under reflux; understand safe setup and purpose of each method (PAG5; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26b",
+          "Specification_section_sub": "4.2.3(a)(ii)",
+          "Sub_topic_name": "Prepare and purify an organic liquid",
+          "description": "Prepare and purify an organic liquid including separating funnel separation of organic/aqueous layers, drying with anhydrous salt (e.g. MgSO4, CaCl2), and redistillation; apply appropriate technique (PAG5; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26c",
+          "Specification_section_sub": "4.2.3(b)",
+          "Sub_topic_name": "Identify functional groups; predict properties/reactions (Module 4 set)",
+          "description": "For an organic molecule containing several functional groups (limited to those encountered in Module 4), identify each functional group and predict properties and reactions based on those groups (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26d",
+          "Specification_section_sub": "4.2.3(c)",
+          "Sub_topic_name": "Devise two-stage synthetic routes (Module 4 toolkit)",
+          "description": "Devise two-stage synthetic routes for preparing organic compounds by applying transformations between all functional groups encountered up to this point (Module 4); interpret and use additional reaction info provided on exam papers when extending toolkit (HSW3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 27,
+      "Specification_section": "4.2.4",
+      "Strand": "Module 4 – Core organic chemistry",
+      "Topic_name": "Analytical techniques",
+      "Sub_topics": [
+        {
+          "subtopic_id": "27a",
+          "Specification_section_sub": "4.2.4(a)",
+          "Sub_topic_name": "IR absorption as bond vibration",
+          "description": "Explain that infrared radiation causes covalent bonds to vibrate and absorb energy; link absorption to bond types and functional group identification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27b",
+          "Specification_section_sub": "4.2.4(b)",
+          "Sub_topic_name": "IR-active atmospheric gases and global warming link",
+          "description": "Explain absorption of IR by atmospheric gases with C=O, O–H, C–H bonds (e.g. CO2, H2O, CH4), suspected link to global warming and resulting changes to energy usage/policy (HSW9,10,11,12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27c",
+          "Specification_section_sub": "4.2.4(c)(i)",
+          "Sub_topic_name": "Identify alcohol by IR O–H peak",
+          "description": "Use an IR spectrum to identify an alcohol from O–H absorption peak; use provided IR data; note most organics show ~3000 cm−1 C–H peak (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27d",
+          "Specification_section_sub": "4.2.4(c)(ii)",
+          "Sub_topic_name": "Identify aldehyde/ketone by IR C=O peak",
+          "description": "Use an IR spectrum to identify aldehydes/ketones from C=O absorption peak; use supplied IR absorption ranges (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27e",
+          "Specification_section_sub": "4.2.4(c)(iii)",
+          "Sub_topic_name": "Identify carboxylic acid by IR C=O and broad O–H",
+          "description": "Use an IR spectrum to identify carboxylic acids from C=O absorption and broad O–H absorption; apply provided IR ranges (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27f",
+          "Specification_section_sub": "4.2.4(d)",
+          "Sub_topic_name": "Interpret/predict IR spectra (familiar/unfamiliar, spec groups)",
+          "description": "Interpret and predict IR spectra of familiar or unfamiliar substances using supplied data; restricted to functional groups studied in specification; use as evidence for structure (M3.1; HSW3,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27g",
+          "Specification_section_sub": "4.2.4(e)",
+          "Sub_topic_name": "IR spectroscopy uses: pollution monitoring and breathalysers",
+          "description": "Explain use of IR spectroscopy to monitor air pollution gases (e.g. CO, NO from car emissions) and in breathalysers to measure ethanol; relate to evidence in legal contexts (HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27h",
+          "Specification_section_sub": "4.2.4(f)",
+          "Sub_topic_name": "Mass spectrometry: molecular ion peak and molecular mass",
+          "description": "Use mass spectrum to identify molecular ion (M+) peak and determine molecular mass; limited to singly charged ions; recognise small M+1 peak from 13C; not expected to interpret mass spectra of organic halogen compounds; limited to compounds in this spec section (M3.1; HSW3,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27i",
+          "Specification_section_sub": "4.2.4(g)",
+          "Sub_topic_name": "Mass spec fragmentation peaks and fragment ions",
+          "description": "Analyse fragmentation peaks to identify parts of molecular structures; suggest structures of fragment ions from m/z values and plausible cleavage patterns (M3.1; HSW3,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27j",
+          "Specification_section_sub": "4.2.4(h)",
+          "Sub_topic_name": "Deduce organic structure from combined data (EA, MS, IR)",
+          "description": "Deduce structures of organic compounds from combined analytical data: elemental analysis, mass spectra, IR spectra; limited to functional groups encountered so far; exclude halogen mass spec interpretation requirement (M3.1; HSW3,5,6).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 28,
+      "Specification_section": "5.1.1",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "How fast?",
+      "Sub_topics": [
+        {
+          "subtopic_id": "28a",
+          "Specification_section_sub": "5.1.1(a)",
+          "Sub_topic_name": "Rates terminology (order, k, half-life, RDS)",
+          "description": "Explain and use terms: rate of reaction, order, overall order, rate constant (k), half-life (t1/2), rate-determining step; relate to experimental kinetics and mechanisms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28b",
+          "Specification_section_sub": "5.1.1(b)(i)",
+          "Sub_topic_name": "Deduce orders from initial rates data",
+          "description": "Deduce reaction orders with respect to reactants from experimental (initial rates) data; interpret tables and ratios to infer m and n values (restricted to 0, 1, 2) (M0.2; PAG10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28c",
+          "Specification_section_sub": "5.1.1(b)(ii)",
+          "Sub_topic_name": "Write rate equation from orders (rate = k[A]^m[B]^n)",
+          "description": "Construct a rate equation of the form rate = k[A]^m[B]^n from determined orders where m,n ∈ {0,1,2}; understand effect of zero order terms (M0.2; HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28d",
+          "Specification_section_sub": "5.1.1(c)",
+          "Sub_topic_name": "Calculate k and its units from rate equation",
+          "description": "Calculate rate constant k and related quantities from a rate equation; determine units of k from overall order and rate/concentration units; use correct unit conversions (M0.0, M0.1, M0.4, M1.1, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28e",
+          "Specification_section_sub": "5.1.1(d)(i)",
+          "Sub_topic_name": "Order from concentration–time graph shape (0 or 1)",
+          "description": "From a concentration–time graph, deduce order (0 or 1) with respect to a reactant from curve shape (linear decrease vs exponential) (M0.1, M0.4, M1.1, M3.1–M3.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28f",
+          "Specification_section_sub": "5.1.1(d)(ii)",
+          "Sub_topic_name": "Rate from concentration–time graph gradient",
+          "description": "Calculate reaction rates from gradients (tangents) on concentration–time graphs (continuous monitoring); relate slope magnitude and sign to rate (M0.1, M0.4, M1.1, M3.1–M3.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28g",
+          "Specification_section_sub": "5.1.1(e)",
+          "Sub_topic_name": "First order: constant half-life from concentration–time graph",
+          "description": "From concentration–time graph of a first order reaction, measure constant half-life t1/2 and recognise constancy of half-life as first-order characteristic (M3.1, M3.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28h",
+          "Specification_section_sub": "5.1.1(f)",
+          "Sub_topic_name": "First order: k from half-life (k = ln 2 / t1/2)",
+          "description": "For a first order reaction, determine k from half-life using k = ln 2 / t1/2; no derivation required; recognise relationship to exponential decay [A] = [A0]e^(−kt) (M0.1, M0.4, M1.1, M2.3, M2.4, M2.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28i",
+          "Specification_section_sub": "5.1.1(g)(i)",
+          "Sub_topic_name": "Order from rate–concentration graph shape (0,1,2)",
+          "description": "From a rate–concentration graph, deduce order (0, 1, or 2) with respect to a reactant from graph shape (constant, linear, curved); relate to initial rates method/clock reaction approximations (M0.1, M0.4, M1.1, M3.1–M3.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28j",
+          "Specification_section_sub": "5.1.1(g)(ii)",
+          "Sub_topic_name": "First order: k from rate–concentration gradient",
+          "description": "Determine k for a first order reaction from gradient of a rate–concentration graph where rate = k[A]; interpret experimental rate–concentration data (M0.1, M0.4, M1.1, M3.1–M3.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28k",
+          "Specification_section_sub": "5.1.1(h)",
+          "Sub_topic_name": "Practical investigation: initial rates, continuous monitoring, colorimetry",
+          "description": "Describe techniques/procedures to investigate rates by initial rates and continuous monitoring, including use of colorimetry; plan and interpret kinetic experiments (PAG9, PAG10; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28l",
+          "Specification_section_sub": "5.1.1(i)(i)",
+          "Sub_topic_name": "Rate equation consistent with rate-determining step",
+          "description": "For a multi-step reaction, predict a rate equation consistent with a proposed rate-determining step; connect slow step molecularity to rate law assumptions (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28m",
+          "Specification_section_sub": "5.1.1(i)(ii)",
+          "Sub_topic_name": "Mechanism steps from rate law and overall equation",
+          "description": "Predict possible steps in reaction mechanism from given rate equation and overall balanced equation; identify intermediates and how steps sum to overall reaction (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28n",
+          "Specification_section_sub": "5.1.1(j)",
+          "Sub_topic_name": "Temperature effect on k (qualitative)",
+          "description": "Explain qualitatively effect of temperature on reaction rate and hence on rate constant k using collision theory/energy distribution links (M0.3; see 3.2.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28o",
+          "Specification_section_sub": "5.1.1(k)(i)",
+          "Sub_topic_name": "Arrhenius equation k = Ae^(−Ea/RT) meaning",
+          "description": "Use Arrhenius equation k = Ae^(−Ea/RT) to describe exponential relationship between k and temperature T; recognise parameters Ea (activation energy), A (pre-exponential factor), R (gas constant on Data Sheet); equations provided (M0.1, M0.4, M2.2–M2.5, M3.1–M3.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28p",
+          "Specification_section_sub": "5.1.1(k)(ii)",
+          "Sub_topic_name": "Arrhenius plot to determine Ea and A",
+          "description": "Determine Ea and A graphically using ln k = −Ea/(RT) + ln A; interpret gradient and intercept from linear plot of ln k vs 1/T; handle units and significant figures; no need to explain physical meaning of A (M0.1, M0.4, M2.2–M2.5, M3.1–M3.4; HSW5).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 29,
+      "Specification_section": "5.1.2",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "How far?",
+      "Sub_topics": [
+        {
+          "subtopic_id": "29a",
+          "Specification_section_sub": "5.1.2(a)",
+          "Sub_topic_name": "Mole fraction and partial pressure",
+          "description": "Use and apply terms mole fraction and partial pressure in gas equilibria contexts; relate to mixture composition and total pressure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29b",
+          "Specification_section_sub": "5.1.2(b)",
+          "Sub_topic_name": "Equilibrium composition calculations",
+          "description": "Calculate quantities present at equilibrium given appropriate data (e.g. initial amounts, equilibrium amounts, K values, total pressure/volume as provided); set up ICE-style calculations without quadratic solving requirement (M0.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29c",
+          "Specification_section_sub": "5.1.2(c)",
+          "Sub_topic_name": "Determine equilibrium quantities experimentally (general)",
+          "description": "Describe techniques/procedures used to determine quantities present at equilibrium (not for Kp); include sampling, titration/spectroscopy where applicable (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29d",
+          "Specification_section_sub": "5.1.2(d)",
+          "Sub_topic_name": "Kc and Kp expressions (homogeneous and heterogeneous)",
+          "description": "Write expressions for Kc and Kp for homogeneous and heterogeneous equilibria; omit solids and liquids (constant concentration) from expressions; include powers from stoichiometric coefficients (M0.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29e",
+          "Specification_section_sub": "5.1.2(e)",
+          "Sub_topic_name": "Calculate Kc and Kp including units (no quadratics)",
+          "description": "Calculate Kc and Kp (or related quantities) including determination of units; learners not required to solve quadratic equations; apply correct concentration/pressure units and conversions (M0.0, M0.1, M0.2, M0.4, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29f",
+          "Specification_section_sub": "5.1.2(f)(i)",
+          "Sub_topic_name": "Temperature effect on equilibrium constants",
+          "description": "Explain qualitative effect of changing temperature on equilibrium constants (Kc, Kp) for exothermic vs endothermic reactions; relate to van ’t Hoff concept qualitatively (M0.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29g",
+          "Specification_section_sub": "5.1.2(f)(ii)",
+          "Sub_topic_name": "Constancy of K with concentration/pressure/catalyst",
+          "description": "Explain that equilibrium constants remain constant with changes in concentration, pressure, or presence of a catalyst (at constant temperature); apply to reasoning about equilibria (M0.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29h",
+          "Specification_section_sub": "5.1.2(g)",
+          "Sub_topic_name": "How K controls equilibrium shifts under changes",
+          "description": "Explain how an equilibrium constant value controls equilibrium position when concentration, pressure, or temperature changes; connect K magnitude to extent of reaction and new equilibrium (M0.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29i",
+          "Specification_section_sub": "5.1.2(h)",
+          "Sub_topic_name": "Apply K reasoning to other equilibrium constants",
+          "description": "Apply principles from Kc/Kp to other equilibrium constants where appropriate (e.g. Ka, Kw), recognising analogous relationships and constraints.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 30,
+      "Specification_section": "5.1.3",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "Acids, bases and buffers",
+      "Sub_topics": [
+        {
+          "subtopic_id": "30a",
+          "Specification_section_sub": "5.1.3(a)(i)",
+          "Sub_topic_name": "Brønsted–Lowry acids and bases",
+          "description": "Define Brønsted–Lowry acid as proton donor and base as proton acceptor; apply to acid–base reactions and equilibria (see also 2.1.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30b",
+          "Specification_section_sub": "5.1.3(a)(ii)",
+          "Sub_topic_name": "Conjugate acid–base pairs",
+          "description": "Use term conjugate acid–base pair; identify conjugate pairs in equations for acid–base equilibria.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30c",
+          "Specification_section_sub": "5.1.3(a)(iii)",
+          "Sub_topic_name": "Monobasic, dibasic, tribasic acids",
+          "description": "Define and apply monobasic, dibasic and tribasic acids (number of protons donated per molecule) and relate to stoichiometry in neutralisation/titration contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30d",
+          "Specification_section_sub": "5.1.3(b)",
+          "Sub_topic_name": "Ionic equations for acids with metals and bases",
+          "description": "Use ionic equations to show role of H+ in reactions of acids with metals and bases (including carbonates, metal oxides, alkalis); connect to modules 2.1.4 and 2.1.5 contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30e",
+          "Specification_section_sub": "5.1.3(c)(i)",
+          "Sub_topic_name": "Acid dissociation constant Ka meaning",
+          "description": "Explain and use acid dissociation constant Ka as measure of extent of acid dissociation; link to weak vs strong acids (M0.1, M0.2, M0.4, M2.3, M2.4, M2.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30f",
+          "Specification_section_sub": "5.1.3(c)(ii)",
+          "Sub_topic_name": "Ka and pKa relationship",
+          "description": "Use relationship between Ka and pKa (pKa = −log Ka) for calculations and comparisons (M0.1, M0.4, M2.3, M2.4, M2.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30g",
+          "Specification_section_sub": "5.1.3(d)",
+          "Sub_topic_name": "pH definition and [H+] conversions",
+          "description": "Use pH = −log[H+] and [H+] = 10^(−pH) for converting between pH and hydrogen ion concentration (M0.1, M0.4, M2.2–M2.5; HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30h",
+          "Specification_section_sub": "5.1.3(e)",
+          "Sub_topic_name": "Ionic product of water Kw",
+          "description": "Use expression for ionic product of water Kw; relate [H+][OH−] to pH/pOH calculations and strong base pH (M0.1, M0.4, M2.2–M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30i",
+          "Specification_section_sub": "5.1.3(f)(i)",
+          "Sub_topic_name": "pH of strong monobasic acids",
+          "description": "Calculate pH and related quantities for strong monobasic acids assuming complete dissociation; use concentration and stoichiometry with [H+] (M0.1, M0.4, M2.2–M2.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30j",
+          "Specification_section_sub": "5.1.3(f)(ii)",
+          "Sub_topic_name": "pH of strong bases using Kw",
+          "description": "Calculate pH and related quantities for strong bases using Kw and [OH−] to find [H+] and pH; apply log calculations (M0.1, M0.4, M2.2–M2.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30k",
+          "Specification_section_sub": "5.1.3(g)",
+          "Sub_topic_name": "Weak acid pH and Ka calculations with approximations",
+          "description": "Calculate pH, Ka or related quantities for a weak monobasic acid using approximations: [HA]eq ≈ [HA]undissociated (i.e. [HA] >> [H+]); [H+]eq ≈ [A−]eq; negligible dissociation of water; no quadratic solving required (M0.1, M0.4, M2.1–M2.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30l",
+          "Specification_section_sub": "5.1.3(h)",
+          "Sub_topic_name": "When Ka approximations break down",
+          "description": "Explain limitations of Ka approximations for ‘stronger’ weak acids; recognise when [HA]eq ≈ [HA]undissociated no longer valid and why; evaluate impact on calculated values (M0.3; HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30m",
+          "Specification_section_sub": "5.1.3(i)",
+          "Sub_topic_name": "Buffer solution definition",
+          "description": "Define a buffer solution as a system that minimises pH changes on addition of small amounts of acid or base; relate to equilibrium/reservoir behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30n",
+          "Specification_section_sub": "5.1.3(j)(i)",
+          "Sub_topic_name": "Prepare buffer: weak acid + salt",
+          "description": "Describe formation of buffer from weak acid and its salt (conjugate base), e.g. CH3COOH/CH3COONa; understand components and their roles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30o",
+          "Specification_section_sub": "5.1.3(j)(ii)",
+          "Sub_topic_name": "Prepare buffer: excess weak acid + strong alkali",
+          "description": "Describe formation of buffer from excess weak acid and strong alkali, e.g. excess CH3COOH + NaOH giving mixture CH3COOH/CH3COO−.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30p",
+          "Specification_section_sub": "5.1.3(k)",
+          "Sub_topic_name": "Buffer action (conjugate pair) explanation",
+          "description": "Explain role of conjugate acid–base pair in controlling pH of an acid buffer, e.g. CH3COOH/CH3COO−; describe response to added H+ or OH− via equilibrium shifts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30q",
+          "Specification_section_sub": "5.1.3(l)",
+          "Sub_topic_name": "Buffer pH calculations (Ka and concentrations)",
+          "description": "Calculate pH of a buffer from Ka of weak acid and equilibrium concentrations of conjugate acid–base pair; calculate related quantities; use appropriate logs and approximations where valid (M0.1, M0.4, M2.2–M2.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30r",
+          "Specification_section_sub": "5.1.3(m)",
+          "Sub_topic_name": "Blood buffer system (H2CO3/HCO3−)",
+          "description": "Explain control of blood pH by carbonic acid–hydrogencarbonate buffer system; know buffer maintains blood plasma pH 7.35–7.45; relate to physiological importance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30s",
+          "Specification_section_sub": "5.1.3(n)(i)",
+          "Sub_topic_name": "pH titration curves: shapes for strong/weak combinations",
+          "description": "Sketch and interpret pH titration curves for strong/weak acids with strong/weak bases; explain curve features including buffer regions and equivalence pH; recognise no suitable indicator for weak acid/weak base titration (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30t",
+          "Specification_section_sub": "5.1.3(n)(ii)",
+          "Sub_topic_name": "Choose indicators using indicator pH range",
+          "description": "Choose suitable indicators for titrations based on indicator transition pH range and the titration curve; justify indicator choice using equivalence point region (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30u",
+          "Specification_section_sub": "5.1.3(n)(iii)",
+          "Sub_topic_name": "Indicator colour change as equilibrium shift (HA ⇌ A−)",
+          "description": "Explain indicator colour changes in terms of equilibrium shift between HA and A− forms of indicator (indicator as weak acid HA); relate to Le Chatelier’s principle and pH changes (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30v",
+          "Specification_section_sub": "5.1.3(o)",
+          "Sub_topic_name": "Measure pH with a pH meter (technique)",
+          "description": "Describe techniques/procedures for measuring pH using a pH meter, including calibration/rinsing and correct electrode use; link to reliable data collection (PAG11; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 31,
+      "Specification_section": "5.2.1",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "Lattice enthalpy",
+      "Sub_topics": [
+        {
+          "subtopic_id": "31a",
+          "Specification_section_sub": "5.2.1(a)",
+          "Sub_topic_name": "Lattice enthalpy definition and ionic bond strength",
+          "description": "Define lattice enthalpy of formation ΔLEH as formation of 1 mol of ionic lattice from gaseous ions; use as measure of strength of ionic bonding in giant ionic lattice; relate to melting point and stability (see 2.2.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31b",
+          "Specification_section_sub": "5.2.1(b)",
+          "Sub_topic_name": "Born–Haber cycles and lattice enthalpy calculations",
+          "description": "Use lattice enthalpy and relevant energy terms to construct Born–Haber cycles and perform calculations for simple ionic solids (e.g. NaCl, MgCl2). Relevant terms: ΔfH, ionisation energy, atomisation enthalpy, electron affinity. Definitions required for first ionisation energy and ΔfH only; apply conservation of energy (M2.2, M2.3, M2.4, M3.1; HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31c",
+          "Specification_section_sub": "5.2.1(c)(i)",
+          "Sub_topic_name": "Enthalpy change of solution ΔsolH definition",
+          "description": "Define enthalpy change of solution ΔsolH as enthalpy change when 1 mol of solute dissolves; apply to dissolving ionic solids; infinite dilution details not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31d",
+          "Specification_section_sub": "5.2.1(c)(ii)",
+          "Sub_topic_name": "Enthalpy change of hydration ΔhydH definition",
+          "description": "Define enthalpy change of hydration ΔhydH as enthalpy change when 1 mol of gaseous ions dissolves in water; apply to hydration energy concepts; infinite dilution details not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31e",
+          "Specification_section_sub": "5.2.1(d)",
+          "Sub_topic_name": "Solution enthalpy cycles (ΔsolH, ΔhydH, ΔLEH)",
+          "description": "Use ΔsolH and relevant terms (ΔhydH and lattice enthalpy) to construct enthalpy cycles and carry out related calculations for ionic solids (e.g. NaCl, MgCl2); apply energy conservation (M2.2, M2.3, M2.4, M3.1; HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31f",
+          "Specification_section_sub": "5.2.1(e)",
+          "Sub_topic_name": "Effect of ionic charge and radius on ΔLEH and ΔhydH",
+          "description": "Explain qualitatively how ionic charge and ionic radius affect exothermic magnitude of lattice enthalpy and enthalpy change of hydration; higher charge/smaller radius gives more exothermic values due to stronger electrostatic attractions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 32,
+      "Specification_section": "5.2.2",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "Enthalpy and entropy",
+      "Sub_topics": [
+        {
+          "subtopic_id": "32a",
+          "Specification_section_sub": "5.2.2(a)",
+          "Sub_topic_name": "Entropy as dispersal of energy/disorder",
+          "description": "Explain entropy as measure of dispersal of energy in a system, greater when system is more disordered; use model to explain thermodynamic stability (HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32b",
+          "Specification_section_sub": "5.2.2(b)(i)",
+          "Sub_topic_name": "Entropy magnitude: solids vs liquids vs gases",
+          "description": "Explain differences in entropy magnitude for solids, liquids and gases; relate to particle freedom and energy dispersal.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32c",
+          "Specification_section_sub": "5.2.2(b)(ii)",
+          "Sub_topic_name": "Entropy change and moles of gas",
+          "description": "Explain entropy changes for reactions with changes in number of gaseous molecules; relate to dispersal and sign of ΔS.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32d",
+          "Specification_section_sub": "5.2.2(c)",
+          "Sub_topic_name": "Calculate entropy change ΔS from standard entropies",
+          "description": "Calculate entropy change of system ΔS for a reaction from entropies of reactants and products; apply stoichiometric coefficients and units (M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32e",
+          "Specification_section_sub": "5.2.2(d)",
+          "Sub_topic_name": "Feasibility depends on ΔH and TΔS",
+          "description": "Explain feasibility of a process depends on entropy term TΔS and enthalpy change ΔH; interpret competing effects; use in predictions (HSW1,5,6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32f",
+          "Specification_section_sub": "5.2.2(e)",
+          "Sub_topic_name": "Gibbs free energy ΔG = ΔH − TΔS and feasibility",
+          "description": "Use Gibbs equation ΔG = ΔH − TΔS; calculate ΔG and related quantities; state that a process is feasible when ΔG is negative; use correct units (ΔH in J or kJ, ΔS in J K−1, T in K) (M0.0, M2.2, M2.3, M2.4; HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32g",
+          "Specification_section_sub": "5.2.2(f)",
+          "Sub_topic_name": "Limitations of ΔG predictions (kinetics)",
+          "description": "Explain limitations of ΔG feasibility predictions due to kinetics: negative ΔG does not guarantee fast reaction; consider activation energy and rate constraints (M0.3; HSW6).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 33,
+      "Specification_section": "5.2.3",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "Redox and electrode potentials",
+      "Sub_topics": [
+        {
+          "subtopic_id": "33a",
+          "Specification_section_sub": "5.2.3(a)",
+          "Sub_topic_name": "Oxidising and reducing agents",
+          "description": "Explain and use terms oxidising agent and reducing agent in terms of electron transfer/oxidation state changes (see also 2.1.5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33b",
+          "Specification_section_sub": "5.2.3(b)",
+          "Sub_topic_name": "Construct redox equations using half-equations and oxidation numbers",
+          "description": "Construct balanced redox equations using half-equations and oxidation numbers; ensure electron balance and correct species, including acidic conditions where appropriate (M0.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33c",
+          "Specification_section_sub": "5.2.3(c)",
+          "Sub_topic_name": "Predict reactions involving electron transfer",
+          "description": "Interpret and predict redox reactions involving electron transfer; use oxidation states, half-equations and feasibility reasoning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33d",
+          "Specification_section_sub": "5.2.3(d)",
+          "Sub_topic_name": "Redox titration techniques (Fe2+/MnO4− and I2/S2O3²−)",
+          "description": "Describe techniques/procedures for redox titrations including systems Fe2+/MnO4− and I2/S2O3²−; include endpoint recognition and suitable conditions; practical opportunities (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33e",
+          "Specification_section_sub": "5.2.3(e)",
+          "Sub_topic_name": "Redox titration calculations (structured/unstructured)",
+          "description": "Carry out structured and non-structured calculations from redox titration results for Fe2+/MnO4− and I2/S2O3²− and for non-familiar redox systems; apply stoichiometry, concentrations, volumes and significant figures (M0.1, M0.2, M0.4, M1.1, M1.2, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33f",
+          "Specification_section_sub": "5.2.3(f)",
+          "Sub_topic_name": "Standard electrode potential E° and hydrogen electrode",
+          "description": "Use term standard electrode (redox) potential E°; understand measurement relative to standard hydrogen electrode; E° data provided in exams.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33g",
+          "Specification_section_sub": "5.2.3(g)(i)",
+          "Sub_topic_name": "Measure cell potentials: metal/non-metal with ions",
+          "description": "Describe techniques/procedures to measure cell potentials for metals or non-metals in contact with their ions in aqueous solution; for standard conditions use 1 mol dm−3 (PAG8; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33h",
+          "Specification_section_sub": "5.2.3(g)(ii)",
+          "Sub_topic_name": "Measure potentials: same element ions different oxidation states with Pt",
+          "description": "Describe techniques/procedures to measure cell potentials involving ions of same element in different oxidation states using Pt electrode; solutions equimolar or 1 mol dm−3 for standard cell potentials (PAG8; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33i",
+          "Specification_section_sub": "5.2.3(h)",
+          "Sub_topic_name": "Calculate standard cell potential from E° values",
+          "description": "Calculate standard cell potential E°cell by combining two standard electrode potentials; identify cathode/anode based on E° values and direction of spontaneous reaction.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33j",
+          "Specification_section_sub": "5.2.3(i)",
+          "Sub_topic_name": "Predict feasibility using E°cell; limitations (kinetics, concentration)",
+          "description": "Predict feasibility of redox reaction using standard cell potentials; explain limitations due to kinetics and non-standard concentrations; relate to Nernst-type reasoning qualitatively (M0.3; HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33k",
+          "Specification_section_sub": "5.2.3(j)",
+          "Sub_topic_name": "Modern storage cells and electrode potentials",
+          "description": "Apply electrode potential principles to modern storage cells; details and equations provided in exams; evaluate benefits vs risks (toxicity/fire hazards especially Li-based cells) (HSW9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33l",
+          "Specification_section_sub": "5.2.3(k)",
+          "Sub_topic_name": "Fuel cells: voltage from fuel + oxygen; electrode changes",
+          "description": "Explain that a fuel cell uses energy from reaction of a fuel with oxygen to create a voltage and describe changes at each electrode; recall of specific fuel cell equations not required; relevant data supplied.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 34,
+      "Specification_section": "5.3.1",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "Transition elements",
+      "Sub_topics": [
+        {
+          "subtopic_id": "34a",
+          "Specification_section_sub": "5.3.1(a)",
+          "Sub_topic_name": "Electron configurations of Period 4 d-block atoms and ions",
+          "description": "Deduce electron configurations of Period 4 d-block elements Sc–Zn and their ions given atomic number and charge; use full subshell notation (e.g. Fe: 1s2 2s2 2p6 3s2 3p6 3d6 4s2) (see 2.2.1(d)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34b",
+          "Specification_section_sub": "5.3.1(b)",
+          "Sub_topic_name": "Definition of transition elements (Ti–Cu)",
+          "description": "Define transition elements as d-block elements that form at least one ion with an incomplete d-subshell; identify Ti–Cu as transition elements by this definition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34c",
+          "Specification_section_sub": "5.3.1(c)(i)",
+          "Sub_topic_name": "Multiple oxidation states in transition elements",
+          "description": "Illustrate using at least two transition elements that they show more than one oxidation state in compounds/ions; relate to redox behaviour (see also 5.3.1(k)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34d",
+          "Specification_section_sub": "5.3.1(c)(ii)",
+          "Sub_topic_name": "Coloured ions (transition metals)",
+          "description": "Illustrate that transition metals form coloured ions; no detail of electronic transitions required; connect to qualitative analysis observations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34e",
+          "Specification_section_sub": "5.3.1(c)(iii)",
+          "Sub_topic_name": "Catalysis by transition metals and compounds",
+          "description": "Illustrate catalytic behaviour of transition elements and their compounds and importance in industrial manufacture; examples include Cu2+ catalysing Zn + acids, MnO2 decomposition of H2O2; no mechanistic details required; evaluate benefits vs toxicity risks (HSW9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34f",
+          "Specification_section_sub": "5.3.1(d)",
+          "Sub_topic_name": "Ligand definition and coordinate bonding; bidentate ligands",
+          "description": "Explain and use term ligand as species forming coordinate (dative covalent) bond to metal ion/metal; include bidentate ligands; examples: H2O, Cl−, NH3 (monodentate) and en (NH2CH2CH2NH2) (bidentate); other ligands may be introduced in exams.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34g",
+          "Specification_section_sub": "5.3.1(e)",
+          "Sub_topic_name": "Complex ions and coordination number; octahedral and 4-coordinate shapes",
+          "description": "Use terms complex ion and coordination number; give examples of 6-coordinate octahedral complexes (e.g. [Cu(H2O)6]2+, [Fe(H2O)6]3+) and 4-coordinate complexes that are tetrahedral (e.g. [CuCl4]2−, [CoCl4]2−) or square planar (Pt complexes such as Pt(NH3)2Cl2); link to shape prediction (M4.1, M4.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34h",
+          "Specification_section_sub": "5.3.1(f)(i)",
+          "Sub_topic_name": "Cis–trans isomerism in complexes",
+          "description": "Describe and interpret cis–trans stereoisomerism in complexes (e.g. Pt(NH3)2Cl2); draw 3-D diagrams; relate to earlier E/Z concepts (M4.1, M4.2, M4.3; HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34i",
+          "Specification_section_sub": "5.3.1(f)(ii)",
+          "Sub_topic_name": "Optical isomerism in complexes (bidentate ligands)",
+          "description": "Describe optical isomerism in complexes, especially with bidentate/multidentate ligands (e.g. [Ni(en)3]2+); recognise non-superimposable mirror images; draw 3-D diagrams (M4.1, M4.2, M4.3; see also 6.2.2(c)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34j",
+          "Specification_section_sub": "5.3.1(g)",
+          "Sub_topic_name": "Cisplatin: anticancer action by DNA binding",
+          "description": "Explain use of cis-platin as anti-cancer drug and its action by binding to DNA preventing cell division; evaluate benefits vs side effects (HSW9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34k",
+          "Specification_section_sub": "5.3.1(h)(i)",
+          "Sub_topic_name": "Ligand substitution of [Cu(H2O)6]2+ with NH3/Cl− (colour changes)",
+          "description": "Describe ligand substitution reactions and colour changes: formation of [Cu(NH3)4(H2O)2]2+ and [CuCl4]2− from [Cu(H2O)6]2+; write equations using complex formulae.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34l",
+          "Specification_section_sub": "5.3.1(h)(ii)",
+          "Sub_topic_name": "Ligand substitution: [Cr(H2O)6]3+ to [Cr(NH3)6]3+",
+          "description": "Describe ligand substitution and colour changes forming [Cr(NH3)6]3+ from [Cr(H2O)6]3+; write complex equations; link to precipitation/complex formation with NH3 in 5.3.1(j).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34m",
+          "Specification_section_sub": "5.3.1(i)",
+          "Sub_topic_name": "Haemoglobin: ligand substitution with O2 and CO",
+          "description": "Explain biochemical importance of iron in haemoglobin including ligand substitution involving O2 and CO; relate to competitive binding and physiological effects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34n",
+          "Specification_section_sub": "5.3.1(j)(i)",
+          "Sub_topic_name": "Precipitation: Cu2+, Fe2+, Fe3+, Mn2+, Cr3+ with NaOH/NH3",
+          "description": "Describe reactions (including ionic equations) and colour changes when aqueous Cu2+, Fe2+, Fe3+, Mn2+, Cr3+ react with aqueous NaOH and aqueous NH3 to form hydroxide precipitates; accept complexed/non-complexed formulae for reactants/products as specified; recognise solubilities/colours.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34o",
+          "Specification_section_sub": "5.3.1(j)(ii)",
+          "Sub_topic_name": "Excess reagents: complex formation and amphoterism (Cr)",
+          "description": "Describe further reactions in excess NaOH/NH3: with excess NaOH only Cr(OH)3 dissolves to [Cr(OH)6]3−; with excess NH3 only Cr(OH)3 and Cu(OH)2 form [Cr(NH3)6]3+ and [Cu(NH3)4(H2O)2]2+ respectively; include observations and equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34p",
+          "Specification_section_sub": "5.3.1(k)(i)",
+          "Sub_topic_name": "Redox interconversions Fe2+ ⇌ Fe3+ (colour)",
+          "description": "Describe redox interconversions between Fe2+ and Fe3+ with colour changes; example reagents: Fe2+ oxidised with H+/MnO4− and Fe3+ reduced with I−; equations may be constructed using half-equations/oxidation numbers rather than recalled.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34q",
+          "Specification_section_sub": "5.3.1(k)(ii)",
+          "Sub_topic_name": "Redox interconversions Cr3+ ⇌ Cr2O7²−",
+          "description": "Describe redox interconversions between Cr3+ and Cr2O7²− with colour changes; example reagents: Cr3+ oxidised with H2O2/OH−; Cr2O7²− reduced with Zn/H+; construct equations using half-equations/oxidation numbers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34r",
+          "Specification_section_sub": "5.3.1(k)(iii)",
+          "Sub_topic_name": "Cu2+ reduction to Cu+ and Cu+ disproportionation",
+          "description": "Describe reduction of Cu2+ to Cu+ (e.g. with I−) and disproportionation of Cu+ to Cu2+ and Cu in aqueous conditions; include colour/solid observations; construct redox equations as needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "34s",
+          "Specification_section_sub": "5.3.1(l)",
+          "Sub_topic_name": "Predict unfamiliar ligand substitution/precipitation/redox",
+          "description": "Interpret and predict unfamiliar reactions of transition metal ions including ligand substitution, precipitation and redox; use principles of complex stability, oxidation states, and reagent behaviour.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 35,
+      "Specification_section": "5.3.2",
+      "Strand": "Module 5 – Physical chemistry and transition elements",
+      "Topic_name": "Qualitative analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "35a",
+          "Specification_section_sub": "5.3.2(a)(i)",
+          "Sub_topic_name": "Identify anions CO3²−, Cl−, Br−, I−, SO4²−",
+          "description": "Carry out qualitative analysis on test-tube scale to identify anions CO3²−, Cl−, Br−, I−, SO4²− in unknown compounds, using correct sequence and confirmatory tests (see 3.1.4(a)); record observations and write ionic equations where appropriate (PAG4; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "35b",
+          "Specification_section_sub": "5.3.2(a)(ii)",
+          "Sub_topic_name": "Identify cations NH4+, Cu2+, Fe2+, Fe3+, Mn2+, Cr3+",
+          "description": "Carry out qualitative analysis on test-tube scale to identify cations NH4+, Cu2+, Fe2+, Fe3+, Mn2+, Cr3+ in unknown compounds using NaOH/NH3 tests and warming where required (see 3.1.4(a), 5.3.1(j)); record colour changes/precipitates/solubility; use ionic equations where appropriate (PAG4; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 36,
+      "Specification_section": "6.1.1",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Aromatic compounds",
+      "Sub_topics": [
+        {
+          "subtopic_id": "36a",
+          "Specification_section_sub": "6.1.1(a)",
+          "Sub_topic_name": "Kekulé vs delocalised benzene models",
+          "description": "Compare Kekulé model of benzene with delocalised model in terms of p-orbital overlap forming delocalised π-system; represent benzene as ring with alternating double bonds or circle-in-hexagon; understand model development (HSW1,7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36b",
+          "Specification_section_sub": "6.1.1(b)",
+          "Sub_topic_name": "Evidence for delocalised benzene model",
+          "description": "Use experimental evidence for delocalised benzene model: equal bond lengths, enthalpy change of hydrogenation (less exothermic than expected for 3 isolated C=C), and resistance to reaction; relate to stability (HSW11).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36c",
+          "Specification_section_sub": "6.1.1(c)",
+          "Sub_topic_name": "IUPAC naming of substituted aromatic compounds",
+          "description": "Apply IUPAC rules to name substituted aromatic compounds using locant numbers for substitution positions (e.g. 2,4-dinitromethylbenzene); systematic naming for multiple substituents (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36d",
+          "Specification_section_sub": "6.1.1(d)(i)",
+          "Sub_topic_name": "Nitration of arenes (conditions)",
+          "description": "Describe electrophilic substitution of aromatic compounds by nitration using concentrated HNO3 with concentrated H2SO4; write equations and identify products for monosubstitution where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36e",
+          "Specification_section_sub": "6.1.1(d)(ii)",
+          "Sub_topic_name": "Halogenation of arenes with halogen carrier",
+          "description": "Describe electrophilic substitution of arenes with halogens in presence of halogen carrier (Fe, FeX3, AlX3); write equations and identify products.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36f",
+          "Specification_section_sub": "6.1.1(d)(iii)",
+          "Sub_topic_name": "Friedel–Crafts alkylation/acylation of arenes",
+          "description": "Describe electrophilic substitution of arenes with haloalkanes (alkylation) or acyl chlorides (acylation) using halogen carrier; explain importance in synthesis via forming C–C bond to aromatic ring; link to later C–C formation (6.2.4(d)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36g",
+          "Specification_section_sub": "6.1.1(e)",
+          "Sub_topic_name": "Mechanism: electrophilic substitution (nitration and halogenation)",
+          "description": "Describe mechanisms of electrophilic substitution in arenes for nitration and halogenation using curly arrows and intermediates; for nitration include formation of NO2+; for halogenation electrophile can be assumed X+; halogen carriers as above (HSW1,2,8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36h",
+          "Specification_section_sub": "6.1.1(f)",
+          "Sub_topic_name": "Why benzene resists bromination vs alkenes",
+          "description": "Explain relative resistance of benzene to bromination compared with alkenes in terms of delocalised electron density of benzene π-system vs localised electron density of alkene π bond; relate to stability and reaction type (HSW2,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36i",
+          "Specification_section_sub": "6.1.1(g)",
+          "Sub_topic_name": "Unfamiliar electrophilic substitution in arenes",
+          "description": "Interpret unfamiliar electrophilic substitution reactions of aromatic compounds and predict mechanisms; use supplied extra information to identify electrophile, catalyst, directing effects where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36j",
+          "Specification_section_sub": "6.1.1(h)",
+          "Sub_topic_name": "Phenol weak acidity (NaOH reacts; carbonates do not)",
+          "description": "Explain weak acidity of phenols: phenol neutralises with NaOH but does not react with carbonates; relate to acid strength and equilibrium; apply equations (PAG7; see also 5.1.3(b)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36k",
+          "Specification_section_sub": "6.1.1(i)",
+          "Sub_topic_name": "Phenol bromination to 2,4,6-tribromophenol",
+          "description": "Describe electrophilic substitution of phenol with bromine to form 2,4,6-tribromophenol; include conditions and observations (e.g. decolourisation, precipitate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36l",
+          "Specification_section_sub": "6.1.1(i)",
+          "Sub_topic_name": "Phenol nitration with dilute HNO3 (2- and 4-nitrophenol mixture)",
+          "description": "Describe nitration of phenol with dilute nitric acid to give mixture of 2-nitrophenol and 4-nitrophenol; note does not require conc. HNO3 or conc. H2SO4 catalyst; write equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36m",
+          "Specification_section_sub": "6.1.1(j)",
+          "Sub_topic_name": "Why phenol reacts faster than benzene (lone pair donation)",
+          "description": "Explain relative ease of electrophilic substitution of phenol vs benzene due to oxygen lone pair donation into π-system; explain in terms of increased susceptibility of ring to electrophilic attack (not intermediate stability) (HSW2,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36n",
+          "Specification_section_sub": "6.1.1(k)",
+          "Sub_topic_name": "Directing effects: 2,4 directors vs 3 directors",
+          "description": "Explain and apply directing effects in electrophilic substitution: electron-donating groups (OH, NH2) direct to 2 and 4 positions; electron-withdrawing groups (NO2) direct to 3 position; other groups not required but may be supplied (HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36o",
+          "Specification_section_sub": "6.1.1(l)",
+          "Sub_topic_name": "Predict aromatic substitution products using directing groups",
+          "description": "Predict substitution products of aromatic compounds using directing effects and explain importance to organic synthesis (see also 6.2.5).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 37,
+      "Specification_section": "6.1.2",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Carbonyl compounds",
+      "Sub_topics": [
+        {
+          "subtopic_id": "37a",
+          "Specification_section_sub": "6.1.2(a)",
+          "Sub_topic_name": "Oxidation of aldehydes to carboxylic acids",
+          "description": "Describe oxidation of aldehydes to carboxylic acids using Cr2O7²−/H+ (K2Cr2O7/H2SO4); use [O] and [H] notation in organic redox equations (PAG7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "37b",
+          "Specification_section_sub": "6.1.2(b)(i)",
+          "Sub_topic_name": "NaBH4 reduction of carbonyls to alcohols",
+          "description": "Describe nucleophilic addition reduction of aldehydes/ketones using NaBH4 to form alcohols; recognise functional group change and product type.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "37c",
+          "Specification_section_sub": "6.1.2(b)(ii)",
+          "Sub_topic_name": "HCN addition to carbonyls to form hydroxynitriles",
+          "description": "Describe nucleophilic addition of HCN (generated from NaCN(aq)/H+(aq)) to aldehydes/ketones to form hydroxynitriles; link to chain extension and nitrile chemistry (see 6.2.4(b)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "37d",
+          "Specification_section_sub": "6.1.2(c)",
+          "Sub_topic_name": "Mechanism: nucleophilic addition (NaBH4 and HCN)",
+          "description": "Give mechanisms for nucleophilic addition of NaBH4 and HCN to carbonyl compounds: for NaBH4 treat nucleophile as hydride H− then protonation by H2O; for HCN initial attack by CN− then protonation using H2O or H+; show curly arrows, dipoles, tetrahedral intermediate (HSW1,2,8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "37e",
+          "Specification_section_sub": "6.1.2(d)",
+          "Sub_topic_name": "2,4-DNP test for carbonyls and derivative melting point ID",
+          "description": "Use 2,4-dinitrophenylhydrazine (2,4-DNP) to detect carbonyl group; identify carbonyl compound from melting point of derivative; equation and derivative structure not required (PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "37f",
+          "Specification_section_sub": "6.1.2(e)",
+          "Sub_topic_name": "Tollens’ test for aldehydes vs ketones",
+          "description": "Use Tollens’ reagent (ammoniacal AgNO3) to detect aldehyde group and distinguish aldehydes from ketones; explain in terms of oxidation of aldehydes to carboxylic acids and reduction of Ag+ to Ag; [O] acceptable in equations (PAG7; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 38,
+      "Specification_section": "6.1.3",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Carboxylic acids and esters",
+      "Sub_topics": [
+        {
+          "subtopic_id": "38a",
+          "Specification_section_sub": "6.1.3(a)",
+          "Sub_topic_name": "Carboxylic acid solubility via hydrogen bonding",
+          "description": "Explain water solubility of carboxylic acids in terms of hydrogen bonding between –COOH group and water; relate to polarity and intermolecular forces.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38b",
+          "Specification_section_sub": "6.1.3(b)",
+          "Sub_topic_name": "Carboxylic acids reactions with metals and bases (aqueous)",
+          "description": "Describe reactions of carboxylic acids in aqueous conditions with metals and bases including carbonates, metal oxides, and alkalis; write equations; comparison of acidity of different carboxylic acids not required (PAG7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38c",
+          "Specification_section_sub": "6.1.3(c)(i)",
+          "Sub_topic_name": "Esterification: carboxylic acids + alcohols (acid catalyst)",
+          "description": "Describe esterification of carboxylic acids with alcohols in presence of acid catalyst (e.g. concentrated H2SO4); write equations and recognise equilibrium nature and conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38d",
+          "Specification_section_sub": "6.1.3(c)(ii)",
+          "Sub_topic_name": "Esterification: acid anhydrides + alcohols",
+          "description": "Describe reaction of acid anhydrides with alcohols to form esters; write equations and identify byproducts (carboxylic acids).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38e",
+          "Specification_section_sub": "6.1.3(d)(i)",
+          "Sub_topic_name": "Acid hydrolysis of esters",
+          "description": "Describe hydrolysis of esters in hot aqueous acid to form carboxylic acids and alcohols; write equations; recognise reversible nature and conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38f",
+          "Specification_section_sub": "6.1.3(d)(ii)",
+          "Sub_topic_name": "Alkaline hydrolysis (saponification) of esters",
+          "description": "Describe hydrolysis of esters in hot aqueous alkali to form carboxylate salts and alcohols; write equations; recognise effectively irreversible due to salt formation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38g",
+          "Specification_section_sub": "6.1.3(e)",
+          "Sub_topic_name": "Form acyl chlorides from carboxylic acids (SOCl2)",
+          "description": "Describe formation of acyl chlorides from carboxylic acids using thionyl chloride SOCl2; write equations and recognise gaseous byproducts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38h",
+          "Specification_section_sub": "6.1.3(f)",
+          "Sub_topic_name": "Acyl chlorides in synthesis (esters, acids, amides)",
+          "description": "Use acyl chlorides in synthesis to form esters, carboxylic acids, and primary/secondary amides; include esterification of phenol (phenol not readily esterified by carboxylic acids) and recognise higher reactivity of acyl chlorides.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 39,
+      "Specification_section": "6.2.1",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Amines",
+      "Sub_topics": [
+        {
+          "subtopic_id": "39a",
+          "Specification_section_sub": "6.2.1(a)",
+          "Sub_topic_name": "Amines as bases; salts with dilute acids",
+          "description": "Explain basicity of amines as proton acceptance by nitrogen lone pair; write reactions of amines with dilute inorganic acids (e.g. HCl(aq)) to form ammonium salts; comparison of basicity of different amines not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "39b",
+          "Specification_section_sub": "6.2.1(b)(i)",
+          "Sub_topic_name": "Prepare aliphatic amines from haloalkanes + ethanolic NH3/amines",
+          "description": "Describe preparation of aliphatic amines by substitution of haloalkanes with excess ethanolic ammonia and with amines; include formation of primary amines from NH3 and secondary/tertiary from amines; understand product mixtures and role of excess NH3.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "39c",
+          "Specification_section_sub": "6.2.1(b)(ii)",
+          "Sub_topic_name": "Prepare aromatic amines by reducing nitroarenes (Sn/HCl)",
+          "description": "Describe preparation of aromatic amines by reduction of nitroarenes using tin and concentrated hydrochloric acid; understand overall change −NO2 to −NH2 and conditions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 40,
+      "Specification_section": "6.2.2",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Amino acids, amides and chirality",
+      "Sub_topics": [
+        {
+          "subtopic_id": "40a",
+          "Specification_section_sub": "6.2.2(a)",
+          "Sub_topic_name": "α-amino acid general formula and reactions",
+          "description": "Use general formula for α-amino acids RCH(NH2)COOH; describe reactions: (i) carboxylic acid group reacts with alkalis and forms esters (link 6.1.3(c)), (ii) amine group reacts with acids; recognise zwitterion behaviour may be implied but not specified here.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "40b",
+          "Specification_section_sub": "6.2.2(b)",
+          "Sub_topic_name": "Primary and secondary amide structures",
+          "description": "Recognise and draw structures of primary and secondary amides; relate to formation from acyl chlorides and amines (see 6.1.3(f), 6.2.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "40c",
+          "Specification_section_sub": "6.2.2(c)",
+          "Sub_topic_name": "Optical isomerism concept (chiral centre)",
+          "description": "Explain optical isomerism as stereoisomerism due to non-superimposable mirror images about a chiral centre; draw 3-D representations; relate to stereochemistry concepts (M4.2, M4.3; HSW1,8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "40d",
+          "Specification_section_sub": "6.2.2(d)",
+          "Sub_topic_name": "Identify chiral centres in organic molecules",
+          "description": "Identify chiral centres in any organic molecule; determine whether carbon has four different substituents using 2-D/3-D representations (M4.2, M4.3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 41,
+      "Specification_section": "6.2.3",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Polyesters and polyamides",
+      "Sub_topics": [
+        {
+          "subtopic_id": "41a",
+          "Specification_section_sub": "6.2.3(a)",
+          "Sub_topic_name": "Condensation polymerisation to polyesters and polyamides",
+          "description": "Explain condensation polymerisation to form polyesters and polyamides from carboxylic acids/dicarboxylic acids (or acyl chlorides) with alcohols/diols or amines/diamines; do not need to recall specific commercial polymer structures or monomers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "41b",
+          "Specification_section_sub": "6.2.3(b)(i)",
+          "Sub_topic_name": "Hydrolysis of ester links in polyesters",
+          "description": "Describe acid and base hydrolysis of ester groups in polyesters; write generalized equations and identify products (diols, dicarboxylic acids or salts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "41c",
+          "Specification_section_sub": "6.2.3(b)(ii)",
+          "Sub_topic_name": "Hydrolysis of amide links in polyamides",
+          "description": "Describe acid and base hydrolysis of amide groups in polyamides; write generalized equations and identify products (diamines/ammonium salts and dicarboxylic acids/salts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "41d",
+          "Specification_section_sub": "6.2.3(c)",
+          "Sub_topic_name": "Polymer structure questions: repeat units, monomers, type",
+          "description": "Predict for addition and condensation polymerisation: (i) repeat unit from given monomer(s), (ii) monomer(s) needed for given polymer section, (iii) type of polymerisation; link to addition polymer content (4.1.3(j)).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 42,
+      "Specification_section": "6.2.4",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Carbon–carbon bond formation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "42a",
+          "Specification_section_sub": "6.2.4(a)",
+          "Sub_topic_name": "C–C bond formation to extend carbon chain",
+          "description": "Explain use of carbon–carbon bond formation in synthesis to increase carbon chain length; recognise strategic importance in multi-step routes (see 6.1.1(d), 6.1.2(b)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "42b",
+          "Specification_section_sub": "6.2.4(b)(i)",
+          "Sub_topic_name": "Haloalkane + CN− → nitrile (mechanism)",
+          "description": "Describe formation of nitriles via nucleophilic substitution of haloalkanes with CN− in ethanol; include SN2 mechanism with curly arrows as in 4.2.2(c); link to chain extension by one carbon.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "42c",
+          "Specification_section_sub": "6.2.4(b)(ii)",
+          "Sub_topic_name": "Carbonyl + HCN → hydroxynitrile (mechanism link)",
+          "description": "Describe formation of hydroxynitriles by nucleophilic addition of HCN to carbonyl compounds; include mechanism link to 6.1.2(c) and show C–C bond formation; recognise introduces −CN group.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "42d",
+          "Specification_section_sub": "6.2.4(c)(i)",
+          "Sub_topic_name": "Reduce nitriles to amines (H2/Ni)",
+          "description": "Describe reduction of nitriles (from 6.2.4(b)) using H2/Ni to form amines; write equations and identify primary amine products.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "42e",
+          "Specification_section_sub": "6.2.4(c)(ii)",
+          "Sub_topic_name": "Acid hydrolysis of nitriles to carboxylic acids",
+          "description": "Describe acid hydrolysis of nitriles to carboxylic acids; write equations and recognise need for heating/reflux and acidic conditions; identify ammonium salt byproduct.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "42f",
+          "Specification_section_sub": "6.2.4(d)",
+          "Sub_topic_name": "Friedel–Crafts alkylation/acylation to form substituted arene C–C bond",
+          "description": "Describe formation of substituted aromatic C–C bonds via Friedel–Crafts alkylation (haloalkane) and acylation (acyl chloride) in presence of halogen carrier; link to 6.1.1(d).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 43,
+      "Specification_section": "6.2.5",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Organic synthesis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "43a",
+          "Specification_section_sub": "6.2.5(a)",
+          "Sub_topic_name": "Prepare/purify organic solids (reflux, filtration, recrystallisation, mp, TLC)",
+          "description": "Use techniques/procedures for preparation and purification of organic solids: organic preparation using Quickfit, distillation and reflux; purification by filtration under reduced pressure, recrystallisation; measure melting points; use TLC/paper chromatography as appropriate; conduct risk assessment (PAG6; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "43b",
+          "Specification_section_sub": "6.2.5(b)",
+          "Sub_topic_name": "Identify functional groups; predict properties/reactions (Module 6 set)",
+          "description": "For organic molecules containing several functional groups (including those introduced in Module 6), identify each functional group and predict properties and reactions; integrate knowledge across modules (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "43c",
+          "Specification_section_sub": "6.2.5(c)",
+          "Sub_topic_name": "Devise multi-stage synthetic routes (full toolkit)",
+          "description": "Devise multi-stage synthetic routes by applying transformations between all functional groups studied throughout the specification; interpret additional information on exam papers extending reaction toolkit; justify sequencing and reagents (HSW3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 44,
+      "Specification_section": "6.3.1",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Chromatography and qualitative analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "44a",
+          "Specification_section_sub": "6.3.1(a)",
+          "Sub_topic_name": "TLC Rf interpretation",
+          "description": "Interpret one-way TLC chromatograms using Rf values (Rf = distance moved by spot / distance moved by solvent front); compare substances and assess purity/identity (M3.1; PAG6; HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44b",
+          "Specification_section_sub": "6.3.1(b)(i)",
+          "Sub_topic_name": "Gas chromatography: retention time interpretation",
+          "description": "Interpret gas chromatograms in terms of retention times to identify components based on time to elute; relate to interactions with stationary phase (M3.1, M3.2; HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44c",
+          "Specification_section_sub": "6.3.1(b)(ii)",
+          "Sub_topic_name": "Gas chromatography: composition from peak areas and calibration",
+          "description": "Interpret gas chromatograms to determine amounts/proportions of mixture components using peak integration values (supplied) and external calibration curves to confirm concentrations (M3.1, M3.2; HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44d",
+          "Specification_section_sub": "6.3.1(c)(i)",
+          "Sub_topic_name": "Functional group test: alkenes with bromine",
+          "description": "Identify alkenes via reaction with bromine (decolourisation) as test for C=C; apply to unknowns and write equations where appropriate (PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44e",
+          "Specification_section_sub": "6.3.1(c)(ii)",
+          "Sub_topic_name": "Functional group test: haloalkanes with AgNO3/ethanol",
+          "description": "Identify haloalkanes using aqueous AgNO3 in ethanol; interpret precipitate formation (AgX) and rate differences; link to hydrolysis mechanism context (PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44f",
+          "Specification_section_sub": "6.3.1(c)(iii)",
+          "Sub_topic_name": "Functional group test: phenols (weak acid, no carbonate reaction)",
+          "description": "Identify phenols by weak acidity (react with NaOH) but no reaction with CO3²−; distinguish from carboxylic acids which do react with carbonates (PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44g",
+          "Specification_section_sub": "6.3.1(c)(iv)",
+          "Sub_topic_name": "Functional group test: carbonyls with 2,4-DNP",
+          "description": "Identify carbonyl compounds (aldehydes/ketones) by reaction with 2,4-DNP to give precipitate; interpret positive test (PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44h",
+          "Specification_section_sub": "6.3.1(c)(v)",
+          "Sub_topic_name": "Functional group test: aldehydes with Tollens’ reagent",
+          "description": "Identify aldehydes using Tollens’ reagent (silver mirror/Ag precipitate); distinguish from ketones; relate to redox process (PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44i",
+          "Specification_section_sub": "6.3.1(c)(vi)",
+          "Sub_topic_name": "Acidified dichromate test: primary/secondary alcohols and aldehydes",
+          "description": "Use acidified dichromate (Cr2O7²−/H+) to test and distinguish primary/secondary alcohols and aldehydes (oxidised; orange to green) from tertiary alcohols/ketones (no reaction under test conditions); interpret outcomes (PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44j",
+          "Specification_section_sub": "6.3.1(c)(vii)",
+          "Sub_topic_name": "Functional group test: carboxylic acids with carbonates",
+          "description": "Identify carboxylic acids by reaction with CO3²− producing CO2 effervescence; write equations and distinguish from phenols (PAG7; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 45,
+      "Specification_section": "6.3.2",
+      "Strand": "Module 6 – Organic chemistry and analysis",
+      "Topic_name": "Spectroscopy",
+      "Sub_topics": [
+        {
+          "subtopic_id": "45a",
+          "Specification_section_sub": "6.3.2(a)(i)",
+          "Sub_topic_name": "13C NMR: number of carbon environments",
+          "description": "From proton-decoupled 13C NMR spectrum, determine number of carbon environments in molecule; interpret symmetry and unique carbon sites (M3.1; HSW3,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45b",
+          "Specification_section_sub": "6.3.2(a)(ii)",
+          "Sub_topic_name": "13C NMR: carbon environment types from chemical shift",
+          "description": "Use 13C chemical shift values (provided on Data Sheet) to identify types of carbon environments (e.g. carbonyl, aromatic, C–O, alkyl) for functional groups in A level spec; restrict to studied functional groups (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45c",
+          "Specification_section_sub": "6.3.2(a)(iii)",
+          "Sub_topic_name": "13C NMR: propose possible structures",
+          "description": "Use 13C NMR information to propose possible structures consistent with number/type of carbon environments; integrate with other data where provided (M3.1; HSW3,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45d",
+          "Specification_section_sub": "6.3.2(b)(i)",
+          "Sub_topic_name": "1H NMR: number of proton environments",
+          "description": "From high-resolution 1H NMR spectrum, determine number of proton environments; interpret equivalence and symmetry; note aromatic splitting patterns not required (M3.1; HSW3,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45e",
+          "Specification_section_sub": "6.3.2(b)(ii)",
+          "Sub_topic_name": "1H NMR: proton environment types from chemical shift",
+          "description": "Use 1H chemical shift values (provided on Data Sheet) to identify types of proton environments (e.g. alkyl, adjacent to electronegative atoms, aldehyde, aromatic); identify aromatic protons by shift but not analyse their splitting (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45f",
+          "Specification_section_sub": "6.3.2(b)(iii)",
+          "Sub_topic_name": "1H NMR: integration and relative proton numbers",
+          "description": "Determine relative numbers of each type of proton from relative peak areas using integration traces or ratio numbers when required; convert ratios to actual proton counts consistent with formula (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45g",
+          "Specification_section_sub": "6.3.2(b)(iv)",
+          "Sub_topic_name": "1H NMR: spin–spin splitting and n+1 rule",
+          "description": "Use spin–spin splitting patterns and n + 1 rule to determine number of non-equivalent adjacent protons; interpret multiplicities (singlet, doublet, triplet, etc.) and coupling context (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45h",
+          "Specification_section_sub": "6.3.2(b)(v)",
+          "Sub_topic_name": "1H NMR: propose structures from full spectrum",
+          "description": "Use combined 1H NMR features (chemical shift, integration, splitting) to propose possible molecular structures restricted to functional groups in A level spec; incorporate aromatic protons identification without detailed splitting (M3.1; HSW3,5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45i",
+          "Specification_section_sub": "6.3.2(c)",
+          "Sub_topic_name": "Predict 13C or 1H NMR spectra from structure",
+          "description": "Predict features of a 13C NMR or 1H NMR spectrum for a given molecule: number of environments and approximate chemical shift regions; for 1H include expected splitting for non-aromatic regions (M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45j",
+          "Specification_section_sub": "6.3.2(d)(i)",
+          "Sub_topic_name": "TMS reference standard in NMR",
+          "description": "Explain use of tetramethylsilane (TMS) as standard reference for chemical shift measurements; chemical shift δ measured relative to TMS at 0 ppm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45k",
+          "Specification_section_sub": "6.3.2(d)(ii)",
+          "Sub_topic_name": "Deuterated solvents in NMR",
+          "description": "Explain need for deuterated solvents (e.g. CDCl3) when running NMR spectra to avoid proton signals from solvent and provide lock signal.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45l",
+          "Specification_section_sub": "6.3.2(d)(iii)",
+          "Sub_topic_name": "D2O exchange to identify O–H and N–H protons",
+          "description": "Identify O–H and N–H protons by proton exchange using D2O; explain disappearance/broadening changes in 1H NMR after D2O shake.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45m",
+          "Specification_section_sub": "6.3.2(e)",
+          "Sub_topic_name": "Deduce structure from combined EA, MS, IR, NMR",
+          "description": "Deduce structures of organic compounds using combined analytical data: elemental analysis, mass spectra, IR spectra, and NMR spectra; reference data supplied on Data Sheet; restricted to functional groups studied; mass spectra of organic halogen compounds not required (M3.1; HSW3,5,6).",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

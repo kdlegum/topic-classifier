@@ -1,0 +1,2197 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Biology",
+  "Exam Board": "OCR",
+  "Specification": "H420",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "1.1.1",
+      "Strand": "Module 1 – Development of practical skills in biology",
+      "Topic_name": "Planning",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1.1(a)",
+          "Sub_topic_name": "Experimental design in practical contexts",
+          "description": "Design experiments to solve problems set in a practical context, including selecting suitable apparatus, equipment and techniques; apply scientific knowledge from across the specification to the practical scenario (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1.1(b)",
+          "Sub_topic_name": "Identify control variables",
+          "description": "Identify variables that must be controlled (where appropriate) in a biological investigation, and justify why controlling them is necessary to obtain valid results.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.1.1(c)",
+          "Sub_topic_name": "Evaluate suitability of methods",
+          "description": "Evaluate whether an experimental method is appropriate to meet expected outcomes; judge if the procedure will answer the question/hypothesis and generate suitable data (HSW6).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "1.1.2",
+      "Strand": "Module 1 – Development of practical skills in biology",
+      "Topic_name": "Implementing",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "1.1.2(a)",
+          "Sub_topic_name": "Use apparatus and techniques correctly",
+          "description": "Use a wide range of practical apparatus and techniques correctly, as required by specification content and Practical Endorsement skills; demonstrate safe, competent operation in context (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "1.1.2(b)",
+          "Sub_topic_name": "Appropriate units for measurements",
+          "description": "Select and use appropriate units for biological measurements and calculations, including conversions where needed (M0.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "1.1.2(c)",
+          "Sub_topic_name": "Present observations and data",
+          "description": "Present observations and data in an appropriate scientific format (e.g. tables, annotated observations), with clarity and conventions suitable for biology (HSW8).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "1.1.3",
+      "Strand": "Module 1 – Development of practical skills in biology",
+      "Topic_name": "Analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "1.1.3(a)",
+          "Sub_topic_name": "Process and interpret results",
+          "description": "Process, analyse and interpret qualitative and quantitative experimental results, including reaching valid conclusions where appropriate (HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "1.1.3(b)",
+          "Sub_topic_name": "Mathematical analysis of quantitative data",
+          "description": "Use appropriate mathematical skills to analyse quantitative biological data; select relevant calculations and methods as in the mathematical requirements (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "1.1.3(c)",
+          "Sub_topic_name": "Significant figures in results",
+          "description": "Use significant figures appropriately in recording and reporting measurements and calculated values (M1.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "1.1.3(d)",
+          "Sub_topic_name": "Plot and interpret graphs (axes, gradients, intercepts)",
+          "description": "Plot and interpret suitable graphs from experimental results, including: selecting and labelling axes with appropriate scales, quantities and units; measuring gradients and intercepts; interpret relationships shown (M3.2, M3.3, M3.4, M3.5).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "1.1.4",
+      "Strand": "Module 1 – Development of practical skills in biology",
+      "Topic_name": "Evaluation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "1.1.4(a)",
+          "Sub_topic_name": "Evaluate results and draw conclusions",
+          "description": "Evaluate results and draw justified conclusions, considering whether evidence supports the conclusion and whether alternative explanations exist (HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "1.1.4(b)",
+          "Sub_topic_name": "Identify anomalies",
+          "description": "Identify anomalies in experimental measurements (outliers or inconsistent readings) and consider plausible causes (biological variation, method error, equipment issues).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "1.1.4(c)",
+          "Sub_topic_name": "Limitations of procedures",
+          "description": "Recognise and explain limitations in experimental procedures (e.g. uncontrolled variables, low resolution of apparatus, sampling bias, confounding factors).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "1.1.4(d)",
+          "Sub_topic_name": "Precision, accuracy and uncertainty",
+          "description": "Assess precision and accuracy of measurements and data, including margins of error, percentage errors and uncertainties in apparatus; calculate % error where required (M1.11).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "1.1.4(e)",
+          "Sub_topic_name": "Refine experimental design",
+          "description": "Refine experimental design by suggesting specific improvements to procedures and apparatus; justify how improvements increase validity, reliability, accuracy or precision (HSW3).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "1.2.1",
+      "Strand": "Module 1 – Development of practical skills in biology",
+      "Topic_name": "Practical skills",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "1.2.1(a)",
+          "Sub_topic_name": "Independent thinking in practical work",
+          "description": "Apply investigative approaches and methods to practical work, including solving problems in a practical context; demonstrate independence in planning and adapting methods (HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "1.2.1(b)",
+          "Sub_topic_name": "Safe and correct practical technique",
+          "description": "Safely and correctly use a range of practical equipment and materials; identify potential hazards and explain how to minimise risks (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "1.2.1(c)",
+          "Sub_topic_name": "Follow written instructions",
+          "description": "Follow written practical instructions accurately to carry out techniques and procedures as intended.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "1.2.1(d)",
+          "Sub_topic_name": "Make and record observations/measurements",
+          "description": "Make and record observations and measurements accurately and methodically using appropriate units and conventions (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "1.2.1(e)",
+          "Sub_topic_name": "Keep appropriate practical records",
+          "description": "Keep appropriate records of experimental activities, including methods, raw data, processed data, and conclusions as required for the Practical Endorsement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "1.2.1(f)",
+          "Sub_topic_name": "Present scientific information and data",
+          "description": "Present information and data in a scientific way (e.g. tables, graphs, annotated diagrams, structured write-ups) suitable for communicating findings (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "1.2.1(g)",
+          "Sub_topic_name": "Use software/tools to process data and report",
+          "description": "Use appropriate software and tools to process data, carry out research and report findings; translate between numerical and graphical outputs where relevant (M3.1, HSW3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "1.2.1(h)",
+          "Sub_topic_name": "Research skills (online and offline)",
+          "description": "Use online and offline research skills, including evaluating and using information from websites, textbooks and other printed scientific sources.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "1.2.1(i)",
+          "Sub_topic_name": "Cite sources correctly",
+          "description": "Correctly cite sources of information used in practical planning and reporting, using appropriate scientific referencing approaches.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "1.2.1(j)",
+          "Sub_topic_name": "Use a wide range of instruments and techniques",
+          "description": "Use a wide range of experimental and practical instruments, equipment and techniques appropriate to the specification’s knowledge and understanding (HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "1.2.2",
+      "Strand": "Module 1 – Development of practical skills in biology",
+      "Topic_name": "Use of apparatus and techniques",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "1.2.2(a)",
+          "Sub_topic_name": "Quantitative measurements (core variables)",
+          "description": "Use appropriate apparatus to record quantitative measurements including mass, time, volume, temperature, length and pH (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "1.2.2(b)",
+          "Sub_topic_name": "Instrumental measurements (e.g. colorimeter/potometer)",
+          "description": "Use appropriate instrumentation to record quantitative measurements, such as a colorimeter or potometer (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "1.2.2(c)",
+          "Sub_topic_name": "Glassware and serial dilutions",
+          "description": "Use laboratory glassware for experimental techniques including serial dilutions; plan dilution series and maintain accuracy (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "1.2.2(d)",
+          "Sub_topic_name": "Light microscopy and graticule",
+          "description": "Use a light microscope at low and high power, including using a graticule for measurement and scaling (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "1.2.2(e)",
+          "Sub_topic_name": "Scientific drawings from observations",
+          "description": "Produce scientific drawings from observations with appropriate detail, labels and annotations, using correct biological drawing conventions (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "1.2.2(f)",
+          "Sub_topic_name": "Qualitative tests for biological molecules",
+          "description": "Use qualitative reagents to identify biological molecules (e.g. proteins, sugars, starch, lipids) safely and correctly (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "1.2.2(g)",
+          "Sub_topic_name": "Separation techniques (chromatography/electrophoresis)",
+          "description": "Separate biological compounds using thin layer chromatography (TLC) or paper chromatography, and/or electrophoresis; interpret separation patterns and relate to identity/purity (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "1.2.2(h)",
+          "Sub_topic_name": "Ethical use of organisms (responses and physiology)",
+          "description": "Use organisms safely and ethically to measure (i) plant or animal responses and (ii) physiological functions; apply ethical considerations and minimise harm (HSW4, HSW10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "1.2.2(i)",
+          "Sub_topic_name": "Aseptic technique and culturing microorganisms",
+          "description": "Use microbiological aseptic techniques safely, including using agar plates and broth; prevent contamination and manage biohazards (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "1.2.2(j)",
+          "Sub_topic_name": "Dissection tools and technique",
+          "description": "Use instruments safely for dissection of an animal or plant organ; expose and identify structures and record observations appropriately (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "1.2.2(k)",
+          "Sub_topic_name": "Sampling techniques in fieldwork",
+          "description": "Use sampling techniques in fieldwork (e.g. quadrats, transects, sweep nets, pitfall traps) appropriately to collect ecological data (HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6l",
+          "Specification_section_sub": "1.2.2(l)",
+          "Sub_topic_name": "ICT for data collection/modelling/processing",
+          "description": "Use ICT such as computer modelling, data loggers to collect data, and software to process data; ensure appropriate selection of tools and correct handling of digital data (HSW3, HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "2.1.1",
+      "Strand": "Module 2 – Foundations in biology",
+      "Topic_name": "Cell structure",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "2.1.1(a)",
+          "Sub_topic_name": "Microscopy to investigate eukaryotic cells",
+          "description": "Use microscopy to observe and investigate different types of cell and cell structure in a range of eukaryotic organisms; understand images from light microscope, transmission electron microscope (TEM) and scanning electron microscope (SEM) (HSW1, HSW7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "2.1.1(b)",
+          "Sub_topic_name": "Prepare microscope slides; graticule and micrometer",
+          "description": "Prepare and examine microscope slides for light microscopy, including calibration and use of an eyepiece graticule and stage micrometer (PAG1, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "2.1.1(c)",
+          "Sub_topic_name": "Staining and differential staining",
+          "description": "Use staining in light microscopy, including differential staining to identify different cellular components and cell types; interpret outcomes (PAG1, HSW4, HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "2.1.1(d)",
+          "Sub_topic_name": "Biological drawings of cells/tissues",
+          "description": "Represent cell structure as seen under the light microscope using drawings and annotated diagrams of whole cells or cells in tissue sections; follow biological drawing conventions (PAG1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "2.1.1(e)",
+          "Sub_topic_name": "Magnification formula and manipulation",
+          "description": "Use and manipulate the magnification formula: magnification = size of image / size of real object; rearrange to find unknowns; apply with correct units and significant figures (M0.1, M0.2, M0.3, M1.1, M1.8, M2.2, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "2.1.1(f)",
+          "Sub_topic_name": "Magnification vs resolution (LM, TEM, SEM)",
+          "description": "Explain the difference between magnification and resolution; compare achievable resolution and magnification for light microscopes, TEM and SEM; no requirement to recall exact numerical values (M0.2, M0.3, HSW7, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "2.1.1(g)",
+          "Sub_topic_name": "Eukaryotic ultrastructure and organelle functions",
+          "description": "Describe ultrastructure of eukaryotic cells and outline functions of: nucleus, nucleolus, nuclear envelope, rough and smooth endoplasmic reticulum (ER), Golgi apparatus, ribosomes, mitochondria, lysosomes, chloroplasts, plasma membrane, centrioles, cell wall, flagella and cilia (M0.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "2.1.1(h)",
+          "Sub_topic_name": "Interpret photomicrographs (TEM/SEM)",
+          "description": "Interpret photomicrographs of cellular components in a range of eukaryotic cells, including TEM and SEM images; identify structures and infer function.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "2.1.1(i)",
+          "Sub_topic_name": "Organelle interrelationships in protein secretion",
+          "description": "Explain the interrelationship between organelles involved in production and secretion of proteins (e.g. nucleus → ribosomes/RER → Golgi → vesicles → exocytosis).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "2.1.1(j)",
+          "Sub_topic_name": "Cytoskeleton roles",
+          "description": "Explain the importance of the cytoskeleton in providing mechanical strength, aiding transport within cells, and enabling cell movement (HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "2.1.1(k)",
+          "Sub_topic_name": "Prokaryotic vs eukaryotic cells",
+          "description": "Compare similarities and differences in structure and ultrastructure of prokaryotic and eukaryotic cells; apply microscopy evidence where relevant (PAG1).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "2.1.2",
+      "Strand": "Module 2 – Foundations in biology",
+      "Topic_name": "Biological molecules",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "2.1.2(a)",
+          "Sub_topic_name": "Hydrogen bonding and properties of water",
+          "description": "Explain how hydrogen bonding occurs between water molecules and relate this (and other properties of water) to roles in living organisms: solvent, transport medium, coolant, and habitat; use examples from prokaryotes and eukaryotes; apply to novel contexts (HSW2, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "2.1.2(b)",
+          "Sub_topic_name": "Monomers, polymers, condensation and hydrolysis",
+          "description": "Explain monomers and polymers; describe importance of condensation and hydrolysis reactions in forming and breaking biological molecules; relate to macromolecule structure/function.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "2.1.2(c)",
+          "Sub_topic_name": "Elements in biological molecules",
+          "description": "Recall chemical elements making up key biological molecules: carbohydrates (C,H,O), lipids (C,H,O), proteins (C,H,O,N,S), nucleic acids (C,H,O,N,P).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "2.1.2(d)",
+          "Sub_topic_name": "Glucose and ribose structures (α/β glucose; hexose/pentose)",
+          "description": "Describe ring structure and properties of glucose (hexose monosaccharide) and structure of ribose (pentose monosaccharide); distinguish α-glucose vs β-glucose; distinguish hexose vs pentose.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "2.1.2(e)",
+          "Sub_topic_name": "Glycosidic bonds: disaccharides and polysaccharides",
+          "description": "Explain synthesis and breakdown of disaccharides and polysaccharides via formation/breakage of glycosidic bonds; include sucrose, lactose and maltose as named disaccharides.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "2.1.2(f)",
+          "Sub_topic_name": "Polysaccharide structures (starch, glycogen, cellulose)",
+          "description": "Describe structures of starch (amylose and amylopectin), glycogen and cellulose; include key structural features relevant to function (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "2.1.2(g)",
+          "Sub_topic_name": "Carbohydrate structure–function relationships",
+          "description": "Explain how structures and properties of glucose, starch, glycogen and cellulose relate to functions in living organisms (e.g. energy storage, structural support) (HSW2, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "2.1.2(h)",
+          "Sub_topic_name": "Triglycerides and phospholipids (incl. saturated/unsaturated)",
+          "description": "Describe structure of a triglyceride and a phospholipid as macromolecules; include saturated vs unsaturated fatty acids and how double bonds affect shape/properties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "2.1.2(i)",
+          "Sub_topic_name": "Ester bonds in triglyceride synthesis/breakdown",
+          "description": "Explain synthesis and breakdown of triglycerides via formation and breakage of ester bonds between fatty acids and glycerol.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "2.1.2(j)",
+          "Sub_topic_name": "Lipid and cholesterol structure–function",
+          "description": "Explain how properties of triglycerides, phospholipids and cholesterol relate to their functions, including hydrophobic/hydrophilic regions and energy content; apply in contexts of prokaryotes and eukaryotes (HSW2, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "2.1.2(k)",
+          "Sub_topic_name": "General amino acid structure",
+          "description": "Describe the general structure of an amino acid (amine group, carboxyl group, R group, hydrogen on central carbon) and how variation in R group leads to different amino acids.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8l",
+          "Specification_section_sub": "2.1.2(l)",
+          "Sub_topic_name": "Peptide bonds: dipeptides and polypeptides",
+          "description": "Explain synthesis and breakdown of dipeptides and polypeptides via formation and breakage of peptide bonds (condensation and hydrolysis).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8m",
+          "Specification_section_sub": "2.1.2(m)",
+          "Sub_topic_name": "Protein structural levels and bonding",
+          "description": "Explain primary, secondary, tertiary and quaternary protein structure; include roles of hydrogen bonding, hydrophobic/hydrophilic interactions, disulfide bonds and ionic bonds in stabilising structure (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8n",
+          "Specification_section_sub": "2.1.2(n)",
+          "Sub_topic_name": "Globular proteins (incl. haemoglobin, enzyme, insulin)",
+          "description": "Describe structure and function of globular proteins including a conjugated protein; include haemoglobin as conjugated globular protein with prosthetic group, a named enzyme, and insulin; relate structure to function (PAG10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8o",
+          "Specification_section_sub": "2.1.2(o)",
+          "Sub_topic_name": "Fibrous proteins (collagen, keratin, elastin)",
+          "description": "Explain properties and functions of fibrous proteins; include collagen, keratin and elastin (no detailed structure required) and relate to mechanical roles in organisms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8p",
+          "Specification_section_sub": "2.1.2(p)",
+          "Sub_topic_name": "Key inorganic ions in biology",
+          "description": "Recognise symbols and describe involvement in biological processes of: Ca2+, Na+, K+, H+, NH4+, NO3−, HCO3−, Cl−, PO4^3−, OH−; understand roles where applicable (e.g. nerve impulses, buffers, cofactors).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8q",
+          "Specification_section_sub": "2.1.2(q)",
+          "Sub_topic_name": "Food tests (biuret, Benedict’s, iodine, emulsion)",
+          "description": "Carry out and interpret chemical tests: biuret for proteins; Benedict’s for reducing sugars and for non-reducing sugars (including required hydrolysis step); iodine for starch; emulsion test for lipids (PAG9, HSW3, HSW4, HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8r",
+          "Specification_section_sub": "2.1.2(r)",
+          "Sub_topic_name": "Quantitative concentration methods (colorimetry)",
+          "description": "Use quantitative methods to determine concentration of a chemical substance in solution, including principles and application of colorimetry; produce/interpret calibration curves where needed (PAG5, HSW3, HSW4, HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8s",
+          "Specification_section_sub": "2.1.2(s)",
+          "Sub_topic_name": "Chromatography and Rf values",
+          "description": "Explain principles and uses of paper and thin layer chromatography (TLC) to separate biological molecules/compounds; carry out practical investigations to analyse biological solutions using paper/TLC; calculate Rf = distance moved by solute / distance moved by solvent; apply to separating proteins, carbohydrates, vitamins and nucleic acids (M0.1, M0.2, M1.1, M1.3, M2.2, M2.3, M2.4; PAG6; HSW2, HSW3, HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "2.1.3",
+      "Strand": "Module 2 – Foundations in biology",
+      "Topic_name": "Nucleotides and nucleic acids",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "2.1.3(a)",
+          "Sub_topic_name": "Nucleotide structure; RNA vs DNA; purines/pyrimidines",
+          "description": "Describe structure of a nucleotide (pentose sugar, nitrogenous base, phosphate) as monomer of nucleic acids; distinguish RNA vs DNA nucleotides; identify purines vs pyrimidines; identify type of pentose sugar (ribose vs deoxyribose) (PAG10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "2.1.3(b)",
+          "Sub_topic_name": "Phosphodiester bonds in polynucleotides",
+          "description": "Explain synthesis and breakdown of polynucleotides via formation and breakage of phosphodiester bonds (condensation/hydrolysis) and implications for backbone structure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "2.1.3(c)",
+          "Sub_topic_name": "ADP and ATP structure",
+          "description": "Describe structures of ADP and ATP as phosphorylated nucleotides: ribose + adenine + inorganic phosphate groups; relate to phosphorylation and energy transfer concepts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "2.1.3(d)(i)",
+          "Sub_topic_name": "DNA structure (double helix, base pairing, antiparallel)",
+          "description": "Describe DNA structure: hydrogen bonding between complementary base pairs (A–T, G–C) on two antiparallel polynucleotide strands forming a double helix; relate bonding to stability and replication.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "2.1.3(d)(ii)",
+          "Sub_topic_name": "DNA purification by precipitation",
+          "description": "Carry out/understand practical purification of DNA by precipitation; explain steps and why precipitation isolates DNA (PAG9, HSW3, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "2.1.3(e)",
+          "Sub_topic_name": "Semi-conservative DNA replication (helicase, DNA polymerase)",
+          "description": "Explain semi-conservative DNA replication including roles of helicase and DNA polymerase; explain importance of accurate replication for conserving genetic information; recognise occurrence of random, spontaneous mutations; at AS level no need to distinguish mutation types (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "2.1.3(f)",
+          "Sub_topic_name": "Genetic code properties and gene→polypeptide",
+          "description": "Explain genetic code as triplet, non-overlapping, degenerate and universal; explain how a gene determines amino acid sequence in a polypeptide (primary protein structure).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "2.1.3(g)",
+          "Sub_topic_name": "Transcription and translation (roles of RNA types)",
+          "description": "Explain transcription and translation leading to polypeptide synthesis; include roles of RNA polymerase, mRNA, tRNA and rRNA; relate codons/anticodons and ribosome function (HSW8).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "2.1.4",
+      "Strand": "Module 2 – Foundations in biology",
+      "Topic_name": "Enzymes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "2.1.4(a)",
+          "Sub_topic_name": "Enzymes as metabolic catalysts",
+          "description": "Explain role of enzymes in catalysing reactions affecting metabolism at cellular and whole organism level; link enzyme action to biological structure and function.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "2.1.4(b)",
+          "Sub_topic_name": "Intracellular vs extracellular enzymes",
+          "description": "Distinguish enzymes catalysing intracellular vs extracellular reactions; include catalase (intracellular) and amylase (extracellular) as examples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "2.1.4(c)",
+          "Sub_topic_name": "Mechanism of enzyme action (lock-and-key; induced fit)",
+          "description": "Explain mechanism of enzyme action including tertiary structure, specificity, active site, lock-and-key hypothesis, induced-fit hypothesis, enzyme–substrate complex, enzyme–product complex, product formation, and lowering of activation energy (HSW1, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "2.1.4(d)(i)",
+          "Sub_topic_name": "Factors affecting enzyme activity",
+          "description": "Explain effects of pH, temperature, enzyme concentration and substrate concentration on enzyme activity; include temperature coefficient Q10 where Q10 = R2 / R1 (rate at higher temperature / rate at lower temperature).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "2.1.4(d)(ii)",
+          "Sub_topic_name": "Investigate enzyme factors experimentally",
+          "description": "Plan/carry out/interpret practical investigations into effects of pH, temperature, enzyme concentration and substrate concentration on enzyme activity; include opportunities for serial dilutions, controlling variables, calculating rates and errors, graphing and tangents (M0.1, M0.2, M0.3, M1.1, M1.3, M1.11, M3.1, M3.2, M3.3, M3.5, M3.6; PAG4; HSW1, HSW2, HSW4, HSW5, HSW6, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "2.1.4(e)",
+          "Sub_topic_name": "Cofactors and coenzymes",
+          "description": "Explain need for coenzymes and cofactors in some enzyme-controlled reactions; include chloride ion as cofactor for amylase and vitamins as sources of coenzymes (PAG4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "2.1.4(f)",
+          "Sub_topic_name": "Enzyme inhibitors and end-product inhibition",
+          "description": "Explain effects of inhibitors on rate of enzyme-controlled reactions; include competitive vs non-competitive; reversible vs non-reversible; and end-product inhibition; interpret inhibitor data/graphs (M0.1, M0.2, M0.3, M1.1, M1.3, M1.11, M3.1, M3.2, M3.3, M3.5, M3.6; PAG4; HSW1, HSW2, HSW4, HSW5, HSW6, HSW8).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "2.1.5",
+      "Strand": "Module 2 – Foundations in biology",
+      "Topic_name": "Biological membranes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "2.1.5(a)",
+          "Sub_topic_name": "Roles of membranes",
+          "description": "Explain roles of membranes within and at surface of cells: partially permeable barriers between cell and environment, between organelles and cytoplasm and within organelles; sites of chemical reactions; sites of cell communication (cell signalling).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "2.1.5(b)",
+          "Sub_topic_name": "Fluid mosaic model and components",
+          "description": "Describe fluid mosaic model; explain roles of phospholipids, cholesterol, glycolipids, proteins and glycoproteins; include membrane-bound receptors as sites where hormones and drugs bind (M0.2, HSW1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "2.1.5(c)(i)",
+          "Sub_topic_name": "Factors affecting membrane permeability",
+          "description": "Explain factors affecting membrane structure and permeability, including effects of temperature and solvents; relate to phospholipid bilayer/proteins and leakage of cell contents.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "2.1.5(c)(ii)",
+          "Sub_topic_name": "Investigate membrane permeability",
+          "description": "Plan/carry out/interpret practical investigations into factors affecting membrane structure and permeability (e.g. beetroot pigment leakage); include handling data, % error/uncertainty and graphing (M0.1, M0.2, M1.1, M1.2, M1.3, M1.6, M1.11, M3.1, M3.2, M3.3, M3.5, M3.6; PAG5, PAG8; HSW1, HSW2, HSW3, HSW4, HSW5, HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "2.1.5(d)(i)",
+          "Sub_topic_name": "Transport across membranes (diffusion to exocytosis)",
+          "description": "Explain movement of molecules across membranes: diffusion and facilitated diffusion as passive; active transport, endocytosis and exocytosis as ATP-requiring processes; relate to gradients and carrier proteins; apply to unfamiliar contexts (M0.1, M0.2, M0.3, M1.1, M1.2, M1.3, M1.6, M1.11, M2.1, M3.1, M3.2, M3.3, M3.5, M3.6, M4.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "2.1.5(d)(ii)",
+          "Sub_topic_name": "Investigate diffusion in model cells",
+          "description": "Carry out/interpret practical investigations into factors affecting diffusion rates in model cells (e.g. agar cubes); relate SA:V, concentration gradients, temperature; analyse results with appropriate maths and graphs (PAG8; HSW1, HSW2, HSW3, HSW4, HSW5, HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "2.1.5(e)(i)",
+          "Sub_topic_name": "Osmosis and water potential effects on cells",
+          "description": "Explain osmosis in terms of water potential gradient across a partially permeable membrane; describe effects of solutions of different water potential on plant and animal cells (e.g. turgid, plasmolysed, crenated); include quantitative interpretation where relevant (M0.1, M0.2, M0.3, M1.1, M1.2, M1.3, M1.6, M1.10, M1.11, M2.1, M3.1, M3.2, M4.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "2.1.5(e)(ii)",
+          "Sub_topic_name": "Investigate osmosis/water potential",
+          "description": "Carry out/interpret practical investigations into effects of solutions of different water potential on plant and animal cells (e.g. potato cylinders, onion epidermis); determine water potential from mass/length changes and graphs; include uncertainties (PAG8; HSW1, HSW2, HSW3, HSW4, HSW5, HSW6).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "2.1.6",
+      "Strand": "Module 2 – Foundations in biology",
+      "Topic_name": "Cell division, cell diversity and cellular organisation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "2.1.6(a)",
+          "Sub_topic_name": "Cell cycle stages and outcomes",
+          "description": "Describe cell cycle including processes during interphase (G1, S, G2), mitosis and cytokinesis leading to genetically identical daughter cells (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "2.1.6(b)",
+          "Sub_topic_name": "Regulation of the cell cycle (checkpoints)",
+          "description": "Explain how the cell cycle is regulated using checkpoints to control progression; relate to ensuring DNA integrity and correct division.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "2.1.6(c)",
+          "Sub_topic_name": "Main stages of mitosis (key structures)",
+          "description": "Describe main stages of mitosis, including changes in nuclear envelope, chromosomes, chromatids, centromere, centrioles, spindle fibres and cell membrane (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "2.1.6(d)",
+          "Sub_topic_name": "Identify mitosis in plant tissue sections",
+          "description": "Interpret sections of plant tissue showing cell cycle and stages of mitosis; examine stained sections/squashes; produce labelled diagrams of observed stages (PAG1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "2.1.6(e)",
+          "Sub_topic_name": "Significance of mitosis",
+          "description": "Explain significance of mitosis in life cycles: growth, tissue repair and asexual reproduction in plants, animals and fungi (HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "2.1.6(f)",
+          "Sub_topic_name": "Significance of meiosis (haploid cells and variation)",
+          "description": "Explain significance of meiosis in life cycles: production of haploid cells and generation of genetic variation by independent assortment and crossing over (HSW2, HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "2.1.6(g)",
+          "Sub_topic_name": "Main stages of meiosis and homologous chromosomes",
+          "description": "Describe main stages of meiosis: interphase, prophase 1, metaphase 1, anaphase 1, telophase 1, prophase 2, metaphase 2, anaphase 2, telophase 2; no requirement for sub-stages of prophase 1; use term homologous chromosomes correctly (PAG1, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "2.1.6(h)",
+          "Sub_topic_name": "Specialised cells: structure–function examples",
+          "description": "Explain how cells are specialised for particular functions; include erythrocytes, neutrophils, squamous and ciliated epithelial cells, sperm cells, palisade cells, root hair cells and guard cells (PAG1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "2.1.6(i)",
+          "Sub_topic_name": "Levels of organisation (cells to organ systems)",
+          "description": "Describe organisation of cells into tissues, organs and organ systems; include tissues: squamous and ciliated epithelia, cartilage, muscle, xylem and phloem.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12j",
+          "Specification_section_sub": "2.1.6(j)",
+          "Sub_topic_name": "Stem cells and differentiation",
+          "description": "Describe features and differentiation of stem cells as a renewing source of undifferentiated cells; relate to potency and specialised cell formation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12k",
+          "Specification_section_sub": "2.1.6(k)",
+          "Sub_topic_name": "Bone marrow stem cells → blood cells",
+          "description": "Explain production of erythrocytes and neutrophils as distinct differentiated cells derived from a common stem cell in bone marrow; relate to lineage and gene expression changes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12l",
+          "Specification_section_sub": "2.1.6(l)",
+          "Sub_topic_name": "Meristem stem cells → xylem and phloem",
+          "description": "Explain production of xylem vessels and phloem sieve tubes as distinct differentiated outcomes derived from a common stem cell in meristems; relate to plant development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12m",
+          "Specification_section_sub": "2.1.6(m)",
+          "Sub_topic_name": "Stem cell uses in research and medicine",
+          "description": "Discuss potential uses of stem cells in research and medicine: repair of damaged tissues, treatment of neurological conditions (no need to recall specific conditions), and research into developmental biology; include ethical and societal considerations where relevant (HSW2, HSW5, HSW6, HSW7, HSW9, HSW10, HSW11, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "3.1.1",
+      "Strand": "Module 3 – Exchange and transport",
+      "Topic_name": "Exchange surfaces",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "3.1.1(a)",
+          "Sub_topic_name": "Need for specialised exchange surfaces (SA:V, metabolic rate)",
+          "description": "Explain need for specialised exchange surfaces with reference to surface area to volume ratio (SA:V), metabolic activity, and differences between single-celled and multicellular organisms; use SA:V ratio = surface area / volume and interpret consequences (M0.1, M0.3, M0.4, M1.1, M2.1, M4.1; HSW1, HSW3, HSW5, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "3.1.1(b)",
+          "Sub_topic_name": "Features of efficient exchange surfaces",
+          "description": "Describe features of efficient exchange surfaces: increased surface area (e.g. root hair cells), thin layer (alveoli), good blood supply/ventilation to maintain gradient (gills/alveolus).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "3.1.1(c)",
+          "Sub_topic_name": "Mammalian gas exchange system components",
+          "description": "Describe structures and functions of components of mammalian gaseous exchange system; include distribution and functions of cartilage, ciliated epithelium, goblet cells, smooth muscle and elastic fibres in trachea, bronchi, bronchioles and alveoli (PAG1, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "3.1.1(d)",
+          "Sub_topic_name": "Ventilation mechanism in mammals",
+          "description": "Explain mechanism of ventilation in mammals including function of rib cage, internal and external intercostal muscles, and diaphragm; relate pressure/volume changes to airflow (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "3.1.1(e)",
+          "Sub_topic_name": "Ventilation measures and oxygen uptake",
+          "description": "Analyse relationship between vital capacity, tidal volume, breathing rate and oxygen uptake; interpret primary/secondary data from data logger/spirometer; perform calculations/graph interpretation where required (M0.1, M0.2, M0.4, M1.3; PAG10; HSW2, HSW3, HSW4, HSW5, HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "3.1.1(f)",
+          "Sub_topic_name": "Gas exchange in bony fish and insects",
+          "description": "Explain mechanisms of ventilation and gas exchange in: bony fish (buccal cavity volume changes, operculum function, gill filaments and gill lamellae, countercurrent flow) and insects (spiracles, trachea, thoracic/abdominal movements changing body volume, exchange with tracheal fluid) (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "3.1.1(g)",
+          "Sub_topic_name": "Dissect fish/insect trachea gas exchange system",
+          "description": "Dissect, examine and draw gaseous exchange system of a bony fish and/or insect trachea; produce accurate labelled biological drawings (PAG2, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "3.1.1(h)",
+          "Sub_topic_name": "Histology of exchange surfaces",
+          "description": "Examine microscope slides to show histology of exchange surfaces; identify adaptations and relate to diffusion gradients (PAG1, HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "3.1.2",
+      "Strand": "Module 3 – Exchange and transport",
+      "Topic_name": "Transport in animals",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "3.1.2(a)",
+          "Sub_topic_name": "Need for transport systems in animals",
+          "description": "Explain need for transport systems in multicellular animals with reference to size, metabolic rate and SA:V; relate diffusion limitations to requirement for circulatory systems (M0.1, M0.3, M0.4, M1.1, M2.1, M4.1; HSW1, HSW3, HSW5, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "3.1.2(b)",
+          "Sub_topic_name": "Types of circulatory systems",
+          "description": "Compare single vs double and open vs closed circulatory systems in insects, fish and mammals; relate structure to efficiency and pressure differences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "3.1.2(c)",
+          "Sub_topic_name": "Blood vessel structure and function",
+          "description": "Describe structure and functions of arteries, arterioles, capillaries, venules and veins; include distribution of tissues within vessel walls and relate to pressure/flow (PAG2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "3.1.2(d)",
+          "Sub_topic_name": "Tissue fluid and lymph formation",
+          "description": "Explain formation of tissue fluid from plasma using hydrostatic pressure and oncotic pressure; explain differences in composition of blood, tissue fluid and lymph (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14e",
+          "Specification_section_sub": "3.1.2(e)(i)",
+          "Sub_topic_name": "Heart structure (external and internal)",
+          "description": "Describe external and internal structure of mammalian heart; identify chambers, valves, vessels, and cardiac muscle features relevant to function.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14f",
+          "Specification_section_sub": "3.1.2(e)(ii)",
+          "Sub_topic_name": "Dissect and draw mammalian heart",
+          "description": "Dissect, examine and draw external and internal structure of mammalian heart; produce labelled scientific drawings (PAG2, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14g",
+          "Specification_section_sub": "3.1.2(f)",
+          "Sub_topic_name": "Cardiac cycle and cardiac output",
+          "description": "Explain cardiac cycle including role of valves and pressure changes in heart and associated vessels; use cardiac output = heart rate × stroke volume; interpret pressure/volume changes (HSW2, HSW5, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14h",
+          "Specification_section_sub": "3.1.2(g)",
+          "Sub_topic_name": "Electrical coordination of heart (SAN, AVN, Purkyne)",
+          "description": "Explain how heart action is initiated and coordinated: roles of sino-atrial node (SAN), atrio-ventricular node (AVN), purkyne tissue, and myogenic nature of cardiac muscle; no detail of hormonal/nervous control required at AS level (HSW2, HSW5, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14i",
+          "Specification_section_sub": "3.1.2(h)",
+          "Sub_topic_name": "ECG traces: normal and abnormal patterns",
+          "description": "Use and interpret electrocardiogram (ECG) traces; recognise normal and abnormal heart activity: tachycardia, bradycardia, fibrillation and ectopic heartbeat only; perform relevant calculations/measurements (M0.1, M1.1, M1.3, M2.4; HSW2, HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14j",
+          "Specification_section_sub": "3.1.2(i)",
+          "Sub_topic_name": "Haemoglobin transport of O2 and CO2",
+          "description": "Explain role of haemoglobin in transporting oxygen and carbon dioxide; include reversible binding of O2, carbonic anhydrase, formation of haemoglobinic acid, hydrogencarbonate ion, and chloride shift; relate to gas exchange and blood pH (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14k",
+          "Specification_section_sub": "3.1.2(j)",
+          "Sub_topic_name": "Oxygen dissociation curves (fetal vs adult; Bohr effect)",
+          "description": "Interpret oxygen dissociation curves for fetal and adult human haemoglobin; explain significance of different affinities; explain Bohr effect (curve shift with different CO2 concentrations); translate between graphical and numerical interpretations (M3.1; HSW2, HSW8).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "3.1.3",
+      "Strand": "Module 3 – Exchange and transport",
+      "Topic_name": "Transport in plants",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "3.1.3(a)",
+          "Sub_topic_name": "Need for transport systems in plants",
+          "description": "Explain need for transport systems in multicellular plants with reference to size, metabolic rate and SA:V; relate to diffusion limitations (M0.1, M0.3, M0.4, M1.1, M2.1, M4.1; HSW1, HSW3, HSW5, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "3.1.3(b)(i)",
+          "Sub_topic_name": "Vascular system structure and function (roots, stems, leaves)",
+          "description": "Describe structure and function of vascular system in roots, stems and leaves of herbaceous dicotyledonous plants; include xylem vessels, sieve tube elements and companion cells.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "3.1.3(b)(ii)",
+          "Sub_topic_name": "Examine/draw stained plant sections (xylem/phloem)",
+          "description": "Examine and draw stained sections of plant tissue showing distribution of xylem and phloem; identify tissues and relate structure to function (PAG1, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "3.1.3(b)(iii)",
+          "Sub_topic_name": "Stem dissections to show xylem structure",
+          "description": "Dissect stems longitudinally and transversely; examine to demonstrate position and structure of xylem vessels; record/draw observations (PAG2, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15e",
+          "Specification_section_sub": "3.1.3(c)(i)",
+          "Sub_topic_name": "Transpiration and environmental factors",
+          "description": "Explain transpiration process and environmental factors affecting transpiration rate; recognise transpiration as consequence of gaseous exchange; relate stomatal aperture and gradients to water loss.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15f",
+          "Specification_section_sub": "3.1.3(c)(ii)",
+          "Sub_topic_name": "Investigate transpiration rate (potometer)",
+          "description": "Carry out/interpret practical investigations estimating transpiration rates, including use of a potometer; analyse data and apply relevant maths (M0.1, M0.2, M1.1, M1.2, M1.3, M1.6, M1.11, M3.1, M3.2, M3.3, M3.5, M3.6, M4.1; PAG5, PAG11; HSW2, HSW3, HSW4, HSW5, HSW6, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15g",
+          "Specification_section_sub": "3.1.3(d)",
+          "Sub_topic_name": "Water transport pathways and mechanisms",
+          "description": "Explain transport of water into, through and out of plants: apoplast and symplast pathways; movement mechanisms in terms of water potential, adhesion, cohesion, and transpiration stream (HSW2, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15h",
+          "Specification_section_sub": "3.1.3(e)",
+          "Sub_topic_name": "Plant adaptations to water availability",
+          "description": "Describe adaptations of plants to water availability; include xerophytes (cacti, marram grass) and hydrophytes (water lilies); relate to transpiration control and water uptake (HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15i",
+          "Specification_section_sub": "3.1.3(f)",
+          "Sub_topic_name": "Translocation mechanism (source–sink)",
+          "description": "Explain translocation as an energy-requiring process transporting assimilates (especially sucrose) in phloem between sources (e.g. leaves) and sinks (e.g. roots, meristem); include active loading at source and removal at sink; relate to pressure flow concepts (HSW2, HSW8).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "4.1.1",
+      "Strand": "Module 4 – Biodiversity, evolution and disease",
+      "Topic_name": "Communicable diseases, disease prevention and the immune system",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "4.1.1(a)",
+          "Sub_topic_name": "Pathogen types and named diseases",
+          "description": "Describe different pathogen types causing communicable diseases in plants and animals and use named examples: bacteria (tuberculosis (TB), ring rot (potatoes)); viruses (HIV/AIDS (human), influenza (animals), Tobacco Mosaic Virus (plants)); protoctista (malaria, potato/tomato late blight); fungi (black sigatoka (bananas), athlete’s foot (humans)); no requirement for binomial pathogen names.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "4.1.1(b)",
+          "Sub_topic_name": "Transmission of communicable pathogens",
+          "description": "Explain means of transmission of animal and plant communicable pathogens; include vectors, spores and living conditions (e.g. climate, social factors); no detail of symptoms required; no requirement to categorise as direct/indirect transmission; interpret data about transmission and spread where provided (M0.1, M0.2, M0.3, M1.1, M1.2, M1.3, M1.5, M1.7, M3.1, M3.2; HSW1, HSW2, HSW3, HSW5, HSW6, HSW7, HSW8, HSW11, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16c",
+          "Specification_section_sub": "4.1.1(c)",
+          "Sub_topic_name": "Plant defences against pathogens",
+          "description": "Describe plant defences: production of chemicals and plant responses limiting pathogen spread (e.g. callose deposition); relate to barriers and induced responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16d",
+          "Specification_section_sub": "4.1.1(d)",
+          "Sub_topic_name": "Primary non-specific defences in animals",
+          "description": "Describe primary non-specific defences: skin; blood clotting (limited to platelets releasing substances leading via cascade to fibrin network forming clot; no need for clotting factor names or full cascade); wound repair; inflammation; expulsive reflexes; mucous membranes; no requirement for detailed skin structure (HSW2, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16e",
+          "Specification_section_sub": "4.1.1(e)(i)",
+          "Sub_topic_name": "Phagocytes: structure and mode of action",
+          "description": "Describe structure and mode of action of phagocytes; include neutrophils and antigen-presenting cells; roles of cytokines, opsonins, phagosomes and lysosomes; relate to innate immune response (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16f",
+          "Specification_section_sub": "4.1.1(e)(ii)",
+          "Sub_topic_name": "Blood smears: examine and draw immune cells",
+          "description": "Examine and draw cells in blood smears, including identification of neutrophils and other relevant cells; produce labelled scientific drawings (PAG1, HSW4, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16g",
+          "Specification_section_sub": "4.1.1(f)",
+          "Sub_topic_name": "B and T lymphocytes in specific immune response",
+          "description": "Explain structure, roles and modes of action of B and T lymphocytes in specific immune response; include cell signalling (interleukins), clonal selection, clonal expansion, plasma cells, T helper cells and T killer cells (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16h",
+          "Specification_section_sub": "4.1.1(g)",
+          "Sub_topic_name": "Primary vs secondary immune responses; memory cells",
+          "description": "Explain primary and secondary immune responses, including roles of T memory cells and B memory cells; interpret response graphs/data (M1.3; HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16i",
+          "Specification_section_sub": "4.1.1(h)",
+          "Sub_topic_name": "Antibody structure and general functions",
+          "description": "Describe structure and general functions of antibodies; include general protein structure of an antibody molecule and how structure supports specificity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16j",
+          "Specification_section_sub": "4.1.1(i)",
+          "Sub_topic_name": "Opsonins, agglutinins and anti-toxins",
+          "description": "Outline actions of opsonins, agglutinins and anti-toxins in immune defence; relate to pathogen neutralisation and phagocytosis enhancement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16k",
+          "Specification_section_sub": "4.1.1(j)",
+          "Sub_topic_name": "Immunity types (active/passive; natural/artificial)",
+          "description": "Explain differences between active and passive immunity and between natural and artificial immunity; give examples of each (e.g. infection, vaccination, maternal antibodies, antibody injections).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16l",
+          "Specification_section_sub": "4.1.1(k)",
+          "Sub_topic_name": "Autoimmune disease (arthritis)",
+          "description": "Explain term autoimmune disease and describe arthritis as a named example; relate to immune system attacking self antigens.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16m",
+          "Specification_section_sub": "4.1.1(l)",
+          "Sub_topic_name": "Vaccination principles and programmes",
+          "description": "Explain principles of vaccination and role of vaccination programmes in preventing epidemics; include routine vaccinations and reasons for changes to vaccines/programmes including global issues; interpret data on vaccine coverage/efficacy and evaluate (M0.1, M0.2, M0.3, M1.1, M1.2, M1.3, M1.5, M1.7, M3.1, M3.2; HSW1, HSW2, HSW3, HSW5, HSW6, HSW7, HSW8, HSW9, HSW11, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16n",
+          "Specification_section_sub": "4.1.1(m)",
+          "Sub_topic_name": "Sources of medicines and personalised medicine",
+          "description": "Discuss possible sources of medicines (microorganisms and plants) and link to need to maintain biodiversity; outline potential for personalised medicines; evaluate benefits/risks (HSW7, HSW9, HSW11, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16o",
+          "Specification_section_sub": "4.1.1(n)",
+          "Sub_topic_name": "Antibiotics: benefits, risks and resistance",
+          "description": "Evaluate benefits and risks of using antibiotics to manage bacterial infection; include historical context of penicillin use and the rise of bacterial resistance and implications for treatment and public health (HSW2, HSW5, HSW9, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "4.2.1",
+      "Strand": "Module 4 – Biodiversity, evolution and disease",
+      "Topic_name": "Biodiversity",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "4.2.1(a)",
+          "Sub_topic_name": "Levels of biodiversity (habitat, species, genetic)",
+          "description": "Explain biodiversity at different levels: habitat biodiversity (e.g. sand dunes, woodland, meadows, streams), species biodiversity (species richness and species evenness), and genetic biodiversity (different breeds within a species).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "4.2.1(b)(i)",
+          "Sub_topic_name": "Sampling to measure biodiversity; importance",
+          "description": "Explain how and why sampling is used to measure biodiversity of a habitat; justify representativeness and reliability; distinguish random vs non-random approaches.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "4.2.1(b)(ii)",
+          "Sub_topic_name": "Field sampling practical (random and non-random)",
+          "description": "Carry out practical investigations collecting random and non-random samples in the field; include random sampling and non-random (opportunistic, stratified, systematic) and techniques: quadrats, sweep nets, pitfall traps, pooters; interpret sampling data and limitations (M0.2, M1.3, M1.4, M1.5, M1.6, M1.7, M1.9, M1.10, M3.2; PAG3; HSW4, HSW5, HSW6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "4.2.1(c)",
+          "Sub_topic_name": "Species richness and evenness",
+          "description": "Measure and interpret species richness and species evenness in a habitat; perform calculations and compare habitats (M1.1, M1.5, M2.3, M2.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17e",
+          "Specification_section_sub": "4.2.1(d)",
+          "Sub_topic_name": "Simpson’s Index of Diversity (D)",
+          "description": "Use and interpret Simpson’s Index of Diversity (D) to calculate biodiversity; formula provided in assessment; interpret high vs low D values; apply to sampling datasets (M1.1, M1.5, M2.3, M2.4; HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17f",
+          "Specification_section_sub": "4.2.1(e)",
+          "Sub_topic_name": "Genetic biodiversity calculations",
+          "description": "Assess genetic biodiversity including calculations of genetic diversity in isolated populations, e.g. percentage of gene variants (alleles) and proportion of polymorphic gene loci = number of polymorphic gene loci / total number of loci; apply to contexts such as zoos, rare breeds, pedigree animals (M1.1, M1.5, M2.3, M2.4; HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17g",
+          "Specification_section_sub": "4.2.1(f)",
+          "Sub_topic_name": "Factors affecting biodiversity",
+          "description": "Explain factors affecting biodiversity including human population growth, agriculture (monoculture) and climate change; interpret data and trends where provided (M1.3, M1.7, M3.1; HSW5, HSW10, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17h",
+          "Specification_section_sub": "4.2.1(g)",
+          "Sub_topic_name": "Reasons to maintain biodiversity",
+          "description": "Explain ecological, economic and aesthetic reasons for maintaining biodiversity: ecological (protecting keystone species, interdependence, maintaining genetic resource), economic (reducing soil depletion/continuous monoculture), aesthetic (protecting landscapes) (HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17i",
+          "Specification_section_sub": "4.2.1(h)",
+          "Sub_topic_name": "In situ and ex situ conservation",
+          "description": "Describe in situ and ex situ methods of maintaining biodiversity: in situ (marine conservation zones, wildlife reserves) and ex situ (seed banks, botanic gardens, zoos); evaluate strengths/limitations (HSW7, HSW9, HSW10, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17j",
+          "Specification_section_sub": "4.2.1(i)",
+          "Sub_topic_name": "Conservation agreements (CITES, CBD, CSS)",
+          "description": "Describe international and local conservation agreements protecting species/habitats, including Convention on International Trade in Endangered Species (CITES), Rio Convention on Biological Diversity (CBD), and Countryside Stewardship Scheme (CSS); evaluate how policy influences outcomes (HSW11, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "4.2.2",
+      "Strand": "Module 4 – Biodiversity, evolution and disease",
+      "Topic_name": "Classification and evolution",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "4.2.2(a)",
+          "Sub_topic_name": "Taxonomic hierarchy and domain",
+          "description": "Describe biological classification hierarchy: kingdom, phylum, class, order, family, genus, species; include domain as a higher level (HSW1, HSW5, HSW6, HSW7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "4.2.2(b)",
+          "Sub_topic_name": "Binomial naming system advantages",
+          "description": "Explain binomial system of naming species and advantages (standardisation, avoiding ambiguity across languages/regions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18c",
+          "Specification_section_sub": "4.2.2(c)(i)",
+          "Sub_topic_name": "Five kingdoms: classification features",
+          "description": "Describe features used to classify organisms into five kingdoms: Prokaryotae, Protoctista, Fungi, Plantae, Animalia; relate observable characteristics to classification decisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18d",
+          "Specification_section_sub": "4.2.2(c)(ii)",
+          "Sub_topic_name": "Evidence for new classification systems (three domains)",
+          "description": "Explain evidence leading to new classification systems (three domains of life) clarifying relationships; include shift from observable features to molecular/genetic evidence; compare kingdom vs domain classification systems; describe three domains and their distinguishing features (HSW1, HSW5, HSW6, HSW7, HSW11, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18e",
+          "Specification_section_sub": "4.2.2(d)",
+          "Sub_topic_name": "Classification and phylogeny relationship",
+          "description": "Explain relationship between classification and phylogeny (evolutionary relationships); no requirement to know cladistics (HSW5, HSW7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18f",
+          "Specification_section_sub": "4.2.2(e)",
+          "Sub_topic_name": "Evidence for evolution by natural selection",
+          "description": "Explain evidence for theory of evolution by natural selection; include contributions of Darwin and Wallace; include fossil evidence, DNA evidence (genomic DNA at AS level) and molecular evidence; evaluate strength/limitations of evidence types (HSW1, HSW2, HSW5, HSW6, HSW7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18g",
+          "Specification_section_sub": "4.2.2(f)",
+          "Sub_topic_name": "Types and causes of variation",
+          "description": "Describe intraspecific vs interspecific variation; continuous vs discontinuous variation using examples from plants, animals and microorganisms; explain genetic and environmental causes; interpret data distributions (M1.2, M1.3, M1.6, M1.7, M1.9, M1.10; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18h",
+          "Specification_section_sub": "4.2.2(g)",
+          "Sub_topic_name": "Adaptations and convergent features",
+          "description": "Explain anatomical, physiological and behavioural adaptations; explain why organisms from different taxonomic groups may show similar anatomical features (convergent evolution) (HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18i",
+          "Specification_section_sub": "4.2.2(h)",
+          "Sub_topic_name": "Natural selection mechanism in populations",
+          "description": "Explain mechanism of natural selection changing population characteristics over time: genetic variation + selection pressure + differential reproductive success → increased proportion with advantageous characteristics; apply to scenarios; may include proportional reasoning (M0.3; HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18j",
+          "Specification_section_sub": "4.2.2(i)",
+          "Sub_topic_name": "Evolution implications for humans (resistance)",
+          "description": "Explain implications of evolution in some species for human populations, including evolution of pesticide resistance in insects and drug resistance in microorganisms; relate to selection pressures and management strategies (HSW8, HSW9, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "5.1.1",
+      "Strand": "Module 5 – Communication, homeostasis and energy",
+      "Topic_name": "Communication and homeostasis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "5.1.1(a)",
+          "Sub_topic_name": "Need for communication systems",
+          "description": "Explain need for communication systems in multicellular organisms: respond to internal/external environment changes and coordinate activities of different organs; include plant and animal examples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19b",
+          "Specification_section_sub": "5.1.1(b)",
+          "Sub_topic_name": "Cell signalling (adjacent and distant)",
+          "description": "Explain communication between cells by cell signalling, including signalling between adjacent cells and between distant cells; relate to receptors, ligands and response pathways.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19c",
+          "Specification_section_sub": "5.1.1(c)",
+          "Sub_topic_name": "Homeostasis principles (receptors/effectors; feedback)",
+          "description": "Explain principles of homeostasis including roles of receptors and effectors; distinguish negative vs positive feedback; apply to control systems (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19d",
+          "Specification_section_sub": "5.1.1(d)",
+          "Sub_topic_name": "Temperature control in ectotherms and endotherms",
+          "description": "Describe physiological and behavioural responses in temperature control: endotherms (peripheral temperature receptors, hypothalamus role, effectors in skin and muscles, behavioural responses) and ectotherms (behavioural responses); relate to maintaining core temperature (PAG11, HSW2).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 20,
+      "Specification_section": "5.1.2",
+      "Strand": "Module 5 – Communication, homeostasis and energy",
+      "Topic_name": "Excretion as an example of homeostatic control",
+      "Sub_topics": [
+        {
+          "subtopic_id": "20a",
+          "Specification_section_sub": "5.1.2(a)",
+          "Sub_topic_name": "Excretion definition and importance",
+          "description": "Define excretion and explain importance in maintaining metabolism and homeostasis; include removal of metabolic wastes such as carbon dioxide and nitrogenous waste.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20b",
+          "Specification_section_sub": "5.1.2(b)(i)",
+          "Sub_topic_name": "Liver structure and functions (incl. urea formation)",
+          "description": "Describe structure and functions of mammalian liver (gross structure and histology); roles: glycogen storage, detoxification, formation of urea from ammonia reacting with CO2 as part of ornithine cycle (no detailed ornithine cycle steps required).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20c",
+          "Specification_section_sub": "5.1.2(b)(ii)",
+          "Sub_topic_name": "Liver histology practical",
+          "description": "Examine and draw stained sections showing histology of liver tissue; identify key features and relate to function (PAG1, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20d",
+          "Specification_section_sub": "5.1.2(c)(i)",
+          "Sub_topic_name": "Kidney and nephron structure; urine production processes",
+          "description": "Describe structure, mechanisms of action and functions of mammalian kidney; include gross structure and histology, detailed nephron structure and associated blood vessels; explain ultrafiltration, selective reabsorption and urine production; apply calculations to filtration and flow where needed (M0.1, M0.3, M1.1, M1.3, M2.1, M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20e",
+          "Specification_section_sub": "5.1.2(c)(ii)",
+          "Sub_topic_name": "Kidney dissection practical",
+          "description": "Dissect, examine and draw external and internal structure of kidney; identify cortex/medulla/pelvis and associated structures (PAG2, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20f",
+          "Specification_section_sub": "5.1.2(c)(iii)",
+          "Sub_topic_name": "Nephron histology practical",
+          "description": "Examine and draw stained sections showing histology of nephrons; identify key components and relate to function (PAG1, HSW4, HSW6, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20g",
+          "Specification_section_sub": "5.1.2(d)",
+          "Sub_topic_name": "Control of blood water potential (ADH)",
+          "description": "Explain control of water potential of blood: osmoreceptors in hypothalamus, posterior pituitary gland, ADH release, and effect on collecting duct walls (e.g. aquaporins) (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20h",
+          "Specification_section_sub": "5.1.2(e)",
+          "Sub_topic_name": "Kidney failure effects and treatments",
+          "description": "Explain effects of kidney failure including impacts on glomerular filtration rate (GFR) and electrolyte balance; outline treatments: renal dialysis (haemodialysis only) and transplants; evaluate risks/benefits (HSW7, HSW9, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20i",
+          "Specification_section_sub": "5.1.2(f)",
+          "Sub_topic_name": "Excretory products in diagnosis (monoclonal antibodies)",
+          "description": "Explain how excretory products are used in medical diagnosis; include urine sample tests, monoclonal antibodies in pregnancy testing, and testing for anabolic steroids and drugs (PAG9, HSW7, HSW9, HSW11, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 21,
+      "Specification_section": "5.1.3",
+      "Strand": "Module 5 – Communication, homeostasis and energy",
+      "Topic_name": "Neuronal communication",
+      "Sub_topics": [
+        {
+          "subtopic_id": "21a",
+          "Specification_section_sub": "5.1.3(a)",
+          "Sub_topic_name": "Sensory receptors as transducers",
+          "description": "Explain roles of mammalian sensory receptors in converting stimuli into nerve impulses; include specificity and an example such as Pacinian corpuscle; use term transducer correctly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21b",
+          "Specification_section_sub": "5.1.3(b)",
+          "Sub_topic_name": "Sensory, relay and motor neurones",
+          "description": "Describe structure and functions of sensory, relay and motor neurones; compare myelinated vs non-myelinated neurones and relate to conduction speed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21c",
+          "Specification_section_sub": "5.1.3(c)",
+          "Sub_topic_name": "Resting potential and action potential (myelinated neurone)",
+          "description": "Explain generation and transmission of nerve impulses: how resting potential is established and maintained; how action potential is generated including positive feedback; how action potentials propagate in myelinated neurones (saltatory conduction); significance of frequency of impulse transmission; interpret simple data/graphs (M1.3, M3.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21d",
+          "Specification_section_sub": "5.1.3(d)",
+          "Sub_topic_name": "Synapses and neurotransmission (cholinergic)",
+          "description": "Describe structure and roles of synapses in neurotransmission; include structure of a cholinergic synapse, action of neurotransmitters, importance of synapses in summation, and inhibitory vs excitatory synapses.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 22,
+      "Specification_section": "5.1.4",
+      "Strand": "Module 5 – Communication, homeostasis and energy",
+      "Topic_name": "Hormonal communication",
+      "Sub_topics": [
+        {
+          "subtopic_id": "22a",
+          "Specification_section_sub": "5.1.4(a)",
+          "Sub_topic_name": "Endocrine communication principles",
+          "description": "Explain endocrine communication by hormones: secretion into blood, transport in blood, and detection by target cells/tissues via specific receptors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22b",
+          "Specification_section_sub": "5.1.4(b)",
+          "Sub_topic_name": "Adrenal glands: cortex and medulla hormones",
+          "description": "Describe structure and functions of adrenal glands; include hormones secreted by adrenal cortex and medulla and their functions; relate to stress responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22c",
+          "Specification_section_sub": "5.1.4(c)(i)",
+          "Sub_topic_name": "Pancreas histology (endocrine tissues)",
+          "description": "Describe histology of pancreas focusing on endocrine tissues (islets) and relation to hormone secretion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22d",
+          "Specification_section_sub": "5.1.4(c)(ii)",
+          "Sub_topic_name": "Pancreas histology practical",
+          "description": "Examine and draw stained sections of pancreas showing endocrine tissues; identify features relevant to insulin/glucagon secretion (PAG1, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22e",
+          "Specification_section_sub": "5.1.4(d)",
+          "Sub_topic_name": "Blood glucose regulation (insulin, glucagon; beta-cell channels)",
+          "description": "Explain regulation of blood glucose concentration using insulin and glucagon as negative feedback and role of liver; include control of insulin secretion with reference to potassium channels and calcium channels in pancreatic beta cells (HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22f",
+          "Specification_section_sub": "5.1.4(e)",
+          "Sub_topic_name": "Type 1 vs Type 2 diabetes",
+          "description": "Explain differences between Type 1 and Type 2 diabetes mellitus: causes and treatments for each; relate to insulin production vs insulin resistance (HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22g",
+          "Specification_section_sub": "5.1.4(f)",
+          "Sub_topic_name": "Diabetes treatments (GM insulin; stem cells)",
+          "description": "Outline potential treatments for diabetes mellitus including insulin produced by genetically modified bacteria and potential use of stem cells; evaluate implications (HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 23,
+      "Specification_section": "5.1.5",
+      "Strand": "Module 5 – Communication, homeostasis and energy",
+      "Topic_name": "Plant and animal responses",
+      "Sub_topics": [
+        {
+          "subtopic_id": "23a",
+          "Specification_section_sub": "5.1.5(a)(i)",
+          "Sub_topic_name": "Types of plant responses (tropisms; stress; herbivory)",
+          "description": "Describe types of plant responses including responses to abiotic stress and herbivory; herbivory responses include chemical defences (alkaloids and pheromones only) and folding in response to touch; describe range of tropisms in plants; interpret simple response data (M1.3, M1.6).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23b",
+          "Specification_section_sub": "5.1.5(a)(ii)",
+          "Sub_topic_name": "Investigate phototropism and geotropism",
+          "description": "Carry out/interpret practical investigations into phototropism and geotropism; control variables and measure growth/curvature responses (PAG11, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23c",
+          "Specification_section_sub": "5.1.5(b)",
+          "Sub_topic_name": "Roles of plant hormones",
+          "description": "Explain roles of plant hormones in leaf loss (abscission) in deciduous plants, seed germination, and stomatal closure; link to environmental control.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23d",
+          "Specification_section_sub": "5.1.5(c)",
+          "Sub_topic_name": "Auxins and apical dominance (evidence)",
+          "description": "Explain experimental evidence for role of auxins in control of apical dominance; relate auxin concentration to lateral bud growth; apply understanding to unfamiliar experimental setups; no need to recall specific experiments (HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23e",
+          "Specification_section_sub": "5.1.5(d)",
+          "Sub_topic_name": "Gibberellin and stem elongation/seed germination (evidence)",
+          "description": "Explain experimental evidence for role of gibberellin in control of stem elongation and seed germination; relate gibberellin concentration to elongation; apply to unfamiliar experiments; no need to recall specific experiments (HSW5).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23f",
+          "Specification_section_sub": "5.1.5(e)",
+          "Sub_topic_name": "Investigate plant hormones on growth (serial dilutions)",
+          "description": "Carry out/interpret practical investigations into effects of plant hormones on growth; include serial dilutions, appropriate sampling and statistical/graph handling as needed (M0.2, M1.1, M1.2, M1.3, M1.4, M1.6, M1.9, M1.10, M3.1, M3.2; PAG11; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23g",
+          "Specification_section_sub": "5.1.5(f)",
+          "Sub_topic_name": "Commercial uses of plant hormones",
+          "description": "Explain commercial use of plant hormones: controlling ripening, rooting powders, hormonal weed killers; evaluate benefits and risks (HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23h",
+          "Specification_section_sub": "5.1.5(g)",
+          "Sub_topic_name": "Mammalian nervous system organisation",
+          "description": "Describe organisation of mammalian nervous system: structural (central nervous system vs peripheral nervous system) and functional (somatic vs autonomic nervous systems).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23i",
+          "Specification_section_sub": "5.1.5(h)",
+          "Sub_topic_name": "Human brain structure and functions",
+          "description": "Describe gross structure of human brain and functions of cerebrum, cerebellum, medulla oblongata, hypothalamus and pituitary gland.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23j",
+          "Specification_section_sub": "5.1.5(i)",
+          "Sub_topic_name": "Reflex actions (knee jerk) and survival value",
+          "description": "Explain reflex actions using knee jerk reflex; include pathway concept and survival value; may include measurement of reaction/response where relevant (M0.1, M0.2, M1.1, M1.2, M1.3, M1.6; PAG11; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23k",
+          "Specification_section_sub": "5.1.5(j)",
+          "Sub_topic_name": "Nervous and endocrine coordination (fight-or-flight; cAMP)",
+          "description": "Explain coordination of responses by nervous and endocrine systems: fight-or-flight response; outline hormone cell signalling with adrenaline as first messenger, activation of adenylyl cyclase, and cyclic AMP (cAMP) as second messenger.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23l",
+          "Specification_section_sub": "5.1.5(k)",
+          "Sub_topic_name": "Hormonal and nervous effects on heart rate (practical)",
+          "description": "Explain effects of hormones and nervous mechanisms on heart rate; carry out/interpret monitoring of physiological functions (pulse rate before/during/after exercise or sensors for electrical heart activity); analyse data (M0.1, M0.2, M0.3, M1.1, M1.2, M1.3, M1.6, M1.10, M3.1; PAG10, PAG11; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23m",
+          "Specification_section_sub": "5.1.5(l)(i)",
+          "Sub_topic_name": "Muscle types and sliding filament model",
+          "description": "Describe structure of mammalian muscle and mechanism of muscular contraction: differences between skeletal, involuntary and cardiac muscle; neuromuscular junctions; sliding filament model; role of ATP; how ATP supply maintained by creatine phosphate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "23n",
+          "Specification_section_sub": "5.1.5(l)(ii)",
+          "Sub_topic_name": "Muscle histology (sections/photomicrographs)",
+          "description": "Examine stained sections or photomicrographs of skeletal muscle; identify features (e.g. fibres, striations) and relate to contraction mechanism (PAG1, PAG10, PAG11; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 24,
+      "Specification_section": "5.2.1",
+      "Strand": "Module 5 – Communication, homeostasis and energy",
+      "Topic_name": "Photosynthesis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "24a",
+          "Specification_section_sub": "5.2.1(a)",
+          "Sub_topic_name": "Photosynthesis–respiration relationship",
+          "description": "Explain interrelationship between photosynthesis and respiration, including relationship between raw materials and products; apply to carbon flow and energy transfer contexts (M0.1, M0.3, M0.4, M3.4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24b",
+          "Specification_section_sub": "5.2.1(b)",
+          "Sub_topic_name": "Chloroplast structure and photosynthesis sites",
+          "description": "Describe chloroplast structure and identify sites of two main stages of photosynthesis; include outer membrane, lamellae, grana, thylakoid, stroma and DNA.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24c",
+          "Specification_section_sub": "5.2.1(c)(i)",
+          "Sub_topic_name": "Photosynthetic pigments and photosystems",
+          "description": "Explain importance of photosynthetic pigments in photosynthesis; include light harvesting systems and photosystems; relate absorption spectra to efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24d",
+          "Specification_section_sub": "5.2.1(c)(ii)",
+          "Sub_topic_name": "Separate pigments by TLC (practical)",
+          "description": "Carry out/interpret practical investigations using thin layer chromatography (TLC) to separate photosynthetic pigments; calculate/interpret distances/Rf where relevant and handle data (M0.1, M0.2, M1.1, M1.3, M2.2, M2.3, M2.4; PAG6; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24e",
+          "Specification_section_sub": "5.2.1(d)",
+          "Sub_topic_name": "Light-dependent reactions (ATP, reduced NADP)",
+          "description": "Explain light-dependent stage: harvesting light energy to produce ATP and reduced NADP; include electron carriers, cyclic and non-cyclic photophosphorylation; role of water (photolysis) and oxygen production (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24f",
+          "Specification_section_sub": "5.2.1(e)",
+          "Sub_topic_name": "Carbon fixation and Calvin cycle outputs",
+          "description": "Explain fixation of CO2 and light-independent stage (Calvin cycle) producing triose phosphate (TP); include roles of RuBP, RuBisCO and GP; no other biochemical detail required; relate to regeneration steps conceptually (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24g",
+          "Specification_section_sub": "5.2.1(f)",
+          "Sub_topic_name": "Uses of triose phosphate (TP)",
+          "description": "Explain uses of TP as starting material for synthesis of carbohydrates, lipids and amino acids; explain recycling of TP to regenerate RuBP; relate allocation to growth/storage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24h",
+          "Specification_section_sub": "5.2.1(g)(i)",
+          "Sub_topic_name": "Limiting factors and water stress effects",
+          "description": "Explain factors affecting photosynthesis: limiting factors (CO2 concentration, light intensity, temperature) and implications of water stress (stomatal closure); explain effects on photosynthesis rate and levels of GP, RuBP and TP when changing CO2, light or temperature.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24i",
+          "Specification_section_sub": "5.2.1(g)(ii)",
+          "Sub_topic_name": "Investigate photosynthesis rate (practical)",
+          "description": "Carry out/interpret practical investigations into factors affecting rate of photosynthesis; analyse data with rates/graphs/tangents and uncertainties (M0.1, M0.2, M0.3, M1.1, M1.3, M1.11, M3.1, M3.2, M3.4, M3.5, M3.6, M4.1; PAG4, PAG10, PAG11; HSW3, HSW4, HSW5, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 25,
+      "Specification_section": "5.2.2",
+      "Strand": "Module 5 – Communication, homeostasis and energy",
+      "Topic_name": "Respiration",
+      "Sub_topics": [
+        {
+          "subtopic_id": "25a",
+          "Specification_section_sub": "5.2.2(a)",
+          "Sub_topic_name": "Need for cellular respiration",
+          "description": "Explain need for cellular respiration in plants, animals and microorganisms; include examples such as active transport and named metabolic reactions in outline.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25b",
+          "Specification_section_sub": "5.2.2(b)",
+          "Sub_topic_name": "Mitochondrion structure",
+          "description": "Describe mitochondrion structure: inner and outer mitochondrial membranes, cristae, matrix and mitochondrial DNA; relate to sites of respiration stages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25c",
+          "Specification_section_sub": "5.2.2(c)",
+          "Sub_topic_name": "Glycolysis (site and key steps)",
+          "description": "Explain glycolysis and its site; include phosphorylation of glucose to hexose bisphosphate, splitting to two TP molecules and oxidation to pyruvate; production of small yield of ATP and reduced NAD (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25d",
+          "Specification_section_sub": "5.2.2(d)",
+          "Sub_topic_name": "Link reaction (acetyl CoA formation)",
+          "description": "Explain link reaction and its site: pyruvate decarboxylation to form acetyl CoA and reduction of NAD to reduced NAD.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25e",
+          "Specification_section_sub": "5.2.2(e)",
+          "Sub_topic_name": "Krebs cycle (site and key concepts)",
+          "description": "Explain Krebs cycle and its site: citrate formation from acetyl group + oxaloacetate; reconversion to oxaloacetate (no intermediate names required); importance of decarboxylation, dehydrogenation, reduction of NAD and FAD, and substrate-level phosphorylation (HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25f",
+          "Specification_section_sub": "5.2.2(f)",
+          "Sub_topic_name": "Coenzymes in respiration (NAD, FAD, CoA)",
+          "description": "Explain importance of coenzymes NAD, FAD and coenzyme A in cellular respiration; relate to hydrogen/electron transfer and acetyl group transfer.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25g",
+          "Specification_section_sub": "5.2.2(g)",
+          "Sub_topic_name": "Oxidative phosphorylation (ETC, oxygen)",
+          "description": "Explain oxidative phosphorylation and its site; include roles of electron carriers, oxygen as final electron acceptor, and mitochondrial cristae in providing surface area.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25h",
+          "Specification_section_sub": "5.2.2(h)",
+          "Sub_topic_name": "Chemiosmotic theory (proton gradient, ATP synthase)",
+          "description": "Explain chemiosmotic theory: electron transport chain, proton gradients, ATP synthase in oxidative phosphorylation and photophosphorylation; relate gradient to ATP production.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25i",
+          "Specification_section_sub": "5.2.2(i)(i)",
+          "Sub_topic_name": "Anaerobic respiration in mammals and yeast",
+          "description": "Describe anaerobic respiration in eukaryotes (mammals and yeast); explain benefits of anaerobic respiration and why it yields much less ATP than aerobic respiration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25j",
+          "Specification_section_sub": "5.2.2(i)(ii)",
+          "Sub_topic_name": "Investigate respiration rates in yeast (aerobic/anaerobic)",
+          "description": "Carry out/interpret practical investigations into respiration rates in yeast under aerobic and anaerobic conditions; analyse data with rates/graphs (M0.1, M0.2, M1.1, M1.3, M2.4, M3.1, M3.2; PAG4, PAG10, PAG11; HSW3, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25k",
+          "Specification_section_sub": "5.2.2(j)",
+          "Sub_topic_name": "Energy values of substrates",
+          "description": "Explain differences in relative energy values of carbohydrates, lipids and proteins as respiratory substrates; relate to oxidation state and hydrogen content.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25l",
+          "Specification_section_sub": "5.2.2(k)",
+          "Sub_topic_name": "Respiratory quotient (RQ)",
+          "description": "Calculate and interpret respiratory quotient RQ = CO2 produced / O2 consumed; use to infer substrate being respired; apply to datasets (M0.1, M0.2, M1.1, M1.3, M2.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25m",
+          "Specification_section_sub": "5.2.2(l)",
+          "Sub_topic_name": "Investigate respiration rate factors (respirometers)",
+          "description": "Carry out/interpret practical investigations into effects of factors (temperature, substrate concentration, different respiratory substrates) on respiration rate; include use of respirometers; analyse uncertainty and graph slopes/tangents (M0.1, M0.2, M1.1, M1.2, M1.3, M1.6, M1.10, M2.4, M3.2, M3.3, M3.5, M3.6; PAG4, PAG10, PAG11; HSW3, HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 26,
+      "Specification_section": "6.1.1",
+      "Strand": "Module 6 – Genetics, evolution and ecosystems",
+      "Topic_name": "Cellular control",
+      "Sub_topics": [
+        {
+          "subtopic_id": "26a",
+          "Specification_section_sub": "6.1.1(a)",
+          "Sub_topic_name": "Gene mutations and protein effects",
+          "description": "Describe types of gene mutation: substitution, insertion, deletion of one or more nucleotides; explain possible effects on protein production and function (beneficial, neutral, harmful).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26b",
+          "Specification_section_sub": "6.1.1(b)",
+          "Sub_topic_name": "Gene expression regulation (transcriptional, post-transcriptional, post-translational)",
+          "description": "Explain regulatory mechanisms controlling gene expression at: transcriptional level (lac operon; general role of transcription factors in eukaryotes—no need to recall specific factors), post-transcriptional level (editing of primary mRNA; removal of introns to form mature mRNA), and post-translational level (activation of proteins by cyclic AMP) (HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26c",
+          "Specification_section_sub": "6.1.1(c)",
+          "Sub_topic_name": "Homeobox and Hox genes in body plans",
+          "description": "Explain genetic control of development of body plans: homeobox gene sequences are similar/highly conserved in plants, animals and fungi and regulate gene expression; describe role of Hox genes (subset of homeobox genes) controlling body plan development (HSW7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26d",
+          "Specification_section_sub": "6.1.1(d)",
+          "Sub_topic_name": "Mitosis and apoptosis in development",
+          "description": "Explain importance of mitosis and apoptosis in controlling development of body form; recognise genes regulating cell cycle and apoptosis respond to internal/external cell stimuli.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 27,
+      "Specification_section": "6.1.2",
+      "Strand": "Module 6 – Genetics, evolution and ecosystems",
+      "Topic_name": "Patterns of inheritance",
+      "Sub_topics": [
+        {
+          "subtopic_id": "27a",
+          "Specification_section_sub": "6.1.2(a)(i)",
+          "Sub_topic_name": "Environmental and genetic contributions to phenotype",
+          "description": "Explain contribution of environmental and genetic factors to phenotypic variation; include examples such as diet in animals and etiolation in plants.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27b",
+          "Specification_section_sub": "6.1.2(a)(ii)",
+          "Sub_topic_name": "Sexual reproduction and genetic variation",
+          "description": "Explain how sexual reproduction leads to genetic variation within a species: meiosis and random fusion of gametes at fertilisation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27c",
+          "Specification_section_sub": "6.1.2(b)(i)",
+          "Sub_topic_name": "Genetic diagrams (monogenic, dihybrid, multiple alleles, sex linkage, codominance)",
+          "description": "Construct and interpret genetic diagrams to show inheritance patterns: monogenic inheritance, dihybrid inheritance, multiple alleles, sex linkage and codominance; use standard genetic notation and predict offspring genotypes/phenotypes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27d",
+          "Specification_section_sub": "6.1.2(b)(ii)",
+          "Sub_topic_name": "Phenotypic ratios: linkage and epistasis",
+          "description": "Use phenotypic ratios to identify linkage (autosomal and sex linkage) and epistasis; explain linkage and epistasis and how they alter expected Mendelian ratios; apply proportional reasoning (M0.3, M1.4; HSW2, HSW8).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27e",
+          "Specification_section_sub": "6.1.2(c)",
+          "Sub_topic_name": "Chi-squared (χ²) test in genetics",
+          "description": "Use chi-squared (χ²) test to determine significance of difference between observed and expected results; formula provided; choose degrees of freedom and interpret outcome in biological context (M0.3, M1.4, M1.9, M2.1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27f",
+          "Specification_section_sub": "6.1.2(d)",
+          "Sub_topic_name": "Genetic basis of continuous vs discontinuous variation",
+          "description": "Explain genetic basis of continuous and discontinuous variation with reference to number of genes influencing each type; relate polygenic inheritance to continuous distributions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27g",
+          "Specification_section_sub": "6.1.2(e)",
+          "Sub_topic_name": "Factors affecting evolution (selection and drift)",
+          "description": "Explain factors affecting evolution of a species: stabilising selection, directional selection, genetic drift, genetic bottleneck, founder effect; apply to population change scenarios.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27h",
+          "Specification_section_sub": "6.1.2(f)",
+          "Sub_topic_name": "Hardy–Weinberg allele frequency calculations",
+          "description": "Use Hardy–Weinberg principle to calculate allele frequencies in populations; equations provided (p^2 + 2pq + q^2 = 1 and p + q = 1); apply to genotype frequency data and interpret assumptions/limitations (M0.2, M2.1, M2.2, M2.3).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27i",
+          "Specification_section_sub": "6.1.2(g)",
+          "Sub_topic_name": "Isolating mechanisms and speciation",
+          "description": "Explain role of isolating mechanisms in evolution of new species: geographical (allopatric speciation) and reproductive (sympatric speciation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27j",
+          "Specification_section_sub": "6.1.2(h)(i)",
+          "Sub_topic_name": "Artificial selection principles and uses",
+          "description": "Explain principles of artificial selection (selective breeding) and its uses in plants and animals; recognise importance of maintaining genetic material resources including wild types.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "27k",
+          "Specification_section_sub": "6.1.2(h)(ii)",
+          "Sub_topic_name": "Ethical issues in artificial selection",
+          "description": "Evaluate ethical considerations of artificial selection, including extreme selective breeding examples (e.g. dog breeds) and welfare/genetic diversity impacts (HSW2, HSW8, HSW10, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 28,
+      "Specification_section": "6.1.3",
+      "Strand": "Module 6 – Genetics, evolution and ecosystems",
+      "Topic_name": "Manipulating genomes",
+      "Sub_topics": [
+        {
+          "subtopic_id": "28a",
+          "Specification_section_sub": "6.1.3(a)",
+          "Sub_topic_name": "DNA sequencing principles and advances",
+          "description": "Explain principles of DNA sequencing and new techniques; understand progression from Sanger sequencing to high throughput sequencing; no detailed knowledge of high throughput methods required (HSW7).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28b",
+          "Specification_section_sub": "6.1.3(b)(i)",
+          "Sub_topic_name": "Genome-wide comparisons using sequencing",
+          "description": "Explain how gene sequencing enables genome-wide comparisons between individuals and species; link to bioinformatics/computational biology applications (HSW7, HSW9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28c",
+          "Specification_section_sub": "6.1.3(b)(ii)",
+          "Sub_topic_name": "Predict polypeptides from gene sequences",
+          "description": "Explain how gene sequencing allows prediction of amino acid sequences in polypeptides; relate codons to amino acids and use of databases/tools (PAG10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28d",
+          "Specification_section_sub": "6.1.3(b)(iii)",
+          "Sub_topic_name": "Synthetic biology enabled by sequencing",
+          "description": "Explain how gene sequencing supports development of synthetic biology; relate to designing/constructing new biological parts/systems and bioinformatics roles (HSW7, HSW9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28e",
+          "Specification_section_sub": "6.1.3(c)",
+          "Sub_topic_name": "DNA profiling principles and uses",
+          "description": "Explain principles of DNA profiling and its uses including forensics and analysis of disease risk; interpret profile comparisons (HSW9).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28f",
+          "Specification_section_sub": "6.1.3(d)",
+          "Sub_topic_name": "PCR principles and applications",
+          "description": "Explain principles of polymerase chain reaction (PCR) and its application in DNA analysis; include cycles of denaturation, annealing, extension and role of primers/DNA polymerase at conceptual level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28g",
+          "Specification_section_sub": "6.1.3(e)",
+          "Sub_topic_name": "Electrophoresis for nucleic acids/proteins",
+          "description": "Explain principles and uses of electrophoresis to separate nucleic acid fragments or proteins; interpret banding patterns; opportunity for practical electrophoresis (PAG6, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28h",
+          "Specification_section_sub": "6.1.3(f)(i)",
+          "Sub_topic_name": "Genetic engineering principles (vectors and transfer)",
+          "description": "Explain principles of genetic engineering: isolating genes from one organism and placing them into another using suitable vectors; relate to recombinant DNA and expression.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28i",
+          "Specification_section_sub": "6.1.3(f)(ii)",
+          "Sub_topic_name": "Genetic engineering techniques (restriction enzymes, plasmids, ligase, electroporation)",
+          "description": "Describe techniques used in genetic engineering: restriction enzymes, plasmids, DNA ligase to form recombinant DNA, and electroporation to introduce vectors; apply steps to novel examples (HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28j",
+          "Specification_section_sub": "6.1.3(g)",
+          "Sub_topic_name": "Ethical issues in genetic manipulation",
+          "description": "Discuss ethical issues (positive and negative) of genetic manipulation of animals (including humans), plants and microorganisms; include examples: insect resistance in GM soya, GM pathogens for research, pharming (GM animals producing pharmaceuticals), patenting and technology transfer (e.g. GM seed availability to poor farmers) (HSW10).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "28k",
+          "Specification_section_sub": "6.1.3(h)",
+          "Sub_topic_name": "Gene therapy (somatic vs germ line)",
+          "description": "Explain principles and potential of gene therapy in medicine; distinguish somatic cell gene therapy vs germ line gene therapy; evaluate benefits/risks and ethical issues (HSW9, HSW12).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 29,
+      "Specification_section": "6.2.1",
+      "Strand": "Module 6 – Genetics, evolution and ecosystems",
+      "Topic_name": "Cloning and biotechnology",
+      "Sub_topics": [
+        {
+          "subtopic_id": "29a",
+          "Specification_section_sub": "6.2.1(a)(i)",
+          "Sub_topic_name": "Natural cloning in plants and horticulture",
+          "description": "Describe natural clones in plants and production of natural clones for horticulture; include vegetative propagation methods and why clones are useful.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29b",
+          "Specification_section_sub": "6.2.1(a)(ii)",
+          "Sub_topic_name": "Plant cuttings as cloning technique (practical)",
+          "description": "Explain and carry out taking plant cuttings as simple cloning technique; include dissection of plant material and conditions to promote rooting (PAG2, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29c",
+          "Specification_section_sub": "6.2.1(b)(i)",
+          "Sub_topic_name": "Micropropagation and tissue culture",
+          "description": "Explain production of artificial clones of plants by micropropagation and tissue culture; include aseptic conditions, use of meristems, and growth regulators conceptually.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29d",
+          "Specification_section_sub": "6.2.1(b)(ii)",
+          "Sub_topic_name": "Evaluate artificial cloning in plants",
+          "description": "Evaluate arguments for and against artificial cloning in plants; include horticulture/agriculture uses, disease risk, reduced genetic diversity, cost, conservation implications (HSW9, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29e",
+          "Specification_section_sub": "6.2.1(c)",
+          "Sub_topic_name": "Natural clones in animals (embryo splitting)",
+          "description": "Describe natural clones in animal species, including twins formed by embryo splitting; relate to genetic identity and developmental environment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29f",
+          "Specification_section_sub": "6.2.1(d)(i)",
+          "Sub_topic_name": "Artificial cloning in animals (embryo twinning, SCNT)",
+          "description": "Explain how artificial clones in animals can be produced by artificial embryo twinning and by enucleation and somatic cell nuclear transfer (SCNT); outline steps and roles of nucleus/cytoplasm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29g",
+          "Specification_section_sub": "6.2.1(d)(ii)",
+          "Sub_topic_name": "Evaluate animal cloning (uses and issues)",
+          "description": "Evaluate arguments for and against artificial cloning in animals; include uses in agriculture and medicine and issues such as longevity of cloned animals (HSW9, HSW10, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29h",
+          "Specification_section_sub": "6.2.1(e)",
+          "Sub_topic_name": "Microorganisms in biotechnology: reasons for use",
+          "description": "Explain use of microorganisms in biotechnological processes and reasons: economic considerations, short life cycle, and growth requirements; relate to scaling production.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29i",
+          "Specification_section_sub": "6.2.1(f)",
+          "Sub_topic_name": "Microbial food production: pros and cons",
+          "description": "Evaluate advantages and disadvantages of using microorganisms to make food for human consumption; include bacterial and fungal sources; consider nutrition, efficiency, acceptance, safety (HSW9, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29j",
+          "Specification_section_sub": "6.2.1(g)(i)",
+          "Sub_topic_name": "Culturing microorganisms (aseptic technique)",
+          "description": "Describe and apply effective culturing of microorganisms using aseptic techniques; include sterile equipment, inoculation, incubation conditions and safe disposal; include serial dilutions and agar/broth where relevant (PAG7, HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29k",
+          "Specification_section_sub": "6.2.1(g)(ii)",
+          "Sub_topic_name": "Batch vs continuous fermentation and yield",
+          "description": "Explain importance of manipulating growing conditions in batch and continuous fermentation to maximise yield; include factors such as nutrients, oxygen, pH, temperature, removal of waste/products.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29l",
+          "Specification_section_sub": "6.2.1(h)(i)",
+          "Sub_topic_name": "Standard growth curve in closed culture",
+          "description": "Describe standard growth curve of a microorganism in closed culture (lag, log/exponential, stationary, decline); relate phase changes to nutrient/waste factors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29m",
+          "Specification_section_sub": "6.2.1(h)(ii)",
+          "Sub_topic_name": "Investigate microbial growth factors; exponential model",
+          "description": "Carry out/interpret practical investigations into factors affecting growth of microorganisms; use formula N = N0 × 2^n for number of organisms; apply logs/exponentials and data handling (M0.1, M0.3, M0.5, M1.1, M1.3, M2.5, M3.1, M3.2, M3.4, M3.5, M3.6; PAG7; HSW4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29n",
+          "Specification_section_sub": "6.2.1(i)",
+          "Sub_topic_name": "Immobilised enzymes: methods and evaluation",
+          "description": "Explain uses of immobilised enzymes in biotechnology and different methods of immobilisation; evaluate benefits/limitations (e.g. reuse, stability, product purity, cost); apply understanding to contexts such as glucose isomerase, penicillin acylase, lactase, aminoacylase, glucoamylase; examples need not be recalled but must be applied in context (M0.2, M0.3, M1.2, M1.3, M1.4, M1.6, M1.10, M3.2, M4.1; PAG4; HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 30,
+      "Specification_section": "6.3.1",
+      "Strand": "Module 6 – Genetics, evolution and ecosystems",
+      "Topic_name": "Ecosystems",
+      "Sub_topics": [
+        {
+          "subtopic_id": "30a",
+          "Specification_section_sub": "6.3.1(a)",
+          "Sub_topic_name": "Ecosystems as dynamic; biotic and abiotic factors",
+          "description": "Explain that ecosystems range in size, are dynamic, and influenced by biotic and abiotic factors; include examples of different-sized ecosystems (rock pool, playing field, large tree) and named biotic/abiotic factors.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30b",
+          "Specification_section_sub": "6.3.1(b)",
+          "Sub_topic_name": "Biomass transfer and efficiency",
+          "description": "Explain biomass transfers through ecosystems: how transfers between trophic levels are measured; efficiency of biomass transfer with formula efficiency = (biomass transferred / biomass intake) × 100; explain how human activities can manipulate biomass transfer; apply calculations and interpret pyramids/data (M0.1, M0.2, M0.3, M0.4, M1.1, M1.3, M1.6; HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30c",
+          "Specification_section_sub": "6.3.1(c)",
+          "Sub_topic_name": "Recycling: decomposers; nitrogen and carbon cycles",
+          "description": "Explain recycling within ecosystems: role of decomposers; roles of microorganisms in nitrogen recycling including Nitrosomonas, Nitrobacter, Azotobacter and Rhizobium; importance of carbon cycle including roles of organisms (decomposition, respiration, photosynthesis) and physical/chemical effects; link to ecosystem stability (HSW2, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30d",
+          "Specification_section_sub": "6.3.1(d)",
+          "Sub_topic_name": "Primary succession and deflected succession",
+          "description": "Describe primary succession from pioneer species to climax community and explain deflected succession; relate changes to abiotic conditions and species interactions (HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30e",
+          "Specification_section_sub": "6.3.1(e)(i)",
+          "Sub_topic_name": "Measure distribution and abundance",
+          "description": "Explain how distribution and abundance of organisms in an ecosystem can be measured; choose appropriate sampling/recording approaches and justify (M1.3, M1.4, M1.5, M1.7, M1.9, M1.10, M3.1, M3.2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "30f",
+          "Specification_section_sub": "6.3.1(e)(ii)",
+          "Sub_topic_name": "Sampling and recording methods (practical ecology)",
+          "description": "Use sampling and recording methods to determine distribution and abundance in ecosystems; include quadrats, transects and appropriate data presentation/analysis; evaluate sampling limitations (PAG3, HSW4).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 31,
+      "Specification_section": "6.3.2",
+      "Strand": "Module 6 – Genetics, evolution and ecosystems",
+      "Topic_name": "Populations and sustainability",
+      "Sub_topics": [
+        {
+          "subtopic_id": "31a",
+          "Specification_section_sub": "6.3.2(a)",
+          "Sub_topic_name": "Population size factors and carrying capacity",
+          "description": "Explain factors determining size of a population; include significance of limiting factors and carrying capacity; analyse population growth data and apply appropriate maths (M0.1, M0.2, M0.3, M0.4, M0.5, M1.3, M2.5, M3.1, M3.2; HSW1, HSW2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31b",
+          "Specification_section_sub": "6.3.2(b)",
+          "Sub_topic_name": "Population interactions (predator–prey; competition)",
+          "description": "Explain interactions between populations: predator–prey relationships and effects on predator and prey population sizes; interspecific and intraspecific competition; interpret population cycle graphs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31c",
+          "Specification_section_sub": "6.3.2(c)",
+          "Sub_topic_name": "Conservation vs preservation",
+          "description": "Explain reasons for and differences between conservation and preservation; include economic, social and ethical reasons for conserving biological resources (HSW7, HSW9, HSW10, HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31d",
+          "Specification_section_sub": "6.3.2(d)",
+          "Sub_topic_name": "Sustainable management (timber and fishing)",
+          "description": "Explain how management of an ecosystem can provide resources sustainably; limited to management for timber production and fishing; evaluate strategies and impacts (HSW12).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31e",
+          "Specification_section_sub": "6.3.2(e)",
+          "Sub_topic_name": "Managing resources and human impacts",
+          "description": "Explain management of environmental resources to balance conservation/preservation with human needs; describe effects of human activities on animal and plant populations and how these are controlled; evaluate ecological consequences (HSW7, HSW12).",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

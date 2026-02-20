@@ -1,0 +1,2817 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Economics",
+  "Exam Board": "Edexcel",
+  "Specification": "9EC0",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "1.1",
+      "Strand": "Theme 1: Introduction to markets and market failure",
+      "Topic_name": "Nature of economics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1.1a",
+          "Sub_topic_name": "Economic models and assumptions",
+          "description": "Thinking like an economist: understand the process of developing models in economics, including why economists make simplifying assumptions when modelling real-world behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "1.1.1b",
+          "Sub_topic_name": "Ceteris paribus",
+          "description": "Understand and use the ceteris paribus assumption (“all other things equal”) when building and interpreting economic models; recognise how changing one variable while holding others constant supports causal reasoning in economics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "1.1.1c",
+          "Sub_topic_name": "Limits of experimentation in economics",
+          "description": "Understand why economics cannot usually run controlled scientific experiments in the way natural sciences can (e.g., ethical/practical constraints, complex interacting variables), and the implications for testing economic models.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "1.1.2a",
+          "Sub_topic_name": "Positive vs normative statements",
+          "description": "Distinguish between positive economic statements (testable/descriptive claims) and normative economic statements (value-based/prescriptive claims).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "1.1.2b",
+          "Sub_topic_name": "Value judgements in policy",
+          "description": "Understand the role of value judgements (normative preferences) in influencing economic decision making and government policy choices; recognise how different objectives/ideologies can lead to different policy conclusions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "1.1.3a",
+          "Sub_topic_name": "Scarcity and the economic problem",
+          "description": "Understand the economic problem arising from scarcity: unlimited wants alongside finite resources, requiring choices about allocation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "1.1.3b",
+          "Sub_topic_name": "Renewable vs non-renewable resources",
+          "description": "Distinguish between renewable resources and non-renewable resources and understand their relevance to scarcity and sustainability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "1.1.3c",
+          "Sub_topic_name": "Opportunity cost for economic agents",
+          "description": "Understand opportunity cost as the value of the next best alternative forgone; apply to decisions by consumers, producers (firms), and government.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "1.1.4a",
+          "Sub_topic_name": "PPF uses (productive potential, opportunity cost, efficiency, growth)",
+          "description": "Use production possibility frontiers (PPFs) to depict: (i) maximum productive potential of an economy; (ii) opportunity cost using marginal analysis; (iii) economic growth or decline; (iv) efficient vs inefficient allocation of resources; (v) possible vs unobtainable production combinations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "1.1.4b",
+          "Sub_topic_name": "Movements along vs shifts of the PPF",
+          "description": "Distinguish between movements along a PPF (reallocation of resources) and shifts of the PPF (changes in productive capacity). Explain possible causes of shifts (e.g., changes in quantity/quality of factors of production, technology, productivity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "1.1.4c",
+          "Sub_topic_name": "Capital vs consumer goods on a PPF",
+          "description": "Distinguish between capital goods and consumer goods; interpret PPFs that trade off capital vs consumer goods and link to future productive capacity and economic growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "1.1.5a",
+          "Sub_topic_name": "Specialisation and division of labour (Adam Smith)",
+          "description": "Understand specialisation and the division of labour in organising production, with reference to Adam Smith’s ideas.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "1.1.5b",
+          "Sub_topic_name": "Pros and cons of specialisation and division of labour",
+          "description": "Analyse advantages and disadvantages of specialisation and division of labour in organising production (e.g., productivity gains vs monotony, deskilling, dependence).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "1.1.5c",
+          "Sub_topic_name": "Pros and cons of specialisation for trade",
+          "description": "Analyse advantages and disadvantages of specialising in producing goods and services to trade (e.g., comparative advantage gains vs overdependence, exposure to shocks).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "1.1.5d",
+          "Sub_topic_name": "Functions of money",
+          "description": "Understand the functions of money: medium of exchange, measure of value (unit of account), store of value, and method of deferred payment.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "1.1.6a",
+          "Sub_topic_name": "Economic systems: free market, mixed, command (Smith, Hayek, Marx)",
+          "description": "Distinguish between free market, mixed and command economies; understand associated viewpoints with reference to Adam Smith, Friedrich Hayek and Karl Marx.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "1.1.6b",
+          "Sub_topic_name": "Evaluation of free market vs command economies",
+          "description": "Analyse advantages and disadvantages of a free market economy and a command economy (e.g., efficiency/incentives vs equity/planning; market failure vs government failure).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1r",
+          "Specification_section_sub": "1.1.6c",
+          "Sub_topic_name": "Role of the state in a mixed economy",
+          "description": "Understand the role of the state in a mixed economy (e.g., provision of public goods, regulation, redistribution, stabilisation), combining market mechanisms with government intervention.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "1.2",
+      "Strand": "Theme 1: Introduction to markets and market failure",
+      "Topic_name": "How markets work",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "1.2.1a",
+          "Sub_topic_name": "Rational decision-making assumptions",
+          "description": "Understand the underlying assumptions of rational economic decision making: consumers aim to maximise utility and firms aim to maximise profits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "1.2.2a",
+          "Sub_topic_name": "Demand: movements along vs shifts",
+          "description": "Distinguish between movements along a demand curve (price changes) and shifts of a demand curve (changes in non-price determinants).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "1.2.2b",
+          "Sub_topic_name": "Determinants (conditions) of demand",
+          "description": "Understand factors causing a shift in the demand curve (conditions of demand), e.g., income, tastes/preferences, prices of substitutes/complements, population/demographics, advertising, interest rates/credit, expectations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "1.2.2c",
+          "Sub_topic_name": "Diminishing marginal utility and demand curve shape",
+          "description": "Understand diminishing marginal utility and explain how it influences the downward slope/shape of the demand curve.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "1.2.3a",
+          "Sub_topic_name": "PED, YED, XED concepts",
+          "description": "Understand the meaning of price elasticity of demand (PED), income elasticity of demand (YED), and cross elasticity of demand (XED) as measures of responsiveness of quantity demanded.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "1.2.3b",
+          "Sub_topic_name": "Elasticity calculations (PED, YED, XED)",
+          "description": "Use formulae to calculate PED, YED and XED (e.g., %ΔQd/%ΔP; %ΔQd/%ΔY; %ΔQd/%ΔPx).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "1.2.3c",
+          "Sub_topic_name": "Interpreting PED values",
+          "description": "Interpret numerical PED values: unitary elastic, perfectly elastic, relatively elastic, perfectly inelastic, relatively inelastic; relate magnitude/sign to responsiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "1.2.3c",
+          "Sub_topic_name": "Interpreting YED values (inferior/normal/luxury)",
+          "description": "Interpret numerical YED values: inferior (negative), normal (positive), luxury (YED>1); distinguish relatively elastic vs relatively inelastic income responsiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "1.2.3c",
+          "Sub_topic_name": "Interpreting XED values (substitutes/complements)",
+          "description": "Interpret numerical XED values: substitutes (positive), complementary goods (negative), unrelated goods (≈0).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "1.2.3d",
+          "Sub_topic_name": "Determinants of demand elasticities",
+          "description": "Analyse factors influencing elasticities of demand (e.g., availability of substitutes, necessity vs luxury, proportion of income, time period, brand loyalty, habit, addictive goods).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "1.2.3e",
+          "Sub_topic_name": "Elasticities and indirect taxes/subsidies incidence",
+          "description": "Use demand elasticities to analyse effects and incidence of indirect taxes and subsidies on consumers/producers and government revenue/cost.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "1.2.3e",
+          "Sub_topic_name": "Elasticities and real income changes",
+          "description": "Use YED to analyse how changes in real income affect demand for inferior/normal/luxury goods and implications for firms/government.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "1.2.3e",
+          "Sub_topic_name": "Elasticities and substitute/complement price changes",
+          "description": "Use XED to analyse how changes in prices of substitutes and complements affect demand in related markets, and implications for firms/government.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "1.2.3f",
+          "Sub_topic_name": "PED and total revenue (TR)",
+          "description": "Explain and calculate the relationship between PED and total revenue (TR=P×Q): when demand is elastic/inelastic/unitary and the effect of price changes on TR.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "1.2.4a",
+          "Sub_topic_name": "Supply: movements along vs shifts",
+          "description": "Distinguish between movements along a supply curve (price changes) and shifts of a supply curve (changes in non-price determinants).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "1.2.4b",
+          "Sub_topic_name": "Determinants (conditions) of supply",
+          "description": "Understand factors causing a shift in the supply curve (conditions of supply), e.g., costs of production, technology/productivity, indirect taxes/subsidies, number of firms, prices of related goods, expectations, weather (primary sector), exchange rates (imported inputs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "1.2.5a",
+          "Sub_topic_name": "Price elasticity of supply (PES) concept",
+          "description": "Understand price elasticity of supply (PES) as responsiveness of quantity supplied to a change in price.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "1.2.5b",
+          "Sub_topic_name": "PES calculation",
+          "description": "Use the formula to calculate PES (e.g., %ΔQs/%ΔP).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "1.2.5c",
+          "Sub_topic_name": "Interpreting PES values",
+          "description": "Interpret numerical PES values: perfectly elastic, relatively elastic, perfectly inelastic, relatively inelastic.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2t",
+          "Specification_section_sub": "1.2.5d",
+          "Sub_topic_name": "Determinants of PES",
+          "description": "Analyse factors influencing PES (e.g., spare capacity, stock levels, time to adjust, mobility of factors, ability to store, complexity of production).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2u",
+          "Specification_section_sub": "1.2.5e",
+          "Sub_topic_name": "Short run vs long run and PES",
+          "description": "Distinguish between short run and long run in economics and explain why supply is typically more elastic in the long run; apply to PES analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2v",
+          "Specification_section_sub": "1.2.6a",
+          "Sub_topic_name": "Equilibrium price and quantity",
+          "description": "Define and determine equilibrium price and equilibrium quantity where demand equals supply.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2w",
+          "Specification_section_sub": "1.2.6b",
+          "Sub_topic_name": "Excess demand and excess supply diagrams",
+          "description": "Use supply-and-demand diagrams to depict excess demand (shortage) and excess supply (surplus).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2x",
+          "Specification_section_sub": "1.2.6c",
+          "Sub_topic_name": "Market forces eliminate shortages/surpluses",
+          "description": "Explain how market forces (price adjustments) eliminate excess demand and excess supply and restore equilibrium.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2y",
+          "Specification_section_sub": "1.2.6d",
+          "Sub_topic_name": "Shifts in supply/demand and new equilibrium",
+          "description": "Use supply-and-demand diagrams to show how shifts in demand and/or supply change equilibrium price and quantity in real-world contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2z",
+          "Specification_section_sub": "1.2.7a",
+          "Sub_topic_name": "Price mechanism functions",
+          "description": "Understand functions of the price mechanism in allocating resources: rationing, incentive, and signalling.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2aa",
+          "Specification_section_sub": "1.2.7b",
+          "Sub_topic_name": "Price mechanism in local/national/global markets",
+          "description": "Apply the price mechanism to different market contexts (local, national, global), recognising how prices coordinate resource allocation across markets.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ab",
+          "Specification_section_sub": "1.2.8a",
+          "Sub_topic_name": "Consumer surplus vs producer surplus",
+          "description": "Distinguish between consumer surplus and producer surplus and relate them to willingness to pay and willingness to accept.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ac",
+          "Specification_section_sub": "1.2.8b",
+          "Sub_topic_name": "Surplus on supply-demand diagrams",
+          "description": "Use supply and demand diagrams to illustrate and measure consumer surplus and producer surplus areas.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ad",
+          "Specification_section_sub": "1.2.8c",
+          "Sub_topic_name": "How shifts affect consumer and producer surplus",
+          "description": "Analyse how changes (shifts) in supply and demand affect consumer surplus and producer surplus (distribution of welfare between consumers and producers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ae",
+          "Specification_section_sub": "1.2.9a",
+          "Sub_topic_name": "Indirect taxes: impact and incidence",
+          "description": "Using supply and demand analysis and elasticities, analyse the impact of indirect taxes on consumers, producers and government; determine tax incidence (burden split) and represent on diagrams.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2af",
+          "Specification_section_sub": "1.2.9a",
+          "Sub_topic_name": "Subsidies: impact and subsidy areas",
+          "description": "Using supply and demand analysis and elasticities, analyse the impact of subsidies on consumers, producers and government; identify on diagrams the areas representing producer subsidy and consumer subsidy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ag",
+          "Specification_section_sub": "1.2.10a",
+          "Sub_topic_name": "Behavioural economics: influence of others",
+          "description": "Explain why consumers may not behave rationally due to the influence of other people’s behaviour (e.g., herd effects, network effects, status/positional consumption).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ah",
+          "Specification_section_sub": "1.2.10a",
+          "Sub_topic_name": "Behavioural economics: habitual behaviour",
+          "description": "Explain why consumers may not behave rationally because of habitual behaviour (habit persistence, addiction, brand loyalty) and implications for demand/elasticity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2ai",
+          "Specification_section_sub": "1.2.10a",
+          "Sub_topic_name": "Behavioural economics: computational weakness",
+          "description": "Explain why consumers may not behave rationally due to weakness at computation (bounded rationality, limited information processing, heuristics/biases).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "1.3",
+      "Strand": "Theme 1: Introduction to markets and market failure",
+      "Topic_name": "Market failure",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "1.3.1a",
+          "Sub_topic_name": "Meaning of market failure",
+          "description": "Understand market failure as when the free market mechanism leads to an inefficient allocation of resources (often where social welfare is not maximised).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "1.3.1b",
+          "Sub_topic_name": "Types of market failure (overview)",
+          "description": "Identify and distinguish types of market failure: externalities, under-provision of public goods, and information gaps.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "1.3.2a",
+          "Sub_topic_name": "Private, external and social costs",
+          "description": "Distinguish between private costs, external costs and social costs; use relationships such as social cost = private cost + external cost.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "1.3.2b",
+          "Sub_topic_name": "Private, external and social benefits",
+          "description": "Distinguish between private benefits, external benefits and social benefits; use relationships such as social benefit = private benefit + external benefit.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "1.3.2c",
+          "Sub_topic_name": "Negative production externalities (MSC/MSB diagram, welfare loss)",
+          "description": "Use a diagram with marginal analysis to illustrate external costs of production (e.g., MPC, MSC) showing the difference between market equilibrium and the social optimum; identify the welfare loss (deadweight loss) area.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "1.3.2d",
+          "Sub_topic_name": "Positive consumption externalities (MSB/MPB diagram, welfare gain)",
+          "description": "Use a diagram with marginal analysis to illustrate external benefits of consumption (e.g., MPB, MSB) showing the difference between market equilibrium and the social optimum; identify the welfare gain (deadweight) area from under-consumption.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "1.3.2e",
+          "Sub_topic_name": "Impacts of externalities and intervention",
+          "description": "Analyse impacts of externalities on economic agents and evaluate government intervention in various markets to internalise externalities (link to taxes, subsidies, regulation, permits, information).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "1.3.3a",
+          "Sub_topic_name": "Public vs private goods (non-rivalry, non-excludability)",
+          "description": "Distinguish between public and private goods using non-rivalry and non-excludability; apply to examples.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "1.3.3b",
+          "Sub_topic_name": "Free rider problem and under-provision of public goods",
+          "description": "Explain why public goods may not be provided by the private sector due to the free rider problem and inability to exclude non-payers, leading to under-provision.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3j",
+          "Specification_section_sub": "1.3.4a",
+          "Sub_topic_name": "Symmetric vs asymmetric information",
+          "description": "Distinguish between symmetric information and asymmetric information in markets.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3k",
+          "Specification_section_sub": "1.3.4b",
+          "Sub_topic_name": "Imperfect information and misallocation of resources",
+          "description": "Explain how imperfect market information/information gaps can lead to misallocation of resources (e.g., consumers making suboptimal choices, adverse selection, moral hazard links).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "1.4",
+      "Strand": "Theme 1: Introduction to markets and market failure",
+      "Topic_name": "Government intervention",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "1.4.1a",
+          "Sub_topic_name": "Indirect taxes (ad valorem and specific) to address market failure",
+          "description": "Understand and use diagrams to analyse government intervention via indirect taxation to correct market failure, including ad valorem (percentage) and specific (per unit) taxes; evaluate effects on price, quantity, welfare, and incidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "1.4.1a",
+          "Sub_topic_name": "Subsidies to address market failure",
+          "description": "Understand and use diagrams to analyse subsidies as intervention to correct market failure; evaluate effects on price, output, welfare, government spending, and distribution of benefits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "1.4.1a",
+          "Sub_topic_name": "Maximum and minimum prices",
+          "description": "Understand and use diagrams to analyse maximum prices (price ceilings) and minimum prices (price floors) as interventions; explain consequences such as shortages/surpluses, black markets, and welfare effects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "1.4.1b",
+          "Sub_topic_name": "Tradeable pollution permits",
+          "description": "Understand tradeable pollution permits as a market-based method to reduce negative externalities; explain how permits create incentives and can lead to a desired level of emissions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "1.4.1b",
+          "Sub_topic_name": "State provision of public goods",
+          "description": "Understand state provision (and funding) of public goods as a response to under-provision by the private sector; evaluate benefits and potential issues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "1.4.1b",
+          "Sub_topic_name": "Provision of information",
+          "description": "Understand government provision of information to reduce information gaps (e.g., labelling, public health campaigns) and improve resource allocation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "1.4.1b",
+          "Sub_topic_name": "Regulation",
+          "description": "Understand regulation as intervention to correct market failure (e.g., standards, bans, licensing) and evaluate effectiveness and unintended consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "1.4.2a",
+          "Sub_topic_name": "Meaning of government failure",
+          "description": "Understand government failure as intervention that results in a net welfare loss (i.e., policy makes outcomes worse than the market outcome).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "1.4.2b",
+          "Sub_topic_name": "Government failure: distortion of price signals",
+          "description": "Explain how interventions can distort price signals, leading to inefficient allocation and welfare loss.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "1.4.2b",
+          "Sub_topic_name": "Government failure: unintended consequences",
+          "description": "Explain how intervention may have unintended consequences (e.g., black markets, regulatory avoidance, perverse incentives) that reduce welfare.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "1.4.2b",
+          "Sub_topic_name": "Government failure: administrative costs",
+          "description": "Explain how excessive administrative/monitoring/enforcement costs can cause government failure and reduce net welfare gains from intervention.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "1.4.2b",
+          "Sub_topic_name": "Government failure: information gaps",
+          "description": "Explain how government information gaps (imperfect knowledge of costs/benefits, preferences, externalities) can lead to poor policy design and government failure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "1.4.2c",
+          "Sub_topic_name": "Examples of government failure in markets",
+          "description": "Apply government failure concepts to various markets; analyse why specific interventions might lead to net welfare loss in context.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "2.1",
+      "Strand": "Theme 2: The UK economy – performance and policies",
+      "Topic_name": "Measures of economic performance",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "2.1.1a",
+          "Sub_topic_name": "Real GDP growth as economic growth",
+          "description": "Understand rates of change of real Gross Domestic Product (GDP) as a measure of economic growth; interpret growth rates over time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "2.1.1b",
+          "Sub_topic_name": "Real vs nominal; total vs per capita; value vs volume",
+          "description": "Distinguish between: real and nominal measures; total and per capita measures; value and volume measures, particularly in national income statistics.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "2.1.1c",
+          "Sub_topic_name": "Gross National Income (GNI)",
+          "description": "Understand other national income measures, specifically Gross National Income (GNI), and how it differs from GDP (e.g., net factor income from abroad).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "2.1.1d",
+          "Sub_topic_name": "Comparing growth between countries and over time",
+          "description": "Compare rates of economic growth between countries and over time; interpret reasons for differences using appropriate context/data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "2.1.1e",
+          "Sub_topic_name": "Purchasing Power Parities (PPPs)",
+          "description": "Understand Purchasing Power Parities (PPPs) and use PPP-adjusted figures for international comparisons of output/income and living standards.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "2.1.1f",
+          "Sub_topic_name": "Limitations of GDP for living standards comparisons",
+          "description": "Evaluate limitations of using GDP to compare living standards between countries and over time (e.g., distribution, non-market activity, externalities, leisure, quality of goods/services).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "2.1.1g",
+          "Sub_topic_name": "National wellbeing and happiness",
+          "description": "Understand national happiness/wellbeing measures, including UK national wellbeing; analyse relationship between real incomes and subjective happiness (e.g., diminishing marginal utility of income).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "2.1.2a",
+          "Sub_topic_name": "Inflation, deflation, disinflation",
+          "description": "Define and distinguish inflation, deflation, and disinflation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "2.1.2b",
+          "Sub_topic_name": "CPI inflation calculation (UK)",
+          "description": "Understand the process of calculating the UK inflation rate using the Consumer Prices Index (CPI) (basket of goods, weights, index calculation conceptually).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "2.1.2c",
+          "Sub_topic_name": "Limitations of CPI",
+          "description": "Evaluate limitations of CPI in measuring inflation (e.g., representativeness, substitution bias, quality changes, housing costs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "2.1.2d",
+          "Sub_topic_name": "RPI as alternative inflation measure",
+          "description": "Understand the Retail Prices Index (RPI) as an alternative measure of inflation and broad differences from CPI.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "2.1.2e",
+          "Sub_topic_name": "Causes of inflation",
+          "description": "Analyse causes of inflation: demand-pull inflation, cost-push inflation, and growth of the money supply.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "2.1.2f",
+          "Sub_topic_name": "Effects of inflation",
+          "description": "Analyse effects of inflation on consumers, firms, government and workers (e.g., real incomes, uncertainty, menu/shoe-leather costs, competitiveness, fiscal drag, redistribution between debtors/creditors).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "2.1.3a",
+          "Sub_topic_name": "Unemployment measures: claimant count vs ILO/LFS",
+          "description": "Understand measures of unemployment: the claimant count and the International Labour Organisation (ILO) measure via the UK Labour Force Survey (LFS).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "2.1.3b",
+          "Sub_topic_name": "Unemployment vs under-employment",
+          "description": "Distinguish between unemployment and under-employment (e.g., working fewer hours than desired / overqualified).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "2.1.3c",
+          "Sub_topic_name": "Employment, unemployment and inactivity rates",
+          "description": "Understand significance of changes in employment, unemployment and inactivity rates; interpret labour market data and participation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "2.1.3d",
+          "Sub_topic_name": "Causes of unemployment",
+          "description": "Analyse causes of unemployment: structural, frictional, seasonal, demand-deficient/cyclical, and real wage inflexibility.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "2.1.3e",
+          "Sub_topic_name": "Migration, skills and labour market outcomes",
+          "description": "Analyse significance of migration and skills for employment and unemployment (e.g., skill shortages, labour supply, structural mismatch).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "2.1.3f",
+          "Sub_topic_name": "Effects of unemployment",
+          "description": "Analyse effects of unemployment on consumers, firms, workers, government and society (e.g., lost output, fiscal costs, inequality, health/social issues, hysteresis).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5t",
+          "Specification_section_sub": "2.1.4a",
+          "Sub_topic_name": "Balance of payments components (current account, trade in goods/services)",
+          "description": "Understand components of the balance of payments with particular reference to the current account and the balance of trade in goods and services.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5u",
+          "Specification_section_sub": "2.1.4b",
+          "Sub_topic_name": "Current account deficits and surpluses",
+          "description": "Define and interpret current account deficits and current account surpluses; link to trade balances and income flows.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5v",
+          "Specification_section_sub": "2.1.4c",
+          "Sub_topic_name": "Current account and macro objectives",
+          "description": "Analyse relationship between current account imbalances and other macroeconomic objectives (growth, inflation, employment, exchange rate stability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5w",
+          "Specification_section_sub": "2.1.4d",
+          "Sub_topic_name": "Interconnectedness through trade",
+          "description": "Understand interconnectedness of economies through international trade and how shocks transmit via trade and financial linkages.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "2.2",
+      "Strand": "Theme 2: The UK economy – performance and policies",
+      "Topic_name": "Aggregate demand (AD)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "2.2.1a",
+          "Sub_topic_name": "AD components (C+I+G+(X−M))",
+          "description": "Understand aggregate demand components: AD = C + I + G + (X − M).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "2.2.1b",
+          "Sub_topic_name": "Relative importance of AD components",
+          "description": "Understand the relative importance of AD components (C, I, G, X−M) and how this can differ over time/in different economies (UK context).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "2.2.1c",
+          "Sub_topic_name": "The AD curve",
+          "description": "Understand the aggregate demand (AD) curve and why it is downward sloping in AD/AS analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "2.2.1d",
+          "Sub_topic_name": "Movement along vs shift of AD",
+          "description": "Distinguish between a movement along the AD curve (change in price level affecting real output demanded) and a shift of the AD curve (change in components of AD).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "2.2.2a",
+          "Sub_topic_name": "Disposable income and consumption",
+          "description": "Understand disposable income (Yd) and how changes in disposable income influence consumer spending (consumption, C).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "2.2.2b",
+          "Sub_topic_name": "Savings-consumption relationship",
+          "description": "Understand the relationship between savings and consumption (e.g., higher saving implies lower consumption ceteris paribus).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "2.2.2c",
+          "Sub_topic_name": "Other influences on consumption",
+          "description": "Analyse other influences on consumer spending: interest rates, consumer confidence, and wealth effects (e.g., housing/asset prices).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "2.2.3a",
+          "Sub_topic_name": "Gross vs net investment",
+          "description": "Distinguish between gross investment and net investment (accounting for depreciation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "2.2.3b",
+          "Sub_topic_name": "Determinants of investment",
+          "description": "Analyse influences on investment (I): rate of economic growth, business expectations/confidence, Keynes ‘animal spirits’, demand for exports, interest rates, access to credit, and influence of government/regulations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "2.2.4a",
+          "Sub_topic_name": "Determinants of government expenditure",
+          "description": "Analyse main influences on government expenditure (G): the trade cycle and fiscal policy decisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "2.2.5a",
+          "Sub_topic_name": "Determinants of net trade (X−M)",
+          "description": "Analyse main influences on the (net) trade balance (X−M): real income, exchange rates, state of world economy, degree of protectionism, and non-price factors (quality, branding, reliability).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "2.3",
+      "Strand": "Theme 2: The UK economy – performance and policies",
+      "Topic_name": "Aggregate supply (AS)",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "2.3.1a",
+          "Sub_topic_name": "The AS curve",
+          "description": "Understand the aggregate supply (AS) curve and its role in the AD/AS model.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "2.3.1b",
+          "Sub_topic_name": "Movement along vs shift of AS",
+          "description": "Distinguish between movement along the AS curve and shifts of the AS curve; relate to changes in price level vs changes in supply conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "2.3.1c",
+          "Sub_topic_name": "Short-run vs long-run AS relationship",
+          "description": "Understand the relationship between short-run aggregate supply (SRAS) and long-run aggregate supply (LRAS).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "2.3.2a",
+          "Sub_topic_name": "Determinants of SRAS",
+          "description": "Analyse factors influencing SRAS: changes in costs of raw materials and energy, exchange rate changes (imported input costs), and changes in tax rates (cost effects).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "2.3.3a",
+          "Sub_topic_name": "Keynesian vs classical LRAS shapes",
+          "description": "Understand different shapes of the LRAS curve: Keynesian and classical; explain implications for output and price level responses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "2.3.3b",
+          "Sub_topic_name": "Determinants of LRAS (productive potential)",
+          "description": "Analyse factors influencing LRAS: technological advances, changes in relative productivity, education and skills, government regulations, demographic change and migration, and competition policy.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "2.4",
+      "Strand": "Theme 2: The UK economy – performance and policies",
+      "Topic_name": "National income",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "2.4.1a",
+          "Sub_topic_name": "Circular flow of income",
+          "description": "Understand and use the circular flow of income model showing flows between households and firms and the role of injections/withdrawals.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "2.4.1b",
+          "Sub_topic_name": "Income vs wealth",
+          "description": "Distinguish between income (flow) and wealth (stock) and apply to economic analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "2.4.2a",
+          "Sub_topic_name": "Injections and withdrawals effects",
+          "description": "Analyse the impact of injections into and withdrawals from the circular flow of income (e.g., I, G, X as injections; S, T, M as withdrawals) on the level of national income/output.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "2.4.3a",
+          "Sub_topic_name": "Equilibrium real national output (concept)",
+          "description": "Understand the concept of equilibrium real national output (where planned injections equal planned withdrawals / AD equals output).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "2.4.3b",
+          "Sub_topic_name": "AD/AS shifts and equilibrium output/price level",
+          "description": "Use AD/AS diagrams to show how shifts in AD or AS cause changes in equilibrium real national output and the equilibrium price level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8f",
+          "Specification_section_sub": "2.4.4a",
+          "Sub_topic_name": "Multiplier ratio",
+          "description": "Understand the multiplier ratio as the relationship between an initial change in injections (e.g., ΔI, ΔG, ΔX) and the total change in national income/output (ΔY).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8g",
+          "Specification_section_sub": "2.4.4b",
+          "Sub_topic_name": "Multiplier process",
+          "description": "Understand the multiplier process (re-spending chain) by which an initial increase in injections leads to successive rounds of income and consumption increases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8h",
+          "Specification_section_sub": "2.4.4c",
+          "Sub_topic_name": "Effects of the multiplier",
+          "description": "Analyse effects of the multiplier on the economy (e.g., amplified changes in GDP/output, employment, inflationary pressure, imports, fiscal position).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8i",
+          "Specification_section_sub": "2.4.4d",
+          "Sub_topic_name": "Marginal propensities and multiplier leakages",
+          "description": "Understand marginal propensities and their effects on the multiplier: marginal propensity to consume (MPC), save (MPS), tax (MPT), import (MPM); link to leakages (withdrawals) and injections.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8j",
+          "Specification_section_sub": "2.4.4e",
+          "Sub_topic_name": "Multiplier calculations (1/(1−MPC) and 1/MPW)",
+          "description": "Calculate the multiplier using formulae: 1/(1−MPC) and 1/MPW where MPW = MPS + MPT + MPM; apply to numerical contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8k",
+          "Specification_section_sub": "2.4.4f",
+          "Sub_topic_name": "Multiplier and shifts in AD",
+          "description": "Understand the significance of the multiplier for shifts in aggregate demand (AD): how changes in injections/propensities affect the magnitude of AD shifts and output changes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "2.5",
+      "Strand": "Theme 2: The UK economy – performance and policies",
+      "Topic_name": "Economic growth",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "2.5.1a",
+          "Sub_topic_name": "Causes of economic growth",
+          "description": "Analyse factors that could cause economic growth (e.g., increases in factors of production, productivity improvements, technological progress, investment, human capital).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "2.5.1b",
+          "Sub_topic_name": "Actual vs potential growth",
+          "description": "Distinguish between actual growth (short-run increases in real output) and potential growth (long-run increases in productive capacity/LRAS).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "2.5.1c",
+          "Sub_topic_name": "Trade and export-led growth",
+          "description": "Understand the importance of international trade for (export-led) economic growth; analyse how increased exports can raise AD, productivity, and economies of scale.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "2.5.2a",
+          "Sub_topic_name": "Actual growth rates vs long-term trend",
+          "description": "Distinguish between short-run/actual growth rates and long-term trend growth rates; interpret deviations from trend.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "2.5.2b",
+          "Sub_topic_name": "Output gaps (positive/negative) and measurement difficulties",
+          "description": "Understand positive and negative output gaps (spare capacity/overheating) and difficulties of measurement (estimating potential output, data revisions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "2.5.2c",
+          "Sub_topic_name": "AD/AS diagram of an output gap",
+          "description": "Use an AD/AS diagram to illustrate an output gap (level of spare capacity) in an economy.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "2.5.3a",
+          "Sub_topic_name": "Business (trade) cycle concept",
+          "description": "Understand the trade (business) cycle as fluctuations in economic activity around trend growth; identify phases.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "2.5.3b",
+          "Sub_topic_name": "Boom characteristics",
+          "description": "Understand characteristics of a boom (rapid growth, high confidence, rising inflationary pressure, low unemployment, possible asset bubbles).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "2.5.3c",
+          "Sub_topic_name": "Recession characteristics",
+          "description": "Understand characteristics of a recession (falling output for consecutive periods, rising unemployment, low confidence, disinflation/deflation risk).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "2.5.4a",
+          "Sub_topic_name": "Costs and benefits of economic growth",
+          "description": "Evaluate benefits and costs of economic growth and impacts on consumers, firms, government, and current/future living standards (e.g., incomes, public services vs externalities, inequality, sustainability).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "2.6",
+      "Strand": "Theme 2: The UK economy – performance and policies",
+      "Topic_name": "Macroeconomic objectives and policies",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "2.6.1a",
+          "Sub_topic_name": "Objective: economic growth",
+          "description": "Understand economic growth as a macroeconomic objective and how it may be measured/assessed in policy terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "2.6.1b",
+          "Sub_topic_name": "Objective: low unemployment",
+          "description": "Understand low unemployment as a macroeconomic objective and its importance for living standards and public finances.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "2.6.1c",
+          "Sub_topic_name": "Objective: low and stable inflation",
+          "description": "Understand low and stable inflation as a macroeconomic objective and reasons for prioritising price stability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "2.6.1d",
+          "Sub_topic_name": "Objective: current account balance",
+          "description": "Understand balance of payments equilibrium on the current account as a macroeconomic objective and reasons it may matter.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "2.6.1e",
+          "Sub_topic_name": "Objective: balanced government budget",
+          "description": "Understand a balanced government budget as a macroeconomic objective and distinguish between deficit/surplus goals over the cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "2.6.1f",
+          "Sub_topic_name": "Objective: environmental protection",
+          "description": "Understand protection of the environment as a macroeconomic objective and links to sustainability and externalities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10g",
+          "Specification_section_sub": "2.6.1g",
+          "Sub_topic_name": "Objective: greater income equality",
+          "description": "Understand greater income equality as a macroeconomic objective and possible trade-offs with other objectives.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10h",
+          "Specification_section_sub": "2.6.2a",
+          "Sub_topic_name": "Monetary vs fiscal policy",
+          "description": "Distinguish between monetary policy and fiscal policy as demand-side policies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10i",
+          "Specification_section_sub": "2.6.2b",
+          "Sub_topic_name": "Monetary policy instrument: interest rates",
+          "description": "Understand how changing interest rates (policy rate) affects AD components (C, I, net trade via exchange rates) and inflation/output in AD/AS terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10j",
+          "Specification_section_sub": "2.6.2b",
+          "Sub_topic_name": "Monetary policy instrument: quantitative easing (QE)",
+          "description": "Understand asset purchases to increase the money supply (quantitative easing): transmission mechanisms (liquidity, asset prices, yields, confidence) and potential limitations/risks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10k",
+          "Specification_section_sub": "2.6.2c",
+          "Sub_topic_name": "Fiscal policy instruments: spending and taxation",
+          "description": "Understand how government spending and taxation affect AD and the economy; relate to multiplier effects and AD/AS outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10l",
+          "Specification_section_sub": "2.6.2d",
+          "Sub_topic_name": "Budget deficit vs surplus",
+          "description": "Distinguish between a government budget (fiscal) deficit and a budget surplus.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10m",
+          "Specification_section_sub": "2.6.2e",
+          "Sub_topic_name": "Direct vs indirect taxation",
+          "description": "Distinguish between direct and indirect taxes and give examples of each.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10n",
+          "Specification_section_sub": "2.6.2f",
+          "Sub_topic_name": "AD/AS diagrams for demand-side policies",
+          "description": "Use AD/AS diagrams to illustrate demand-side policies (monetary and fiscal) and their effects on real output and price level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10o",
+          "Specification_section_sub": "2.6.2g",
+          "Sub_topic_name": "Bank of England and MPC",
+          "description": "Understand the role of the Bank of England in monetary policy, including the role and operation of the Monetary Policy Committee (MPC).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10p",
+          "Specification_section_sub": "2.6.2h",
+          "Sub_topic_name": "Demand-side policies in Great Depression and 2008 crisis",
+          "description": "Demonstrate awareness of demand-side policies used during the Great Depression and the Global Financial Crisis (2008), including differing interpretations and policy responses in the US and UK.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10q",
+          "Specification_section_sub": "2.6.2i",
+          "Sub_topic_name": "Strengths and weaknesses of demand-side policies",
+          "description": "Evaluate strengths and weaknesses/limitations of demand-side policies (time lags, crowding out, inflation, debt, liquidity trap, distributional effects, confidence).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10r",
+          "Specification_section_sub": "2.6.3a",
+          "Sub_topic_name": "Supply-side: market-based vs interventionist",
+          "description": "Distinguish between market-based and interventionist supply-side policy methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10s",
+          "Specification_section_sub": "2.6.3b",
+          "Sub_topic_name": "Supply-side policies: incentives",
+          "description": "Analyse supply-side policies to increase incentives (e.g., tax reforms, welfare reforms) and likely impacts on productivity/LRAS and possible equity trade-offs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10t",
+          "Specification_section_sub": "2.6.3b",
+          "Sub_topic_name": "Supply-side policies: competition",
+          "description": "Analyse supply-side policies to promote competition (e.g., deregulation, competition law) and impacts on efficiency, innovation and prices.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10u",
+          "Specification_section_sub": "2.6.3b",
+          "Sub_topic_name": "Supply-side policies: labour market reform",
+          "description": "Analyse supply-side policies to reform the labour market (e.g., reducing union power, increasing flexibility, improving mobility) and effects on employment, wages and productivity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10v",
+          "Specification_section_sub": "2.6.3b",
+          "Sub_topic_name": "Supply-side policies: skills and human capital",
+          "description": "Analyse supply-side policies to improve skills and quality of the labour force (education, training, apprenticeships) and impacts on productivity and long-run growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10w",
+          "Specification_section_sub": "2.6.3b",
+          "Sub_topic_name": "Supply-side policies: infrastructure",
+          "description": "Analyse supply-side policies to improve infrastructure (transport, digital, energy) and impacts on productivity, costs and LRAS.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10x",
+          "Specification_section_sub": "2.6.3c",
+          "Sub_topic_name": "AD/AS diagrams for supply-side policies",
+          "description": "Use AD/AS diagrams to illustrate supply-side policies, typically via shifts in LRAS (and potentially SRAS) and resulting effects on output/price level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10y",
+          "Specification_section_sub": "2.6.3d",
+          "Sub_topic_name": "Strengths and weaknesses of supply-side policies",
+          "description": "Evaluate strengths and weaknesses of supply-side policies (time lags, costs, uncertainty, distributional impacts, effectiveness depends on conditions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10z",
+          "Specification_section_sub": "2.6.4a",
+          "Sub_topic_name": "Conflicts and trade-offs between macro objectives",
+          "description": "Analyse potential conflicts and trade-offs between macroeconomic objectives (e.g., growth vs inflation, equality vs incentives, environment vs growth, current account vs growth).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10aa",
+          "Specification_section_sub": "2.6.4b",
+          "Sub_topic_name": "Short-run Phillips curve",
+          "description": "Understand the short-run Phillips curve and how it illustrates a potential trade-off between inflation and unemployment in the short run.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10ab",
+          "Specification_section_sub": "2.6.4c",
+          "Sub_topic_name": "Policy conflicts and trade-offs",
+          "description": "Analyse potential policy conflicts and trade-offs (e.g., fiscal tightening vs growth, interest rate rises vs unemployment, exchange rate policy vs inflation) and evaluate policy mixes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "3.1",
+      "Strand": "Theme 3: Business behaviour and the labour market",
+      "Topic_name": "Business growth",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "3.1.1a",
+          "Sub_topic_name": "Why some firms stay small vs grow",
+          "description": "Analyse reasons why some firms remain small and why others grow (e.g., market size, access to finance, entrepreneurship, risk preferences, regulation, economies of scale).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "3.1.1b",
+          "Sub_topic_name": "Divorce of ownership from control (principal–agent)",
+          "description": "Understand the significance of separation of ownership from control in large firms and the principal–agent problem (conflicts between shareholders and managers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "3.1.1c",
+          "Sub_topic_name": "Public vs private sector organisations",
+          "description": "Distinguish between public sector and private sector organisations and implications for objectives/constraints.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "3.1.1d",
+          "Sub_topic_name": "Profit vs not-for-profit organisations",
+          "description": "Distinguish between profit and not-for-profit organisations and explain how objectives and behaviour may differ.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "3.1.2a",
+          "Sub_topic_name": "Organic growth",
+          "description": "Understand organic growth (internal growth) as a method of business expansion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11f",
+          "Specification_section_sub": "3.1.2a",
+          "Sub_topic_name": "Vertical integration (forward/backward)",
+          "description": "Understand vertical integration as growth by merging with firms at different stages of production; distinguish forward vs backward vertical integration.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11g",
+          "Specification_section_sub": "3.1.2a",
+          "Sub_topic_name": "Horizontal integration",
+          "description": "Understand horizontal integration as growth by merging with firms at the same stage of production within the same industry.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11h",
+          "Specification_section_sub": "3.1.2a",
+          "Sub_topic_name": "Conglomerate integration",
+          "description": "Understand conglomerate integration as growth by merging with firms in different/unrelated industries (diversification).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11i",
+          "Specification_section_sub": "3.1.2b",
+          "Sub_topic_name": "Pros/cons of organic growth",
+          "description": "Evaluate advantages and disadvantages of organic growth (control, culture, risk, speed, economies of scale).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11j",
+          "Specification_section_sub": "3.1.2b",
+          "Sub_topic_name": "Pros/cons of vertical integration",
+          "description": "Evaluate advantages and disadvantages of vertical integration (secure supplies/outlets, reduce costs, market power vs management complexity, regulatory issues).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11k",
+          "Specification_section_sub": "3.1.2b",
+          "Sub_topic_name": "Pros/cons of horizontal integration",
+          "description": "Evaluate advantages and disadvantages of horizontal integration (economies of scale, market share, monopoly power vs diseconomies, integration problems, regulation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11l",
+          "Specification_section_sub": "3.1.2b",
+          "Sub_topic_name": "Pros/cons of conglomerate integration",
+          "description": "Evaluate advantages and disadvantages of conglomerate integration (risk spreading, diversification vs lack of focus, diseconomies, agency problems).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11m",
+          "Specification_section_sub": "3.1.2c",
+          "Sub_topic_name": "Constraints on business growth",
+          "description": "Analyse constraints on business growth: size of market, access to finance, owner objectives, and regulation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11n",
+          "Specification_section_sub": "3.1.3a",
+          "Sub_topic_name": "Reasons for demergers",
+          "description": "Analyse reasons for demergers (e.g., focus on core activities, unlocking shareholder value, reducing diseconomies, regulatory pressures).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11o",
+          "Specification_section_sub": "3.1.3b",
+          "Sub_topic_name": "Impacts of demergers",
+          "description": "Analyse impact of demergers on businesses, workers and consumers (efficiency, employment, prices, choice, innovation).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "3.2",
+      "Strand": "Theme 3: Business behaviour and the labour market",
+      "Topic_name": "Business objectives",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "3.2.1a",
+          "Sub_topic_name": "Profit maximisation objective",
+          "description": "Understand profit maximisation as a business objective and reasons firms may pursue it; relate to economic models of firm behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "3.2.1a",
+          "Sub_topic_name": "Revenue maximisation objective",
+          "description": "Understand revenue maximisation as a business objective and reasons it may be pursued (e.g., managerial motives, market share).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "3.2.1a",
+          "Sub_topic_name": "Sales maximisation objective",
+          "description": "Understand sales maximisation as a business objective and reasons it may be pursued (e.g., growth, market presence, bonuses).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "3.2.1a",
+          "Sub_topic_name": "Satisficing objective",
+          "description": "Understand satisficing as a business objective (aiming for satisfactory rather than maximum outcomes), including links to uncertainty and principal–agent issues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "3.2.1b",
+          "Sub_topic_name": "Diagramming business objectives",
+          "description": "Use diagrams and formulae to illustrate profit maximisation, revenue maximisation and sales maximisation (e.g., MR=MC for profit max; TR maximisation at MR=0; sales maximisation subject to profit constraint).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "3.3",
+      "Strand": "Theme 3: Business behaviour and the labour market",
+      "Topic_name": "Revenues, costs and profits",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "3.3.1a",
+          "Sub_topic_name": "Revenue concepts (TR, AR, MR)",
+          "description": "Use formulae to calculate and understand relationships between total revenue (TR), average revenue (AR) and marginal revenue (MR); interpret in price/output terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "3.3.1b",
+          "Sub_topic_name": "PED and revenue relationships (calculations)",
+          "description": "Use price elasticity of demand (PED) to analyse revenue: link PED to TR/AR/MR and perform required calculations (including how MR relates to PED and when TR rises/falls with price changes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "3.3.2a",
+          "Sub_topic_name": "Cost concepts (TC, TFC, TVC, AC, AFC, AVC, MC)",
+          "description": "Use formulae to calculate and understand relationships between total cost (TC), total fixed cost (TFC), total variable cost (TVC), average (total) cost (AC/ATC), average fixed cost (AFC), average variable cost (AVC), and marginal cost (MC).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "3.3.2b",
+          "Sub_topic_name": "Diminishing marginal productivity and SR cost curves",
+          "description": "Derive/interpret short-run cost curves from the assumption of diminishing marginal productivity (law of diminishing returns) and explain U-shapes of AVC/AC and rising MC.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "3.3.2c",
+          "Sub_topic_name": "Short-run vs long-run average cost curves",
+          "description": "Understand the relationship between short-run average cost (SRAC) curves and the long-run average cost (LRAC) curve (envelope), and implications for scale decisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13f",
+          "Specification_section_sub": "3.3.3a",
+          "Sub_topic_name": "Economies and diseconomies of scale (types)",
+          "description": "Understand types of economies of scale and diseconomies of scale (e.g., technical, managerial, purchasing, financial, marketing; coordination/communication issues).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13g",
+          "Specification_section_sub": "3.3.3b",
+          "Sub_topic_name": "Minimum efficient scale (MES)",
+          "description": "Understand minimum efficient scale (MES) as the output level where LRAC is minimised/near-minimised and its significance for market structure and entry barriers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13h",
+          "Specification_section_sub": "3.3.3c",
+          "Sub_topic_name": "Internal vs external economies of scale",
+          "description": "Distinguish between internal economies of scale (within firm) and external economies of scale (industry/cluster-related).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13i",
+          "Specification_section_sub": "3.3.4a",
+          "Sub_topic_name": "Profit maximisation condition",
+          "description": "Understand the condition for profit maximisation (e.g., MR=MC; and MC cuts MR from below) and apply in diagrams/numerical settings.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13j",
+          "Specification_section_sub": "3.3.4b",
+          "Sub_topic_name": "Normal profit, supernormal profit and losses",
+          "description": "Distinguish between normal profit, supernormal (abnormal) profit and losses; relate to explicit and implicit costs and long-run equilibrium.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13k",
+          "Specification_section_sub": "3.3.4c",
+          "Sub_topic_name": "Shut-down points (SR and LR)",
+          "description": "Use diagrammatic analysis to understand short-run and long-run shut-down points (e.g., SR shutdown when P<AVC; LR when P<AC) and implications for firm decisions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "3.4",
+      "Strand": "Theme 3: Business behaviour and the labour market",
+      "Topic_name": "Market structures",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "3.4.1a",
+          "Sub_topic_name": "Allocative efficiency",
+          "description": "Understand allocative efficiency (P=MC; resources allocated to maximise welfare) and how it may differ across market structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "3.4.1b",
+          "Sub_topic_name": "Productive efficiency",
+          "description": "Understand productive efficiency (production at lowest average cost; producing on the AC minimum) and how it may differ across market structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "3.4.1c",
+          "Sub_topic_name": "Dynamic efficiency",
+          "description": "Understand dynamic efficiency (innovation, R&D, new products/processes over time) and links to competition/market power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14d",
+          "Specification_section_sub": "3.4.1d",
+          "Sub_topic_name": "X-inefficiency",
+          "description": "Understand X-inefficiency as organisational slack/cost inefficiency due to lack of competitive pressure; apply to monopoly/oligopoly contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14e",
+          "Specification_section_sub": "3.4.1e",
+          "Sub_topic_name": "Efficiency comparisons across market structures",
+          "description": "Analyse efficiency/inefficiency (allocative, productive, dynamic, X-inefficiency) in different market structures and evaluate trade-offs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14f",
+          "Specification_section_sub": "3.4.2a",
+          "Sub_topic_name": "Perfect competition characteristics",
+          "description": "Understand characteristics of perfect competition (many firms, homogeneous product, perfect information, no barriers, price takers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14g",
+          "Specification_section_sub": "3.4.2b",
+          "Sub_topic_name": "Perfect competition equilibrium (SR and LR)",
+          "description": "Explain and illustrate profit-maximising equilibrium in perfect competition in the short run and long run, including normal profit in LR equilibrium.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14h",
+          "Specification_section_sub": "3.4.2c",
+          "Sub_topic_name": "Perfect competition diagrams",
+          "description": "Use diagrammatic analysis for perfect competition (AR=MR=P, MC, AC) to show output, price, and profit/loss in SR and LR.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14i",
+          "Specification_section_sub": "3.4.3a",
+          "Sub_topic_name": "Monopolistic competition characteristics",
+          "description": "Understand characteristics of monopolistically competitive markets (many firms, product differentiation, some price-setting power, low barriers).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14j",
+          "Specification_section_sub": "3.4.3b",
+          "Sub_topic_name": "Monopolistic competition equilibrium (SR and LR)",
+          "description": "Explain and illustrate profit-maximising equilibrium in monopolistic competition in SR and LR (including LR normal profit with excess capacity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14k",
+          "Specification_section_sub": "3.4.3c",
+          "Sub_topic_name": "Monopolistic competition diagrams",
+          "description": "Use diagrammatic analysis for monopolistic competition (downward AR, MR, MC, AC) in SR and LR.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14l",
+          "Specification_section_sub": "3.4.4a",
+          "Sub_topic_name": "Oligopoly characteristics",
+          "description": "Understand characteristics of oligopoly: high barriers to entry/exit, high concentration ratio, interdependence of firms, and product differentiation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14m",
+          "Specification_section_sub": "3.4.4b",
+          "Sub_topic_name": "n-firm concentration ratios (calculation and meaning)",
+          "description": "Calculate n-firm concentration ratios and analyse their significance for market power/competition in an industry.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14n",
+          "Specification_section_sub": "3.4.4c",
+          "Sub_topic_name": "Collusive vs non-collusive behaviour (reasons)",
+          "description": "Analyse reasons for collusive and non-collusive behaviour in oligopoly (incentives to cooperate vs temptations to cheat; role of interdependence and repeated interaction).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14o",
+          "Specification_section_sub": "3.4.4d",
+          "Sub_topic_name": "Overt vs tacit collusion (cartels, price leadership)",
+          "description": "Distinguish overt collusion (cartels) and tacit collusion; understand price leadership as a form of tacit coordination and implications for prices/output.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14p",
+          "Specification_section_sub": "3.4.4e",
+          "Sub_topic_name": "Game theory: prisoner's dilemma (2 firm/2 outcome)",
+          "description": "Use simple game theory: understand and apply the prisoner’s dilemma in a simple two-firm/two-outcome model to explain incentives for non-collusion and outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14q",
+          "Specification_section_sub": "3.4.4f",
+          "Sub_topic_name": "Price competition: price wars",
+          "description": "Understand price wars in oligopoly, why they occur, and impacts on firms/consumers (profits, market share, possible predation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14r",
+          "Specification_section_sub": "3.4.4f",
+          "Sub_topic_name": "Price competition: predatory pricing",
+          "description": "Understand predatory pricing as a strategy to drive rivals out or deter entry; evaluate feasibility and consequences (short-run losses vs long-run market power).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14s",
+          "Specification_section_sub": "3.4.4f",
+          "Sub_topic_name": "Price competition: limit pricing",
+          "description": "Understand limit pricing as setting price low enough to deter entry; analyse conditions and implications for welfare and competition.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14t",
+          "Specification_section_sub": "3.4.4g",
+          "Sub_topic_name": "Non-price competition in oligopoly",
+          "description": "Understand types of non-price competition (advertising, branding, product quality/features, customer service, loyalty schemes) and why they are used in oligopoly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14u",
+          "Specification_section_sub": "3.4.5a",
+          "Sub_topic_name": "Monopoly characteristics",
+          "description": "Understand characteristics of monopoly (single dominant firm, high barriers, price maker) and sources of monopoly power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14v",
+          "Specification_section_sub": "3.4.5b",
+          "Sub_topic_name": "Monopoly profit-maximising equilibrium",
+          "description": "Explain monopoly profit-maximising equilibrium (MR=MC) and resulting price/output versus competitive outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14w",
+          "Specification_section_sub": "3.4.5c",
+          "Sub_topic_name": "Monopoly diagrams",
+          "description": "Use diagrammatic analysis for monopoly (AR, MR, MC, AC) to show price, output, and profits; identify welfare loss (deadweight loss) where relevant.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14x",
+          "Specification_section_sub": "3.4.5d",
+          "Sub_topic_name": "Third-degree price discrimination (conditions and diagrams)",
+          "description": "Understand third-degree price discrimination: necessary conditions (market power, separable markets, different PED, no resale/arbitrage) and use diagrams to show different prices/outputs in different markets.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14y",
+          "Specification_section_sub": "3.4.5d",
+          "Sub_topic_name": "Price discrimination: costs and benefits",
+          "description": "Evaluate costs and benefits of third-degree price discrimination to consumers and producers (consumer surplus redistribution, output changes, welfare implications).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14z",
+          "Specification_section_sub": "3.4.5e",
+          "Sub_topic_name": "Monopoly: stakeholder impacts",
+          "description": "Evaluate costs and benefits of monopoly for firms, consumers, employees and suppliers (prices, choice, efficiency, innovation, wages, buyer power).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14aa",
+          "Specification_section_sub": "3.4.5f",
+          "Sub_topic_name": "Natural monopoly",
+          "description": "Understand natural monopoly (declining LRAC over relevant range, large fixed costs, network industries) and implications for regulation and efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14ab",
+          "Specification_section_sub": "3.4.6a",
+          "Sub_topic_name": "Monopsony characteristics and conditions",
+          "description": "Understand monopsony as a market with a single (or dominant) buyer; explain conditions under which a monopsony operates (e.g., labour market with one major employer) and how it can influence price/wages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14ac",
+          "Specification_section_sub": "3.4.6b",
+          "Sub_topic_name": "Monopsony: stakeholder impacts",
+          "description": "Evaluate costs and benefits of a monopsony to firms, consumers, employees and suppliers (lower input prices/wages, employment effects, possible efficiency outcomes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14ad",
+          "Specification_section_sub": "3.4.7a",
+          "Sub_topic_name": "Contestable markets characteristics",
+          "description": "Understand characteristics of contestable markets (ease of entry/exit, low sunk costs, threat of hit-and-run entry).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14ae",
+          "Specification_section_sub": "3.4.7b",
+          "Sub_topic_name": "Contestability and firm behaviour",
+          "description": "Analyse implications of contestable markets for firm behaviour (limit pricing, higher efficiency, lower supernormal profits even with few firms).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14af",
+          "Specification_section_sub": "3.4.7c",
+          "Sub_topic_name": "Barriers to entry and exit (types)",
+          "description": "Understand types of barriers to entry and exit (legal, technological, branding, economies of scale, access to resources, predation, switching costs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14ag",
+          "Specification_section_sub": "3.4.7d",
+          "Sub_topic_name": "Sunk costs and contestability",
+          "description": "Understand sunk costs and how they affect the degree of contestability; relate sunk costs to entry/exit decisions and market outcomes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "3.5",
+      "Strand": "Theme 3: Business behaviour and the labour market",
+      "Topic_name": "Labour market",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "3.5.1a",
+          "Sub_topic_name": "Determinants of demand for labour",
+          "description": "Analyse factors influencing demand for labour (e.g., demand for product, labour productivity, wage rate, substitutability with capital/technology).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "3.5.1b",
+          "Sub_topic_name": "Derived demand for labour",
+          "description": "Understand labour demand as a derived demand (depends on demand for the goods/services labour helps produce).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15c",
+          "Specification_section_sub": "3.5.2a",
+          "Sub_topic_name": "Determinants of labour supply to an occupation",
+          "description": "Analyse factors influencing supply of labour to a particular occupation (e.g., wage rates, working conditions, training requirements, mobility, demographics, preferences).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15d",
+          "Specification_section_sub": "3.5.2b",
+          "Sub_topic_name": "Labour market failure: mobility/immobility",
+          "description": "Understand market failure in labour markets arising from geographical and occupational mobility and immobility of labour; analyse causes and consequences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15e",
+          "Specification_section_sub": "3.5.3a",
+          "Sub_topic_name": "Labour market equilibrium (wage determination)",
+          "description": "Use diagrams to analyse labour market equilibrium: wage rate and employment level where labour demand equals labour supply.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15f",
+          "Specification_section_sub": "3.5.3b",
+          "Sub_topic_name": "Current labour market issues",
+          "description": "Demonstrate understanding of current labour market issues (e.g., minimum wage debates, gig economy, inequality, shortages), applying labour market theory.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15g",
+          "Specification_section_sub": "3.5.3c",
+          "Sub_topic_name": "Government intervention: maximum and minimum wages",
+          "description": "Analyse government intervention in labour markets through maximum wages and minimum wages; use diagrams to show effects on employment, unemployment, and wages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15h",
+          "Specification_section_sub": "3.5.3c",
+          "Sub_topic_name": "Public sector wage setting",
+          "description": "Understand public sector wage setting as a form of intervention and analyse impacts on labour allocation, fiscal position and service quality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15i",
+          "Specification_section_sub": "3.5.3c",
+          "Sub_topic_name": "Policies to tackle labour immobility",
+          "description": "Analyse policies to tackle labour market immobility (e.g., retraining, relocation support, information, housing policies) and evaluate effectiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15j",
+          "Specification_section_sub": "3.5.3d",
+          "Sub_topic_name": "Elasticities of labour demand and supply",
+          "description": "Understand significance of elasticity of demand for labour and elasticity of supply of labour for wage and employment outcomes and for the impacts of interventions (e.g., minimum wage incidence).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "3.6",
+      "Strand": "Theme 3: Business behaviour and the labour market",
+      "Topic_name": "Government intervention",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "3.6.1a",
+          "Sub_topic_name": "Merger control",
+          "description": "Understand government intervention to control mergers (competition policy): reasons (market power, consumer welfare) and possible remedies/approaches.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16b",
+          "Specification_section_sub": "3.6.1b",
+          "Sub_topic_name": "Monopoly regulation: price regulation",
+          "description": "Analyse price regulation of monopolies (e.g., price caps) and effects on prices, profits, efficiency and consumers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16c",
+          "Specification_section_sub": "3.6.1b",
+          "Sub_topic_name": "Monopoly regulation: profit regulation",
+          "description": "Analyse profit regulation (limiting returns) and evaluate impacts on investment, efficiency and consumer outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16d",
+          "Specification_section_sub": "3.6.1b",
+          "Sub_topic_name": "Monopoly regulation: quality standards",
+          "description": "Understand use of quality standards in regulating monopolies; evaluate impacts on costs, service quality and welfare.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16e",
+          "Specification_section_sub": "3.6.1b",
+          "Sub_topic_name": "Monopoly regulation: performance targets",
+          "description": "Understand performance targets as regulatory tools for monopolies and evaluate effectiveness and incentives created.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16f",
+          "Specification_section_sub": "3.6.1c",
+          "Sub_topic_name": "Promoting competition: small business promotion",
+          "description": "Analyse policies to enhance competition/contestability through promotion of small business (e.g., grants, reduced barriers) and effects on market outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16g",
+          "Specification_section_sub": "3.6.1c",
+          "Sub_topic_name": "Promoting competition: deregulation",
+          "description": "Analyse deregulation as a method to promote competition and contestability; evaluate benefits and risks (e.g., safety, externalities).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16h",
+          "Specification_section_sub": "3.6.1c",
+          "Sub_topic_name": "Promoting competition: competitive tendering",
+          "description": "Understand competitive tendering for government contracts as a method to increase competition; evaluate effects on cost, quality and efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16i",
+          "Specification_section_sub": "3.6.1c",
+          "Sub_topic_name": "Privatisation",
+          "description": "Understand privatisation as a policy to promote competition/efficiency; evaluate impacts on prices, quality, investment, equity and market power.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16j",
+          "Specification_section_sub": "3.6.1d",
+          "Sub_topic_name": "Restricting monopsony power",
+          "description": "Understand interventions to protect suppliers and employees by restricting monopsony power of firms; evaluate impacts on wages, employment, and efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16k",
+          "Specification_section_sub": "3.6.1d",
+          "Sub_topic_name": "Nationalisation",
+          "description": "Understand nationalisation as intervention to protect suppliers/employees or address monopoly/market failure; evaluate likely impacts on efficiency, investment and welfare.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16l",
+          "Specification_section_sub": "3.6.2a",
+          "Sub_topic_name": "Intervention impacts on prices and profits",
+          "description": "Analyse impact of government intervention on prices and profits in different market structures; use appropriate diagrams/evidence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16m",
+          "Specification_section_sub": "3.6.2a",
+          "Sub_topic_name": "Intervention impacts on efficiency",
+          "description": "Analyse impact of intervention on allocative/productive/dynamic efficiency and X-inefficiency; evaluate trade-offs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16n",
+          "Specification_section_sub": "3.6.2a",
+          "Sub_topic_name": "Intervention impacts on quality and choice",
+          "description": "Analyse impact of intervention on product/service quality and consumer choice; evaluate outcomes for stakeholders.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16o",
+          "Specification_section_sub": "3.6.2b",
+          "Sub_topic_name": "Limits: regulatory capture",
+          "description": "Understand regulatory capture as a limit to government intervention (regulators influenced by regulated firms) and implications for policy effectiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "16p",
+          "Specification_section_sub": "3.6.2b",
+          "Sub_topic_name": "Limits: asymmetric information in regulation",
+          "description": "Understand asymmetric information between regulators and firms/markets as a limit to intervention; evaluate how it can lead to ineffective regulation or unintended outcomes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "4.1",
+      "Strand": "Theme 4: A global perspective",
+      "Topic_name": "International economics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "4.1.1a",
+          "Sub_topic_name": "Globalisation characteristics",
+          "description": "Understand characteristics of globalisation (increased international integration of markets, trade, finance, migration, information and global supply chains).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "4.1.1b",
+          "Sub_topic_name": "Drivers of globalisation (last 50 years)",
+          "description": "Analyse factors contributing to globalisation over the last 50 years (e.g., technology, transport costs, trade liberalisation, TNCs, institutions, communication).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "4.1.1c",
+          "Sub_topic_name": "Impacts of globalisation and global companies",
+          "description": "Evaluate impacts of globalisation and global companies (TNCs) on countries, governments, producers/consumers, workers and the environment (winners/losers, tax competition, labour standards, externalities).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "4.1.2a",
+          "Sub_topic_name": "Absolute and comparative advantage (numerical/diagrammatic)",
+          "description": "Understand and apply absolute advantage and comparative advantage using numerical and diagrammatic examples; include assumptions and limitations of comparative advantage theory.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17e",
+          "Specification_section_sub": "4.1.2b",
+          "Sub_topic_name": "Pros/cons of specialisation and trade (international)",
+          "description": "Evaluate advantages and disadvantages of specialisation and trade in an international context (efficiency gains vs dependency, adjustment costs, inequality, environment).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17f",
+          "Specification_section_sub": "4.1.3a",
+          "Sub_topic_name": "Determinants of trade patterns and changing trade flows",
+          "description": "Analyse factors influencing patterns of trade and changes in trade flows: comparative advantage, impact of emerging economies, growth of trading blocs/bilateral agreements, and changes in relative exchange rates.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17g",
+          "Specification_section_sub": "4.1.4a",
+          "Sub_topic_name": "Terms of trade calculation",
+          "description": "Calculate terms of trade (ToT) (e.g., index of export prices / index of import prices ×100) and interpret changes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17h",
+          "Specification_section_sub": "4.1.4b",
+          "Sub_topic_name": "Determinants of terms of trade",
+          "description": "Analyse factors influencing a country’s terms of trade (e.g., exchange rates, global demand, commodity prices, inflation differentials, productivity/quality).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17i",
+          "Specification_section_sub": "4.1.4c",
+          "Sub_topic_name": "Impacts of terms of trade changes",
+          "description": "Evaluate impact of changes in a country’s terms of trade on living standards, current account, growth and inflation; consider elasticities and dependency on imports/exports.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17j",
+          "Specification_section_sub": "4.1.5a",
+          "Sub_topic_name": "Trading blocs: free trade areas, customs unions, common markets",
+          "description": "Understand types of trading blocs/regional trade agreements: free trade areas, customs unions and common markets; explain key features and differences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17k",
+          "Specification_section_sub": "4.1.5a",
+          "Sub_topic_name": "Monetary unions and Eurozone success conditions",
+          "description": "Understand monetary unions and conditions necessary for their success, with particular reference to the Eurozone (e.g., convergence, labour mobility, fiscal transfers, similar cycles).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17l",
+          "Specification_section_sub": "4.1.5b",
+          "Sub_topic_name": "Costs and benefits of regional trade agreements",
+          "description": "Evaluate costs and benefits of regional trade agreements (trade creation/diversion, economies of scale, competition, sovereignty issues).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17m",
+          "Specification_section_sub": "4.1.5c",
+          "Sub_topic_name": "WTO role in trade liberalisation",
+          "description": "Understand the role of the World Trade Organisation (WTO) in trade liberalisation, rule-setting and dispute settlement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17n",
+          "Specification_section_sub": "4.1.5d",
+          "Sub_topic_name": "Conflicts between regional agreements and WTO",
+          "description": "Analyse possible conflicts between regional trade agreements and the WTO (e.g., discrimination, rules, enforcement).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17o",
+          "Specification_section_sub": "4.1.6a",
+          "Sub_topic_name": "Reasons for trade protectionism",
+          "description": "Analyse reasons for restrictions on free trade (e.g., infant industry, strategic industries, protect jobs, anti-dumping, revenue, environmental/labour standards).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17p",
+          "Specification_section_sub": "4.1.6b",
+          "Sub_topic_name": "Protectionism tools: tariffs, quotas, subsidies, non-tariff barriers",
+          "description": "Understand types of trade restrictions: tariffs, quotas, subsidies to domestic producers, and non-tariff barriers; explain how each affects price/quantity/trade flows.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17q",
+          "Specification_section_sub": "4.1.6c",
+          "Sub_topic_name": "Impacts of protectionism",
+          "description": "Evaluate impacts of protectionist policies on consumers, producers, governments, living standards and equality (domestic and global), including retaliation risks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17r",
+          "Specification_section_sub": "4.1.7a",
+          "Sub_topic_name": "Balance of payments components (current, capital, financial)",
+          "description": "Understand components of the balance of payments: the current account, the capital account and the financial account.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17s",
+          "Specification_section_sub": "4.1.7b",
+          "Sub_topic_name": "Causes of current account deficits/surpluses",
+          "description": "Analyse causes of current account deficits and surpluses (competitiveness, exchange rates, income, savings/investment balance, commodity dependence).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17t",
+          "Specification_section_sub": "4.1.7c",
+          "Sub_topic_name": "Policies to reduce current account imbalance",
+          "description": "Evaluate measures to reduce a country’s current account imbalance (e.g., devaluation, supply-side competitiveness, demand management, protectionism) and consider constraints/trade-offs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17u",
+          "Specification_section_sub": "4.1.7d",
+          "Sub_topic_name": "Global trade imbalances significance",
+          "description": "Understand significance of global trade imbalances (e.g., debt accumulation, global demand, exchange rate tensions, financial stability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17v",
+          "Specification_section_sub": "4.1.8a",
+          "Sub_topic_name": "Exchange rate systems: floating, fixed, managed",
+          "description": "Distinguish exchange rate systems: floating, fixed and managed exchange rates; understand how each operates and policy implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17w",
+          "Specification_section_sub": "4.1.8b",
+          "Sub_topic_name": "Revaluation vs appreciation",
+          "description": "Distinguish between revaluation (official increase under fixed/managed systems) and appreciation (market-driven increase under floating) of a currency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17x",
+          "Specification_section_sub": "4.1.8c",
+          "Sub_topic_name": "Devaluation vs depreciation",
+          "description": "Distinguish between devaluation (official decrease under fixed/managed systems) and depreciation (market-driven fall under floating) of a currency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17y",
+          "Specification_section_sub": "4.1.8d",
+          "Sub_topic_name": "Determinants of floating exchange rates",
+          "description": "Analyse factors influencing floating exchange rates (e.g., interest rates, inflation expectations, current account, capital flows/FDI, speculation, confidence).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17z",
+          "Specification_section_sub": "4.1.8e",
+          "Sub_topic_name": "Government intervention in FX markets",
+          "description": "Understand government/central bank intervention in currency markets through foreign currency transactions and the use of interest rates; evaluate effectiveness and costs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17aa",
+          "Specification_section_sub": "4.1.8f",
+          "Sub_topic_name": "Competitive devaluation/depreciation",
+          "description": "Understand competitive devaluation/depreciation and evaluate consequences (trade retaliation, inflation, ‘currency wars’).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17ab",
+          "Specification_section_sub": "4.1.8g",
+          "Sub_topic_name": "Exchange rates and current account (Marshall–Lerner, J-curve)",
+          "description": "Analyse impact of exchange rate changes on the current account, referencing Marshall–Lerner condition and the J-curve effect; apply elasticities/time-lag reasoning.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17ac",
+          "Specification_section_sub": "4.1.8g",
+          "Sub_topic_name": "Exchange rates and growth/employment",
+          "description": "Analyse how exchange rate changes affect economic growth and employment/unemployment through net exports, AD and competitiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17ad",
+          "Specification_section_sub": "4.1.8g",
+          "Sub_topic_name": "Exchange rates and inflation",
+          "description": "Analyse how exchange rate changes affect inflation (import prices, cost-push pressures, AD effects).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17ae",
+          "Specification_section_sub": "4.1.8g",
+          "Sub_topic_name": "Exchange rates and FDI flows",
+          "description": "Analyse how exchange rate changes affect foreign direct investment (FDI) inflows/outflows and multinational investment decisions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17af",
+          "Specification_section_sub": "4.1.9a",
+          "Sub_topic_name": "Competitiveness measure: relative unit labour costs",
+          "description": "Understand relative unit labour costs as a measure of international competitiveness and how they are influenced by wages and productivity.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17ag",
+          "Specification_section_sub": "4.1.9a",
+          "Sub_topic_name": "Competitiveness measure: relative export prices",
+          "description": "Understand relative export prices as a measure of international competitiveness, including the role of exchange rates and domestic costs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17ah",
+          "Specification_section_sub": "4.1.9b",
+          "Sub_topic_name": "Determinants of international competitiveness",
+          "description": "Analyse factors influencing international competitiveness (productivity, costs, innovation, infrastructure, skills, exchange rates, regulation, quality/branding).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17ai",
+          "Specification_section_sub": "4.1.9c",
+          "Sub_topic_name": "Significance of competitiveness (benefits/problems)",
+          "description": "Evaluate significance of international competitiveness: benefits of being competitive (exports, growth, jobs, current account) and problems of being uncompetitive (deficits, deindustrialisation, unemployment).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "4.2",
+      "Strand": "Theme 4: A global perspective",
+      "Topic_name": "Poverty and inequality",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "4.2.1a",
+          "Sub_topic_name": "Absolute vs relative poverty",
+          "description": "Distinguish between absolute poverty and relative poverty and apply to international and within-country comparisons.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "4.2.1b",
+          "Sub_topic_name": "Measuring absolute and relative poverty",
+          "description": "Understand measures of absolute poverty and relative poverty (e.g., poverty lines, % below median income) and interpret data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18c",
+          "Specification_section_sub": "4.2.1c",
+          "Sub_topic_name": "Causes of changes in poverty",
+          "description": "Analyse causes of changes in absolute poverty and relative poverty (growth, distribution, conflict, policy, demographics).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18d",
+          "Specification_section_sub": "4.2.2a",
+          "Sub_topic_name": "Wealth vs income inequality",
+          "description": "Distinguish between wealth inequality and income inequality; explain why wealth inequality can differ from income inequality.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18e",
+          "Specification_section_sub": "4.2.2b",
+          "Sub_topic_name": "Lorenz curve",
+          "description": "Construct/interpret Lorenz curves using diagrammatic analysis to show income distribution and inequality changes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18f",
+          "Specification_section_sub": "4.2.2b",
+          "Sub_topic_name": "Gini coefficient",
+          "description": "Understand and interpret the Gini coefficient as a numerical measure of income inequality derived from the Lorenz curve; compare across countries/time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18g",
+          "Specification_section_sub": "4.2.2c",
+          "Sub_topic_name": "Causes of inequality within and between countries",
+          "description": "Analyse causes of income and wealth inequality within countries and between countries (education/skills, technology, globalisation, labour market institutions, inheritance, tax/benefits, property ownership).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18h",
+          "Specification_section_sub": "4.2.2d",
+          "Sub_topic_name": "Development and inequality relationship",
+          "description": "Analyse impact of economic change and development on inequality (e.g., Kuznets-type effects, structural change, policy context).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18i",
+          "Specification_section_sub": "4.2.2e",
+          "Sub_topic_name": "Capitalism and inequality",
+          "description": "Evaluate significance of capitalism for inequality, considering how market-based income distribution, returns to capital, and policy choices may affect inequality outcomes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "4.3",
+      "Strand": "Theme 4: A global perspective",
+      "Topic_name": "Emerging and developing economies",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "4.3.1a",
+          "Sub_topic_name": "HDI dimensions and construction",
+          "description": "Understand the three dimensions of the Human Development Index (HDI)—education, health, and living standards—and how they are measured and combined into an index.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19b",
+          "Specification_section_sub": "4.3.1b",
+          "Sub_topic_name": "HDI evaluation (pros/cons)",
+          "description": "Evaluate advantages and limitations of using HDI to compare development between countries and over time (multi-dimensional vs data/weighting/inequality limitations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19c",
+          "Specification_section_sub": "4.3.1c",
+          "Sub_topic_name": "Other development indicators",
+          "description": "Understand other indicators of development beyond HDI (e.g., GDP per capita, poverty measures, literacy, life expectancy, access to clean water, inequality-adjusted measures).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19d",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Primary product dependency",
+          "description": "Analyse how primary product dependency can affect growth and development (terms of trade volatility, low value-added, Dutch disease risks).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19e",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Commodity price volatility",
+          "description": "Analyse how volatility of commodity prices affects developing economies’ revenues, stability, investment and development outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19f",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Savings gap (Harrod–Domar)",
+          "description": "Understand the savings gap using the Harrod–Domar model: how low savings/investment can constrain growth; link to capital accumulation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19g",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Foreign currency gap",
+          "description": "Understand the foreign currency gap as a development constraint (insufficient foreign exchange to import capital goods/inputs needed for growth).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19h",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Capital flight",
+          "description": "Analyse capital flight and how it constrains development (loss of domestic savings/tax base, reduced investment).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19i",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Demographic factors",
+          "description": "Analyse demographic factors affecting growth and development (dependency ratios, population growth, urbanisation, demographic dividend).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19j",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Debt as a development constraint",
+          "description": "Analyse how debt levels and debt servicing can constrain growth and development (crowding out, austerity, default risk).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19k",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Access to credit and banking",
+          "description": "Analyse how limited access to credit/banking affects entrepreneurship, investment, consumption smoothing and development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19l",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Infrastructure and development",
+          "description": "Analyse the role of infrastructure (transport, energy, water, telecoms) in supporting productivity, trade and development.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19m",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Education/skills and development",
+          "description": "Analyse how education and skills (human capital) affect productivity, innovation, employability and development outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19n",
+          "Specification_section_sub": "4.3.2a",
+          "Sub_topic_name": "Property rights and development",
+          "description": "Analyse how absence of secure property rights can hinder investment, access to credit (collateral), and efficient resource allocation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19o",
+          "Specification_section_sub": "4.3.2b",
+          "Sub_topic_name": "Non-economic factors affecting development",
+          "description": "Analyse impact of non-economic factors on growth and development (e.g., governance, corruption, political stability, institutions, culture, geography, conflict).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19p",
+          "Specification_section_sub": "4.3.3a",
+          "Sub_topic_name": "Market-oriented: trade liberalisation",
+          "description": "Evaluate trade liberalisation as a market-oriented development strategy (comparative advantage gains vs adjustment costs, infant industry concerns).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19q",
+          "Specification_section_sub": "4.3.3a",
+          "Sub_topic_name": "Market-oriented: promoting FDI",
+          "description": "Evaluate promotion of foreign direct investment (FDI) as a development strategy (capital/technology transfer vs profit repatriation, enclave effects).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19r",
+          "Specification_section_sub": "4.3.3a",
+          "Sub_topic_name": "Market-oriented: removing government subsidies",
+          "description": "Evaluate removal of government subsidies as a development strategy (efficiency/fiscal sustainability vs social impacts, poverty).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19s",
+          "Specification_section_sub": "4.3.3a",
+          "Sub_topic_name": "Market-oriented: floating exchange rates",
+          "description": "Evaluate floating exchange rate systems as a development strategy (automatic adjustment vs volatility, inflation risks).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19t",
+          "Specification_section_sub": "4.3.3a",
+          "Sub_topic_name": "Market-oriented: microfinance",
+          "description": "Evaluate microfinance schemes as a development strategy (financial inclusion vs interest burdens, limited scale).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19u",
+          "Specification_section_sub": "4.3.3a",
+          "Sub_topic_name": "Market-oriented: privatisation (development context)",
+          "description": "Evaluate privatisation as a development strategy (efficiency/FDI vs access/affordability, monopoly power, governance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19v",
+          "Specification_section_sub": "4.3.3b",
+          "Sub_topic_name": "Interventionist: human capital development",
+          "description": "Evaluate interventionist strategies to develop human capital (education/health) and links to productivity and inclusive growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19w",
+          "Specification_section_sub": "4.3.3b",
+          "Sub_topic_name": "Interventionist: protectionism (development context)",
+          "description": "Evaluate protectionism as an interventionist development strategy (infant industry protection vs inefficiency, retaliation, higher prices).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19x",
+          "Specification_section_sub": "4.3.3b",
+          "Sub_topic_name": "Interventionist: managed exchange rates",
+          "description": "Evaluate managed exchange rates as a development strategy (stability/competitiveness vs reserves needs, policy constraints).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19y",
+          "Specification_section_sub": "4.3.3b",
+          "Sub_topic_name": "Interventionist: infrastructure development",
+          "description": "Evaluate infrastructure development as an interventionist strategy (productivity gains vs financing, debt, governance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19z",
+          "Specification_section_sub": "4.3.3b",
+          "Sub_topic_name": "Interventionist: joint ventures with global companies",
+          "description": "Evaluate promoting joint ventures with global companies (technology spillovers/local participation vs bargaining power, regulation challenges).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19aa",
+          "Specification_section_sub": "4.3.3b",
+          "Sub_topic_name": "Interventionist: buffer stock schemes",
+          "description": "Evaluate buffer stock schemes to stabilise commodity prices/incomes (stabilisation benefits vs cost, storage, coordination problems).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19ab",
+          "Specification_section_sub": "4.3.3c",
+          "Sub_topic_name": "Industrialisation (Lewis model)",
+          "description": "Understand industrialisation as a development strategy with reference to the Lewis model (labour transfer from subsistence agriculture to industry) and evaluate implications.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19ac",
+          "Specification_section_sub": "4.3.3c",
+          "Sub_topic_name": "Tourism-led development",
+          "description": "Evaluate development of tourism as a growth/development strategy (foreign exchange/jobs vs seasonality, leakages, environmental/cultural impacts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19ad",
+          "Specification_section_sub": "4.3.3c",
+          "Sub_topic_name": "Developing primary industries",
+          "description": "Evaluate development of primary industries as a strategy (resource-based growth vs dependency, volatility, low value-added).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19ae",
+          "Specification_section_sub": "4.3.3c",
+          "Sub_topic_name": "Fairtrade schemes",
+          "description": "Evaluate Fairtrade schemes as a development strategy (price stability/income support vs limited coverage, market distortions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19af",
+          "Specification_section_sub": "4.3.3c",
+          "Sub_topic_name": "Aid (development assistance)",
+          "description": "Evaluate aid as a development strategy (financing, humanitarian support) including limitations (dependency, governance, corruption, conditionality).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19ag",
+          "Specification_section_sub": "4.3.3c",
+          "Sub_topic_name": "Debt relief",
+          "description": "Evaluate debt relief as a development strategy (fiscal space vs moral hazard, conditionality, future borrowing constraints).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19ah",
+          "Specification_section_sub": "4.3.3d",
+          "Sub_topic_name": "World Bank role",
+          "description": "Demonstrate awareness of the role of international institutions in development, specifically the World Bank (loans, development projects, policy advice).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19ai",
+          "Specification_section_sub": "4.3.3d",
+          "Sub_topic_name": "IMF role",
+          "description": "Demonstrate awareness of the role of the International Monetary Fund (IMF) (balance of payments support, conditionality, stabilisation programmes) in developing economies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19aj",
+          "Specification_section_sub": "4.3.3d",
+          "Sub_topic_name": "NGOs role",
+          "description": "Demonstrate awareness of the role of non-government organisations (NGOs) in development (aid delivery, advocacy, health/education programmes) and potential strengths/limitations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 20,
+      "Specification_section": "4.4",
+      "Strand": "Theme 4: A global perspective",
+      "Topic_name": "The financial sector",
+      "Sub_topics": [
+        {
+          "subtopic_id": "20a",
+          "Specification_section_sub": "4.4.1a",
+          "Sub_topic_name": "Financial markets function: facilitate saving",
+          "description": "Understand the role of financial markets in facilitating saving (channels for households/firms to store value and allocate funds).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20b",
+          "Specification_section_sub": "4.4.1b",
+          "Sub_topic_name": "Financial markets function: lending",
+          "description": "Understand how financial markets/banking facilitate lending to businesses and individuals, supporting investment and consumption smoothing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20c",
+          "Specification_section_sub": "4.4.1c",
+          "Sub_topic_name": "Financial markets function: facilitate exchange",
+          "description": "Understand how financial markets facilitate exchange of goods and services (payments systems, credit, liquidity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20d",
+          "Specification_section_sub": "4.4.1d",
+          "Sub_topic_name": "Forward markets in currencies and commodities",
+          "description": "Understand how financial markets provide forward markets in currencies and commodities, enabling hedging against price/exchange-rate risk.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20e",
+          "Specification_section_sub": "4.4.1e",
+          "Sub_topic_name": "Equities market role",
+          "description": "Understand how financial markets provide a market for equities (raising capital, share ownership, price discovery).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20f",
+          "Specification_section_sub": "4.4.2a",
+          "Sub_topic_name": "Financial sector failure: asymmetric information",
+          "description": "Analyse market failure in the financial sector due to asymmetric information (e.g., adverse selection, borrowers’ risk unknown) and consequences for credit allocation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20g",
+          "Specification_section_sub": "4.4.2a",
+          "Sub_topic_name": "Financial sector failure: externalities",
+          "description": "Analyse externalities in financial markets (systemic risk, contagion) where private actions create wider social costs/benefits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20h",
+          "Specification_section_sub": "4.4.2a",
+          "Sub_topic_name": "Financial sector failure: moral hazard",
+          "description": "Analyse moral hazard in the financial sector (risk-taking encouraged by insurance/expectation of bailouts) and implications for regulation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20i",
+          "Specification_section_sub": "4.4.2a",
+          "Sub_topic_name": "Financial sector failure: speculation and bubbles",
+          "description": "Analyse how speculation can contribute to asset price bubbles and financial instability; understand boom-bust dynamics in financial markets.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20j",
+          "Specification_section_sub": "4.4.2a",
+          "Sub_topic_name": "Financial sector failure: market rigging",
+          "description": "Understand market rigging/manipulation in financial markets (e.g., collusion, benchmark manipulation) as a source of market failure and loss of trust/efficiency.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20k",
+          "Specification_section_sub": "4.4.3a",
+          "Sub_topic_name": "Central banks: implement monetary policy",
+          "description": "Understand central banks’ function in implementing monetary policy (setting policy rates, managing money supply/QE).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20l",
+          "Specification_section_sub": "4.4.3a",
+          "Sub_topic_name": "Central banks: banker to government",
+          "description": "Understand central banks as banker to the government (government accounts, debt management support, issuing currency).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20m",
+          "Specification_section_sub": "4.4.3a",
+          "Sub_topic_name": "Central banks: lender of last resort",
+          "description": "Understand central banks as banker to the banks and lender of last resort, providing liquidity to maintain financial stability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20n",
+          "Specification_section_sub": "4.4.3a",
+          "Sub_topic_name": "Central banks: regulation role",
+          "description": "Understand the role of central banks in regulation/supervision of the banking industry and promoting financial stability.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 21,
+      "Specification_section": "4.5",
+      "Strand": "Theme 4: A global perspective",
+      "Topic_name": "Role of the state in the macroeconomy",
+      "Sub_topics": [
+        {
+          "subtopic_id": "21a",
+          "Specification_section_sub": "4.5.1a",
+          "Sub_topic_name": "Public expenditure types",
+          "description": "Distinguish between capital expenditure, current expenditure and transfer payments and apply to fiscal analysis.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21b",
+          "Specification_section_sub": "4.5.1b",
+          "Sub_topic_name": "Changing size/composition of public expenditure (global context)",
+          "description": "Analyse reasons for changing size and composition of public expenditure in a global context (e.g., ageing populations, welfare state, defence, recessions, political priorities).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21c",
+          "Specification_section_sub": "4.5.1c",
+          "Sub_topic_name": "Public spending share of GDP: productivity and growth",
+          "description": "Evaluate significance of differing public expenditure levels (as % of GDP) for productivity and economic growth (public investment, human capital vs inefficiency).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21d",
+          "Specification_section_sub": "4.5.1c",
+          "Sub_topic_name": "Public spending share of GDP: living standards",
+          "description": "Evaluate significance of public spending levels for living standards (public services, redistribution, merit goods).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21e",
+          "Specification_section_sub": "4.5.1c",
+          "Sub_topic_name": "Public spending share of GDP: crowding out",
+          "description": "Analyse how high public spending/borrowing may lead to crowding out of private sector activity (interest rates, resource competition) and evaluate conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21f",
+          "Specification_section_sub": "4.5.1c",
+          "Sub_topic_name": "Public spending share of GDP: taxation and incentives",
+          "description": "Analyse how higher public expenditure may require higher taxation and consider impacts on incentives, efficiency and behaviour.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21g",
+          "Specification_section_sub": "4.5.1c",
+          "Sub_topic_name": "Public spending share of GDP: equality",
+          "description": "Evaluate how public expenditure levels and composition affect equality (redistribution, access to services) and poverty outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21h",
+          "Specification_section_sub": "4.5.2a",
+          "Sub_topic_name": "Progressive, proportional and regressive taxes",
+          "description": "Distinguish between progressive, proportional and regressive taxes; apply to examples and distributional effects.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21i",
+          "Specification_section_sub": "4.5.2b",
+          "Sub_topic_name": "Tax changes and incentives to work",
+          "description": "Analyse economic effects of changes in direct and indirect tax rates on incentives to work (labour supply, substitution/income effects).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21j",
+          "Specification_section_sub": "4.5.2b",
+          "Sub_topic_name": "Laffer curve and tax revenues",
+          "description": "Understand and apply the Laffer curve to analyse how tax rate changes may affect tax revenues, considering incentives and avoidance/evasion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21k",
+          "Specification_section_sub": "4.5.2b",
+          "Sub_topic_name": "Tax changes and income distribution",
+          "description": "Analyse how changes in direct and indirect tax rates affect income distribution and inequality (incidence, progressivity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21l",
+          "Specification_section_sub": "4.5.2b",
+          "Sub_topic_name": "Tax changes and real output/employment",
+          "description": "Analyse how tax rate changes affect real output and employment (AD effects, incentives, supply-side impacts).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21m",
+          "Specification_section_sub": "4.5.2b",
+          "Sub_topic_name": "Tax changes and price level",
+          "description": "Analyse how changes in tax rates affect the price level (e.g., indirect taxes as cost-push; demand effects).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21n",
+          "Specification_section_sub": "4.5.2b",
+          "Sub_topic_name": "Tax changes and trade balance",
+          "description": "Analyse how tax changes can affect the trade balance (via demand for imports, competitiveness, exchange rate channels).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21o",
+          "Specification_section_sub": "4.5.2b",
+          "Sub_topic_name": "Tax changes and FDI flows",
+          "description": "Analyse how tax rate changes can affect foreign direct investment (FDI) flows (after-tax returns, tax competition).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21p",
+          "Specification_section_sub": "4.5.3a",
+          "Sub_topic_name": "Automatic stabilisers vs discretionary fiscal policy",
+          "description": "Distinguish between automatic stabilisers and discretionary fiscal policy; explain how each affects the economy over the cycle.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21q",
+          "Specification_section_sub": "4.5.3b",
+          "Sub_topic_name": "Fiscal deficit vs national debt",
+          "description": "Distinguish between a fiscal deficit (flow) and the national debt (stock).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21r",
+          "Specification_section_sub": "4.5.3c",
+          "Sub_topic_name": "Structural vs cyclical deficits",
+          "description": "Distinguish between structural and cyclical deficits and explain how they relate to the output gap and trend growth.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21s",
+          "Specification_section_sub": "4.5.3d",
+          "Sub_topic_name": "Determinants of fiscal deficits",
+          "description": "Analyse factors influencing the size of fiscal deficits (economic cycle, discretionary policy, demographics, interest costs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21t",
+          "Specification_section_sub": "4.5.3e",
+          "Sub_topic_name": "Determinants of national debts",
+          "description": "Analyse factors influencing the size of national debts (accumulated deficits, growth, interest rates, one-off shocks, exchange rates if foreign currency debt).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21u",
+          "Specification_section_sub": "4.5.3f",
+          "Sub_topic_name": "Significance of fiscal deficits and national debt",
+          "description": "Evaluate significance of the size of fiscal deficits and national debts (sustainability, confidence, crowding out, intergenerational fairness, policy constraints).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21v",
+          "Specification_section_sub": "4.5.4a",
+          "Sub_topic_name": "Global macro policy toolkit and impacts",
+          "description": "Analyse the use of fiscal policy, monetary policy, exchange rate policy, supply-side policies and direct controls in different countries, including impacts of measures to reduce fiscal deficits/national debts, reduce poverty/inequality, change interest rates/money supply, and increase international competitiveness.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21w",
+          "Specification_section_sub": "4.5.4b",
+          "Sub_topic_name": "Macro policy responses to external shocks",
+          "description": "Evaluate use and impact of macroeconomic policies to respond to external shocks to the global economy (e.g., oil price shocks, financial crises, pandemics, geopolitical events).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21x",
+          "Specification_section_sub": "4.5.4c",
+          "Sub_topic_name": "Regulating TNCs: transfer pricing and limits",
+          "description": "Understand measures to control global companies’ operations, including regulation of transfer pricing; evaluate limits to government ability to control transnationals (mobility of capital, jurisdiction competition).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21y",
+          "Specification_section_sub": "4.5.4d",
+          "Sub_topic_name": "Policy problems: inaccurate information",
+          "description": "Analyse problems for policymakers due to inaccurate information (data uncertainty, measurement errors) affecting policy design and outcomes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21z",
+          "Specification_section_sub": "4.5.4d",
+          "Sub_topic_name": "Policy problems: risks and uncertainties",
+          "description": "Analyse risks and uncertainties faced by policymakers (expectations, confidence, changing behaviour, unintended consequences) when applying macro policies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21aa",
+          "Specification_section_sub": "4.5.4d",
+          "Sub_topic_name": "Policy problems: external shocks beyond control",
+          "description": "Analyse the inability of policymakers to control external shocks and how this limits policy effectiveness; evaluate need for resilience and policy coordination.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

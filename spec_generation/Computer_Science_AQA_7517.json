@@ -1,0 +1,1507 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Computer Science",
+  "Exam Board": "AQA",
+  "Specification": "7517",
+  "has_math": true,
+  "optional_modules": false,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "4.1",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of programming",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "4.1.1.1",
+          "Sub_topic_name": "Data types (built-in and user-defined) incl pointers/references",
+          "description": "Understand the concept of a data type. Understand and use appropriately: integer; real/float; Boolean; character; string; date/time; pointer/reference; records (or equivalent); arrays (or equivalent). Understand that pointer/reference variables can store memory addresses of objects created dynamically at runtime; not all languages have explicit pointers but students must have opportunity to understand this type. Define and use user-defined data types based on language-defined (built-in) data types.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1b",
+          "Specification_section_sub": "4.1.1.2",
+          "Sub_topic_name": "Core programming constructs and combining principles",
+          "description": "Use, understand and know how the following statement types can be combined in programs: variable declaration; constant declaration; assignment; iteration; selection; subroutine (procedure/function). Understand the three combining principles: sequence, iteration/repetition, selection/choice. Use definite and indefinite iteration, including indefinite iteration with condition(s) at start or end of the loop; theoretical understanding of both forms is required even if the chosen language doesn’t support one form directly. Use nested selection and nested iteration. Use meaningful identifier names and know why this matters (readability/maintainability/avoiding errors).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1c",
+          "Specification_section_sub": "4.1.1.3",
+          "Sub_topic_name": "Arithmetic operations",
+          "description": "Be familiar with and be able to use arithmetic operations in a programming language: addition; subtraction; multiplication; real/float division; integer division including remainders; exponentiation; rounding; truncation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1d",
+          "Specification_section_sub": "4.1.1.4",
+          "Sub_topic_name": "Relational operators",
+          "description": "Be familiar with and be able to use relational operations: equal to; not equal to; less than; greater than; less than or equal to; greater than or equal to.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1e",
+          "Specification_section_sub": "4.1.1.5",
+          "Sub_topic_name": "Boolean operators",
+          "description": "Be familiar with and be able to use Boolean operations: NOT; AND; OR; XOR.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1f",
+          "Specification_section_sub": "4.1.1.6",
+          "Sub_topic_name": "Variables vs constants; named constants",
+          "description": "Explain the differences between a variable and a constant. Explain the advantages of using named constants (clarity, maintainability, avoiding magic numbers, reducing errors).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1g",
+          "Specification_section_sub": "4.1.1.7",
+          "Sub_topic_name": "String handling and type conversions",
+          "description": "Be familiar with and be able to use string-handling operations: length; position; substring; concatenation; character → character code; character code → character; string conversion operations. Expected conversions: string→integer; string→float; integer→string; float→string; date/time→string; string→date/time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1h",
+          "Specification_section_sub": "4.1.1.8",
+          "Sub_topic_name": "Random number generation",
+          "description": "Be familiar with and be able to use random number generation in a programming language (including selecting appropriate ranges and understanding repeatability if seeding is available).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1i",
+          "Specification_section_sub": "4.1.1.9",
+          "Sub_topic_name": "Exception handling",
+          "description": "Be familiar with the concept of exception handling. Know how to use exception handling constructs in a programming language with which students are familiar (e.g., try/catch/except, raising/throwing, handling anticipated runtime errors).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1j",
+          "Specification_section_sub": "4.1.1.10",
+          "Sub_topic_name": "Subroutines: procedures/functions and benefits",
+          "description": "Be familiar with subroutines and their uses. Know that a subroutine is a named ‘out of line’ block of code that can be executed (called) by writing its name in a program statement. Explain advantages of subroutines (abstraction, reuse, decomposition, reduced duplication, easier testing/debugging/maintenance).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1k",
+          "Specification_section_sub": "4.1.1.11",
+          "Sub_topic_name": "Parameters and interfaces for subroutines",
+          "description": "Describe the use of parameters to pass data within programs. Use subroutines with interfaces (clear input/output specification; appropriate parameter passing consistent with chosen language).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1l",
+          "Specification_section_sub": "4.1.1.12",
+          "Sub_topic_name": "Returning values from subroutines",
+          "description": "Use subroutines that return value(s) to the calling routine (functions or equivalent).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1m",
+          "Specification_section_sub": "4.1.1.13",
+          "Sub_topic_name": "Local variables and scope in subroutines",
+          "description": "Know that subroutines may declare their own variables (local variables) and that local variables exist only while the subroutine executes and are accessible only within the subroutine. Use local variables and explain why it is good practice (limits scope, avoids side effects, improves reliability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1n",
+          "Specification_section_sub": "4.1.1.14",
+          "Sub_topic_name": "Global variables vs local variables",
+          "description": "Contrast local variables with global variables, including implications for scope, side effects, coupling, testability and maintainability.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1o",
+          "Specification_section_sub": "4.1.1.15",
+          "Sub_topic_name": "Stack frames in subroutine calls",
+          "description": "Explain how a stack frame is used with subroutine calls to store return addresses, parameters, and local variables (call stack behaviour; nested calls; lifetime/activation records).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1p",
+          "Specification_section_sub": "4.1.1.16",
+          "Sub_topic_name": "Recursion (base/recursive cases, implementation)",
+          "description": "Be familiar with recursive techniques in programming languages: identify general and base cases; understand mechanism of implementation (call stack/stack frames); solve simple problems using recursion.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1q",
+          "Specification_section_sub": "4.1.2.1",
+          "Sub_topic_name": "Programming paradigms: procedural vs OOP",
+          "description": "Understand characteristics of procedural and object-oriented paradigms and have experience programming in each (how code and data are organised, typical constructs, strengths/limitations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1r",
+          "Specification_section_sub": "4.1.2.2",
+          "Sub_topic_name": "Structured programming and hierarchy charts",
+          "description": "Understand a structured approach to program design and construction. Construct and use hierarchy charts when designing programs. Explain advantages of the structured approach (modularity, clarity, maintainability).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1s",
+          "Specification_section_sub": "4.1.2.3",
+          "Sub_topic_name": "OOP concepts and UML relationships",
+          "description": "Be familiar with OOP concepts: class; object; instantiation; encapsulation; inheritance; aggregation; composition; polymorphism; overriding. Know that a class defines methods and property/attribute fields capturing common behaviours/characteristics; objects are created via constructor (implicit/explicit) and referenced by a reference variable of the class type. Know UML notation: composition = black diamond; aggregation = white diamond.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1t",
+          "Specification_section_sub": "4.1.2.3",
+          "Sub_topic_name": "Why OOP; core OO design principles",
+          "description": "Know why the object-oriented paradigm is used. Be aware of OO design principles: encapsulate what varies; favour composition over inheritance; program to interfaces, not implementation (practical experience beneficial though not explicitly tested as interface-programming requirement).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1u",
+          "Specification_section_sub": "4.1.2.3",
+          "Sub_topic_name": "Writing OOP programs (methods, visibility, inheritance, polymorphism)",
+          "description": "Write object-oriented programs; practical experience coding user-defined classes involving: abstract, virtual and static methods; inheritance; aggregation; polymorphism; and public/private/protected specifiers (access control).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "1v",
+          "Specification_section_sub": "4.1.2.3",
+          "Sub_topic_name": "Class diagrams (interpretation and drawing)",
+          "description": "Draw and interpret class diagrams including: single inheritance; composition (black diamond); aggregation (white diamond); visibility symbols public (+), private (-), protected (#).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "4.2",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of data structures",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "4.2.1.1",
+          "Sub_topic_name": "Data structures: concept and purpose",
+          "description": "Be familiar with the concept of data structures as ways of organising data for efficient access/manipulation; recognise that different contexts/problems motivate different structures.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "4.2.1.2",
+          "Sub_topic_name": "Arrays: 1D, 2D, nD and indexing tuples",
+          "description": "Use arrays (or equivalents) in designing solutions to simple problems. Know interpretations: 1D array represents a vector; 2D represents a matrix; n-dimensional array is a set of same-typed elements indexed by an n-tuple of integers (tuple = ordered list).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "4.2.1.3",
+          "Sub_topic_name": "Files: text and binary I/O",
+          "description": "Read/write from/to a text file. Read/write data from/to a binary (non-text) file.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "4.2.1.4",
+          "Sub_topic_name": "Abstract data types list (queue/stack/graph/tree/hash/dictionary/vector)",
+          "description": "Be familiar with the concept and uses of ADTs/data structures: queue; stack; graph; tree; hash table; dictionary; vector. Use these ADTs and their equivalent data structures in simple contexts; know representation approaches when a language lacks built-in support.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "4.2.1.4",
+          "Sub_topic_name": "Static vs dynamic structures",
+          "description": "Distinguish between static and dynamic data structures; compare uses and explain advantages/disadvantages (e.g., fixed vs runtime-resizable, memory allocation, performance trade-offs).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "4.2.1.4",
+          "Sub_topic_name": "Queue/stack/hash table data maintenance (overview)",
+          "description": "Describe creation and maintenance of data within: queues (linear, circular, priority); stacks; hash tables (insertion/lookup implications and how structure state changes).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "4.2.2.1",
+          "Sub_topic_name": "Queue operations (linear/circular/priority)",
+          "description": "Describe and apply queue operations for linear, circular and priority queues: add/enqueue; remove/dequeue; test for empty; test for full (including how front/rear pointers/indices behave for circular implementations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "4.2.3.1",
+          "Sub_topic_name": "Stack operations (push/pop/peek)",
+          "description": "Describe and apply stack operations: push; pop; peek/top (returns top value without removing); test for empty; test for full.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "4.2.4.1",
+          "Sub_topic_name": "Graphs: terminology and uses",
+          "description": "Know a graph as a structure for complex relationships; typical uses. Explain: graph; weighted graph; vertex/node; edge/arc; undirected graph; directed graph.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "4.2.4.1",
+          "Sub_topic_name": "Graph representations: adjacency matrix vs adjacency list",
+          "description": "Know how adjacency matrix and adjacency list represent a graph; compare their use (space/time trade-offs; sparse vs dense; traversal/edge lookup implications).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "4.2.5.1",
+          "Sub_topic_name": "Trees: definition and rooted trees",
+          "description": "Know: a tree is a connected, undirected graph with no cycles (tree need not have a root). Know: a rooted tree designates a root; defines parent-child relationships; root has no parent; all other nodes are descendants of root. Be familiar with typical uses for rooted trees.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2l",
+          "Specification_section_sub": "4.2.5.1",
+          "Sub_topic_name": "Binary trees and binary search trees",
+          "description": "Know: a binary tree is a rooted tree where each node has at most two children. Know binary search tree as a common application of a binary tree.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2m",
+          "Specification_section_sub": "4.2.6.1",
+          "Sub_topic_name": "Hash tables: mapping keys to values; collisions",
+          "description": "Be familiar with hash table concept and uses: mapping between keys and values. Apply simple hashing algorithms. Know what a collision is (two keys compute same hash) and how collisions are handled using rehashing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2n",
+          "Specification_section_sub": "4.2.7.1",
+          "Sub_topic_name": "Dictionaries: key-value pairs and applications",
+          "description": "Be familiar with dictionary concept: collection of key-value pairs where value accessed via key. Know simple applications (e.g., information retrieval); have experience using a dictionary structure in a programming language. Example IR representation: document 'The green, green grass grows' → {'grass':1,'green':2,'grows':1,'the':1} ignoring letter case.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2o",
+          "Specification_section_sub": "4.2.8.1",
+          "Sub_topic_name": "Vectors: notation and interpretations",
+          "description": "Be familiar with vectors and notations: list [2.0, 3.14159, -1.0, 2.718281828]; ℝ4; function interpretation with mappings (e.g., 0 ↦ 2.0, 1 ↦ 3.14159, 2 ↦ -1.0, 3 ↦ 2.718281828; ‘↦’ means maps to). Know entries drawn from same field (e.g., ℝ). Understand vector as list, as function, and as geometric point/arrow.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2p",
+          "Specification_section_sub": "4.2.8.1",
+          "Sub_topic_name": "Vector representations: dictionary/list/array/arrow",
+          "description": "Know representations: dictionary as function f:S→ℝ (e.g., {0:2.0,1:3.14159,2:-1.0,3:2.718281828}); list representation (e.g., Python [2.0,3.0]); 1-D array representation (e.g., VB.Net Dim example(3) As Single); visualising as arrow from origin to coordinate point.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2q",
+          "Specification_section_sub": "4.2.8.1",
+          "Sub_topic_name": "Vector operations: addition and scalar multiplication",
+          "description": "Know vector addition produces translation; scalar-vector multiplication produces scaling (geometric interpretation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2r",
+          "Specification_section_sub": "4.2.8.1",
+          "Sub_topic_name": "Convex combinations",
+          "description": "Know convex combination of vectors u and v: expression αu + βv where α, β ≥ 0 and α + β = 1.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2s",
+          "Specification_section_sub": "4.2.8.1",
+          "Sub_topic_name": "Dot (scalar) product and applications",
+          "description": "Know dot/scalar product: for u=[u1,…,un], v=[v1,…,vn], u·v = u1v1 + u2v2 + … + unvn. Know application: finding the angle between two vectors.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "4.3",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of algorithms",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "4.3.1.1",
+          "Sub_topic_name": "Graph traversal: BFS vs DFS tracing and uses",
+          "description": "Trace breadth-first search (BFS) and depth-first search (DFS) algorithms; describe typical applications: BFS for shortest path in an unweighted graph; DFS for tasks such as navigating a maze (depth exploration/backtracking).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "4.3.2.1",
+          "Sub_topic_name": "Tree traversals: pre/in/post-order tracing and uses",
+          "description": "Trace tree traversals: pre-order, post-order, in-order. Describe uses: pre-order for copying a tree; in-order for binary search trees to output values in ascending order; post-order for infix→RPN conversions / producing postfix from expression tree / emptying (deleting) a tree.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "4.3.3.1",
+          "Sub_topic_name": "Reverse Polish notation (RPN) conversions and purpose",
+          "description": "Convert simple expressions between infix and Reverse Polish Notation (RPN) and vice versa. Explain why/where used: removes need for brackets; suitable for stack-based evaluation; used in stack-based interpreters (e.g., PostScript, bytecode).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "4.3.4.1",
+          "Sub_topic_name": "Linear search: trace and Big-O",
+          "description": "Trace and analyse linear search; know time complexity O(n).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "4.3.4.2",
+          "Sub_topic_name": "Binary search: trace and Big-O",
+          "description": "Trace and analyse binary search; know time complexity O(log n).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "4.3.4.3",
+          "Sub_topic_name": "Binary tree search: trace and Big-O",
+          "description": "Trace and analyse binary tree search; know time complexity O(log n) (assuming balanced tree; understand dependence on tree shape).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "4.3.5.1",
+          "Sub_topic_name": "Bubble sort: trace and Big-O",
+          "description": "Trace and analyse bubble sort; understand as inefficient time-wise; know time complexity O(n^2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "4.3.5.2",
+          "Sub_topic_name": "Merge sort: trace and Big-O (divide and conquer)",
+          "description": "Trace and analyse merge sort; understand as divide-and-conquer; know time complexity O(n log n).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "4.3.6.1",
+          "Sub_topic_name": "Dijkstra’s shortest path: trace and applications",
+          "description": "Understand and be able to trace Dijkstra’s shortest path algorithm; be aware of applications of shortest-path algorithms. Students are not expected to recall the algorithm steps from memory (exam provides guidance/structure).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "4.4",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Theory of computation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.4.1.1",
+          "Sub_topic_name": "Logic problem solving and checking",
+          "description": "Develop solutions to simple logic problems and check/verify solutions to simple logic problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.4.1.2",
+          "Sub_topic_name": "Algorithms: definition, pseudocode constructs, tracing, coding",
+          "description": "Understand algorithm as a finite sequence of steps to complete a task that always terminates. Express solutions to simple problems as algorithms using pseudocode with standard constructs: sequence, assignment, selection, iteration. Hand-trace algorithms. Convert pseudocode algorithms into high-level language program code. Articulate how a program works and argue for correctness and efficiency using logical reasoning, test data and user feedback.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.4.1.3",
+          "Sub_topic_name": "Abstraction types: representational vs generalisation/categorisation",
+          "description": "Know abstraction in computation including: representational abstraction (remove unnecessary detail); abstraction by generalisation/categorisation (group by common characteristics to form hierarchies of 'is a kind of').",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.4.1.4",
+          "Sub_topic_name": "Information hiding",
+          "description": "Understand information hiding: hiding details of an object that do not contribute to essential characteristics (interface vs implementation; reducing complexity/coupling).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.4.1.5",
+          "Sub_topic_name": "Procedural abstraction",
+          "description": "Know procedural abstraction represents a computational method; abstracting away specific values yields a computational pattern/method—a procedure.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.4.1.6",
+          "Sub_topic_name": "Functional abstraction",
+          "description": "Know functional abstraction hides the particular computation method; procedural abstraction yields a procedure, and further abstraction yields a function by disregarding the specific method.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4g",
+          "Specification_section_sub": "4.4.1.7",
+          "Sub_topic_name": "Data abstraction and constructing new data objects",
+          "description": "Know data abstraction hides representation details, enabling new compound data objects from previously defined types. Understand methodology: isolate how a compound object is used from how constructed (e.g., stack implemented as array plus pointer for top-of-stack).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4h",
+          "Specification_section_sub": "4.4.1.8",
+          "Sub_topic_name": "Problem reduction/abstraction",
+          "description": "Know problem abstraction/reduction removes detail until represented as a solvable problem, reducing to one already solved.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4i",
+          "Specification_section_sub": "4.4.1.9",
+          "Sub_topic_name": "Decomposition (procedural)",
+          "description": "Know procedural decomposition: break problem into sub-problems where each accomplishes an identifiable task; sub-problems may be further subdivided.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4j",
+          "Specification_section_sub": "4.4.1.10",
+          "Sub_topic_name": "Composition (procedures and data)",
+          "description": "Know composition abstraction: combine procedures to form compound procedures; combine data objects to form compound data (e.g., building a tree structure).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4k",
+          "Specification_section_sub": "4.4.1.11",
+          "Sub_topic_name": "Automation: models, algorithms, data structures, execution",
+          "description": "Understand automation as putting models (abstractions of real-world objects/phenomena) into action to solve problems by: creating algorithms; implementing algorithms in program code; implementing models in data structures; executing code. Understand modelling trade-offs: choose minimum necessary detail for required accuracy; then design algorithms to act on modelled data.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4l",
+          "Specification_section_sub": "4.4.2.1",
+          "Sub_topic_name": "Finite state machines (FSMs) with/without output (Mealy)",
+          "description": "Draw and interpret simple FSM state transition diagrams and state transition tables for machines with no output and with output (Mealy machines only).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4m",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Set notation and set comprehension",
+          "description": "Understand sets and notations: listing (e.g., A={1,2,3,4,5}); set comprehension A={x | x ∈ ℕ ∧ x ≥ 1}. Know empty set {} and alternative symbol Ø. Know sets are unordered and contain no duplicates; recognise language support (e.g., Python {1,2,3}). Interpret symbols: '|' means such that; '∈' means member of; '∧' means AND; 'x ≥ 1' means x greater than or equal to 1. Recognise set comprehensions in programming (e.g., Python {2*x for x in {1,2,3}} → {2,4,6}).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4n",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Compact set descriptions (string languages)",
+          "description": "Be familiar with compact representations such as {0^n 1^n | n ≥ 1}, meaning strings with equal numbers of 0s then 1s; examples: {01,0011,000111,00001111,…}.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4o",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Finite/infinite/countably infinite sets; cardinality; Cartesian product",
+          "description": "Know concepts: finite sets; infinite sets; countably infinite sets; cardinality of a finite set; Cartesian product. Understand examples: ℕ and ℝ are infinite; ℝ is not countable. Cartesian product X×Y is set of ordered pairs (a,b).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4p",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Subsets, proper subsets and countable sets",
+          "description": "Understand subset symbols and meanings: proper subset ⊂ (e.g., {0,1,2} ⊂ ℕ); subset ⊆ including equality (e.g., {0,1,2,3} ⊆ {0,1,2,3}). Know countable set definition: same cardinality as some subset of natural numbers.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4q",
+          "Specification_section_sub": "4.4.2.2",
+          "Sub_topic_name": "Set operations: membership, union, intersection, difference",
+          "description": "Be familiar with set operations: membership; union; intersection; difference. Know set difference A\\B (or A−B) defined as A\\B = {x : x ∈ A and x ∉ B}.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4r",
+          "Specification_section_sub": "4.4.2.3",
+          "Sub_topic_name": "Regular expressions: meaning and metacharacters",
+          "description": "Know regular expression as a way of describing a set/language in shorthand; e.g., a(a|b)* generates {a, aa, ab, aaa, aab, aba, …}. Form and use simple regular expressions for string manipulation/matching. Know metacharacters: * (0+ repetitions), + (1+), ? (0 or 1 optional), | (alternation), ( ) grouping. Any other metacharacters will be explained in exam questions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4s",
+          "Specification_section_sub": "4.4.2.3",
+          "Sub_topic_name": "Regular expressions ↔ FSM equivalence",
+          "description": "Describe relationship between regular expressions and FSMs: equivalent ways of defining regular languages. Write a regular expression recognising same language as a given FSM and vice versa (very simple cases assessed).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4t",
+          "Specification_section_sub": "4.4.2.4",
+          "Sub_topic_name": "Regular language definition",
+          "description": "Know a language is regular if representable by a regular expression; equivalently, a regular language is any language accepted by an FSM.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4u",
+          "Specification_section_sub": "4.4.3.1",
+          "Sub_topic_name": "BNF and syntax diagrams: checking and writing production rules",
+          "description": "Check language syntax by referring to Backus–Naur Form (BNF) or syntax diagrams; formulate simple production rules. Explain why BNF can represent some languages that regular expressions cannot (context-free vs regular limitations).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4v",
+          "Specification_section_sub": "4.4.4.1",
+          "Sub_topic_name": "Comparing algorithms: time and space efficiency",
+          "description": "Understand comparing algorithms by expressing complexity as a function of problem size; problem size is key. Understand some algorithms are more efficient time-wise and/or space-wise. Recognise implementing automated abstractions requires data models/algorithms that run quickly and use minimal resources (e.g., memory).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4w",
+          "Specification_section_sub": "4.4.4.2",
+          "Sub_topic_name": "Maths foundations for Big-O: functions and growth types",
+          "description": "Understand function as mapping domain to co-domain (e.g., ℕ→ℕ). Be familiar with linear (y=2x), polynomial (y=2x^2), exponential (y=2^x), logarithmic (y=log10 x) functions. Be familiar with permutations and factorial: number of permutations of n distinct objects is n!; n! = product of positive integers ≤ n.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4x",
+          "Specification_section_sub": "4.4.4.3",
+          "Sub_topic_name": "Big-O notation categories and deriving complexity",
+          "description": "Use Big-O notation for time complexity; apply to constant, logarithmic, linear, polynomial, exponential growth. Derive time complexity of an algorithm from its structure (loops, nested loops, recursion where appropriate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4y",
+          "Specification_section_sub": "4.4.4.4",
+          "Sub_topic_name": "Limits of computation (complexity and hardware)",
+          "description": "Be aware that algorithmic complexity and hardware limitations impose limits on what can be computed (time/memory constraints).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4z",
+          "Specification_section_sub": "4.4.4.5",
+          "Sub_topic_name": "Tractable vs intractable problems; heuristics",
+          "description": "Know classification of problems: tractable (polynomial-time or less solutions) vs intractable (no polynomial-time or less solution). Know heuristics are often used for intractable problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4aa",
+          "Specification_section_sub": "4.4.4.6",
+          "Sub_topic_name": "Computable vs non-computable problems",
+          "description": "Be aware some problems cannot be solved algorithmically (non-computable).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4ab",
+          "Specification_section_sub": "4.4.4.7",
+          "Sub_topic_name": "Halting problem and its significance",
+          "description": "Describe (not prove) the Halting problem: determining whether any program will eventually stop for given input is unsolvable. Understand significance: demonstrates there are problems computers cannot solve.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4ac",
+          "Specification_section_sub": "4.4.5.1",
+          "Sub_topic_name": "Turing machine structure and tracing",
+          "description": "Be familiar with Turing machine structure and use for simple computations: finite set of states (state transition diagram), finite alphabet, infinite tape with marked squares, read-write head moving one square at a time. Know start state; halting states have no outgoing transitions. Exam uses single tape infinite in one direction. Understand equivalence between transition function and state transition diagram; represent rules using either; hand-trace simple Turing machines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4ad",
+          "Specification_section_sub": "4.4.5.1",
+          "Sub_topic_name": "Universal Turing machine and importance",
+          "description": "Explain importance of Turing machines and Universal Turing machine: provide formal model/definition of computation and what is computable.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "4.5",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of data representation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "4.5.1.1",
+          "Sub_topic_name": "Natural numbers (ℕ)",
+          "description": "Know concept of natural numbers including zero; set notation ℕ = {0,1,2,3,…}.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "4.5.1.2",
+          "Sub_topic_name": "Integers (ℤ)",
+          "description": "Know concept of integer numbers; set notation ℤ = {…,-3,-2,-1,0,1,2,3,…}.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "4.5.1.3",
+          "Sub_topic_name": "Rational numbers (ℚ) and inclusion of integers",
+          "description": "Know concept of rational numbers; set ℚ; understand rationals can be written as fractions (ratios of integers) and include integers (e.g., 7 = 7/1).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "4.5.1.4",
+          "Sub_topic_name": "Irrational numbers",
+          "description": "Know concept of irrational numbers: cannot be written as a fraction (e.g., √2).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "4.5.1.5",
+          "Sub_topic_name": "Real numbers (ℝ)",
+          "description": "Know concept of real numbers; set ℝ includes natural, rational, irrational numbers; interpreted as all 'possible real world quantities'.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "4.5.1.6",
+          "Sub_topic_name": "Ordinal numbers",
+          "description": "Know ordinal numbers used for positions in ordered sets (e.g., in S={a,b,c,d}, a is 1st, b is 2nd, etc.).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5g",
+          "Specification_section_sub": "4.5.1.7",
+          "Sub_topic_name": "Counting vs measurement",
+          "description": "Know natural numbers used for counting; real numbers used for measurement.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5h",
+          "Specification_section_sub": "4.5.2.1",
+          "Sub_topic_name": "Number bases and conversions (decimal/binary/hex)",
+          "description": "Understand number base concept; be familiar with decimal (base 10), binary (base 2), hexadecimal (base 16). Use base subscripts: e.g., 67₁₀, 10011011₂, AE₁₆. Convert between decimal, binary and hexadecimal. Use hexadecimal as shorthand for binary and explain why (compact representation of bit patterns).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5i",
+          "Specification_section_sub": "4.5.3.1",
+          "Sub_topic_name": "Bits, bytes and representable values (2^n)",
+          "description": "Know bit is fundamental unit (0 or 1); byte is 8 bits. Know that n bits represent 2^n different values (e.g., 3 bits → 2^3=8 patterns: 000…111).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5j",
+          "Specification_section_sub": "4.5.3.2",
+          "Sub_topic_name": "Units: binary vs decimal prefixes (KiB vs kB etc.)",
+          "description": "Know byte quantities described using binary prefixes (powers of 2) or decimal prefixes (powers of 10): 1KiB=2^10 B vs 1kB=10^3 B. Know binary prefixes: kibi Ki 2^10; mebi Mi 2^20; gibi Gi 2^30; tebi Ti 2^40. Know decimal prefixes: kilo k 10^3; mega M 10^6; giga G 10^9; tera T 10^12. Understand historical misuse of kilobyte/megabyte to mean kibibyte/mebibyte.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5k",
+          "Specification_section_sub": "4.5.4.1",
+          "Sub_topic_name": "Unsigned binary: meaning, range, conversions",
+          "description": "Know difference between unsigned and signed binary. Convert between unsigned binary and decimal. Know unsigned n-bit range: minimum 0, maximum 2^n − 1.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5l",
+          "Specification_section_sub": "4.5.4.2",
+          "Sub_topic_name": "Unsigned binary arithmetic: addition and multiplication",
+          "description": "Add two unsigned binary integers and multiply two unsigned binary integers (binary arithmetic procedures; carrying and partial products).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5m",
+          "Specification_section_sub": "4.5.4.3",
+          "Sub_topic_name": "Two’s complement: representation and range",
+          "description": "Know signed binary represents negative integers; two’s complement is the examined scheme. Convert between two’s complement and decimal. Represent positive and negative integers in two’s complement; calculate representable range for n bits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5n",
+          "Specification_section_sub": "4.5.4.3",
+          "Sub_topic_name": "Subtraction using two’s complement",
+          "description": "Perform subtraction using two’s complement method (add the two’s complement of subtrahend; interpret overflow/bit width rules as appropriate to context).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5o",
+          "Specification_section_sub": "4.5.4.4",
+          "Sub_topic_name": "Fixed-point binary fractions: representation and conversion",
+          "description": "Represent numbers with fractional part in fixed-point binary in a given number of bits. Convert between decimal and fixed-point binary for a specified bit allocation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5p",
+          "Specification_section_sub": "4.5.4.4",
+          "Sub_topic_name": "Floating-point (simplified mantissa+exponent): representation and conversion",
+          "description": "Represent numbers with fractional part using simplified floating-point form consisting of mantissa + exponent in a given number of bits (IEEE not required). Convert between decimal and floating-point binary for specified formats. Exam format uses two’s complement for both mantissa and exponent.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5q",
+          "Specification_section_sub": "4.5.4.5",
+          "Sub_topic_name": "Rounding errors in fixed vs floating point",
+          "description": "Explain why fixed-point and floating-point representations of decimal values may be inaccurate (binary fraction limitations); understand some values cannot be represented exactly (e.g., 0.1₁₀).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5r",
+          "Specification_section_sub": "4.5.4.6",
+          "Sub_topic_name": "Absolute error calculation",
+          "description": "Calculate absolute error for numerical data stored/processed in computer systems (difference between true value and represented value).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5s",
+          "Specification_section_sub": "4.5.4.6",
+          "Sub_topic_name": "Relative error calculation and comparison",
+          "description": "Calculate relative error for stored/processed numerical data. Compare absolute vs relative errors for large/small magnitude numbers and numbers close to one.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5t",
+          "Specification_section_sub": "4.5.4.7",
+          "Sub_topic_name": "Fixed vs floating point trade-offs (range/precision/speed)",
+          "description": "Compare advantages/disadvantages of fixed-point and floating-point in terms of range, precision and speed of calculation (hardware/software implications).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5u",
+          "Specification_section_sub": "4.5.4.8",
+          "Sub_topic_name": "Normalisation of floating-point numbers",
+          "description": "Know why floating-point numbers are normalised; normalise un-normalised floating-point numbers with positive or negative mantissas (shifting mantissa and adjusting exponent accordingly within bit constraints).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5v",
+          "Specification_section_sub": "4.5.4.9",
+          "Sub_topic_name": "Underflow and overflow",
+          "description": "Explain underflow and overflow and the circumstances in which they occur (exponent too small/too large; exceeding representable range).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5w",
+          "Specification_section_sub": "4.5.5.1",
+          "Sub_topic_name": "Decimal digit character code vs numeric binary value",
+          "description": "Differentiate between character-code representation of a decimal digit and its pure binary numeric representation (e.g., '7' as ASCII/Unicode code point vs binary 0111).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5x",
+          "Specification_section_sub": "4.5.5.2",
+          "Sub_topic_name": "ASCII and Unicode",
+          "description": "Describe ASCII and Unicode character coding systems and explain why Unicode was introduced (wider character set, internationalisation, multiple scripts/symbols).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5y",
+          "Specification_section_sub": "4.5.5.3",
+          "Sub_topic_name": "Error checking/correction: parity, majority voting, checksums, check digits",
+          "description": "Describe and explain use of parity bits, majority voting, checksums, and check digits for error detection/correction in data transmission/storage.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5z",
+          "Specification_section_sub": "4.5.6.1",
+          "Sub_topic_name": "Bit patterns representing images/sound/other data",
+          "description": "Describe how bit patterns represent other forms of data including graphics and sound (encoding schemes; mapping bits to meanings).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5aa",
+          "Specification_section_sub": "4.5.6.2",
+          "Sub_topic_name": "Analogue vs digital (data and signals)",
+          "description": "Understand difference between analogue and digital data and analogue vs digital signals (continuous vs discrete; quantisation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ab",
+          "Specification_section_sub": "4.5.6.3",
+          "Sub_topic_name": "ADC and DAC principles and uses",
+          "description": "Describe principles of analogue-to-digital converters (ADC) and digital-to-analogue converters (DAC). Know ADCs used with analogue sensors; common DAC use is converting digital audio to analogue signal.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ac",
+          "Specification_section_sub": "4.5.6.4",
+          "Sub_topic_name": "Bitmapped graphics: resolution, colour depth, pixel dimensions",
+          "description": "Explain how bitmaps are represented. Explain resolution, colour depth, and size in pixels. Know: size in pixels = width×height; resolution often expressed as dots per inch where dot=pixel; colour depth = bits per pixel.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ad",
+          "Specification_section_sub": "4.5.6.4",
+          "Sub_topic_name": "Bitmap storage requirement calculations and metadata",
+          "description": "Calculate storage requirements for bitmapped images; be aware files may contain metadata. Ignoring metadata: storage = (width×height)×colour depth (bits); recognise typical metadata (width, height, colour depth).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ae",
+          "Specification_section_sub": "4.5.6.5",
+          "Sub_topic_name": "Vector graphics representation and primitives",
+          "description": "Explain vector graphics represent images using lists of geometric objects; store properties of each object/shape as a list. Give examples of typical properties. Use vector graphic primitives to create a simple vector graphic.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5af",
+          "Specification_section_sub": "4.5.6.6",
+          "Sub_topic_name": "Vector vs bitmap graphics: pros/cons and uses",
+          "description": "Compare vector and bitmapped graphics approaches; understand advantages/disadvantages and appropriate uses (scaling, file size, photo realism vs diagrams).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ag",
+          "Specification_section_sub": "4.5.6.7",
+          "Sub_topic_name": "Digital sound: sampling rate, resolution, Nyquist; size calculations",
+          "description": "Describe digital representation of sound: sample resolution and sampling rate; Nyquist theorem (sampling at least twice highest frequency). Calculate sound sample sizes in bytes given sampling rate, duration, resolution (and channels if specified).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ah",
+          "Specification_section_sub": "4.5.6.8",
+          "Sub_topic_name": "MIDI: purpose, event messages, advantages",
+          "description": "Describe purpose of Musical Instrument Digital Interface (MIDI) and use of event messages. Describe advantages of MIDI files for representing music (compactness, editability, instrument independence).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ai",
+          "Specification_section_sub": "4.5.6.9",
+          "Sub_topic_name": "Compression: reasons; lossless vs lossy",
+          "description": "Know why images/sound (and other files e.g. text) are compressed. Understand difference between lossless and lossy compression; explain advantages/disadvantages of each (fidelity vs size).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5aj",
+          "Specification_section_sub": "4.5.6.9",
+          "Sub_topic_name": "Lossless compression: RLE and dictionary methods",
+          "description": "Explain principles behind lossless compression techniques: run length encoding (RLE) and dictionary-based methods (e.g., LZ-style substitution of repeated strings with references).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5ak",
+          "Specification_section_sub": "4.5.6.10",
+          "Sub_topic_name": "Encryption terminology and definition",
+          "description": "Define encryption; understand terms cipher, plaintext and ciphertext.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5al",
+          "Specification_section_sub": "4.5.6.10",
+          "Sub_topic_name": "Caesar cipher: encrypt/decrypt and weaknesses",
+          "description": "Apply Caesar cipher to encrypt plaintext and decrypt ciphertext. Explain why Caesar cipher is easily cracked (small key space; frequency analysis).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5am",
+          "Specification_section_sub": "4.5.6.10",
+          "Sub_topic_name": "Vernam cipher/one-time pad: encrypt/decrypt and perfect security",
+          "description": "Apply Vernam cipher (one-time pad) to encrypt/decrypt. Explain why considered perfectly secure: key chosen uniformly at random; ciphertext uniformly distributed; key must be used once only (one-time pad).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5an",
+          "Specification_section_sub": "4.5.6.10",
+          "Sub_topic_name": "Perfect vs computational security",
+          "description": "Compare Vernam cipher with computationally secure ciphers: Vernam is mathematically proven completely secure; all other ciphers theoretically breakable given enough ciphertext/time (security based on computational infeasibility).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "4.6",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of computer systems",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "4.6.1.1",
+          "Sub_topic_name": "Hardware vs software",
+          "description": "Understand relationship between hardware and software; define hardware and software.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "4.6.1.2",
+          "Sub_topic_name": "System software vs application software",
+          "description": "Explain what is meant by system software and application software; understand need for and attributes of different software types.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "4.6.1.3",
+          "Sub_topic_name": "System software functions (OS, utilities, libraries, translators)",
+          "description": "Understand need for and functions of: operating systems (OSs); utility programs; libraries; translators (compiler, assembler, interpreter).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "4.6.1.4",
+          "Sub_topic_name": "Operating system role: abstraction and resource management",
+          "description": "Know OS role includes hiding hardware complexities. Understand OS resource management: allocating processors, memory and I/O devices among competing processes.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "4.6.2.1",
+          "Sub_topic_name": "Language levels: machine code, assembly, high-level imperative",
+          "description": "Show awareness of development and classification of languages into low-level and high-level. Know low-level includes machine code and assembly. Know high-level includes imperative high-level languages. Describe machine code and assembly; explain advantages/disadvantages vs high-level programming. Explain 'imperative high-level language' and relationship to low-level languages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6f",
+          "Specification_section_sub": "4.6.3.1",
+          "Sub_topic_name": "Translators: assembler, compiler, interpreter",
+          "description": "Understand roles of assembler, compiler and interpreter. Explain differences between compilation and interpretation and appropriate situations for each. Explain why some compilers output intermediate language (e.g., bytecode) and how it is used subsequently. Understand difference between source code and object (executable) code.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6g",
+          "Specification_section_sub": "4.6.4.1",
+          "Sub_topic_name": "Logic gates truth tables and symbols",
+          "description": "Construct truth tables for NOT, AND, OR, XOR, NAND, NOR. Use ANSI/IEEE standard 91-1984 distinctive-shape gate symbols. Draw and interpret circuits using one or more of these gates.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6h",
+          "Specification_section_sub": "4.6.4.1",
+          "Sub_topic_name": "Circuit analysis: truth table completion, Boolean expression, equivalent circuit",
+          "description": "Complete a truth table for a given logic gate circuit. Write a Boolean expression for a given circuit. Draw an equivalent circuit for a given Boolean expression.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6i",
+          "Specification_section_sub": "4.6.4.1",
+          "Sub_topic_name": "Half-adder and full-adder: recognise/trace; half-adder construction",
+          "description": "Recognise and trace the logic of half-adder and full-adder circuits. Construct the circuit for a half-adder.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6j",
+          "Specification_section_sub": "4.6.4.1",
+          "Sub_topic_name": "Edge-triggered D-type flip-flop as memory unit",
+          "description": "Be familiar with use of edge-triggered D-type flip-flop as a memory unit; internal operation not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6k",
+          "Specification_section_sub": "4.6.5.1",
+          "Sub_topic_name": "Boolean algebra simplification incl De Morgan’s laws",
+          "description": "Use Boolean identities and De Morgan’s laws to manipulate and simplify Boolean expressions (algebraic reasoning about logic).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "4.7",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of computer organisation and architecture",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "4.7.1.1",
+          "Sub_topic_name": "Core internal components and buses",
+          "description": "Understand basic internal components of a computer system and how they relate: processor; main memory; address bus; data bus; control bus; I/O controllers. Understand need for communication between components; concept of a bus; how address/data/control buses are used.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "4.7.1.1",
+          "Sub_topic_name": "Von Neumann vs Harvard architectures; use cases",
+          "description": "Explain difference between von Neumann and Harvard architectures; describe where each is typically used (Harvard common in embedded/DSP; von Neumann in general purpose systems).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "4.7.1.1",
+          "Sub_topic_name": "Addressable memory concept",
+          "description": "Understand concept of addressable memory (memory locations identified by addresses; relationship to address bus width and address space).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "4.7.2.1",
+          "Sub_topic_name": "Stored program concept",
+          "description": "Describe stored program concept: machine code instructions stored in main memory are fetched and executed serially by a processor performing arithmetic and logical operations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7e",
+          "Specification_section_sub": "4.7.3.1",
+          "Sub_topic_name": "Processor components and registers",
+          "description": "Explain role/operation of processor and components: ALU; control unit; clock; general-purpose registers; dedicated registers including program counter (PC), current instruction register (CIR), memory address register (MAR), memory buffer register (MBR), status register.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7f",
+          "Specification_section_sub": "4.7.3.2",
+          "Sub_topic_name": "Fetch-Decode-Execute cycle (register roles)",
+          "description": "Explain how Fetch-Execute cycle executes machine code programs: stages fetch, decode, execute; detail roles of registers used during these stages (e.g., PC, MAR, MBR, CIR, status flags).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7g",
+          "Specification_section_sub": "4.7.3.3",
+          "Sub_topic_name": "Instruction sets, opcodes and operands; instruction format model",
+          "description": "Understand 'processor instruction set' and that instruction sets are processor-specific. Know instructions consist of opcode plus one or more operands (value, memory address or register). Use simplified model where addressing mode is incorporated into opcode bits; interpret opcodes in context (not define). Example: 4 bits opcode (3 for operation, 1 for addressing mode) + 4 bits operand = 8-bit instruction; 2^4=16 opcodes possible.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7h",
+          "Specification_section_sub": "4.7.3.4",
+          "Sub_topic_name": "Addressing modes: immediate vs direct",
+          "description": "Understand and apply immediate addressing (operand is datum) and direct addressing (operand is address of datum; address may refer to main memory or register).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7i",
+          "Specification_section_sub": "4.7.3.5",
+          "Sub_topic_name": "Assembly/machine operations: data movement and arithmetic",
+          "description": "Understand and apply basic machine/assembly operations: load, store, add, subtract; using immediate and direct addressing and mnemonic forms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7j",
+          "Specification_section_sub": "4.7.3.5",
+          "Sub_topic_name": "Assembly/machine operations: control flow and comparison",
+          "description": "Understand/apply branching (conditional and unconditional) and compare operations; use with immediate/direct addressing; reason about program flow.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7k",
+          "Specification_section_sub": "4.7.3.5",
+          "Sub_topic_name": "Assembly/machine operations: bitwise logic and shifts; halt",
+          "description": "Understand/apply logical bitwise operators AND, OR, NOT, XOR; logical shifts right/left; halt instruction; use in mnemonic assembly with immediate/direct addressing.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7l",
+          "Specification_section_sub": "4.7.3.6",
+          "Sub_topic_name": "Interrupts and ISRs; saving environment",
+          "description": "Describe role of interrupts and interrupt service routines (ISRs); effect on Fetch-Execute cycle; need to save volatile environment (registers/state) while servicing interrupt and restore afterwards.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7m",
+          "Specification_section_sub": "4.7.3.7",
+          "Sub_topic_name": "Processor performance factors",
+          "description": "Explain effects on processor performance of: multiple cores; cache memory; clock speed; word length; address bus width; data bus width.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7n",
+          "Specification_section_sub": "4.7.4.1",
+          "Sub_topic_name": "Input/output devices: characteristics and operation",
+          "description": "Know main characteristics, purposes, suitability and principles of operation for: barcode reader; digital camera; laser printer; RFID.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7o",
+          "Specification_section_sub": "4.7.4.2",
+          "Sub_topic_name": "Secondary storage: need and device principles",
+          "description": "Explain need for secondary storage. Know characteristics, purposes, suitability and principles of operation for: hard disk; optical disk; solid-state disk (SSD). Know SSD basics: NAND flash + controller managing pages/blocks and write/erase complexities; floating-gate transistors storing charge; pages in blocks, cannot overwrite without erase; whole block erase requirement; lower latency and faster transfer than magnetic disks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7p",
+          "Specification_section_sub": "4.7.4.2",
+          "Sub_topic_name": "Choosing storage media: capacity vs access speed suitability",
+          "description": "Compare capacity and speed of access of storage media and judge suitability for different applications (trade-offs: cost, performance, portability, durability).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "4.8",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Consequences of uses of computing",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "4.8.1",
+          "Sub_topic_name": "Ethical, legal, cultural and social issues of computing",
+          "description": "Show awareness of current individual (moral), social (ethical), legal and cultural opportunities and risks of computing. Understand digital technologies transform communication and information flows, enabling monitoring behaviour, amassing/analysing personal information, distributing/publishing/communicating personal information at scale. Understand computer scientists/software engineers have power and responsibilities in algorithms and deployed code; software/algorithms embed moral and cultural values; scale enables great good and great harm. Discuss challenges facing legislators in the digital age (e.g., pace of change, jurisdiction, enforcement, balancing rights and innovation).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "4.9",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of communication and networking",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "4.9.1.1",
+          "Sub_topic_name": "Serial vs parallel; synchronous vs asynchronous; start/stop bits",
+          "description": "Define serial and parallel transmission; discuss advantages of serial over parallel. Define and compare synchronous vs asynchronous transmission. Describe purpose of start and stop bits in asynchronous transmission.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "4.9.1.2",
+          "Sub_topic_name": "Communication metrics: baud/bit rate, bandwidth, latency, protocol",
+          "description": "Define baud rate, bit rate, bandwidth, latency, protocol. Differentiate baud rate vs bit rate; know bit rate can exceed baud rate if multiple bits encoded per signal change. Understand relationship between bit rate and bandwidth (bit rate directly proportionate to bandwidth).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "4.9.2.1",
+          "Sub_topic_name": "Network topology: physical star vs logical bus",
+          "description": "Understand physical star topology and logical bus topology; differentiate and explain operation. Know a physically star-wired network can behave logically as a bus using a bus protocol and appropriate physical switching.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "4.9.2.2",
+          "Sub_topic_name": "Peer-to-peer vs client-server networking",
+          "description": "Explain peer-to-peer and client-server networking; describe situations used. Know in P2P each computer equal; in client-server most are clients and one or more servers provide services (e.g., file server, email server).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "4.9.2.3",
+          "Sub_topic_name": "WiFi purpose and components",
+          "description": "Explain purpose of WiFi as a standards-based wireless LAN enabling devices to connect wirelessly. Know required components: wireless network adapter and wireless access point.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "4.9.2.3",
+          "Sub_topic_name": "Wireless security methods (WPA/WPA2, SSID, MAC allow list)",
+          "description": "Be familiar with how wireless networks are secured: strong encryption using WPA/WPA2; SSID broadcast disabled; MAC address allow list.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "4.9.2.3",
+          "Sub_topic_name": "CSMA/CA and RTS/CTS",
+          "description": "Explain CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) with and without RTS/CTS (Request to Send/Clear to Send). Note: CSMA/CD knowledge not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "4.9.2.3",
+          "Sub_topic_name": "SSID purpose",
+          "description": "Be familiar with purpose of Service Set Identifier (SSID) in WiFi networks (network name/identifier used in discovery/association).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "4.9.3.1",
+          "Sub_topic_name": "Internet structure; packet switching; routers/gateways; packets",
+          "description": "Understand Internet structure; role of packet switching and routers. Know main components of a packet. Define router and gateway; consider where/why used. Explain how routing is achieved across the Internet.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9j",
+          "Specification_section_sub": "4.9.3.1",
+          "Sub_topic_name": "URLs, domain names, FQDN and IP addresses; DNS; registries",
+          "description": "Describe URL in internetworking context. Explain FQDN, domain name and IP address. Describe how domain names are organised. Understand purpose/function of domain service and reliance on DNS system. Explain service provided by Internet registries and why needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9k",
+          "Specification_section_sub": "4.9.3.2",
+          "Sub_topic_name": "Firewalls; encryption types; certificates and signatures",
+          "description": "Understand how a firewall works: packet filtering, proxy server, stateful inspection. Explain symmetric vs asymmetric (private/public key) encryption and key exchange. Explain how digital certificates and digital signatures are obtained and used.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9l",
+          "Specification_section_sub": "4.9.3.2",
+          "Sub_topic_name": "Malware: worms, trojans, viruses; vulnerabilities and mitigations",
+          "description": "Discuss worms, trojans and viruses and vulnerabilities exploited. Discuss how improved code quality, monitoring and protection address these threats (defence in depth, patching, least privilege, anti-malware, intrusion detection).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9m",
+          "Specification_section_sub": "4.9.4.1",
+          "Sub_topic_name": "TCP/IP stack layers and sockets",
+          "description": "Describe roles of four TCP/IP stack layers: application, transport, network, link. Describe role of sockets in TCP/IP stack.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9n",
+          "Specification_section_sub": "4.9.4.1",
+          "Sub_topic_name": "MAC addresses; well-known vs client ports",
+          "description": "Be familiar with role of MAC (Media Access Control) addresses. Explain what well-known ports and client ports are used for and differences between them.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9o",
+          "Specification_section_sub": "4.9.4.2",
+          "Sub_topic_name": "Standard application protocols (FTP/HTTP/HTTPS/POP3/SMTP/SSH)",
+          "description": "Be familiar with protocols: FTP, HTTP, HTTPS, POP3, SMTP, SSH. Be familiar with FTP client software and FTP server for transferring files using anonymous and non-anonymous access. Be familiar with SSH for remote management.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9p",
+          "Specification_section_sub": "4.9.4.2",
+          "Sub_topic_name": "SSH for TCP connections and application commands; secure login",
+          "description": "Know how an SSH client makes TCP connection to remote port to send commands using application protocols (e.g., HTTP GET, SMTP commands, POP3 retrieval). Be familiar with using SSH to log in securely to a remote computer and execute commands.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9q",
+          "Specification_section_sub": "4.9.4.2",
+          "Sub_topic_name": "Email servers and web servers/browsers roles",
+          "description": "Explain role of an email server in retrieving and sending email. Explain role of a web server in serving web pages in text form. Understand role of web browser in retrieving web pages/resources and rendering accordingly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9r",
+          "Specification_section_sub": "4.9.4.3",
+          "Sub_topic_name": "IP address split: network vs host identifiers",
+          "description": "Know IP address is split into network identifier part and host identifier part.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9s",
+          "Specification_section_sub": "4.9.4.4",
+          "Sub_topic_name": "Subnet masks and subnetting concept",
+          "description": "Know networks can be divided into subnets; know how subnet mask identifies network identifier part of an IP address.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9t",
+          "Specification_section_sub": "4.9.4.5",
+          "Sub_topic_name": "IPv4 vs IPv6; reasons for IPv6",
+          "description": "Know two IP standards: v4 and v6. Know why IPv6 introduced (address exhaustion, improved features).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9u",
+          "Specification_section_sub": "4.9.4.6",
+          "Sub_topic_name": "Public vs private (routable vs non-routable) IP addresses",
+          "description": "Distinguish between routable and non-routable IP addresses (public vs private address ranges; use with NAT).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9v",
+          "Specification_section_sub": "4.9.4.7",
+          "Sub_topic_name": "DHCP purpose and function",
+          "description": "Understand purpose and function of DHCP system (dynamic allocation of IP configuration such as IP address, subnet mask, gateway, DNS).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9w",
+          "Specification_section_sub": "4.9.4.8",
+          "Sub_topic_name": "NAT concept and purpose",
+          "description": "Explain basic concept of Network Address Translation (NAT) and why used (sharing public IPs, private addressing, security/management).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9x",
+          "Specification_section_sub": "4.9.4.9",
+          "Sub_topic_name": "Port forwarding concept and purpose",
+          "description": "Explain basic concept of port forwarding and why used (exposing internal services, mapping external port to internal host/port).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9y",
+          "Specification_section_sub": "4.9.4.10",
+          "Sub_topic_name": "Client-server request/response; WebSockets",
+          "description": "Be familiar with client-server model: client sends request, server replies with response. Be familiar with WebSocket protocol: persistent full-duplex TCP connection between browser and server enabling either side to send data at any time; know why/where used.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9z",
+          "Specification_section_sub": "4.9.4.10",
+          "Sub_topic_name": "Web CRUD applications and REST mapping to SQL",
+          "description": "Understand CRUD: Create, Retrieve, Update, Delete. Understand REST principles: HTTP methods map to database functions: GET→SELECT, POST→INSERT, DELETE→DELETE, PUT→UPDATE. Understand REST relies on HTTP request methods; JavaScript in browser calls REST API on server; JSON or XML used to transmit data; JavaScript referenced by HTML (e.g., index.html) runs in browser.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9aa",
+          "Specification_section_sub": "4.9.4.10",
+          "Sub_topic_name": "JSON vs XML comparison",
+          "description": "Compare JSON with XML: JSON is easier for humans to read, more compact, easier to create, easier/faster for computers to parse.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9ab",
+          "Specification_section_sub": "4.9.4.11",
+          "Sub_topic_name": "Thin-client vs thick-client computing",
+          "description": "Compare and contrast thin-client computing with thick-client computing (where processing occurs, deployment/maintenance, bandwidth/latency dependency, device requirements).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "4.10",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of databases",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "4.10.1",
+          "Sub_topic_name": "Conceptual data modelling and ER diagrams",
+          "description": "Produce a data model from given data requirements for a simple scenario involving multiple entities. Produce entity relationship (ER) diagrams representing a data model and entity descriptions in the form Entity1(Attribute1, Attribute2, …). Use underlining to identify attribute(s) forming the entity identifier.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "4.10.2",
+          "Sub_topic_name": "Relational database concepts and keys",
+          "description": "Explain concept of a relational database. Define: attribute; primary key; composite primary key; foreign key.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "4.10.3",
+          "Sub_topic_name": "Normalisation to 3NF and reasons",
+          "description": "Normalise relations to third normal form (3NF). Know properties of a relation in 3NF. Understand why databases are normalised (reduce redundancy, avoid update anomalies, improve integrity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10d",
+          "Specification_section_sub": "4.10.4",
+          "Sub_topic_name": "SQL DML: SELECT/UPDATE/INSERT/DELETE across multiple tables",
+          "description": "Use SQL to retrieve, update, insert and delete data from multiple tables in a relational database (joins where required; conditions; projection).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10e",
+          "Specification_section_sub": "4.10.4",
+          "Sub_topic_name": "SQL DDL: defining tables",
+          "description": "Use SQL to define a database table (CREATE TABLE with appropriate attributes and keys/constraints as required by the scenario).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10f",
+          "Specification_section_sub": "4.10.5",
+          "Sub_topic_name": "Client-server databases and concurrency control",
+          "description": "Know client-server DB provides simultaneous access for multiple clients. Know how concurrent access can be controlled to preserve integrity; understand risk of lost updates; methods: record locks, serialisation, timestamp ordering, commitment ordering.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "4.11",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Big Data",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "4.11.1",
+          "Sub_topic_name": "Big Data characteristics (3Vs) and challenges",
+          "description": "Know Big Data as catch-all for data that won’t fit usual containers. Describe by volume (too big for single server), velocity (streaming; millisecond–second responses), variety (many forms: structured, unstructured, text, multimedia). Understand key difficulty is lack of structure: makes analysis harder; relational DBs unsuitable due to row/column requirement. Know machine learning techniques needed to discern patterns and extract information. Understand 'big' is relative; scaling issues arise when data doesn’t fit on one server because relational DBs don’t scale well across multiple machines; streaming sources include sensors, smartphones, video surveillance, mouse clicks.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "4.11.1",
+          "Sub_topic_name": "Distributed processing and why functional programming helps",
+          "description": "Know when data too large for one server: processing must be distributed across multiple machines. Know functional programming is a solution because it makes it easier to write correct and efficient distributed code. Know functional features supporting this: immutable data structures, statelessness, higher-order functions. Explain how these features support correctness and distribution (avoid shared mutable state, easier parallelism).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "4.11.1",
+          "Sub_topic_name": "Fact-based model and graph schema (nodes/edges/properties)",
+          "description": "Be familiar with fact-based model for representing data; graph schema for capturing dataset structure; nodes, edges and properties in a graph schema. Know each fact captures a single piece of information.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "4.12",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Fundamentals of functional programming",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "4.12.1.1",
+          "Sub_topic_name": "Function types, domain and co-domain",
+          "description": "Know function f has type f: A → B (type A→B), where A is argument type (domain) and B is result type (co-domain). Know domain and co-domain are subsets of objects in some data type. Understand not all members of co-domain must be outputs; example mapping letters to 0–25.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "4.12.1.2",
+          "Sub_topic_name": "Functions as first-class objects",
+          "description": "Know a function is a first-class object (in functional languages and imperative languages that support it): can appear in expressions, be assigned to variables, passed as arguments, returned as results. Relate to first-class values like integers/strings in many languages.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12c",
+          "Specification_section_sub": "4.12.1.3",
+          "Sub_topic_name": "Function application and Cartesian product argument types",
+          "description": "Know function application means applying a function to its arguments (e.g., add(3,4)). Understand type example f: integer × integer → integer, where integer × integer is Cartesian product. Understand interpretation that multi-argument function can be viewed as taking a single pair argument (3,4).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12d",
+          "Specification_section_sub": "4.12.1.4",
+          "Sub_topic_name": "Partial function application (currying) notation",
+          "description": "Know partial function application for 1-, 2-, and 3-argument functions; use notation: add: integer → (integer → integer); add 4 returns a function that adds 4; brackets may be dropped: integer → integer → integer; understand functions viewed as taking one argument at a time and returning next function/result.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12e",
+          "Specification_section_sub": "4.12.1.5",
+          "Sub_topic_name": "Function composition (g ○ f)",
+          "description": "Know composition of functions: given f:A→B and g:B→C, g ○ f is function A→C applying f then g. Example: f(x)=x+2, g(y)=y^3, then (g ○ f)(x)=(x+2)^3.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12f",
+          "Specification_section_sub": "4.12.2.1",
+          "Sub_topic_name": "Writing simple functional programs; higher-order functions",
+          "description": "Have experience constructing simple programs in a functional language (e.g., Haskell, Standard ML, Scheme, Lisp) or languages supporting functional paradigm (Python, F#, C#, Scala, Java 8, Delphi XE+, VB.NET 2008+). Know higher-order function: takes a function as argument and/or returns a function.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12g",
+          "Specification_section_sub": "4.12.2.1",
+          "Sub_topic_name": "map, filter, reduce/fold (definitions and use)",
+          "description": "Have experience using: map (apply function to each element of list, returning list of results); filter (select elements matching condition); reduce/fold (reduce list to single value by repeatedly applying combining function).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12h",
+          "Specification_section_sub": "4.12.3.1",
+          "Sub_topic_name": "Lists as head:tail; empty list",
+          "description": "Know list representation as concatenation of head and tail; head is an element, tail is a list; list can be empty. Example (Haskell): [4,3,5] = 4:[3,5]; [] is empty list.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12i",
+          "Specification_section_sub": "4.12.3.1",
+          "Sub_topic_name": "List operations (head/tail/empty/length/construct/prepend/append)",
+          "description": "Describe and apply list operations: return head; return tail; test for empty; return length; construct empty list; prepend item; append item. Have experience writing programs for these operations in a functional language or language with functional support.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "4.13",
+      "Strand": "A-level Computer Science (AQA 7517)",
+      "Topic_name": "Systematic approach to problem solving",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "4.13.1.1",
+          "Sub_topic_name": "Analysis stage: requirements and data modelling",
+          "description": "Know that before solving a problem it must be defined; requirements established; data model created. Know requirements should be established by interaction with intended users; clarifying requirements may involve prototyping/agile approach. Have experience using abstraction to model aspects of external world in a program.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "4.13.1.2",
+          "Sub_topic_name": "Design stage: structures, algorithms, modularity, UI; iterative design",
+          "description": "Know that before construction, solution should be designed/specified: plan data structures for data model, design algorithms, design modular structure, design user interface. Have experience structuring programs into modular parts with clear documented interfaces. Know design can be iterative using prototyping/agile approach.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "4.13.1.3",
+          "Sub_topic_name": "Implementation stage: coding models/algorithms; debugging; reasoning about correctness/efficiency",
+          "description": "Know models and algorithms must be implemented as data structures and code instructions. Have practice writing, debugging and testing programs and articulating how programs work; argue for correctness and efficiency using logical reasoning, test data and user feedback. Know solution may be reached iteratively with prototyping/agile focus on critical path first.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "4.13.1.4",
+          "Sub_topic_name": "Testing stage: normal/boundary/erroneous and acceptance testing",
+          "description": "Know implementation must be tested for errors using selected test data covering normal (typical), boundary and erroneous cases. Have practical experience designing/applying these tests. Know acceptance testing with intended users ensures meeting specification; students need provide evidence of user feedback (not end-user test details).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13e",
+          "Specification_section_sub": "4.13.1.5",
+          "Sub_topic_name": "Evaluation criteria for computer systems",
+          "description": "Know criteria for evaluating a computer system (fitness for purpose vs objectives, usability, performance, maintainability, reliability, robustness, security, user feedback, limitations and improvements).",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}

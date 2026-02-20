@@ -1,0 +1,1819 @@
+{
+  "Qualification": "A Level",
+  "Subject": "Further Mathematics",
+  "Exam Board": "Edexcel",
+  "Specification": "9FM0",
+  "has_math": true,
+  "optional_modules": true,
+  "Topics": [
+    {
+      "Topic_id": 1,
+      "Specification_section": "CP 1",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Proof",
+      "Sub_topics": [
+        {
+          "subtopic_id": "1a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Proof by mathematical induction",
+          "description": "Construct proofs using mathematical induction. Contexts include: (i) summation of series (e.g. prove identities such as \\(\\sum_{r=1}^n (2r-1)=n^2\\), \\(\\sum_{r=1}^n (r+1)=\\frac{n(n+1)(n+2)}{3}\\) or equivalent); (ii) divisibility (e.g. show expressions of the form \\(3^n+11\\) or \\(n^2+3n+11\\) are divisible by a given integer); (iii) powers/products of matrices (e.g. prove a stated formula for \\(A^n\\) or a product of matrices by induction). Must be able to set up base case, induction hypothesis, induction step and conclude.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 2,
+      "Specification_section": "CP 2",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Complex numbers",
+      "Sub_topics": [
+        {
+          "subtopic_id": "2a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Solve polynomial equations using complex numbers",
+          "description": "Solve any quadratic equation with real coefficients. Solve cubic or quartic equations with real coefficients given sufficient information to deduce at least one root (cubic) or at least one complex root or quadratic factor (quartic); e.g. given a factor \\((z+2)\\) of \\(f(z)=2z^3+5z^2+7z+10\\) solve \\(f(z)=0\\) completely; given real roots such as \\(g(1)=0\\), \\(g(-2)=0\\) for a quartic, factor fully and solve completely (including complex roots).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Arithmetic with complex numbers (Cartesian form)",
+          "description": "Add, subtract, multiply and divide complex numbers in the form \\(x+iy\\) where \\(x,y\\in\\mathbb{R}\\). Use and interpret the terms real part \\(\\Re(z)\\) and imaginary part \\(\\Im(z)\\). Know the meaning of modulus \\(|z|\\) and argument \\(\\arg(z)\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2c",
+          "Specification_section_sub": "2.3",
+          "Sub_topic_name": "Complex conjugate and conjugate roots",
+          "description": "Understand and use the complex conjugate \\(z^*\\). Know that non-real roots of polynomial equations with real coefficients occur in conjugate pairs; i.e. if \\(z_1\\) is a root of \\(f(z)=0\\) with real coefficients then \\(z_1^*\\) is also a root.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2d",
+          "Specification_section_sub": "2.4",
+          "Sub_topic_name": "Argand diagrams (representation and operations)",
+          "description": "Use and interpret Argand diagrams to represent complex numbers as points/vectors in the complex plane. Represent the sum or difference of two complex numbers geometrically on an Argand diagram.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2e",
+          "Specification_section_sub": "2.5",
+          "Sub_topic_name": "Convert between Cartesian and modulus–argument form",
+          "description": "Convert complex numbers between Cartesian form \\(x+iy\\) and modulus–argument form \\(r(\\cos\\theta+i\\sin\\theta)\\) (or \\(re^{i\\theta}\\) once introduced). Knowledge of radians is assumed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2f",
+          "Specification_section_sub": "2.6",
+          "Sub_topic_name": "Multiply/divide in modulus–argument form",
+          "description": "Multiply and divide complex numbers in modulus–argument form. Use results: \\(|z_1z_2|=|z_1||z_2|\\), \\(|z_1/z_2|=|z_1|/|z_2|\\); \\(\\arg(z_1z_2)=\\arg z_1+\\arg z_2\\), \\(\\arg(z_1/z_2)=\\arg z_1-\\arg z_2\\). Knowledge of radians and compound angle formulae is assumed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2g",
+          "Specification_section_sub": "2.7",
+          "Sub_topic_name": "Loci and regions in the Argand diagram (basic)",
+          "description": "Construct and interpret simple loci in the Argand diagram such as \\(|z-a|>r\\), \\(|z-a|=b\\), \\(|z-a|=|z-b|\\), \\(\\arg(z-a)=\\beta\\), and regions such as \\(|z-a|\\le |z-b|\\), \\(|z-a|\\le b\\), \\(\\alpha<\\arg(z-a)<\\beta\\). Knowledge of radians is assumed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2h",
+          "Specification_section_sub": "2.8",
+          "Sub_topic_name": "De Moivre’s theorem and multiple-angle / series results",
+          "description": "Understand De Moivre’s theorem and use it to find multiple-angle formulae and sums of series. Use identities such as \\(z+z^{-1}=2\\cos\\theta\\) and \\(z-z^{-1}=2i\\sin\\theta\\) (with \\(z=\\cos\\theta+i\\sin\\theta\\)) to express \\(\\cos(p\\theta)\\), \\(\\sin(q\\theta)\\), \\(\\tan(r\\theta)\\) in terms of powers of \\(\\sin\\theta\\), \\(\\cos\\theta\\), \\(\\tan\\theta\\), and conversely express powers in terms of multiple angles. For series, be able to derive results for sums involving powers of roots of unity (e.g. show \\(1+z+z^2+\\cdots+z^{n-1}=1+i\\cot\\frac{\\pi}{2n}\\) for a specified \\(z\\) and positive integer \\(n\\), or analogous sums as set).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2i",
+          "Specification_section_sub": "2.9",
+          "Sub_topic_name": "Exponential form of complex numbers",
+          "description": "Know and use the definition \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\) and represent complex numbers as \\(z=re^{i\\theta}\\). Be familiar with \\(\\cos\\theta=\\tfrac12(e^{i\\theta}+e^{-i\\theta})\\) and \\(\\sin\\theta=\\tfrac{1}{2i}(e^{i\\theta}-e^{-i\\theta})\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2j",
+          "Specification_section_sub": "2.10",
+          "Sub_topic_name": "nth roots of a complex number and regular n-gon property",
+          "description": "Find the \\(n\\) distinct \\(n\\)th roots of \\(re^{i\\theta}\\) for \\(r\\ne 0\\). Know that these roots form the vertices of a regular \\(n\\)-gon in the Argand diagram.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "2k",
+          "Specification_section_sub": "2.11",
+          "Sub_topic_name": "Roots of unity in geometric problems",
+          "description": "Use complex roots of unity to solve geometric problems (e.g. exploiting symmetry/regular polygons and arguments/moduli of roots).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 3,
+      "Specification_section": "CP 3",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Matrices",
+      "Sub_topics": [
+        {
+          "subtopic_id": "3a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Matrix addition, subtraction, scalar multiplication and matrix multiplication",
+          "description": "Add, subtract and multiply conformable matrices; multiply a matrix by a scalar. Carry out matrix products accurately.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Zero and identity matrices",
+          "description": "Understand and use the zero matrix \\(0\\) and identity matrix \\(I\\) (including their roles in addition/multiplication).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "2-D linear transformations and composition (matrix representation)",
+          "description": "Use matrices to represent linear transformations in 2-D, including successive transformations. Identify/use matrices for: reflections in coordinate axes and lines \\(y=\\pm x\\); rotations through any angle about \\((0,0)\\); stretches parallel to the x- and y-axes; enlargements about centre \\((0,0)\\) with scale factor \\(k\\ne 0\\), \\(k\\in\\mathbb{R}\\). Use the fact: transformation represented by \\(AB\\) is that represented by \\(B\\) followed by \\(A\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3d",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Single 3-D transformations (restricted set)",
+          "description": "Use matrices to represent single transformations in 3-D confined to reflection in one of \\(x=0\\), \\(y=0\\), \\(z=0\\) or rotation about one of the coordinate axes. Knowledge of 3-D vectors assumed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3e",
+          "Specification_section_sub": "3.4",
+          "Sub_topic_name": "Invariant points and invariant lines",
+          "description": "For a given linear transformation, find coordinates of invariant points and equations of invariant lines (i.e. points/lines mapped to themselves).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3f",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Determinants (2×2 and 3×3) and geometric interpretation",
+          "description": "Calculate determinants of \\(2\\times2\\) and \\(3\\times3\\) matrices. Interpret determinant as a scale factor for area/volume in linear transformations, including effect on orientation (sign of determinant).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3g",
+          "Specification_section_sub": "3.6",
+          "Sub_topic_name": "Singular vs non-singular matrices; inverses (2×2 and 3×3)",
+          "description": "Understand and use singular and non-singular matrices (determinant zero/non-zero). Understand the process of finding an inverse matrix. Calculate and use inverses of non-singular \\(2\\times2\\) and \\(3\\times3\\) matrices (including calculator use to compute inverses). Use inverse properties such as \\((AB)^{-1}=B^{-1}A^{-1}\\) where appropriate.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3h",
+          "Specification_section_sub": "3.7",
+          "Sub_topic_name": "Solve 3 linear equations using inverse matrices",
+          "description": "Solve three linear simultaneous equations in three variables using the inverse matrix method (matrix equation \\(A\\mathbf{x}=\\mathbf{b}\\), \\(\\mathbf{x}=A^{-1}\\mathbf{b}\\) where \\(A\\) is non-singular).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "3i",
+          "Specification_section_sub": "3.8",
+          "Sub_topic_name": "Geometric interpretation of solutions of 3 linear equations",
+          "description": "Interpret geometrically the solution and failure of solution of three simultaneous linear equations in three variables as intersections of three planes: (i) meet in a point (unique solution); (ii) form a sheaf (infinite solutions); (iii) form a prism or are otherwise inconsistent (no solution).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 4,
+      "Specification_section": "CP 4",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Further algebra and functions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "4a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Relations between roots and coefficients (up to quartic)",
+          "description": "Understand and use relationships between roots and coefficients of polynomial equations up to quartic. For roots \\(\\alpha,\\beta,\\gamma\\) (cubic) or including quartic roots, evaluate symmetric expressions such as \\(\\alpha^2+\\beta^2+\\gamma^2\\), \\(\\frac1\\alpha+\\frac1\\beta+\\frac1\\gamma\\), \\((3+\\alpha)(3+\\beta)(3+\\gamma)\\), \\(\\alpha^3+\\beta^3+\\gamma^3\\), using Vieta-type relations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Transforming roots and forming new polynomial equations",
+          "description": "Form a polynomial equation whose roots are a linear transformation of the roots of a given polynomial equation (degree at least 3); e.g. if new roots are \\(p\\alpha+q\\) for each root \\(\\alpha\\), construct the resulting polynomial.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4c",
+          "Specification_section_sub": "4.3",
+          "Sub_topic_name": "Standard sums (integers, squares, cubes) and using them to sum series",
+          "description": "Understand and use formulae for sums of integers, squares and cubes (e.g. \\(\\sum r\\), \\(\\sum r^2\\), \\(\\sum r^3\\)) and use these to sum other series, e.g. \\(\\sum_{r=1}^n r(r+2)\\) or similar polynomial-in-\\(r\\) sums.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4d",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "Summation by method of differences (including partial fractions)",
+          "description": "Understand and use the method of differences for summation of series, including the use of partial fractions to create telescoping forms. For example, sum \\(\\sum_{r=1}^n \\frac{1}{r(r+1)}\\) by writing \\(\\frac{1}{r(r+1)}=\\frac1r-\\frac{1}{r+1}\\) (or equivalent decompositions).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4e",
+          "Specification_section_sub": "4.5",
+          "Sub_topic_name": "Maclaurin series including general term",
+          "description": "Find the Maclaurin series of a function, including the general term (using differentiation at 0 / known expansions / algebraic manipulation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "4f",
+          "Specification_section_sub": "4.6",
+          "Sub_topic_name": "Use standard Maclaurin series and validity ranges",
+          "description": "Recognise and use Maclaurin series for \\(e^x\\), \\(\\ln(1+x)\\), \\(\\sin x\\), \\(\\cos x\\) and \\((1+x)^n\\). Be aware of the range of \\(x\\) for which each is valid (no proof required). Include derivation/use of expansions of compound functions (e.g. substitute \\(ax\\), \\(x^2\\), \\(\\sin x\\) into a known series and simplify).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 5,
+      "Specification_section": "CP 5",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Further calculus",
+      "Sub_topics": [
+        {
+          "subtopic_id": "5a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Volumes of revolution (x-axis and y-axis; Cartesian/parametric)",
+          "description": "Derive formulae for, and calculate, volumes of revolution using both \\(V=\\pi\\int_a^b y^2\\,dx\\) and \\(V=\\pi\\int_c^d x^2\\,dy\\). Be able to find volumes when curves are given in Cartesian or parametric form (set up appropriate integral, correct limits).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Improper integrals",
+          "description": "Evaluate improper integrals where the integrand is undefined at a point in the interval or the interval is infinite. For example integrals such as \\(\\int_0^2 \\frac{1}{\\sqrt{x}}\\,dx\\) (singularity) and \\(\\int_0^{\\infty} e^{-x}\\,dx\\) (infinite limit). Must use limit definitions and determine convergence/divergence.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "Mean value of a function",
+          "description": "Understand and evaluate the mean value of a function on \\([a,b]\\): \\(\\frac{1}{b-a}\\int_a^b f(x)\\,dx\\). Use in problems requiring average value over an interval.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5d",
+          "Specification_section_sub": "5.4",
+          "Sub_topic_name": "Integration using partial fractions (including quadratic factors ax^2+c)",
+          "description": "Integrate rational functions using partial fractions, extending beyond linear factors to include irreducible quadratic factors of the form \\(ax^2+c\\) in the denominator.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5e",
+          "Specification_section_sub": "5.5",
+          "Sub_topic_name": "Differentiate inverse trigonometric functions",
+          "description": "Differentiate expressions involving inverse trig functions such as \\(\\arcsin x\\), \\(\\arctan x\\), etc., including composite expressions (e.g. \\(\\arcsin x + x\\sqrt{1-x^2}\\), \\(\\tfrac12\\arctan(x^2)\\)). Apply product/chain rules as needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "5f",
+          "Specification_section_sub": "5.6",
+          "Sub_topic_name": "Integrals requiring trig substitution: 1/√(a²−x²) and √(a²−x²)",
+          "description": "Integrate functions of the forms \\(\\frac{1}{\\sqrt{a^2-x^2}}\\) and \\(\\sqrt{a^2-x^2}\\), and associated functions, by choosing appropriate trigonometric substitutions (e.g. \\(x=a\\sin\\theta\\) or \\(x=a\\cos\\theta\\)) and completing integrals correctly.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 6,
+      "Specification_section": "CP 6",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Further vectors",
+      "Sub_topics": [
+        {
+          "subtopic_id": "6a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "Equation of a line in 3-D (vector and Cartesian forms)",
+          "description": "Understand and use the vector and Cartesian forms of a straight line in 3-D: \\(\\mathbf{r}=\\mathbf{a}+\\lambda\\mathbf{b}\\) and \\(\\frac{x-a_1}{b_1}=\\frac{y-a_2}{b_2}=\\frac{z-a_3}{b_3}\\). Find the point of intersection of two lines given in vector form. Be familiar with skew lines and parallel lines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6b",
+          "Specification_section_sub": "6.2",
+          "Sub_topic_name": "Equation of a plane (vector and Cartesian forms)",
+          "description": "Understand and use vector and Cartesian forms of a plane: \\(\\mathbf{r}=\\mathbf{a}+\\lambda\\mathbf{b}+\\mu\\mathbf{c}\\) and \\(ax+by+cz=d\\). Convert between forms where needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6c",
+          "Specification_section_sub": "6.3",
+          "Sub_topic_name": "Scalar product applications: angles and plane equation r·n=k",
+          "description": "Calculate scalar product and use \\(\\mathbf{a}\\cdot\\mathbf{b}=|\\mathbf{a}||\\mathbf{b}|\\cos\\theta\\). Use scalar product to: express plane equation in the normal form \\(\\mathbf{r}\\cdot\\mathbf{n}=k\\) (or \\((\\mathbf{r}-\\mathbf{a})\\cdot\\mathbf{n}=0\\)); calculate angle between two lines, between two planes, and between a line and a plane.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6d",
+          "Specification_section_sub": "6.4",
+          "Sub_topic_name": "Perpendicular vectors via dot product",
+          "description": "Check whether vectors are perpendicular using scalar product; use property \\(\\mathbf{a}\\cdot\\mathbf{b}=0\\iff \\mathbf{a}\\perp\\mathbf{b}\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "6e",
+          "Specification_section_sub": "6.5",
+          "Sub_topic_name": "Intersections and perpendicular distances in 3-D",
+          "description": "Find the intersection of a line and a plane. Calculate perpendicular distances: between two lines; from a point to a line; from a point to a plane. Use point-to-plane distance formula for plane \\(n_1x+n_2y+n_3z+d=0\\): distance from \\((\\alpha,\\beta,\\gamma)\\) is \\(\\frac{|n_1\\alpha+n_2\\beta+n_3\\gamma+d|}{\\sqrt{n_1^2+n_2^2+n_3^2}}\\).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 7,
+      "Specification_section": "CP 7",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Polar coordinates",
+      "Sub_topics": [
+        {
+          "subtopic_id": "7a",
+          "Specification_section_sub": "7.1",
+          "Sub_topic_name": "Convert between polar and Cartesian coordinates",
+          "description": "Understand and use polar coordinates \\((r,\\theta)\\) and convert between polar and Cartesian forms (e.g. \\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\), \\(r^2=x^2+y^2\\), \\(\\tan\\theta=y/x\\) with quadrant awareness).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7b",
+          "Specification_section_sub": "7.2",
+          "Sub_topic_name": "Sketch polar curves r=f(θ)",
+          "description": "Sketch curves given in polar form \\(r=f(\\theta)\\), including those involving trig functions. Examples that may be set include: \\(r=p\\sec(\\alpha-\\theta)\\), \\(r=a\\), \\(r=2a\\cos\\theta\\), \\(r=k\\theta\\), \\(r=a(1\\pm\\cos\\theta)\\), \\(r=a(3+2\\cos\\theta)\\), \\(r=a\\cos^2\\theta\\), \\(r^2=a^2\\cos 2\\theta\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7c",
+          "Specification_section_sub": "7.3",
+          "Sub_topic_name": "Area enclosed by a polar curve",
+          "description": "Find area enclosed by a polar curve using \\(\\frac12\\int_{\\alpha}^{\\beta} r^2\\,d\\theta\\). Determine appropriate limits and handle symmetry where helpful.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "7d",
+          "Specification_section_sub": "7.3",
+          "Sub_topic_name": "Tangents in polar coordinates (parallel/perpendicular to initial line)",
+          "description": "Find tangents to polar curves that are parallel to, or at right angles to, the initial line (polar axis). Use \\(\\frac{dy}{dx}\\) for polar form where required, and interpret tangent conditions in terms of derivatives at given \\(\\theta\\).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 8,
+      "Specification_section": "CP 8",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Hyperbolic functions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "8a",
+          "Specification_section_sub": "8.1",
+          "Sub_topic_name": "Definitions, domains/ranges and graphs of sinh, cosh, tanh",
+          "description": "Understand definitions of hyperbolic functions \\(\\sinh x\\), \\(\\cosh x\\), \\(\\tanh x\\), including domains and ranges, and sketch their graphs. Use exponential definitions e.g. \\(\\cosh x=\\tfrac12(e^x+e^{-x})\\), \\(\\sinh x=\\tfrac12(e^x-e^{-x})\\), \\(\\tanh x=\\sinh x/\\cosh x\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8b",
+          "Specification_section_sub": "8.2",
+          "Sub_topic_name": "Differentiate and integrate hyperbolic functions",
+          "description": "Differentiate and integrate hyperbolic functions, including composite/product forms (e.g. differentiate \\(\\tanh 3x\\), \\(x\\sinh^2 x\\), \\(\\frac{\\cosh 2x}{\\sqrt{x+1}}\\) etc.). Use standard identities/derivatives such as \\(\\frac{d}{dx}\\sinh x=\\cosh x\\), \\(\\frac{d}{dx}\\cosh x=\\sinh x\\), \\(\\frac{d}{dx}\\tanh x=\\operatorname{sech}^2 x\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8c",
+          "Specification_section_sub": "8.3",
+          "Sub_topic_name": "Inverse hyperbolic functions: definitions, domains and ranges",
+          "description": "Understand and use definitions of inverse hyperbolic functions and their domains/ranges, including logarithmic definitions such as: \\(\\operatorname{arsinh}x=\\ln\\left(x+\\sqrt{x^2+1}\\right)\\); \\(\\operatorname{arcosh}x=\\ln\\left(x+\\sqrt{x^2-1}\\right)\\) (for \\(x\\ge 1\\)); \\(\\operatorname{artanh}x=\\tfrac12\\ln\\left(\\frac{1+x}{1-x}\\right)\\) (for \\(-1<x<1\\)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8d",
+          "Specification_section_sub": "8.4",
+          "Sub_topic_name": "Derive and use logarithmic forms of inverse hyperbolic functions",
+          "description": "Derive and use logarithmic forms for inverse hyperbolic functions (e.g. from \\(y=\\sinh^{-1}x\\) to a log form), and use them in simplification and solving equations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "8e",
+          "Specification_section_sub": "8.5",
+          "Sub_topic_name": "Integrals requiring hyperbolic substitution: 1/√(x²±a²) type",
+          "description": "Integrate functions of the forms \\(\\frac{1}{\\sqrt{x^2+a^2}}\\) and \\(\\frac{1}{\\sqrt{x^2-a^2}}\\) (as specified), and associated functions, by choosing suitable substitutions (often hyperbolic) to evaluate integrals correctly.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 9,
+      "Specification_section": "CP 9",
+      "Strand": "Core Pure Mathematics",
+      "Topic_name": "Differential equations",
+      "Sub_topics": [
+        {
+          "subtopic_id": "9a",
+          "Specification_section_sub": "9.1",
+          "Sub_topic_name": "Integrating factor for first-order linear ODEs",
+          "description": "Solve first-order linear differential equations of the form \\(\\frac{dy}{dx}+P(x)y=Q(x)\\) using an integrating factor. Recognise when this method is appropriate. Use integrating factor \\(e^{\\int P(x)\\,dx}\\) (may be quoted without proof).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9b",
+          "Specification_section_sub": "9.2",
+          "Sub_topic_name": "General and particular solutions; sketch solution families",
+          "description": "Find general and particular solutions to differential equations (using initial/boundary conditions). Sketch members of families of solution curves and interpret parameters/constants in solutions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9c",
+          "Specification_section_sub": "9.3",
+          "Sub_topic_name": "Modelling with differential equations (kinematics and other contexts)",
+          "description": "Use differential equations in modelling, including kinematics and other applied contexts: set up differential equations from assumptions, solve them, and interpret constants/solutions in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9d",
+          "Specification_section_sub": "9.4",
+          "Sub_topic_name": "Second-order homogeneous linear ODEs with constant coefficients",
+          "description": "Solve second-order differential equations of the form \\(y''+ay'+by=0\\) (\\(a,b\\) constants) using the auxiliary (characteristic) equation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9e",
+          "Specification_section_sub": "9.5",
+          "Sub_topic_name": "Second-order non-homogeneous linear ODEs (PI + CF)",
+          "description": "Solve \\(y''+ay'+by=f(x)\\) by solving the homogeneous equation and adding a particular integral to the complementary function, where \\(f(x)\\) is a polynomial, exponential, or trigonometric function. \\(f(x)\\) will have one of the forms \\(ke^{px}\\), \\(A+Bx\\), \\(p+qx+cx^2\\), or \\(m\\cos\\omega x+n\\sin\\omega x\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9f",
+          "Specification_section_sub": "9.6",
+          "Sub_topic_name": "Discriminant cases and solution forms",
+          "description": "Understand how the sign of the discriminant of the auxiliary equation (positive/zero/negative) determines the form of the solution for \\(y''+ay'+by=0\\) and related equations (distinct real roots, repeated real root, complex conjugate roots).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9g",
+          "Specification_section_sub": "9.7",
+          "Sub_topic_name": "Simple harmonic motion ODE x¨ = −ω²x",
+          "description": "Solve the simple harmonic motion equation \\(\\ddot x=-\\omega^2 x\\). Relate the solution (e.g. \\(x=A\\cos\\omega t+B\\sin\\omega t\\)) to the physical motion (amplitude, period, phase).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9h",
+          "Specification_section_sub": "9.8",
+          "Sub_topic_name": "Damped and forced oscillations modelling",
+          "description": "Model damped oscillations using second-order differential equations and interpret solutions. Damped harmonic motion with resistance proportional to velocity (derivative of displacement) is expected. Problems may include forced vibration; interpret underdamped/critical/overdamped behaviour where applicable.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "9i",
+          "Specification_section_sub": "9.9",
+          "Sub_topic_name": "Coupled first-order linear differential equations (two dependent variables)",
+          "description": "Analyse and interpret models with one independent variable and two dependent variables as coupled first-order simultaneous differential equations, and solve them. Restricted to coupled first-order linear equations of the form \\(\\frac{dx}{dt}=ax+by+f(t)\\), \\(\\frac{dy}{dt}=cx+dy+g(t)\\) (including examples such as predator–prey-type linearised models).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 10,
+      "Specification_section": "FP1 1",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further Trigonometry",
+      "Sub_topics": [
+        {
+          "subtopic_id": "10a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "t-formulae (tan half-angle) derivation and use",
+          "description": "Derive and use the tangent half-angle (t-formulae) with \\(t=\\tan\\frac{\\theta}{2}\\): \\(\\sin\\theta\\equiv\\frac{2t}{1+t^2}\\), \\(\\cos\\theta\\equiv\\frac{1-t^2}{1+t^2}\\), \\(\\tan\\theta\\equiv\\frac{2t}{1-t^2}\\). Use to rewrite trig expressions rationally in \\(t\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Use t-formulae to prove trig identities",
+          "description": "Apply t-formulae to establish trigonometric identities by converting to rational expressions in \\(t\\), e.g. identities involving \\(\\csc\\theta\\), \\(\\cot\\theta\\), \\(\\tan(\\theta/2)\\), etc.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "10c",
+          "Specification_section_sub": "1.3",
+          "Sub_topic_name": "Use t-formulae to solve trig equations",
+          "description": "Solve trigonometric equations using t-formulae/substitution, including equations of the form \\(a\\cos x+b\\sin x=c\\) (possibly after rearrangement), obtaining solutions in given intervals and using radian measure as appropriate.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 11,
+      "Specification_section": "FP1 2",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further calculus",
+      "Sub_topics": [
+        {
+          "subtopic_id": "11a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Taylor series derivation and use (about a point)",
+          "description": "Derive and use Taylor series expansions (about points other than 0). Example: expand \\(\\sin x\\) in ascending powers of \\((x-\\pi)\\) up to and including \\((x-\\pi)^3\\). Must be able to compute derivatives at the expansion point and form the series.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Series expansions to find limits",
+          "description": "Use series expansions to evaluate limits (especially indeterminate forms), e.g. \\(\\lim_{x\\to 0}\\frac{\\arctan x - x}{x^3}\\), \\(\\lim_{x\\to 0}\\frac{e^{x^2}-1}{x^2}\\), and similar. Compare leading non-zero terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11c",
+          "Specification_section_sub": "2.3",
+          "Sub_topic_name": "Leibniz’s theorem for nth derivative of products",
+          "description": "Use Leibniz’s theorem for differentiating products (nth derivative of \\(uv\\)) to compute higher derivatives efficiently; apply to functions where repeated differentiation is needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11d",
+          "Specification_section_sub": "2.4",
+          "Sub_topic_name": "L’Hospital’s Rule for indeterminate limits",
+          "description": "Use L’Hospital’s Rule (differentiate numerator/denominator) to evaluate limits of indeterminate forms (0/0 or ∞/∞), including repeated applications and/or substitutions. Examples may include \\(\\lim_{x\\to 0}\\frac{2\\sin x-\\sin 2x}{x-\\sin x}\\) or \\(\\lim_{x\\to\\infty}(1+\\frac{a}{x})^x\\) style limits.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "11e",
+          "Specification_section_sub": "2.5",
+          "Sub_topic_name": "Weierstrass substitution for integration (t=tan(x/2))",
+          "description": "Use the Weierstrass (tangent half-angle) substitution \\(t=\\tan\\frac{x}{2}\\) to evaluate definite and indefinite integrals involving rational functions of \\(\\sin x\\) and \\(\\cos x\\). Includes integrals such as \\(\\int \\csc x\\,dx\\) and \\(\\int \\frac{dx}{1+\\sin x-\\cos x}\\) and similar forms.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 12,
+      "Specification_section": "FP1 3",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further differential equations",
+      "Sub_topics": [
+        {
+          "subtopic_id": "12a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Taylor series method for DE solutions",
+          "description": "Use Taylor series methods to obtain series solutions of differential equations. Example: derive series solution in powers of \\(x\\) up to \\(x^4\\) for \\(\\frac{d^2y}{dx^2}+\\frac{dy}{dx}=xy\\) with given initial conditions (e.g. \\(y(0)=1\\), \\(y'(0)=0\\)). Set up recurrence for coefficients and compute terms.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "12b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "DEs reducible by substitution (given)",
+          "description": "Solve differential equations reducible by a stated substitution, reducing to types in Core Pure differential equations (e.g. first-order linear, second-order constant coefficient, etc.). Recognise the transformed form and solve accordingly.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 13,
+      "Specification_section": "FP1 4",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Coordinate systems",
+      "Sub_topics": [
+        {
+          "subtopic_id": "13a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Standard forms and parametrisations of conics and rectangular hyperbola",
+          "description": "Use Cartesian and parametric equations for: parabola \\(y^2=4ax\\) with parametrisation \\(x=at^2,\\ y=2at\\); ellipse \\(\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\) with \\(x=a\\cos t,\\ y=b\\sin t\\); hyperbola \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\) with parametrisations \\(x=a\\sec t,\\ y=b\\tan t\\) and \\(x=a\\cosh t,\\ y=b\\sinh t\\); and the rectangular hyperbola where specified. Convert between forms and use parameters to find points/lines/tangents as required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Focus-directrix properties and eccentricity",
+          "description": "Use focus-directrix definition for parabola, ellipse and hyperbola, including eccentricity \\(e\\). Know standard results such as for ellipse with \\(b^2=a^2(1-e^2)\\), foci \\((ae,0),(-ae,0)\\) and directrices \\(x=\\pm\\frac{a}{e}\\). Apply analogous results to hyperbola/parabola as required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13c",
+          "Specification_section_sub": "4.3",
+          "Sub_topic_name": "Tangents and normals to conics",
+          "description": "Find tangents and normals to parabola/ellipse/hyperbola/rectangular hyperbola. Use algebraic differentiation to compute \\(dy/dx\\). Use known tangent condition for line \\(y=mx+c\\) to be tangent to these curves, and apply to find tangency points/lines.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "13d",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "Loci problems with conics",
+          "description": "Solve loci problems involving conic definitions and coordinate geometry (e.g. set up locus from distance conditions to focus/directrix or other constraints), and interpret resulting curves/regions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 14,
+      "Specification_section": "FP1 5",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further vectors",
+      "Sub_topics": [
+        {
+          "subtopic_id": "14a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Vector product (cross product) and area interpretation",
+          "description": "Compute vector product \\(\\mathbf{a}\\times\\mathbf{b}\\) of two vectors in 3-D and use properties (direction, magnitude). Interpret \\(|\\mathbf{a}\\times\\mathbf{b}|\\) as area of parallelogram with sides \\(\\mathbf{a},\\mathbf{b}\\) (and half for triangle).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Scalar triple product and volumes",
+          "description": "Use scalar triple product \\(\\mathbf{a}\\cdot(\\mathbf{b}\\times\\mathbf{c})\\). Apply to find volume of a parallelepiped and a tetrahedron (volume = \\(|\\mathbf{a}\\cdot(\\mathbf{b}\\times\\mathbf{c})|\\) and \\(\\tfrac16\\) of that for tetrahedron where appropriate).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "14c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "3-D geometry with points, lines and planes using vector products",
+          "description": "Apply vectors to 3-D geometry involving points, lines and planes, including line equation in cross-product form \\((\\mathbf{r}-\\mathbf{a})\\times\\mathbf{b}=\\mathbf{0}\\). Use direction ratios and direction cosines of a line where required; compute angles/intersections/distances using vector methods.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 15,
+      "Specification_section": "FP1 6",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further numerical methods",
+      "Sub_topics": [
+        {
+          "subtopic_id": "15a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "Numerical solution of first/second order differential equations (finite differences)",
+          "description": "Use numerical methods for solving first- and second-order differential equations using finite-difference derivative approximations at step \\(n\\) with step size \\(h\\): \\(\\left(\\frac{dy}{dx}\\right)_n\\approx\\frac{y_{n+1}-y_n}{h}\\) (forward), \\(\\left(\\frac{dy}{dx}\\right)_n\\approx\\frac{y_{n+1}-y_{n-1}}{2h}\\) (central), \\(\\left(\\frac{d^2y}{dx^2}\\right)_n\\approx\\frac{y_{n+1}-2y_n+y_{n-1}}{h^2}\\). Apply to produce iterative schemes and approximate solution values given initial/boundary conditions.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "15b",
+          "Specification_section_sub": "6.2",
+          "Sub_topic_name": "Simpson’s rule",
+          "description": "Apply Simpson’s rule for numerical integration to approximate definite integrals, choosing appropriate even number of subintervals, computing ordinates and applying the Simpson weighting (1,4,2,...,4,1).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 16,
+      "Specification_section": "FP1 7",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Inequalities",
+      "Sub_topics": [
+        {
+          "subtopic_id": "16a",
+          "Specification_section_sub": "7.1",
+          "Sub_topic_name": "Solve algebraic inequalities and inequations (including modulus)",
+          "description": "Manipulate and solve algebraic inequalities/inequations, including rational inequalities and those involving modulus. Examples include \\(\\frac{1}{x-a}>\\frac{x}{x-b}\\) and \\(|x^2-1|>2(x+1)\\). Must give solution sets with correct interval notation and handle sign changes/critical points.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 17,
+      "Specification_section": "FP2 1",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Groups",
+      "Sub_topics": [
+        {
+          "subtopic_id": "17a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Group axioms and terminology",
+          "description": "Know and use axioms of a group under a binary operation: closure, associativity, identity element, inverse element. Understand the terms ‘binary operation’, ‘closure’, ‘associativity’, ‘identity’, ‘inverse’.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Examples of groups; Cayley tables; cyclic groups",
+          "description": "Work with examples of groups (e.g. symmetries of geometrical figures, non-singular matrices under multiplication, integers modulo \\(n\\) under addition, and/or multiplication where appropriate, permutation groups). Construct and interpret Cayley tables for finite groups. Identify and use cyclic groups and generators; determine elements produced by repeated operation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17c",
+          "Specification_section_sub": "1.3",
+          "Sub_topic_name": "Order of a group/element; subgroups",
+          "description": "Determine the order of a group and the order of an element. Identify and test subgroups (subset closed under operation and inverses, includes identity).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17d",
+          "Specification_section_sub": "1.4",
+          "Sub_topic_name": "Lagrange’s theorem",
+          "description": "Use Lagrange’s theorem: for a finite group \\(G\\), the order of any subgroup divides \\(|G|\\), and the order of any element divides \\(|G|\\). Apply to deduce possible subgroup sizes and element orders.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "17e",
+          "Specification_section_sub": "1.5",
+          "Sub_topic_name": "Group isomorphism (restricted size)",
+          "description": "Understand and apply isomorphism between groups (structure-preserving bijection). Determine/verify isomorphisms for groups of maximum order 8; map elements/operations and compare Cayley tables/structure.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 18,
+      "Specification_section": "FP2 2",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further calculus",
+      "Sub_topics": [
+        {
+          "subtopic_id": "18a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Reduction formulae for integrals",
+          "description": "Derive and use reduction formulae for integrals such as \\(nI_n=(n-1)I_{n-2}\\) for \\(I_n=\\int_0^{\\pi/2}\\sin^n x\\,dx\\) (\\(n\\ge 2\\)). Also derive/use reduction relations for integrals like \\(I_n=\\int \\frac{\\sin(nx)}{\\sin x}\\,dx\\) as specified, including forms such as \\(I_{n+2}=\\frac{2\\sin((n+1)x)}{n+1}+I_n\\) (or equivalent), using appropriate trig identities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "18b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Arc length and surface area of revolution (Cartesian/parametric/polar)",
+          "description": "Calculate arc length of a curve and area of a surface of revolution. Curves may be given in Cartesian, parametric or polar form; set up and evaluate appropriate integrals (e.g. \\(s=\\int\\sqrt{1+(dy/dx)^2}\\,dx\\) or parametric \\(s=\\int\\sqrt{(dx/dt)^2+(dy/dt)^2}\\,dt\\); surface area formulas accordingly).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 19,
+      "Specification_section": "FP2 3",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further matrix algebra",
+      "Sub_topics": [
+        {
+          "subtopic_id": "19a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Eigenvalues and eigenvectors (2×2 and 3×3)",
+          "description": "Find eigenvalues and eigenvectors of \\(2\\times2\\) and \\(3\\times3\\) matrices. Understand ‘characteristic equation’ for a \\(2\\times2\\) matrix and form characteristic polynomials for 3×3. Handle repeated eigenvalues and complex eigenvalues. Normalised eigenvectors may be required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Diagonalisation and similarity transforms; symmetric/orthogonal diagonalisation",
+          "description": "Reduce matrices to diagonal form by finding a matrix \\(P\\) such that \\(P^{-1}AP\\) is diagonal (when diagonalisation is possible). Understand eigenbasis requirement. For symmetric matrices, perform orthogonal diagonalisation (use orthogonal matrix of eigenvectors) where applicable.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "19c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Cayley–Hamilton theorem (2×2 and 3×3)",
+          "description": "Use Cayley–Hamilton theorem: every \\(2\\times2\\) or \\(3\\times3\\) matrix satisfies its own characteristic equation. Substitute \\(A\\) into its characteristic polynomial to obtain identities and use to compute powers/inverses of matrices.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 20,
+      "Specification_section": "FP2 4",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further complex numbers",
+      "Sub_topics": [
+        {
+          "subtopic_id": "20a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Further loci/regions in the Argand diagram",
+          "description": "Construct and interpret more advanced loci such as \\(|z-a|=k|z-b|\\), \\(\\arg\\left(\\frac{z-a}{z-b}\\right)=\\beta\\), and regions such as \\(\\alpha\\le \\arg(z-z_1)\\le\\beta\\) and strip regions \\(p\\le\\Re(z)\\le q\\). Use geometry of circles/half-lines/angle conditions and inequalities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "20b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Elementary transformations z-plane to w-plane",
+          "description": "Analyse mappings from the \\(z\\)-plane to the \\(w\\)-plane under transformations such as \\(w=z^2\\) and Möbius transformations \\(w=\\frac{cz+d}{az+b}\\) with \\(a,b,c,d\\in\\mathbb{C}\\). Determine images of lines/circles/regions and key points; interpret transformation effects.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 21,
+      "Specification_section": "FP2 5",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Number theory",
+      "Sub_topics": [
+        {
+          "subtopic_id": "21a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Division theorem; Euclidean algorithm; congruences",
+          "description": "Understand the division theorem and apply it to the Euclidean Algorithm to find \\(\\gcd\\) (highest common factor) of two integers. Use results to work with congruences in modular arithmetic contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Bézout’s identity",
+          "description": "Use back-substitution in the Euclidean Algorithm to find integers \\(u,v\\) such that \\(au+bv=\\gcd(a,b)\\) (Bézout’s identity). Apply to inverses modulo \\(n\\) and solvability of congruences.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "Modular arithmetic: congruence properties",
+          "description": "Work with congruences: understand meaning of \\(a\\equiv b\\pmod n\\). Use standard properties: reflexive \\(a\\equiv a\\); symmetry; transitivity; addition/subtraction laws; multiplication law; power laws. Manipulate expressions modulo \\(n\\) to find residues.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21d",
+          "Specification_section_sub": "5.4",
+          "Sub_topic_name": "Fermat’s Little Theorem (use)",
+          "description": "Use Fermat’s Little Theorem for prime modulus: if \\(p\\) is prime and \\(a\\not\\equiv 0\\pmod p\\), then \\(a^{p-1}\\equiv 1\\pmod p\\). Apply to compute least positive residues (e.g. reduce \\(4^{20}\\bmod 7\\) or similar). Proof not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21e",
+          "Specification_section_sub": "5.5",
+          "Sub_topic_name": "Divisibility tests (2,3,4,5,6,9,10,11)",
+          "description": "Use divisibility tests for 2, 3, 4, 5, 6, 9, 10 and 11 to determine whether integers are divisible by these numbers. Apply in problem-solving contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21f",
+          "Specification_section_sub": "5.6",
+          "Sub_topic_name": "Solve congruence equations and find modular inverses",
+          "description": "Solve congruence equations; know conditions under which solutions exist. Use Bézout’s identity to find multiplicative inverses modulo \\(n\\) and solve linear congruences of the form \\(ax\\equiv b\\pmod n\\) (including cases with multiple/no solutions depending on \\(\\gcd(a,n)\\)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "21g",
+          "Specification_section_sub": "5.7",
+          "Sub_topic_name": "Combinatorics: counting, permutations, combinations",
+          "description": "Solve counting problems using multiplicative principle, set notation, number of subsets of a set, and addition/subtraction principles. Use permutations \\(^{n}P_r\\) and combinations \\(^{n}C_r\\); decide when order matters. Examples include counting integers with a given digit property, and selecting teams with/without positional roles.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 22,
+      "Specification_section": "FP2 6",
+      "Strand": "Further Pure Mathematics (Optional)",
+      "Topic_name": "Further sequences and series",
+      "Sub_topics": [
+        {
+          "subtopic_id": "22a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "First- and second-order recurrence relations (forms)",
+          "description": "Work with first- and second-order recurrence relations including variable coefficients/functions of \\(n\\): \\(u_{n+1}+f(n)u_n=g(n)\\) and \\(u_{n+2}+f(n)u_{n+1}+g(n)u_n=h(n)\\). Manipulate and iterate relations and set up solutions using appropriate methods.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22b",
+          "Specification_section_sub": "6.2",
+          "Sub_topic_name": "Solve recurrence relations for closed forms (CF + particular)",
+          "description": "Solve specified first/second-order linear recurrence relations to obtain closed forms, e.g. \\(u_{n+1}-5u_n=8\\) with \\(u_1=1\\); \\(2u_{n+2}+7u_{n+1}-15u_n=6\\) with given initial conditions. Use concepts of complementary function, particular solution and auxiliary equation; apply to modelling (e.g. population growth).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "22c",
+          "Specification_section_sub": "6.3",
+          "Sub_topic_name": "Induction proof of closed forms for recurrences",
+          "description": "Prove closed forms for sequences defined by recurrence using mathematical induction, e.g. from \\(u_{n+1}-3u_n=4\\), \\(u_1=1\\), prove \\(u_n=3^n-2\\) or similar statements.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 23,
+      "Specification_section": "FS1 1",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Discrete probability distributions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "23a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Mean and variance of a discrete distribution; E(g(X))",
+          "description": "Calculate mean \\(\\mu=E(X)=\\sum x\\,P(X=x)\\) and variance \\(\\sigma^2=\\operatorname{Var}(X)=\\sum x^2P(X=x)-\\mu^2\\) for discrete distributions. Extend expectation to functions of a random variable: compute \\(E(g(X))\\) for given \\(g\\). Use results to assess suitability of probability models where required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 24,
+      "Specification_section": "FS1 2",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Poisson & binomial distributions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "24a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Poisson distribution and additive property",
+          "description": "Use Poisson distribution \\(X\\sim\\text{Po}(\\lambda)\\) to model real-world event counts and comment critically on appropriateness (assumptions such as independent events, constant rate). Use calculators for probabilities and cumulative probabilities. Use additive property: if \\(X\\sim\\text{Po}(\\lambda)\\) counts per unit time, then count over \\(k\\) units is \\(\\text{Po}(k\\lambda)\\); if independent \\(X\\sim\\text{Po}(\\lambda)\\), \\(Y\\sim\\text{Po}(\\mu)\\), then \\(X+Y\\sim\\text{Po}(\\lambda+\\mu)\\). No proofs required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Mean and variance of Binomial and Poisson",
+          "description": "Know and use: if \\(X\\sim B(n,p)\\) then \\(E(X)=np\\), \\(\\operatorname{Var}(X)=np(1-p)\\); if \\(Y\\sim\\text{Po}(\\lambda)\\) then \\(E(Y)=\\lambda\\), \\(\\operatorname{Var}(Y)=\\lambda\\). Derivations not required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "24c",
+          "Specification_section_sub": "2.3",
+          "Sub_topic_name": "Poisson approximation to Binomial",
+          "description": "Use Poisson approximation to the binomial when \\(n\\) is large and \\(p\\) is small: \\(B(n,p)\\approx\\text{Po}(np)\\). Select and justify approximation; compute probabilities accordingly. Derivations not required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 25,
+      "Specification_section": "FS1 3",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Geometric and negative binomial distributions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "25a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Geometric and negative binomial distributions (models and pmfs)",
+          "description": "Use models leading to: geometric distribution with \\(P(X=x)=p(1-p)^{x-1}\\), \\(x=1,2,\\dots\\) (number of trials to first success); and negative binomial distribution with \\(P(X=x)=\\binom{x-1}{r-1}p^r(1-p)^{x-r}\\), \\(x=r,r+1,\\dots\\) (number of trials to rth success). Interpret parameters and apply to contexts.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Mean and variance of Geometric(p)",
+          "description": "Use \\(\\mu=\\frac1p\\) and \\(\\sigma^2=\\frac{1-p}{p^2}\\) for a geometric distribution with parameter \\(p\\).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "25c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Mean and variance of Negative Binomial(r,p)",
+          "description": "Use \\(\\mu=\\frac{r}{p}\\) and \\(\\sigma^2=\\frac{r(1-p)}{p^2}\\) for the negative binomial distribution; apply in calculations and model checking.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 26,
+      "Specification_section": "FS1 4",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Hypothesis Testing",
+      "Sub_topics": [
+        {
+          "subtopic_id": "26a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Hypothesis test for Poisson mean/rate",
+          "description": "Extend hypothesis tests to test the mean/rate parameter of a Poisson distribution. State hypotheses in terms of population parameter \\(\\lambda\\) (or \\(\\mu\\) where \\(\\mu=\\lambda\\)). Use exact Poisson probabilities (often one- or two-tailed as specified) to reach a conclusion at a given significance level.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "26b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Hypothesis test for geometric parameter p",
+          "description": "Extend hypothesis testing to test the parameter \\(p\\) of a geometric distribution. State hypotheses in terms of \\(p\\). Use geometric probabilities/cumulative probabilities to make decisions and interpret in context.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 27,
+      "Specification_section": "FS1 5",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Central Limit Theorem",
+      "Sub_topics": [
+        {
+          "subtopic_id": "27a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "CLT applications to other distributions",
+          "description": "Apply Central Limit Theorem: for a population with mean \\(\\mu\\) and variance \\(\\sigma^2\\), for large \\(n\\), \\(\\bar X\\approx N\\left(\\mu,\\frac{\\sigma^2}{n}\\right)\\). Use to approximate probabilities for sample means from non-normal distributions, including those in A level Mathematics or Further Statistics 1. No proofs required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 28,
+      "Specification_section": "FS1 6",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Chi Squared Tests",
+      "Sub_topics": [
+        {
+          "subtopic_id": "28a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "Chi-squared goodness-of-fit and contingency table tests",
+          "description": "Carry out chi-squared tests for goodness of fit and for association in contingency tables. State null/alternative hypotheses. Compute \\(\\chi^2=\\sum_{i=1}^n\\frac{(O_i-E_i)^2}{E_i}\\) as an approximate chi-squared statistic, determine degrees of freedom (including adjustments when parameters are estimated from data), combine cells when \\(E_i<5\\), and obtain p-values/critical values using calculator or tables. Apply to discrete uniform, binomial, Poisson and geometric models; lengthy calculations not required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 29,
+      "Specification_section": "FS1 7",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Probability generating functions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "29a",
+          "Specification_section_sub": "7.1",
+          "Sub_topic_name": "PGF definitions/derivations/applications for standard discrete distributions",
+          "description": "Use probability generating function \\(G_X(t)=E(t^X)=\\sum t^x P(X=x)\\) for discrete nonnegative integer-valued variables. Derive and apply PGFs for negative binomial, geometric, binomial and Poisson distributions (proofs of standard results may be required). Use PGFs to compute probabilities and properties.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29b",
+          "Specification_section_sub": "7.2",
+          "Sub_topic_name": "Use PGFs to find mean and variance",
+          "description": "Use PGF derivatives to find mean and variance: \\(E(X)=G_X'(1)\\), \\(\\operatorname{Var}(X)=G_X''(1)+G_X'(1)-[G_X'(1)]^2\\) (or equivalent). Apply to standard distributions; proofs of standard results may be required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "29c",
+          "Specification_section_sub": "7.3",
+          "Sub_topic_name": "PGF of sum of independent variables",
+          "description": "Use the result for independent \\(X,Y\\): \\(G_{X+Y}(t)=G_X(t)\\,G_Y(t)\\) (derivation not required). Apply to find distributions/means/variances of sums, especially for Poisson/binomial/negative binomial where relevant.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 30,
+      "Specification_section": "FS1 8",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Quality of tests",
+      "Sub_topics": [
+        {
+          "subtopic_id": "30a",
+          "Specification_section_sub": "8.1",
+          "Sub_topic_name": "Type I/II errors; size and power of a test",
+          "description": "Understand and compute Type I and Type II errors in hypothesis tests, and the concepts of size and power. Use power function to indicate effectiveness of statistical tests. Calculate probabilities of Type I/II errors and power for tests based on distributions in A level Mathematics or Further Statistics 1.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 31,
+      "Specification_section": "FS2 1",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Linear Regression",
+      "Sub_topics": [
+        {
+          "subtopic_id": "31a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Least squares regression; residuals; regression coefficients",
+          "description": "Understand least squares linear regression: residuals (observed minus fitted values) and minimising sum of squares of residuals. Calculate regression coefficients for regression line of y on x using standard summary-statistics formulae (e.g. in terms of \\(S_{xx},S_{yy},S_{xy}\\)).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "31b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Residual analysis and RSS",
+          "description": "Use residuals to assess reasonableness of linear fit and identify possible outliers; apply in model refinement. Use residual sum of squares formula \\(\\text{RSS}=S_{yy}-\\frac{S_{xy}^2}{S_{xx}}\\) (derivation not required).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 32,
+      "Specification_section": "FS2 2",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Continuous probability distributions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "32a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Continuous random variables; pdf and cdf definitions",
+          "description": "Understand continuous random variables. Use probability density function (pdf) \\(f(x)\\) with \\(P(a<X\\le b)=\\int_a^b f(x)\\,dx\\). Use cumulative distribution function (cdf) \\(F(x_0)=P(X\\le x_0)=\\int_{-\\infty}^{x_0} f(x)\\,dx\\). Link to histograms/frequency polygons; calculus consistent with A level Maths/FM.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Relationship between pdf and cdf",
+          "description": "Use \\(f(x)=\\frac{d}{dx}F(x)\\) and \\(F(x)=\\int_{-\\infty}^{x}f(t)\\,dt\\). Differentiate/integrate to move between pdf and cdf and to compute probabilities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32c",
+          "Specification_section_sub": "2.3",
+          "Sub_topic_name": "Mean/variance and other measures for continuous variables; E(g(X)); skewness",
+          "description": "Compute mean and variance for continuous random variables: \\(E(X)=\\int x f(x)\\,dx\\), \\(E(X^2)=\\int x^2 f(x)\\,dx\\), \\(\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\\). Extend to \\(E(g(X))\\). Find mode/median/percentiles from pdf/cdf. Understand and describe skewness (positive/negative/zero) with justification (e.g. tail direction, mean vs median). Use calculations to assess suitability of models where required.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "32d",
+          "Specification_section_sub": "2.4",
+          "Sub_topic_name": "Continuous uniform distribution",
+          "description": "Use the continuous uniform (rectangular) distribution on \\([a,b]\\): derive and use its mean, variance and cdf; apply to probability calculations and modelling contexts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 33,
+      "Specification_section": "FS2 3",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Correlation",
+      "Sub_topics": [
+        {
+          "subtopic_id": "33a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Product moment correlation coefficient (PMCC) and conditions; coding",
+          "description": "Calculate product moment correlation coefficient \\(r\\) using formulae and summary statistics; know conditions for use (linear relationship, bivariate normality assumption for inference). Understand effects of coding (linear transformations) on correlation and compute coded correlations where needed.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Spearman’s rank correlation (with ties)",
+          "description": "Use Spearman’s rank correlation coefficient \\(r_s=1-\\frac{6\\sum d^2}{n(n^2-1)}\\). Handle ties appropriately (use average ranks and compute resulting coefficient using calculator or adjusted method). Interpret \\(r_s\\) in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "33c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Tests that correlation is zero (PMCC or Spearman)",
+          "description": "Test hypothesis that a correlation is zero using critical values tables for either Spearman’s rank correlation or PMCC. State hypotheses in terms of population parameters \\(\\rho\\) or \\(\\rho_s\\): typically \\(H_0:\\rho=0\\) (or \\(\\rho_s=0\\)). Know that PMCC critical values assume bivariate normal population; formal verification not required. Conclude in context.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 34,
+      "Specification_section": "FS2 4",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Combinations of random variables",
+      "Sub_topics": [
+        {
+          "subtopic_id": "34a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Linear combinations of independent Normal variables",
+          "description": "If \\(X\\sim N(\\mu_x,\\sigma_x^2)\\) and \\(Y\\sim N(\\mu_y,\\sigma_y^2)\\) independently, use \\(aX\\pm bY\\sim N(a\\mu_x\\pm b\\mu_y,\\ a^2\\sigma_x^2+b^2\\sigma_y^2)\\). Apply to sums/differences and probability calculations. No proofs required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 35,
+      "Specification_section": "FS2 5",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Estimation, confidence intervals and tests using a normal distribution",
+      "Sub_topics": [
+        {
+          "subtopic_id": "35a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Standard error; estimators; bias; quality of estimators",
+          "description": "Understand standard error and the ideas of estimator and bias. Use sample mean \\(\\bar x\\) and sample variance \\(s^2=\\frac{1}{n-1}\\sum_{i=1}^n(x_i-\\bar x)^2\\) as unbiased estimates of population mean and variance. Compare estimators using properties such as unbiasedness and small variance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "35b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Confidence intervals concept and interpretation; link to tests",
+          "description": "Understand what a confidence interval is, how to interpret it in context, and its relationship with hypothesis testing (e.g. whether hypothesised parameter lies within interval).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "35c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "Confidence interval for Normal mean with known variance",
+          "description": "Construct confidence intervals for mean \\(\\mu\\) of a Normal distribution when variance \\(\\sigma^2\\) is known, using \\(\\bar X\\sim N(\\mu,\\sigma^2/n)\\) and appropriate z critical values. Focus on application rather than derivation.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "35d",
+          "Specification_section_sub": "5.4",
+          "Sub_topic_name": "Test for difference of two Normal means with known variances",
+          "description": "Hypothesis test for difference between means of two Normal populations with known variances. Use test statistic \\(\\frac{\\bar X-\\bar Y-(\\mu_x-\\mu_y)}{\\sqrt{\\sigma_x^2/n_x+\\sigma_y^2/n_y}}\\sim N(0,1)\\) under \\(H_0\\), and interpret conclusion in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "35e",
+          "Specification_section_sub": "5.5",
+          "Sub_topic_name": "Large-sample tests for difference of means with unknown variances",
+          "description": "Use large-sample results (CLT) to approximate tests/intervals when population variances are unknown: \\(\\frac{\\bar X-\\bar Y-(\\mu_x-\\mu_y)}{\\sqrt{S_x^2/n_x+S_y^2/n_y}}\\approx N(0,1)\\). Apply when sample sizes are large; interpret approximation and assumptions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 36,
+      "Specification_section": "FS2 6",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Other Hypothesis Tests and confidence intervals",
+      "Sub_topics": [
+        {
+          "subtopic_id": "36a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "Test/CI for variance of a Normal distribution (chi-squared)",
+          "description": "Carry out hypothesis test and construct confidence interval for variance \\(\\sigma^2\\) of a Normal distribution using \\(\\frac{(n-1)S^2}{\\sigma^2}\\sim\\chi^2_{n-1}\\). Use \\(\\chi^2\\) critical values/p-values from tables or calculator; interpret in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "36b",
+          "Specification_section_sub": "6.2",
+          "Sub_topic_name": "Test equality of variances (F-test)",
+          "description": "Test whether two independent samples come from Normal populations with equal variances using \\(\\frac{S_1^2}{S_2^2}\\sim F_{n_1-1,n_2-1}\\) under \\(H_0\\). Use F critical values/p-values (tables or calculator), choose tail(s) appropriately, and interpret conclusion.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 37,
+      "Specification_section": "FS2 7",
+      "Strand": "Further Statistics (Optional)",
+      "Topic_name": "Confidence intervals and tests using the t – distribution",
+      "Sub_topics": [
+        {
+          "subtopic_id": "37a",
+          "Specification_section_sub": "7.1",
+          "Sub_topic_name": "One-sample t-test and CI for Normal mean (unknown variance)",
+          "description": "For Normal population with unknown variance, perform hypothesis test and construct confidence interval for mean \\(\\mu\\) using \\(\\frac{\\bar X-\\mu}{S/\\sqrt{n}}\\sim t_{n-1}\\). Use t critical values/p-values from tables or calculator and interpret in context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "37b",
+          "Specification_section_sub": "7.2",
+          "Sub_topic_name": "Paired t-test",
+          "description": "Carry out paired t-test by forming differences \\(d_i\\), using \\(\\bar d\\) and \\(s_d\\), and testing \\(\\mu_d\\) with \\(\\frac{\\bar d-\\mu_d}{s_d/\\sqrt{n}}\\sim t_{n-1}\\) under \\(H_0\\). Interpret in paired-data context.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "37c",
+          "Specification_section_sub": "7.3",
+          "Sub_topic_name": "Two-sample t-test and CI for difference of means (equal variances unknown)",
+          "description": "For two independent Normal samples with equal but unknown variances, test/CI for \\(\\mu_x-\\mu_y\\) using pooled variance estimate \\(s_p^2=\\frac{(n_x-1)s_x^2+(n_y-1)s_y^2}{n_x+n_y-2}\\) and statistic \\(\\frac{\\bar X-\\bar Y-(\\mu_x-\\mu_y)}{s_p\\sqrt{1/n_x+1/n_y}}\\sim t_{n_x+n_y-2}\\) under \\(H_0\\). Compute and interpret in context.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 38,
+      "Specification_section": "FM1 1",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Momentum and impulse",
+      "Sub_topics": [
+        {
+          "subtopic_id": "38a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Impulse and momentum; conservation in direct collisions",
+          "description": "Use momentum \\(\\mathbf{p}=m\\mathbf{v}\\) and impulse; apply impulse–momentum principle. Apply conservation of linear momentum to two spheres colliding directly (1-D), modelling spheres as particles, to find post-impact velocities.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "38b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Momentum as a vector; impulse–momentum in vector form",
+          "description": "Treat momentum as a vector quantity. Apply impulse–momentum principle in vector form to 2-D/3-D interactions where direction matters, using components and vector equations.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 39,
+      "Specification_section": "FM1 2",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Work, energy and power",
+      "Sub_topics": [
+        {
+          "subtopic_id": "39a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Work-energy principle; conservation of mechanical energy; power",
+          "description": "Use kinetic and potential energy, work and power. Apply work–energy principle and conservation of mechanical energy. Solve problems involving motion under variable resistance and/or motion on an inclined plane (up/down), setting up work integrals for variable forces where required.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 40,
+      "Specification_section": "FM1 3",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Elastic strings and springs and elastic energy",
+      "Sub_topics": [
+        {
+          "subtopic_id": "40a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Hooke’s law for strings and springs",
+          "description": "Model elastic strings and springs using Hooke’s law: tension/force proportional to extension (within elastic limit). Use parameters such as modulus \\(\\lambda\\) and natural length \\(l\\) for strings (tension \\(=\\lambda x/l\\)) and spring constant \\(k\\) for springs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "40b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Elastic potential energy in strings/springs",
+          "description": "Compute energy stored in an elastic string or spring (e.g. \\(\\tfrac12kx^2\\) for spring; \\(\\frac{\\lambda x^2}{2l}\\) for string). Apply work–energy principle including kinetic, gravitational potential and elastic energy to solve motion problems.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 41,
+      "Specification_section": "FM1 4",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Elastic collisions in one dimension",
+      "Sub_topics": [
+        {
+          "subtopic_id": "41a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Direct elastic impact; restitution; KE loss",
+          "description": "Analyse direct impact of elastic spheres in 1-D. Use Newton’s law of restitution with coefficient \\(e\\) and the inequality \\(0\\le e\\le 1\\). Combine with conservation of momentum to find velocities after impact. Determine loss of kinetic energy due to impact. Spheres modelled as particles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "41b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Successive direct impacts (spheres and/or plane)",
+          "description": "Solve problems involving successive direct impacts between spheres and/or between a sphere and a smooth plane surface, using momentum and restitution repeatedly. Model spheres as particles and use smooth plane assumptions (no tangential impulse).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 42,
+      "Specification_section": "FM1 5",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Elastic collisions in two dimensions",
+      "Sub_topics": [
+        {
+          "subtopic_id": "42a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Oblique impact of smooth elastic spheres/sphere with fixed surface",
+          "description": "Analyse oblique impact in 2-D between smooth elastic spheres (same radius) and between a smooth sphere and a fixed smooth surface. Use decomposition into components along line of centres/normal direction and tangential direction (tangential component unchanged for smooth contact). Determine loss of kinetic energy due to impact. Problems may be in vector form; spheres modelled as particles.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "42b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Successive oblique impacts with smooth planes",
+          "description": "Solve successive oblique impact problems of a sphere with smooth plane surfaces (possibly multiple impacts), updating velocity components after each impact using restitution in normal direction only.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 43,
+      "Specification_section": "FM2 1",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Motion in a circle",
+      "Sub_topics": [
+        {
+          "subtopic_id": "43a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Angular speed; uniform circular motion; radial acceleration",
+          "description": "Use angular speed \\(\\omega\\) and relationship \\(v=r\\omega\\). For uniform motion in a horizontal circle, use radial acceleration forms \\(r\\omega^2\\) and \\(v^2/r\\). Apply to contexts such as conical pendulum, elastic string, motion on a banked surface, and other circular motion scenarios.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "43b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Vertical circular motion: radial/tangential acceleration; energy",
+          "description": "Analyse motion of a particle in a vertical circle: resolve acceleration into radial and tangential components; apply conservation of energy (kinetic/potential) to find speeds at positions; determine conditions for complete/incomplete circles and interpret physical feasibility (e.g. tension/normal reaction constraints).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 44,
+      "Specification_section": "FM2 2",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Centres of mass of plane figures",
+      "Sub_topics": [
+        {
+          "subtopic_id": "44a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Moment of a force; centre of mass of discrete distributions",
+          "description": "Use moments of forces. Find centre of mass of discrete mass distributions in one and two dimensions using \\(\\bar x=\\frac{\\sum m_ix_i}{\\sum m_i}\\), \\(\\bar y=\\frac{\\sum m_iy_i}{\\sum m_i}\\) and apply to equilibrium problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "44b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Centre of mass of uniform plane figures and composites; frameworks; equilibrium",
+          "description": "Find centre of mass of uniform plane figures and composite plane figures, and of frameworks. Use symmetry where appropriate; integration not required for uniform plane figures in this section. Apply to equilibrium of a plane lamina or framework under coplanar forces. Problems may involve non-uniform composite plane figures/frameworks; may quote results from formula book unless stated otherwise.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 45,
+      "Specification_section": "FM2 3",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Further centres of mass",
+      "Sub_topics": [
+        {
+          "subtopic_id": "45a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Centre of mass of rigid bodies (uniform and non-uniform) using integration/symmetry",
+          "description": "Determine centre of mass of uniform and non-uniform rigid bodies and composite bodies, using integration and/or symmetry where required. Calculus level consistent with A level Maths/FM. May quote formula book results unless stated otherwise.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Equilibrium of rigid bodies under coplanar forces",
+          "description": "Solve equilibrium problems for rigid bodies under coplanar forces, including: (i) suspension from a fixed point (use line of action through centre of mass); (ii) rigid body on a horizontal or inclined plane. Use force balance and moment balance.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "45c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Toppling and sliding on a rough plane",
+          "description": "Analyse conditions for toppling and sliding of a rigid body on a rough plane. Use friction \\(F\\le \\mu R\\), limiting equilibrium, and moments about potential pivot points to determine which occurs first and critical angles/forces.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 46,
+      "Specification_section": "FM2 4",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Further dynamics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "46a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Newton’s laws with variable force in 1-D (including gravitation)",
+          "description": "Apply Newton’s laws of motion to 1-D particle motion when applied force is variable (as a function of displacement/time/velocity). Set up differential equations such as \\(m\\frac{dv}{dt}=F(x)\\) or \\(m v\\frac{dv}{dx}=F(x)\\) and solve using calculus. Problems may involve inverse-square gravitation (law of gravitation).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "46b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Simple harmonic motion in mechanical systems; energy in SHM",
+          "description": "Analyse SHM, including systems with particles attached to elastic string(s) or spring(s). Be able to prove SHM by showing \\(\\ddot x=-\\omega^2 x\\) in a given situation. Use standard SHM formulae (may be quoted without proof): \\(x=a\\sin\\omega t\\) or \\(a\\cos\\omega t\\), \\(v=\\pm a\\omega\\cos\\omega t\\) etc., \\(v^2=\\omega^2(a^2-x^2)\\), period \\(T=\\frac{2\\pi}{\\omega}\\). Use kinetic, potential and elastic energy in SHM contexts.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 47,
+      "Specification_section": "FM2 5",
+      "Strand": "Further Mechanics (Optional)",
+      "Topic_name": "Further kinematics",
+      "Sub_topics": [
+        {
+          "subtopic_id": "47a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "1-D kinematics with acceleration as f(x), f(t) or f(v)",
+          "description": "Set up and solve kinematics problems for motion in a straight line where acceleration is a function of displacement \\(x\\), time \\(t\\), or velocity \\(v\\). Use differential relationships \\(a=\\frac{dv}{dt}=f(t)\\), \\(a=v\\frac{dv}{dx}=f(x)\\), \\(a=\\frac{dv}{dt}=f(v)\\) with separable methods, consistent with A level Maths/FM calculus. Interpret constants and motion outcomes.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 48,
+      "Specification_section": "D1 1",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Algorithms and graph theory",
+      "Sub_topics": [
+        {
+          "subtopic_id": "48a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "Algorithm concepts; flowcharts; order of an algorithm",
+          "description": "Understand general ideas of algorithms and implement an algorithm given by flow chart or text. Understand ‘size of a problem’ (often number of vertices/items) and ‘order of an algorithm’ as a measure of efficiency in terms of operations. Determine order of a given algorithm and the order of standard network problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "48b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Bin packing; bubble sort; quick sort (middle pivot)",
+          "description": "Apply bin packing algorithms. Apply bubble sort and quick sort. For quick sort, choose pivot as the middle item of the list (as defined by position rules) and carry out partitioning/recursion to sort lists.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "48c",
+          "Specification_section_sub": "1.3",
+          "Sub_topic_name": "Eulerian and semi-Eulerian graphs via node degrees; graph types",
+          "description": "Use vertex degrees (odd/even) to determine if a graph is Eulerian (all even degrees), semi-Eulerian (exactly two odd degrees) or neither. Be familiar with complete graphs (\\(K_n\\) notation), planar graphs and isomorphic graphs; recognise/identify these in problems.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "48d",
+          "Specification_section_sub": "1.4",
+          "Sub_topic_name": "Planarity algorithm; Hamiltonian cycle familiarity",
+          "description": "Apply the planarity algorithm for planar graphs (e.g. using Euler’s formula constraints and/or subdivision checks as specified in the course). Be familiar with the term ‘Hamiltonian cycle’ and recognise its meaning (cycle visiting every vertex once).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 49,
+      "Specification_section": "D1 2",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Algorithms on graphs",
+      "Sub_topics": [
+        {
+          "subtopic_id": "49a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Minimum spanning tree (Prim and Kruskal); matrix form for Prim",
+          "description": "Solve minimum spanning tree (minimum connector) problems using Prim’s and Kruskal’s algorithms. Use matrix representation for Prim’s algorithm; be able to draw a network from a given matrix and write the matrix for a given network.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "49b",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Shortest path algorithms: Dijkstra and Floyd",
+          "description": "Apply Dijkstra’s algorithm to find shortest paths from a start vertex. Apply Floyd’s algorithm to find shortest paths between all pairs; follow the specified iteration order (row by row unless directed otherwise) and maintain both distance and route matrices/tables.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 50,
+      "Specification_section": "D1 3",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Algorithms on graphs II",
+      "Sub_topics": [
+        {
+          "subtopic_id": "50a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Route Inspection (Chinese Postman) for networks with ≤4 odd nodes",
+          "description": "Find shortest closed route starting/ending at same vertex that traverses every edge at least once (Route Inspection/Chinese postman). Identify odd-degree vertices; if at most four odd nodes, use inspection to consider all pairings and add minimal duplicate paths. If more than four odd nodes, use provided restrictions to limit pairings considered.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "50b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Travelling Salesman (practical and classical); bounds and heuristics",
+          "description": "Solve practical and classical Travelling Salesman problems (TSP). For classical TSP, use complete graphs satisfying triangle inequality. Determine upper bounds (e.g. nearest neighbour algorithm, then improve using short cuts) and lower bounds using minimum spanning tree methods. Convert a network into a complete network of shortest distances when required (replace edges by shortest path distances).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 51,
+      "Specification_section": "D1 4",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Critical path analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "51a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Model a project with an activity network (activity-on-arc; dummies)",
+          "description": "Model projects using activity-on-arc networks constructed from precedence tables. Include use of dummy activities to represent dependencies correctly.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "51b",
+          "Specification_section_sub": "4.2",
+          "Sub_topic_name": "Complete a precedence table from a network (immediate predecessors)",
+          "description": "Given an activity network, complete the corresponding precedence table (listing immediate predecessors only). Translate between representations accurately.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "51c",
+          "Specification_section_sub": "4.3",
+          "Sub_topic_name": "Critical path algorithm; earliest/latest times; floats; worker lower bound",
+          "description": "Find critical path(s) using earliest and latest event times; compute earliest/latest start/finish times for activities; identify critical activities. Calculate lower bound for number of workers required to complete project in minimum time.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "51d",
+          "Specification_section_sub": "4.4",
+          "Sub_topic_name": "Total float and Gantt (cascade) charts (1 worker per activity)",
+          "description": "Calculate total float \\(F(i,j)=l_j-e_i-\\text{duration}(i,j)\\). Construct Gantt (cascade) charts using earliest/latest schedules. In this section assume each activity requires one worker.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "51e",
+          "Specification_section_sub": "4.5",
+          "Sub_topic_name": "Resource histograms and resource levelling",
+          "description": "Construct resource histograms from schedules using given workers per activity (not necessarily 1). Perform resource levelling by rescheduling within floats to reduce peak worker usage while maintaining project completion time where possible.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "51f",
+          "Specification_section_sub": "4.6",
+          "Sub_topic_name": "Scheduling to minimise number of workers",
+          "description": "Schedule activities to use the least number of workers required to complete the project (subject to precedence constraints and floats), adjusting start times and producing an efficient schedule.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 52,
+      "Specification_section": "D1 5",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Linear programming",
+      "Sub_topics": [
+        {
+          "subtopic_id": "52a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Formulate LP problems; slack/surplus/artificial variables",
+          "description": "Formulate problems as linear programs. Convert inequalities to equations using slack variables for \\(\\le\\), surplus variables (and artificial variables) for \\(\\ge\\) constraints; interpret meaning of each. For example: \\(3x+2y\\le 20\\Rightarrow 3x+2y+s_1=20\\); \\(2x+5y\\le 35\\Rightarrow 2x+5y+s_2=35\\); \\(x+y\\ge 5\\Rightarrow x+y-s_3+t_1=5\\) with \\(s_1,s_2\\) slack, \\(s_3\\) surplus, \\(t_1\\) artificial.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "52b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Graphical solution (2 variables) incl. integer solutions",
+          "description": "Solve 2-variable linear programming problems graphically using objective line and vertex methods. Identify feasible region and optimal vertex. Handle cases where integer solutions are required (evaluate objective at feasible integer points or apply integer constraints appropriately).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "52c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "Simplex algorithm (≤ constraints) for max/min",
+          "description": "Use simplex algorithm and tableau for maximising and minimising LPs with \\(\\le\\) constraints. Problems restricted to max four variables (excluding slack) and four constraints plus non-negativity conditions. Perform pivot operations, identify entering/leaving variables, read optimal solution.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "52d",
+          "Specification_section_sub": "5.4",
+          "Sub_topic_name": "Two-stage simplex and Big-M methods (mixed constraints)",
+          "description": "Use two-stage simplex and Big-M methods for max/min problems including both \\(\\le\\) and \\(\\ge\\) constraints. Problems restricted to max four variables (excluding slack/surplus/artificial) and four constraints plus any non-negativity. Set up artificial variables, perform phase I/II or Big-M penalties, and obtain optimum.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 53,
+      "Specification_section": "D2 1",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Transportation problems",
+      "Sub_topics": [
+        {
+          "subtopic_id": "53a",
+          "Specification_section_sub": "1.1",
+          "Sub_topic_name": "North-west corner method (initial feasible solution)",
+          "description": "Find an initial basic feasible solution to a transportation problem using the north-west corner method. Problems restricted to maximum four sources and four destinations. Handle supply/demand constraints and complete allocations.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "53b",
+          "Specification_section_sub": "1.2",
+          "Sub_topic_name": "Stepping-stone method; improvement indices; degeneracy/dummies",
+          "description": "Use stepping-stone method to improve a transportation solution. Compute improvement indices for unoccupied cells, identify specific entering and exiting cells, and update allocations along closed loops. Include dummy locations to balance supply/demand and handle degeneracy (fewer than \\(m+n-1\\) occupied cells).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "53c",
+          "Specification_section_sub": "1.3",
+          "Sub_topic_name": "Formulate transportation as linear program",
+          "description": "Formulate transportation problems as linear programming problems (decision variables for shipments, objective cost, row/column supply/demand constraints, non-negativity).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 54,
+      "Specification_section": "D2 2",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Allocation (assignment) problems",
+      "Sub_topics": [
+        {
+          "subtopic_id": "54a",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Hungarian algorithm (least cost) incl. matrix reduction and incomplete data",
+          "description": "Solve allocation problems using Hungarian algorithm. Perform cost matrix reduction (reduce rows first, then columns), cover zeros with minimum lines, adjust matrix, and find optimal assignment. Include dummy locations where needed. Adapt algorithm for incomplete data (prohibited assignments) as required by the specification.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "54b",
+          "Specification_section_sub": "2.1",
+          "Sub_topic_name": "Hungarian algorithm for maximum profit",
+          "description": "Modify Hungarian algorithm to handle maximum profit allocation by converting to an equivalent least-cost problem: subtract all entries from the largest original entry (in the original matrix) to produce a cost matrix, then apply standard algorithm.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "54c",
+          "Specification_section_sub": "2.2",
+          "Sub_topic_name": "Formulate assignment problem as linear program",
+          "description": "Formulate the Hungarian/assignment problem as a linear programming problem (binary decision variables, one-assignment-per-row/column constraints, objective function).",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 55,
+      "Specification_section": "D2 3",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Flows in networks",
+      "Sub_topics": [
+        {
+          "subtopic_id": "55a",
+          "Specification_section_sub": "3.1",
+          "Sub_topic_name": "Cuts and cut capacity (directed networks)",
+          "description": "Work with directed networks: identify cuts separating source \\(S\\) and sink \\(T\\), and compute capacity of a cut as sum of capacities of arcs directed from source-side set \\(X\\) to sink-side set \\(Y\\). For problems with upper and lower capacities, compute cut capacity as (sum of upper capacities S→T across cut) minus (sum of lower capacities T→S across cut) as defined in glossary.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "55b",
+          "Specification_section_sub": "3.2",
+          "Sub_topic_name": "Labelling procedure to find maximum flow",
+          "description": "Apply labelling/augmenting-path procedure to increase flow to maximum. Use forward/backward arc labelling: forward arrow indicates additional flow possible; backward arrow indicates reducible flow. Update flows along augmenting paths until no more improvement possible.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "55c",
+          "Specification_section_sub": "3.3",
+          "Sub_topic_name": "Max-flow min-cut theorem to prove maximality",
+          "description": "Use max–flow min–cut theorem to show a flow is maximum by exhibiting a cut whose capacity equals the current flow value, or otherwise demonstrating equality of max flow and min cut.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "55d",
+          "Specification_section_sub": "3.4",
+          "Sub_topic_name": "Multiple sources/sinks; vertex capacity constraints",
+          "description": "Handle networks with multiple sources and/or sinks by introducing supersource/supersink with appropriate arc capacities. Handle vertices with restricted capacity by transforming into two vertices with an intervening arc of given capacity (as in glossary).",
+          "tier": null
+        },
+        {
+          "subtopic_id": "55e",
+          "Specification_section_sub": "3.5",
+          "Sub_topic_name": "Optimal flow rate with constraints (upper/lower capacities)",
+          "description": "Determine optimal flow rates subject to additional constraints, including both upper and lower capacities on arcs. Adjust feasible flow by satisfying lower bounds and use augmentation to maximise feasible flow under constraints.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 56,
+      "Specification_section": "D2 4",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Dynamic programming",
+      "Sub_topics": [
+        {
+          "subtopic_id": "56a",
+          "Specification_section_sub": "4.1",
+          "Sub_topic_name": "Dynamic programming principles; Bellman optimality; stages/states; tabulation",
+          "description": "Use principles of dynamic programming and Bellman’s principle of optimality (any subpath of an optimal path is optimal). Use stage variables and state variables. Solve maximum, minimum, minimax or maximin problems using tabulation in both network and table formats; interpret optimal decisions at each stage.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 57,
+      "Specification_section": "D2 5",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Game theory",
+      "Sub_topics": [
+        {
+          "subtopic_id": "57a",
+          "Specification_section_sub": "5.1",
+          "Sub_topic_name": "Two-person zero-sum games and pay-off matrix",
+          "description": "Represent two-person zero-sum games using a pay-off matrix (written from row player’s point of view unless stated). Interpret strategies and outcomes in terms of gains/losses.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "57b",
+          "Specification_section_sub": "5.2",
+          "Sub_topic_name": "Play-safe strategies; saddle points; stable solutions",
+          "description": "Identify play-safe (maximin/minimax) strategies and stable solutions (saddle points). Use the criterion: stable solution exists iff row maximin equals column minimax (proof not required). Determine value of game and optimal pure strategies when a saddle point exists.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "57c",
+          "Specification_section_sub": "5.3",
+          "Sub_topic_name": "Dominance to reduce pay-off matrices",
+          "description": "Reduce pay-off matrices using dominance arguments (eliminate dominated rows/columns) to simplify games before solving mixed strategies.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "57d",
+          "Specification_section_sub": "5.4",
+          "Sub_topic_name": "Graphical solution for mixed strategies (2×n or n×2, n≤4)",
+          "description": "Find optimal mixed strategies for games with no stable solution using graphical methods for \\(2\\times n\\) or \\(n\\times 2\\) games where \\(n\\in\\{1,2,3,4\\}\\). Construct expected pay-off lines, find minimax/maximin intersection, and compute optimal mixing probabilities and game value.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "57e",
+          "Specification_section_sub": "5.5",
+          "Sub_topic_name": "Solve games via linear programming and simplex",
+          "description": "Solve games with no stable solution by converting to linear programming problems and solving via simplex algorithm. Set up dual LPs as needed to obtain optimal mixed strategies and value of the game.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 58,
+      "Specification_section": "D2 6",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Recurrence relations",
+      "Sub_topics": [
+        {
+          "subtopic_id": "58a",
+          "Specification_section_sub": "6.1",
+          "Sub_topic_name": "Model with recurrence relations",
+          "description": "Use recurrence relations to model appropriate problems (e.g. population growth, finance, iterative processes). Define state variables and parameters and interpret model outputs.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "58b",
+          "Specification_section_sub": "6.2",
+          "Sub_topic_name": "Solve first/second order linear recurrences (homogeneous/non-homogeneous)",
+          "description": "Solve first- and second-order linear homogeneous and non-homogeneous recurrence relations to obtain closed forms. Use auxiliary equation for homogeneous part and find particular solution for non-homogeneous part. Know terms: particular solution, complementary function, auxiliary equation. Examples include \\(u_{n+1}-5u_n=8\\) and \\(2u_{n+2}+7u_{n+1}-15u_n=6\\) with given initial conditions.",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "Topic_id": 59,
+      "Specification_section": "D2 7",
+      "Strand": "Decision Mathematics (Optional)",
+      "Topic_name": "Decision analysis",
+      "Sub_topics": [
+        {
+          "subtopic_id": "59a",
+          "Specification_section_sub": "7.1",
+          "Sub_topic_name": "Decision trees: construct, use and interpret",
+          "description": "Construct and interpret decision trees using decision nodes, chance nodes and pay-offs. Work backward through trees: choose best option at decision nodes; compute expected values at chance nodes; include conditional branching probabilities where given.",
+          "tier": null
+        },
+        {
+          "subtopic_id": "59b",
+          "Specification_section_sub": "7.2",
+          "Sub_topic_name": "Expected monetary value (EMV) and utility",
+          "description": "Use expected monetary values (EMVs) to compare courses of action. Understand and apply utility (risk attitudes) to decision making where pay-offs are transformed by a utility function; compare expected utilities and choose optimal decisions accordingly.",
+          "tier": null
+        }
+      ]
+    }
+  ]
+}
