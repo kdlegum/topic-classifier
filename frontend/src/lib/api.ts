@@ -45,7 +45,7 @@ export async function migrateGuestSessions(): Promise<{ migrated: number }> {
  */
 export async function classifyQuestions(
 	questions: string[],
-	specCode: string,
+	specCode: string | null,
 	strands?: string[]
 ): Promise<{ session_id: string }> {
 	const questionObjects = questions.map((text) => ({ text, marks: null }));
@@ -77,14 +77,22 @@ export async function classifyQuestions(
 export async function uploadPdf(
 	file: File,
 	specCode: string,
-	strands?: string[]
+	strands?: string[],
+	hasMath?: boolean
 ): Promise<{ job_id: string }> {
 	const formData = new FormData();
 	formData.append('file', file);
 
 	let endpoint = `/upload-pdf/${specCode}`;
+	const params: string[] = [];
 	if (strands && strands.length > 0) {
-		endpoint += `?strands=${encodeURIComponent(strands.join(','))}`;
+		params.push(`strands=${encodeURIComponent(strands.join(','))}`);
+	}
+	if (hasMath) {
+		params.push('has_math=true');
+	}
+	if (params.length > 0) {
+		endpoint += '?' + params.join('&');
 	}
 
 	const response = await apiFetch(endpoint, {

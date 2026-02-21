@@ -46,6 +46,7 @@
 	}
 
 	function getTitle(session: any): string {
+		if (session.no_spec) return 'Unclassified Session';
 		const parts = [session.qualification, session.subject_name].filter(Boolean);
 		return parts.length > 0 ? parts.join(' ') : session.subject;
 	}
@@ -114,7 +115,11 @@
 					<div class="session-info">
 						<div class="session-subject">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
 						<div class="session-meta">
-							<span class="session-board">{session.exam_board}</span>
+							{#if session.no_spec}
+						<span class="session-board no-spec-badge">No specification</span>
+					{:else}
+						<span class="session-board">{session.exam_board}</span>
+					{/if}
 							<span class="session-date">{formatDate(session.created_at)}</span>
 						</div>
 					</div>
@@ -148,6 +153,11 @@
 		color: var(--color-text-secondary);
 		font-size: 1.02rem;
 		margin-bottom: 8px;
+	}
+
+	.no-spec-badge {
+		color: var(--color-text-muted);
+		font-style: italic;
 	}
 
 	.loading-spinner {

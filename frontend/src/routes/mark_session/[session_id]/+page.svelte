@@ -154,18 +154,20 @@
 				}
 			}
 
-			// Build spec_sub_section -> subtopic_id lookup from hierarchy
-			try {
-				const hierarchy = await getTopicHierarchy(session.spec_code);
-				for (const strand of hierarchy.strands) {
-					for (const topic of strand.topics) {
-						for (const subtopic of topic.subtopics) {
-							specSubSectionToId.set(subtopic.spec_sub_section, subtopic.subtopic_id);
+			// Build spec_sub_section -> subtopic_id lookup from hierarchy (skip for no-spec sessions)
+			if (!session.no_spec) {
+				try {
+					const hierarchy = await getTopicHierarchy(session.spec_code);
+					for (const strand of hierarchy.strands) {
+						for (const topic of strand.topics) {
+							for (const subtopic of topic.subtopics) {
+								specSubSectionToId.set(subtopic.spec_sub_section, subtopic.subtopic_id);
+							}
 						}
 					}
+				} catch (e) {
+					console.error('Failed to load hierarchy for subtopic ID lookup:', e);
 				}
-			} catch (e) {
-				console.error('Failed to load hierarchy for subtopic ID lookup:', e);
 			}
 		} catch (err: any) {
 			const msg = err.message || '';
@@ -193,6 +195,7 @@
 	}
 
 	function getTitle(s: any): string {
+		if (s.no_spec) return 'Unclassified Session';
 		const parts = [s.qualification, s.subject_name].filter(Boolean);
 		return parts.length > 0 ? parts.join(' ') : s.subject;
 	}
@@ -568,7 +571,7 @@
 
 		<div class="session-header" in:fly={{ y: 15, duration: 300 }}>
 			<h2>{getTitle(session)}</h2>
-			<p class="session-meta">{session.exam_board} - {formatDate(session.created_at)}</p>
+			<p class="session-meta">{session.no_spec ? 'No specification' : session.exam_board} - {formatDate(session.created_at)}</p>
 			{#if session.session_strands && session.session_strands.length > 0}
 				<div class="session-strands">
 					{#each session.session_strands as strand}
@@ -582,6 +585,12 @@
 				</button>
 			{/if}
 		</div>
+
+		{#if session.no_spec}
+			<div class="no-spec-banner" in:fly={{ y: 10, duration: 250 }}>
+				No specification selected — topic predictions are not available for this session.
+			</div>
+		{/if}
 
 		{#each session.questions as question, i}
 			<div
@@ -643,6 +652,7 @@
 					<p class="marks-error" in:fade={{ duration: 150 }}>Please enter a value between 0 and {question.marks_available ?? '?'}</p>
 				{/if}
 
+			{#if !session.no_spec}
 				{#each question.predictions as pred}
 					{@const selected = isPredictionSelected(question.question_id, pred)}
 					<div class="prediction">
@@ -684,6 +694,7 @@
 					corrections={getCorrections(question.question_id)}
 					onchange={(c) => handleCorrectionsChange(question.question_id, c)}
 				/>
+			{/if}
 			</div>
 		{/each}
 	{/if}
@@ -750,6 +761,16 @@
 {/if}
 
 <style>
+	.no-spec-banner {
+		margin-bottom: 16px;
+		padding: 12px 16px;
+		border-radius: var(--radius-sm);
+		background: var(--color-surface-alt);
+		border: 1.5px solid var(--color-border);
+		color: var(--color-text-secondary);
+		font-size: 0.9rem;
+	}
+
 	.loading-spinner {
 		display: inline-block;
 		width: 18px;

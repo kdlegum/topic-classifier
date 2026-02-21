@@ -74,7 +74,7 @@ class similarityRequest(BaseModel):
 class classificationRequest(BaseModel):
     question_object: List[Dict]
     ExamBoard: Optional[str] = None
-    SpecCode: str
+    SpecCode: Optional[str] = None
     num_predictions: Optional[int] = 3
     strands: Optional[List[str]] = None
 
@@ -689,77 +689,83 @@ def classify_questions_logic(
     user_id: str,
     is_guest: bool,
 ):
+    no_spec = not req.SpecCode or req.SpecCode == "NONE"
 
-    matching_topic = allSpecs.get(req.SpecCode)
-    if matching_topic is None:
-        raise HTTPException(status_code=404, detail="Specification code not found")
-
-    # Resolve effective strands for filtering
+    # Variables only populated in the spec path
     effective_strands: set[str] | None = None
-    if req.strands:
-        effective_strands = set(req.strands)
-    elif matching_topic.get("optional_modules", False):
-        # Look up user's module selections
-        with Session(engine) as db:
-            rows = db.exec(
-                select(UserModuleSelection)
-                .where(UserModuleSelection.user_id == user_id)
-                .where(UserModuleSelection.is_guest == is_guest)
-                .where(UserModuleSelection.spec_code == req.SpecCode)
-            ).all()
-            if rows:
-                effective_strands = {r.strand for r in rows}
+    sub_topics_embed = None
+    subTopicIds = None
+    topk_indices = None
+    similarities = None
 
-    # Use cached embeddings for subtopics
-    sub_topics_embed, subTopicIds = get_embeddings(req.SpecCode, effective_strands)
-    if len(subTopicIds) == 0:
-        raise HTTPException(status_code=400, detail="No topics match the selected strands")
+    if not no_spec:
+        matching_topic = allSpecs.get(req.SpecCode)
+        if matching_topic is None:
+            raise HTTPException(status_code=404, detail="Specification code not found")
 
-    question_text = [q["text"] for q in req.question_object]
-    marks = [q["marks"] for q in req.question_object]
-    question_ids = [q.get("id", str(i + 1)) for i, q in enumerate(req.question_object)]
+        # Resolve effective strands for filtering
+        if req.strands:
+            effective_strands = set(req.strands)
+        elif matching_topic.get("optional_modules", False):
+            with Session(engine) as db:
+                rows = db.exec(
+                    select(UserModuleSelection)
+                    .where(UserModuleSelection.user_id == user_id)
+                    .where(UserModuleSelection.is_guest == is_guest)
+                    .where(UserModuleSelection.spec_code == req.SpecCode)
+                ).all()
+                if rows:
+                    effective_strands = {r.strand for r in rows}
 
-    t0 = time.time()
-    question_embed = model.encode(question_text)
-    similarities = model.similarity(sub_topics_embed, question_embed).numpy()
-    print(f"Classified {len(question_text)} questions in {time.time() - t0:.2f}s (embeddings cached)")
-
-    k = req.num_predictions or 3
-
-    topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
-    topk_indices = list(map(list, zip(*topk_indices)))
-    topk_indices = [list(map(int, row)) for row in topk_indices]
-
-    session_id = str(uuid.uuid4())
-
-    with Session(engine) as db:
+        # Use cached embeddings for subtopics
+        sub_topics_embed, subTopicIds = get_embeddings(req.SpecCode, effective_strands)
+        if len(subTopicIds) == 0:
+            raise HTTPException(status_code=400, detail="No topics match the selected strands")
 
         # Fill ExamBoard if missing
         if req.ExamBoard is None:
             spec_data = allSpecs.get(req.SpecCode)
             req.ExamBoard = spec_data["Exam Board"] if spec_data else "Unknown"
 
+    question_texts = [q["text"] for q in req.question_object]
+    marks = [q["marks"] for q in req.question_object]
+    question_ids = [q.get("id", str(i + 1)) for i, q in enumerate(req.question_object)]
+
+    if not no_spec:
+        t0 = time.time()
+        question_embed = model.encode(question_texts)
+        similarities = model.similarity(sub_topics_embed, question_embed).numpy()
+        print(f"Classified {len(question_texts)} questions in {time.time() - t0:.2f}s (embeddings cached)")
+
+        k = req.num_predictions or 3
+        topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
+        topk_indices = list(map(list, zip(*topk_indices)))
+        topk_indices = [list(map(int, row)) for row in topk_indices]
+
+    session_id = str(uuid.uuid4())
+
+    with Session(engine) as db:
         db_session = DBSess(
             session_id=session_id,
-            exam_board=req.ExamBoard,
-            subject=req.SpecCode,
+            exam_board=req.ExamBoard or "",
+            subject=req.SpecCode or "",
             is_guest=is_guest,
             user_id=user_id,
+            no_spec=no_spec,
         )
         db.add(db_session)
         db.flush()
 
-        # Store session strands if any were specified
-        if effective_strands:
+        # Store session strands only for spec sessions
+        if not no_spec and effective_strands:
             for strand in effective_strands:
                 db.add(SessionStrand(session_id=session_id, strand=strand))
 
-        for q_idx, question_text in enumerate(question_text):
-
+        for q_idx, q_text in enumerate(question_texts):
             db_question = DBQuestion(
                 session_id=session_id,
                 question_number=question_ids[q_idx],
-                question_text=question_text,
+                question_text=q_text,
             )
             db.add(db_question)
             db.flush()  # needed here to get db_question.id
@@ -770,29 +776,30 @@ def classify_questions_logic(
             )
             db.add(db_question_mark)
 
-            for rank, subtopic_idx in enumerate(topk_indices[q_idx], start=1):
-                subtopic_id = subTopicIds[subtopic_idx]
-                key = f"{req.ExamBoard}_{req.SpecCode}_{subtopic_id}"
+            if not no_spec:
+                for rank, subtopic_idx in enumerate(topk_indices[q_idx], start=1):
+                    subtopic_id = subTopicIds[subtopic_idx]
+                    key = f"{req.ExamBoard}_{req.SpecCode}_{subtopic_id}"
 
-                if key not in subtopics_index:
-                    raise KeyError("Key was not found in subtopics_index")
+                    if key not in subtopics_index:
+                        raise KeyError("Key was not found in subtopics_index")
 
-                info = subtopics_index[key]
-                similarity_score = float(
-                    round(similarities[subtopic_idx, q_idx], 4)
-                )
+                    info = subtopics_index[key]
+                    similarity_score = float(
+                        round(similarities[subtopic_idx, q_idx], 4)
+                    )
 
-                db_prediction = DBPrediction(
-                    question_id=db_question.id,
-                    rank=rank,
-                    strand=info["strand"],
-                    topic=info["topic_name"],
-                    subtopic=info["name"],
-                    spec_sub_section=info["spec_sub_section"],
-                    description=info["description"],
-                    similarity_score=similarity_score,
-                )
-                db.add(db_prediction)
+                    db_prediction = DBPrediction(
+                        question_id=db_question.id,
+                        rank=rank,
+                        strand=info["strand"],
+                        topic=info["topic_name"],
+                        subtopic=info["name"],
+                        spec_sub_section=info["spec_sub_section"],
+                        description=info["description"],
+                        similarity_score=similarity_score,
+                    )
+                    db.add(db_prediction)
 
         db.commit()
 
@@ -1031,6 +1038,7 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             "user_id": db_session.user_id,
             "session_strands": session_strands,
             "has_pdf": db_session.pdf_filename is not None,
+            "no_spec": db_session.no_spec,
             "questions": response_questions
         }
 
@@ -1135,6 +1143,7 @@ def get_user_sessions(request: Request, user=Depends(get_user), page: int = 1, p
                 "created_at": s.created_at,
                 "question_count": question_counts.get(s.session_id, 0),
                 "strands": strands_map.get(s.session_id, []),
+                "no_spec": s.no_spec,
             })
 
         return {"sessions": result, "total": total, "page": page, "page_size": page_size}
@@ -1220,6 +1229,7 @@ async def upload_pdf(
     SpecCode: str,
     file: UploadFile = File(...),
     strands: Optional[str] = Query(default=None, description="Comma-separated strand names"),
+    has_math: bool = Query(default=False),
     background_tasks: BackgroundTasks = None,
     user=Depends(get_user),
 ):
@@ -1254,20 +1264,24 @@ async def upload_pdf(
         job_id,
         SpecCode,
         user,
-        strand_list
+        strand_list,
+        has_math,
     )
 
     return {
         "job_id": job_id
     }
 
-def process_pdf(job_id, SpecCode, user, strands=None):
+def process_pdf(job_id, SpecCode, user, strands=None, has_math=False):
     import logging
     logger = logging.getLogger(__name__)
     pdf_path = f"Backend/uploads/pdfs/{job_id}.pdf"
 
     # Look up whether this spec uses math notation
-    spec_has_math = allSpecs.get(SpecCode, {}).get("has_math", False)
+    if SpecCode == "NONE":
+        spec_has_math = has_math
+    else:
+        spec_has_math = allSpecs.get(SpecCode, {}).get("has_math", False)
 
     questions = None
     olmocr_workspace = None
@@ -1385,7 +1399,8 @@ def process_pdf(job_id, SpecCode, user, strands=None):
         user_id = user["guest_id"]
         is_guest = True
 
-    session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=SpecCode, strands=strands), user_id=user_id, is_guest=is_guest)["session_id"]
+    classify_spec_code = None if SpecCode == "NONE" else SpecCode
+    session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=classify_spec_code, strands=strands), user_id=user_id, is_guest=is_guest)["session_id"]
 
     # Store PDF filename and locate questions in the PDF
     try:
