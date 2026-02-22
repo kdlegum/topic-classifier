@@ -1308,6 +1308,9 @@ def get_user_sessions(request: Request, user=Depends(get_user), page: int = 1, p
                 "strands": strands_map.get(s.session_id, []),
                 "name": s.name,
                 "no_spec": s.no_spec,
+                "status": s.status,
+                "total_marks_available": s.total_marks_available,
+                "total_marks_achieved": s.total_marks_achieved,
             })
 
         return {"sessions": result, "total": total, "page": page, "page_size": page_size}

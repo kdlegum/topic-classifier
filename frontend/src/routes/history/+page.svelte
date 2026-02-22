@@ -76,6 +76,18 @@
 	function staggerDelay(i: number): number {
 		return shouldAnimate() ? 50 + i * DURATIONS.stagger : 0;
 	}
+
+	function getPct(session: any): number | null {
+		if (session.status !== 'marked') return null;
+		if (!session.total_marks_available) return null;
+		return Math.round((session.total_marks_achieved / session.total_marks_available) * 100);
+	}
+
+	function pctClass(pct: number): string {
+		if (pct >= 70) return 'pct-high';
+		if (pct >= 40) return 'pct-mid';
+		return 'pct-low';
+	}
 </script>
 
 <svelte:head>
@@ -136,6 +148,14 @@
 						<div class="session-questions">
 							{session.question_count} question{session.question_count !== 1 ? 's' : ''}
 						</div>
+						{#if session.status === 'marked'}
+							{@const pct = getPct(session)}
+							{#if pct !== null}
+								<span class="mark-badge {pctClass(pct)}">{pct}%</span>
+							{/if}
+						{:else if session.status === 'in_progress'}
+							<span class="mark-badge pct-progress">In progress</span>
+						{/if}
 						<button class="delete-btn" onclick={(e) => handleDelete(e, session.session_id)} title="Delete session">
 							<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
 								<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
@@ -224,6 +244,21 @@
 		font-size: 0.85rem;
 		color: var(--color-text-secondary);
 	}
+
+	.mark-badge {
+		display: inline-flex;
+		align-items: center;
+		padding: 3px 10px;
+		border-radius: var(--radius-full);
+		font-size: 0.82rem;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+
+	.pct-high { background: var(--color-success-bg); color: #15803d; }
+	.pct-mid  { background: var(--color-warning-bg); color: #b45309; }
+	.pct-low  { background: var(--color-error-bg);   color: #b91c1c; }
+	.pct-progress { background: var(--color-warning-bg); color: #b45309; }
 
 	.pagination {
 		display: flex;
