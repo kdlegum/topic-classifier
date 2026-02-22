@@ -4,7 +4,7 @@ from database import engine
 from sessionDatabase import (
     Session, Question, Prediction, QuestionMark, UserCorrection,
     Specification, Topic, Subtopic, UserModuleSelection, SessionStrand,
-    UserSpecSelection, QuestionLocation, RevisionAttempt,
+    UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection,
 )
 
 SQLModel.metadata.create_all(engine)
@@ -16,6 +16,7 @@ migrations = [
     "ALTER TABLE session ADD COLUMN mark_scheme_filename VARCHAR DEFAULT NULL",
     "ALTER TABLE session ADD COLUMN no_spec BOOLEAN DEFAULT FALSE",
     "ALTER TABLE session ADD COLUMN name TEXT DEFAULT NULL",
+    "UPDATE specification SET content_hash = NULL WHERE creator_id IS NULL",
 ]
 
 for sql in migrations:
