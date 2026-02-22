@@ -42,13 +42,17 @@ Format — JSON array only, nothing else:
 [{"id": "3a", "marks": 3, "text": "..."}, ...]
 
 Rules:
-- "id": question number + part letter + optional roman numeral. Examples: "3", "3a", "3b(i)", "3b(ii)". No "Q" prefix.
-- "marks": integer from [N] brackets, or null if not shown.
-- "text": full question text for that part. Prepend the stem/preamble if the subpart needs it for context. Keep LaTeX as-is. Keep [DIAGRAM] and [TABLE] placeholders.
-- Include all multiple choice options (A, B, C, D, etc.) as part of the question text. Do NOT strip them.
-- Use \\n line breaks in the text field to preserve structure (e.g. between the question stem and options).
-- Remove mark brackets like [3] from the text field.
-- If a question has no sub-parts, output a single item with just the question number as id.
+- "id": Reflect the actual numbering in the paper.
+  - Standard format (e.g. OCR, Edexcel): question number + part letter + optional roman numeral. Examples: "3", "3a", "3b(i)", "3b(ii)". No "Q" prefix.
+  - AQA format: questions use individual digit boxes, e.g. [0][1] for Q1 and [0][1][.][2] for Q1 part 2. Strip leading zeros and spaces; use a dot for the separator. Examples: "0 1" → "1", "0 1 . 1" → "1.1", "0 2 . 3" → "2.3".
+- "marks": integer from [N marks] or [N] brackets, or null if not shown.
+- "text": full self-contained question text for that part.
+  - ALWAYS prepend all relevant context from the question stem (the parent question intro, scenario, figure descriptions, tables, bullet points, numbered method steps, etc.) so the sub-question makes sense in isolation.
+  - If a parent question (e.g. "0 1" or "Question 1") has no marks box of its own, it is a context-only stem — do NOT emit it as a separate question; instead prepend its text to every sub-question under it.
+  - Keep LaTeX as-is. Keep [DIAGRAM] and [TABLE] placeholders.
+- Include all multiple choice / tick-box options as part of the question text. Do NOT strip them.
+- Use \\n line breaks to preserve structure (e.g. between stem and options).
+- Remove mark brackets like [3] or [3 marks] from the text field.
 - Output ONLY the JSON array. No commentary, no markdown fences."""
 
 FEW_SHOT_USER = """1 A shop sells two types of coffee.
@@ -78,6 +82,59 @@ FEW_SHOT_RESPONSE = """[
   {"id": "3", "marks": 1, "text": "Which of the following is a prime number?\\nA 4\\nB 6\\nC 7\\nD 9"}
 ]"""
 
+# AQA-format few-shot: demonstrates zero-padded box numbering → dot IDs,
+# context-only stems (no marks) prepended to every sub-question, and
+# tick-box options included in text.
+FEW_SHOT_AQA_USER = """0 1   This question is about cells.
+
+Figure 1 shows an animal cell. [DIAGRAM]
+
+0 1 . 1   Label parts A, B and C on Figure 1.
+Choose answers from the box.
+[3 marks]
+
+cell membrane   cell wall   chloroplast   cytoplasm   nucleus
+
+0 1 . 2   What is the function of the nucleus in a cell?
+Tick one box.
+[1 mark]
+
+To contain a solution called cell sap
+To control the activities of the whole cell
+To control the movement of substances into the cell
+
+0 2   A student investigated the loss of mass from leaves placed in winds of different speed.
+The student used an electric fan to create different wind speeds.
+Figure 2 shows the apparatus. [DIAGRAM]
+
+This is the method used.
+1. Record the mass of one leaf taken from a plant.
+2. Attach the leaf to a stand.
+3. Leave for 1 hour with the fan off.
+4. Record the final mass of the leaf.
+5. Repeat steps 1 to 4 with the fan set at different speeds. Use leaves of a similar size each time.
+6. Calculate the loss of mass for each leaf.
+
+Table 1 shows the results. [TABLE]
+
+0 2 . 1   Why did the student do one experiment with the fan off?
+[1 mark]
+
+0 2 . 2   How does increasing fan speed affect the loss of mass from the leaves?
+Use Table 1.
+[1 mark]
+
+0 2 . 3   Explain why the mass of the leaves decreased at all fan speeds.
+[3 marks]"""
+
+FEW_SHOT_AQA_RESPONSE = """[
+  {"id": "1.1", "marks": 3, "text": "This question is about cells. Figure 1 shows an animal cell. [DIAGRAM] Label parts A, B and C on Figure 1. Choose answers from the box.\\ncell membrane   cell wall   chloroplast   cytoplasm   nucleus"},
+  {"id": "1.2", "marks": 1, "text": "This question is about cells. Figure 1 shows an animal cell. [DIAGRAM] What is the function of the nucleus in a cell?\\nTo contain a solution called cell sap\\nTo control the activities of the whole cell\\nTo control the movement of substances into the cell"},
+  {"id": "2.1", "marks": 1, "text": "A student investigated the loss of mass from leaves placed in winds of different speed. The student used an electric fan to create different wind speeds. Figure 2 shows the apparatus. [DIAGRAM] The method: 1. Record the mass of one leaf taken from a plant. 2. Attach the leaf to a stand. 3. Leave for 1 hour with the fan off. 4. Record the final mass of the leaf. 5. Repeat steps 1 to 4 with the fan set at different speeds. Use leaves of a similar size each time. 6. Calculate the loss of mass for each leaf. Table 1 shows the results. [TABLE] Why did the student do one experiment with the fan off?"},
+  {"id": "2.2", "marks": 1, "text": "A student investigated the loss of mass from leaves placed in winds of different speed. The student used an electric fan to create different wind speeds. Table 1 shows the results. [TABLE] How does increasing fan speed affect the loss of mass from the leaves? Use Table 1."},
+  {"id": "2.3", "marks": 3, "text": "A student investigated the loss of mass from leaves placed in winds of different speed. The student used an electric fan to create different wind speeds. Table 1 shows the results. [TABLE] Explain why the mass of the leaves decreased at all fan speeds."}
+]"""
+
 CONTINUE_PROMPT = (
     "Your previous response was truncated. Continue extracting the remaining "
     "questions from the exam paper. Output ONLY a JSON array of the remaining "
@@ -89,6 +146,14 @@ MODEL = "gemini-2.5-flash-lite"
 
 def preprocess_markdown(text: str) -> str:
     """Strip exam boilerplate and normalize the markdown for LLM parsing."""
+    # Normalise AQA-style OCR box question numbers (e.g. "0 1 . 2" → "0 1 . 2" is fine;
+    # but some OCR tools render the boxes as "|0|1|.|2|" or "[ 0 ][ 1 ][.][ 2 ]").
+    # Convert those to plain "0 1 . 2" so the LLM can parse them.
+    text = re.sub(r'\|\s*(\d)\s*\|\s*(\d)\s*\|\s*\.\s*\|\s*(\d)\s*\|', r'0\1 . \2\3', text)
+    text = re.sub(r'\|\s*(\d)\s*\|\s*(\d)\s*\|(?!\s*\.)', r'0\1 0\2', text)
+    text = re.sub(r'\[\s*(\d)\s*\]\s*\[\s*(\d)\s*\]\s*\[\s*\.\s*\]\s*\[\s*(\d)\s*\]', r'0\1 . \2\3', text)
+    text = re.sub(r'\[\s*(\d)\s*\]\s*\[\s*(\d)\s*\](?!\s*\[)', r'0\1 0\2', text)
+
     # Remove boilerplate before the first question.
     # Require 1-3 digit number (avoids matching years like "2024") followed by
     # whitespace and actual content (avoids matching lone page numbers).
@@ -304,6 +369,14 @@ def parse_pdf_with_vision(pdf_path: str, max_retries: int = 2, on_status: Option
                 ),
                 types.Content(
                     role="user",
+                    parts=[types.Part.from_text(text=FEW_SHOT_AQA_USER)],
+                ),
+                types.Content(
+                    role="model",
+                    parts=[types.Part.from_text(text=FEW_SHOT_AQA_RESPONSE)],
+                ),
+                types.Content(
+                    role="user",
                     parts=[
                         types.Part.from_bytes(
                             data=pdf_bytes,
@@ -420,6 +493,14 @@ def parse_with_llm(file_path: str, max_retries: int = 2, on_status: Optional[Cal
                 types.Content(
                     role="model",
                     parts=[types.Part.from_text(text=FEW_SHOT_RESPONSE)],
+                ),
+                types.Content(
+                    role="user",
+                    parts=[types.Part.from_text(text=FEW_SHOT_AQA_USER)],
+                ),
+                types.Content(
+                    role="model",
+                    parts=[types.Part.from_text(text=FEW_SHOT_AQA_RESPONSE)],
                 ),
                 types.Content(
                     role="user",

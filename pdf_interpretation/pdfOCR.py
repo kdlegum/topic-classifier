@@ -83,7 +83,7 @@ def run_olmocr(
         env=env,
         capture_output=True,
         text=True,
-        timeout=300,
+        timeout=60,
     )
 
     if result.returncode != 0:

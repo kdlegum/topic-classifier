@@ -13,18 +13,26 @@ _ROMAN_ORDER = {
 
 
 def _question_sort_key(q):
-    """Natural sort key for question IDs like '1', '1a', '1b(i)', '10a'."""
+    """Natural sort key for question IDs like '1', '1a', '1b(i)', '10a', '1.1', '2.3'."""
     qid = q["id"]
+    # AQA dot format: "1.1", "2.3", "10.2"
+    dot_match = re.match(r'^(\d+)\.(\d+)$', qid)
+    if dot_match:
+        # (major_num, 0 = before any letter sub-part, minor_num, 0)
+        return (int(dot_match.group(1)), 0, int(dot_match.group(2)), 0)
+    # Standard format: "1", "1a", "1b(i)"
     m = re.match(r'(\d+)(.*)', qid)
     if not m:
-        return (0, qid, 0)
+        return (0, 0, 0, 0)
     num = int(m.group(1))
     rest = m.group(2)
     m2 = re.match(r'([a-z]?)(?:\(([^)]*)\))?', rest)
     part_letter = m2.group(1) if m2 and m2.group(1) else ''
     sub_part = m2.group(2) if m2 and m2.group(2) else ''
+    # Convert letter to 1-based int so tuple types are consistent
+    letter_num = ord(part_letter) - ord('a') + 1 if part_letter else 0
     sub_num = _ROMAN_ORDER.get(sub_part, 0)
-    return (num, part_letter, sub_num)
+    return (num, letter_num, 0, sub_num)
 
 
 def sort_questions(questions: List[Dict]) -> List[Dict]:

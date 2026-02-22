@@ -117,6 +117,9 @@ def _locate_via_pymupdf(doc, questions: list[dict]) -> list[dict]:
         logger.info("No text blocks found in PDF (possibly scanned)")
         return []
 
+    # Detect AQA format: question IDs use dot notation like "1.1", "2.3"
+    is_aqa = any('.' in q["id"] for q in questions)
+
     # Group input questions by top-level number
     groups: dict[int, list[dict]] = {}
     for q in questions:
@@ -130,13 +133,27 @@ def _locate_via_pymupdf(doc, questions: list[dict]) -> list[dict]:
     starts: dict[int, tuple[int, float]] = {}  # num -> (page, y_top)
 
     for num, qs in groups.items():
-        # Match line starting with the question number, not followed by another digit
-        pattern = re.compile(rf'^[Qq]?\s*{num}(?!\d)')
+        if is_aqa:
+            # AQA PDFs: top-level question markers appear as standalone "0 N" lines
+            # (the leading zero is from the two-digit box format: [0][N]).
+            # Use exact-end match so "0 1 . 2" sub-part lines don't match as Q1.
+            # Fall back to prefix match if no standalone markers found.
+            pattern = re.compile(rf'^0\s+{num}\s*$')
+        else:
+            # Standard format (OCR, Edexcel): question number at start of line
+            pattern = re.compile(rf'^[Qq]?\s*{num}(?!\d)')
 
         candidates: list[tuple[int, int, float]] = []  # (line_idx, page, y_top)
         for i, ln in enumerate(lines):
             if pattern.match(ln["text"]):
                 candidates.append((i, ln["page"], ln["y_top"]))
+
+        # AQA fallback: if no standalone "0 N" found, try prefix match "0 N ..."
+        if not candidates and is_aqa:
+            fallback = re.compile(rf'^0\s+{num}(?!\d)')
+            for i, ln in enumerate(lines):
+                if fallback.match(ln["text"]):
+                    candidates.append((i, ln["page"], ln["y_top"]))
 
         if not candidates:
             continue
