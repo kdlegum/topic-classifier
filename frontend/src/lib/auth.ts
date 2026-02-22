@@ -4,6 +4,8 @@ import { writable } from 'svelte/store';
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://aefhkwhqvlcbvdpoyokn.supabase.co';
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || 'sb_publishable_PBbofs1GL85HFdaMgjhCfw_2GLOiDub';
 
+const SITE_URL: string = import.meta.env.VITE_SITE_URL || (typeof window !== 'undefined' ? window.location.origin : 'https://topictracker.co.uk');
+
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Store for the current user
@@ -61,7 +63,7 @@ export async function isAuthenticated(): Promise<boolean> {
 /**
  * Sign in with magic link (email OTP)
  */
-export async function signInWithMagicLink(email: string, redirectTo = window.location.origin + '/classify') {
+export async function signInWithMagicLink(email: string, redirectTo = SITE_URL + '/classify') {
 	const { error } = await supabase.auth.signInWithOtp({
 		email,
 		options: {
@@ -74,7 +76,7 @@ export async function signInWithMagicLink(email: string, redirectTo = window.loc
 /**
  * Sign in with Google OAuth
  */
-export async function signInWithGoogle(redirectTo = window.location.origin + '/classify') {
+export async function signInWithGoogle(redirectTo = SITE_URL + '/classify') {
 	const { error } = await supabase.auth.signInWithOAuth({
 		provider: 'google',
 		options: {
