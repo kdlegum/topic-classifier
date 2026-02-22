@@ -13,7 +13,7 @@ import json
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection
 from sqlmodel import Session, select, update
 from sqlalchemy import func
 from pathlib import Path
@@ -77,6 +77,7 @@ class classificationRequest(BaseModel):
     SpecCode: Optional[str] = None
     num_predictions: Optional[int] = 3
     strands: Optional[List[str]] = None
+    tier: Optional[str] = None
 
 def load_specs_from_db():
     """
@@ -114,6 +115,7 @@ def load_specs_from_db():
                     "Specification_section_sub": s.specification_section_sub,
                     "Sub_topic_name": s.subtopic_name,
                     "description": s.description,
+                    "tier": s.tier,
                 })
 
                 key = f"{spec.exam_board}_{spec.spec_code}_{s.subtopic_id}"
@@ -131,6 +133,7 @@ def load_specs_from_db():
                     "specification": spec.spec_code,
                     "spec_sub_section": s.specification_section_sub,
                     "classification_text": f"{s.subtopic_name}. {s.description}",
+                    "tier": s.tier,
                 }
 
             topics_list.append({
@@ -190,6 +193,7 @@ def get_specs(request: Request, user=Depends(get_user)):
     for code, s in allSpecs.items():
         strands = list({t["Strand"] for t in s["Topics"]})
         topic_count = sum(len(t["Sub_topics"]) for t in s["Topics"])
+        tier_values = {sub.get("tier") for t in s["Topics"] for sub in t["Sub_topics"] if sub.get("tier")}
         result.append({
             "spec_code": code,
             "subject": s["Subject"],
@@ -198,6 +202,8 @@ def get_specs(request: Request, user=Depends(get_user)):
             "optional_modules": s.get("optional_modules", False),
             "has_math": s.get("has_math", False),
             "strands": sorted(strands),
+            "tiers": sorted(tier_values),
+            "has_tiers": len(tier_values) > 0,
             "is_reviewed": s.get("is_reviewed", False),
             "creator_id": s.get("creator_id"),
             "description": s.get("description"),
@@ -276,6 +282,76 @@ def save_user_modules(spec_code: str, req: SaveModulesRequest, request: Request,
                 spec_code=spec_code,
                 strand=strand,
             ))
+
+        db.commit()
+
+    return {"success": True}
+
+
+@app.get("/user/tier/{spec_code}")
+def get_user_tier(spec_code: str, request: Request, user=Depends(get_user)):
+    """Returns the user's saved tier selection for a spec."""
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        row = db.exec(
+            select(UserTierSelection)
+            .where(UserTierSelection.user_id == user_id)
+            .where(UserTierSelection.is_guest == is_guest)
+            .where(UserTierSelection.spec_code == spec_code)
+        ).first()
+
+    return {"tier": row.tier if row else None}
+
+
+class SaveTierRequest(BaseModel):
+    tier: Optional[str] = None
+
+
+@app.put("/user/tier/{spec_code}")
+def save_user_tier(spec_code: str, req: SaveTierRequest, request: Request, user=Depends(get_user)):
+    """Save or clear the user's tier selection for a spec."""
+    if spec_code not in allSpecs:
+        raise HTTPException(status_code=404, detail="Specification not found")
+
+    if req.tier is not None and req.tier not in ("Higher", "Foundation"):
+        raise HTTPException(status_code=400, detail="tier must be 'Higher', 'Foundation', or null")
+
+    if user["is_authenticated"]:
+        user_id = user["user_id"]
+        is_guest = False
+    else:
+        user_id = user["guest_id"]
+        is_guest = True
+
+    with Session(engine) as db:
+        existing = db.exec(
+            select(UserTierSelection)
+            .where(UserTierSelection.user_id == user_id)
+            .where(UserTierSelection.is_guest == is_guest)
+            .where(UserTierSelection.spec_code == spec_code)
+        ).first()
+
+        if req.tier is None:
+            # Clear the selection
+            if existing:
+                db.delete(existing)
+        else:
+            if existing:
+                existing.tier = req.tier
+                db.add(existing)
+            else:
+                db.add(UserTierSelection(
+                    user_id=user_id,
+                    is_guest=is_guest,
+                    spec_code=spec_code,
+                    tier=req.tier,
+                ))
 
         db.commit()
 
@@ -641,6 +717,7 @@ def get_user_specs(request: Request, user=Depends(get_user)):
         if s is None:
             continue
         strands = list({t["Strand"] for t in s["Topics"]})
+        tier_values = {sub.get("tier") for t in s["Topics"] for sub in t["Sub_topics"] if sub.get("tier")}
         result.append({
             "spec_code": code,
             "subject": s["Subject"],
@@ -648,6 +725,8 @@ def get_user_specs(request: Request, user=Depends(get_user)):
             "qualification": s["Qualification"],
             "optional_modules": s.get("optional_modules", False),
             "strands": sorted(strands),
+            "tiers": sorted(tier_values),
+            "has_tiers": len(tier_values) > 0,
         })
     return result
 
@@ -717,8 +796,23 @@ def classify_questions_logic(
                 if rows:
                     effective_strands = {r.strand for r in rows}
 
+        # Resolve effective tier for filtering
+        effective_tier: str | None = None
+        if req.tier:
+            effective_tier = req.tier
+        else:
+            with Session(engine) as db:
+                tier_row = db.exec(
+                    select(UserTierSelection)
+                    .where(UserTierSelection.user_id == user_id)
+                    .where(UserTierSelection.is_guest == is_guest)
+                    .where(UserTierSelection.spec_code == req.SpecCode)
+                ).first()
+                if tier_row:
+                    effective_tier = tier_row.tier
+
         # Use cached embeddings for subtopics
-        sub_topics_embed, subTopicIds = get_embeddings(req.SpecCode, effective_strands)
+        sub_topics_embed, subTopicIds = get_embeddings(req.SpecCode, effective_strands, effective_tier)
         if len(subTopicIds) == 0:
             raise HTTPException(status_code=400, detail="No topics match the selected strands")
 
@@ -1300,6 +1394,7 @@ async def upload_pdf(
     file: UploadFile = File(...),
     mark_scheme: Optional[UploadFile] = File(default=None),
     strands: Optional[str] = Query(default=None, description="Comma-separated strand names"),
+    tier: Optional[str] = Query(default=None, description="Tier filter: 'Higher' or 'Foundation'"),
     has_math: bool = Query(default=False),
     background_tasks: BackgroundTasks = None,
     user=Depends(get_user),
@@ -1348,13 +1443,14 @@ async def upload_pdf(
         strand_list,
         mark_scheme_filename,
         has_math,
+        tier,
     )
 
     return {
         "job_id": job_id
     }
 
-def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None, has_math=False):
+def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None, has_math=False, tier=None):
     import logging
     logger = logging.getLogger(__name__)
     pdf_path = f"Backend/uploads/pdfs/{job_id}.pdf"
@@ -1482,7 +1578,7 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
         is_guest = True
 
     classify_spec_code = None if SpecCode == "NONE" else SpecCode
-    session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=classify_spec_code, strands=strands), user_id=user_id, is_guest=is_guest)["session_id"]
+    session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=classify_spec_code, strands=strands, tier=tier), user_id=user_id, is_guest=is_guest)["session_id"]
 
     # Store PDF filename (and optional mark scheme) and locate questions in the PDF
     try:
@@ -2262,6 +2358,7 @@ def get_revision_pool(
                 DBSess.subject,
                 DBSess.exam_board,
                 DBSess.pdf_filename,
+                DBSess.mark_scheme_filename,
             )
             .join(DBSess, DBQuestion.session_id == DBSess.session_id)
             .join(QuestionMark, QuestionMark.question_id == DBQuestion.id)
@@ -2398,6 +2495,7 @@ def get_revision_pool(
                 "spec_code": row[6],
                 "exam_board": row[7],
                 "has_pdf": row[8] is not None,
+                "has_mark_scheme": row[9] is not None,
                 "pdf_location": pdf_location,
                 "predictions": predictions,
                 "user_corrections": user_corrections,

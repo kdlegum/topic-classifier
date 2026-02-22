@@ -112,6 +112,13 @@ class SessionStrand(SQLModel, table=True):
     session_id: str = Field(foreign_key="session.session_id", index=True)
     strand: str
 
+class UserTierSelection(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    user_id: str = Field(index=True)
+    is_guest: bool = Field(default=True)
+    spec_code: str = Field(index=True)
+    tier: str  # "Higher" or "Foundation"
+
 class UserSpecSelection(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     user_id: str = Field(index=True)

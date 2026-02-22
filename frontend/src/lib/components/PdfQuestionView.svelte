@@ -61,83 +61,63 @@
 			// Clear container
 			containerEl.innerHTML = '';
 
-			// Determine page segments to render
 			const { start_page, start_y, end_page, end_y } = pdfLocation;
+			const containerWidth = containerEl.clientWidth || 600;
 
 			for (let pageIdx = start_page; pageIdx <= end_page; pageIdx++) {
 				const page = await pdfDoc.getPage(pageIdx + 1); // pdfjs is 1-indexed
-				const viewport = page.getViewport({ scale: RENDER_SCALE });
+				const baseViewport = page.getViewport({ scale: 1 });
 
-				// Determine crop region for this page (in PDF points, then scaled)
+				// Determine crop region in PDF user units (scale-independent)
 				let cropTop: number;
 				let cropBottom: number;
 
 				if (pageIdx === start_page && pageIdx === end_page) {
-					cropTop = start_y * RENDER_SCALE;
-					cropBottom = end_y * RENDER_SCALE;
+					cropTop = start_y;
+					cropBottom = end_y;
 				} else if (pageIdx === start_page) {
-					cropTop = start_y * RENDER_SCALE;
-					cropBottom = viewport.height;
+					cropTop = start_y;
+					cropBottom = baseViewport.height;
 				} else if (pageIdx === end_page) {
 					cropTop = 0;
-					cropBottom = end_y * RENDER_SCALE;
+					cropBottom = end_y;
 				} else {
 					cropTop = 0;
-					cropBottom = viewport.height;
+					cropBottom = baseViewport.height;
 				}
 
-				const cropHeight = cropBottom - cropTop;
-				if (cropHeight <= 0) continue;
+				const cropHeightPt = cropBottom - cropTop;
+				if (cropHeightPt <= 0) continue;
 
-				// Create canvas and render full page
+				// Scale to fit container width without exceeding RENDER_SCALE quality cap
+				const fitScale = Math.min(RENDER_SCALE, containerWidth / baseViewport.width);
+				const viewport = page.getViewport({ scale: fitScale });
+
+				const cropTopPx = Math.round(cropTop * fitScale);
+				const cropHeightPx = Math.round(cropHeightPt * fitScale);
+				const pageWidthPx = Math.round(viewport.width);
+				const pageHeightPx = Math.round(viewport.height);
+
+				// Render full page to an offscreen canvas
+				const offscreen = document.createElement('canvas');
+				offscreen.width = pageWidthPx;
+				offscreen.height = pageHeightPx;
+				const offCtx = offscreen.getContext('2d')!;
+				await page.render({ canvasContext: offCtx, viewport }).promise;
+
+				// Copy only the cropped region to the display canvas
 				const canvas = document.createElement('canvas');
-				canvas.width = viewport.width;
-				canvas.height = viewport.height;
+				canvas.width = pageWidthPx;
+				canvas.height = cropHeightPx;
+				canvas.style.display = 'block';
+				canvas.style.margin = '0 auto';
+				canvas.style.maxWidth = '100%';
 
 				const ctx = canvas.getContext('2d')!;
-				await page.render({ canvasContext: ctx, viewport }).promise;
+				ctx.drawImage(offscreen, 0, cropTopPx, pageWidthPx, cropHeightPx, 0, 0, pageWidthPx, cropHeightPx);
 
-				// Create a wrapper div that crops the canvas
-				const wrapper = document.createElement('div');
-				wrapper.style.overflow = 'hidden';
-				wrapper.style.height = `${cropHeight}px`;
-				wrapper.style.width = `${viewport.width}px`;
-				wrapper.style.position = 'relative';
-
-				// Position canvas inside wrapper to show only the cropped region
-				canvas.style.position = 'absolute';
-				canvas.style.top = `-${cropTop}px`;
-				canvas.style.left = '0';
-				canvas.style.maxWidth = 'none'; // prevent CSS from shrinking canvas
-
-				wrapper.appendChild(canvas);
-
-				// Scale wrapper down to fit container width
-				const scaleWrapper = document.createElement('div');
-				scaleWrapper.style.width = '100%';
-				scaleWrapper.style.overflow = 'hidden';
-				scaleWrapper.appendChild(wrapper);
-
-				containerEl.appendChild(scaleWrapper);
+				containerEl.appendChild(canvas);
 			}
-
-			// Apply responsive scaling: scale wrappers to fit container width
-			requestAnimationFrame(() => {
-				if (!containerEl) return;
-				const containerWidth = containerEl.clientWidth;
-				const wrappers = containerEl.querySelectorAll<HTMLElement>(':scope > div');
-				for (const scaleWrapper of wrappers) {
-					const inner = scaleWrapper.firstElementChild as HTMLElement;
-					if (!inner) continue;
-					const canvasWidth = parseFloat(inner.style.width);
-					if (canvasWidth > containerWidth) {
-						const scale = containerWidth / canvasWidth;
-						inner.style.transform = `scale(${scale})`;
-						inner.style.transformOrigin = 'top left';
-						scaleWrapper.style.height = `${parseFloat(inner.style.height) * scale}px`;
-					}
-				}
-			});
 
 			status = 'ready';
 		} catch (err: any) {

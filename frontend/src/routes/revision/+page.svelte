@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { fly, fade, slide } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
-	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, getSpecs } from '$lib/api';
+	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, downloadSessionMarkScheme, getSpecs } from '$lib/api';
 	import type { RevisionQuestion, SpecInfo } from '$lib/api';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
@@ -21,6 +21,7 @@
 	let showPdf: boolean = $state(false);
 	let fetching: boolean = $state(false);
 	let downloading: boolean = $state(false);
+	let downloadingMarkScheme: boolean = $state(false);
 	let submitting: boolean = $state(false);
 	let deleting: boolean = $state(false);
 	let questionKey: number = $state(0);
@@ -123,6 +124,26 @@
 			console.error('Failed to download PDF:', e);
 		} finally {
 			downloading = false;
+		}
+	}
+
+	async function handleDownloadMarkScheme() {
+		if (!currentQuestion || downloadingMarkScheme) return;
+		downloadingMarkScheme = true;
+		try {
+			const blob = await downloadSessionMarkScheme(currentQuestion.session_id);
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = `${currentQuestion.exam_board}_${currentQuestion.spec_code}_mark_scheme.pdf`;
+			document.body.appendChild(a);
+			a.click();
+			document.body.removeChild(a);
+			URL.revokeObjectURL(url);
+		} catch (e) {
+			console.error('Failed to download mark scheme:', e);
+		} finally {
+			downloadingMarkScheme = false;
 		}
 	}
 
@@ -267,6 +288,9 @@
 								{/if}
 								<button class="action-btn" onclick={handleDownloadPdf} disabled={downloading || !currentQuestion.has_pdf}>
 									{downloading ? 'Downloading...' : 'Download PDF'}
+								</button>
+								<button class="action-btn" onclick={handleDownloadMarkScheme} disabled={downloadingMarkScheme || !currentQuestion.has_mark_scheme}>
+									{downloadingMarkScheme ? 'Downloading...' : 'Download mark scheme'}
 								</button>
 								<button class="action-btn remove" onclick={handleDeleteFromPool} disabled={deleting || submitted}>
 									{deleting ? 'Removing...' : 'Remove from pool'}

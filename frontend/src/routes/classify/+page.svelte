@@ -9,6 +9,8 @@
 		getUserSpecs,
 		getUserModules,
 		saveUserModules,
+		getUserTier,
+		saveUserTier,
 		type SpecInfo
 	} from '$lib/api';
 	import StrandPicker from '$lib/components/StrandPicker.svelte';
@@ -34,6 +36,11 @@
 	let paperStrands: string[] = $state([]);
 	let moduleSaveTimeout: ReturnType<typeof setTimeout> | null = null;
 	let modulesLoadedForSpec: string | null = $state(null);
+
+	// Tier state
+	let selectedTier: string | null = $state(null);
+	let tierLoadedForSpec: string | null = $state(null);
+	let tierSaveTimeout: ReturnType<typeof setTimeout> | null = null;
 
 	// Derived from selected spec
 	let currentSpec = $derived(allSpecs.find((s) => s.spec_code === specCode) ?? null);
@@ -71,13 +78,15 @@
 		}
 	});
 
-	// When spec changes, load module selections if optional_modules
+	// When spec changes, load module and tier selections
 	$effect(() => {
 		const spec = currentSpec;
 		// Reset strand selections when spec changes
 		paperStrands = [];
 		selectedModules = [];
 		modulesLoadedForSpec = null;
+		selectedTier = null;
+		tierLoadedForSpec = null;
 		hasMath = false;
 
 		if (spec?.optional_modules) {
@@ -89,6 +98,18 @@
 				.catch((e) => {
 					console.error('Failed to load user modules:', e);
 					modulesLoadedForSpec = spec.spec_code;
+				});
+		}
+
+		if (spec?.has_tiers) {
+			getUserTier(spec.spec_code)
+				.then((data) => {
+					selectedTier = data.tier;
+					tierLoadedForSpec = spec.spec_code;
+				})
+				.catch((e) => {
+					console.error('Failed to load user tier:', e);
+					tierLoadedForSpec = spec.spec_code;
 				});
 		}
 	});
@@ -107,6 +128,20 @@
 		}, 500);
 	});
 
+	// Auto-save tier selection with debounce (only after initial load)
+	$effect(() => {
+		const tier = selectedTier;
+		if (!currentSpec?.has_tiers) return;
+		if (tierLoadedForSpec !== currentSpec.spec_code) return;
+
+		if (tierSaveTimeout) clearTimeout(tierSaveTimeout);
+		tierSaveTimeout = setTimeout(() => {
+			saveUserTier(currentSpec!.spec_code, tier).catch((e) =>
+				console.error('Failed to save tier:', e)
+			);
+		}, 500);
+	});
+
 	function addQuestion() {
 		questions = [...questions, ''];
 	}
@@ -115,6 +150,10 @@
 	function getEffectiveStrands(): string[] | undefined {
 		if (paperStrands.length > 0) return paperStrands;
 		return undefined;
+	}
+
+	function toggleTier(tier: string) {
+		selectedTier = selectedTier === tier ? null : tier;
 	}
 
 	async function handleSubmit() {
@@ -130,7 +169,8 @@
 		try {
 			const apiSpecCode = specCode === 'None' ? null : specCode;
 			const strands = specCode === 'None' ? undefined : getEffectiveStrands();
-			const data = await classifyQuestions(filled, apiSpecCode, strands);
+			const tier = specCode === 'None' ? undefined : (selectedTier ?? undefined);
+			const data = await classifyQuestions(filled, apiSpecCode, strands, tier);
 			setTimeout(() => goto(`/mark_session/${data.session_id}`), 1000);
 		} catch (error) {
 			console.error('Error submitting questions:', error);
@@ -158,7 +198,8 @@
 		try {
 			const uploadSpecCode = specCode === 'None' ? 'NONE' : specCode;
 			const strands = specCode === 'None' ? undefined : getEffectiveStrands();
-			const data = await uploadPdf(file, uploadSpecCode, strands, markSchemeInput?.files?.[0] ?? null, hasMath);
+			const tier = specCode === 'None' ? undefined : (selectedTier ?? undefined);
+			const data = await uploadPdf(file, uploadSpecCode, strands, markSchemeInput?.files?.[0] ?? null, hasMath, tier);
 			pollJobStatus(data.job_id);
 		} catch (error) {
 			console.error('Error uploading PDF:', error);
@@ -329,6 +370,32 @@
 					label="Your Modules"
 					hint="Select the modules you are studying. These are saved to your account."
 				/>
+			</div>
+		{/if}
+
+		<!-- Tier selection for GCSE specs with tiered content -->
+		{#if currentSpec?.has_tiers}
+			<div class="section" in:fly={{ y: 20, duration: 300, delay: 75 }}>
+				<label>Your Tier</label>
+				<div class="tier-picker">
+					<button
+						type="button"
+						class="tier-pill"
+						class:selected={selectedTier === 'Foundation'}
+						onclick={() => toggleTier('Foundation')}
+					>
+						Foundation
+					</button>
+					<button
+						type="button"
+						class="tier-pill"
+						class:selected={selectedTier === 'Higher'}
+						onclick={() => toggleTier('Higher')}
+					>
+						Higher
+					</button>
+				</div>
+				<p class="section-hint">Select your tier. Foundation hides Higher-only topics.</p>
 			</div>
 		{/if}
 
@@ -575,22 +642,6 @@
 		color: var(--color-text-secondary);
 	}
 
-	.option-separator {
-		list-style: none;
-		padding: 2px 10px;
-	}
-
-	.option-separator hr {
-		border: none;
-		border-top: 1px solid var(--color-border);
-		margin: 0;
-	}
-
-	.option-no-spec {
-		font-style: italic;
-		color: var(--color-text-secondary);
-	}
-
 	.option-board {
 		font-size: 0.75rem;
 		font-weight: 700;
@@ -663,6 +714,41 @@
 		font-size: 0.82rem;
 		color: var(--color-text-muted);
 		margin: 0;
+	}
+
+	/* ─── Tier picker ─── */
+	.tier-picker {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 6px;
+	}
+
+	.tier-pill {
+		padding: 6px 18px;
+		border-radius: 999px;
+		border: 1.5px solid var(--color-border);
+		background: var(--color-surface);
+		color: var(--color-text);
+		font-size: 0.9rem;
+		font-weight: 500;
+		font-family: var(--font-body);
+		cursor: pointer;
+		transition:
+			border-color var(--transition-fast),
+			background var(--transition-fast),
+			color var(--transition-fast);
+	}
+
+	.tier-pill:hover {
+		border-color: var(--color-primary);
+		background: var(--color-primary-light);
+	}
+
+	.tier-pill.selected {
+		border-color: var(--color-primary);
+		background: var(--color-primary);
+		color: #fff;
 	}
 
 	/* ─── PDF Upload Area ─── */

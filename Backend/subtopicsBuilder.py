@@ -39,6 +39,7 @@ def build_subtopics_index(specs: list[dict]) -> dict:
                     "exam_board": exam_board,
                     "specification": specification,
                     "spec_sub_section": spec_sub,
+                    "tier": sub.get("tier"),
 
                     # Text used for embeddings / classification
                     "classification_text": (

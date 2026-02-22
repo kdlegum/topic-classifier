@@ -11,15 +11,15 @@ import json
 import time
 from pathlib import Path
 
-# Global cache: spec_code → {embeddings: np.ndarray, subtopic_ids: list[str], strands: list[str]}
+# Global cache: spec_code → {embeddings: np.ndarray, subtopic_ids: list[str], strands: list[str], tiers: list[str|None]}
 _cache: dict[str, dict] = {}
 
 DISK_CACHE_DIR = Path(__file__).parent / ".embedding_cache"
 
 
-def _spec_hash(texts: list[str], subtopic_ids: list[str], strands: list[str]) -> str:
+def _spec_hash(texts: list[str], subtopic_ids: list[str], strands: list[str], tiers: list) -> str:
     """Deterministic hash of the inputs that affect embeddings for a spec."""
-    payload = json.dumps({"texts": texts, "ids": subtopic_ids, "strands": strands}, sort_keys=True)
+    payload = json.dumps({"texts": texts, "ids": subtopic_ids, "strands": strands, "tiers": tiers}, sort_keys=True)
     return hashlib.sha256(payload.encode()).hexdigest()
 
 
@@ -45,6 +45,7 @@ def _load_from_disk(spec_code: str, expected_hash: str):
         "embeddings": embeddings,
         "subtopic_ids": meta["subtopic_ids"],
         "strands": meta["strands"],
+        "tiers": meta.get("tiers", [None] * len(meta["subtopic_ids"])),
     }
 
 
@@ -55,7 +56,11 @@ def _save_to_disk(spec_code: str, content_hash: str, entry: dict):
 
     np.save(spec_dir / "embeddings.npy", entry["embeddings"])
     with open(spec_dir / "meta.json", "w") as f:
-        json.dump({"subtopic_ids": entry["subtopic_ids"], "strands": entry["strands"]}, f)
+        json.dump({
+            "subtopic_ids": entry["subtopic_ids"],
+            "strands": entry["strands"],
+            "tiers": entry["tiers"],
+        }, f)
     (spec_dir / "hash.txt").write_text(content_hash)
 
 
@@ -71,6 +76,7 @@ def build_cache(allSpecs: dict, model) -> dict:
         texts = []
         subtopic_ids = []
         strands = []
+        tiers = []
 
         for t in spec["Topics"]:
             topic_name = t["Topic_name"]
@@ -79,8 +85,9 @@ def build_cache(allSpecs: dict, model) -> dict:
                 texts.append(topic_name + ". " + s["description"])
                 subtopic_ids.append(s["subtopic_id"])
                 strands.append(strand)
+                tiers.append(s.get("tier"))
 
-        content_hash = _spec_hash(texts, subtopic_ids, strands)
+        content_hash = _spec_hash(texts, subtopic_ids, strands, tiers)
 
         # Try disk cache first
         disk_entry = _load_from_disk(spec_code, content_hash)
@@ -98,6 +105,7 @@ def build_cache(allSpecs: dict, model) -> dict:
                 "embeddings": embeddings,
                 "subtopic_ids": subtopic_ids,
                 "strands": strands,
+                "tiers": tiers,
             }
             new_cache[spec_code] = entry
             _save_to_disk(spec_code, content_hash, entry)
@@ -126,19 +134,29 @@ def rebuild(allSpecs: dict, model):
           f"({cached} from disk, {encoded} freshly encoded)")
 
 
-def get_embeddings(spec_code: str, strand_filter: set[str] | None = None):
+def get_embeddings(spec_code: str, strand_filter: set[str] | None = None, tier_filter: str | None = None):
     """
-    Return (embeddings_matrix, subtopic_ids) for a spec, optionally filtered by strands.
+    Return (embeddings_matrix, subtopic_ids) for a spec, optionally filtered by strands and/or tier.
+
+    tier_filter="Foundation" excludes subtopics where tier == "Higher".
+    tier_filter="Higher" or None includes all subtopics.
     """
     entry = _cache.get(spec_code)
     if entry is None:
         raise KeyError(f"Spec '{spec_code}' not found in embedding cache")
 
-    if strand_filter is None:
-        return entry["embeddings"], entry["subtopic_ids"]
+    tiers = entry.get("tiers", [None] * len(entry["subtopic_ids"]))
 
-    # Apply strand filter via boolean mask
-    mask = np.array([s in strand_filter for s in entry["strands"]])
+    # Build combined mask
+    n = len(entry["subtopic_ids"])
+    mask = np.ones(n, dtype=bool)
+
+    if strand_filter is not None:
+        mask &= np.array([s in strand_filter for s in entry["strands"]])
+
+    if tier_filter == "Foundation":
+        mask &= np.array([t != "Higher" for t in tiers])
+
     if not mask.any():
         return np.empty((0, entry["embeddings"].shape[1] if entry["embeddings"].ndim == 2 else 0)), []
 

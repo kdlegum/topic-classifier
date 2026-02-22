@@ -46,7 +46,8 @@ export async function migrateGuestSessions(): Promise<{ migrated: number }> {
 export async function classifyQuestions(
 	questions: string[],
 	specCode: string | null,
-	strands?: string[]
+	strands?: string[],
+	tier?: string
 ): Promise<{ session_id: string }> {
 	const questionObjects = questions.map((text) => ({ text, marks: null }));
 
@@ -56,6 +57,9 @@ export async function classifyQuestions(
 	};
 	if (strands && strands.length > 0) {
 		body.strands = strands;
+	}
+	if (tier) {
+		body.tier = tier;
 	}
 
 	const response = await apiFetch('/classify/', {
@@ -79,7 +83,8 @@ export async function uploadPdf(
 	specCode: string,
 	strands?: string[],
 	markSchemeFile?: File | null,
-	hasMath?: boolean
+	hasMath?: boolean,
+	tier?: string
 ): Promise<{ job_id: string }> {
 	const formData = new FormData();
 	formData.append('file', file);
@@ -92,6 +97,9 @@ export async function uploadPdf(
 	}
 	if (hasMath) {
 		params.push('has_math=true');
+	}
+	if (tier) {
+		params.push(`tier=${encodeURIComponent(tier)}`);
 	}
 	if (params.length > 0) {
 		endpoint += '?' + params.join('&');
@@ -279,6 +287,8 @@ export type SpecInfo = {
 	optional_modules: boolean;
 	has_math: boolean;
 	strands: string[];
+	tiers?: string[];
+	has_tiers?: boolean;
 	is_reviewed?: boolean;
 	creator_id?: string | null;
 	description?: string | null;
@@ -498,6 +508,7 @@ export type RevisionQuestion = {
 	spec_code: string;
 	exam_board: string;
 	has_pdf: boolean;
+	has_mark_scheme: boolean;
 	pdf_location: { start_page: number; start_y: number; end_page: number; end_y: number } | null;
 	predictions: {
 		rank: number;
@@ -579,6 +590,19 @@ export async function downloadSessionPdf(sessionId: string): Promise<Blob> {
 }
 
 /**
+ * Download a session's mark scheme PDF as a blob
+ */
+export async function downloadSessionMarkScheme(sessionId: string): Promise<Blob> {
+	const response = await apiFetch(`/session/${sessionId}/mark-scheme-pdf`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to download mark scheme: ${response.status}`);
+	}
+
+	return response.blob();
+}
+
+/**
  * Rename a session (null clears the name)
  */
 export async function renameSession(
@@ -610,6 +634,36 @@ export async function saveUserCorrections(
 
 	if (!response.ok) {
 		throw new Error(`Failed to save corrections: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Get the user's saved tier selection for a spec
+ */
+export async function getUserTier(specCode: string): Promise<{ tier: string | null }> {
+	const response = await apiFetch(`/user/tier/${specCode}`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch user tier: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Save or clear the user's tier selection for a spec (null clears it)
+ */
+export async function saveUserTier(specCode: string, tier: string | null): Promise<{ success: boolean }> {
+	const response = await apiFetch(`/user/tier/${specCode}`, {
+		method: 'PUT',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ tier })
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to save user tier: ${response.status}`);
 	}
 
 	return response.json();

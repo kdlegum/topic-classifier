@@ -20,13 +20,16 @@
 
 	let filteredSpecs = $derived(
 		allSpecs.filter((s) => {
-			const q = searchQuery.toLowerCase();
+			const terms = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
 			const matchesSearch =
-				!q ||
-				s.subject.toLowerCase().includes(q) ||
-				s.spec_code.toLowerCase().includes(q) ||
-				s.exam_board.toLowerCase().includes(q) ||
-				(s.description ?? '').toLowerCase().includes(q);
+				terms.length === 0 ||
+				terms.every((q) =>
+					s.subject.toLowerCase().includes(q) ||
+					s.spec_code.toLowerCase().includes(q) ||
+					s.exam_board.toLowerCase().includes(q) ||
+					s.qualification.toLowerCase().includes(q) ||
+					(s.description ?? '').toLowerCase().includes(q)
+				);
 			const matchesBoard = !filterBoard || s.exam_board === filterBoard;
 			const matchesQual = !filterQualification || s.qualification === filterQualification;
 			return matchesSearch && matchesBoard && matchesQual;

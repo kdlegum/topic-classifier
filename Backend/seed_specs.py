@@ -190,6 +190,7 @@ def seed_db(specs: list[dict]):
                         specification_section_sub=sub_data["Specification_section_sub"],
                         subtopic_name=sub_data["Sub_topic_name"],
                         description=sub_data["description"],
+                        tier=sub_data.get("tier"),
                     )
                     db.add(db_subtopic)
                     subtopic_count += 1
