@@ -116,7 +116,12 @@
 						in:fly={{ y: 15, duration: 250, delay: staggerDelay(i) }}
 					>
 						<div class="session-info">
-							<div class="session-subject">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
+							{#if session.name}
+								<div class="session-custom-name">{session.name}</div>
+								<div class="session-subject session-subject-secondary">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
+							{:else}
+								<div class="session-subject">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
+							{/if}
 							<div class="session-meta">
 								{#if session.no_spec}
 							<span class="session-board no-spec-badge">No specification</span>
@@ -201,6 +206,17 @@
 
 	.session-questions {
 		white-space: nowrap;
+	}
+
+	.session-custom-name {
+		font-weight: 600;
+		font-size: 1rem;
+		color: var(--color-text);
+	}
+
+	.session-subject-secondary {
+		font-size: 0.85rem;
+		color: var(--color-text-secondary);
 	}
 
 	.pagination {

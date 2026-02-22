@@ -570,6 +570,26 @@ export async function downloadSessionPdf(sessionId: string): Promise<Blob> {
 	return response.blob();
 }
 
+/**
+ * Rename a session (null clears the name)
+ */
+export async function renameSession(
+	sessionId: string,
+	name: string | null
+): Promise<{ session_id: string; name: string | null }> {
+	const response = await apiFetch(`/session/${sessionId}/name`, {
+		method: 'PATCH',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ name })
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to rename session: ${response.status}`);
+	}
+
+	return response.json();
+}
+
 export async function saveUserCorrections(
 	sessionId: string,
 	corrections: { question_id: number; subtopic_ids: string[] }[]

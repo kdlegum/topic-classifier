@@ -41,6 +41,7 @@ class Session(SQLModel, table=True):
     pdf_filename: str | None = Field(default=None)
     mark_scheme_filename: str | None = Field(default=None)
     no_spec: bool = Field(default=False)
+    name: str | None = Field(default=None)
 
 class Question(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)

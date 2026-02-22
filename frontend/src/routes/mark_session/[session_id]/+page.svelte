@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { fly, fade, slide } from 'svelte/transition';
-	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf, uploadMarkScheme, downloadMarkSchemePdf } from '$lib/api';
+	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf, uploadMarkScheme, downloadMarkSchemePdf, renameSession } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
@@ -45,6 +45,7 @@
 
 	let pendingQuestionEdits = new Map<number, { question_text?: string; marks_available?: number }>();
 	let questionEditTimeout: ReturnType<typeof setTimeout> | null = null;
+	let nameSaveTimeout: ReturnType<typeof setTimeout> | null = null;
 
 	// Per-question PDF view toggle: set of question_ids currently showing PDF
 	let pdfViewQuestions = $state(new Set<number>());
@@ -159,6 +160,23 @@
 			console.error('Failed to save question edits:', err);
 			saveStatus = 'error';
 		}
+	}
+
+	function handleNameInput(e: Event) {
+		const value = (e.target as HTMLElement).innerText.trim() || null;
+		// Don't update session.name here — it causes Svelte to re-render the
+		// contenteditable and reset the cursor to the start while typing.
+		saveStatus = 'saving';
+		if (nameSaveTimeout) clearTimeout(nameSaveTimeout);
+		nameSaveTimeout = setTimeout(async () => {
+			try {
+				await renameSession(session.session_id, value);
+				saveStatus = 'saved';
+			} catch (err) {
+				console.error('Failed to rename session:', err);
+				saveStatus = 'error';
+			}
+		}, 600);
 	}
 
 	onMount(async () => {
@@ -608,7 +626,16 @@
 		{/if}
 
 		<div class="session-header" in:fly={{ y: 15, duration: 300 }}>
-			<h2>{getTitle(session)}</h2>
+			<!-- svelte-ignore a11y-interactive-supports-focus -->
+			<h2
+				class="session-name-edit"
+				contenteditable="true"
+				role="textbox"
+				aria-label="Session name"
+				spellcheck="false"
+				oninput={handleNameInput}
+				onkeydown={(e) => { if (e.key === 'Enter') { e.preventDefault(); (e.target as HTMLElement).blur(); } }}
+			>{session.name ?? getTitle(session)}</h2>
 			<p class="session-meta">{session.no_spec ? 'No specification' : session.exam_board} - {formatDate(session.created_at)}</p>
 			{#if session.session_strands && session.session_strands.length > 0}
 				<div class="session-strands">
@@ -817,6 +844,23 @@
 {/if}
 
 <style>
+	.session-name-edit {
+		outline: none;
+		border-bottom: 2px solid transparent;
+		border-radius: 2px;
+		padding-bottom: 2px;
+		cursor: text;
+		transition: border-color 0.15s;
+	}
+
+	.session-name-edit:hover {
+		border-bottom-color: var(--color-border);
+	}
+
+	.session-name-edit:focus {
+		border-bottom-color: var(--color-primary);
+	}
+
 	.no-spec-banner {
 		margin-bottom: 16px;
 		padding: 12px 16px;

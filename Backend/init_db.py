@@ -16,6 +16,7 @@ migrations = [
     "ALTER TABLE specification ADD COLUMN content_hash VARCHAR DEFAULT NULL",
     "ALTER TABLE session ADD COLUMN mark_scheme_filename VARCHAR DEFAULT NULL",
     "ALTER TABLE session ADD COLUMN no_spec BOOLEAN DEFAULT FALSE",
+    "ALTER TABLE session ADD COLUMN name TEXT DEFAULT NULL",
 ]
 
 for sql in migrations:

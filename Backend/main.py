@@ -1031,6 +1031,7 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
         # ---------- Final response ----------
         return {
             "session_id": db_session.session_id,
+            "name": db_session.name,
             "exam_board": db_session.exam_board,
             "spec_code": spec_code,
             "qualification": qualification,
@@ -1214,6 +1215,7 @@ def get_user_sessions(request: Request, user=Depends(get_user), page: int = 1, p
                 "created_at": s.created_at,
                 "question_count": question_counts.get(s.session_id, 0),
                 "strands": strands_map.get(s.session_id, []),
+                "name": s.name,
             })
 
         return {"sessions": result, "total": total, "page": page, "page_size": page_size}
@@ -2205,6 +2207,34 @@ def delete_session(session_id: str, request: Request, user=Depends(get_user)):
         db.commit()
 
     return {"detail": "Session deleted"}
+
+
+class SessionNameBody(BaseModel):
+    name: str | None = None
+
+@app.patch("/session/{session_id}/name")
+def rename_session(session_id: str, body: SessionNameBody, request: Request, user=Depends(get_user)):
+    with Session(engine) as db:
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        is_owner = False
+        if db_session.is_guest:
+            is_owner = (user.get("guest_id") == db_session.user_id)
+        else:
+            is_owner = (user.get("user_id") == db_session.user_id)
+        if not is_owner:
+            raise HTTPException(status_code=403, detail="Not authorized to rename this session")
+
+        db_session.name = body.name
+        db.add(db_session)
+        db.commit()
+
+    return {"session_id": session_id, "name": body.name}
 
 
 # ── Revision endpoints ──────────────────────────────────────────────
