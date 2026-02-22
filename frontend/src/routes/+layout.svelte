@@ -102,7 +102,7 @@
 			onscroll={handleScroll}
 		>
 			{#key $page.url.pathname}
-				<div in:fade={{ duration: 200, delay: 100 }} out:fade={{ duration: 100 }}>
+				<div in:fade={{ duration: 100 }} out:fade={{ duration: 100 }}>
 					{@render children()}
 				</div>
 			{/key}
