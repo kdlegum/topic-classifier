@@ -59,6 +59,106 @@
 	let currentQuestionId = $state<number | null>(null);
 	let showShortcuts = $state(false);
 
+	// ── Results panel ────────────────────────────────────────────────────────
+	type TopicStat = { strand: string; topic: string; achieved: number; available: number; pct: number };
+
+	let displayedScore = $state(0);
+	let displayedPct = $state(0);
+	let resultsAnimFrame: number | null = null;
+	let resultsPanelEl: HTMLElement | null = $state(null);
+
+	// Scroll to results panel when it appears
+	$effect(() => {
+		if (!resultsPanelEl) return;
+		const el = resultsPanelEl;
+		const timeout = setTimeout(() => {
+			const scrollContainer = document.querySelector('.app-content') as HTMLElement | null;
+			if (scrollContainer) {
+				const containerRect = scrollContainer.getBoundingClientRect();
+				const targetRect = el.getBoundingClientRect();
+				const newScrollTop = scrollContainer.scrollTop + targetRect.top - containerRect.top - 24;
+				scrollContainer.scrollTo({ top: newScrollTop, behavior: 'smooth' });
+			}
+		}, 100);
+		return () => clearTimeout(timeout);
+	});
+
+	let allMarked = $derived(
+		!!session &&
+		session.questions.length > 0 &&
+		session.questions.every((q: any) => currentMarks.has(q.question_id))
+	);
+
+	let totalAchieved = $derived(
+		allMarked ? [...currentMarks.values()].reduce((a, b) => a + b, 0) : 0
+	);
+	let totalAvailable = $derived(
+		allMarked ? session!.questions.reduce((sum: number, q: any) => sum + (q.marks_available ?? 0), 0) : 0
+	);
+	let percentage = $derived(totalAvailable > 0 ? Math.round((totalAchieved / totalAvailable) * 100) : null);
+
+	let topicStats = $derived.by<TopicStat[]>(() => {
+		if (!session || !allMarked) return [];
+		const map = new Map<string, Omit<TopicStat, 'pct'>>();
+		for (const q of session.questions) {
+			const achieved = currentMarks.get(q.question_id);
+			if (achieved == null || !q.marks_available) continue;
+			const corrections = correctionsMap.get(q.question_id) ?? [];
+			let strand = '', topic = '';
+			if (corrections.length > 0) {
+				strand = corrections[0].strand;
+				topic = corrections[0].topic;
+			} else {
+				const rank1 = q.predictions?.find((p: any) => p.rank === 1);
+				if (!rank1) continue;
+				strand = rank1.strand;
+				topic = rank1.topic;
+			}
+			const key = `${strand}||${topic}`;
+			const existing = map.get(key) ?? { strand, topic, achieved: 0, available: 0 };
+			map.set(key, { ...existing, achieved: existing.achieved + achieved, available: existing.available + q.marks_available });
+		}
+		return [...map.values()]
+			.map(s => ({ ...s, pct: Math.round((s.achieved / s.available) * 100) }))
+			.sort((a, b) => b.pct - a.pct);
+	});
+
+	let showN = $derived(Math.min(3, Math.floor(topicStats.length / 2)));
+	let strongTopics = $derived(topicStats.slice(0, showN));
+	let weakTopics = $derived([...topicStats].reverse().slice(0, showN));
+
+	// Count-up animation for results panel
+	$effect(() => {
+		if (!allMarked) {
+			displayedScore = 0;
+			displayedPct = 0;
+			if (resultsAnimFrame != null) { cancelAnimationFrame(resultsAnimFrame); resultsAnimFrame = null; }
+			return;
+		}
+		const targetScore = totalAchieved;
+		const targetPct = percentage ?? 0;
+		const duration = 1400;
+		const startTime = performance.now();
+		if (resultsAnimFrame != null) cancelAnimationFrame(resultsAnimFrame);
+
+		function easeOut(t: number) { return 1 - Math.pow(1 - t, 3); }
+		function tick(now: number) {
+			const elapsed = Math.min(now - startTime, duration);
+			const t = easeOut(elapsed / duration);
+			displayedScore = Math.round(t * targetScore);
+			displayedPct = Math.round(t * targetPct);
+			if (elapsed < duration) {
+				resultsAnimFrame = requestAnimationFrame(tick);
+			} else {
+				displayedScore = targetScore;
+				displayedPct = targetPct;
+				resultsAnimFrame = null;
+			}
+		}
+		resultsAnimFrame = requestAnimationFrame(tick);
+		return () => { if (resultsAnimFrame != null) { cancelAnimationFrame(resultsAnimFrame); resultsAnimFrame = null; } };
+	});
+
 	async function handleDownloadPdf() {
 		if (!session) return;
 		downloadingPdf = true;
@@ -780,6 +880,55 @@
 			{/if}
 			</div>
 		{/each}
+
+	{#if allMarked}
+		{@const pctClass = (percentage ?? 0) >= 75 ? 'pct-high' : (percentage ?? 0) >= 50 ? 'pct-mid' : 'pct-low'}
+		<div class="results-panel" bind:this={resultsPanelEl} in:fly={{ y: 30, duration: 500 }}>
+			<div class="results-score-row">
+				<div class="results-score">
+					<span class="score-num">{displayedScore}</span>
+					<span class="score-sep">/</span>
+					<span class="score-total">{totalAvailable}</span>
+				</div>
+				{#if percentage != null}
+					<div class="score-pct-badge {pctClass}">{displayedPct}%</div>
+				{/if}
+			</div>
+			{#if !session.no_spec && showN >= 1}
+				<hr class="results-divider" />
+				<div class="topic-breakdown">
+					{#if strongTopics.length > 0}
+						<div class="topic-col">
+							<p class="topic-col-label strongest-label">Strongest</p>
+							{#each strongTopics as stat}
+								<div class="topic-stat-row">
+									<span class="topic-stat-name">{stat.topic}</span>
+									<div class="topic-bar-wrap">
+										<div class="topic-bar topic-bar-strong" style="--w: {stat.pct}%"></div>
+									</div>
+									<span class="topic-stat-pct">{stat.pct}%</span>
+								</div>
+							{/each}
+						</div>
+					{/if}
+					{#if weakTopics.length > 0}
+						<div class="topic-col">
+							<p class="topic-col-label weakest-label">Needs work</p>
+							{#each weakTopics as stat}
+								<div class="topic-stat-row">
+									<span class="topic-stat-name">{stat.topic}</span>
+									<div class="topic-bar-wrap">
+										<div class="topic-bar topic-bar-weak" style="--w: {stat.pct}%"></div>
+									</div>
+									<span class="topic-stat-pct">{stat.pct}%</span>
+								</div>
+							{/each}
+						</div>
+					{/if}
+				</div>
+			{/if}
+		</div>
+	{/if}
 	{/if}
 </main>
 
@@ -1179,5 +1328,171 @@
 		padding: 12px 16px;
 		border-radius: 8px;
 		text-align: center;
+	}
+
+	/* ── Results Panel ── */
+	.results-panel {
+		margin-top: 24px;
+		padding: 28px 28px 24px;
+		background: var(--color-surface);
+		border: 1.5px solid var(--color-primary);
+		border-radius: var(--radius-lg);
+		box-shadow: 0 0 0 4px var(--color-primary-glow), var(--shadow-lg);
+	}
+
+	.results-score-row {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+		flex-wrap: wrap;
+	}
+
+	.results-score {
+		display: flex;
+		align-items: baseline;
+		gap: 6px;
+	}
+
+	.score-num {
+		font-family: var(--font-heading);
+		font-size: 3.2rem;
+		font-weight: 700;
+		color: var(--color-text);
+		line-height: 1;
+		letter-spacing: -0.02em;
+	}
+
+	.score-sep {
+		font-family: var(--font-heading);
+		font-size: 2rem;
+		color: var(--color-text-muted);
+		font-weight: 300;
+		line-height: 1;
+	}
+
+	.score-total {
+		font-family: var(--font-heading);
+		font-size: 1.6rem;
+		color: var(--color-text-secondary);
+		font-weight: 400;
+		line-height: 1;
+	}
+
+	.score-pct-badge {
+		margin-left: 4px;
+		padding: 6px 18px;
+		border-radius: var(--radius-full);
+		font-family: var(--font-heading);
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+
+	.score-pct-badge.pct-high {
+		background: var(--color-success-bg);
+		color: #15803d;
+	}
+
+	.score-pct-badge.pct-mid {
+		background: var(--color-warning-bg);
+		color: #b45309;
+	}
+
+	.score-pct-badge.pct-low {
+		background: var(--color-error-bg);
+		color: #b91c1c;
+	}
+
+	.results-divider {
+		border: none;
+		border-top: 1px solid var(--color-border);
+		margin: 20px 0;
+	}
+
+	.topic-breakdown {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+
+	.topic-col {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.topic-col-label {
+		margin: 0 0 2px;
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.strongest-label {
+		color: #15803d;
+	}
+
+	.weakest-label {
+		color: #b91c1c;
+	}
+
+	.topic-stat-row {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.topic-stat-name {
+		flex: 1;
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: 0.88rem;
+		color: var(--color-text);
+	}
+
+	.topic-bar-wrap {
+		width: 80px;
+		flex-shrink: 0;
+		height: 6px;
+		background: var(--color-border);
+		border-radius: 3px;
+		overflow: hidden;
+	}
+
+	.topic-bar {
+		height: 100%;
+		border-radius: 3px;
+		width: var(--w);
+		animation: barGrow 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+		animation-delay: 0.6s;
+	}
+
+	.topic-bar-strong {
+		background: var(--color-success);
+	}
+
+	.topic-bar-weak {
+		background: var(--color-error);
+	}
+
+	@keyframes barGrow {
+		from { width: 0; }
+		to { width: var(--w); }
+	}
+
+	.topic-stat-pct {
+		font-size: 0.82rem;
+		font-weight: 700;
+		color: var(--color-text-secondary);
+		min-width: 36px;
+		text-align: right;
+	}
+
+	@media (max-width: 480px) {
+		.topic-breakdown {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>
