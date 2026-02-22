@@ -10,10 +10,12 @@ from sentence_transformers import SentenceTransformer
 from typing import List, Optional, Dict
 import numpy as np
 import json
+import shutil
 import time
 import uuid
 import datetime
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection
+import requests
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection, PastPaper
 from sqlmodel import Session, select, update
 from sqlalchemy import func
 from pathlib import Path
@@ -35,6 +37,7 @@ from pdf_interpretation.questionLocator import locate_questions_in_pdf
 from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
+from paper_scraper.downloader import download_pdf as scraper_download_pdf
 limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()

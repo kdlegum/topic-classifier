@@ -161,3 +161,18 @@ class RevisionAttempt(SQLModel, table=True):
     marks_achieved: int
     marks_available: int
     created_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+class PastPaper(SQLModel, table=True):
+    content_id: str = Field(primary_key=True)
+    spec_code: str = Field(index=True)
+    subject: str
+    year: Optional[int] = Field(default=None)
+    series: Optional[str] = Field(default=None)
+    paper_type: str                         # "QP" or "MS"
+    paper_number: Optional[str] = Field(default=None)
+    filename: str
+    local_path: str                         # cache path (may not exist yet)
+    source_url: str                         # AQA CDN URL for on-demand download
+    file_size_kb: Optional[float] = Field(default=None)
+    scraped_at: str

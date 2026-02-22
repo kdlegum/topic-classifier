@@ -5,6 +5,7 @@ from sessionDatabase import (
     Session, Question, Prediction, QuestionMark, UserCorrection,
     Specification, Topic, Subtopic, UserModuleSelection, SessionStrand,
     UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection,
+    PastPaper,
 )
 
 SQLModel.metadata.create_all(engine)
