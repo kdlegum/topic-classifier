@@ -707,7 +707,6 @@ def classify_questions_logic(
         if req.strands:
             effective_strands = set(req.strands)
         elif matching_topic.get("optional_modules", False):
-            # Look up user's module selections
             with Session(engine) as db:
                 rows = db.exec(
                     select(UserModuleSelection)
@@ -728,15 +727,15 @@ def classify_questions_logic(
             spec_data = allSpecs.get(req.SpecCode)
             req.ExamBoard = spec_data["Exam Board"] if spec_data else "Unknown"
 
-    question_text = [q["text"] for q in req.question_object]
+    question_texts = [q["text"] for q in req.question_object]
     marks = [q["marks"] for q in req.question_object]
     question_ids = [q.get("id", str(i + 1)) for i, q in enumerate(req.question_object)]
 
     if not no_spec:
         t0 = time.time()
-        question_embed = model.encode(question_text)
+        question_embed = model.encode(question_texts)
         similarities = model.similarity(sub_topics_embed, question_embed).numpy()
-        print(f"Classified {len(question_text)} questions in {time.time() - t0:.2f}s (embeddings cached)")
+        print(f"Classified {len(question_texts)} questions in {time.time() - t0:.2f}s (embeddings cached)")
 
         k = req.num_predictions or 3
         topk_indices = np.argsort(similarities, axis=0)[-k:][::-1]
@@ -746,7 +745,6 @@ def classify_questions_logic(
     session_id = str(uuid.uuid4())
 
     with Session(engine) as db:
-
         db_session = DBSess(
             session_id=session_id,
             exam_board=req.ExamBoard or "",
@@ -763,8 +761,7 @@ def classify_questions_logic(
             for strand in effective_strands:
                 db.add(SessionStrand(session_id=session_id, strand=strand))
 
-        for q_idx, q_text in enumerate(question_text):
-
+        for q_idx, q_text in enumerate(question_texts):
             db_question = DBQuestion(
                 session_id=session_id,
                 question_number=question_ids[q_idx],
@@ -1216,6 +1213,7 @@ def get_user_sessions(request: Request, user=Depends(get_user), page: int = 1, p
                 "question_count": question_counts.get(s.session_id, 0),
                 "strands": strands_map.get(s.session_id, []),
                 "name": s.name,
+                "no_spec": s.no_spec,
             })
 
         return {"sessions": result, "total": total, "page": page, "page_size": page_size}
@@ -1302,6 +1300,7 @@ async def upload_pdf(
     file: UploadFile = File(...),
     mark_scheme: Optional[UploadFile] = File(default=None),
     strands: Optional[str] = Query(default=None, description="Comma-separated strand names"),
+    has_math: bool = Query(default=False),
     background_tasks: BackgroundTasks = None,
     user=Depends(get_user),
 ):
@@ -1347,21 +1346,22 @@ async def upload_pdf(
         SpecCode,
         user,
         strand_list,
-        mark_scheme_filename
+        mark_scheme_filename,
+        has_math,
     )
 
     return {
         "job_id": job_id
     }
 
-def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None):
+def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None, has_math=False):
     import logging
     logger = logging.getLogger(__name__)
     pdf_path = f"Backend/uploads/pdfs/{job_id}.pdf"
 
     # Look up whether this spec uses math notation
     if SpecCode == "NONE":
-        spec_has_math = False
+        spec_has_math = has_math
     else:
         spec_has_math = allSpecs.get(SpecCode, {}).get("has_math", False)
 

@@ -21,6 +21,7 @@
 	let pdfStatus = $state('');
 	let ready = $state(false);
 	let selectedFileName = $state('');
+	let hasMath = $state(false);
 
 	let allSpecs: SpecInfo[] = $state([]);
 	let specsLoading = $state(true);
@@ -77,6 +78,7 @@
 		paperStrands = [];
 		selectedModules = [];
 		modulesLoadedForSpec = null;
+		hasMath = false;
 
 		if (spec?.optional_modules) {
 			getUserModules(spec.spec_code)
@@ -127,7 +129,8 @@
 
 		try {
 			const apiSpecCode = specCode === 'None' ? null : specCode;
-			const data = await classifyQuestions(filled, apiSpecCode, specCode === 'None' ? undefined : getEffectiveStrands());
+			const strands = specCode === 'None' ? undefined : getEffectiveStrands();
+			const data = await classifyQuestions(filled, apiSpecCode, strands);
 			setTimeout(() => goto(`/mark_session/${data.session_id}`), 1000);
 		} catch (error) {
 			console.error('Error submitting questions:', error);
@@ -155,7 +158,7 @@
 		try {
 			const uploadSpecCode = specCode === 'None' ? 'NONE' : specCode;
 			const strands = specCode === 'None' ? undefined : getEffectiveStrands();
-			const data = await uploadPdf(file, uploadSpecCode, strands, markSchemeInput?.files?.[0] ?? null);
+			const data = await uploadPdf(file, uploadSpecCode, strands, markSchemeInput?.files?.[0] ?? null, hasMath);
 			pollJobStatus(data.job_id);
 		} catch (error) {
 			console.error('Error uploading PDF:', error);
@@ -236,11 +239,6 @@
 						</svg>
 					</button>
 				</div>
-			{:else if allSpecs.length === 0}
-				<div class="empty-state">
-					<p>You haven't added any specifications yet.</p>
-					<p><a href="/specs">Browse and add specifications</a> to get started.</p>
-				</div>
 			{:else}
 				<div
 					class="custom-select"
@@ -298,15 +296,33 @@
 									</button>
 								</li>
 							{/each}
+							{#if allSpecs.length === 0}
+								<li class="option-empty">
+									<a href="/specs" onclick={() => (dropdownOpen = false)}>Browse and add specifications</a>
+								</li>
+							{/if}
 						</ul>
 					{/if}
 				</div>
 			{/if}
 		</div>
 
+		<!-- Math checkbox for no-spec sessions -->
+		<div in:fly={{ y: 20, duration: 300, delay: 75 }}>
+			{#if specCode === 'None'}
+				<div class="section">
+					<label class="checkbox-label">
+						<input type="checkbox" bind:checked={hasMath} />
+						<span>Does this paper contain math notation?</span>
+					</label>
+					<p class="section-hint">Enables a math-optimised OCR pipeline for PDF uploads.</p>
+				</div>
+			{/if}
+		</div>
+
 		<!-- Module selection for optional_modules specs -->
 		{#if currentSpec?.optional_modules}
-			<div class="section" in:fly={{ y: 15, duration: 250 }}>
+			<div class="section" in:fly={{ y: 20, duration: 300, delay: 75 }}>
 				<StrandPicker
 					strands={currentSpec.strands}
 					bind:selected={selectedModules}
@@ -318,7 +334,7 @@
 
 		<!-- Paper strand selection for specs with multiple strands -->
 		{#if currentSpec && currentSpec.strands.length > 1}
-			<div class="section" in:fly={{ y: 15, duration: 250 }}>
+			<div class="section" in:fly={{ y: 20, duration: 300, delay: 75 }}>
 				<StrandPicker
 					strands={currentSpec.strands}
 					bind:selected={paperStrands}
@@ -349,7 +365,7 @@
 					<span class="file-label-text">{selectedFileName || 'Choose PDF file'}</span>
 				</label>
 				<button type="button" class="btn-upload" onclick={handlePdfUpload} disabled={isUploading}>
-					{isUploading ? 'Processing...' : 'Upload & Classify'}
+					{isUploading ? 'Processing...' : 'Upload & Extract'}
 				</button>
 			</div>
 			<div class="pdf-upload-area" style="margin-top: 0.5rem;">
@@ -404,7 +420,7 @@
 			</button>
 
 			<button type="button" class="submit" onclick={handleSubmit} disabled={isSubmitting}>
-				{isSubmitting ? 'Classifying...' : 'Submit all questions'}
+				{isSubmitting ? 'Saving...' : specCode === 'None' ? 'Save questions (no classification)' : 'Submit all questions'}
 			</button>
 		</div>
 	{/if}
@@ -536,9 +552,27 @@
 		font-weight: 600;
 	}
 
-	.option-placeholder {
+	.option-separator {
+		list-style: none;
+		padding: 2px 10px;
+	}
+
+	.option-separator hr {
+		border: none;
+		border-top: 1px solid var(--color-border);
+		margin: 0;
+	}
+
+	.option-empty {
+		padding: 8px 10px;
+		font-size: 0.88rem;
 		color: var(--color-text-muted);
+		list-style: none;
+	}
+
+	.option-no-spec {
 		font-style: italic;
+		color: var(--color-text-secondary);
 	}
 
 	.option-separator {
@@ -581,6 +615,54 @@
 		color: var(--color-text-muted);
 		font-weight: 500;
 		flex-shrink: 0;
+	}
+
+	/* ─── Math checkbox ─── */
+	.checkbox-label {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 0.95rem;
+		cursor: pointer;
+		margin-bottom: 4px;
+		font-weight: 500;
+	}
+
+	.checkbox-label input[type='checkbox'] {
+		appearance: none;
+		-webkit-appearance: none;
+		width: 17px;
+		height: 17px;
+		flex-shrink: 0;
+		margin: 0;
+		cursor: pointer;
+		border: 1.5px solid var(--color-border);
+		border-radius: 4px;
+		background: var(--color-surface);
+		transition:
+			border-color var(--transition-fast),
+			background var(--transition-fast),
+			box-shadow var(--transition-fast);
+	}
+
+	.checkbox-label input[type='checkbox']:checked {
+		border-color: var(--color-primary);
+		background: var(--color-primary);
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpolyline points='1.5 5 4 7.5 8.5 2' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.checkbox-label input[type='checkbox']:focus-visible {
+		outline: none;
+		border-color: var(--color-primary);
+		box-shadow: 0 0 0 3px var(--color-primary-glow);
+	}
+
+	.section-hint {
+		font-size: 0.82rem;
+		color: var(--color-text-muted);
+		margin: 0;
 	}
 
 	/* ─── PDF Upload Area ─── */

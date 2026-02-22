@@ -78,15 +78,23 @@ export async function uploadPdf(
 	file: File,
 	specCode: string,
 	strands?: string[],
-	markSchemeFile?: File | null
+	markSchemeFile?: File | null,
+	hasMath?: boolean
 ): Promise<{ job_id: string }> {
 	const formData = new FormData();
 	formData.append('file', file);
 	if (markSchemeFile) formData.append('mark_scheme', markSchemeFile);
 
 	let endpoint = `/upload-pdf/${specCode}`;
+	const params: string[] = [];
 	if (strands && strands.length > 0) {
-		endpoint += `?strands=${encodeURIComponent(strands.join(','))}`;
+		params.push(`strands=${encodeURIComponent(strands.join(','))}`);
+	}
+	if (hasMath) {
+		params.push('has_math=true');
+	}
+	if (params.length > 0) {
+		endpoint += '?' + params.join('&');
 	}
 
 	const response = await apiFetch(endpoint, {

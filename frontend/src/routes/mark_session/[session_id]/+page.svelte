@@ -733,8 +733,8 @@
 					<p class="marks-error" in:fade={{ duration: 150 }}>Please enter a value between 0 and {question.marks_available ?? '?'}</p>
 				{/if}
 
-				{#if !session.no_spec}
-			{#each question.predictions as pred}
+			{#if !session.no_spec}
+				{#each question.predictions as pred}
 					{@const selected = isPredictionSelected(question.question_id, pred)}
 					<div class="prediction">
 						<p>
@@ -777,7 +777,7 @@
 					corrections={getCorrections(question.question_id)}
 					onchange={(c) => handleCorrectionsChange(question.question_id, c)}
 				/>
-				{/if}
+			{/if}
 			</div>
 		{/each}
 	{/if}
@@ -860,7 +860,6 @@
 	.session-name-edit:focus {
 		border-bottom-color: var(--color-primary);
 	}
-
 	.no-spec-banner {
 		margin-bottom: 16px;
 		padding: 12px 16px;

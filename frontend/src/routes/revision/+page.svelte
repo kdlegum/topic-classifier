@@ -156,7 +156,7 @@
 			const p = q.predictions[0];
 			return `${p.spec_sub_section} ${p.subtopic}`;
 		}
-		return 'No topic data';
+		return 'Unclassified';
 	}
 
 	function throwOut(node: Element, { duration = 400 } = {}) {

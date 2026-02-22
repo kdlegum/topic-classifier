@@ -1,0 +1,100 @@
+[
+  {
+    "pdf": "spec_pdfs/A Level Specs/7136-aqa-economics.PDF",
+    "qualification": "A Level",
+    "subject": "Economics",
+    "board": "AQA",
+    "code": "7136"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/7357-AQA-Mathematics.PDF",
+    "qualification": "A Level",
+    "subject": "Mathematics",
+    "board": "AQA",
+    "code": "7357"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/7367-AQA-FurtherMathematics.PDF",
+    "qualification": "A Level",
+    "subject": "Further Mathematics",
+    "board": "AQA",
+    "code": "7367"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/7402-AQA-Biology.PDF",
+    "qualification": "A Level",
+    "subject": "Biology",
+    "board": "AQA",
+    "code": "7402"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/7405-aqa-chemistry.PDF",
+    "qualification": "A Level",
+    "subject": "Chemistry",
+    "board": "AQA",
+    "code": "7405"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/7408-aqa-physics.PDF",
+    "qualification": "A Level",
+    "subject": "Physics",
+    "board": "AQA",
+    "code": "7408"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/7517-aqa-ComputerScience.PDF",
+    "qualification": "A Level",
+    "subject": "Computer Science",
+    "board": "AQA",
+    "code": "7517"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/9ch0-edexcel-chemistry.pdf",
+    "qualification": "A Level",
+    "subject": "Chemistry",
+    "board": "Edexcel",
+    "code": "9CH0"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/9ec0-edexcel-economicsA.pdf",
+    "qualification": "A Level",
+    "subject": "Economics",
+    "board": "Edexcel",
+    "code": "9EC0"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/9FM0-Edexcel-FurtherMathematics.pdf",
+    "qualification": "A Level",
+    "subject": "Further Mathematics",
+    "board": "Edexcel",
+    "code": "9FM0"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/9MA0-Edexcel-Mathematics.pdf",
+    "qualification": "A Level",
+    "subject": "Mathematics",
+    "board": "Edexcel",
+    "code": "9MA0"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/h420-ocr-biologyA.pdf",
+    "qualification": "A Level",
+    "subject": "Biology",
+    "board": "OCR",
+    "code": "H420"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/h432-ocr-chemistryA.pdf",
+    "qualification": "A Level",
+    "subject": "Chemistry",
+    "board": "OCR",
+    "code": "H432"
+  },
+  {
+    "pdf": "spec_pdfs/A Level Specs/h446-ocr-computerScience.pdf",
+    "qualification": "A Level",
+    "subject": "Computer Science",
+    "board": "OCR",
+    "code": "H446"
+  }
+]

@@ -46,6 +46,7 @@
 	}
 
 	function getTitle(session: any): string {
+		if (session.no_spec) return 'Unclassified Session';
 		const parts = [session.qualification, session.subject_name].filter(Boolean);
 		return parts.length > 0 ? parts.join(' ') : session.subject;
 	}
@@ -93,67 +94,67 @@
 			<p class="page-subtitle">View your past classification sessions.</p>
 		</div>
 
-		<div class="sessions-list">
-			{#if loading}
-				<div class="loading">
-					<span class="loading-spinner"></span>
-					Loading sessions...
-				</div>
-			{:else if error}
-				<div class="error-state" in:fade={{ duration: 200 }}>
-					<p>Failed to load sessions. Please try again.</p>
-				</div>
-			{:else if sessions && sessions.length === 0 && page === 1}
-				<div class="empty-state" in:fade={{ duration: 200 }}>
-					<p>No sessions yet.</p>
-					<p><a href="/classify">Classify some questions</a> to get started!</p>
-				</div>
-			{:else if sessions}
-				{#each sessions as session, i (session.session_id)}
-					<a
-						href="/mark_session/{session.session_id}"
-						class="session-card"
-						in:fly={{ y: 15, duration: 250, delay: staggerDelay(i) }}
-					>
-						<div class="session-info">
-							{#if session.name}
-								<div class="session-custom-name">{session.name}</div>
-								<div class="session-subject session-subject-secondary">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
-							{:else}
-								<div class="session-subject">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
-							{/if}
-							<div class="session-meta">
-								{#if session.no_spec}
-							<span class="session-board no-spec-badge">No specification</span>
+	<div class="sessions-list">
+		{#if loading}
+			<div class="loading">
+				<span class="loading-spinner"></span>
+				Loading sessions...
+			</div>
+		{:else if error}
+			<div class="error-state" in:fade={{ duration: 200 }}>
+				<p>Failed to load sessions. Please try again.</p>
+			</div>
+		{:else if sessions && sessions.length === 0 && page === 1}
+			<div class="empty-state" in:fade={{ duration: 200 }}>
+				<p>No sessions yet.</p>
+				<p><a href="/classify">Classify some questions</a> to get started!</p>
+			</div>
+		{:else if sessions}
+			{#each sessions as session, i (session.session_id)}
+				<a
+					href="/mark_session/{session.session_id}"
+					class="session-card"
+					in:fly={{ y: 15, duration: 250, delay: staggerDelay(i) }}
+				>
+					<div class="session-info">
+						{#if session.name}
+							<div class="session-custom-name">{session.name}</div>
+							<div class="session-subject session-subject-secondary">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
 						{:else}
-							<span class="session-board">{session.exam_board}</span>
+							<div class="session-subject">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
 						{/if}
-								<span class="session-date">{formatDate(session.created_at)}</span>
-							</div>
+						<div class="session-meta">
+							{#if session.no_spec}
+						<span class="session-board no-spec-badge">No specification</span>
+					{:else}
+						<span class="session-board">{session.exam_board}</span>
+					{/if}
+							<span class="session-date">{formatDate(session.created_at)}</span>
 						</div>
-						<div class="session-right">
-							<div class="session-questions">
-								{session.question_count} question{session.question_count !== 1 ? 's' : ''}
-							</div>
-							<button class="delete-btn" onclick={(e) => handleDelete(e, session.session_id)} title="Delete session">
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-									<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-									<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H5.5l1-1h3l1 1H13a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-								</svg>
-							</button>
-						</div>
-					</a>
-				{/each}
-
-				{#if totalPages > 1}
-					<div class="pagination" in:fade={{ duration: 200 }}>
-						<button class="page-arrow" disabled={page <= 1} onclick={() => page -= 1}>&lsaquo;</button>
-						<span class="page-info">Page {page} of {totalPages}</span>
-						<button class="page-arrow" disabled={page >= totalPages} onclick={() => page += 1}>&rsaquo;</button>
 					</div>
-				{/if}
+					<div class="session-right">
+						<div class="session-questions">
+							{session.question_count} question{session.question_count !== 1 ? 's' : ''}
+						</div>
+						<button class="delete-btn" onclick={(e) => handleDelete(e, session.session_id)} title="Delete session">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+								<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+								<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H5.5l1-1h3l1 1H13a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+							</svg>
+						</button>
+					</div>
+				</a>
+			{/each}
+
+			{#if totalPages > 1}
+				<div class="pagination" in:fade={{ duration: 200 }}>
+					<button class="page-arrow" disabled={page <= 1} onclick={() => page -= 1}>&lsaquo;</button>
+					<span class="page-info">Page {page} of {totalPages}</span>
+					<button class="page-arrow" disabled={page >= totalPages} onclick={() => page += 1}>&rsaquo;</button>
+				</div>
 			{/if}
-		</div>
+		{/if}
+	</div>
 	{/if}
 </main>
 
@@ -162,6 +163,11 @@
 		color: var(--color-text-secondary);
 		font-size: 1.02rem;
 		margin-bottom: 8px;
+	}
+
+	.no-spec-badge {
+		color: var(--color-text-muted);
+		font-style: italic;
 	}
 
 	.loading-spinner {
