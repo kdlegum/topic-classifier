@@ -39,6 +39,8 @@ class Session(SQLModel, table=True):
     total_marks_available: int | None = None
     total_marks_achieved: int | None = None
     pdf_filename: str | None = Field(default=None)
+    mark_scheme_filename: str | None = Field(default=None)
+    no_spec: bool = Field(default=False)
 
 class Question(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)

@@ -45,7 +45,7 @@ export async function migrateGuestSessions(): Promise<{ migrated: number }> {
  */
 export async function classifyQuestions(
 	questions: string[],
-	specCode: string,
+	specCode: string | null,
 	strands?: string[]
 ): Promise<{ session_id: string }> {
 	const questionObjects = questions.map((text) => ({ text, marks: null }));
@@ -77,10 +77,12 @@ export async function classifyQuestions(
 export async function uploadPdf(
 	file: File,
 	specCode: string,
-	strands?: string[]
+	strands?: string[],
+	markSchemeFile?: File | null
 ): Promise<{ job_id: string }> {
 	const formData = new FormData();
 	formData.append('file', file);
+	if (markSchemeFile) formData.append('mark_scheme', markSchemeFile);
 
 	let endpoint = `/upload-pdf/${specCode}`;
 	if (strands && strands.length > 0) {
@@ -97,6 +99,41 @@ export async function uploadPdf(
 	}
 
 	return response.json();
+}
+
+/**
+ * Upload a mark scheme PDF to an existing session
+ */
+export async function uploadMarkScheme(
+	sessionId: string,
+	file: File
+): Promise<{ success: boolean }> {
+	const formData = new FormData();
+	formData.append('file', file);
+
+	const response = await apiFetch(`/session/${sessionId}/mark-scheme`, {
+		method: 'POST',
+		body: formData
+	});
+
+	if (!response.ok) {
+		throw new Error(`Mark scheme upload failed: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Download a session's mark scheme PDF as a blob
+ */
+export async function downloadMarkSchemePdf(sessionId: string): Promise<Blob> {
+	const response = await apiFetch(`/session/${sessionId}/mark-scheme-pdf`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to download mark scheme PDF: ${response.status}`);
+	}
+
+	return response.blob();
 }
 
 /**

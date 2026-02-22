@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { fly, fade, slide } from 'svelte/transition';
-	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf } from '$lib/api';
+	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf, uploadMarkScheme, downloadMarkSchemePdf } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
@@ -49,6 +49,10 @@
 	// Per-question PDF view toggle: set of question_ids currently showing PDF
 	let pdfViewQuestions = $state(new Set<number>());
 	let downloadingPdf = $state(false);
+	let markSchemeInput: HTMLInputElement;
+	let markSchemeUploading = $state(false);
+	let markSchemeStatus = $state('');
+
 
 	// Keyboard shortcut state
 	let currentQuestionId = $state<number | null>(null);
@@ -69,6 +73,40 @@
 			console.error('Failed to download PDF:', err);
 		} finally {
 			downloadingPdf = false;
+		}
+	}
+
+	async function handleDownloadMarkScheme() {
+		if (!session) return;
+		try {
+			const blob = await downloadMarkSchemePdf(session.session_id);
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = `${getTitle(session).replace(/[^a-zA-Z0-9 ]/g, '')}_mark_scheme.pdf`;
+			a.click();
+			URL.revokeObjectURL(url);
+		} catch (err) {
+			console.error('Failed to download mark scheme:', err);
+		}
+	}
+
+	async function handleMarkSchemeUpload(e: Event) {
+		const input = e.target as HTMLInputElement;
+		const file = input.files?.[0];
+		if (!file || !session) return;
+		markSchemeUploading = true;
+		markSchemeStatus = 'Uploading...';
+		try {
+			await uploadMarkScheme(session.session_id, file);
+			session.has_mark_scheme = true;
+			markSchemeStatus = 'Done';
+		} catch (err) {
+			console.error('Failed to upload mark scheme:', err);
+			markSchemeStatus = 'Upload failed';
+		} finally {
+			markSchemeUploading = false;
+			input.value = '';
 		}
 	}
 
@@ -154,18 +192,20 @@
 				}
 			}
 
-			// Build spec_sub_section -> subtopic_id lookup from hierarchy
-			try {
-				const hierarchy = await getTopicHierarchy(session.spec_code);
-				for (const strand of hierarchy.strands) {
-					for (const topic of strand.topics) {
-						for (const subtopic of topic.subtopics) {
-							specSubSectionToId.set(subtopic.spec_sub_section, subtopic.subtopic_id);
+			// Build spec_sub_section -> subtopic_id lookup from hierarchy (skip for no-spec sessions)
+			if (!session.no_spec) {
+				try {
+					const hierarchy = await getTopicHierarchy(session.spec_code);
+					for (const strand of hierarchy.strands) {
+						for (const topic of strand.topics) {
+							for (const subtopic of topic.subtopics) {
+								specSubSectionToId.set(subtopic.spec_sub_section, subtopic.subtopic_id);
+							}
 						}
 					}
+				} catch (e) {
+					console.error('Failed to load hierarchy for subtopic ID lookup:', e);
 				}
-			} catch (e) {
-				console.error('Failed to load hierarchy for subtopic ID lookup:', e);
 			}
 		} catch (err: any) {
 			const msg = err.message || '';
@@ -193,6 +233,7 @@
 	}
 
 	function getTitle(s: any): string {
+		if (s.no_spec) return 'Unclassified Session';
 		const parts = [s.qualification, s.subject_name].filter(Boolean);
 		return parts.length > 0 ? parts.join(' ') : s.subject;
 	}
@@ -568,7 +609,7 @@
 
 		<div class="session-header" in:fly={{ y: 15, duration: 300 }}>
 			<h2>{getTitle(session)}</h2>
-			<p class="session-meta">{session.exam_board} - {formatDate(session.created_at)}</p>
+			<p class="session-meta">{session.no_spec ? 'No specification' : session.exam_board} - {formatDate(session.created_at)}</p>
 			{#if session.session_strands && session.session_strands.length > 0}
 				<div class="session-strands">
 					{#each session.session_strands as strand}
@@ -581,7 +622,29 @@
 					{downloadingPdf ? 'Downloading...' : 'Download the question paper PDF'}
 				</button>
 			{/if}
+			{#if session.has_mark_scheme}
+				<div class="btn-row">
+					<button class="btn-download-pdf" onclick={handleDownloadMarkScheme}>
+						Download Mark Scheme
+					</button>
+					<label class="btn-replace-ms">
+						Replace
+						<input type="file" accept="application/pdf" class="file-input-hidden" onchange={handleMarkSchemeUpload} />
+					</label>
+				</div>
+			{:else}
+				<label class="btn-upload-ms" class:uploading={markSchemeUploading}>
+					{markSchemeUploading ? markSchemeStatus : markSchemeStatus === 'Done' ? 'Done' : 'Upload Mark Scheme'}
+					<input type="file" accept="application/pdf" class="file-input-hidden" onchange={handleMarkSchemeUpload} disabled={markSchemeUploading} />
+				</label>
+			{/if}
 		</div>
+
+		{#if session.no_spec}
+			<div class="no-spec-banner" in:fly={{ y: 10, duration: 250 }}>
+				No specification selected — topic predictions are not available for this session.
+			</div>
+		{/if}
 
 		{#each session.questions as question, i}
 			<div
@@ -643,7 +706,8 @@
 					<p class="marks-error" in:fade={{ duration: 150 }}>Please enter a value between 0 and {question.marks_available ?? '?'}</p>
 				{/if}
 
-				{#each question.predictions as pred}
+				{#if !session.no_spec}
+			{#each question.predictions as pred}
 					{@const selected = isPredictionSelected(question.question_id, pred)}
 					<div class="prediction">
 						<p>
@@ -678,12 +742,15 @@
 						{/if}
 					</div>
 				{/each}
+				{/if}
 
+				{#if !session.no_spec}
 				<TopicSelector
 					specCode={session.spec_code}
 					corrections={getCorrections(question.question_id)}
 					onchange={(c) => handleCorrectionsChange(question.question_id, c)}
 				/>
+				{/if}
 			</div>
 		{/each}
 	{/if}
@@ -750,6 +817,16 @@
 {/if}
 
 <style>
+	.no-spec-banner {
+		margin-bottom: 16px;
+		padding: 12px 16px;
+		border-radius: var(--radius-sm);
+		background: var(--color-surface-alt);
+		border: 1.5px solid var(--color-border);
+		color: var(--color-text-secondary);
+		font-size: 0.9rem;
+	}
+
 	.loading-spinner {
 		display: inline-block;
 		width: 18px;
@@ -841,6 +918,74 @@
 	.btn-download-pdf:disabled {
 		opacity: 0.6;
 		cursor: not-allowed;
+	}
+
+	.btn-row {
+		display: flex;
+		align-items: stretch;
+		gap: 8px;
+		margin-top: 10px;
+	}
+
+	.btn-row .btn-download-pdf {
+		flex: 1;
+		margin-top: 0;
+	}
+
+	.btn-upload-ms {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		text-align: center;
+		margin-top: 10px;
+		padding: 8px 16px;
+		border: 1.5px dashed var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-surface);
+		color: var(--color-text-secondary);
+		font-size: 0.9rem;
+		font-weight: 600;
+		font-family: var(--font-body);
+		cursor: pointer;
+		transition: all var(--transition-fast);
+	}
+
+	.btn-upload-ms:hover {
+		border-color: var(--color-primary);
+		color: var(--color-primary);
+	}
+
+	.btn-replace-ms {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 16px;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-surface);
+		color: var(--color-text-secondary);
+		font-size: 0.9rem;
+		font-weight: 600;
+		font-family: var(--font-body);
+		cursor: pointer;
+		transition: all var(--transition-fast);
+		white-space: nowrap;
+	}
+
+	.btn-replace-ms:hover {
+		border-color: var(--color-primary);
+		color: var(--color-primary);
+	}
+
+	.file-input-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		white-space: nowrap;
+		margin: 0;
 	}
 
 	.full-marks-glow {

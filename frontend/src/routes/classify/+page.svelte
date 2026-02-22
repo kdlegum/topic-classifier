@@ -39,10 +39,12 @@
 	let selectedSpecLabel = $derived(
 		currentSpec
 			? `${currentSpec.exam_board} ${currentSpec.qualification} ${currentSpec.subject} (${currentSpec.spec_code})`
-			: 'Choose a Specification'
+			: 'No specification'
 	);
 
 	let fileInput: HTMLInputElement;
+	let markSchemeInput: HTMLInputElement;
+	let markSchemeFileName = $state('');
 
 	// Click-outside action for closing the dropdown
 	function clickOutside(node: HTMLElement, callback: () => void) {
@@ -121,15 +123,11 @@
 			return;
 		}
 
-		if (specCode === 'None') {
-			alert('Please choose the specification.');
-			return;
-		}
-
 		isSubmitting = true;
 
 		try {
-			const data = await classifyQuestions(filled, specCode, getEffectiveStrands());
+			const apiSpecCode = specCode === 'None' ? null : specCode;
+			const data = await classifyQuestions(filled, apiSpecCode, specCode === 'None' ? undefined : getEffectiveStrands());
 			setTimeout(() => goto(`/mark_session/${data.session_id}`), 1000);
 		} catch (error) {
 			console.error('Error submitting questions:', error);
@@ -151,16 +149,13 @@
 			return;
 		}
 
-		if (specCode === 'None') {
-			alert('Please choose the specification.');
-			return;
-		}
-
 		isUploading = true;
 		pdfStatus = 'Uploading...';
 
 		try {
-			const data = await uploadPdf(file, specCode, getEffectiveStrands());
+			const uploadSpecCode = specCode === 'None' ? 'NONE' : specCode;
+			const strands = specCode === 'None' ? undefined : getEffectiveStrands();
+			const data = await uploadPdf(file, uploadSpecCode, strands, markSchemeInput?.files?.[0] ?? null);
 			pollJobStatus(data.job_id);
 		} catch (error) {
 			console.error('Error uploading PDF:', error);
@@ -282,9 +277,13 @@
 									class:selected={specCode === 'None'}
 									onclick={() => selectSpec('None')}
 								>
-									<span class="option-placeholder">Choose a Specification</span>
+									<span class="option-name option-no-spec">No specification</span>
+									<span class="option-code">unclassified</span>
 								</button>
 							</li>
+							{#if allSpecs.length > 0}
+								<li class="option-separator" role="separator"><hr /></li>
+							{/if}
 							{#each allSpecs as spec}
 								<li role="option" aria-selected={specCode === spec.spec_code}>
 									<button
@@ -352,6 +351,24 @@
 				<button type="button" class="btn-upload" onclick={handlePdfUpload} disabled={isUploading}>
 					{isUploading ? 'Processing...' : 'Upload & Classify'}
 				</button>
+			</div>
+			<div class="pdf-upload-area" style="margin-top: 0.5rem;">
+				<input
+					type="file"
+					id="mark-scheme-upload"
+					accept="application/pdf"
+					bind:this={markSchemeInput}
+					onchange={() => { markSchemeFileName = markSchemeInput?.files?.[0]?.name ?? ''; }}
+					class="file-input-hidden"
+				/>
+				<label for="mark-scheme-upload" class="file-input-label" class:file-selected={!!markSchemeFileName}>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+						<polyline points="17 8 12 3 7 8"/>
+						<line x1="12" y1="3" x2="12" y2="15"/>
+					</svg>
+					<span class="file-label-text">{markSchemeFileName || 'Mark Scheme (optional)'}</span>
+				</label>
 			</div>
 			{#if pdfStatus}
 				<div class="pdf-status" in:fade={{ duration: 200 }}>
@@ -522,6 +539,22 @@
 	.option-placeholder {
 		color: var(--color-text-muted);
 		font-style: italic;
+	}
+
+	.option-separator {
+		list-style: none;
+		padding: 2px 10px;
+	}
+
+	.option-separator hr {
+		border: none;
+		border-top: 1px solid var(--color-border);
+		margin: 0;
+	}
+
+	.option-no-spec {
+		font-style: italic;
+		color: var(--color-text-secondary);
 	}
 
 	.option-board {

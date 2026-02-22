@@ -14,6 +14,8 @@ migrations = [
     "ALTER TABLE session ADD COLUMN pdf_filename VARCHAR DEFAULT NULL",
     "ALTER TABLE specification ADD COLUMN is_hidden BOOLEAN DEFAULT FALSE",
     "ALTER TABLE specification ADD COLUMN content_hash VARCHAR DEFAULT NULL",
+    "ALTER TABLE session ADD COLUMN mark_scheme_filename VARCHAR DEFAULT NULL",
+    "ALTER TABLE session ADD COLUMN no_spec BOOLEAN DEFAULT FALSE",
 ]
 
 for sql in migrations:
