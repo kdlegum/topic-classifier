@@ -51,6 +51,19 @@
 		return parts.length > 0 ? parts.join(' ') : session.subject;
 	}
 
+	function getPaperLabel(session: any): string | null {
+		if (!session.paper_number) return null;
+		let label = `Paper ${session.paper_number}`;
+		if (session.paper_name) label += ` ${session.paper_name}`;
+		if (session.paper_year) {
+			const series = session.paper_series
+				? session.paper_series.charAt(0).toUpperCase() + session.paper_series.slice(1)
+				: '';
+			label += ` · ${series} ${session.paper_year}`.trim();
+		}
+		return label;
+	}
+
 	async function handleDelete(e: Event, sessionId: string) {
 		e.preventDefault();
 		e.stopPropagation();
@@ -141,6 +154,10 @@
 					{:else}
 						<span class="session-board">{session.exam_board}</span>
 					{/if}
+							{@const paperLabel = getPaperLabel(session)}
+							{#if paperLabel}
+								<span class="session-paper">{paperLabel}</span>
+							{/if}
 							<span class="session-date">{formatDate(session.created_at)}</span>
 						</div>
 					</div>
@@ -243,6 +260,15 @@
 	.session-subject-secondary {
 		font-size: 0.85rem;
 		color: var(--color-text-secondary);
+	}
+
+	.session-paper {
+		font-size: 0.82rem;
+		color: var(--color-text-secondary);
+		background: var(--color-surface-raised, var(--color-border));
+		padding: 1px 7px;
+		border-radius: var(--radius-full);
+		white-space: nowrap;
 	}
 
 	.mark-badge {

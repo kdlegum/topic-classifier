@@ -42,6 +42,10 @@ class Session(SQLModel, table=True):
     mark_scheme_filename: str | None = Field(default=None)
     no_spec: bool = Field(default=False)
     name: str | None = Field(default=None)
+    paper_number: str | None = Field(default=None)
+    paper_name: str | None = Field(default=None)
+    paper_year: int | None = Field(default=None)
+    paper_series: str | None = Field(default=None)
 
 class Question(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
@@ -171,6 +175,8 @@ class PastPaper(SQLModel, table=True):
     series: Optional[str] = Field(default=None)
     paper_type: str                         # "QP" or "MS"
     paper_number: Optional[str] = Field(default=None)
+    paper_name: Optional[str] = Field(default=None)   # e.g. "Mechanics", "Discrete"
+    tier: Optional[str] = Field(default=None)  # "Higher", "Foundation", or None (A-level)
     filename: str
     local_path: str                         # cache path (may not exist yet)
     source_url: str                         # AQA CDN URL for on-demand download

@@ -38,6 +38,8 @@ from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
 from paper_scraper.downloader import download_pdf as scraper_download_pdf
+from paper_scraper import config as paper_scraper_config
+from paper_scraper.scraper import fetch_all_results, build_entry
 limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
@@ -1138,6 +1140,10 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             "no_spec": db_session.no_spec,
             "has_pdf": db_session.pdf_filename is not None,
             "has_mark_scheme": db_session.mark_scheme_filename is not None,
+            "paper_number": db_session.paper_number,
+            "paper_name": db_session.paper_name,
+            "paper_year": db_session.paper_year,
+            "paper_series": db_session.paper_series,
             "questions": response_questions
         }
 
@@ -1314,6 +1320,10 @@ def get_user_sessions(request: Request, user=Depends(get_user), page: int = 1, p
                 "status": s.status,
                 "total_marks_available": s.total_marks_available,
                 "total_marks_achieved": s.total_marks_achieved,
+                "paper_number": s.paper_number,
+                "paper_name": s.paper_name,
+                "paper_year": s.paper_year,
+                "paper_series": s.paper_series,
             })
 
         return {"sessions": result, "total": total, "page": page, "page_size": page_size}
@@ -1456,7 +1466,7 @@ async def upload_pdf(
         "job_id": job_id
     }
 
-def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None, has_math=False, tier=None):
+def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None, has_math=False, tier=None, paper_meta=None):
     import logging
     logger = logging.getLogger(__name__)
     pdf_path = f"Backend/uploads/pdfs/{job_id}.pdf"
@@ -1594,6 +1604,11 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
                 db_session.pdf_filename = f"{job_id}.pdf"
                 if mark_scheme_filename:
                     db_session.mark_scheme_filename = mark_scheme_filename
+                if paper_meta:
+                    db_session.paper_number = paper_meta.get("paper_number")
+                    db_session.paper_name = paper_meta.get("paper_name")
+                    db_session.paper_year = paper_meta.get("year")
+                    db_session.paper_series = paper_meta.get("series")
                 db.add(db_session)
                 db.commit()
 
@@ -2565,3 +2580,206 @@ def record_revision_attempt(
             "success": True,
             "is_full_marks": body.marks_achieved >= marks_available,
         }
+
+
+# ── AQA Past Papers Library ───────────────────────────────────────────────────
+
+def _index_past_papers(spec_code: str) -> None:
+    """Fetch AQA API metadata for spec_code and upsert into PastPaper table (no downloads)."""
+    import logging
+    logger = logging.getLogger(__name__)
+    # Look up subject from the Specification table; fall back to config or "Unknown"
+    with Session(engine) as db:
+        spec_row = db.exec(select(Specification).where(Specification.spec_code == spec_code)).first()
+    subject = spec_row.subject if spec_row else paper_scraper_config.SPECS.get(spec_code, "Unknown")
+    http = requests.Session()
+    http.headers["User-Agent"] = "TopicTracker/1.0 Educational"
+    results = fetch_all_results(spec_code, http)
+    with Session(engine) as db:
+        for result in results:
+            entry = build_entry(result, spec_code, subject)
+            if entry["paper_type"] not in ("QP", "MS") or entry.get("is_modified"):
+                continue
+            existing = db.get(PastPaper, entry["content_id"])
+            if existing:
+                existing.local_path = entry["local_path"]
+                existing.source_url = entry["source_url"]
+                existing.scraped_at = entry["scraped_at"]
+                existing.tier = entry.get("tier")
+                existing.paper_name = entry.get("paper_name")
+                db.add(existing)
+            else:
+                db.add(PastPaper(
+                    content_id=entry["content_id"],
+                    spec_code=entry["spec_code"],
+                    subject=entry["subject"],
+                    year=entry["year"],
+                    series=entry["series"],
+                    paper_type=entry["paper_type"],
+                    paper_number=entry["paper_number"],
+                    paper_name=entry.get("paper_name"),
+                    tier=entry.get("tier"),
+                    filename=entry["filename"],
+                    local_path=entry["local_path"],
+                    source_url=entry["source_url"],
+                    file_size_kb=entry["file_size_kb"],
+                    scraped_at=entry["scraped_at"],
+                ))
+        db.commit()
+    logger.info("Indexed past papers for spec %s (%d results)", spec_code, len(results))
+
+
+@app.get("/past-papers")
+def get_past_papers(
+    spec_code: str = Query(..., description="Specification code to list papers for"),
+    request: Request = None,
+    user=Depends(get_user),
+):
+    """Return all QP entries for a spec with their matched MS content_id attached.
+    Auto-indexes from AQA API on first request for a spec."""
+    # Auto-populate if this spec has never been indexed
+    with Session(engine) as db:
+        has_any = db.exec(
+            select(PastPaper).where(PastPaper.spec_code == spec_code).limit(1)
+        ).first()
+
+    if has_any is None:
+        _index_past_papers(spec_code)
+
+    with Session(engine) as db:
+        qps = db.exec(
+            select(PastPaper)
+            .where(PastPaper.spec_code == spec_code)
+            .where(PastPaper.paper_type == "QP")
+        ).all()
+
+        mss = db.exec(
+            select(PastPaper)
+            .where(PastPaper.spec_code == spec_code)
+            .where(PastPaper.paper_type == "MS")
+        ).all()
+
+    # Build lookup: (year, series, paper_number, tier) → MS content_id
+    ms_lookup: dict[tuple, str] = {}
+    for ms in mss:
+        key = (ms.year, ms.series, ms.paper_number, ms.tier)
+        ms_lookup[key] = ms.content_id
+
+    papers = []
+    for qp in qps:
+        ms_content_id = ms_lookup.get((qp.year, qp.series, qp.paper_number, qp.tier))
+        papers.append({
+            "content_id": qp.content_id,
+            "spec_code": qp.spec_code,
+            "subject": qp.subject,
+            "year": qp.year,
+            "series": qp.series,
+            "paper_number": qp.paper_number,
+            "paper_name": qp.paper_name,
+            "tier": qp.tier,
+            "filename": qp.filename,
+            "source_url": qp.source_url,
+            "ms_content_id": ms_content_id,
+        })
+
+    # Sort: newest first, then series, then paper number
+    papers.sort(key=lambda p: (-(p["year"] or 0), p["series"] or "", p["paper_number"] or ""))
+    return papers
+
+
+class ClassifyPastPaperRequest(BaseModel):
+    content_id: str
+    strands: Optional[List[str]] = None
+    tier: Optional[str] = None
+    include_ms: bool = True
+
+
+@app.post("/classify-past-paper/{SpecCode}")
+async def classify_past_paper(
+    SpecCode: str,
+    req: ClassifyPastPaperRequest,
+    background_tasks: BackgroundTasks,
+    request: Request,
+    user=Depends(get_user),
+):
+    """Download a past paper on-demand and run it through the existing PDF pipeline."""
+    with Session(engine) as db:
+        paper = db.get(PastPaper, req.content_id)
+        if not paper:
+            raise HTTPException(status_code=404, detail="Paper not found in index. Run populate_db first.")
+
+    local_path = Path(paper.local_path)
+
+    # Download QP if not already cached
+    if not local_path.exists():
+        try:
+            http = requests.Session()
+            http.headers["User-Agent"] = "TopicTracker/1.0 Educational"
+            scraper_download_pdf(paper.source_url, str(local_path), http, delay_s=0)
+            size_kb = local_path.stat().st_size / 1024
+            with Session(engine) as db:
+                p = db.get(PastPaper, req.content_id)
+                if p:
+                    p.file_size_kb = round(size_kb, 2)
+                    db.add(p)
+                    db.commit()
+        except Exception as e:
+            raise HTTPException(status_code=502, detail=f"Failed to download paper: {e}")
+
+    # Copy to UPLOAD_DIR so process_pdf can find it
+    job_id = str(uuid.uuid4())
+    dest_path = UPLOAD_DIR / f"{job_id}.pdf"
+    shutil.copy2(str(local_path), str(dest_path))
+
+    # Optionally find and download the matching mark scheme
+    mark_scheme_filename = None
+    if req.include_ms:
+        with Session(engine) as db:
+            ms = db.exec(
+                select(PastPaper)
+                .where(PastPaper.spec_code == paper.spec_code)
+                .where(PastPaper.year == paper.year)
+                .where(PastPaper.series == paper.series)
+                .where(PastPaper.paper_number == paper.paper_number)
+                .where(PastPaper.paper_type == "MS")
+            ).first()
+
+        if ms:
+            ms_local = Path(ms.local_path)
+            if not ms_local.exists():
+                try:
+                    http = requests.Session()
+                    http.headers["User-Agent"] = "TopicTracker/1.0 Educational"
+                    scraper_download_pdf(ms.source_url, str(ms_local), http, delay_s=0)
+                except Exception:
+                    pass  # mark scheme is optional; don't fail the whole request
+
+            if ms_local.exists():
+                mark_scheme_filename = f"{job_id}_mark_scheme.pdf"
+                shutil.copy2(str(ms_local), str(UPLOAD_DIR / mark_scheme_filename))
+
+    # Write initial status
+    status = {"job_id": job_id, "status": "Preparing paper...", "session_id": None}
+    with open(f"Backend/uploads/status/{job_id}.json", "w") as f:
+        json.dump(status, f)
+
+    paper_meta = {
+        "paper_number": paper.paper_number,
+        "paper_name": paper.paper_name,
+        "year": paper.year,
+        "series": paper.series,
+    }
+
+    background_tasks.add_task(
+        process_pdf,
+        job_id,
+        SpecCode,
+        user,
+        req.strands,
+        mark_scheme_filename,
+        False,   # has_math — determined from spec inside process_pdf
+        req.tier,
+        paper_meta,
+    )
+
+    return {"job_id": job_id}

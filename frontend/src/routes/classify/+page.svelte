@@ -11,7 +11,10 @@
 		saveUserModules,
 		getUserTier,
 		saveUserTier,
-		type SpecInfo
+		getPastPapers,
+		classifyPastPaper,
+		type SpecInfo,
+		type PastPaper
 	} from '$lib/api';
 	import StrandPicker from '$lib/components/StrandPicker.svelte';
 	import { shouldAnimate, DURATIONS } from '$lib/motion';
@@ -42,6 +45,14 @@
 	let tierLoadedForSpec: string | null = $state(null);
 	let tierSaveTimeout: ReturnType<typeof setTimeout> | null = null;
 
+	// Paper source toggle
+	let paperSource: 'upload' | 'library' = $state('upload');
+
+	// Past papers library
+	let pastPapers: PastPaper[] = $state([]);
+	let pastPapersLoading = $state(false);
+	let pastPapersError: string | null = $state(null);
+
 	// Derived from selected spec
 	let currentSpec = $derived(allSpecs.find((s) => s.spec_code === specCode) ?? null);
 	let selectedSpecLabel = $derived(
@@ -49,6 +60,33 @@
 			? `${currentSpec.exam_board} ${currentSpec.qualification} ${currentSpec.subject} (${currentSpec.spec_code})`
 			: 'No specification'
 	);
+	let isAqaSpec = $derived(currentSpec?.exam_board === 'AQA');
+
+	// Group past papers by year+series for display
+	type PaperGroup = { year: number | null; series: string | null; papers: PastPaper[] };
+
+	function groupPapers(papers: PastPaper[]): PaperGroup[] {
+		const map = new Map<string, PaperGroup>();
+		for (const p of papers) {
+			const key = `${p.year ?? 'unknown'}-${p.series ?? 'unknown'}`;
+			if (!map.has(key)) {
+				map.set(key, { year: p.year, series: p.series, papers: [] });
+			}
+			map.get(key)!.papers.push(p);
+		}
+		return [...map.values()].sort((a, b) => {
+			const yearDiff = (b.year ?? 0) - (a.year ?? 0);
+			if (yearDiff !== 0) return yearDiff;
+			return (a.series ?? '').localeCompare(b.series ?? '');
+		});
+	}
+
+	let filteredPapers = $derived(
+		currentSpec?.has_tiers && selectedTier
+			? pastPapers.filter((p) => !p.tier || p.tier === selectedTier)
+			: pastPapers
+	);
+	let paperGroups = $derived(groupPapers(filteredPapers));
 
 	let fileInput: HTMLInputElement;
 	let markSchemeInput: HTMLInputElement;
@@ -78,7 +116,7 @@
 		}
 	});
 
-	// When spec changes, load module and tier selections
+	// When spec changes, load module and tier selections + reset library state
 	$effect(() => {
 		const spec = currentSpec;
 		// Reset strand selections when spec changes
@@ -88,6 +126,9 @@
 		selectedTier = null;
 		tierLoadedForSpec = null;
 		hasMath = false;
+		paperSource = 'upload';
+		pastPapers = [];
+		pastPapersError = null;
 
 		if (spec?.optional_modules) {
 			getUserModules(spec.spec_code)
@@ -110,6 +151,21 @@
 				.catch((e) => {
 					console.error('Failed to load user tier:', e);
 					tierLoadedForSpec = spec.spec_code;
+				});
+		}
+
+		// Load past papers for AQA specs
+		if (spec?.exam_board === 'AQA') {
+			pastPapersLoading = true;
+			getPastPapers(spec.spec_code)
+				.then((data) => {
+					pastPapers = data;
+					pastPapersLoading = false;
+				})
+				.catch((e) => {
+					console.error('Failed to load past papers:', e);
+					pastPapersError = 'Could not load past papers.';
+					pastPapersLoading = false;
 				});
 		}
 	});
@@ -209,6 +265,28 @@
 		}
 	}
 
+	async function handleLibraryClassify(paper: PastPaper, includeMs: boolean) {
+		isUploading = true;
+		pdfStatus = 'Preparing paper...';
+
+		try {
+			const uploadSpecCode = specCode === 'None' ? 'NONE' : specCode;
+			const strands = specCode === 'None' ? undefined : getEffectiveStrands();
+			const tier = specCode === 'None' ? undefined : (selectedTier ?? undefined);
+			const data = await classifyPastPaper(uploadSpecCode, paper.content_id, {
+				strands,
+				tier,
+				include_ms: includeMs && paper.ms_content_id !== null
+			});
+			pollJobStatus(data.job_id);
+		} catch (error) {
+			console.error('Error classifying past paper:', error);
+			alert('Failed to start processing. The paper index may need to be refreshed.');
+			isUploading = false;
+			pdfStatus = '';
+		}
+	}
+
 	function pollJobStatus(jobId: string) {
 		const interval = setInterval(async () => {
 			try {
@@ -254,6 +332,11 @@
 
 	function staggerDelay(i: number): number {
 		return shouldAnimate() ? i * DURATIONS.stagger : 0;
+	}
+
+	function capitalise(s: string | null): string {
+		if (!s) return '';
+		return s.charAt(0).toUpperCase() + s.slice(1);
 	}
 </script>
 
@@ -411,48 +494,142 @@
 			</div>
 		{/if}
 
-		<!-- PDF Upload -->
+		<!-- PDF Upload / AQA Library -->
 		<div class="section" in:fly={{ y: 20, duration: 300, delay: 100 }}>
-			<label>Upload Question Paper (PDF)</label>
-			<div class="pdf-upload-area">
-				<input
-					type="file"
-					id="pdf-upload"
-					accept="application/pdf"
-					bind:this={fileInput}
-					onchange={handleFileChange}
-					class="file-input-hidden"
-				/>
-				<label for="pdf-upload" class="file-input-label" class:file-selected={!!selectedFileName}>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-						<polyline points="17 8 12 3 7 8"/>
-						<line x1="12" y1="3" x2="12" y2="15"/>
-					</svg>
-					<span class="file-label-text">{selectedFileName || 'Choose PDF file'}</span>
-				</label>
-				<button type="button" class="btn-upload" onclick={handlePdfUpload} disabled={isUploading}>
-					{isUploading ? 'Processing...' : 'Upload & Extract'}
-				</button>
-			</div>
-			<div class="pdf-upload-area" style="margin-top: 0.5rem;">
-				<input
-					type="file"
-					id="mark-scheme-upload"
-					accept="application/pdf"
-					bind:this={markSchemeInput}
-					onchange={() => { markSchemeFileName = markSchemeInput?.files?.[0]?.name ?? ''; }}
-					class="file-input-hidden"
-				/>
-				<label for="mark-scheme-upload" class="file-input-label" class:file-selected={!!markSchemeFileName}>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-						<polyline points="17 8 12 3 7 8"/>
-						<line x1="12" y1="3" x2="12" y2="15"/>
-					</svg>
-					<span class="file-label-text">{markSchemeFileName || 'Mark Scheme (optional)'}</span>
-				</label>
-			</div>
+			{#if isAqaSpec}
+				<!-- Source toggle -->
+				<div class="source-toggle">
+					<button
+						type="button"
+						class="source-tab"
+						class:active={paperSource === 'upload'}
+						onclick={() => (paperSource = 'upload')}
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+							<polyline points="17 8 12 3 7 8"/>
+							<line x1="12" y1="3" x2="12" y2="15"/>
+						</svg>
+						Upload PDF
+					</button>
+					<button
+						type="button"
+						class="source-tab"
+						class:active={paperSource === 'library'}
+						onclick={() => (paperSource = 'library')}
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+							<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+						</svg>
+						AQA Past Papers
+					</button>
+				</div>
+			{:else}
+				<label>Upload Question Paper (PDF)</label>
+			{/if}
+
+			{#if paperSource === 'upload' || !isAqaSpec}
+				<!-- Upload UI -->
+				<div class="pdf-upload-area">
+					<input
+						type="file"
+						id="pdf-upload"
+						accept="application/pdf"
+						bind:this={fileInput}
+						onchange={handleFileChange}
+						class="file-input-hidden"
+					/>
+					<label for="pdf-upload" class="file-input-label" class:file-selected={!!selectedFileName}>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+							<polyline points="17 8 12 3 7 8"/>
+							<line x1="12" y1="3" x2="12" y2="15"/>
+						</svg>
+						<span class="file-label-text">{selectedFileName || 'Choose PDF file'}</span>
+					</label>
+					<button type="button" class="btn-upload" onclick={handlePdfUpload} disabled={isUploading}>
+						{isUploading ? 'Processing...' : 'Upload & Extract'}
+					</button>
+				</div>
+				<div class="pdf-upload-area" style="margin-top: 0.5rem;">
+					<input
+						type="file"
+						id="mark-scheme-upload"
+						accept="application/pdf"
+						bind:this={markSchemeInput}
+						onchange={() => { markSchemeFileName = markSchemeInput?.files?.[0]?.name ?? ''; }}
+						class="file-input-hidden"
+					/>
+					<label for="mark-scheme-upload" class="file-input-label" class:file-selected={!!markSchemeFileName}>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+							<polyline points="17 8 12 3 7 8"/>
+							<line x1="12" y1="3" x2="12" y2="15"/>
+						</svg>
+						<span class="file-label-text">{markSchemeFileName || 'Mark Scheme (optional)'}</span>
+					</label>
+				</div>
+			{:else}
+				<!-- Library panel -->
+				<div class="library-panel">
+					{#if pastPapersLoading}
+						<div class="library-loading">
+							<span class="pdf-spinner"></span>
+							Loading past papers...
+						</div>
+					{:else if pastPapersError}
+						<p class="library-error">{pastPapersError}</p>
+					{:else if pastPapers.length === 0}
+						<p class="library-empty">No past papers found for this specification.</p>
+					{:else}
+						{#each paperGroups as group}
+							<div class="paper-group">
+								<div class="paper-group-header">
+									<span class="paper-year">{group.year ?? 'Unknown year'}</span>
+									<span class="paper-series">{capitalise(group.series)}</span>
+								</div>
+								{#each group.papers as paper}
+									<div class="paper-row">
+										<span class="paper-number">Paper {paper.paper_number ?? '?'}{paper.paper_name ? ' ' + paper.paper_name : ''}</span>
+										<div class="paper-actions">
+											<a
+												href={paper.source_url}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="btn-view"
+												title="Open PDF in new tab"
+											>
+												<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+												View
+											</a>
+											<button
+												type="button"
+												class="btn-use"
+												onclick={() => handleLibraryClassify(paper, false)}
+												disabled={isUploading}
+											>
+												Use
+											</button>
+											{#if paper.ms_content_id}
+												<button
+													type="button"
+													class="btn-use btn-use-ms"
+													onclick={() => handleLibraryClassify(paper, true)}
+													disabled={isUploading}
+												>
+													Use + MS
+												</button>
+											{/if}
+										</div>
+									</div>
+								{/each}
+							</div>
+						{/each}
+					{/if}
+				</div>
+			{/if}
+
 			{#if pdfStatus}
 				<div class="pdf-status" in:fade={{ duration: 200 }}>
 					{#if isUploading}
@@ -749,6 +926,185 @@
 		border-color: var(--color-primary);
 		background: var(--color-primary);
 		color: #fff;
+	}
+
+	/* ─── Source toggle (Upload / Library) ─── */
+	.source-toggle {
+		display: flex;
+		gap: 4px;
+		margin-bottom: 12px;
+		background: var(--color-surface-alt);
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		padding: 3px;
+	}
+
+	.source-tab {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 6px;
+		padding: 7px 14px;
+		border: none;
+		border-radius: calc(var(--radius-sm) - 2px);
+		background: transparent;
+		color: var(--color-text-muted);
+		font-size: 0.9rem;
+		font-weight: 500;
+		font-family: var(--font-body);
+		cursor: pointer;
+		transition:
+			background var(--transition-fast),
+			color var(--transition-fast),
+			box-shadow var(--transition-fast);
+	}
+
+	.source-tab:hover:not(.active) {
+		color: var(--color-text);
+		background: var(--color-surface);
+	}
+
+	.source-tab.active {
+		background: var(--color-surface);
+		color: var(--color-text);
+		font-weight: 600;
+		box-shadow: var(--shadow-sm);
+	}
+
+	/* ─── Library panel ─── */
+	.library-panel {
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		background: var(--color-surface);
+		overflow: hidden;
+	}
+
+	.library-loading,
+	.library-error,
+	.library-empty {
+		padding: 20px 16px;
+		font-size: 0.9rem;
+		color: var(--color-text-muted);
+		text-align: center;
+	}
+
+	.library-error {
+		color: var(--color-danger, #e03);
+	}
+
+	.paper-group {
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.paper-group:last-child {
+		border-bottom: none;
+	}
+
+	.paper-group-header {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		padding: 8px 14px 6px;
+		background: var(--color-surface-alt);
+	}
+
+	.paper-year {
+		font-size: 0.88rem;
+		font-weight: 700;
+		color: var(--color-text);
+	}
+
+	.paper-series {
+		font-size: 0.82rem;
+		color: var(--color-text-muted);
+		font-weight: 500;
+	}
+
+	.paper-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 8px 14px;
+		gap: 12px;
+		transition: background var(--transition-fast);
+	}
+
+	.paper-row:hover {
+		background: var(--color-surface-alt);
+	}
+
+	.paper-number {
+		font-size: 0.92rem;
+		color: var(--color-text);
+		font-weight: 500;
+	}
+
+	.paper-actions {
+		display: flex;
+		gap: 6px;
+		flex-shrink: 0;
+	}
+
+	.btn-view {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		padding: 5px 12px;
+		border-radius: var(--radius-sm);
+		border: 1.5px solid var(--color-border);
+		background: var(--color-surface);
+		color: var(--color-text-muted);
+		font-size: 0.85rem;
+		font-weight: 500;
+		font-family: var(--font-body);
+		cursor: pointer;
+		white-space: nowrap;
+		text-decoration: none;
+		transition:
+			border-color var(--transition-fast),
+			color var(--transition-fast),
+			background var(--transition-fast);
+	}
+
+	.btn-view:hover {
+		border-color: var(--color-border-hover);
+		color: var(--color-text);
+		background: var(--color-surface-alt);
+	}
+
+	.btn-use {
+		padding: 5px 14px;
+		border-radius: var(--radius-sm);
+		border: 1.5px solid var(--color-border);
+		background: var(--color-surface);
+		color: var(--color-text);
+		font-size: 0.85rem;
+		font-weight: 600;
+		font-family: var(--font-body);
+		cursor: pointer;
+		white-space: nowrap;
+		transition:
+			background var(--transition-fast),
+			border-color var(--transition-fast),
+			color var(--transition-fast);
+	}
+
+	.btn-use:hover:not(:disabled) {
+		background: var(--color-primary);
+		border-color: var(--color-primary);
+		color: #fff;
+	}
+
+	.btn-use-ms:hover:not(:disabled) {
+		background: var(--color-text);
+		border-color: var(--color-text);
+		color: var(--color-surface);
+	}
+
+	.btn-use:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
 	}
 
 	/* ─── PDF Upload Area ─── */

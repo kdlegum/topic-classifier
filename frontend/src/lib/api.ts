@@ -668,3 +668,55 @@ export async function saveUserTier(specCode: string, tier: string | null): Promi
 
 	return response.json();
 }
+
+export type PastPaper = {
+	content_id: string;
+	spec_code: string;
+	subject: string;
+	year: number | null;
+	series: string | null;
+	paper_number: string | null;
+	tier: string | null;
+	filename: string;
+	source_url: string;
+	ms_content_id: string | null;
+};
+
+/**
+ * Get AQA past papers from the library index for a given spec
+ */
+export async function getPastPapers(specCode: string): Promise<PastPaper[]> {
+	const response = await apiFetch(`/past-papers?spec_code=${encodeURIComponent(specCode)}`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch past papers: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
+ * Trigger on-demand download + classification of an AQA past paper
+ */
+export async function classifyPastPaper(
+	specCode: string,
+	contentId: string,
+	options?: { strands?: string[]; tier?: string; include_ms?: boolean }
+): Promise<{ job_id: string }> {
+	const response = await apiFetch(`/classify-past-paper/${encodeURIComponent(specCode)}`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({
+			content_id: contentId,
+			strands: options?.strands,
+			tier: options?.tier,
+			include_ms: options?.include_ms ?? true
+		})
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to classify past paper: ${response.status}`);
+	}
+
+	return response.json();
+}

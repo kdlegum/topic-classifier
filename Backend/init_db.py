@@ -17,7 +17,12 @@ migrations = [
     "ALTER TABLE session ADD COLUMN mark_scheme_filename VARCHAR DEFAULT NULL",
     "ALTER TABLE session ADD COLUMN no_spec BOOLEAN DEFAULT FALSE",
     "ALTER TABLE session ADD COLUMN name TEXT DEFAULT NULL",
-    "UPDATE specification SET content_hash = NULL WHERE creator_id IS NULL",
+    "ALTER TABLE pastpaper ADD COLUMN tier VARCHAR DEFAULT NULL",
+    "ALTER TABLE pastpaper ADD COLUMN paper_name VARCHAR DEFAULT NULL",
+    "ALTER TABLE session ADD COLUMN paper_number VARCHAR DEFAULT NULL",
+    "ALTER TABLE session ADD COLUMN paper_name VARCHAR DEFAULT NULL",
+    "ALTER TABLE session ADD COLUMN paper_year INTEGER DEFAULT NULL",
+    "ALTER TABLE session ADD COLUMN paper_series VARCHAR DEFAULT NULL",
 ]
 
 for sql in migrations:

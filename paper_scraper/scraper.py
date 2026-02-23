@@ -145,6 +145,16 @@ def parse_display_name(display_name: str) -> dict:
     paper_match = re.search(r"Paper\s+(\d+[A-Za-z]?)", display_name, re.IGNORECASE)
     meta["paper_number"] = paper_match.group(1) if paper_match else None
 
+    # Paper name: descriptive suffix after the paper number, e.g. "Mechanics" in "Paper 3 Mechanics"
+    paper_name_match = re.search(
+        r"Paper\s+\d+[A-Za-z]?\s+([A-Za-z][A-Za-z ]*?)(?=\s*-|\s*$)",
+        display_name, re.IGNORECASE,
+    )
+    meta["paper_name"] = paper_name_match.group(1).strip() if paper_name_match else None
+
+    tier_match = re.search(r"\b(Higher|Foundation)\b", display_name, re.IGNORECASE)
+    meta["tier"] = tier_match.group(1).capitalize() if tier_match else None
+
     return meta
 
 
@@ -160,6 +170,10 @@ def build_entry(result: dict, spec_code: str, subject: str) -> dict:
     filename = id_meta["filename"]
     paper_type = name_meta["paper_type"]
 
+    # Tier: prefer direct API field, fall back to display name parse
+    raw_tier = result.get("tier") or result.get("examTier")
+    tier = raw_tier or name_meta.get("tier")
+
     # Construct download URL from contentId — keep _PDF suffix, it's part of the path
     source_url = f"{config.BASE_URL}/files/{content_id}"
 
@@ -174,7 +188,9 @@ def build_entry(result: dict, spec_code: str, subject: str) -> dict:
         "series": series,
         "paper_type": paper_type,
         "paper_number": name_meta["paper_number"],
+        "paper_name": name_meta["paper_name"],
         "is_modified": name_meta["is_modified"],
+        "tier": tier,
         "filename": filename,
         "local_path": local_path,
         "source_url": source_url,
