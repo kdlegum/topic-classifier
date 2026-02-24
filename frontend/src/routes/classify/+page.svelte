@@ -60,7 +60,9 @@
 			? `${currentSpec.exam_board} ${currentSpec.qualification} ${currentSpec.subject} (${currentSpec.spec_code})`
 			: 'No specification'
 	);
-	let isAqaSpec = $derived(currentSpec?.exam_board === 'AQA');
+	let hasPastPapers = $derived(
+		currentSpec?.exam_board === 'AQA' || currentSpec?.exam_board === 'Edexcel'
+	);
 
 	// Group past papers by year+series for display
 	type PaperGroup = { year: number | null; series: string | null; papers: PastPaper[] };
@@ -154,8 +156,8 @@
 				});
 		}
 
-		// Load past papers for AQA specs
-		if (spec?.exam_board === 'AQA') {
+		// Load past papers for supported boards (AQA, Edexcel)
+		if (spec?.exam_board === 'AQA' || spec?.exam_board === 'Edexcel') {
 			pastPapersLoading = true;
 			getPastPapers(spec.spec_code)
 				.then((data) => {
@@ -494,9 +496,9 @@
 			</div>
 		{/if}
 
-		<!-- PDF Upload / AQA Library -->
+		<!-- PDF Upload / Past Papers Library -->
 		<div class="section" in:fly={{ y: 20, duration: 300, delay: 100 }}>
-			{#if isAqaSpec}
+			{#if hasPastPapers}
 				<!-- Source toggle -->
 				<div class="source-toggle">
 					<button
@@ -522,14 +524,14 @@
 							<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
 							<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
 						</svg>
-						AQA Past Papers
+						Past Papers
 					</button>
 				</div>
 			{:else}
 				<label>Upload Question Paper (PDF)</label>
 			{/if}
 
-			{#if paperSource === 'upload' || !isAqaSpec}
+			{#if paperSource === 'upload' || !hasPastPapers}
 				<!-- Upload UI -->
 				<div class="pdf-upload-area">
 					<input

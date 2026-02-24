@@ -1,1 +1,1 @@
-# AQA past paper scraper package
+# Past paper scraper package (AQA, Edexcel)

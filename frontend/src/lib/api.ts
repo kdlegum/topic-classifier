@@ -683,7 +683,7 @@ export type PastPaper = {
 };
 
 /**
- * Get AQA past papers from the library index for a given spec
+ * Get past papers from the library index for a given spec (AQA and Edexcel supported)
  */
 export async function getPastPapers(specCode: string): Promise<PastPaper[]> {
 	const response = await apiFetch(`/past-papers?spec_code=${encodeURIComponent(specCode)}`);
@@ -696,7 +696,7 @@ export async function getPastPapers(specCode: string): Promise<PastPaper[]> {
 }
 
 /**
- * Trigger on-demand download + classification of an AQA past paper
+ * Trigger on-demand download + classification of a past paper
  */
 export async function classifyPastPaper(
 	specCode: string,

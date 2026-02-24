@@ -136,6 +136,7 @@
 			</div>
 		{:else if sessions}
 			{#each sessions as session, i (session.session_id)}
+				{@const paperLabel = getPaperLabel(session)}
 				<a
 					href="/mark_session/{session.session_id}"
 					class="session-card"
@@ -154,7 +155,6 @@
 					{:else}
 						<span class="session-board">{session.exam_board}</span>
 					{/if}
-							{@const paperLabel = getPaperLabel(session)}
 							{#if paperLabel}
 								<span class="session-paper">{paperLabel}</span>
 							{/if}

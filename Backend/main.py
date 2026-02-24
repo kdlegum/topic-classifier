@@ -38,8 +38,10 @@ from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
 from paper_scraper.downloader import download_pdf as scraper_download_pdf
-from paper_scraper import config as paper_scraper_config
-from paper_scraper.scraper import fetch_all_results, build_entry
+from paper_scraper import aqa_config as aqa_scraper_config
+from paper_scraper import edexcel_config as edexcel_scraper_config
+from paper_scraper.aqa_scraper import fetch_all_results as aqa_fetch_all_results, build_entry as aqa_build_entry
+from paper_scraper.edexcel_scraper import fetch_all_hits as edexcel_fetch_all_hits, parse_hit as edexcel_parse_hit
 limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
@@ -2582,7 +2584,7 @@ def record_revision_attempt(
         }
 
 
-# ── AQA Past Papers Library ───────────────────────────────────────────────────
+# ── Past Papers Library ───────────────────────────────────────────────────────
 
 def _index_past_papers(spec_code: str) -> None:
     """Fetch AQA API metadata for spec_code and upsert into PastPaper table (no downloads)."""
@@ -2591,13 +2593,13 @@ def _index_past_papers(spec_code: str) -> None:
     # Look up subject from the Specification table; fall back to config or "Unknown"
     with Session(engine) as db:
         spec_row = db.exec(select(Specification).where(Specification.spec_code == spec_code)).first()
-    subject = spec_row.subject if spec_row else paper_scraper_config.SPECS.get(spec_code, "Unknown")
+    subject = spec_row.subject if spec_row else aqa_scraper_config.SPECS.get(spec_code, "Unknown")
     http = requests.Session()
     http.headers["User-Agent"] = "TopicTracker/1.0 Educational"
-    results = fetch_all_results(spec_code, http)
+    results = aqa_fetch_all_results(spec_code, http)
     with Session(engine) as db:
         for result in results:
-            entry = build_entry(result, spec_code, subject)
+            entry = aqa_build_entry(result, spec_code, subject)
             if entry["paper_type"] not in ("QP", "MS") or entry.get("is_modified"):
                 continue
             existing = db.get(PastPaper, entry["content_id"])
@@ -2629,6 +2631,51 @@ def _index_past_papers(spec_code: str) -> None:
     logger.info("Indexed past papers for spec %s (%d results)", spec_code, len(results))
 
 
+def _index_past_papers_edexcel(spec_code: str) -> None:
+    """Fetch Edexcel Algolia metadata for spec_code and upsert into PastPaper table (no downloads)."""
+    import logging
+    logger = logging.getLogger(__name__)
+    if spec_code not in edexcel_scraper_config.SPECS:
+        logger.warning("No Edexcel config for spec %s; skipping index", spec_code)
+        return
+    spec_cfg = edexcel_scraper_config.SPECS[spec_code]
+    http = requests.Session()
+    http.headers["User-Agent"] = "TopicTracker/1.0 Educational"
+    hits = edexcel_fetch_all_hits(spec_cfg["algolia_code"], http)
+    with Session(engine) as db:
+        for hit in hits:
+            entry = edexcel_parse_hit(hit, spec_code, spec_cfg)
+            if entry is None:
+                continue
+            existing = db.get(PastPaper, entry["content_id"])
+            if existing:
+                existing.local_path = entry["local_path"]
+                existing.source_url = entry["source_url"]
+                existing.scraped_at = entry["scraped_at"]
+                if entry.get("file_size_kb") is not None:
+                    existing.file_size_kb = entry["file_size_kb"]
+                db.add(existing)
+            else:
+                db.add(PastPaper(
+                    content_id=entry["content_id"],
+                    spec_code=entry["spec_code"],
+                    subject=entry["subject"],
+                    year=entry["year"],
+                    series=entry["series"],
+                    paper_type=entry["paper_type"],
+                    paper_number=entry.get("paper_number"),
+                    paper_name=entry.get("paper_name"),
+                    tier=entry.get("tier"),
+                    filename=entry["filename"],
+                    local_path=entry["local_path"],
+                    source_url=entry["source_url"],
+                    file_size_kb=entry.get("file_size_kb"),
+                    scraped_at=entry["scraped_at"],
+                ))
+        db.commit()
+    logger.info("Indexed Edexcel past papers for spec %s (%d hits)", spec_code, len(hits))
+
+
 @app.get("/past-papers")
 def get_past_papers(
     spec_code: str = Query(..., description="Specification code to list papers for"),
@@ -2636,7 +2683,7 @@ def get_past_papers(
     user=Depends(get_user),
 ):
     """Return all QP entries for a spec with their matched MS content_id attached.
-    Auto-indexes from AQA API on first request for a spec."""
+    Auto-indexes from the exam board API on first request for a spec."""
     # Auto-populate if this spec has never been indexed
     with Session(engine) as db:
         has_any = db.exec(
@@ -2644,7 +2691,11 @@ def get_past_papers(
         ).first()
 
     if has_any is None:
-        _index_past_papers(spec_code)
+        exam_board = allSpecs.get(spec_code, {}).get("Exam Board", "")
+        if exam_board == "Edexcel":
+            _index_past_papers_edexcel(spec_code)
+        else:
+            _index_past_papers(spec_code)
 
     with Session(engine) as db:
         qps = db.exec(

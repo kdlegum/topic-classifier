@@ -21,3 +21,7 @@ ITEMS_PER_PAGE_SELECTOR = "select[aria-label*='Items per page'], select[name*='p
 # Rate limiting
 PAGE_DELAY_S = 1.5       # seconds between page navigations
 DOWNLOAD_DELAY_S = 1.0   # seconds between PDF downloads
+
+# Papers from years after MAX_YEAR are skipped (typically still locked/unreleased).
+# Raise this once a series becomes publicly available.
+MAX_YEAR = 2024

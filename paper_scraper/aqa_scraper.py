@@ -4,10 +4,10 @@ AQA Past Papers Scraper
 Uses the undocumented AQA JSON search API — no browser required.
 
 Usage:
-    python -m paper_scraper.scraper [--spec-code CODE] [--dry-run]
+    python -m paper_scraper --board aqa [--spec-code CODE] [--dry-run]
 
     --spec-code CODE   Scrape only the given AQA spec code (e.g. 7367).
-                       Defaults to all codes in config.SPECS.
+                       Defaults to all codes in aqa_config.SPECS.
     --dry-run          Print discovered entries without downloading anything.
 """
 
@@ -21,7 +21,7 @@ from pathlib import Path
 
 import requests
 
-from paper_scraper import config
+from paper_scraper import aqa_config as config
 from paper_scraper.downloader import download_pdf
 
 
@@ -223,6 +223,10 @@ def scrape_spec(spec_code: str, subject: str, dry_run: bool,
 
         # Only keep standard QP and MS — skip modified formats, examiner reports, etc.
         if entry["paper_type"] not in ("QP", "MS") or entry["is_modified"]:
+            continue
+
+        # Skip papers that are still locked/unreleased
+        if entry["year"] is not None and entry["year"] > config.MAX_YEAR:
             continue
 
         if dry_run:
