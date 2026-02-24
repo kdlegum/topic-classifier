@@ -61,7 +61,7 @@
 			: 'No specification'
 	);
 	let hasPastPapers = $derived(
-		currentSpec?.exam_board === 'AQA' || currentSpec?.exam_board === 'Edexcel'
+		currentSpec?.exam_board === 'AQA' || currentSpec?.exam_board === 'Edexcel' || currentSpec?.exam_board === 'OCR'
 	);
 
 	// Group past papers by year+series for display
@@ -156,8 +156,8 @@
 				});
 		}
 
-		// Load past papers for supported boards (AQA, Edexcel)
-		if (spec?.exam_board === 'AQA' || spec?.exam_board === 'Edexcel') {
+		// Load past papers for supported boards (AQA, Edexcel, OCR)
+		if (spec?.exam_board === 'AQA' || spec?.exam_board === 'Edexcel' || spec?.exam_board === 'OCR') {
 			pastPapersLoading = true;
 			getPastPapers(spec.spec_code)
 				.then((data) => {
@@ -593,7 +593,7 @@
 								</div>
 								{#each group.papers as paper}
 									<div class="paper-row">
-										<span class="paper-number">Paper {paper.paper_number ?? '?'}{paper.paper_name ? ' ' + paper.paper_name : ''}</span>
+										<span class="paper-number">Paper {paper.paper_number ?? '?'}</span>
 										<div class="paper-actions">
 											<a
 												href={paper.source_url}

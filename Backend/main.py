@@ -40,8 +40,10 @@ from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embe
 from paper_scraper.downloader import download_pdf as scraper_download_pdf
 from paper_scraper import aqa_config as aqa_scraper_config
 from paper_scraper import edexcel_config as edexcel_scraper_config
+from paper_scraper import ocr_config as ocr_scraper_config
 from paper_scraper.aqa_scraper import fetch_all_results as aqa_fetch_all_results, build_entry as aqa_build_entry
 from paper_scraper.edexcel_scraper import fetch_all_hits as edexcel_fetch_all_hits, parse_hit as edexcel_parse_hit
+from paper_scraper.ocr_scraper import fetch_resources_html as ocr_fetch_resources_html, parse_resources_html as ocr_parse_resources_html, build_entry as ocr_build_entry
 limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
@@ -2676,6 +2678,57 @@ def _index_past_papers_edexcel(spec_code: str) -> None:
     logger.info("Indexed Edexcel past papers for spec %s (%d hits)", spec_code, len(hits))
 
 
+def _index_past_papers_ocr(spec_code: str) -> None:
+    """Fetch OCR resource-filter metadata for spec_code and upsert into PastPaper table (no downloads)."""
+    import logging
+    logger = logging.getLogger(__name__)
+    if spec_code not in ocr_scraper_config.SPECS:
+        logger.warning("No OCR config for spec %s; skipping index", spec_code)
+        return
+    spec_cfg = ocr_scraper_config.SPECS[spec_code]
+    http = requests.Session()
+    http.headers["User-Agent"] = "TopicTracker/1.0 Educational"
+    html = ocr_fetch_resources_html(
+        spec_cfg["qualification_value"],
+        spec_cfg["level"],
+        spec_cfg.get("page_id", ""),
+        http,
+    )
+    raw_items = ocr_parse_resources_html(html)
+    with Session(engine) as db:
+        for item in raw_items:
+            entry = ocr_build_entry(item, spec_code, spec_cfg)
+            if entry is None:
+                continue
+            existing = db.get(PastPaper, entry["content_id"])
+            if existing:
+                existing.local_path = entry["local_path"]
+                existing.source_url = entry["source_url"]
+                existing.scraped_at = entry["scraped_at"]
+                if entry.get("file_size_kb") is not None:
+                    existing.file_size_kb = entry["file_size_kb"]
+                db.add(existing)
+            else:
+                db.add(PastPaper(
+                    content_id=entry["content_id"],
+                    spec_code=entry["spec_code"],
+                    subject=entry["subject"],
+                    year=entry["year"],
+                    series=entry["series"],
+                    paper_type=entry["paper_type"],
+                    paper_number=entry.get("paper_number"),
+                    paper_name=entry.get("paper_name"),
+                    tier=entry.get("tier"),
+                    filename=entry["filename"],
+                    local_path=entry["local_path"],
+                    source_url=entry["source_url"],
+                    file_size_kb=entry.get("file_size_kb"),
+                    scraped_at=entry["scraped_at"],
+                ))
+        db.commit()
+    logger.info("Indexed OCR past papers for spec %s (%d items)", spec_code, len(raw_items))
+
+
 @app.get("/past-papers")
 def get_past_papers(
     spec_code: str = Query(..., description="Specification code to list papers for"),
@@ -2694,6 +2747,8 @@ def get_past_papers(
         exam_board = allSpecs.get(spec_code, {}).get("Exam Board", "")
         if exam_board == "Edexcel":
             _index_past_papers_edexcel(spec_code)
+        elif exam_board == "OCR":
+            _index_past_papers_ocr(spec_code)
         else:
             _index_past_papers(spec_code)
 

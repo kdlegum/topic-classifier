@@ -2,13 +2,14 @@
 Unified paper scraper entry point.
 
 Usage (run from project root):
-    python -m paper_scraper --board {aqa,edexcel} [board-specific options...]
+    python -m paper_scraper --board {aqa,edexcel,ocr} [board-specific options...]
 
     --board aqa       Scrape AQA past papers
     --board edexcel   Scrape Edexcel / Pearson past papers
+    --board ocr       Scrape OCR past papers
 
 All remaining arguments are forwarded to the board-specific scraper.
-Run with `--board aqa --help` or `--board edexcel --help` for board-specific options.
+Run with `--board aqa --help` or `--board edexcel --help` or `--board ocr --help` for board-specific options.
 """
 
 import sys
@@ -16,14 +17,15 @@ import sys
 
 def main():
     if "--board" not in sys.argv:
-        print("Usage: python -m paper_scraper --board {aqa,edexcel} [options]")
+        print("Usage: python -m paper_scraper --board {aqa,edexcel,ocr} [options]")
         print("  --board aqa      Scrape AQA past papers")
         print("  --board edexcel  Scrape Edexcel / Pearson past papers")
+        print("  --board ocr      Scrape OCR past papers")
         sys.exit(1)
 
     idx = sys.argv.index("--board")
     if idx + 1 >= len(sys.argv):
-        print("Error: --board requires a value (aqa or edexcel)")
+        print("Error: --board requires a value (aqa, edexcel, or ocr)")
         sys.exit(1)
 
     board = sys.argv[idx + 1].lower()
@@ -36,8 +38,11 @@ def main():
     elif board == "edexcel":
         from paper_scraper.edexcel_scraper import main as _main
         _main()
+    elif board == "ocr":
+        from paper_scraper.ocr_scraper import main as _main
+        _main()
     else:
-        print(f"Unknown board: {board!r}. Available boards: aqa, edexcel")
+        print(f"Unknown board: {board!r}. Available boards: aqa, edexcel, ocr")
         sys.exit(1)
 
 
