@@ -127,16 +127,12 @@ def _parse_section_year_series(heading_text: str) -> tuple[int | None, str | Non
 
 
 def _parse_component(unit_code_text: str) -> str | None:
-    """Extract component number from unit-code span, e.g. 'H640/01' → '01'.
-
-    Tolerates spaces around the slash (e.g. 'H645 / 03' → '03').
-    """
+    """Extract component number from unit-code span, e.g. 'H640/01' → '01'."""
     m = re.search(r"/\s*(\d+[A-Za-z]?)\s*$", unit_code_text.strip())
     return m.group(1) if m else None
 
 
 def _parse_file_size_kb(meta_text: str) -> float | None:
-    """Parse '- PDF 692KB' or '- PDF 2MB' → size in KB."""
     m = re.search(r"([\d.]+)\s*KB", meta_text, re.IGNORECASE)
     if m:
         return float(m.group(1))
@@ -163,7 +159,7 @@ def _parse_paper_name(filename: str) -> str | None:
     Returns None for answer booklets and PABs.
     """
     stem = re.sub(r"\.pdf$", "", filename, flags=re.IGNORECASE)
-    stem = re.sub(r"^\d+-", "", stem)  # strip leading numeric ID
+    stem = re.sub(r"^\d+-", "", stem)
 
     if stem.endswith("-answer-booklet") or stem.endswith("-answer-book") or stem.endswith("-pab"):
         return None
@@ -306,7 +302,7 @@ def scrape_spec(
     print(f"Scraping {spec_code}: {spec_config['subject']}")
     print(f"  qualification_value={qual_value}  level={level!r}")
 
-    # Step 1: confirm level is available
+    
     print("  Fetching available levels...")
     try:
         levels = fetch_levels(qual_value, session)
@@ -318,12 +314,12 @@ def scrape_spec(
     except Exception as exc:
         print(f"  WARNING: getlevels failed ({exc}) — proceeding anyway")
 
-    # Step 2: fetch resource HTML (~10 s)
+    
     print("  Fetching resource list (this may take ~10 s)...")
     html = fetch_resources_html(qual_value, level, page_id, session)
     print(f"  Response HTML length: {len(html)} chars")
 
-    # Step 3: parse
+    
     raw_items = parse_resources_html(html)
     print(f"  PDF links found: {len(raw_items)}")
 

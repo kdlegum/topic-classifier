@@ -2,10 +2,10 @@
 Populate the PastPaper index table from the exam board API (no downloads).
 
 Usage (run from project root):
-    python -m paper_scraper.populate_db --board {aqa,edexcel} [--spec-code CODE]
+    python -m paper_scraper.populate_db --board {aqa,edexcel,ocr} [--spec-code CODE]
 
-    --board BOARD      Exam board to index: aqa or edexcel (required)
-    --spec-code CODE   Index only the given spec code (e.g. 7357 for AQA, 9MA0 for Edexcel).
+    --board BOARD      Exam board to index: aqa, edexcel, or ocr (required)
+    --spec-code CODE   Index only the given spec code (e.g. 7357 for AQA, 9MA0 for Edexcel, H240 for OCR).
                        Defaults to all codes for the selected board.
 """
 
@@ -145,19 +145,86 @@ def run_edexcel(spec_code: str | None):
     print(f"\nFinished. Processed {total_processed} entries, inserted {total_inserted} new rows.")
 
 
+def run_ocr(spec_code: str | None):
+    from paper_scraper import ocr_config as config
+    from paper_scraper.ocr_scraper import fetch_levels, fetch_resources_html, parse_resources_html, build_entry
+
+    if spec_code:
+        if spec_code not in config.SPECS:
+            print(f"Unknown spec code '{spec_code}'. Available: {', '.join(config.SPECS)}")
+            sys.exit(1)
+        specs = {spec_code: config.SPECS[spec_code]}
+    else:
+        specs = config.SPECS
+
+    Session, engine, PastPaper = _import_db()
+    http = requests.Session()
+    http.headers.update({
+        "User-Agent": "TopicTracker/1.0 Educational",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": "https://www.ocr.org.uk/",
+    })
+
+    total_processed = 0
+    total_inserted = 0
+
+    for code, spec_config in specs.items():
+        print(f"\nIndexing {code}: {spec_config['subject']}")
+        qual_value = spec_config["qualification_value"]
+        level = spec_config["level"]
+        page_id = spec_config.get("page_id", "")
+
+        try:
+            levels = fetch_levels(qual_value, http)
+            if levels and level not in levels:
+                print(f"  WARNING: configured level {level!r} not in available levels {levels}")
+            time.sleep(config.PAGE_DELAY_S)
+        except Exception as e:
+            print(f"  WARNING: getlevels failed ({e}) — proceeding anyway")
+
+        try:
+            html = fetch_resources_html(qual_value, level, page_id, http)
+        except Exception as e:
+            print(f"  [ERROR] Failed to fetch resources for {code}: {e}")
+            continue
+
+        raw_items = parse_resources_html(html)
+        entries = [build_entry(item, code, spec_config) for item in raw_items]
+        entries = [e for e in entries if e is not None]
+        print(f"  {len(entries)} QP/MS entries found")
+
+        with Session(engine) as db:
+            for entry in entries:
+                if upsert_entry(db, PastPaper, entry):
+                    total_inserted += 1
+                total_processed += 1
+            db.commit()
+
+        print(f"  Done: {len(entries)} entries committed")
+        time.sleep(config.PAGE_DELAY_S)
+
+    print(f"\nFinished. Processed {total_processed} entries, inserted {total_inserted} new rows.")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Populate PastPaper DB from exam board API (no downloads)"
     )
-    parser.add_argument("--board", required=True, choices=["aqa", "edexcel"],
-                        help="Exam board to index")
-    parser.add_argument("--spec-code", help="Single spec code to index")
+    parser.add_argument("--board", required=True, choices=["aqa", "edexcel", "ocr", "all"],
+                        help="Exam board to index (use 'all' for every board)")
+    parser.add_argument("--spec-code", help="Single spec code to index (not valid with --board all)")
     args = parser.parse_args()
 
-    if args.board == "aqa":
+    if args.board == "all" and args.spec_code:
+        parser.error("--spec-code cannot be used with --board all")
+
+    if args.board in ("aqa", "all"):
         run_aqa(args.spec_code)
-    else:
+    if args.board in ("edexcel", "all"):
         run_edexcel(args.spec_code)
+    if args.board in ("ocr", "all"):
+        run_ocr(args.spec_code)
 
 
 if __name__ == "__main__":

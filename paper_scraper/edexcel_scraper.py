@@ -153,11 +153,19 @@ def parse_hit(hit: dict, spec_code: str, spec_config: dict) -> dict | None:
     if year is not None and year > config.MAX_YEAR:
         return None
 
-    # Paper / unit number
+    # Paper / unit number + tier
+    # Pearson encodes tier as a suffix on the Unit value: "Paper-1H" → paper 1, Higher tier.
+    # A-level papers have no suffix: "Paper-1" → paper 1, no tier.
     raw_unit = extract_category_value(cats, "Unit")
+    tier: str | None = None
     if raw_unit:
-        # Strip leading 'Paper-' prefix if present
-        paper_number = re.sub(r"^Paper-", "", raw_unit, flags=re.IGNORECASE)
+        unit_bare = re.sub(r"^Paper-", "", raw_unit, flags=re.IGNORECASE)
+        m_tier = re.match(r"^(\d+)([HF])$", unit_bare, re.IGNORECASE)
+        if m_tier:
+            paper_number = m_tier.group(1)
+            tier = "Higher" if m_tier.group(2).upper() == "H" else "Foundation"
+        else:
+            paper_number = unit_bare
     else:
         paper_number = None
 
@@ -188,7 +196,7 @@ def parse_hit(hit: dict, spec_code: str, spec_config: dict) -> dict | None:
         "paper_type": paper_type,
         "paper_number": paper_number,
         "paper_name": paper_name,
-        "tier": None,  # Edexcel A-level papers don't have Foundation/Higher tiers
+        "tier": tier,
         "filename": filename,
         "local_path": local_path,
         "source_url": f"{config.BASE_URL}{url_path_raw}",

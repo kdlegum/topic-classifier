@@ -98,16 +98,13 @@ def parse_content_id(content_id: str) -> dict:
     """
     meta: dict = {}
 
-    # Strip trailing _PDF
     bare = content_id
     if bare.endswith("_PDF"):
         bare = bare[:-4]
 
-    # Filename = last dot-segment
     filename_stem = bare.split(".")[-1]  # e.g. AQA-73671-QP-JUN23
     meta["filename"] = filename_stem + ".pdf"
 
-    # Year — second segment if it looks like a 4-digit number
     segments = bare.split(".")
     year_match = re.match(r"^(20\d{2})$", segments[1]) if len(segments) > 1 else None
     meta["year"] = int(year_match.group(1)) if year_match else None
@@ -225,7 +222,6 @@ def scrape_spec(spec_code: str, subject: str, dry_run: bool,
         if entry["paper_type"] not in ("QP", "MS") or entry["is_modified"]:
             continue
 
-        # Skip papers that are still locked/unreleased
         if entry["year"] is not None and entry["year"] > config.MAX_YEAR:
             continue
 
