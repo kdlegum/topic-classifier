@@ -26,10 +26,14 @@ from pdf_interpretation.llmParser import parse_pdf_with_vision
 
 try:
     from pdf_interpretation.pdfOCR import run_olmocr
+    from pdf_interpretation.olmocr_health import is_olmocr_healthy, start_health_scheduler, get_status as _get_olmocr_status
     OLMOCR_AVAILABLE = True
 except ImportError:
     OLMOCR_AVAILABLE = False
     run_olmocr = None
+    is_olmocr_healthy = lambda: False
+    start_health_scheduler = lambda: None
+    _get_olmocr_status = lambda: {"healthy": False, "last_result": "unavailable", "last_check_time": None, "next_check_in_seconds": None}
 
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questions, sort_questions
@@ -65,6 +69,20 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.on_event("startup")
+def startup_event():
+    if OLMOCR_AVAILABLE:
+        start_health_scheduler()
+
+
+@app.get("/debug/olmocr")
+def debug_olmocr():
+    return {
+        "olmocr_available": OLMOCR_AVAILABLE,
+        **_get_olmocr_status(),
+    }
+
 
 @app.exception_handler(RateLimitExceeded)
 def rate_limit_handler(request, exc):
@@ -1495,7 +1513,7 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
         marks_parser = None
 
         # Step A: olmOCR for good math text (or Gemini Vision fallback)
-        if OLMOCR_AVAILABLE:
+        if OLMOCR_AVAILABLE and is_olmocr_healthy():
             try:
                 updateStatus(job_id, "Using OCR to extract equations...")
                 _, olmocr_workspace = run_olmocr(pdf_path, "Backend/uploads/markdown")
@@ -1569,7 +1587,7 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
                 logger.warning("Gemini Vision failed for job %s: %s", job_id, e)
 
         # Try 3: Legacy olmOCR fallback
-        if not questions and OLMOCR_AVAILABLE:
+        if not questions and OLMOCR_AVAILABLE and is_olmocr_healthy():
             try:
                 updateStatus(job_id, "Using OCR to process PDF...")
                 _, olmocr_workspace = run_olmocr(pdf_path, "Backend/uploads/markdown")
