@@ -20,3 +20,7 @@ paper-scraper = "paper_scraper.__main__:main"
 [tool.setuptools.packages.find]
 where = [".."]
 include = ["paper_scraper*"]
+exclude = ["paper_scraper.papers*"]
+
+[tool.setuptools.package-data]
+paper_scraper = []
