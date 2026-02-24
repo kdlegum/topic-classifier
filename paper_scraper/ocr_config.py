@@ -337,4 +337,5 @@ DOWNLOAD_DELAY_S = 1.0
 PAGE_DELAY_S = 0.5
 
 # Papers from years after MAX_YEAR are skipped (still locked/unreleased).
-MAX_YEAR = 2024
+from paper_scraper import compute_max_year
+MAX_YEAR = compute_max_year()

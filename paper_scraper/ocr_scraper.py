@@ -30,7 +30,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from paper_scraper import ocr_config as config
-from paper_scraper.downloader import download_pdf
+from paper_scraper.downloader import download_pdf, make_session
 
 
 # ---------------------------------------------------------------------------
@@ -291,7 +291,7 @@ def scrape_spec(
 ) -> list[dict]:
     """Fetch, parse, and optionally download all papers for one spec."""
     if session is None:
-        session = requests.Session()
+        session = make_session()
 
     spec_config = config.SPECS[spec_code]
     qual_value = spec_config["qualification_value"]
@@ -427,7 +427,7 @@ def main():
     existing_index = load_index(config.METADATA_FILE)
     all_new_entries: list[dict] = []
 
-    session = requests.Session()
+    session = make_session()
     session.headers.update({"User-Agent": "TopicTracker/1.0 Educational"})
 
     for spec_code in specs_to_scrape:

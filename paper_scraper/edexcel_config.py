@@ -157,6 +157,71 @@ SPECS = {
         "algolia_code": "al15-eng-langlit",
         "spec_prefix": "9EL0",
     },
+    "9PL0": {
+        "subject": "A-level Politics",
+        "algolia_code": "al17-politics",
+        "spec_prefix": "9PL0",
+        "paper_names": {
+            "1": "UK Politics and Core Political Ideas",
+            "2": "UK Government and Non-core Political Ideas",
+            "3": "Comparative Politics",
+        },
+    },
+    "9RS0": {
+        "subject": "A-level Religious Studies",
+        "algolia_code": "al16-religiousstudies",
+        "spec_prefix": "9RS0",
+        "paper_names": {
+            "1": "Philosophy of Religion",
+            "2": "Religion and Ethics",
+            "3": "New Testament Studies",
+        },
+    },
+    "9PE0": {
+        "subject": "A-level Physical Education",
+        "algolia_code": "al16-physicaleducation",
+        "spec_prefix": "9PE0",
+        "paper_names": {
+            "1": "Scientific Principles of Physical Education",
+            "2": "Psychological and Social Principles of Physical Education",
+        },
+    },
+    "9MU0": {
+        "subject": "A-level Music",
+        "algolia_code": "al16-music",
+        "spec_prefix": "9MU0",
+        "paper_names": {
+            "3": "Appraising",
+        },
+    },
+    "9DR0": {
+        "subject": "A-level Drama and Theatre",
+        "algolia_code": "al16-dramatheatre",
+        "spec_prefix": "9DR0",
+        "paper_names": {
+            "3": "Theatre Makers in Practice",
+        },
+    },
+    # 9FA0 and 9AD0 share the same Algolia code ("al15-artdes"); spec_prefix disambiguates by filename.
+    "9FA0": {"subject": "A-level Art and Design (Fine Art)",             "algolia_code": "al15-artdes",             "spec_prefix": "9FA0"},
+    "9AD0": {"subject": "A-level Art and Design (Art, Craft and Design)","algolia_code": "al15-artdes",             "spec_prefix": "9AD0"},
+    # 9PY0 (Photography): NOT FOUND in Algolia index.
+    "9DT0": {
+        "subject": "A-level Design and Technology",
+        "algolia_code": "al17-designtech-proddesign",
+        "spec_prefix": "9DT0",
+        "paper_names": {
+            "1": "Core Technical Principles",
+            "2": "Specialist Technical Principles",
+        },
+    },
+    # 9LA0 (Law): NOT FOUND in Algolia index.
+    "9FR0": {"subject": "A-level French",  "algolia_code": "al16-french",  "spec_prefix": "9FR0"},
+    "9GN0": {"subject": "A-level German",  "algolia_code": "al16-german",  "spec_prefix": "9GN0"},
+    "9SP0": {"subject": "A-level Spanish", "algolia_code": "al16-spanish", "spec_prefix": "9SP0"},
+    # 9IT0 (Italian): NOT FOUND in Algolia index.
+    "9RU0": {"subject": "A-level Russian", "algolia_code": "al17-russian", "spec_prefix": "9RU0"},
+    "9CN0": {"subject": "A-level Chinese", "algolia_code": "al17-chinese", "spec_prefix": "9CN0"},
 
     # =========================
     # GCSE
@@ -182,6 +247,20 @@ SPECS = {
     "1HI0": {"subject": "GCSE History",            "algolia_code": "gcse16-history",         "spec_prefix": "1HI0"},
 
     "1PS0": {"subject": "GCSE Psychology",         "algolia_code": "gcse17-psychology",      "spec_prefix": "1PS0"},
+
+    "1DR0": {"subject": "GCSE Drama",               "algolia_code": "gcse16-drama",              "spec_prefix": "1DR0"},
+    # 1DA0 (Dance): NOT FOUND in Algolia index.
+    "1MU0": {"subject": "GCSE Music",               "algolia_code": "gcse16-music",              "spec_prefix": "1MU0"},
+    # 1FA0 (Fine Art): NOT FOUND in Algolia index.
+    # 1PY0 (Photography): NOT FOUND in Algolia index.
+    "1PE0": {"subject": "GCSE Physical Education",  "algolia_code": "gcse16-physicaleducation",  "spec_prefix": "1PE0"},
+    "1DT0": {"subject": "GCSE Design and Technology","algolia_code": "gcse17-designtechnology",  "spec_prefix": "1DT0"},
+    "1FR0": {"subject": "GCSE French",              "algolia_code": "gcse-16-french",            "spec_prefix": "1FR0"},
+    "1GN0": {"subject": "GCSE German",              "algolia_code": "gcse16-german",             "spec_prefix": "1GN0"},
+    "1SP0": {"subject": "GCSE Spanish",             "algolia_code": "gcse16-spanish",            "spec_prefix": "1SP0"},
+    # 1IT0 (Italian): NOT FOUND in Algolia index.
+    "1RU0": {"subject": "GCSE Russian",             "algolia_code": "gcse17-russian",            "spec_prefix": "1RU0"},
+    "1CN0": {"subject": "GCSE Chinese",             "algolia_code": "gcse17-chinese",            "spec_prefix": "1CN0"},
 }
 
 # Pearson document-type taxonomy value → internal paper_type code
@@ -202,4 +281,5 @@ DOWNLOAD_DELAY_S = 1.0
 PAGE_DELAY_S = 0.5
 
 # Papers from years after MAX_YEAR are skipped (typically still locked/unreleased).
-MAX_YEAR = 2024
+from paper_scraper import compute_max_year
+MAX_YEAR = compute_max_year()

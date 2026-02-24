@@ -22,7 +22,7 @@ from pathlib import Path
 import requests
 
 from paper_scraper import aqa_config as config
-from paper_scraper.downloader import download_pdf
+from paper_scraper.downloader import download_pdf, make_session
 
 
 # ---------------------------------------------------------------------------
@@ -305,7 +305,7 @@ def main():
     existing_index = load_index(config.METADATA_FILE)
     all_new_entries: list[dict] = []
 
-    session = requests.Session()
+    session = make_session()
     session.headers["User-Agent"] = "TopicTracker/1.0 Educational"
 
     for spec_code, subject in specs_to_scrape.items():

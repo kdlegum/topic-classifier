@@ -16,6 +16,9 @@ import sys
 
 
 def main():
+    print("Note: past papers are copyright of their respective exam boards. "
+          "Personal educational use only. See DISCLAIMER.md for details.\n")
+
     if "--board" not in sys.argv:
         print("Usage: python -m paper_scraper --board {aqa,edexcel,ocr} [options]")
         print("  --board aqa      Scrape AQA past papers")
@@ -46,4 +49,5 @@ def main():
         sys.exit(1)
 
 
-main()
+if __name__ == "__main__":
+    main()

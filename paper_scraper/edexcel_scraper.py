@@ -25,7 +25,7 @@ from pathlib import Path
 import requests
 
 from paper_scraper import edexcel_config as config
-from paper_scraper.downloader import download_pdf
+from paper_scraper.downloader import download_pdf, make_session
 
 
 # ---------------------------------------------------------------------------
@@ -218,7 +218,7 @@ def scrape_spec(
 ) -> list[dict]:
     """Fetch, parse, and optionally download all papers for one spec."""
     if session is None:
-        session = requests.Session()
+        session = make_session()
         session.headers["User-Agent"] = "TopicTracker/1.0 Educational"
 
     spec_config = config.SPECS[spec_code]

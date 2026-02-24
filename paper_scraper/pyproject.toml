@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uk-exam-paper-scraper"
+version = "0.1.0"
+description = "Download AQA, Edexcel, and OCR A-Level / GCSE past papers and mark schemes"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.28",
+    "beautifulsoup4>=4.11",
+]
+
+[project.scripts]
+paper-scraper = "paper_scraper.__main__:main"
+
+[tool.setuptools.packages.find]
+where = [".."]
+include = ["paper_scraper*"]
