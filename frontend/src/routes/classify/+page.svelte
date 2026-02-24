@@ -591,9 +591,9 @@
 									<span class="paper-year">{group.year ?? 'Unknown year'}</span>
 									<span class="paper-series">{capitalise(group.series)}</span>
 								</div>
-								{#each group.papers as paper}
+								{#each group.papers as paper, pi}
 									<div class="paper-row">
-										<span class="paper-number">Paper {paper.paper_number ?? '?'}</span>
+										<span class="paper-number">{paper.paper_number && paper.paper_name ? `Paper ${paper.paper_number} ${paper.paper_name}` : paper.paper_number ? `Paper ${paper.paper_number}` : paper.paper_name ? paper.paper_name : `Paper ${pi + 1}`}</span>
 										<div class="paper-actions">
 											<a
 												href={paper.source_url}

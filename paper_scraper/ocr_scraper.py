@@ -101,6 +101,9 @@ def _parse_doc_type(title: str) -> str:
     # Check answer book before question paper to avoid misclassification
     if "answer book" in lower or "answer booklet" in lower:
         return "AB"
+    # PAB = Pre-released Answer Booklet; titles end with " pab"
+    if lower.endswith(" pab"):
+        return "AB"
     for keyword, code in config.DOC_TYPE_MAP.items():
         if keyword in lower:
             return code
@@ -124,8 +127,11 @@ def _parse_section_year_series(heading_text: str) -> tuple[int | None, str | Non
 
 
 def _parse_component(unit_code_text: str) -> str | None:
-    """Extract component number from unit-code span, e.g. 'H640/01' → '01'."""
-    m = re.search(r"/(\d+[A-Za-z]?)$", unit_code_text.strip())
+    """Extract component number from unit-code span, e.g. 'H640/01' → '01'.
+
+    Tolerates spaces around the slash (e.g. 'H645 / 03' → '03').
+    """
+    m = re.search(r"/\s*(\d+[A-Za-z]?)\s*$", unit_code_text.strip())
     return m.group(1) if m else None
 
 
@@ -140,11 +146,34 @@ def _parse_file_size_kb(meta_text: str) -> float | None:
     return None
 
 
-def _parse_paper_name(title: str) -> str | None:
-    """Extract descriptive paper name from title, e.g. 'Pure mathematics and mechanics'."""
-    # Strip doc type prefix up to first dash
-    body = re.sub(r"^[^—–\-]+[-—–]\s*", "", title).strip()
-    return body if body else None
+_DOC_TYPE_SLUGS = (
+    "question-paper-",
+    "mark-scheme-",
+    "examiners-report-",
+    "examiner-s-report-",
+)
+
+
+def _parse_paper_name(filename: str) -> str | None:
+    """Extract paper name from filename.
+
+    Filenames follow the pattern:
+        {id}-{doc-type}-{paper-name}[-answer-booklet|-pab].pdf
+
+    Returns None for answer booklets and PABs.
+    """
+    stem = re.sub(r"\.pdf$", "", filename, flags=re.IGNORECASE)
+    stem = re.sub(r"^\d+-", "", stem)  # strip leading numeric ID
+
+    if stem.endswith("-answer-booklet") or stem.endswith("-answer-book") or stem.endswith("-pab"):
+        return None
+
+    for slug in _DOC_TYPE_SLUGS:
+        if stem.startswith(slug):
+            name = stem[len(slug):]
+            return name.replace("-", " ").title() if name else None
+
+    return None
 
 
 def parse_resources_html(html: str) -> list[dict]:
@@ -229,7 +258,7 @@ def build_entry(item: dict, spec_code: str, spec_config: dict) -> dict | None:
         return None
 
     paper_number = item["paper_number"]
-    paper_name = _parse_paper_name(title)
+    paper_name = _parse_paper_name(filename)
 
     content_id = f"ocr:{spec_code}:{filename}"
     local_path = str(

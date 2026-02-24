@@ -676,6 +676,7 @@ export type PastPaper = {
 	year: number | null;
 	series: string | null;
 	paper_number: string | null;
+	paper_name: string | null;
 	tier: string | null;
 	filename: string;
 	source_url: string;

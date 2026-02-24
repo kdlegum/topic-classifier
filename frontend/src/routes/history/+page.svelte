@@ -51,10 +51,17 @@
 		return parts.length > 0 ? parts.join(' ') : session.subject;
 	}
 
-	function getPaperLabel(session: any): string | null {
-		if (!session.paper_number) return null;
-		let label = `Paper ${session.paper_number}`;
-		if (session.paper_name) label += ` ${session.paper_name}`;
+	function getPaperLabel(session: any, index: number): string {
+		let label: string;
+		if (session.paper_number && session.paper_name) {
+			label = `Paper ${session.paper_number} ${session.paper_name}`;
+		} else if (session.paper_number) {
+			label = `Paper ${session.paper_number}`;
+		} else if (session.paper_name) {
+			label = session.paper_name;
+		} else {
+			label = `Paper ${index + 1}`;
+		}
 		if (session.paper_year) {
 			const series = session.paper_series
 				? session.paper_series.charAt(0).toUpperCase() + session.paper_series.slice(1)
@@ -136,7 +143,7 @@
 			</div>
 		{:else if sessions}
 			{#each sessions as session, i (session.session_id)}
-				{@const paperLabel = getPaperLabel(session)}
+				{@const paperLabel = getPaperLabel(session, i)}
 				<a
 					href="/mark_session/{session.session_id}"
 					class="session-card"
@@ -155,9 +162,7 @@
 					{:else}
 						<span class="session-board">{session.exam_board}</span>
 					{/if}
-							{#if paperLabel}
-								<span class="session-paper">{paperLabel}</span>
-							{/if}
+							<span class="session-paper">{paperLabel}</span>
 							<span class="session-date">{formatDate(session.created_at)}</span>
 						</div>
 					</div>

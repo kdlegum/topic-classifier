@@ -737,7 +737,7 @@
 				onkeydown={(e) => { if (e.key === 'Enter') { e.preventDefault(); (e.target as HTMLElement).blur(); } }}
 			>{session.name ?? getTitle(session)}</h2>
 			<p class="session-meta">
-				{session.no_spec ? 'No specification' : session.exam_board}{#if session.paper_number} &middot; Paper {session.paper_number}{session.paper_name ? ` ${session.paper_name}` : ''}{#if session.paper_year} &middot; {session.paper_series ? session.paper_series.charAt(0).toUpperCase() + session.paper_series.slice(1) : ''} {session.paper_year}{/if}{/if} - {formatDate(session.created_at)}
+				{session.no_spec ? 'No specification' : session.exam_board}{#if session.paper_number || session.paper_name} &middot; {session.paper_name ?? `Paper ${session.paper_number}`}{#if session.paper_year} &middot; {session.paper_series ? session.paper_series.charAt(0).toUpperCase() + session.paper_series.slice(1) : ''} {session.paper_year}{/if}{/if} - {formatDate(session.created_at)}
 			</p>
 			{#if session.session_strands && session.session_strands.length > 0}
 				<div class="session-strands">

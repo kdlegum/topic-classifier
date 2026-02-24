@@ -2766,14 +2766,22 @@ def get_past_papers(
         ).all()
 
     # Build lookup: (year, series, paper_number, tier) → MS content_id
+    # Also build a fallback by paper_name for when paper_number is missing on one side.
     ms_lookup: dict[tuple, str] = {}
+    ms_name_lookup: dict[tuple, str] = {}  # (year, series, paper_name, tier)
     for ms in mss:
         key = (ms.year, ms.series, ms.paper_number, ms.tier)
         ms_lookup[key] = ms.content_id
+        if ms.paper_name:
+            name_key = (ms.year, ms.series, ms.paper_name, ms.tier)
+            ms_name_lookup[name_key] = ms.content_id
 
     papers = []
     for qp in qps:
         ms_content_id = ms_lookup.get((qp.year, qp.series, qp.paper_number, qp.tier))
+        # Fallback: match by paper_name when paper_number is missing on either side
+        if ms_content_id is None and qp.paper_name:
+            ms_content_id = ms_name_lookup.get((qp.year, qp.series, qp.paper_name, qp.tier))
         papers.append({
             "content_id": qp.content_id,
             "spec_code": qp.spec_code,
