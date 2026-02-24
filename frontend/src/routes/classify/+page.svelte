@@ -90,8 +90,8 @@
 	);
 	let paperGroups = $derived(groupPapers(filteredPapers));
 
-	let fileInput: HTMLInputElement;
-	let markSchemeInput: HTMLInputElement;
+	let fileInput: HTMLInputElement = $state()!;
+	let markSchemeInput: HTMLInputElement = $state()!;
 	let markSchemeFileName = $state('');
 
 	// Click-outside action for closing the dropdown
@@ -355,7 +355,7 @@
 
 		<!-- Specification selection -->
 		<div class="section" in:fly={{ y: 20, duration: 300, delay: 50 }}>
-			<label>Specification</label>
+			<p class="section-label">Specification</p>
 			{#if specsLoading}
 				<div class="custom-select" aria-disabled="true">
 					<button type="button" class="custom-select-trigger" disabled>
@@ -461,7 +461,7 @@
 		<!-- Tier selection for GCSE specs with tiered content -->
 		{#if currentSpec?.has_tiers}
 			<div class="section" in:fly={{ y: 20, duration: 300, delay: 75 }}>
-				<label>Your Tier</label>
+				<p class="section-label">Your Tier</p>
 				<div class="tier-picker">
 					<button
 						type="button"
@@ -528,7 +528,7 @@
 					</button>
 				</div>
 			{:else}
-				<label>Upload Question Paper (PDF)</label>
+				<p class="section-label">Upload Question Paper (PDF)</p>
 			{/if}
 
 			{#if paperSource === 'upload' || !hasPastPapers}
@@ -673,6 +673,15 @@
 </main>
 
 <style>
+	.section-label {
+		font-weight: 600;
+		display: block;
+		margin-bottom: 8px;
+		color: var(--color-text);
+		font-size: 0.95rem;
+		margin-top: 0;
+	}
+
 	.page-subtitle {
 		color: var(--color-text-secondary);
 		font-size: 1.02rem;
