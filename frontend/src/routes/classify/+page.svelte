@@ -13,8 +13,11 @@
 		saveUserTier,
 		getPastPapers,
 		classifyPastPaper,
+		getPaperCompletions,
+		toggleManualCompletion,
 		type SpecInfo,
-		type PastPaper
+		type PastPaper,
+		type PaperCompletion
 	} from '$lib/api';
 	import StrandPicker from '$lib/components/StrandPicker.svelte';
 	import { shouldAnimate, DURATIONS } from '$lib/motion';
@@ -52,6 +55,7 @@
 	let pastPapers: PastPaper[] = $state([]);
 	let pastPapersLoading = $state(false);
 	let pastPapersError: string | null = $state(null);
+	let paperCompletions: Map<string, PaperCompletion> = $state(new Map());
 
 	// Derived from selected spec
 	let currentSpec = $derived(allSpecs.find((s) => s.spec_code === specCode) ?? null);
@@ -131,6 +135,7 @@
 		paperSource = 'upload';
 		pastPapers = [];
 		pastPapersError = null;
+		paperCompletions = new Map();
 
 		if (spec?.optional_modules) {
 			getUserModules(spec.spec_code)
@@ -159,16 +164,20 @@
 		// Load past papers for supported boards (AQA, Edexcel, OCR)
 		if (spec?.exam_board === 'AQA' || spec?.exam_board === 'Edexcel' || spec?.exam_board === 'OCR') {
 			pastPapersLoading = true;
-			getPastPapers(spec.spec_code)
-				.then((data) => {
-					pastPapers = data;
-					pastPapersLoading = false;
-				})
-				.catch((e) => {
-					console.error('Failed to load past papers:', e);
-					pastPapersError = 'Could not load past papers.';
-					pastPapersLoading = false;
-				});
+			Promise.all([
+				getPastPapers(spec.spec_code),
+				getPaperCompletions(spec.spec_code).catch(() => [] as PaperCompletion[])
+			]).then(([papers, completions]) => {
+				pastPapers = papers;
+				paperCompletions = new Map(
+					completions.map(c => [completionKey(c.paper_year, c.paper_series, c.paper_number), c])
+				);
+				pastPapersLoading = false;
+			}).catch((e) => {
+				console.error('Failed to load past papers:', e);
+				pastPapersError = 'Could not load past papers.';
+				pastPapersLoading = false;
+			});
 		}
 	});
 
@@ -339,6 +348,37 @@
 	function capitalise(s: string | null): string {
 		if (!s) return '';
 		return s.charAt(0).toUpperCase() + s.slice(1);
+	}
+
+	function completionKey(year: number | null, series: string | null, number: string | null): string {
+		return `${year ?? ''}_${(series ?? '').toLowerCase()}_${number ?? ''}`;
+	}
+
+	function getCompletion(paper: PastPaper): PaperCompletion | undefined {
+		return paperCompletions.get(completionKey(paper.year, paper.series, paper.paper_number));
+	}
+
+	async function toggleDone(paper: PastPaper) {
+		if (!specCode || specCode === 'None') return;
+		const result = await toggleManualCompletion({
+			spec_code: specCode,
+			paper_year: paper.year,
+			paper_series: paper.series,
+			paper_number: paper.paper_number,
+		});
+		const key = completionKey(paper.year, paper.series, paper.paper_number);
+		const next = new Map(paperCompletions);
+		if (result.marked) {
+			next.set(key, {
+				paper_year: paper.year, paper_series: paper.series,
+				paper_number: paper.paper_number, session_id: null,
+				status: null, total_marks_available: null,
+				total_marks_achieved: null, is_manual: true,
+			});
+		} else {
+			next.delete(key);
+		}
+		paperCompletions = next;
 	}
 </script>
 
@@ -592,8 +632,47 @@
 									<span class="paper-series">{capitalise(group.series)}</span>
 								</div>
 								{#each group.papers as paper, pi}
-									<div class="paper-row">
+									{@const completion = getCompletion(paper)}
+									{@const pct = completion?.status === 'marked' && completion.total_marks_available
+										? Math.round((completion.total_marks_achieved! / completion.total_marks_available) * 100)
+										: null}
+									<div class="paper-row" class:paper-row-done={!!completion}>
 										<span class="paper-number">{paper.paper_number && paper.paper_name ? `Paper ${paper.paper_number} ${paper.paper_name}` : paper.paper_number ? `Paper ${paper.paper_number}` : paper.paper_name ? paper.paper_name : `Paper ${pi + 1}`}</span>
+
+										{#if completion}
+											{#if completion.is_manual}
+												<button
+													class="paper-status-badge status-manual"
+													onclick={() => toggleDone(paper)}
+													title="Click to unmark"
+												>
+													Done ✓
+												</button>
+											{:else}
+												<a
+													href="/mark_session/{completion.session_id}"
+													class="paper-status-badge status-{completion.status}"
+													title="View your session"
+												>
+													{#if completion.status === 'marked' && pct !== null}
+														{pct}%
+													{:else if completion.status === 'in_progress'}
+														In progress
+													{:else}
+														Classified
+													{/if}
+												</a>
+											{/if}
+										{:else}
+											<button
+												class="paper-mark-done-btn"
+												onclick={() => toggleDone(paper)}
+												title="Mark as done"
+											>
+												<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+											</button>
+										{/if}
+
 										<div class="paper-actions">
 											<a
 												href={paper.source_url}
@@ -1033,11 +1112,11 @@
 	}
 
 	.paper-row {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr auto auto;
 		align-items: center;
-		justify-content: space-between;
 		padding: 8px 14px;
-		gap: 12px;
+		gap: 8px;
 		transition: background var(--transition-fast);
 	}
 
@@ -1049,6 +1128,71 @@
 		font-size: 0.92rem;
 		color: var(--color-text);
 		font-weight: 500;
+		min-width: 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.paper-row-done {
+		border-left: 2.5px solid var(--color-success);
+	}
+
+	.paper-status-badge {
+		display: inline-flex;
+		align-items: center;
+		padding: 2px 9px;
+		border-radius: var(--radius-full);
+		font-size: 0.78rem;
+		font-weight: 600;
+		white-space: nowrap;
+		text-decoration: none;
+		flex-shrink: 0;
+		cursor: pointer;
+		border: 1px solid transparent;
+		transition: opacity var(--transition-fast);
+	}
+	.paper-status-badge:hover { opacity: 0.8; }
+
+	.paper-status-badge.status-marked {
+		background: var(--color-success-bg);
+		color: #15803d;
+		border-color: var(--color-success);
+	}
+	.paper-status-badge.status-in_progress {
+		background: var(--color-primary-light);
+		color: var(--color-primary);
+		border-color: var(--color-primary);
+	}
+	.paper-status-badge.status-not_marked {
+		background: var(--color-surface-alt);
+		color: var(--color-text-muted);
+		border-color: var(--color-border);
+	}
+	.paper-status-badge.status-manual {
+		background: var(--color-success-bg);
+		color: #15803d;
+		border-color: var(--color-success);
+	}
+
+	.paper-mark-done-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		padding: 0;
+		background: transparent;
+		color: var(--color-border);
+		border: 1.5px dashed var(--color-border);
+		cursor: pointer;
+		transition: all var(--transition-fast);
+	}
+	.paper-mark-done-btn:hover {
+		color: var(--color-success);
+		border-color: var(--color-success);
+		border-style: solid;
 	}
 
 	.paper-actions {

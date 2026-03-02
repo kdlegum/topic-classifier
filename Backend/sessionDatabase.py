@@ -123,6 +123,16 @@ class UserTierSelection(SQLModel, table=True):
     spec_code: str = Field(index=True)
     tier: str  # "Higher" or "Foundation"
 
+class UserPaperCompletion(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    user_id: str = Field(index=True)       # user_id or guest_id
+    is_guest: bool = Field(default=True)
+    spec_code: str = Field(index=True)
+    paper_year: int | None = None
+    paper_series: str | None = None
+    paper_number: str | None = None
+    completed_at: datetime = Field(default_factory=datetime.utcnow)
+
 class UserSpecSelection(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     user_id: str = Field(index=True)

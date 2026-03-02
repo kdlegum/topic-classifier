@@ -696,6 +696,38 @@ export async function getPastPapers(specCode: string): Promise<PastPaper[]> {
 	return response.json();
 }
 
+export type PaperCompletion = {
+	paper_year: number | null;
+	paper_series: string | null;
+	paper_number: string | null;
+	session_id: string | null;
+	status: 'not_marked' | 'in_progress' | 'marked' | null;
+	total_marks_available: number | null;
+	total_marks_achieved: number | null;
+	is_manual: boolean;
+};
+
+export async function getPaperCompletions(specCode: string): Promise<PaperCompletion[]> {
+	const response = await apiFetch(`/user/paper-completions?spec_code=${encodeURIComponent(specCode)}`);
+	if (!response.ok) throw new Error(`Failed to fetch paper completions: ${response.status}`);
+	return response.json();
+}
+
+export async function toggleManualCompletion(data: {
+	spec_code: string;
+	paper_year: number | null;
+	paper_series: string | null;
+	paper_number: string | null;
+}): Promise<{ marked: boolean }> {
+	const response = await apiFetch('/user/paper-completions/manual', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify(data),
+	});
+	if (!response.ok) throw new Error(`Failed to toggle completion: ${response.status}`);
+	return response.json();
+}
+
 /**
  * Trigger on-demand download + classification of a past paper
  */

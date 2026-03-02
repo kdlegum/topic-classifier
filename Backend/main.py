@@ -15,7 +15,7 @@ import time
 import uuid
 import datetime
 import requests
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection, PastPaper
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection, PastPaper, UserPaperCompletion
 from sqlmodel import Session, select, update
 from sqlalchemy import func
 from pathlib import Path
@@ -2817,6 +2817,117 @@ def get_past_papers(
     # Sort: newest first, then series, then paper number
     papers.sort(key=lambda p: (-(p["year"] or 0), p["series"] or "", p["paper_number"] or ""))
     return papers
+
+
+@app.get("/user/paper-completions")
+def get_user_paper_completions(
+    spec_code: str = Query(...),
+    user=Depends(get_user),
+):
+    uid = user["user_id"] if user["is_authenticated"] else user.get("guest_id")
+    is_guest = not user["is_authenticated"]
+    if not uid:
+        return []
+
+    with Session(engine) as db:
+        # Session-based completions
+        sessions = db.exec(
+            select(DBSess)
+            .where(DBSess.subject == spec_code)
+            .where(DBSess.user_id == uid)
+            .where(DBSess.is_guest == is_guest)
+            .where(DBSess.paper_year != None)
+            .order_by(DBSess.created_at.desc())
+        ).all()
+
+        # Manual completions
+        manuals = db.exec(
+            select(UserPaperCompletion)
+            .where(UserPaperCompletion.spec_code == spec_code)
+            .where(UserPaperCompletion.user_id == uid)
+            .where(UserPaperCompletion.is_guest == is_guest)
+        ).all()
+
+    results = []
+    seen: set = set()
+
+    for s in sessions:
+        key = (s.paper_year, (s.paper_series or "").lower(), s.paper_number)
+        if key not in seen:
+            seen.add(key)
+            results.append({
+                "paper_year": s.paper_year,
+                "paper_series": s.paper_series,
+                "paper_number": s.paper_number,
+                "session_id": s.session_id,
+                "status": s.status,
+                "total_marks_available": s.total_marks_available,
+                "total_marks_achieved": s.total_marks_achieved,
+                "is_manual": False,
+            })
+
+    for m in manuals:
+        key = (m.paper_year, (m.paper_series or "").lower(), m.paper_number)
+        if key not in seen:
+            seen.add(key)
+            results.append({
+                "paper_year": m.paper_year,
+                "paper_series": m.paper_series,
+                "paper_number": m.paper_number,
+                "session_id": None,
+                "status": None,
+                "total_marks_available": None,
+                "total_marks_achieved": None,
+                "is_manual": True,
+            })
+
+    return results
+
+
+class ManualCompletionRequest(BaseModel):
+    spec_code: str
+    paper_year: int | None = None
+    paper_series: str | None = None
+    paper_number: str | None = None
+
+
+@app.post("/user/paper-completions/manual")
+def toggle_manual_paper_completion(
+    req: ManualCompletionRequest,
+    user=Depends(get_user),
+):
+    uid = user["user_id"] if user["is_authenticated"] else user.get("guest_id")
+    is_guest = not user["is_authenticated"]
+    if not uid:
+        raise HTTPException(status_code=401, detail="Not authenticated")
+
+    with Session(engine) as db:
+        existing = db.exec(
+            select(UserPaperCompletion)
+            .where(UserPaperCompletion.user_id == uid)
+            .where(UserPaperCompletion.is_guest == is_guest)
+            .where(UserPaperCompletion.spec_code == req.spec_code)
+            .where(UserPaperCompletion.paper_year == req.paper_year)
+            .where(UserPaperCompletion.paper_series == req.paper_series)
+            .where(UserPaperCompletion.paper_number == req.paper_number)
+        ).first()
+
+        if existing:
+            db.delete(existing)
+            db.commit()
+            return {"marked": False}
+        else:
+            row = UserPaperCompletion(
+                user_id=uid,
+                is_guest=is_guest,
+                spec_code=req.spec_code,
+                paper_year=req.paper_year,
+                paper_series=req.paper_series,
+                paper_number=req.paper_number,
+            )
+            db.add(row)
+            db.commit()
+            return {"marked": True}
 
 
 class ClassifyPastPaperRequest(BaseModel):
