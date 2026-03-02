@@ -25,7 +25,7 @@
 		}
 		const ratio = clientHeight / scrollHeight;
 		thumbHeight = Math.max(48, ratio * clientHeight);
-		const maxThumbTop = clientHeight - thumbHeight - 10; // 4px matches track's bottom padding
+		const maxThumbTop = clientHeight - thumbHeight - 10;
 		const maxScrollTop = scrollHeight - clientHeight;
 		thumbTop = maxScrollTop > 0 ? (scrollTop / maxScrollTop) * maxThumbTop : 0;
 	}
@@ -172,7 +172,6 @@
 		width: 0;
 	}
 
-	/* ── Custom scrollbar ── */
 	.scrollbar-track {
 		width: 16px;
 		flex-shrink: 0;

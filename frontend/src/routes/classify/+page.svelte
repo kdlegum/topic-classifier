@@ -1408,4 +1408,28 @@
 	@keyframes spin {
 		to { transform: rotate(360deg); }
 	}
+
+	@media (max-width: 520px) {
+		.paper-row {
+			grid-template-columns: 1fr auto;
+			grid-template-rows: auto auto;
+		}
+
+		.paper-number {
+			grid-column: 1;
+			grid-row: 1;
+			white-space: normal;
+		}
+
+		.paper-mark-done-btn,
+		.paper-status-badge {
+			grid-column: 2;
+			grid-row: 1;
+		}
+
+		.paper-actions {
+			grid-column: 1 / -1;
+			grid-row: 2;
+		}
+	}
 </style>
