@@ -539,6 +539,11 @@ input[type='file'] {
 .session-meta {
 	color: var(--color-text-secondary);
 	font-size: 0.9rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 3px 6px;
+	margin-top: 2px;
 }
 
 /* ─── Back Link ─── */
@@ -700,6 +705,8 @@ a.session-card:hover {
 
 .session-info {
 	flex: 1;
+	min-width: 0;
+	overflow: hidden;
 }
 
 .session-subject {
@@ -707,11 +714,22 @@ a.session-card:hover {
 	font-size: 1.05rem;
 	margin-bottom: 4px;
 	color: var(--color-text);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .session-questions {
 	color: var(--color-primary);
 	font-weight: 700;
+}
+
+@media (max-width: 540px) {
+	a.session-card {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 10px;
+	}
 }
 
 /* ─── Quick-Select Button on Predictions ─── */

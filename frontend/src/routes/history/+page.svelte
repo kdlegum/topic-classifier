@@ -36,13 +36,11 @@
 	let totalPages = $derived(Math.max(1, Math.ceil(total / pageSize)));
 
 	function formatDate(dateStr: string): string {
-		return new Date(dateStr).toLocaleDateString('en-GB', {
-			day: 'numeric',
-			month: 'short',
-			year: 'numeric',
-			hour: '2-digit',
-			minute: '2-digit'
-		});
+		const d = new Date(dateStr);
+		const dd = String(d.getDate()).padStart(2, '0');
+		const mm = String(d.getMonth() + 1).padStart(2, '0');
+		const yy = String(d.getFullYear()).slice(2);
+		return `${dd}/${mm}/${yy}`;
 	}
 
 	function getTitle(session: any): string {
@@ -66,7 +64,8 @@
 			const series = session.paper_series
 				? session.paper_series.charAt(0).toUpperCase() + session.paper_series.slice(1)
 				: '';
-			label += ` · ${series} ${session.paper_year}`.trim();
+			const suffix = [series, session.paper_year].filter(Boolean).join(' ');
+			label += ` · ${suffix}`;
 		}
 		return label;
 	}
@@ -79,7 +78,6 @@
 		try {
 			await deleteSession(sessionId);
 			total -= 1;
-			// If we deleted the last item on this page, go back a page
 			if (sessions!.length === 1 && page > 1) {
 				page -= 1;
 			} else {
@@ -108,6 +106,15 @@
 		if (pct >= 40) return 'pct-mid';
 		return 'pct-low';
 	}
+
+	function getStripLabel(session: any, paperLabel: string): string {
+		const parts: string[] = [];
+		if (session.name) parts.push(paperLabel);
+		parts.push(getTitle(session));
+		if (session.exam_board) parts.push(session.exam_board);
+		if (session.strands?.length) parts.push(session.strands.join(', '));
+		return parts.join(' · ');
+	}
 </script>
 
 <svelte:head>
@@ -126,77 +133,79 @@
 			<p class="page-subtitle">View your past classification sessions.</p>
 		</div>
 
-	<div class="sessions-list">
-		{#if loading}
-			<div class="loading">
-				<span class="loading-spinner"></span>
-				Loading sessions...
-			</div>
-		{:else if error}
-			<div class="error-state" in:fade={{ duration: 200 }}>
-				<p>Failed to load sessions. Please try again.</p>
-			</div>
-		{:else if sessions && sessions.length === 0 && page === 1}
-			<div class="empty-state" in:fade={{ duration: 200 }}>
-				<p>No sessions yet.</p>
-				<p><a href="/classify">Classify some questions</a> to get started!</p>
-			</div>
-		{:else if sessions}
-			{#each sessions as session, i (session.session_id)}
-				{@const paperLabel = getPaperLabel(session, i)}
-				<a
-					href="/mark_session/{session.session_id}"
-					class="session-card"
-					in:fly={{ y: 15, duration: 250, delay: staggerDelay(i) }}
-				>
-					<div class="session-info">
-						{#if session.name}
-							<div class="session-custom-name">{session.name}</div>
-							<div class="session-subject session-subject-secondary">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
-						{:else}
-							<div class="session-subject">{getTitle(session)}{#if session.strands?.length} - {session.strands.join(', ')}{/if}</div>
-						{/if}
-						<div class="session-meta">
-							{#if session.no_spec}
-						<span class="session-board no-spec-badge">No specification</span>
-					{:else}
-						<span class="session-board">{session.exam_board}</span>
-					{/if}
-							<span class="session-paper">{paperLabel}</span>
+		<div class="sessions-list">
+			{#if loading}
+				<div class="loading">
+					<span class="loading-spinner"></span>
+					Loading sessions...
+				</div>
+			{:else if error}
+				<div class="error-state" in:fade={{ duration: 200 }}>
+					<p>Failed to load sessions. Please try again.</p>
+				</div>
+			{:else if sessions && sessions.length === 0 && page === 1}
+				<div class="empty-state" in:fade={{ duration: 200 }}>
+					<p>No sessions yet.</p>
+					<p><a href="/classify">Classify some questions</a> to get started!</p>
+				</div>
+			{:else if sessions}
+				{#each sessions as session, i (session.session_id)}
+					{@const paperLabel = getPaperLabel(session, i)}
+					<a
+						href="/mark_session/{session.session_id}"
+						class="session-card"
+						in:fly={{ y: 15, duration: 250, delay: staggerDelay(i) }}
+					>
+						<div class="session-header">
+							<div class="session-header-left">
+								{#if session.name}
+									<div class="session-paper-title">{session.name}</div>
+								{:else if session.no_spec}
+									<div class="session-paper-title session-unclassified">Unclassified</div>
+								{:else}
+									<div class="session-paper-title">{paperLabel}</div>
+								{/if}
+							</div>
 							<span class="session-date">{formatDate(session.created_at)}</span>
 						</div>
-					</div>
-					<div class="session-right">
-						<div class="session-questions">
-							{session.question_count} question{session.question_count !== 1 ? 's' : ''}
-						</div>
-						{#if session.status === 'marked'}
-							{@const pct = getPct(session)}
-							{#if pct !== null}
-								<span class="mark-badge {pctClass(pct)}">{pct}%</span>
-							{/if}
-						{:else if session.status === 'in_progress'}
-							<span class="mark-badge pct-progress">In progress</span>
-						{/if}
-						<button class="delete-btn" onclick={(e) => handleDelete(e, session.session_id)} title="Delete session">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-								<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-								<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H5.5l1-1h3l1 1H13a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-							</svg>
-						</button>
-					</div>
-				</a>
-			{/each}
 
-			{#if totalPages > 1}
-				<div class="pagination" in:fade={{ duration: 200 }}>
-					<button class="page-arrow" disabled={page <= 1} onclick={() => page -= 1}>&lsaquo;</button>
-					<span class="page-info">Page {page} of {totalPages}</span>
-					<button class="page-arrow" disabled={page >= totalPages} onclick={() => page += 1}>&rsaquo;</button>
-				</div>
+						{#if !session.no_spec}
+							<div class="session-strip">{getStripLabel(session, paperLabel)}</div>
+						{/if}
+
+						<div class="session-footer">
+							<span class="session-questions">
+								{session.question_count} question{session.question_count !== 1 ? 's' : ''}
+							</span>
+							<div class="session-footer-right">
+								{#if session.status === 'marked'}
+									{@const pct = getPct(session)}
+									{#if pct !== null}
+										<span class="mark-badge {pctClass(pct)}">{pct}%</span>
+									{/if}
+								{:else if session.status === 'in_progress'}
+									<span class="status-progress">In progress</span>
+								{/if}
+								<button class="delete-btn" onclick={(e) => handleDelete(e, session.session_id)} title="Delete session">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+										<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+										<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H5.5l1-1h3l1 1H13a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</a>
+				{/each}
+
+				{#if totalPages > 1}
+					<div class="pagination" in:fade={{ duration: 200 }}>
+						<button class="page-arrow" disabled={page <= 1} onclick={() => page -= 1}>&lsaquo;</button>
+						<span class="page-info">Page {page} of {totalPages}</span>
+						<button class="page-arrow" disabled={page >= totalPages} onclick={() => page += 1}>&rsaquo;</button>
+					</div>
+				{/if}
 			{/if}
-		{/if}
-	</div>
+		</div>
 	{/if}
 </main>
 
@@ -205,11 +214,6 @@
 		color: var(--color-text-secondary);
 		font-size: 1.02rem;
 		margin-bottom: 8px;
-	}
-
-	.no-spec-badge {
-		color: var(--color-text-muted);
-		font-style: italic;
 	}
 
 	.loading-spinner {
@@ -228,10 +232,96 @@
 		to { transform: rotate(360deg); }
 	}
 
-	.session-right {
+	/* ── Lined-paper card layout (overrides global a.session-card) ── */
+	a.session-card {
+		flex-direction: column;
+		align-items: stretch;
+		padding: 0;
+		gap: 0;
+		overflow: hidden;
+		border-left: 3px solid var(--color-primary);
+	}
+
+	.session-header {
+		padding: 10px 16px 8px;
+		margin-bottom: 0;
+		border-bottom: none;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 12px;
+	}
+
+	.session-header-left {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.session-date {
+		font-size: 0.78rem;
+		color: var(--color-text-muted, var(--color-text-secondary));
+		white-space: nowrap;
+		flex-shrink: 0;
+		padding-top: 2px;
+	}
+
+	.session-paper-title {
+		font-weight: 700;
+		font-size: 1.05rem;
+		color: var(--color-text);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.session-unclassified {
+		color: var(--color-text-secondary);
+		font-style: italic;
+	}
+
+	/* The ruled strip — full-width band between two border lines */
+	.session-strip {
+		padding: 5px 16px;
+		background: var(--color-surface-raised, rgba(0, 0, 0, 0.04));
+		border-top: 1px solid var(--color-border);
+		border-bottom: 1px solid var(--color-border);
+		font-size: 0.84rem;
+		color: var(--color-text-secondary);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.session-footer {
+		padding: 7px 16px 10px;
 		display: flex;
 		align-items: center;
-		gap: 0.75rem;
+		justify-content: space-between;
+		gap: 8px;
+	}
+
+	.session-footer-right {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		flex-shrink: 0;
+	}
+
+	.session-questions {
+		white-space: nowrap;
+	}
+
+	.status-progress {
+		display: inline-flex;
+		align-items: center;
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: var(--color-primary);
+		background: var(--color-primary-light, rgba(0, 128, 128, 0.08));
+		border: 1px solid var(--color-primary);
+		padding: 2px 9px;
+		border-radius: var(--radius-full);
+		white-space: nowrap;
 	}
 
 	.delete-btn {
@@ -251,45 +341,6 @@
 		color: var(--color-error);
 		background: var(--color-error-bg);
 	}
-
-	.session-questions {
-		white-space: nowrap;
-	}
-
-	.session-custom-name {
-		font-weight: 600;
-		font-size: 1rem;
-		color: var(--color-text);
-	}
-
-	.session-subject-secondary {
-		font-size: 0.85rem;
-		color: var(--color-text-secondary);
-	}
-
-	.session-paper {
-		font-size: 0.82rem;
-		color: var(--color-text-secondary);
-		background: var(--color-surface-raised, var(--color-border));
-		padding: 1px 7px;
-		border-radius: var(--radius-full);
-		white-space: nowrap;
-	}
-
-	.mark-badge {
-		display: inline-flex;
-		align-items: center;
-		padding: 3px 10px;
-		border-radius: var(--radius-full);
-		font-size: 0.82rem;
-		font-weight: 700;
-		white-space: nowrap;
-	}
-
-	.pct-high { background: var(--color-success-bg); color: #15803d; }
-	.pct-mid  { background: var(--color-warning-bg); color: #b45309; }
-	.pct-low  { background: var(--color-error-bg);   color: #b91c1c; }
-	.pct-progress { background: var(--color-warning-bg); color: #b45309; }
 
 	.pagination {
 		display: flex;

@@ -25,7 +25,7 @@
 		}
 		const ratio = clientHeight / scrollHeight;
 		thumbHeight = Math.max(48, ratio * clientHeight);
-		const maxThumbTop = clientHeight - thumbHeight;
+		const maxThumbTop = clientHeight - thumbHeight - 10; // 4px matches track's bottom padding
 		const maxScrollTop = scrollHeight - clientHeight;
 		thumbTop = maxScrollTop > 0 ? (scrollTop / maxScrollTop) * maxThumbTop : 0;
 	}
@@ -69,12 +69,16 @@
 		contentEl.scrollTo({ top: ratio * (scrollHeight - clientHeight), behavior: 'smooth' });
 	}
 
-	// Keep thumb in sync whenever content or container size changes
+	// Keep thumb in sync whenever content or container size changes.
+	// Observe the first child (page content wrapper) so we detect scroll height
+	// growth from reactive content additions, not just the container's own box size.
 	$effect(() => {
 		if (!contentEl) return;
 		updateThumb();
 		const ro = new ResizeObserver(updateThumb);
 		ro.observe(contentEl);
+		const inner = contentEl.firstElementChild;
+		if (inner) ro.observe(inner);
 		return () => ro.disconnect();
 	});
 
@@ -143,6 +147,7 @@
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
+		height: 100dvh;
 	}
 
 	.app-outer {
