@@ -9,6 +9,27 @@
 	let renderDiv: HTMLDivElement | undefined = $state();
 	let textareaEl: HTMLTextAreaElement | undefined = $state();
 
+	// Fallback: render bare LaTeX commands (no delimiters) in a plain-text segment
+	function renderBareLatexSegment(segment: string): string {
+		// Matches \begin{}\end{} environments, or any \command with optional {arg}, [opt], _sub, ^sup groups
+		const bareMathRe =
+			/\\begin\{[^}]+\}[\s\S]*?\\end\{[^}]+\}|\\[a-zA-Z]+(?:\{[^{}]*(?:\{[^{}]*\}[^{}]*)?\}|\[[^\]]*\]|[_^](?:\{[^{}]*\}|[^\s]))*/g;
+		let html = '';
+		let last = 0;
+		for (const m of segment.matchAll(bareMathRe)) {
+			if (m.index! > last) html += formatScripts(segment.slice(last, m.index!));
+			const isDisplay = m[0].startsWith('\\begin');
+			try {
+				html += katex.renderToString(m[0].trim(), { displayMode: isDisplay, throwOnError: false });
+			} catch {
+				html += escapeHtml(m[0]);
+			}
+			last = m.index! + m[0].length;
+		}
+		if (last < segment.length) html += formatScripts(segment.slice(last));
+		return html;
+	}
+
 	function renderMath() {
 		if (!renderDiv) return;
 
@@ -24,7 +45,7 @@
 		for (const match of combined) {
 			const start = match.index!;
 			if (start > lastIndex) {
-				html += formatScripts(processed.slice(lastIndex, start));
+				html += renderBareLatexSegment(processed.slice(lastIndex, start));
 			}
 
 			const isDisplay = match[0].startsWith('\\[') || match[0].startsWith('$$');
@@ -43,7 +64,7 @@
 		}
 
 		if (lastIndex < processed.length) {
-			html += formatScripts(processed.slice(lastIndex));
+			html += renderBareLatexSegment(processed.slice(lastIndex));
 		}
 
 		renderDiv.innerHTML = html;
