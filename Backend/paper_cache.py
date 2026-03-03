@@ -7,9 +7,11 @@ Cache entries are invalidated when the embedding hash or parser version changes.
 import json
 import logging
 import re
+import time
 import uuid
 from datetime import datetime
 
+from sqlalchemy import update
 from sqlalchemy.exc import IntegrityError
 from sqlmodel import Session, select
 
@@ -207,6 +209,8 @@ def clone_session_from_cache(
 
     session_id = str(uuid.uuid4())
 
+    t0 = time.time()
+
     with Session(engine) as db:
         db_session = DBSess(
             session_id=session_id,
@@ -229,22 +233,28 @@ def clone_session_from_cache(
             for strand in strands:
                 db.add(SessionStrand(session_id=session_id, strand=strand))
 
+        # Add all questions first, then single flush to get all IDs at once
+        db_questions_list = []
         for q in questions:
             db_question = DBQuestion(
                 session_id=session_id,
                 question_number=q["id"],
                 question_text=q["text"],
             )
+            db_questions_list.append((db_question, q))
             db.add(db_question)
-            db.flush()
 
-            db.add(QuestionMark(
+        db.flush()  # single flush — populates all db_question.id values
+
+        # Build all related records in one pass now that IDs are available
+        related = []
+        for db_question, q in db_questions_list:
+            related.append(QuestionMark(
                 question_id=db_question.id,
                 marks_available=q.get("marks"),
             ))
-
             for pred in preds_by_qid.get(q["id"], []):
-                db.add(DBPrediction(
+                related.append(DBPrediction(
                     question_id=db_question.id,
                     rank=pred["rank"],
                     strand=pred["strand"],
@@ -254,10 +264,9 @@ def clone_session_from_cache(
                     similarity_score=pred["similarity_score"],
                     description=pred["description"],
                 ))
-
             loc = loc_by_qid.get(q["id"])
             if loc:
-                db.add(QuestionLocation(
+                related.append(QuestionLocation(
                     question_id=db_question.id,
                     start_page=loc["start_page"],
                     start_y=loc["start_y"],
@@ -265,15 +274,20 @@ def clone_session_from_cache(
                     end_y=loc["end_y"],
                 ))
 
+        db.add_all(related)
+
+        # Increment hit counter in the same transaction — no second session needed
+        db.execute(
+            update(CachedPaper)
+            .where(CachedPaper.id == cached.id)
+            .values(hit_count=CachedPaper.hit_count + 1)
+        )
+
         db.commit()
 
-    # Increment hit counter
-    with Session(engine) as db:
-        row = db.exec(select(CachedPaper).where(CachedPaper.id == cached.id)).first()
-        if row:
-            row.hit_count += 1
-            db.add(row)
-            db.commit()
-
-    logger.info("Cloned session %s from cache (hit_count=%d)", session_id, cached.hit_count + 1)
+    elapsed = time.time() - t0
+    logger.info(
+        "Cache clone took %.3fs for %d questions (session=%s, hit_count=%d)",
+        elapsed, len(questions), session_id, cached.hit_count + 1,
+    )
     return session_id
