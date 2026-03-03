@@ -137,4 +137,26 @@
 	{#if statusMessage}
 		<div class="login-status">{statusMessage}</div>
 	{/if}
+
+	<p class="age-notice">
+		By signing in you confirm you are aged 13 or over. Guest accounts can be used at any age. <a href="/privacy">Privacy Policy</a>.
+	</p>
 </div>
+
+<style>
+	.age-notice {
+		margin-top: 1rem;
+		font-size: 0.78rem;
+		color: var(--color-text-muted);
+		text-align: center;
+	}
+
+	.age-notice a {
+		color: var(--color-text-muted);
+		text-decoration: underline;
+	}
+
+	.age-notice a:hover {
+		color: var(--color-text-secondary);
+	}
+</style>
