@@ -8,6 +8,7 @@ from fastapi.responses import JSONResponse, FileResponse
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from typing import List, Optional, Dict
+import hashlib
 import numpy as np
 import json
 import shutil
@@ -41,6 +42,7 @@ from pdf_interpretation.questionLocator import locate_questions_in_pdf
 from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
+from Backend.paper_cache import get_cached_paper, save_cached_paper, clone_session_from_cache
 from paper_scraper.downloader import download_pdf as scraper_download_pdf
 from paper_scraper import aqa_config as aqa_scraper_config
 from paper_scraper import edexcel_config as edexcel_scraper_config
@@ -1499,6 +1501,61 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
     else:
         spec_has_math = allSpecs.get(SpecCode, {}).get("has_math", False)
 
+    # Extract user identity early (needed for cache key and session creation)
+    if user["is_authenticated"]:
+        user_id, is_guest = user["user_id"], False
+    else:
+        user_id, is_guest = user["guest_id"], True
+
+    # Compute PDF hash for cache lookup
+    with open(pdf_path, "rb") as f:
+        pdf_hash = hashlib.sha256(f.read()).hexdigest()
+
+    # Resolve effective strands and tier (mirrors classify_questions_logic resolution)
+    effective_strands_for_key = None
+    effective_tier_for_key = tier
+    if SpecCode != "NONE":
+        spec_data = allSpecs.get(SpecCode, {})
+        if strands:
+            effective_strands_for_key = set(strands)
+        elif spec_data.get("optional_modules", False):
+            with Session(engine) as db:
+                rows = db.exec(
+                    select(UserModuleSelection)
+                    .where(UserModuleSelection.user_id == user_id)
+                    .where(UserModuleSelection.is_guest == is_guest)
+                    .where(UserModuleSelection.spec_code == SpecCode)
+                ).all()
+                if rows:
+                    effective_strands_for_key = {r.strand for r in rows}
+        if not effective_tier_for_key:
+            with Session(engine) as db:
+                tier_row = db.exec(
+                    select(UserTierSelection)
+                    .where(UserTierSelection.user_id == user_id)
+                    .where(UserTierSelection.is_guest == is_guest)
+                    .where(UserTierSelection.spec_code == SpecCode)
+                ).first()
+                if tier_row:
+                    effective_tier_for_key = tier_row.tier
+
+    # Check cache before running the expensive pipeline
+    if SpecCode != "NONE":
+        strands_key = ",".join(sorted(effective_strands_for_key)) if effective_strands_for_key else None
+        updateStatus(job_id, "Checking cache...")
+        cached = get_cached_paper(pdf_hash, SpecCode, strands_key, effective_tier_for_key)
+        if cached:
+            updateStatus(job_id, "Loading from cache...")
+            spec_data = allSpecs.get(SpecCode, {})
+            exam_board = spec_data.get("Exam Board", "")
+            session_id = clone_session_from_cache(
+                cached, user_id, is_guest, exam_board,
+                list(effective_strands_for_key) if effective_strands_for_key else None,
+                job_id, mark_scheme_filename, paper_meta,
+            )
+            updateStatus(job_id, "Done", session_id)
+            return
+
     questions = None
     olmocr_workspace = None
     status_cb = lambda msg: updateStatus(job_id, msg)
@@ -1608,17 +1665,11 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
 
     updateStatus(job_id, "Questions extracted. Classifying questions by topic...")
 
-    if user["is_authenticated"]:
-        user_id = user["user_id"]
-        is_guest = False
-    else:
-        user_id = user["guest_id"]
-        is_guest = True
-
     classify_spec_code = None if SpecCode == "NONE" else SpecCode
     session_id = classify_questions_logic(classificationRequest(question_object=questions, SpecCode=classify_spec_code, strands=strands, tier=tier), user_id=user_id, is_guest=is_guest)["session_id"]
 
     # Store PDF filename (and optional mark scheme) and locate questions in the PDF
+    locations = None
     try:
         with Session(engine) as db:
             db_session = db.exec(select(DBSess).where(DBSess.session_id == session_id)).first()
@@ -1658,6 +1709,16 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
             logger.info("Stored %d question locations for session %s", len(locations), session_id)
     except Exception as e:
         logger.warning("Question location failed for job %s: %s", job_id, e)
+
+    # Save to cache (no-op if eligibility checks fail or SpecCode is NONE)
+    if SpecCode != "NONE":
+        try:
+            save_cached_paper(
+                pdf_hash, SpecCode, effective_strands_for_key, effective_tier_for_key,
+                session_id, questions, locations or [], pipeline_info, spec_has_math,
+            )
+        except Exception as e:
+            logger.warning("Failed to cache paper %s: %s", job_id, e)
 
     updateStatus(job_id, "Done", session_id, pipeline=pipeline_info)
 
@@ -2948,8 +3009,21 @@ async def classify_past_paper(
     """Download a past paper on-demand and run it through the existing PDF pipeline."""
     with Session(engine) as db:
         paper = db.get(PastPaper, req.content_id)
-        if not paper:
-            raise HTTPException(status_code=404, detail="Paper not found in index. Run populate_db first.")
+
+    if not paper:
+        # content_id not found — re-index and try once more
+        exam_board = allSpecs.get(SpecCode, {}).get("Exam Board", "")
+        if exam_board == "Edexcel":
+            _index_past_papers_edexcel(SpecCode)
+        elif exam_board == "OCR":
+            _index_past_papers_ocr(SpecCode)
+        else:
+            _index_past_papers(SpecCode)
+        with Session(engine) as db:
+            paper = db.get(PastPaper, req.content_id)
+
+    if not paper:
+        raise HTTPException(status_code=404, detail="Paper not found in index.")
 
     local_path = Path(paper.local_path)
 

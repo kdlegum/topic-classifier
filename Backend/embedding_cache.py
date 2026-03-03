@@ -163,3 +163,9 @@ def get_embeddings(spec_code: str, strand_filter: set[str] | None = None, tier_f
     filtered_embeddings = entry["embeddings"][mask]
     filtered_ids = [sid for sid, keep in zip(entry["subtopic_ids"], mask) if keep]
     return filtered_embeddings, filtered_ids
+
+
+def get_spec_embedding_hash(spec_code: str) -> str | None:
+    """Return the current content hash for a spec (from disk cache)."""
+    hash_file = DISK_CACHE_DIR / spec_code / "hash.txt"
+    return hash_file.read_text().strip() if hash_file.exists() else None

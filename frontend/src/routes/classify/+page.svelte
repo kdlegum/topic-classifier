@@ -292,7 +292,7 @@
 			pollJobStatus(data.job_id);
 		} catch (error) {
 			console.error('Error classifying past paper:', error);
-			alert('Failed to start processing. The paper index may need to be refreshed.');
+			alert('Failed to start processing. Please try again.');
 			isUploading = false;
 			pdfStatus = '';
 		}

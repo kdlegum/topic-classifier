@@ -167,6 +167,27 @@ class QuestionLocation(SQLModel, table=True):
     end_y: float          # bottom of question content (before answer lines)
 
 
+class CachedPaper(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    pdf_hash: str = Field(index=True)        # SHA256 of PDF bytes
+    spec_code: str
+    strands_key: str | None = None           # sorted comma-joined strands, or None
+    tier: str | None = None
+
+    # Validity markers — cache is stale if either doesn't match current values
+    embedding_hash: str                      # from .embedding_cache/{spec_code}/hash.txt
+    parser_version: int                      # must match PARSER_VERSION constant
+
+    # Cached data
+    questions_json: str                      # [{id, text, marks}]
+    locations_json: str | None = None        # [{question_id, start_page, start_y, end_page, end_y}]
+    predictions_json: str                    # [{question_id, predictions: [{rank, strand, topic, subtopic, spec_sub_section, similarity_score, description}]}]
+    pipeline_used: str
+
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    hit_count: int = Field(default=0)
+
+
 class RevisionAttempt(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     question_id: int = Field(foreign_key="question.id", index=True)
