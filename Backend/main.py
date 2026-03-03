@@ -884,20 +884,24 @@ def classify_questions_logic(
             for strand in effective_strands:
                 db.add(SessionStrand(session_id=session_id, strand=strand))
 
+        db_questions_list = []
         for q_idx, q_text in enumerate(question_texts):
             db_question = DBQuestion(
                 session_id=session_id,
                 question_number=question_ids[q_idx],
                 question_text=q_text,
             )
+            db_questions_list.append((db_question, q_idx))
             db.add(db_question)
-            db.flush()  # needed here to get db_question.id
 
-            db_question_mark = QuestionMark(
+        db.flush()  # single flush — populates all db_question.id values
+
+        related = []
+        for db_question, q_idx in db_questions_list:
+            related.append(QuestionMark(
                 question_id=db_question.id,
                 marks_available=marks[q_idx],
-            )
-            db.add(db_question_mark)
+            ))
 
             if not no_spec:
                 for rank, subtopic_idx in enumerate(topk_indices[q_idx], start=1):
@@ -912,7 +916,7 @@ def classify_questions_logic(
                         round(similarities[subtopic_idx, q_idx], 4)
                     )
 
-                    db_prediction = DBPrediction(
+                    related.append(DBPrediction(
                         question_id=db_question.id,
                         rank=rank,
                         strand=info["strand"],
@@ -921,9 +925,9 @@ def classify_questions_logic(
                         spec_sub_section=info["spec_sub_section"],
                         description=info["description"],
                         similarity_score=similarity_score,
-                    )
-                    db.add(db_prediction)
+                    ))
 
+        db.add_all(related)
         db.commit()
 
     return get_session(session_id)
