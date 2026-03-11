@@ -2,9 +2,11 @@
 	<title>How It Works - Topic Tracker</title>
 </svelte:head>
 
+<!-- todo: Add more help content for each individual page-->
+
 <div class="page-content help-page">
 	<h1>What is this website for?</h1>
-	
+
 	<h3 class="intro">
 		On Topic Tracker, you can make a personal collection of questions from past papers and use them to revise effectively!
 	</h3>

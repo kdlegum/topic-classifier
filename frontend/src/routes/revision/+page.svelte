@@ -2,19 +2,26 @@
 	import { onMount } from 'svelte';
 	import { fly, fade, slide } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
-	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, downloadSessionMarkScheme, getSpecs } from '$lib/api';
-	import type { RevisionQuestion, SpecInfo } from '$lib/api';
+	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, downloadSessionMarkScheme, getSpecs, getQuickPractice, downloadQuickPracticeMarkScheme } from '$lib/api';
+	import type { RevisionQuestion, QuickPracticeQuestion, SpecInfo } from '$lib/api';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
 	import { celebrateFullMarks } from '$lib/celebrations';
 
+	// ── Mode toggle ──────────────────────────────────────────────
+	let mode: 'revision' | 'practice' = $state('practice');
+
+	// ── Shared state ─────────────────────────────────────────────
+	let specs: SpecInfo[] = $state([]);
+	let loading: boolean = $state(true);
+	let questionKey: number = $state(0);
+
+	// ── My Revision state ────────────────────────────────────────
 	let specFilter: string = $state('');
 	let questionBatch: RevisionQuestion[] = $state([]);
 	let currentQuestion: RevisionQuestion | null = $state(null);
 	let totalCount: number = $state(0);
 	let specCodes: string[] = $state([]);
-	let specs: SpecInfo[] = $state([]);
-	let loading: boolean = $state(true);
 	let marksInput: number = $state(0);
 	let submitted: boolean = $state(false);
 	let submitResult: { success: boolean; is_full_marks: boolean } | null = $state(null);
@@ -24,7 +31,20 @@
 	let downloadingMarkScheme: boolean = $state(false);
 	let submitting: boolean = $state(false);
 	let deleting: boolean = $state(false);
-	let questionKey: number = $state(0);
+
+	// ── Quick Practice state ─────────────────────────────────────
+	let qpSpecFilter: string = $state('');
+	let qpStrandFilter: string = $state('');
+	let qpTopicFilter: string = $state('');
+	let qpBatch: QuickPracticeQuestion[] = $state([]);
+	let qpCurrent: QuickPracticeQuestion | null = $state(null);
+	let qpTotal: number = $state(0);
+	let qpSpecCodes: string[] = $state([]);
+	let qpFilterOptions: Record<string, string[]> = $state({});
+	let qpMarksInput: number = $state(0);
+	let qpSubmitted: boolean = $state(false);
+	let qpFetching: boolean = $state(false);
+	let qpDownloadingMs: boolean = $state(false);
 
 	function specDisplayName(code: string): string {
 		const spec = specs.find((s) => s.spec_code === code);
@@ -32,6 +52,7 @@
 		return code;
 	}
 
+	// ── My Revision logic ────────────────────────────────────────
 	function pickNext() {
 		submitted = false;
 		submitResult = null;
@@ -180,6 +201,151 @@
 		return 'Unclassified';
 	}
 
+	// ── Quick Practice logic ─────────────────────────────────────
+	function qpTopicDisplay(q: QuickPracticeQuestion): string {
+		if (q.predictions.length > 0) {
+			const p = q.predictions[0];
+			return `${p.spec_sub_section} ${p.subtopic}`;
+		}
+		return 'Unclassified';
+	}
+
+	function qpPickNext() {
+		qpSubmitted = false;
+		qpMarksInput = 0;
+		questionKey++;
+
+		if (qpBatch.length === 0) {
+			qpCurrent = null;
+			return;
+		}
+
+		const idx = Math.floor(Math.random() * qpBatch.length);
+		qpCurrent = qpBatch.splice(idx, 1)[0];
+
+		if (qpBatch.length < 3 && !qpFetching) {
+			qpRefillBatch();
+		}
+	}
+
+	async function qpRefillBatch() {
+		qpFetching = true;
+		try {
+			const data = await getQuickPractice(
+				qpSpecFilter || undefined,
+				qpStrandFilter || undefined,
+				qpTopicFilter || undefined,
+				20
+			);
+			// Deduplicate by question_text (cache might return same questions)
+			const existingTexts = new Set(qpBatch.map((q) => q.question_text));
+			if (qpCurrent) existingTexts.add(qpCurrent.question_text);
+			const newQuestions = data.questions.filter((q) => !existingTexts.has(q.question_text));
+			qpBatch = [...qpBatch, ...newQuestions];
+		} catch (e) {
+			console.error('Failed to refill quick practice batch:', e);
+		} finally {
+			qpFetching = false;
+		}
+	}
+
+	async function fetchQuickPractice() {
+		loading = true;
+		try {
+			const [data, specList] = await Promise.all([
+				getQuickPractice(
+					qpSpecFilter || undefined,
+					qpStrandFilter || undefined,
+					qpTopicFilter || undefined,
+					20
+				),
+				specs.length === 0 ? getSpecs() : Promise.resolve(specs)
+			]);
+			if (specs.length === 0) specs = specList;
+			qpBatch = data.questions;
+			qpTotal = data.total_available;
+			qpSpecCodes = data.spec_codes;
+			qpFilterOptions = data.filter_options;
+			qpPickNext();
+		} catch (e) {
+			console.error('Failed to fetch quick practice:', e);
+			qpBatch = [];
+			qpCurrent = null;
+			qpTotal = 0;
+		} finally {
+			loading = false;
+		}
+	}
+
+	function handleQpSpecChange(e: Event) {
+		const value = (e.target as HTMLSelectElement).value;
+		qpSpecFilter = value;
+		qpStrandFilter = '';
+		qpTopicFilter = '';
+		qpBatch = [];
+		qpCurrent = null;
+		fetchQuickPractice();
+	}
+
+	function handleQpStrandChange(e: Event) {
+		const value = (e.target as HTMLSelectElement).value;
+		qpStrandFilter = value;
+		qpTopicFilter = '';
+		qpBatch = [];
+		qpCurrent = null;
+		fetchQuickPractice();
+	}
+
+	function handleQpTopicChange(e: Event) {
+		const value = (e.target as HTMLSelectElement).value;
+		qpTopicFilter = value;
+		qpBatch = [];
+		qpCurrent = null;
+		fetchQuickPractice();
+	}
+
+	function qpHandleSubmit() {
+		if (!qpCurrent) return;
+		qpSubmitted = true;
+		if (qpCurrent.marks_available && qpMarksInput >= qpCurrent.marks_available) {
+			celebrateFullMarks();
+		}
+	}
+
+	async function handleQpDownloadMarkScheme() {
+		if (!qpCurrent || qpDownloadingMs) return;
+		qpDownloadingMs = true;
+		try {
+			const blob = await downloadQuickPracticeMarkScheme(qpCurrent.cached_paper_id);
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = `${qpCurrent.exam_board}_${qpCurrent.spec_code}_mark_scheme.pdf`;
+			document.body.appendChild(a);
+			a.click();
+			document.body.removeChild(a);
+			URL.revokeObjectURL(url);
+		} catch (e) {
+			console.error('Failed to download mark scheme:', e);
+		} finally {
+			qpDownloadingMs = false;
+		}
+	}
+
+	// ── Mode switching ───────────────────────────────────────────
+	function switchMode(newMode: 'revision' | 'practice') {
+		if (mode === newMode) return;
+		mode = newMode;
+		loading = true;
+		questionKey = 0;
+		if (newMode === 'revision') {
+			fetchPool(specFilter);
+		} else {
+			fetchQuickPractice();
+		}
+	}
+
+	// ── Shared transitions ───────────────────────────────────────
 	function throwOut(node: Element, { duration = 400 } = {}) {
 		return {
 			duration,
@@ -218,18 +384,164 @@
 	}
 
 	onMount(() => {
-		fetchPool();
+		fetchQuickPractice();
 	});
 </script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" />
 
 <div class="revision-page">
+	<div class="mode-toggle">
+		<button
+			class="toggle-btn"
+			class:active={mode === 'practice'}
+			onclick={() => switchMode('practice')}
+		>Quick Practice</button>
+		<button
+			class="toggle-btn"
+			class:active={mode === 'revision'}
+			onclick={() => switchMode('revision')}
+		>My Revision</button>
+	</div>
+
 	{#if loading}
 		<div class="centered">
 			<div class="spinner"></div>
-			<p class="muted">Loading revision pool...</p>
+			<p class="muted">Loading questions...</p>
 		</div>
+
+	<!-- ═══ QUICK PRACTICE MODE ═══ -->
+	{:else if mode === 'practice'}
+		{#if !qpCurrent}
+			<div class="centered" in:fly={{ y: 20, duration: 300 }}>
+				<h2 class="empty-title">No practice questions available</h2>
+				<p class="muted">Questions appear here once exam papers have been classified. Try selecting a different spec or topic filter.</p>
+			</div>
+		{:else}
+			<div class="transition-container" in:fly={{ y: 20, duration: 300 }}>
+				<div class="stack-wrapper">
+					{#if qpBatch.length >= 2}
+						<div class="ghost-card ghost-card-2"></div>
+					{/if}
+					{#if qpBatch.length >= 1}
+						<div class="ghost-card ghost-card-1"></div>
+					{/if}
+					{#key questionKey}
+						<div class="revision-content" in:dealIn out:throwOut>
+							<div class="top-bar">
+								<div class="top-bar-left">
+									<span class="spec-badge">{qpCurrent.exam_board || specDisplayName(qpCurrent.spec_code)}</span>
+									<span class="meta">Q{qpCurrent.question_number}</span>
+									{#if qpCurrent.marks_available}
+										<span class="meta-dot">&middot;</span>
+										<span class="meta">{qpCurrent.marks_available} mark{qpCurrent.marks_available !== 1 ? 's' : ''}</span>
+									{/if}
+								</div>
+								<div class="top-bar-right">
+									<span class="pool-count">{qpTotal} available</span>
+								</div>
+							</div>
+
+							<div class="question-body">
+								<div class="question-text">
+									<MathText text={qpCurrent.question_text} />
+								</div>
+							</div>
+
+							<div class="bottom-controls">
+								<div class="actions-row">
+									<button class="action-btn" onclick={handleQpDownloadMarkScheme} disabled={qpDownloadingMs}>
+										{qpDownloadingMs ? 'Downloading...' : 'Download mark scheme'}
+									</button>
+								</div>
+								{#if !qpSubmitted}
+									<div class="submit-row" out:slide={{ duration: 200, axis: 'y' }}>
+										{#if qpCurrent.marks_available}
+											<div class="marks-group">
+												<input
+													type="number"
+													class="marks-input"
+													bind:value={qpMarksInput}
+													min="0"
+													max={qpCurrent.marks_available}
+												/>
+												<span class="marks-divider">/ {qpCurrent.marks_available} marks</span>
+											</div>
+										{/if}
+										<div class="submit-actions">
+											<button class="action-btn" onclick={qpPickNext}>Skip</button>
+											<button class="primary-btn" onclick={qpHandleSubmit}>
+												Submit
+											</button>
+										</div>
+									</div>
+								{:else}
+									<div
+										class="result-section"
+										class:full-marks={qpCurrent.marks_available != null && qpMarksInput >= qpCurrent.marks_available}
+										class:partial={qpCurrent.marks_available != null && qpMarksInput < qpCurrent.marks_available}
+										in:slide={{ duration: 300, axis: 'y' }}
+									>
+										<div class="result-banner">
+											{#if qpCurrent.marks_available != null && qpMarksInput >= qpCurrent.marks_available}
+												<span class="result-icon">&#10003;</span>
+												<span>Full marks!</span>
+											{:else}
+												<span class="result-icon">&#8635;</span>
+												<span>Keep practising</span>
+											{/if}
+										</div>
+
+										<div class="result-details">
+											<div class="result-row">
+												<span class="detail-label">Topic</span>
+												<span class="detail-value">{qpTopicDisplay(qpCurrent)}</span>
+											</div>
+											{#if qpCurrent.marks_available}
+												<div class="result-row">
+													<span class="detail-label">Your marks</span>
+													<span class="detail-value">{qpMarksInput}/{qpCurrent.marks_available}</span>
+												</div>
+											{/if}
+										</div>
+
+										<button class="primary-btn next-btn" onclick={qpPickNext}>Next Question</button>
+									</div>
+								{/if}
+							</div>
+						</div>
+					{/key}
+				</div>
+
+				<!-- Filters below the card -->
+				<div class="qp-filters" in:fly={{ y: 10, duration: 200, delay: 100 }}>
+					<select class="spec-filter" value={qpSpecFilter} onchange={handleQpSpecChange}>
+						<option value="">All specs</option>
+						{#each qpSpecCodes as code}
+							<option value={code}>{specDisplayName(code)}</option>
+						{/each}
+					</select>
+					{#if Object.keys(qpFilterOptions).length > 0}
+						<select class="spec-filter" value={qpStrandFilter} onchange={handleQpStrandChange}>
+							<option value="">All strands</option>
+							{#each Object.keys(qpFilterOptions) as s}
+								<option value={s}>{s}</option>
+							{/each}
+						</select>
+					{/if}
+					{#if qpStrandFilter && qpFilterOptions[qpStrandFilter]?.length > 0}
+						<select class="spec-filter" value={qpTopicFilter} onchange={handleQpTopicChange}>
+							<option value="">All topics</option>
+							{#each qpFilterOptions[qpStrandFilter] as t}
+								<option value={t}>{t}</option>
+							{/each}
+						</select>
+					{/if}
+				</div>
+			</div>
+		{/if}
+
+	<!-- ═══ MY REVISION MODE ═══ -->
 	{:else if !currentQuestion}
 		<div class="centered" in:fly={{ y: 20, duration: 300 }}>
 			<div class="empty-icon">&#10003;</div>
@@ -237,7 +549,6 @@
 			<p class="muted">Questions appear here when you've scored below full marks on a session. Mark some exam sessions to build your revision pool.</p>
 		</div>
 	{:else}
-	<!-- TODO: Take content out especially for mobile since info like cards left shouldn't be part of the revision card. -->
 		<div class="transition-container" in:fly={{ y: 20, duration: 300 }}>
 			<div class="stack-wrapper">
 				{#if questionBatch.length >= 2}
@@ -252,7 +563,7 @@
 							<div class="top-bar-left">
 								<span class="spec-badge">{specDisplayName(currentQuestion.spec_code)}</span>
 								<span class="meta">Q{currentQuestion.question_number}</span>
-								<span class="meta-dot">·</span>
+								<span class="meta-dot">&middot;</span>
 								<span class="meta">{currentQuestion.marks_available} mark{currentQuestion.marks_available !== 1 ? 's' : ''}</span>
 							</div>
 							<div class="top-bar-right">
@@ -363,6 +674,47 @@
 </div>
 
 <style>
+	.mode-toggle {
+		display: flex;
+		gap: 4px;
+		background: var(--color-surface-alt);
+		border-radius: var(--radius-md);
+		padding: 3px;
+		margin-bottom: 20px;
+		width: fit-content;
+	}
+
+	.toggle-btn {
+		padding: 7px 16px;
+		border: none;
+		border-radius: var(--radius-sm);
+		font-size: 0.84rem;
+		font-weight: 600;
+		cursor: pointer;
+		background: transparent;
+		color: var(--color-text-muted);
+		transition: background var(--transition-fast), color var(--transition-fast);
+		font-family: var(--font-body);
+		white-space: nowrap;
+	}
+
+	.toggle-btn.active {
+		background: var(--color-surface);
+		color: var(--color-text);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.toggle-btn:hover:not(.active) {
+		color: var(--color-text-secondary);
+	}
+
+	.qp-filters {
+		display: flex;
+		gap: 8px;
+		flex-wrap: wrap;
+		margin-top: 16px;
+	}
+
 	.transition-container {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -778,6 +1130,14 @@
 		.submit-actions .primary-btn {
 			flex: 1;
 			text-align: center;
+		}
+
+		.qp-filters {
+			flex-direction: column;
+		}
+
+		.qp-filters .spec-filter {
+			width: 100%;
 		}
 	}
 </style>
