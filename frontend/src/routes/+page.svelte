@@ -107,16 +107,12 @@
 
 		<div class="section">
 			<button
-				class="btn-primary"
+				class="btn-google"
 				on:click={handleMagicLink}
 				disabled={isLoading}
 			>
 				Send Login Link
 			</button>
-		</div>
-
-		<div class="divider">
-			<span>or</span>
 		</div>
 
 		<div class="section">
@@ -129,8 +125,17 @@
 			</button>
 		</div>
 
-		<div class="section guest-link">
-			<a href="/classify">Continue as Guest</a>
+		<div class="divider">
+			<span>or</span>
+		</div>
+
+		<div class="section">
+			<button
+				class="btn-primary"
+				on:click={() => goto('/classify')}
+			>
+				Continue as Guest
+			</button>
 		</div>
 	</div>
 
