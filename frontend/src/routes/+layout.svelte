@@ -25,7 +25,7 @@
 		}
 		const ratio = clientHeight / scrollHeight;
 		thumbHeight = Math.max(48, ratio * clientHeight);
-		const maxThumbTop = clientHeight - thumbHeight - 10;
+		const maxThumbTop = clientHeight - thumbHeight - 10; 
 		const maxScrollTop = scrollHeight - clientHeight;
 		thumbTop = maxScrollTop > 0 ? (scrollTop / maxScrollTop) * maxThumbTop : 0;
 	}

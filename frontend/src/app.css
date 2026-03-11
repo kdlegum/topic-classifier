@@ -306,20 +306,6 @@ button {
 	font-size: 0.9rem;
 }
 
-.guest-link {
-	margin-top: 24px;
-}
-
-.guest-link a {
-	color: var(--color-text-secondary);
-	text-decoration: none;
-	font-weight: 500;
-}
-
-.guest-link a:hover {
-	color: var(--color-primary);
-	text-decoration: underline;
-}
 
 .login-status {
 	margin-top: 16px;
