@@ -14,6 +14,7 @@
 	let isHistory = $derived(currentPath === '/history');
 	let isAnalytics = $derived(currentPath === '/analytics');
 	let isRevision = $derived(currentPath === '/revision');
+	let isHelp = $derived(currentPath === '/help');
 	let userDisplay = $derived($user ? $user.email : 'Guest');
 </script>
 
@@ -27,6 +28,7 @@
 		<a href="/history" class:active={isHistory}><span class="shorten-text">My&nbsp;</span>Sessions</a>
 		<a href="/analytics" class:active={isAnalytics}>Analytics</a>
 		<a href="/revision" class:active={isRevision}>Revision</a>
+		<a href="/help" class:active={isHelp}>Help</a>
 	</div>
 	<div class="nav-user">
 		<span class="user-display">{userDisplay}</span>
