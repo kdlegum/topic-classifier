@@ -16,7 +16,7 @@ import time
 import uuid
 import datetime
 import requests
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection, PastPaper, UserPaperCompletion
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection, PastPaper, UserPaperCompletion, CachedPaper
 from sqlmodel import Session, select, update
 from sqlalchemy import func
 from pathlib import Path
@@ -42,7 +42,7 @@ from pdf_interpretation.questionLocator import locate_questions_in_pdf
 from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
-from Backend.paper_cache import get_cached_paper, save_cached_paper, clone_session_from_cache
+from Backend.paper_cache import get_cached_paper, save_cached_paper, clone_session_from_cache, PARSER_VERSION
 from paper_scraper.downloader import download_pdf as scraper_download_pdf
 from paper_scraper import aqa_config as aqa_scraper_config
 from paper_scraper import edexcel_config as edexcel_scraper_config
@@ -2666,6 +2666,114 @@ def record_revision_attempt(
         return {
             "success": True,
             "is_full_marks": body.marks_achieved >= marks_available,
+        }
+
+
+# ── Quick Practice (from global cache) ────────────────────────────────────────
+
+@app.get("/revision/quick-practice")
+def get_quick_practice(
+    request: Request,
+    spec_code: Optional[str] = Query(default=None),
+    strand: Optional[str] = Query(default=None),
+    topic: Optional[str] = Query(default=None),
+    limit: int = Query(default=10, ge=1, le=50),
+    user=Depends(get_user),
+):
+    """Serve random questions from the global paper cache for casual practice."""
+    import random as _random
+
+    with Session(engine) as db:
+        # Query valid cached papers (match current parser version)
+        cache_query = select(CachedPaper).where(
+            CachedPaper.parser_version == PARSER_VERSION
+        )
+        if spec_code:
+            cache_query = cache_query.where(CachedPaper.spec_code == spec_code)
+
+        cached_rows = db.exec(cache_query).all()
+
+        # Collect all spec_codes that have cached data
+        all_spec_codes = sorted(set(r.spec_code for r in cached_rows))
+
+        # Build pool of (question, predictions, spec_code, exam_board) tuples
+        # Look up exam_board per spec_code
+        spec_boards: dict[str, str] = {}
+        if cached_rows:
+            spec_codes_needed = set(r.spec_code for r in cached_rows)
+            spec_rows = db.exec(
+                select(Specification.spec_code, Specification.exam_board)
+                .where(Specification.spec_code.in_(spec_codes_needed))
+            ).all()
+            spec_boards = {row[0]: row[1] for row in spec_rows}
+
+        pool = []
+        # Collect available strands/topics for filtering UI
+        available_strands: set[str] = set()
+        available_topics: dict[str, set[str]] = {}  # strand -> set of topics
+
+        for row in cached_rows:
+            questions = json.loads(row.questions_json)
+            predictions_list = json.loads(row.predictions_json)
+            preds_by_qid = {p["question_id"]: p["predictions"] for p in predictions_list}
+            exam_board = spec_boards.get(row.spec_code, "")
+
+            for q in questions:
+                preds = preds_by_qid.get(q["id"], [])
+
+                # Track available strands/topics
+                for p in preds:
+                    if p.get("strand"):
+                        available_strands.add(p["strand"])
+                        available_topics.setdefault(p["strand"], set()).add(p.get("topic", ""))
+
+                # Apply strand/topic filter on top-1 prediction
+                if strand or topic:
+                    if not preds:
+                        continue
+                    top = preds[0]
+                    if strand and top.get("strand") != strand:
+                        continue
+                    if topic and top.get("topic") != topic:
+                        continue
+
+                pool.append({
+                    "question_number": q["id"],
+                    "question_text": q["text"],
+                    "marks_available": q.get("marks"),
+                    "spec_code": row.spec_code,
+                    "exam_board": exam_board,
+                    "predictions": [
+                        {
+                            "rank": p["rank"],
+                            "strand": p["strand"],
+                            "topic": p["topic"],
+                            "subtopic": p["subtopic"],
+                            "spec_sub_section": p["spec_sub_section"],
+                            "similarity_score": p["similarity_score"],
+                            "description": p.get("description", ""),
+                        }
+                        for p in preds
+                    ],
+                })
+
+        total_available = len(pool)
+
+        # Random sample
+        if len(pool) > limit:
+            pool = _random.sample(pool, limit)
+
+        # Build strand->topics map for response
+        filter_options = {
+            s: sorted(available_topics.get(s, set()))
+            for s in sorted(available_strands)
+        }
+
+        return {
+            "questions": pool,
+            "total_available": total_available,
+            "spec_codes": all_spec_codes,
+            "filter_options": filter_options,
         }
 
 

@@ -143,6 +143,9 @@
 		<div class="login-status">{statusMessage}</div>
 	{/if}
 
+	<p class="tagline">Make a personal collection of questions from past papers and use them to revise effectively!</p>
+	<a href="/help" class="learn-more">Learn more &rarr;</a>
+
 	<p class="age-notice">
 		By signing in you confirm you are aged 13 or over. Guest accounts can be used at any age. <a href="/privacy">Privacy Policy</a>.
 	</p>
@@ -163,5 +166,28 @@
 
 	.age-notice a:hover {
 		color: var(--color-text-secondary);
+	}
+
+	.tagline {
+		margin-top: 32px;
+		font-size: 1.35rem;
+		font-weight: 600;
+		color: var(--color-text);
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	.learn-more {
+		display: block;
+		margin-top: 10px;
+		font-size: 0.88rem;
+		font-weight: 600;
+		color: var(--color-primary);
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.learn-more:hover {
+		color: var(--color-primary-hover);
 	}
 </style>

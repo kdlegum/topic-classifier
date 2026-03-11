@@ -498,6 +498,55 @@ export async function updateSpec(
 	return response.json();
 }
 
+export type QuickPracticeQuestion = {
+	question_number: string;
+	question_text: string;
+	marks_available: number;
+	spec_code: string;
+	exam_board: string;
+	predictions: {
+		rank: number;
+		strand: string;
+		topic: string;
+		subtopic: string;
+		spec_sub_section: string;
+		similarity_score: number;
+		description: string;
+	}[];
+};
+
+export type QuickPracticeResponse = {
+	questions: QuickPracticeQuestion[];
+	total_available: number;
+	spec_codes: string[];
+	filter_options: Record<string, string[]>;
+};
+
+/**
+ * Get random questions from the global paper cache for quick practice
+ */
+export async function getQuickPractice(
+	specCode?: string,
+	strand?: string,
+	topic?: string,
+	limit?: number
+): Promise<QuickPracticeResponse> {
+	const params = new URLSearchParams();
+	if (specCode) params.set('spec_code', specCode);
+	if (strand) params.set('strand', strand);
+	if (topic) params.set('topic', topic);
+	if (limit) params.set('limit', String(limit));
+	const qs = params.toString();
+
+	const response = await apiFetch(`/revision/quick-practice${qs ? `?${qs}` : ''}`);
+
+	if (!response.ok) {
+		throw new Error(`Failed to fetch quick practice: ${response.status}`);
+	}
+
+	return response.json();
+}
+
 export type RevisionQuestion = {
 	question_id: number;
 	question_number: string;
