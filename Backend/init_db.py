@@ -23,6 +23,7 @@ migrations = [
     "ALTER TABLE session ADD COLUMN paper_name VARCHAR DEFAULT NULL",
     "ALTER TABLE session ADD COLUMN paper_year INTEGER DEFAULT NULL",
     "ALTER TABLE session ADD COLUMN paper_series VARCHAR DEFAULT NULL",
+    "ALTER TABLE cachedpaper ADD COLUMN mark_scheme_filename VARCHAR DEFAULT NULL",
 ]
 
 for sql in migrations:

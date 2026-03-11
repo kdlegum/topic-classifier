@@ -125,6 +125,7 @@ def save_cached_paper(
     locations: list,
     pipeline_used,
     spec_has_math: bool,
+    mark_scheme_filename: str | None = None,
 ):
     """Persist classification results to cache if quality checks pass."""
     eligible, reason = check_cache_eligibility(questions, locations, spec_has_math, pipeline_used)
@@ -176,6 +177,7 @@ def save_cached_paper(
             locations_json=json.dumps(locations) if locations else None,
             predictions_json=json.dumps(predictions_data),
             pipeline_used=pipeline_used or "",
+            mark_scheme_filename=mark_scheme_filename,
         )
 
         try:

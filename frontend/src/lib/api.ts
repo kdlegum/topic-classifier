@@ -504,6 +504,7 @@ export type QuickPracticeQuestion = {
 	marks_available: number;
 	spec_code: string;
 	exam_board: string;
+	cached_paper_id: number;
 	predictions: {
 		rank: number;
 		strand: string;
@@ -545,6 +546,17 @@ export async function getQuickPractice(
 	}
 
 	return response.json();
+}
+
+/**
+ * Download the mark scheme PDF for a cached paper (quick practice)
+ */
+export async function downloadQuickPracticeMarkScheme(cachedPaperId: number): Promise<Blob> {
+	const response = await apiFetch(`/revision/quick-practice/${cachedPaperId}/mark-scheme`);
+	if (!response.ok) {
+		throw new Error(`Failed to download mark scheme: ${response.status}`);
+	}
+	return response.blob();
 }
 
 export type RevisionQuestion = {

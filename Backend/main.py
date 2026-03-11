@@ -1238,6 +1238,22 @@ async def upload_mark_scheme(session_id: str, file: UploadFile = File(...), requ
 
         db_session.mark_scheme_filename = filename
         db.add(db_session)
+
+        # Also update any matching CachedPaper entries so quick practice can serve it
+        if db_session.pdf_filename:
+            pdf_path = UPLOAD_DIR / db_session.pdf_filename
+            if pdf_path.exists():
+                import hashlib as _hashlib
+                with open(pdf_path, "rb") as pf:
+                    pdf_hash = _hashlib.sha256(pf.read()).hexdigest()
+                from sqlalchemy import update as sa_update
+                db.execute(
+                    sa_update(CachedPaper)
+                    .where(CachedPaper.pdf_hash == pdf_hash)
+                    .where(CachedPaper.mark_scheme_filename.is_(None))
+                    .values(mark_scheme_filename=filename)
+                )
+
         db.commit()
 
     return {"success": True}
@@ -1720,6 +1736,7 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
             save_cached_paper(
                 pdf_hash, SpecCode, effective_strands_for_key, effective_tier_for_key,
                 session_id, questions, locations or [], pipeline_info, spec_has_math,
+                mark_scheme_filename=mark_scheme_filename,
             )
         except Exception as e:
             logger.warning("Failed to cache paper %s: %s", job_id, e)
@@ -2684,9 +2701,10 @@ def get_quick_practice(
     import random as _random
 
     with Session(engine) as db:
-        # Query valid cached papers (match current parser version)
+        # Query valid cached papers (match current parser version, must have mark scheme)
         cache_query = select(CachedPaper).where(
-            CachedPaper.parser_version == PARSER_VERSION
+            CachedPaper.parser_version == PARSER_VERSION,
+            CachedPaper.mark_scheme_filename.is_not(None),
         )
         if spec_code:
             cache_query = cache_query.where(CachedPaper.spec_code == spec_code)
@@ -2743,6 +2761,7 @@ def get_quick_practice(
                     "marks_available": q.get("marks"),
                     "spec_code": row.spec_code,
                     "exam_board": exam_board,
+                    "cached_paper_id": row.id,
                     "predictions": [
                         {
                             "rank": p["rank"],
@@ -2775,6 +2794,27 @@ def get_quick_practice(
             "spec_codes": all_spec_codes,
             "filter_options": filter_options,
         }
+
+
+@app.get("/revision/quick-practice/{cached_paper_id}/mark-scheme")
+def get_quick_practice_mark_scheme(cached_paper_id: int, user=Depends(get_user)):
+    """Serve the mark scheme PDF for a cached paper used in quick practice."""
+    with Session(engine) as db:
+        row = db.exec(
+            select(CachedPaper).where(CachedPaper.id == cached_paper_id)
+        ).first()
+        if not row or not row.mark_scheme_filename:
+            raise HTTPException(status_code=404, detail="Mark scheme not found")
+
+        ms_path = UPLOAD_DIR / row.mark_scheme_filename
+        if not ms_path.exists():
+            raise HTTPException(status_code=404, detail="Mark scheme file not found")
+
+        return FileResponse(
+            path=str(ms_path),
+            media_type="application/pdf",
+            filename=row.mark_scheme_filename,
+        )
 
 
 # ── Past Papers Library ───────────────────────────────────────────────────────
