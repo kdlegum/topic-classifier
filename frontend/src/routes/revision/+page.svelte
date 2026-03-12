@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { fly, fade, slide } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
-	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, downloadSessionMarkScheme, getSpecs, getQuickPractice, downloadQuickPracticeMarkScheme } from '$lib/api';
+	import { getRevisionPool, recordRevisionAttempt, downloadSessionPdf, downloadSessionMarkScheme, getSpecs, getQuickPractice, downloadQuickPracticeMarkScheme, downloadQuickPracticePdf } from '$lib/api';
 	import type { RevisionQuestion, QuickPracticeQuestion, SpecInfo } from '$lib/api';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
@@ -45,6 +45,8 @@
 	let qpSubmitted: boolean = $state(false);
 	let qpFetching: boolean = $state(false);
 	let qpDownloadingMs: boolean = $state(false);
+	let qpDownloadingPdf: boolean = $state(false);
+	let qpShowPdf: boolean = $state(false);
 
 	function specDisplayName(code: string): string {
 		const spec = specs.find((s) => s.spec_code === code);
@@ -213,6 +215,7 @@
 	function qpPickNext() {
 		qpSubmitted = false;
 		qpMarksInput = 0;
+		qpShowPdf = false;
 		questionKey++;
 
 		if (qpBatch.length === 0) {
@@ -332,6 +335,26 @@
 		}
 	}
 
+	async function handleQpDownloadPdf() {
+		if (!qpCurrent || qpDownloadingPdf) return;
+		qpDownloadingPdf = true;
+		try {
+			const blob = await downloadQuickPracticePdf(qpCurrent.cached_paper_id);
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = `${qpCurrent.exam_board}_${qpCurrent.spec_code}.pdf`;
+			document.body.appendChild(a);
+			a.click();
+			document.body.removeChild(a);
+			URL.revokeObjectURL(url);
+		} catch (e) {
+			console.error('Failed to download PDF:', e);
+		} finally {
+			qpDownloadingPdf = false;
+		}
+	}
+
 	// ── Mode switching ───────────────────────────────────────────
 	function switchMode(newMode: 'revision' | 'practice') {
 		if (mode === newMode) return;
@@ -443,13 +466,28 @@
 							</div>
 
 							<div class="question-body">
-								<div class="question-text">
-									<MathText text={qpCurrent.question_text} />
-								</div>
+								{#if qpShowPdf && qpCurrent.pdf_location}
+									<PdfQuestionView
+										pdfUrl={`/revision/quick-practice/${qpCurrent.cached_paper_id}/pdf`}
+										pdfLocation={qpCurrent.pdf_location}
+									/>
+								{:else}
+									<div class="question-text">
+										<MathText text={qpCurrent.question_text} />
+									</div>
+								{/if}
 							</div>
 
 							<div class="bottom-controls">
 								<div class="actions-row">
+									{#if qpCurrent.has_pdf && qpCurrent.pdf_location}
+										<button class="action-btn" onclick={() => (qpShowPdf = !qpShowPdf)}>
+											{qpShowPdf ? 'View text' : 'View full question'}
+										</button>
+									{/if}
+									<button class="action-btn" onclick={handleQpDownloadPdf} disabled={qpDownloadingPdf || !qpCurrent.has_pdf}>
+										{qpDownloadingPdf ? 'Downloading...' : 'Download PDF'}
+									</button>
 									<button class="action-btn" onclick={handleQpDownloadMarkScheme} disabled={qpDownloadingMs}>
 										{qpDownloadingMs ? 'Downloading...' : 'Download mark scheme'}
 									</button>
