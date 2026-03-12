@@ -25,7 +25,7 @@ import requests
 DEFAULT_BASE_URL = "http://localhost:8000"
 POLL_INTERVAL = 2  # seconds
 POLL_TIMEOUT = 300  # 5 minutes max per paper
-MAX_WORKERS = 4  # concurrent classification jobs
+MAX_WORKERS = 6  # concurrent classification jobs
 
 
 def get_specs(base_url: str) -> list[dict]:
