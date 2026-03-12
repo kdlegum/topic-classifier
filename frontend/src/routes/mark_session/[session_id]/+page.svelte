@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { fly, fade, slide } from 'svelte/transition';
-	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf, uploadMarkScheme, downloadMarkSchemePdf, renameSession } from '$lib/api';
+	import { getSession, uploadAchievedMarks, updateQuestion, getTopicHierarchy, saveUserCorrections, downloadSessionPdf, uploadMarkScheme, downloadMarkSchemePdf, renameSession, parseMarkScheme } from '$lib/api';
 	import TopicSelector from '$lib/components/TopicSelector.svelte';
 	import MathText from '$lib/components/MathText.svelte';
 	import PdfQuestionView from '$lib/components/PdfQuestionView.svelte';
@@ -49,6 +49,9 @@
 
 	// Per-question PDF view toggle: set of question_ids currently showing PDF
 	let pdfViewQuestions = $state(new Set<number>());
+	// Per-question mark scheme view toggle
+	let msViewQuestions = $state(new Set<number>());
+	let parsingMarkScheme = $state(false);
 	let downloadingPdf = $state(false);
 	let markSchemeInput: HTMLInputElement;
 	let markSchemeUploading = $state(false);
@@ -219,6 +222,30 @@
 			next.add(questionId);
 		}
 		pdfViewQuestions = next;
+	}
+
+	function toggleMarkSchemeView(questionId: number) {
+		const next = new Set(msViewQuestions);
+		if (next.has(questionId)) {
+			next.delete(questionId);
+		} else {
+			next.add(questionId);
+		}
+		msViewQuestions = next;
+	}
+
+	async function handleParseMarkScheme() {
+		if (!session) return;
+		parsingMarkScheme = true;
+		try {
+			const result = await parseMarkScheme(session.session_id);
+			// Reload session to get the new mark scheme locations
+			session = await getSession(session.session_id);
+		} catch (err) {
+			console.error('Failed to parse mark scheme:', err);
+		} finally {
+			parsingMarkScheme = false;
+		}
 	}
 
 	function handleQuestionTextInput(questionId: number, value: string) {
@@ -760,6 +787,11 @@
 						Replace
 						<input type="file" accept="application/pdf" class="file-input-hidden" onchange={handleMarkSchemeUpload} />
 					</label>
+					{#if !session.has_mark_scheme_locations}
+						<button class="btn-download-pdf" onclick={handleParseMarkScheme} disabled={parsingMarkScheme}>
+							{parsingMarkScheme ? 'Parsing...' : 'Parse Mark Scheme'}
+						</button>
+					{/if}
 				</div>
 			{:else}
 				<label class="btn-upload-ms" class:uploading={markSchemeUploading}>
@@ -834,6 +866,24 @@
 				{#if isMarksInvalid(question.question_id, question.marks_available)}
 					<p class="marks-error" in:fade={{ duration: 150 }}>Please enter a value between 0 and {question.marks_available ?? '?'}</p>
 				{/if}
+
+			{#if question.mark_scheme_location && session.has_mark_scheme}
+				<button
+					class="toggle-btn ms-toggle {msViewQuestions.has(question.question_id) ? 'active' : ''}"
+					tabindex="-1"
+					onclick={() => toggleMarkSchemeView(question.question_id)}
+				>
+					{msViewQuestions.has(question.question_id) ? 'Hide Mark Scheme' : 'Show Mark Scheme'}
+				</button>
+				{#if msViewQuestions.has(question.question_id)}
+					<div class="ms-crop" transition:slide={{ duration: 200 }}>
+						<PdfQuestionView
+							pdfUrl={`/session/${session.session_id}/mark-scheme-pdf`}
+							pdfLocation={question.mark_scheme_location}
+						/>
+					</div>
+				{/if}
+			{/if}
 
 			{#if !session.no_spec}
 				{#each question.predictions as pred}
@@ -1088,6 +1138,15 @@
 		background: var(--color-primary);
 		color: #fff;
 		border-color: var(--color-primary);
+	}
+
+	.ms-toggle {
+		margin: 8px 0 4px;
+		width: auto;
+	}
+
+	.ms-crop {
+		margin: 6px 0 10px;
 	}
 
 	.btn-download-pdf {

@@ -184,12 +184,27 @@ def main():
                         help="Skip specs that already have >= --count cached papers")
     parser.add_argument("--workers", type=int, default=MAX_WORKERS,
                         help=f"Max concurrent classification jobs (default: {MAX_WORKERS})")
+    parser.add_argument("--olmocr", action="store_true",
+                        help="Only proceed if olmOCR is healthy on the backend")
     args = parser.parse_args()
 
     include_ms = not args.no_ms
     target_count = max(1, args.count)
     base_url = args.base_url.rstrip("/")
     guest_id = str(uuid.uuid4())
+
+    if args.olmocr:
+        try:
+            resp = requests.get(f"{base_url}/debug/olmocr")
+            resp.raise_for_status()
+            status = resp.json()
+            if not status.get("healthy"):
+                print(f"ERROR: olmOCR is not healthy: {status}")
+                sys.exit(1)
+            print("olmOCR health check passed.")
+        except Exception as e:
+            print(f"ERROR: Could not reach olmOCR health endpoint: {e}")
+            sys.exit(1)
 
     print(f"Using guest ID: {guest_id}")
     print(f"Backend: {base_url}")

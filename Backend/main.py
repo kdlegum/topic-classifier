@@ -16,7 +16,7 @@ import time
 import uuid
 import datetime
 import requests
-from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, RevisionAttempt, UserTierSelection, PastPaper, UserPaperCompletion, CachedPaper
+from Backend.sessionDatabase import Session as DBSess, Question as DBQuestion, Prediction as DBPrediction, QuestionMark, UserCorrection, Specification, Topic, Subtopic, UserModuleSelection, SessionStrand, UserSpecSelection, QuestionLocation, MarkSchemeLocation, RevisionAttempt, UserTierSelection, PastPaper, UserPaperCompletion, CachedPaper
 from sqlmodel import Session, select, update
 from sqlalchemy import func
 from pathlib import Path
@@ -39,6 +39,7 @@ except ImportError:
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questions, sort_questions
 from pdf_interpretation.questionLocator import locate_questions_in_pdf
+from pdf_interpretation.markSchemeLocator import locate_mark_scheme_questions
 from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
@@ -1063,6 +1064,15 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
         for loc in question_locations:
             locations_by_question[loc.question_id] = loc
 
+        # ---------- Fetch mark scheme locations ----------
+        ms_locations = db.exec(
+            select(MarkSchemeLocation)
+            .where(MarkSchemeLocation.question_id.in_(question_ids))
+        ).all()
+        ms_locations_by_question: dict[int, MarkSchemeLocation] = {}
+        for msl in ms_locations:
+            ms_locations_by_question[msl.question_id] = msl
+
         # ---------- Group predictions by question ----------
         preds_by_question: dict[int, list[DBPrediction]] = {}
         for p in predictions:
@@ -1138,6 +1148,16 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
                     }
                     if (loc := locations_by_question.get(q.id)) else None
                 ),
+
+                "mark_scheme_location": (
+                    {
+                        "start_page": msl.start_page,
+                        "start_y": msl.start_y,
+                        "end_page": msl.end_page,
+                        "end_y": msl.end_y,
+                    }
+                    if (msl := ms_locations_by_question.get(q.id)) else None
+                ),
             })
 
         # ---------- Fetch session strands ----------
@@ -1168,6 +1188,7 @@ def get_session(session_id: str, request: Request = None, user: dict = None):
             "no_spec": db_session.no_spec,
             "has_pdf": db_session.pdf_filename is not None,
             "has_mark_scheme": db_session.mark_scheme_filename is not None,
+            "has_mark_scheme_locations": len(ms_locations_by_question) > 0,
             "paper_number": db_session.paper_number,
             "paper_name": db_session.paper_name,
             "paper_year": db_session.paper_year,
@@ -1256,6 +1277,43 @@ async def upload_mark_scheme(session_id: str, file: UploadFile = File(...), requ
 
         db.commit()
 
+    # Auto-parse mark scheme locations in the background
+    try:
+        with Session(engine) as db:
+            db_questions = db.exec(
+                select(DBQuestion).where(DBQuestion.session_id == session_id)
+            ).all()
+            if db_questions:
+                questions_for_locator = [{"id": q.question_number} for q in db_questions]
+                qnum_to_dbid = {q.question_number: q.id for q in db_questions}
+                question_ids = [q.id for q in db_questions]
+
+                locations = locate_mark_scheme_questions(str(ms_path), questions_for_locator)
+                if locations:
+                    # Clear existing
+                    existing = db.exec(
+                        select(MarkSchemeLocation)
+                        .where(MarkSchemeLocation.question_id.in_(question_ids))
+                    ).all()
+                    for row in existing:
+                        db.delete(row)
+                    # Insert new
+                    for loc in locations:
+                        db_qid = qnum_to_dbid.get(loc["question_id"])
+                        if db_qid is None:
+                            continue
+                        db.add(MarkSchemeLocation(
+                            question_id=db_qid,
+                            start_page=loc["start_page"],
+                            start_y=loc["start_y"],
+                            end_page=loc["end_page"],
+                            end_y=loc["end_y"],
+                        ))
+                    db.commit()
+                    logger.info("Auto-parsed %d mark scheme locations for session %s", len(locations), session_id)
+    except Exception as e:
+        logger.warning("Auto-parse mark scheme failed for session %s: %s", session_id, e)
+
     return {"success": True}
 
 
@@ -1290,6 +1348,75 @@ def get_mark_scheme_pdf(session_id: str, request: Request, user=Depends(get_user
             media_type="application/pdf",
             filename=db_session.mark_scheme_filename,
         )
+
+
+@app.post("/session/{session_id}/parse-mark-scheme")
+def parse_mark_scheme(session_id: str, request: Request, user=Depends(get_user)):
+    """Parse mark scheme PDF to locate each question's mark scheme section."""
+    with Session(engine) as db:
+        db_session = db.exec(
+            select(DBSess).where(DBSess.session_id == session_id)
+        ).first()
+        if not db_session:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        is_owner = False
+        if db_session.is_guest:
+            is_owner = (user.get("guest_id") == db_session.user_id)
+        else:
+            is_owner = (user.get("user_id") == db_session.user_id)
+        if not is_owner:
+            raise HTTPException(status_code=403, detail="Not authorized")
+
+        if not db_session.mark_scheme_filename:
+            raise HTTPException(status_code=400, detail="No mark scheme uploaded")
+
+        ms_path = UPLOAD_DIR / db_session.mark_scheme_filename
+        if not ms_path.exists():
+            raise HTTPException(status_code=404, detail="Mark scheme file not found")
+
+        # Fetch questions for this session
+        db_questions = db.exec(
+            select(DBQuestion).where(DBQuestion.session_id == session_id)
+        ).all()
+        if not db_questions:
+            raise HTTPException(status_code=400, detail="No questions in session")
+
+        qnum_to_dbid = {q.question_number: q.id for q in db_questions}
+        questions_for_locator = [{"id": q.question_number} for q in db_questions]
+
+        # Run the locator
+        locations = locate_mark_scheme_questions(str(ms_path), questions_for_locator)
+
+        if not locations:
+            return {"success": True, "located": 0}
+
+        # Delete existing MarkSchemeLocation rows for this session's questions
+        question_ids = [q.id for q in db_questions]
+        existing = db.exec(
+            select(MarkSchemeLocation)
+            .where(MarkSchemeLocation.question_id.in_(question_ids))
+        ).all()
+        for row in existing:
+            db.delete(row)
+
+        # Insert new locations
+        count = 0
+        for loc in locations:
+            db_qid = qnum_to_dbid.get(loc["question_id"])
+            if db_qid is None:
+                continue
+            db.add(MarkSchemeLocation(
+                question_id=db_qid,
+                start_page=loc["start_page"],
+                start_y=loc["start_y"],
+                end_page=loc["end_page"],
+                end_y=loc["end_y"],
+            ))
+            count += 1
+
+        db.commit()
+        return {"success": True, "located": count}
 
 
 @app.get("/user/sessions")

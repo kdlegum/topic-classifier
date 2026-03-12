@@ -140,6 +140,23 @@ export async function uploadMarkScheme(
 }
 
 /**
+ * Parse mark scheme PDF to locate each question's mark scheme section
+ */
+export async function parseMarkScheme(
+	sessionId: string
+): Promise<{ success: boolean; located: number }> {
+	const response = await apiFetch(`/session/${sessionId}/parse-mark-scheme`, {
+		method: 'POST'
+	});
+
+	if (!response.ok) {
+		throw new Error(`Failed to parse mark scheme: ${response.status}`);
+	}
+
+	return response.json();
+}
+
+/**
  * Download a session's mark scheme PDF as a blob
  */
 export async function downloadMarkSchemePdf(sessionId: string): Promise<Blob> {

@@ -158,6 +158,15 @@ class Subtopic(SQLModel, table=True):
     tier: str | None = Field(default=None)
 
 
+class MarkSchemeLocation(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    question_id: int = Field(foreign_key="question.id", index=True)
+    start_page: int       # 0-indexed
+    start_y: float        # top of mark scheme section (PDF points from page top)
+    end_page: int
+    end_y: float          # bottom of mark scheme section
+
+
 class QuestionLocation(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     question_id: int = Field(foreign_key="question.id", index=True)
