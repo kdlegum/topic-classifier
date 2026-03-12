@@ -505,6 +505,8 @@ export type QuickPracticeQuestion = {
 	spec_code: string;
 	exam_board: string;
 	cached_paper_id: number;
+	has_pdf: boolean;
+	pdf_location: { start_page: number; start_y: number; end_page: number; end_y: number } | null;
 	predictions: {
 		rank: number;
 		strand: string;
@@ -546,6 +548,17 @@ export async function getQuickPractice(
 	}
 
 	return response.json();
+}
+
+/**
+ * Download the question paper PDF for a cached paper (quick practice)
+ */
+export async function downloadQuickPracticePdf(cachedPaperId: number): Promise<Blob> {
+	const response = await apiFetch(`/revision/quick-practice/${cachedPaperId}/pdf`);
+	if (!response.ok) {
+		throw new Error(`Failed to download PDF: ${response.status}`);
+	}
+	return response.blob();
 }
 
 /**

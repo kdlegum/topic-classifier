@@ -1737,6 +1737,7 @@ def process_pdf(job_id, SpecCode, user, strands=None, mark_scheme_filename=None,
                 pdf_hash, SpecCode, effective_strands_for_key, effective_tier_for_key,
                 session_id, questions, locations or [], pipeline_info, spec_has_math,
                 mark_scheme_filename=mark_scheme_filename,
+                pdf_filename=f"{job_id}.pdf",
             )
         except Exception as e:
             logger.warning("Failed to cache paper %s: %s", job_id, e)
@@ -2686,6 +2687,20 @@ def record_revision_attempt(
         }
 
 
+# ── Cache stats ───────────────────────────────────────────────────────────────
+
+@app.get("/cache-stats")
+def get_cache_stats():
+    """Return the number of valid cached papers per spec_code."""
+    with Session(engine) as db:
+        rows = db.exec(
+            select(CachedPaper.spec_code, func.count(CachedPaper.id))
+            .where(CachedPaper.parser_version == PARSER_VERSION)
+            .group_by(CachedPaper.spec_code)
+        ).all()
+        return {row[0]: row[1] for row in rows}
+
+
 # ── Quick Practice (from global cache) ────────────────────────────────────────
 
 @app.get("/revision/quick-practice")
@@ -2736,6 +2751,11 @@ def get_quick_practice(
             preds_by_qid = {p["question_id"]: p["predictions"] for p in predictions_list}
             exam_board = spec_boards.get(row.spec_code, "")
 
+            # Parse locations for PDF viewing
+            locations_list = json.loads(row.locations_json) if row.locations_json else []
+            loc_by_qid = {loc["question_id"]: loc for loc in locations_list}
+            has_pdf = bool(row.pdf_filename) and (UPLOAD_DIR / row.pdf_filename).exists()
+
             for q in questions:
                 preds = preds_by_qid.get(q["id"], [])
 
@@ -2755,6 +2775,10 @@ def get_quick_practice(
                     if topic and top.get("topic") != topic:
                         continue
 
+                loc = loc_by_qid.get(q["id"])
+                # Skip questions without a PDF — students need the original paper
+                if not has_pdf or loc is None:
+                    continue
                 pool.append({
                     "question_number": q["id"],
                     "question_text": q["text"],
@@ -2762,6 +2786,13 @@ def get_quick_practice(
                     "spec_code": row.spec_code,
                     "exam_board": exam_board,
                     "cached_paper_id": row.id,
+                    "has_pdf": has_pdf and loc is not None,
+                    "pdf_location": {
+                        "start_page": loc["start_page"],
+                        "start_y": loc["start_y"],
+                        "end_page": loc["end_page"],
+                        "end_y": loc["end_y"],
+                    } if loc else None,
                     "predictions": [
                         {
                             "rank": p["rank"],
@@ -2814,6 +2845,27 @@ def get_quick_practice_mark_scheme(cached_paper_id: int, user=Depends(get_user))
             path=str(ms_path),
             media_type="application/pdf",
             filename=row.mark_scheme_filename,
+        )
+
+
+@app.get("/revision/quick-practice/{cached_paper_id}/pdf")
+def get_quick_practice_pdf(cached_paper_id: int, user=Depends(get_user)):
+    """Serve the question paper PDF for a cached paper used in quick practice."""
+    with Session(engine) as db:
+        row = db.exec(
+            select(CachedPaper).where(CachedPaper.id == cached_paper_id)
+        ).first()
+        if not row or not row.pdf_filename:
+            raise HTTPException(status_code=404, detail="PDF not found")
+
+        pdf_path = UPLOAD_DIR / row.pdf_filename
+        if not pdf_path.exists():
+            raise HTTPException(status_code=404, detail="PDF file not found")
+
+        return FileResponse(
+            path=str(pdf_path),
+            media_type="application/pdf",
+            filename=row.pdf_filename,
         )
 
 

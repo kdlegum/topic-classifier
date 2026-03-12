@@ -4,9 +4,11 @@
 
 	let {
 		sessionId,
+		pdfUrl,
 		pdfLocation
 	}: {
-		sessionId: string;
+		sessionId?: string;
+		pdfUrl?: string;
 		pdfLocation: { start_page: number; start_y: number; end_page: number; end_y: number };
 	} = $props();
 
@@ -20,9 +22,9 @@
 	// PDF.js scale: render at 1.5x for clarity
 	const RENDER_SCALE = 1.5;
 
-	async function getOrLoadPdf(sid: string): Promise<any> {
-		if (pdfLoadPromises.has(sid)) {
-			return pdfLoadPromises.get(sid)!;
+	async function getOrLoadPdf(cacheKey: string, fetchUrl: string): Promise<any> {
+		if (pdfLoadPromises.has(cacheKey)) {
+			return pdfLoadPromises.get(cacheKey)!;
 		}
 
 		const promise = (async () => {
@@ -33,7 +35,7 @@
 				pdfjsLib.GlobalWorkerOptions.workerSrc = workerModule.default;
 			}
 
-			const response = await apiFetch(`/session/${sid}/pdf`);
+			const response = await apiFetch(fetchUrl);
 			if (!response.ok) {
 				throw new Error(`Failed to load PDF: ${response.status}`);
 			}
@@ -48,7 +50,7 @@
 			return await loadingTask.promise;
 		})();
 
-		pdfLoadPromises.set(sid, promise);
+		pdfLoadPromises.set(cacheKey, promise);
 		return promise;
 	}
 
@@ -56,7 +58,9 @@
 		if (!containerEl) return;
 
 		try {
-			const pdfDoc = await getOrLoadPdf(sessionId);
+			const fetchUrl = pdfUrl || `/session/${sessionId}/pdf`;
+		const cacheKey = pdfUrl || sessionId!;
+		const pdfDoc = await getOrLoadPdf(cacheKey, fetchUrl);
 
 			// Clear container
 			containerEl.innerHTML = '';

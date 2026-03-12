@@ -184,6 +184,7 @@ class CachedPaper(SQLModel, table=True):
     predictions_json: str                    # [{question_id, predictions: [{rank, strand, topic, subtopic, spec_sub_section, similarity_score, description}]}]
     pipeline_used: str
     mark_scheme_filename: str | None = Field(default=None)
+    pdf_filename: str | None = Field(default=None)
 
     created_at: datetime = Field(default_factory=datetime.utcnow)
     hit_count: int = Field(default=0)

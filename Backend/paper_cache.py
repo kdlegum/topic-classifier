@@ -126,6 +126,7 @@ def save_cached_paper(
     pipeline_used,
     spec_has_math: bool,
     mark_scheme_filename: str | None = None,
+    pdf_filename: str | None = None,
 ):
     """Persist classification results to cache if quality checks pass."""
     eligible, reason = check_cache_eligibility(questions, locations, spec_has_math, pipeline_used)
@@ -178,6 +179,7 @@ def save_cached_paper(
             predictions_json=json.dumps(predictions_data),
             pipeline_used=pipeline_used or "",
             mark_scheme_filename=mark_scheme_filename,
+            pdf_filename=pdf_filename,
         )
 
         try:
@@ -278,11 +280,14 @@ def clone_session_from_cache(
 
         db.add_all(related)
 
-        # Increment hit counter in the same transaction — no second session needed
+        # Increment hit counter (and backfill pdf_filename if missing)
+        update_values = {"hit_count": CachedPaper.hit_count + 1}
+        if not cached.pdf_filename:
+            update_values["pdf_filename"] = f"{job_id}.pdf"
         db.execute(
             update(CachedPaper)
             .where(CachedPaper.id == cached.id)
-            .values(hit_count=CachedPaper.hit_count + 1)
+            .values(**update_values)
         )
 
         db.commit()
