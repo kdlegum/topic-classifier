@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 END_MARGIN = 10
 
 # Maximum x-coordinate for the Q column (leftmost table column)
-Q_COLUMN_MAX_X = 65
+Q_COLUMN_MAX_X = 70
 
 
 def _extract_lines(doc) -> tuple[list[dict], list[float]]:
@@ -50,11 +50,14 @@ def _find_content_start(lines: list[dict]) -> int:
     Look for the first question identifier (Q1, Question 1, or 01.1).
     """
     for i, ln in enumerate(lines):
-        if re.match(r'^Q\s*1\b', ln["text"]):
+        text = ln["text"].strip()
+        if "total" in text.lower():
+            continue
+        if re.match(r'^Q\s*1\b', text):
             return i
-        if re.match(r'^Question\s+1\b', ln["text"], re.IGNORECASE):
+        if re.match(r'^Question\s+1\b', text, re.IGNORECASE):
             return i
-        if re.match(r'^0?1\.1\b', ln["text"]):
+        if re.match(r'^0?1\.1\b', text):
             return i
     return 0
 
@@ -62,7 +65,8 @@ def _find_content_start(lines: list[dict]) -> int:
 def _detect_format(lines: list[dict], start_idx: int) -> str:
     """Detect A-level vs GCSE format."""
     for ln in lines[start_idx:start_idx + 50]:
-        if re.match(r'^Question\s+\d+', ln["text"], re.IGNORECASE):
+        text = ln["text"].strip()
+        if re.match(r'^Question\s+\d+', text, re.IGNORECASE) and "total" not in text.lower():
             return "gcse"
     return "alevel"
 
@@ -91,18 +95,28 @@ def _locate_alevel(lines: list[dict], start_idx: int, questions: list[dict],
 
     # Scan lines in Q column (x < Q_COLUMN_MAX_X) for question markers
     q_positions: dict[int, tuple[int, float]] = {}  # num -> (page, y_top)
+    # Track "Q" table header positions so we can start from the header row
+    q_headers: list[tuple[int, float]] = []  # [(page, y_top), ...]
+    # Track "Question N Total" positions for end boundaries
+    q_totals: dict[int, tuple[int, float]] = {}  # num -> (page, y_bottom)
 
     # Patterns for question identifiers in the Q column
     explicit_q_re = re.compile(r'^Q\s*(\d+)')          # Q1, Q2
     subpart_re = re.compile(r'^(\d+)\s*\([a-z]\)')     # 5(a), 6(b)
     standalone_re = re.compile(r'^(\d+)\s*$')           # just "3", "4"
+    q_total_re = re.compile(r'^Question\s+(\d+)\s+Total', re.IGNORECASE)
 
-    # Track: after a "Total" line in Q column, next standalone number = new question
-    last_total_pos = None  # (page, y)
     last_found_num = 0
 
     for i, ln in enumerate(lines):
         if i < start_idx:
+            continue
+
+        # Check for "Question N Total" lines (these can be wider than Q column)
+        mt = q_total_re.match(ln["text"].strip())
+        if mt:
+            num = int(mt.group(1))
+            q_totals[num] = (ln["page"], ln["y_bottom"])
             continue
 
         # Only consider Q column items
@@ -115,13 +129,13 @@ def _locate_alevel(lines: list[dict], start_idx: int, questions: list[dict],
 
         text = ln["text"].strip()
 
-        # Skip standalone "Q" table column header
+        # Track "Q" table column headers
         if text == "Q":
+            q_headers.append((ln["page"], ln["y_top"]))
             continue
 
         # Check for "Total" markers
         if re.match(r'^Total\b', text, re.IGNORECASE):
-            last_total_pos = (ln["page"], ln["y_top"])
             continue
 
         # Explicit Q\d+ always matches
@@ -143,7 +157,6 @@ def _locate_alevel(lines: list[dict], start_idx: int, questions: list[dict],
             continue
 
         # Standalone number — only accept if it's sequentially after previous
-        # and appears after a Total line (meaning a new question section)
         m = standalone_re.match(text)
         if m:
             num = int(m.group(1))
@@ -152,7 +165,20 @@ def _locate_alevel(lines: list[dict], start_idx: int, questions: list[dict],
                 q_positions[num] = (ln["page"], ln["y_top"])
                 last_found_num = num
 
-    return _build_results(q_positions, questions, page_heights, doc)
+    # Adjust start positions: use the nearest preceding "Q" table header
+    for num in q_positions:
+        q_page, q_y = q_positions[num]
+        best_header = None
+        for h_page, h_y in q_headers:
+            if (h_page < q_page) or (h_page == q_page and h_y < q_y):
+                if best_header is None:
+                    best_header = (h_page, h_y)
+                elif (h_page > best_header[0]) or (h_page == best_header[0] and h_y > best_header[1]):
+                    best_header = (h_page, h_y)
+        if best_header:
+            q_positions[num] = best_header
+
+    return _build_results(q_positions, q_totals, questions, page_heights, doc)
 
 
 def _locate_gcse(lines: list[dict], start_idx: int, questions: list[dict],
@@ -178,15 +204,16 @@ def _locate_gcse(lines: list[dict], start_idx: int, questions: list[dict],
         if i < start_idx:
             continue
         m = q_header_re.match(ln["text"])
-        if m:
+        if m and "total" not in ln["text"].lower():
             num = int(m.group(1))
             if num in wanted_nums and num not in q_positions:
                 q_positions[num] = (ln["page"], ln["y_top"])
 
-    return _build_results(q_positions, questions, page_heights, doc)
+    return _build_results(q_positions, {}, questions, page_heights, doc)
 
 
 def _build_results(q_positions: dict[int, tuple[int, float]],
+                   q_totals: dict[int, tuple[int, float]],
                    questions: list[dict], page_heights: list[float],
                    doc) -> list[dict]:
     """Build location results from question positions."""
@@ -206,10 +233,14 @@ def _build_results(q_positions: dict[int, tuple[int, float]],
             continue
 
         start_page, start_y = q_positions[num]
-        idx = sorted_nums.index(num)
 
-        if idx + 1 < len(sorted_nums):
-            next_num = sorted_nums[idx + 1]
+        # End boundary: prefer "Question N Total" line if available,
+        # otherwise fall back to next question's start
+        if num in q_totals:
+            end_page, end_y = q_totals[num]
+            end_y += END_MARGIN  # small margin below the total row
+        elif sorted_nums.index(num) + 1 < len(sorted_nums):
+            next_num = sorted_nums[sorted_nums.index(num) + 1]
             end_page, end_y = q_positions[next_num]
             end_y = max(0, end_y - END_MARGIN)
         else:

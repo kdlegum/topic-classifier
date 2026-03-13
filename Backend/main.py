@@ -39,7 +39,7 @@ except ImportError:
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questions, sort_questions
 from pdf_interpretation.questionLocator import locate_questions_in_pdf
-from pdf_interpretation.markSchemeLocator import locate_mark_scheme_questions
+from pdf_interpretation.AQAmarkSchemeLocator import locate_mark_scheme_questions
 from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
