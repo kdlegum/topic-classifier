@@ -16,19 +16,39 @@
 	let isRevision = $derived(currentPath === '/revision');
 	let isHelp = $derived(currentPath === '/help');
 	let userDisplay = $derived($user ? $user.email : 'Guest');
+
+	let navScroller: HTMLElement;
+	let canScrollLeft = $state(false);
+	let canScrollRight = $state(false);
+
+	function checkScroll() {
+		if (!navScroller) return;
+		canScrollLeft = navScroller.scrollLeft > 2;
+		canScrollRight = navScroller.scrollLeft < navScroller.scrollWidth - navScroller.clientWidth - 2;
+	}
+
+	$effect(() => {
+		if (!navScroller) return;
+		checkScroll();
+		const ro = new ResizeObserver(() => checkScroll());
+		ro.observe(navScroller);
+		return () => ro.disconnect();
+	});
 </script>
 
 <nav class="main-nav">
 	<div class="nav-brand">
 		<a href="/classify">Topic Tracker</a>
 	</div>
-	<div class="nav-links">
-		<a href="/classify" class:active={isClassify}>Classify</a>
-		<a href="/specs" class:active={isSpecs}>Specs</a>
-		<a href="/history" class:active={isHistory}><span class="shorten-text">My&nbsp;</span>Sessions</a>
-		<a href="/analytics" class:active={isAnalytics}>Analytics</a>
-		<a href="/revision" class:active={isRevision}>Revision</a>
-		<a href="/help" class:active={isHelp}>Help</a>
+	<div class="nav-links-wrapper" class:fade-left={canScrollLeft} class:fade-right={canScrollRight}>
+		<div class="nav-links" bind:this={navScroller} onscroll={checkScroll}>
+			<a href="/classify" class:active={isClassify}>Classify</a>
+			<a href="/specs" class:active={isSpecs}>Specs</a>
+			<a href="/history" class:active={isHistory}><span class="shorten-text">My&nbsp;</span>Sessions</a>
+			<a href="/analytics" class:active={isAnalytics}>Analytics</a>
+			<a href="/revision" class:active={isRevision}>Revision</a>
+			<a href="/help" class:active={isHelp}>Help</a>
+		</div>
 	</div>
 	<div class="nav-user">
 		<span class="user-display">{userDisplay}</span>
@@ -62,6 +82,10 @@
 		font-weight: 700;
 		font-family: var(--font-heading);
 		letter-spacing: -0.02em;
+	}
+
+	.nav-links-wrapper {
+		position: relative;
 	}
 
 	.nav-links {
@@ -144,18 +168,62 @@
 			flex: none;
 		}
 
-		.nav-links {
+		.nav-links-wrapper {
 			order: 3;
 			width: 100%;
-			justify-content: center;
-			gap: 4px;
 			padding-top: 10px;
+		}
+
+		.nav-links-wrapper::before,
+		.nav-links-wrapper::after {
+			content: '';
+			position: absolute;
+			top: 10px;
+			bottom: 0;
+			width: 32px;
+			pointer-events: none;
+			opacity: 0;
+			transition: opacity 0.2s ease;
+			z-index: 1;
+		}
+
+		.nav-links-wrapper::before {
+			left: 0;
+			background: linear-gradient(to right, #1C1917 0%, transparent 100%);
+		}
+
+		.nav-links-wrapper::after {
+			right: 0;
+			background: linear-gradient(to left, #1C1917 0%, transparent 100%);
+		}
+
+		.nav-links-wrapper.fade-left::before {
+			opacity: 1;
+		}
+
+		.nav-links-wrapper.fade-right::after {
+			opacity: 1;
+		}
+
+		.nav-links {
+			width: 100%;
+			gap: 4px;
 			font-size: 0.85rem;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+			justify-content: flex-start;
+		}
+
+		.nav-links::-webkit-scrollbar {
+			display: none;
 		}
 
 		.nav-links a {
 			padding: 6px 10px;
 			font-size: 0.85rem;
+			white-space: nowrap;
+			flex-shrink: 0;
 		}
 
 		.user-display {

@@ -39,7 +39,7 @@ except ImportError:
 from pdf_interpretation.utils import updateStatus
 from pdf_interpretation.markdownParser import parse_exam_markdown, merge_questions, sort_questions
 from pdf_interpretation.questionLocator import locate_questions_in_pdf
-from pdf_interpretation.AQAmarkSchemeLocator import locate_mark_scheme_questions
+from pdf_interpretation.markSchemeLocator import locate_mark_scheme_questions
 from Backend.auth import get_user
 from Backend.database import engine
 from Backend.embedding_cache import rebuild as rebuild_embedding_cache, get_embeddings
@@ -341,10 +341,12 @@ def get_user_tier(spec_code: str, request: Request, user=Depends(get_user)):
 
 class SaveTierRequest(BaseModel):
     tier: Optional[str] = None
+    auth: str = None
 
 
 @app.put("/user/tier/{spec_code}")
 def save_user_tier(spec_code: str, req: SaveTierRequest, request: Request, user=Depends(get_user)):
+
     """Save or clear the user's tier selection for a spec."""
     if spec_code not in allSpecs:
         raise HTTPException(status_code=404, detail="Specification not found")
@@ -1288,7 +1290,7 @@ async def upload_mark_scheme(session_id: str, file: UploadFile = File(...), requ
                 qnum_to_dbid = {q.question_number: q.id for q in db_questions}
                 question_ids = [q.id for q in db_questions]
 
-                locations = locate_mark_scheme_questions(str(ms_path), questions_for_locator)
+                locations = locate_mark_scheme_questions(str(ms_path), questions_for_locator, exam_board=db_session.exam_board)
                 if locations:
                     # Clear existing
                     existing = db.exec(
@@ -1386,7 +1388,7 @@ def parse_mark_scheme(session_id: str, request: Request, user=Depends(get_user))
         questions_for_locator = [{"id": q.question_number} for q in db_questions]
 
         # Run the locator
-        locations = locate_mark_scheme_questions(str(ms_path), questions_for_locator)
+        locations = locate_mark_scheme_questions(str(ms_path), questions_for_locator, exam_board=db_session.exam_board)
 
         if not locations:
             return {"success": True, "located": 0}
@@ -3205,6 +3207,9 @@ def get_past_papers(
             "source_url": qp.source_url,
             "ms_content_id": ms_content_id,
         })
+
+
+
 
     # Sort: newest first, then series, then paper number
     papers.sort(key=lambda p: (-(p["year"] or 0), p["series"] or "", p["paper_number"] or ""))
