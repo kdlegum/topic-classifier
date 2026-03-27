@@ -48,6 +48,34 @@
 	let qpDownloadingPdf: boolean = $state(false);
 	let qpShowPdf: boolean = $state(false);
 
+	// ── Custom dropdown state ────────────────────────────────────
+	let qpSpecDropdownOpen: boolean = $state(false);
+	let qpStrandDropdownOpen: boolean = $state(false);
+	let qpTopicDropdownOpen: boolean = $state(false);
+
+	let qpSpecLabel = $derived(
+		qpSpecFilter ? specDisplayName(qpSpecFilter) : 'All specs'
+	);
+	let qpStrandLabel = $derived(
+		qpStrandFilter || 'All strands'
+	);
+	let qpTopicLabel = $derived(
+		qpTopicFilter || 'All topics'
+	);
+
+	// Click-outside action for closing dropdowns
+	function clickOutside(node: HTMLElement, callback: () => void) {
+		function handleClick(e: MouseEvent) {
+			if (!node.contains(e.target as Node)) callback();
+		}
+		document.addEventListener('click', handleClick, true);
+		return {
+			destroy() {
+				document.removeEventListener('click', handleClick, true);
+			}
+		};
+	}
+
 	function specDisplayName(code: string): string {
 		const spec = specs.find((s) => s.spec_code === code);
 		if (spec) return `${spec.exam_board} ${spec.subject}`;
@@ -156,15 +184,9 @@
 		try {
 			const blob = await downloadSessionMarkScheme(currentQuestion.session_id);
 			const url = URL.createObjectURL(blob);
-			const a = document.createElement('a');
-			a.href = url;
-			a.download = `${currentQuestion.exam_board}_${currentQuestion.spec_code}_mark_scheme.pdf`;
-			document.body.appendChild(a);
-			a.click();
-			document.body.removeChild(a);
-			URL.revokeObjectURL(url);
+			window.open(url, '_blank');
 		} catch (e) {
-			console.error('Failed to download mark scheme:', e);
+			console.error('Failed to open mark scheme:', e);
 		} finally {
 			downloadingMarkScheme = false;
 		}
@@ -280,28 +302,28 @@
 		}
 	}
 
-	function handleQpSpecChange(e: Event) {
-		const value = (e.target as HTMLSelectElement).value;
+	function selectQpSpec(value: string) {
 		qpSpecFilter = value;
 		qpStrandFilter = '';
 		qpTopicFilter = '';
+		qpSpecDropdownOpen = false;
 		qpBatch = [];
 		qpCurrent = null;
 		fetchQuickPractice();
 	}
 
-	function handleQpStrandChange(e: Event) {
-		const value = (e.target as HTMLSelectElement).value;
+	function selectQpStrand(value: string) {
 		qpStrandFilter = value;
 		qpTopicFilter = '';
+		qpStrandDropdownOpen = false;
 		qpBatch = [];
 		qpCurrent = null;
 		fetchQuickPractice();
 	}
 
-	function handleQpTopicChange(e: Event) {
-		const value = (e.target as HTMLSelectElement).value;
+	function selectQpTopic(value: string) {
 		qpTopicFilter = value;
+		qpTopicDropdownOpen = false;
 		qpBatch = [];
 		qpCurrent = null;
 		fetchQuickPractice();
@@ -321,15 +343,9 @@
 		try {
 			const blob = await downloadQuickPracticeMarkScheme(qpCurrent.cached_paper_id);
 			const url = URL.createObjectURL(blob);
-			const a = document.createElement('a');
-			a.href = url;
-			a.download = `${qpCurrent.exam_board}_${qpCurrent.spec_code}_mark_scheme.pdf`;
-			document.body.appendChild(a);
-			a.click();
-			document.body.removeChild(a);
-			URL.revokeObjectURL(url);
+			window.open(url, '_blank');
 		} catch (e) {
-			console.error('Failed to download mark scheme:', e);
+			console.error('Failed to open mark scheme:', e);
 		} finally {
 			qpDownloadingMs = false;
 		}
@@ -489,7 +505,7 @@
 										{qpDownloadingPdf ? 'Downloading...' : 'Download PDF'}
 									</button>
 									<button class="action-btn" onclick={handleQpDownloadMarkScheme} disabled={qpDownloadingMs}>
-										{qpDownloadingMs ? 'Downloading...' : 'Download mark scheme'}
+										{qpDownloadingMs ? 'Opening...' : 'View mark scheme'}
 									</button>
 								</div>
 								{#if !qpSubmitted}
@@ -553,27 +569,122 @@
 
 				<!-- Filters below the card -->
 				<div class="qp-filters" in:fly={{ y: 10, duration: 200, delay: 100 }}>
-					<select class="spec-filter" value={qpSpecFilter} onchange={handleQpSpecChange}>
-						<option value="">All specs</option>
-						{#each qpSpecCodes as code}
-							<option value={code}>{specDisplayName(code)}</option>
-						{/each}
-					</select>
+					<!-- Spec dropdown -->
+					<div class="custom-select" use:clickOutside={() => (qpSpecDropdownOpen = false)}>
+						<button
+							type="button"
+							class="custom-select-trigger"
+							class:open={qpSpecDropdownOpen}
+							class:has-value={qpSpecFilter !== ''}
+							onclick={() => (qpSpecDropdownOpen = !qpSpecDropdownOpen)}
+							aria-haspopup="listbox"
+							aria-expanded={qpSpecDropdownOpen}
+						>
+							<span class="trigger-text" class:placeholder={!qpSpecFilter}>{qpSpecLabel}</span>
+							<svg class="chevron" class:rotated={qpSpecDropdownOpen} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<polyline points="6 9 12 15 18 9"/>
+							</svg>
+						</button>
+						{#if qpSpecDropdownOpen}
+							<ul class="custom-options" role="listbox" in:fly={{ y: 6, duration: 180, opacity: 0 }} out:fade={{ duration: 120 }}>
+								<li role="option" aria-selected={qpSpecFilter === ''}>
+									<button type="button" class="option-btn" class:selected={qpSpecFilter === ''} onclick={() => selectQpSpec('')}>
+										<span class="option-name">All specs</span>
+									</button>
+								</li>
+								{#if qpSpecCodes.length > 0}
+									<li class="option-separator" role="separator"><hr /></li>
+								{/if}
+								{#each qpSpecCodes as code}
+									{@const spec = specs.find(s => s.spec_code === code)}
+									<li role="option" aria-selected={qpSpecFilter === code}>
+										<button type="button" class="option-btn" class:selected={qpSpecFilter === code} onclick={() => selectQpSpec(code)}>
+											{#if spec}
+												<span class="option-board">{spec.exam_board}</span>
+												<span class="option-name">{spec.subject}</span>
+												<span class="option-code">{spec.spec_code}</span>
+											{:else}
+												<span class="option-name">{code}</span>
+											{/if}
+										</button>
+									</li>
+								{/each}
+							</ul>
+						{/if}
+					</div>
+
+					<!-- Strand dropdown -->
 					{#if Object.keys(qpFilterOptions).length > 0}
-						<select class="spec-filter" value={qpStrandFilter} onchange={handleQpStrandChange}>
-							<option value="">All strands</option>
-							{#each Object.keys(qpFilterOptions) as s}
-								<option value={s}>{s}</option>
-							{/each}
-						</select>
+						<div class="custom-select" use:clickOutside={() => (qpStrandDropdownOpen = false)}>
+							<button
+								type="button"
+								class="custom-select-trigger"
+								class:open={qpStrandDropdownOpen}
+								class:has-value={qpStrandFilter !== ''}
+								onclick={() => (qpStrandDropdownOpen = !qpStrandDropdownOpen)}
+								aria-haspopup="listbox"
+								aria-expanded={qpStrandDropdownOpen}
+							>
+								<span class="trigger-text" class:placeholder={!qpStrandFilter}>{qpStrandLabel}</span>
+								<svg class="chevron" class:rotated={qpStrandDropdownOpen} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+									<polyline points="6 9 12 15 18 9"/>
+								</svg>
+							</button>
+							{#if qpStrandDropdownOpen}
+								<ul class="custom-options" role="listbox" in:fly={{ y: 6, duration: 180, opacity: 0 }} out:fade={{ duration: 120 }}>
+									<li role="option" aria-selected={qpStrandFilter === ''}>
+										<button type="button" class="option-btn" class:selected={qpStrandFilter === ''} onclick={() => selectQpStrand('')}>
+											<span class="option-name">All strands</span>
+										</button>
+									</li>
+									<li class="option-separator" role="separator"><hr /></li>
+									{#each Object.keys(qpFilterOptions) as s}
+										<li role="option" aria-selected={qpStrandFilter === s}>
+											<button type="button" class="option-btn" class:selected={qpStrandFilter === s} onclick={() => selectQpStrand(s)}>
+												<span class="option-name">{s}</span>
+											</button>
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						</div>
 					{/if}
+
+					<!-- Topic dropdown -->
 					{#if qpStrandFilter && qpFilterOptions[qpStrandFilter]?.length > 0}
-						<select class="spec-filter" value={qpTopicFilter} onchange={handleQpTopicChange}>
-							<option value="">All topics</option>
-							{#each qpFilterOptions[qpStrandFilter] as t}
-								<option value={t}>{t}</option>
-							{/each}
-						</select>
+						<div class="custom-select" use:clickOutside={() => (qpTopicDropdownOpen = false)}>
+							<button
+								type="button"
+								class="custom-select-trigger"
+								class:open={qpTopicDropdownOpen}
+								class:has-value={qpTopicFilter !== ''}
+								onclick={() => (qpTopicDropdownOpen = !qpTopicDropdownOpen)}
+								aria-haspopup="listbox"
+								aria-expanded={qpTopicDropdownOpen}
+							>
+								<span class="trigger-text" class:placeholder={!qpTopicFilter}>{qpTopicLabel}</span>
+								<svg class="chevron" class:rotated={qpTopicDropdownOpen} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+									<polyline points="6 9 12 15 18 9"/>
+								</svg>
+							</button>
+							{#if qpTopicDropdownOpen}
+								<ul class="custom-options" role="listbox" in:fly={{ y: 6, duration: 180, opacity: 0 }} out:fade={{ duration: 120 }}>
+									<li role="option" aria-selected={qpTopicFilter === ''}>
+										<button type="button" class="option-btn" class:selected={qpTopicFilter === ''} onclick={() => selectQpTopic('')}>
+											<span class="option-name">All topics</span>
+										</button>
+									</li>
+									<li class="option-separator" role="separator"><hr /></li>
+									{#each qpFilterOptions[qpStrandFilter] as t}
+										<li role="option" aria-selected={qpTopicFilter === t}>
+											<button type="button" class="option-btn" class:selected={qpTopicFilter === t} onclick={() => selectQpTopic(t)}>
+												<span class="option-name">{t}</span>
+											</button>
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						</div>
 					{/if}
 				</div>
 			</div>
@@ -639,7 +750,7 @@
 									{downloading ? 'Downloading...' : 'Download PDF'}
 								</button>
 								<button class="action-btn" onclick={handleDownloadMarkScheme} disabled={downloadingMarkScheme || !currentQuestion.has_mark_scheme}>
-									{downloadingMarkScheme ? 'Downloading...' : 'Download mark scheme'}
+									{downloadingMarkScheme ? 'Opening...' : 'View mark scheme'}
 								</button>
 								<button class="action-btn remove" onclick={handleDeleteFromPool} disabled={deleting || submitted}>
 									{deleting ? 'Removing...' : 'Remove from pool'}
@@ -925,6 +1036,175 @@
 		white-space: nowrap;
 	}
 
+	/* Custom dropdown styles */
+	.custom-select {
+		position: relative;
+		display: block;
+		flex: 1;
+		min-width: 140px;
+	}
+
+	.custom-select-trigger {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 8px 12px;
+		background: var(--color-surface);
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		font-size: 0.85rem;
+		font-family: var(--font-body);
+		color: var(--color-text);
+		cursor: pointer;
+		box-shadow: var(--shadow-sm);
+		text-align: left;
+		gap: 8px;
+		transition:
+			border-color var(--transition-fast),
+			box-shadow var(--transition-fast),
+			background var(--transition-fast);
+	}
+
+	.custom-select-trigger:hover:not(:disabled) {
+		border-color: var(--color-border-hover);
+	}
+
+	.custom-select-trigger:focus {
+		outline: none;
+		border-color: var(--color-primary);
+		box-shadow: 0 0 0 3px var(--color-primary-glow);
+	}
+
+	.custom-select-trigger.open {
+		border-color: var(--color-primary);
+		box-shadow: 0 0 0 3px var(--color-primary-glow);
+	}
+
+	.trigger-text {
+		flex: 1;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		min-width: 0;
+	}
+
+	.trigger-text.placeholder {
+		color: var(--color-text-muted);
+	}
+
+	.chevron {
+		flex-shrink: 0;
+		color: var(--color-text-muted);
+		transition: transform 220ms cubic-bezier(0.4, 0, 0.2, 1), color var(--transition-fast);
+	}
+
+	.chevron.rotated {
+		transform: rotate(180deg);
+		color: var(--color-primary);
+	}
+
+	.custom-options {
+		position: absolute;
+		bottom: calc(100% + 6px);
+		left: 0;
+		right: 0;
+		z-index: 50;
+		background: var(--color-surface);
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		box-shadow: var(--shadow-md), 0 8px 24px rgba(0, 0, 0, 0.08);
+		list-style: none;
+		margin: 0;
+		padding: 4px;
+		max-height: 280px;
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		scrollbar-width: thin;
+		scrollbar-color: var(--color-border) transparent;
+	}
+
+	.custom-options::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.custom-options::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	.custom-options::-webkit-scrollbar-thumb {
+		background: var(--color-border);
+		border-radius: 3px;
+	}
+
+	.custom-options::-webkit-scrollbar-thumb:hover {
+		background: var(--color-text-muted);
+	}
+
+	.option-btn {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 100%;
+		padding: 9px 10px;
+		background: transparent;
+		border: none;
+		border-radius: calc(var(--radius-sm) - 2px);
+		font-family: var(--font-body);
+		font-size: 0.85rem;
+		color: var(--color-text);
+		cursor: pointer;
+		text-align: left;
+		transition: background var(--transition-fast), color var(--transition-fast);
+	}
+
+	.option-btn:hover {
+		background: var(--color-surface-alt);
+	}
+
+	.option-btn.selected {
+		background: var(--color-primary-light);
+		color: var(--color-primary);
+		font-weight: 600;
+	}
+
+	.option-separator {
+		list-style: none;
+		padding: 2px 10px;
+	}
+
+	.option-separator hr {
+		border: none;
+		border-top: 1px solid var(--color-border);
+		margin: 0;
+	}
+
+	.option-board {
+		font-size: 0.7rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: var(--color-primary);
+		background: var(--color-primary-light);
+		padding: 2px 6px;
+		border-radius: 4px;
+		flex-shrink: 0;
+	}
+
+	.option-name {
+		flex: 1;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.option-code {
+		font-size: 0.75rem;
+		color: var(--color-text-muted);
+		font-weight: 500;
+		flex-shrink: 0;
+	}
+
 	/* Question body */
 	.question-body {
 		padding: 32px 4px;
@@ -1174,7 +1454,7 @@
 			flex-direction: column;
 		}
 
-		.qp-filters .spec-filter {
+		.qp-filters .custom-select {
 			width: 100%;
 		}
 	}
