@@ -11,24 +11,35 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // Store for the current user
 export const user = writable<{ email?: string } | null>(null);
 
+// Cached session — updated by initAuth and auth state listener
+let cachedSession: { access_token: string; user: { email?: string } } | null = null;
+let initPromise: Promise<void> | null = null;
+
 /**
- * Initialize auth state and subscribe to changes
+ * Initialize auth state and subscribe to changes.
+ * Only calls getSession() once; all subsequent reads use the cache.
  */
 export async function initAuth() {
-	const { data: { session } } = await supabase.auth.getSession();
-	user.set(session?.user ?? null);
-
-	supabase.auth.onAuthStateChange((_event, session) => {
+	if (initPromise) return initPromise;
+	initPromise = (async () => {
+		const { data: { session } } = await supabase.auth.getSession();
+		cachedSession = session;
 		user.set(session?.user ?? null);
-	});
+
+		supabase.auth.onAuthStateChange((_event, session) => {
+			cachedSession = session;
+			user.set(session?.user ?? null);
+		});
+	})();
+	return initPromise;
 }
 
 /**
- * Get the current access token from Supabase session
+ * Get the current access token from cached session
  */
 export async function getAccessToken(): Promise<string | null> {
-	const { data: { session } } = await supabase.auth.getSession();
-	return session?.access_token ?? null;
+	if (initPromise) await initPromise;
+	return cachedSession?.access_token ?? null;
 }
 
 /**
@@ -48,8 +59,8 @@ export function getGuestId(): string {
  * Get the current authenticated user (or null if not logged in)
  */
 export async function getCurrentUser() {
-	const { data: { session } } = await supabase.auth.getSession();
-	return session?.user ?? null;
+	if (initPromise) await initPromise;
+	return cachedSession?.user ?? null;
 }
 
 /**
